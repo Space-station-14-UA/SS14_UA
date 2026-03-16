@@ -1,0 +1,50 @@
+<ui:FancyWindow xmlns="https://spacestation14.io"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+               x:Class="Content.Client._Mriya.BureaucraticComputer.UI.BureaucracyComputerWindow"
+               Title="Бюрократичний Комп'ютер"
+               MinSize="1200 650">
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
+
+        <BoxContainer Orientation="Vertical" MinWidth="250" Margin="5">
+            <Label Text="Доступні шаблони:" Margin="0 0 0 5" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
+            <PanelContainer Name="LeftBackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
+                <ScrollContainer Margin="5">
+                    <BoxContainer Name="DocumentList" Orientation="Vertical" SeparationOverride="4" />
+                </ScrollContainer>
+            </PanelContainer>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" MinWidth="300" Margin="5">
+            <Label Text="Заповнення документу:" Margin="0 0 0 5" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
+            <PanelContainer Name="RightBackgroundPanel" VerticalExpand="True" HorizontalExpand="True">
+                <ScrollContainer Margin="5">
+                    <BoxContainer Name="DocumentFields" Orientation="Vertical" SeparationOverride="12" />
+                </ScrollContainer>
+            </PanelContainer>
+                <Button Name="PrintButton"
+                    Text="Роздрукувати"
+                    HorizontalAlignment="Right"
+                    Margin="0 5 0 0"
+                    VerticalAlignment="Center"
+                    MinSize="140 35"
+                    Disabled="True"
+                    StyleClasses="ButtonColorGreen" />
+        </BoxContainer>
+
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" MinWidth="350" Margin="5" SetSize="510 600">
+            <Label Text="Попередній перегляд:" Margin="0 0 0 5" HorizontalAlignment="Center" StyleClasses="LabelHeading" />
+
+            <PanelContainer Name="PaperBackground" StyleIdentifier="PaperDefaultBorder" VerticalExpand="True" HorizontalExpand="True">
+                <ScrollContainer Name="PreviewScrollingContents" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalExpand="True" VerticalExpand="True" HScrollEnabled="False">
+                    <PanelContainer Name="PaperContent" VerticalExpand="True" HorizontalExpand="True" MaxWidth="600" Margin="10">
+                        <BoxContainer Orientation="Vertical" VerticalAlignment="Stretch">
+                            <RichTextLabel StyleClasses="PaperWrittenText" Name="PreviewTextLabel" VerticalAlignment="Top" HorizontalExpand="True"/>
+                        </BoxContainer>
+                    </PanelContainer>
+                </ScrollContainer>
+            </PanelContainer>
+        </BoxContainer>
+
+    </BoxContainer>
+</ui:FancyWindow>
