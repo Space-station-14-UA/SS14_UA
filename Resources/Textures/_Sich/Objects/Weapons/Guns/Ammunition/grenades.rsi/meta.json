@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "зроблено пиріжком та светославом, та взято частково речі з оригінальних гранат",
+    "states": [
+        {
+            "name": "bola"
+        },
+        {
+            "name": "teargas"
+        },
+        {
+            "name": "flash"
+        },
+        {
+            "name": "stinger"
+        },
+        {
+            "name": "fire"
+        },
+        {
+            "name": "frag"
+        },
+        {
+            "name": "spent"
+        }
+    ]
+}

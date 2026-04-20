@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseBullet
+  id: PelletClusterRubberSmall
+  categories: [ HideSpawnMenu ]
+  name: pellet (ball, rubber, small)
+  components:
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Blunt: 0.5
+  - type: StaminaDamageOnCollide
+    damage: 8
+  - type: TimedDespawn
+    lifetime: 0.25

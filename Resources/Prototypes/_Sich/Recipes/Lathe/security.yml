@@ -1,0 +1,11 @@
+
+# довга зброя
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponLauncherGrindar
+  result: WeaponLauncherGrindar
+  materials:
+    Steel: 3000
+    Plastic: 1000
+    Plasma: 500

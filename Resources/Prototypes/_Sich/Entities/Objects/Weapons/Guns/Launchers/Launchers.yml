@@ -1,0 +1,43 @@
+- type: entity
+  name: Гранатомет Гріндар
+  parent: [BaseWeaponLauncher, BaseSecurityContraband]
+  id: WeaponLauncherGrindar
+  description: Гранатомет який може помістити собі дві гранати, та має простий приціл. Розроблений для придушення бунтів, але може бути використаний, і для бою, з відповідними гранатами.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Launchers/grindar.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Sich/Objects/Weapons/Guns/Launchers/grindar.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,4,2
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 2
+    pvsIncrease: 0.2
+  - type: Gun
+    fireRate: 0.75
+    projectileSpeed: 25
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: AmmoCounter
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - SmallGrenade
+    capacity: 2
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
+  - type: StaticPrice
+    price: 1000

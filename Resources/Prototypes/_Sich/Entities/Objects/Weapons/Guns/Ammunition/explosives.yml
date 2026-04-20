@@ -1,0 +1,120 @@
+- type: entity
+  abstract: true
+  parent: [BaseItem, BaseMajorContraband]
+  id: BaseSmallGrenade
+  name: base small grenade
+  components:
+  - type: Tag
+    tags:
+    - SmallGrenade
+  - type: Item
+    size: Small
+  - type: Sprite
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFlash
+  name: мала світло-шумова граната
+  description: Мала граната для гранатомета, яка при вибуху робить ПФІІІІІІІІІІУ! МОЇ ОЧІ, МОЇ ВУХА!!
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFlash
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: flash
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: flash
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeSmoke
+  name: мала сльзогінна граната
+  description: Мала граната для гранатомета, яка при вибуху розповсюджує сльозогінний газ. Гарна для розгону натовпу, якщо в них немає масок звісно ж.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeSmoke
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: teargas
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: teargas
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeBola
+  name: мала боллова граната
+  description: Мала граната для гранатомета, яка при попаданні вистрілює боли. Гарна для масового затримання бунтарів, тільки не забудьте що вони можуть зняти боли.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeBola
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: bola
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: bola
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeStinger
+  name: мала стінгер граната
+  description: Мала граната для гранатомета, яка вибухає купою куль які збивають з ніг. Непогана опція для розганяння бунтів, та масових затримок, та гарно комбінується з гранатою з болами.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeStinger
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: stinger
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: stinger
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFrag
+  name: мала уламкова граната
+  description: Мала граната для гранатомета, яка вибухає купою куль. Є непоганою бойовою опцією для гранатомета.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFrag
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  parent: BaseSmallGrenade
+  id: SmallGrenadeFire
+  name: малий запальний набій
+  description: Фактично це набій для дробовика з флаєром, який був послинений та збільшений до розміру гранатомета. Дуже гарно підходить для спалення зомбі.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSmallGrenadeFire
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    layers:
+    - state: fire
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: fire
+    suffix: false

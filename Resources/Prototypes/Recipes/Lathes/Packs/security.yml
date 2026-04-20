@@ -103,6 +103,14 @@
   - BoxShotgunIncendiary
   - BoxShotgunUranium
   - BoxShellTranquilizer
+  #початок змін для Січі
+  - BoxGrenadesFlash
+  - BoxGrenadesSmoke
+  - BoxGrenadesBola
+  - BoxGrenadesStinger
+  - BoxGrenadesFrag
+  - BoxGrenadesFire
+  #кінець змін для Січі
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxLightRifleUranium
   - MagazineBoxMagnumIncendiary
@@ -130,6 +138,7 @@
   - Truncheon
   - WeaponAdvancedLaser
   - WeaponLaserCannon
+  - WeaponLauncherGrindar #Додано для Січі
   - WeaponLaserCarbine
   - WeaponXrayCannon
   - WeaponTemperatureGun

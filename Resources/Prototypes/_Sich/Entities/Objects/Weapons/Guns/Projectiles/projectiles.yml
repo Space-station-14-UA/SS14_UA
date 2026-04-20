@@ -1,0 +1,175 @@
+#Гранати
+
+- type: entity
+  id: BulletSmallGrenadeFlash
+  name: світло-шумова граната
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    layers:
+      - state: flash
+  - type: FlashOnTrigger
+    range: 7
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: DeleteOnTrigger
+
+- type: entity
+  id: BulletSmallGrenadeSmoke
+  name: сльозогінна граната
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    layers:
+      - state: teargas
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 10
+    spreadAmount: 30
+    smokePrototype: TearGasSmokeWhite
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 20
+
+- type: entity
+  id: BulletSmallGrenadeBola
+  name: боллова граната
+  parent: [ImpactGrenadeBase, ScatteringGrenadeBase]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    layers:
+      - state: bola
+  - type: ScatteringGrenade
+    triggerKey: trigger
+    fillPrototype: FragileBola
+    capacity: 8
+    velocity: 60
+  - type: DeleteOnTrigger
+  - type: TriggerOnLand
+  - type: LandAtCursor
+  - type: Destructible
+    thresholds:
+    - trigger: # immediately explode
+        !type:DamageTrigger
+        damage: 45
+      behaviors:
+      - !type:TriggerBehavior
+        keyOut: timer
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  
+- type: entity
+  id: BulletSmallGrenadeStinger
+  name: стінгер граната
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    layers:
+      - state: stinger
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: PelletClusterRubberSmall
+    capacity: 30
+
+- type: entity
+  id: BulletSmallGrenadeFrag
+  name: уламкова граната
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    layers:
+      - state: frag
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: PelletClusterLessLethal
+    capacity: 30
+
+- type: entity
+  id: BulletSmallGrenadeFire
+  categories: [ HideSpawnMenu ]
+  name: pellet (small grenade flare)
+  components:
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: EmbeddableProjectile
+    deleteOnRemove: true
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+          - BulletImpassable
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Guns/Projectiles/grenades.rsi
+    state: fire
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 240
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 10
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 4
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 25.0
+    energy: 9.0
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Heat: 40
+
+#проджектайли для гранат
+
+- type: entity
+  parent: Bola
+  id: FragileBola
+  name: хрупка бола
+  description: Хрупка бола
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound: /Audio/Weapons/bolathrow.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

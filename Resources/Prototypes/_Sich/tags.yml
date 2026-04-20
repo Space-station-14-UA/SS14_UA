@@ -1,3 +1,6 @@
 - type: Tag
   id: CrayonRainbow # ItemMapper: CrayonBox
   
+- type: Tag
+  id: SmallGrenade #для гранат для гріндара
+  

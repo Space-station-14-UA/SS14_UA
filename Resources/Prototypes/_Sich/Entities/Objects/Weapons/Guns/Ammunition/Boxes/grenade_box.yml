@@ -1,0 +1,138 @@
+- type: entity
+  abstract: true
+  parent: BaseAmmoProvider
+  id: AmmoProviderSmallGrenades
+  components:
+    - type: Sprite
+      sprite: _Sich/Objects/Weapons/Guns/Ammunition/boxes/small_grenade_box.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - SmallGrenade
+      capacity: 6
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesFlash
+  name: коробка світло-шумових гранат
+  description: Картонна коробка світло-шумових гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeFlash
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_flash
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: flash
+
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesSmoke
+  name: коробка сльозогінних гранат
+  description: Картонна коробка сльозогінних гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeSmoke
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_teargas
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: teargas
+
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesBola
+  name: коробка боллових гранат
+  description: Картонна коробка боллових гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeBola
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_bola
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: bola
+
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesStinger
+  name: коробка стінгерних гранат
+  description: Картонна коробка стінгерних гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeStinger
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_stinger
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: stinger
+      
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesFrag
+  name: коробка уламкових гранат
+  description: Картонна коробка уламкових гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeFrag
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_frag
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: frag
+
+- type: entity
+  parent: AmmoProviderSmallGrenades
+  id: BoxGrenadesFire
+  name: коробка запальних гранат
+  description: Картонна коробка запальних гранат для гранатомета.
+  components:
+    - type: BallisticAmmoProvider
+      proto: SmallGrenadeFire
+    - type: MagazineVisuals
+      magState: mag
+      steps: 7
+      zeroVisible: false
+    - type: Sprite
+      layers:
+      - state: base_fire
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: fire

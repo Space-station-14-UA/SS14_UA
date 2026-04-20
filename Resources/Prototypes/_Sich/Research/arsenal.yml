@@ -1,0 +1,32 @@
+# T1
+
+- type: technology
+  id: GrenadeLauncher
+  name: research-technology-grenadelauncher-grindar
+  icon:
+    sprite: _Sich/Objects/Weapons/Guns/Launchers/grindar.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - WeaponLauncherGrindar
+  - BoxGrenadesFlash
+  - BoxGrenadesSmoke
+
+# T2
+
+- type: technology
+  id: AdvancedGrenades
+  name: research-technology-advanced-grenades
+  icon:
+    sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
+    state: bola
+  discipline: Arsenal
+  tier: 1
+  cost: 1000
+  recipeUnlocks:
+  - BoxGrenadesBola
+  - BoxGrenadesStinger
+  - BoxGrenadesFrag
+  - BoxGrenadesFire

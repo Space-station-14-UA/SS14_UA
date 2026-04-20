@@ -1,0 +1,53 @@
+# Ґранати
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesFlash
+  result: BoxGrenadesFlash
+  materials:
+    Steel: 250
+    Plastic: 150
+    
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesSmoke
+  result: BoxGrenadesSmoke
+  materials:
+    Steel: 250
+    Plastic: 150
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesBola
+  result: BoxGrenadesBola
+  materials:
+    Steel: 650
+    Plastic: 300
+    Plasma: 50
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesStinger
+  result: BoxGrenadesStinger
+  materials:
+    Steel: 350
+    Plastic: 700
+    Plasma: 100
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesFrag
+  result: BoxGrenadesFrag
+  materials:
+    Steel: 700
+    Plastic: 200
+    Plasma: 200
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: BoxGrenadesFire
+  result: BoxGrenadesFire
+  materials:
+    Steel: 300
+    Plastic: 800
+    Plasma: 400
