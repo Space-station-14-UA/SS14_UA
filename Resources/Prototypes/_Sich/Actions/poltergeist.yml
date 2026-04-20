@@ -1,0 +1,27 @@
+- type: entity
+  parent: ActionIntrinsicStore
+  id: ActionPoltergeistShop
+  name: Купівля здібностей
+  description: відкриває магазин здібностей.
+
+- type: entity
+  parent: BaseAction
+  id: SichActionRetractableItemPoltergeistNetworkConfigurator
+  name: Містичний конфігуратор мережі
+  description: матереалізуй собі конфігуратор мережі.
+  components:
+  - type: Action
+    useDelay: 0.5
+    raiseOnAction: true
+    itemIconStyle: BigAction
+    icon:
+      sprite: Interface/Actions/changeling.rsi
+      state: armblade
+  - type: InstantAction
+    event: !type:OnRetractableItemActionEvent
+  - type: RetractableItemAction
+    spawnedPrototype: PoltergeistNetworkConfigurator
+    summonSounds:
+      collection: gib # Placeholder
+    retractSounds:
+      collection: gib # Placeholder

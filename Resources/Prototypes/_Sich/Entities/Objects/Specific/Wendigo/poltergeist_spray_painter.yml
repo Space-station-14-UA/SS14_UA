@@ -1,0 +1,12 @@
+- type: entity
+  parent: SprayPainterBorg
+  id: SichPoltergeistSprayPainter
+  name: містичний фарбувальник
+  description: Ти можеш за допомогою цього фарбувати речі.
+  suffix: полтергейст
+  components:
+  - type: AutoRecharge
+    rechargeDuration: 3
+  - type: Sprite
+    sprite: _Sich/Objects/Specific/poltergeist_spray_painter.rsi
+    state: icon

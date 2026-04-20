@@ -1,0 +1,24 @@
+- type: entity
+  parent: CrayonInedible
+  id: SichCrayonPoltergeist
+  name: містична крейда
+  description: містична кредка щоби зіставляти знаки.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Fun/poltergeist_crayon.rsi
+    state: icon
+  - type: Item
+  - type: Crayon
+    deleteEmpty: false
+    color: Red
+    selectableColor: true
+  - type: LimitedCharges
+    maxCharges: 50
+  - type: AutoRecharge
+    rechargeDuration: 2.5
+  - type: Tag
+    tags:
+    - Write
+    - Crayon
+    - Trash

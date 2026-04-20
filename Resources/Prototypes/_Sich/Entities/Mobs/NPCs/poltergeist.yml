@@ -1,0 +1,157 @@
+
+- type: entity
+  parent: [MobElementalBase, MobPolymorphable, FlyingMobBase]
+  id: SichMobPoltergeist
+  name: В•≠§£Ѓ
+  description: ±≤∞†Є≠Ѓ Ґ®∞≥°†©.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: poltergeist
+      sprite: _Sich/Mobs/NPCs/poltergeist.rsi
+    - state: poltergeist_e
+      sprite: _Sich/Mobs/NPCs/poltergeist.rsi
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: poltergeist_l
+      sprite: _Sich/Mobs/NPCs/poltergeist.rsi
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: poltergeist-moving
+    noMovementLayers:
+      movement:
+        state: poltergeist
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: poltergeist
+      Critical:
+        Base: poltergeist_dead
+      Dead:
+        Base: poltergeist_dead
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+        requireInputValidation: false
+  - type: Damageable
+    damageContainer: ManifestedSpirit
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 200
+    damage:
+      groups:
+        Burn: -0.1
+        Brute: -0.1
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 5
+  - type: PointLight
+    radius: 2
+    energy: 3
+    color: "#ff0000"
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Magic/Eldritch/voidblink.ogg
+    damage:
+      types:
+        Asphyxiation: 6.5
+  - type: ActionGrant
+    actions:
+    - ActionBlink
+    - ActionPolymorphJaunt
+#    - ActionPoltergeistShop
+#  - type: Store
+#    categories:
+#    - PoltergeistAbilities
+#    currencyWhitelist:
+#    - PoltergeistEssence
+#    balance:
+#      PoltergeistEssence: 30
+  - type: IgnoreSpiderWeb
+  - type: Examiner
+  - type: DoAfter
+  - type: Alerts
+  - type: Actions
+  - type: Eye
+  - type: ContentEye
+  - type: CameraRecoil
+  - type: MindContainer
+  - type: StandingState
+  - type: Speech
+    speechVerb: Ghost
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - Unimplantable
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
+    useSound:
+      path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Animals/space_dragon_roar.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialBones1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: GhostRole
+    makeSentient: true
+    name: roles-antag-poltergeist-name
+    description: roles-antag-poltergeist-objective
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Hands
+    showInHands: false
+    disableExplosionRecursion: true
+    canBeStripped: false
+  - type: ComplexInteraction
+  - type: BorgChassis
+    hasMindState: poltergeist_e
+    noMindState: poltergeist_e_r
+    maxModules: 3
+    moduleWhitelist:
+      tags:
+        - SichPoltergeistAbilitiesCombat
+        - SichPoltergeistAbilities
+        - SichPoltergeistAbilitiesTool
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - SichPoltergeistAbilitiesCombat
+      - SichPoltergeistAbilities
+      - SichPoltergeistAbilitiesTool

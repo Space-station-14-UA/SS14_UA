@@ -1,0 +1,80 @@
+- type: entity
+  parent: WeaponTetherGun
+  id: SichPoltergeistWeaponTetherGun
+  name: містичний контроль
+  description: ти можеш за допомогою цього переміщювати об'єкти
+  suffix: полтергейст
+  components:
+    - type: TetherGun
+      maxForce: 10000
+      massLimit: 10000
+      dampingRatio: 4
+      frequency: 20
+    - type: Sprite
+      sprite: _Sich/Objects/Weapons/Guns/Launchers/poltergeist_tether_force.rsi
+      layers:
+        - state: base
+        - state: base-unshaded
+          map: [ "unshaded" ]
+          shader: unshaded
+          visible: false
+    - type: ToggleableVisuals
+      spriteLayer: unshaded
+      inhandVisuals:
+        left:
+          - state: inhand-left-unshaded
+            shader: unshaded
+        right:
+          - state: inhand-right-unshaded
+            shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.TetherVisualsStatus.Key:
+          unshaded:
+            True: { visible: true }
+            False: { visible: false }
+
+- type: entity
+  parent: WeaponForceGun
+  id: SichPoltergeistWeaponForceGun
+  name: містична сила
+  description: ти можеш за допомогою цього кидати об'єкти
+  suffix: полтергейст
+  components:
+    - type: ForceGun
+      maxForce: 1000
+      massLimit: 10000
+      frequency: 15
+      dampingRatio: 4
+      throwForce: 50
+      throwDistance: 100
+      lineColor: "#18a2d5"
+      soundLaunch:
+        path: /Audio/Weapons/soup.ogg
+        params:
+          volume: 2
+    - type: Sprite
+      sprite: _Sich/Objects/Weapons/Guns/Launchers/poltergeist_throw_force.rsi
+      layers:
+        - state: base
+        - state: base-unshaded
+          map: [ "unshaded" ]
+          shader: unshaded
+          visible: false
+    - type: ToggleableVisuals
+      spriteLayer: unshaded
+      inhandVisuals:
+        left:
+          - state: inhand-left-unshaded
+            shader: unshaded
+        right:
+          - state: inhand-right-unshaded
+            shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.TetherVisualsStatus.Key:
+          unshaded:
+            True: { visible: true }
+            False: { visible: false }

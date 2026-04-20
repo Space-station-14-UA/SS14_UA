@@ -1,0 +1,12 @@
+- type: listing
+  id: SichPoltergeistAbilitiesToolNetwork
+  name: poltergeist-network-name
+  description: poltergeist-network-desc
+  productAction: SichActionRetractableItemPoltergeistNetworkConfigurator
+  cost:
+    PoltergeistEssence: 10
+  categories:
+  - PoltergeistAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
