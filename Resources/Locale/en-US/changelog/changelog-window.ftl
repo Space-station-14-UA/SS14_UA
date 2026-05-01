@@ -15,7 +15,7 @@ changelog-tab-title-Changelog = Журнал змін
 changelog-tab-title-Admin = Адмін
 changelog-tab-title-Maps = Карти
 changelog-tab-title-Rules = Правила
-changelog-tab-title-Sich-Changelog = Січ
+changelog-tab-title-Sich-Changelog = Мрія
 
 cmd-changelog-desc = Відкриває список змін.
 cmd-changelog-help = Використання: changelog

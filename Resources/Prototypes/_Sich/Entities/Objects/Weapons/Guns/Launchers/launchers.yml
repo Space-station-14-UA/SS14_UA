@@ -80,7 +80,7 @@
             False: { visible: false }
 
 - type: entity
-  name: Гранатомет Гіндар
+  name: гіндар
   parent: [BaseWeaponLauncher, BaseSecurityContraband]
   id: MRWeaponLauncherGindar
   description: Гранатомет який може помістити собі дві гранати, та має простий приціл. Розроблений для придушення бунтів, але може бути використаний, і для бою, з відповідними гранатами.
