@@ -1,0 +1,11 @@
+- type: entity
+  parent: ChameleonProjectorNoBattery
+  id: SichPoltergeistChameleonProjector
+  name: містичне маскування
+  description: За допомогою цього ти можеш замаскуватися під деякі об'єкти.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Specific/poltergeist_chameleon.rsi
+    layers:
+    - state: icon

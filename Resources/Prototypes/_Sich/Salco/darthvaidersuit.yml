@@ -64,18 +64,6 @@
         Piercing: 0.9
         Heat: 0.9
         Shock: 0.9
-  - type: UserInterface
-    interfaces:
-      enum.SharedGasTankUiKey.Key:
-        type: GasTankBoundUserInterface
-  - type: GasTank
-    outputPressure: 21.3
-    air:
-      # 4 minutes
-      volume: 10
-      moles:
-        - 1000 # oxygen
-      temperature: 293.15
 
 - type: entity
   parent: ClothingNeckBase

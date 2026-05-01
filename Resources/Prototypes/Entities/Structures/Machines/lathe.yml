@@ -666,8 +666,6 @@
   name: плиткоріз
   description: Це різак. Він ріже. Додайте різноманітності підлозі вашої станції за допомогою приємних для ока візерунків! Не суйте пальці у нього.
   components:
-  - type: Transform
-    noRot: false
   - type: Sprite
     sprite: Structures/Machines/cuttermachine.rsi
     snapCardinals: true

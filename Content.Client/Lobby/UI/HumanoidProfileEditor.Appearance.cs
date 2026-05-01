@@ -192,6 +192,7 @@ public sealed partial class HumanoidProfileEditor
         UpdateSpeciesGuidebookIcon();
         UpdateHeightControls(); //height and width may have different ranges for new species, make sure to update them.
         UpdateWidthControls();
+        UpdateWeight();
         ReloadPreview();
     }
 
@@ -280,9 +281,13 @@ public sealed partial class HumanoidProfileEditor
 
         var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
+        CHeightSlider.MinValue = Math.Min(CHeightSlider.MinValue, species.MinHeight);
+        CHeightSlider.MaxValue = Math.Max(CHeightSlider.MaxValue, species.MaxHeight);
+
+        CHeightSlider.Value = Math.Clamp(Profile.Appearance.Height, species.MinHeight, species.MaxHeight);
+
         CHeightSlider.MinValue = species.MinHeight;
         CHeightSlider.MaxValue = species.MaxHeight;
-        CHeightSlider.Value = Profile.Appearance.Height;
 
         var height = MathF.Round(species.AverageHeight * CHeightSlider.Value);
         CHeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
@@ -295,9 +300,13 @@ public sealed partial class HumanoidProfileEditor
 
         var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
 
+        CWidthSlider.MinValue = Math.Min(CWidthSlider.MinValue, species.MinWidth);
+        CWidthSlider.MaxValue = Math.Max(CWidthSlider.MaxValue, species.MaxWidth);
+
+        CWidthSlider.Value = Math.Clamp(Profile.Appearance.Width, species.MinWidth, species.MaxWidth);
+
         CWidthSlider.MinValue = species.MinWidth;
         CWidthSlider.MaxValue = species.MaxWidth;
-        CWidthSlider.Value = Profile.Appearance.Width;
 
         var width = MathF.Round(species.AverageWidth * CWidthSlider.Value);
         CWidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
@@ -318,6 +327,10 @@ public sealed partial class HumanoidProfileEditor
             var avg = (Profile.Appearance.Width + Profile.Appearance.Height) / 2;
             var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
             CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)weight));
+        }
+        else
+        {
+            CWeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", 71));
         }
 
         SpriteView.InvalidateMeasure();

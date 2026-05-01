@@ -1,0 +1,27 @@
+- type: entity
+  name: містична рука-лезо 
+  parent: BaseItem
+  id: SichPoltergeistArmBlade
+  description: Потворне лезо, з містичної матерії.
+  suffix: полтергейст
+  components:
+  - type: Sharp
+  - type: Execution
+    doAfterDuration: 4.0
+  - type: Sprite
+    sprite: _Sich/Objects/Weapons/Melee/poltergeist_armblade.rsi
+    state: icon
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    wideAnimationRotation: 90
+    attackRate: 1
+    damage:
+      types:
+        Asphyxiation: 9 #трохи краще за лом
+  - type: Item
+    size: Normal
+    sprite: Objects/Weapons/Melee/armblade.rsi
+  - type: Prying
+    speedModifier: 1.5 # Jaws of life speed
+    pryPowered: true

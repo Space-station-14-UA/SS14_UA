@@ -1,0 +1,60 @@
+#частина віндіго
+- type: entity
+  parent: [ BaseBorgModule, BaseProviderBorgModule,]
+  id: SichPoltergeistAbilities
+  name: здібності для запугування
+  description: твої здібності для того щоб налякати членів екіпажу.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    layers:
+    - state: xenoborg_stealth
+    - state: icon-xenoborg-projector
+  - type: ItemBorgModule
+    hands:
+    - item: SichPoltergeistSprayPainter
+    - item: SichCrayonPoltergeist
+    - item: SichPoltergeistChameleonProjector
+    - item: SichPoltergeistCloaking
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: artistry-module }
+
+- type: entity
+  parent: [ BaseBorgModule, BaseProviderBorgModule,]
+  id: SichPoltergeistAbilitiesCombat
+  name: здібності для нападу
+  description: твої здібності для того щоб напасти на членів екіпажу.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    layers:
+    - state: xenoborg_stealth
+    - state: icon-xenoborg-projector
+  - type: ItemBorgModule
+    hands:
+    - item: SichPoltergeistArmBlade
+    - item: SichPoltergeistWeaponForceGun
+    - item: SichPoltergeistWeaponTetherGun
+    - item: SichPoltergeistCloaking
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/changeling.rsi, state: armblade }
+
+- type: entity
+  id: SichPoltergeistAbilitiesTool
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: здібності інструментів
+  description: твої здібності інструментів.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-tools
+  - type: ItemBorgModule
+    hands:
+    - item: PoltergeistWirecutter
+    - item: PoltergeistScrewdriver
+    - item: PoltergeistWelderIndustrial
+    - item: PoltergeistMultitool
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }

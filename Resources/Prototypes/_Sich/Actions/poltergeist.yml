@@ -1,0 +1,5 @@
+- type: entity
+  parent: ActionIntrinsicStore
+  id: ActionPoltergeistShop
+  name: Купівля здібностей
+  description: відкриває магазин здібностей.

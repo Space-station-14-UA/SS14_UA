@@ -1,0 +1,93 @@
+- type: entity
+  parent: BaseCrowbar
+  id: PoltergeistCrowbar
+  name: містичний лом
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    storedSprite:
+      sprite: Objects/Tools/crowbar.rsi
+      state: storage
+  - type: Prying
+    speedModifier: 0.5
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    attackRate: 1
+    damage:
+      types:
+        Asphyxiation: 7
+    soundHit:
+      path: /Audio/Magic/Eldritch/voidblink.ogg
+
+- type: entity
+  parent: Wirecutter
+  id: PoltergeistWirecutter
+  name: містичні кусачки
+  description: Ріжуть дроти та русню.
+  suffix: полтергейст
+  components:
+  - type: Tool
+    qualities:
+      - Cutting
+    speedModifier: 0.1
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    attackRate: 1
+    damage:
+      types:
+        Asphyxiation: 7
+    soundHit:
+      path: /Audio/Magic/Eldritch/voidblink.ogg
+
+- type: entity
+  parent: Screwdriver
+  id: PoltergeistScrewdriver
+  name: містична викрутка
+  description: Крутий інструмент вищого рівня у вигляді викрутки.
+  suffix: полтергейст
+  components:
+  - type: Tool
+    qualities:
+      - Screwing
+    speedModifier: 0.25
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    attackRate: 1
+    damage:
+      types:
+        Asphyxiation: 7
+    soundHit:
+      path: /Audio/Magic/Eldritch/voidblink.ogg
+
+- type: entity
+  parent: NetworkConfigurator
+  id: PoltergeistNetworkConfigurator
+  name: містичний конфігуратор мережі
+  description: Інструмент для зв'язування пристроїв між собою. Має два режими, режим списку служить для масового зв'язування пристроїв та режим підключення для розширеного зв'язування пристроїв.
+  suffix: полтергейст
+
+- type: entity
+  parent: Multitool
+  id: PoltergeistMultitool
+  name: містичний ультитул
+  description: Удосконалений інструмент для копіювання, зберігання та надсилання електричних імпульсів і сигналів через дроти та машини.
+  suffix: полтергейст
+  
+- type: entity
+  parent: WelderIndustrial
+  id: PoltergeistWelderIndustrial
+  name: промисловивй зварник
+  description: Місичний зварник зі збільшеним об'ємом палива.
+  suffix: полтергейст
+  components:
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    attackRate: 1
+    damage:
+      types:
+        Asphyxiation: 7
+    soundHit:
+      path: /Audio/Magic/Eldritch/voidblink.ogg
+  
