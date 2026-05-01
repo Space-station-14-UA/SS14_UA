@@ -9,7 +9,7 @@
       mayTransfer: true
       whitelist:
         tags:
-        - SmallGrenade
+        - MRSmallGrenade
       capacity: 6
     - type: MagazineVisuals
       magState: mag

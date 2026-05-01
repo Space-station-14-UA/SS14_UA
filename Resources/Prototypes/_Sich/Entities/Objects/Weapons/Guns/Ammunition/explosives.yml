@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-    - SmallGrenade
+    - MRSmallGrenade
   - type: Item
     size: Small
   - type: Sprite

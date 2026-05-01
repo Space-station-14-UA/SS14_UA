@@ -3,8 +3,8 @@
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
-  id: WeaponLauncherGrindar
-  result: WeaponLauncherGrindar
+  id: MRWeaponLauncherGindar
+  result: MRWeaponLauncherGindar
   materials:
     Steel: 3000
     Plastic: 1000
