@@ -18,10 +18,14 @@
     attackRate: 1
     damage:
       types:
-        Asphyxiation: 9 #трохи краще за лом
+        Asphyxiation: 10
+        Cold: 5
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/armblade.rsi
   - type: Prying
-    speedModifier: 1.5 # Jaws of life speed
     pryPowered: true
+    force: true
+    speedModifier: 2
+    useSound:
+      path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg

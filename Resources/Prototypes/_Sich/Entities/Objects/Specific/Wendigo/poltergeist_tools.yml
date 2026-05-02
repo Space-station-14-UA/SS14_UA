@@ -79,9 +79,25 @@
   parent: WelderIndustrial
   id: PoltergeistWelderIndustrial
   name: промисловивй зварник
-  description: Місичний зварник зі збільшеним об'ємом палива.
+  description: Місичний зварник зі збільшеним об'ємом палива та його регенерацією.
   suffix: полтергейст
   components:
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+      params:
+        variation: 0.250
+        volume: -12
+    deactivatedSoundOnHitNoDamage:
+      collection: MetalThud
+    activatedDamage:
+        types:
+            Cold: 10
   - type: MeleeWeapon
     wideAnimationRotation: -90
     attackRate: 1
@@ -90,4 +106,10 @@
         Asphyxiation: 7
     soundHit:
       path: /Audio/Magic/Eldritch/voidblink.ogg
+  - type: SolutionRegeneration
+    solution: Welder
+    generated:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 0.1
   

@@ -56,27 +56,21 @@
         Blunt: -0.1
         Piercing: -0.1
         Slash: -0.1
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: MovementSpeedModifier
     baseWalkSpeed : 4
     baseSprintSpeed : 5
-  - type: PointLight
-    radius: 2
-    energy: 3
-    color: "#ff0000"
   - type: MeleeWeapon
     hidden: true
     soundHit:
       path: /Audio/Magic/Eldritch/voidblink.ogg
     damage:
       types:
-        Asphyxiation: 6.5
+        Asphyxiation: 10
+        Cold: 5
   - type: ActionGrant
     actions:
     - ActionBlink
-    - ActionPolymorphJaunt
+    - ActionPolymorphJauntIII
 #    - ActionPoltergeistShop
 #  - type: Store
 #    categories:
@@ -104,7 +98,7 @@
   - type: Prying
     pryPowered: true
     force: true
-    speedModifier: 1.5
+    speedModifier: 2
     useSound:
       path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
   - type: MobThresholds
@@ -123,8 +117,8 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialBones1:
-            min: 1
-            max: 2
+            min: 6
+            max: 7
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: GhostRole
@@ -145,7 +139,7 @@
   - type: BorgChassis
     hasMindState: poltergeist_e
     noMindState: poltergeist_e_r
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
         - SichPoltergeistAbilitiesCombat
