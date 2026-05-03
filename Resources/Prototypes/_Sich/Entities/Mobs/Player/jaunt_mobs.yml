@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseMobJaunt
+  id: PoltergeistJaunt
+  name: Полтергейст
+  description: Нематеріальна форма Полтергейста
+  suffix: полтергейст нематеріальний
+  components:
+  - type: Sprite
+    sprite: _Sich/Mobs/NPCs/poltergeist.rsi
+    layers:
+    - state: poltergeist
+      shader: unshaded
+    noRot: true
+    overrideContainerOcclusion: true
+    drawdepth: Ghosts
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 6
+    baseWalkSpeed: 4

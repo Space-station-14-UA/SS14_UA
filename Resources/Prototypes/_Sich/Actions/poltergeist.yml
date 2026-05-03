@@ -3,3 +3,19 @@
   id: ActionPoltergeistShop
   name: Купівля здібностей
   description: відкриває магазин здібностей.
+
+- type: entity
+  parent: BaseActionPolymorph
+  id: ActionPolymorphPoltergeistJaunt
+  name: Нематеріальна форма
+  description: Перетворися на свою нематеріальну форму аби швидко перемиститися
+  components:
+  - type: Magic
+  - type: Action
+    useDelay: 20
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: jaunt
+  - type: InstantAction
+    event: !type:PolymorphActionEvent
+      protoId: PoltergeistJaunt
