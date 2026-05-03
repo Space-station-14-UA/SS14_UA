@@ -58,3 +58,24 @@
     - item: PoltergeistMultitool
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }
+
+- type: entity
+  id: SichPoltergeistAbilitiesSound
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: здібності інструментів
+  description: твої здібності інструментів.
+  suffix: полтергейст
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-tools
+  - type: ItemBorgModule
+    hands:
+    - item: ScaryMaintenceSoundPlayer
+    - item: DangerSoundPlayer
+    - item: ScarySpaceSoundPlayer
+    - item: ScaryRuinsSoundPlayer
+    - item: LavalendSoundPlayer
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: musical-module.png }

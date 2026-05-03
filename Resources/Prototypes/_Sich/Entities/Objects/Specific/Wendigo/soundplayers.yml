@@ -1,0 +1,112 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseSoundPlayer
+  name: програач звуку
+  description: грає звуки.
+  suffix: полтергейст
+  components:
+  - type: UseDelayOnTrigger
+  - type: UseDelayTriggerCondition # prevent spam
+  - type: TriggerOnActivate
+  - type: TriggerOnSignal
+  - type: Speech
+    speechSounds: Pai
+  - type: UseDelay
+    delay: 10
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Machines/Nuke/nuke_alarm.ogg
+      params:
+        volume: -5
+        maxDistance: 10
+
+- type: entity
+  parent: BaseSoundPlayer
+  id: ScaryMaintenceSoundPlayer
+  name: звуки залаштунків
+  description: грає звуки залаштунків.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+    state: passenger_greytide
+  - type: UseDelay
+    delay: 40
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Ambience/maintambience.ogg
+      params:
+        volume: 3
+        maxDistance: 50
+
+- type: entity
+  parent: BaseSoundPlayer
+  id: DangerSoundPlayer
+  name: звуки небезпеки
+  description: грайте звуки які заставлять інших почуватися у небезпеці.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+    state: footsoldier
+  - type: UseDelay
+    delay: 16
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Ambience/ambidanger.ogg
+      params:
+        volume: 3
+        maxDistance: 50
+
+- type: entity
+  parent: BaseSoundPlayer
+  id: ScarySpaceSoundPlayer
+  name: звуки страшного космосу
+  description: грайте звуки які заставлять інших почуватися у небезпеці.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+    state: salvage
+  - type: UseDelay
+    delay: 100
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Ambience/spookyspace1.ogg
+      params:
+        volume: 3
+        maxDistance: 50
+
+- type: entity
+  parent: BaseSoundPlayer
+  id: ScaryRuinsSoundPlayer
+  name: звуки страшних руїн
+  description: Ідеальний різкий зук аби задати атмосферу та зробити усіх напруженими.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+    state: nukie_elite
+  - type: UseDelay
+    delay: 15
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Ambience/ambiruin3.ogg
+      params:
+        volume: 3
+        maxDistance: 50
+
+- type: entity
+  parent: BaseSoundPlayer
+  id: LavalendSoundPlayer
+  name: звуки лаваленду
+  description: гарний звук для нагнитання атмосфери.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/figurines.rsi
+    state: nukie_commander
+  - type: UseDelay
+    delay: 60
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Ambience/ambilava1.ogg
+      params:
+        volume: 3
+        maxDistance: 50
