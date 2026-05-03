@@ -12,3 +12,6 @@
 
 - type: Tag
   id: SichPoltergeistAbilitiesTool #для здібностей полтергейста
+
+- type: Tag
+  id: SichPoltergeistAbilitiesSound #для здібностей полтергейста
