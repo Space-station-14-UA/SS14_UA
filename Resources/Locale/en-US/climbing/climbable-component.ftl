@@ -2,7 +2,7 @@
 ### UI
 
 # Verb name for climbing
-comp-climbable-verb-climb = Vault
+comp-climbable-verb-climb = Перелізти
 
 ### Interaction Messages
 

@@ -1,37 +1,37 @@
-shared-solution-container-component-on-examine-main-text = It contains {INDEFINITE($desc)} [color={$color}]{$desc}[/color] { $chemCount ->
-    [1] chemical.
-   *[other] mixture of chemicals.
+shared-solution-container-component-on-examine-main-text = Містить [color={$color}]{$desc}[/color] { $chemCount ->
+    [1] речовину.
+   *[other] хімічну суміш.
     }
 
-examinable-solution-has-recognizable-chemicals = You can recognize {$recognizedString} in the solution.
+examinable-solution-has-recognizable-chemicals = Ви впізнаєте {$recognizedString} у розчині.
 examinable-solution-recognized = [color={$color}]{$chemical}[/color]
 
-examinable-solution-on-examine-volume = The contained solution is { $fillLevel ->
-    [exact] holding [color=white]{$current}/{$max}u[/color].
+examinable-solution-on-examine-volume = Об'єм розчину { $fillLevel ->
+    [exact] становить [color=white]{$current}/{$max}u[/color].
    *[other] [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
 }
 
-examinable-solution-on-examine-volume-no-max = The contained solution is { $fillLevel ->
-    [exact] holding [color=white]{$current}u[/color].
+examinable-solution-on-examine-volume-no-max = Об'єм розчину { $fillLevel ->
+    [exact] становить[color=white]{$current}u[/color].
    *[other] [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
 }
 
-examinable-solution-on-examine-volume-puddle = The puddle is { $fillLevel ->
+examinable-solution-on-examine-volume-puddle = Рідина { $fillLevel ->
     [exact] [color=white]{$current}u[/color].
-    [full] huge and overflowing!
-    [mostlyfull] huge and overflowing!
-    [halffull] deep and flowing.
-    [halfempty] very deep.
-   *[mostlyempty] pooling together.
-    [empty] forming multiple small pools.
+    [full] вличезната та переповнена!
+    [mostlyfull] величезната та переповнена!
+    [halffull] глибока та плинна.
+    [halfempty] дуже глибока.
+   *[mostlyempty] збирається докупи.
+    [empty] утворює кілька малих калюжок.
 }
 
 -solution-vague-fill-level =
     { $fillLevel ->
-        [full] [color=white]Full[/color]
-        [mostlyfull] [color=#DFDFDF]Mostly Full[/color]
-        [halffull] [color=#C8C8C8]Half Full[/color]
-        [halfempty] [color=#C8C8C8]Half Empty[/color]
-        [mostlyempty] [color=#A4A4A4]Mostly Empty[/color]
-       *[empty] [color=gray]Empty[/color]
+        [full] [color=white]Повний[/color]
+        [mostlyfull] [color=#DFDFDF]Майже повний[/color]
+        [halffull] [color=#C8C8C8]Наполовину повний[/color]
+        [halfempty] [color=#C8C8C8]Наполовину порожній[/color]
+        [mostlyempty] [color=#A4A4A4]Переважно порожній[/color]
+       *[empty] [color=gray]Порожній[/color]
     }

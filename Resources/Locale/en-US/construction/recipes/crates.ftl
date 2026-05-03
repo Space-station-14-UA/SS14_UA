@@ -1,5 +1,5 @@
-construction-recipe-crate-freezer = crate freezer
-construction-recipe-big-box = large cardboard box
-construction-recipe-box-cardboard = cardboard box
-construction-recipe-box-cardboard-small = small cardboard box
-construction-recipe-box-tote = circuit tote
+construction-recipe-crate-freezer = морозильний ящик
+construction-recipe-big-box = велика картонна коробка
+construction-recipe-box-cardboard = картонна коробка
+construction-recipe-box-cardboard-small = маленька картонна коробка
+construction-recipe-box-tote = органайзер плат
