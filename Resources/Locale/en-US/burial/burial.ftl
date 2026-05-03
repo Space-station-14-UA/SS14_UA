@@ -1,5 +1,5 @@
-grave-start-digging-others = {CAPITALIZE($user)} starts digging {THE($grave)} with {THE($tool)}.
-grave-start-digging-user = You start digging {THE($grave)} with {THE($tool)}.
-grave-start-digging-user-trapped = You start clawing your way out of {THE($grave)}!
+grave-start-digging-others = {CAPITALIZE($user)} починає копати {$grave} використовуючи {$tool}.
+grave-start-digging-user = Ви починаєте копати {$grave} використовуючи {$tool}.
+grave-start-digging-user-trapped = Ви починаєте вибиратися з {$grave}!
 
-grave-digging-requires-tool = You need a tool to dig this {$grave}!
+grave-digging-requires-tool = Вам потрібен інструмент, щоб викопати {$grave}!

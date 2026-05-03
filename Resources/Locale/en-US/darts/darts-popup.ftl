@@ -1,6 +1,6 @@
-darts-popup-bullseye = Bullseye! 50 points!
-darts-popup-25 = 25 points
-darts-popup-10 = 10 points
-darts-popup-5 = 5 points
-darts-popup-1 = 1 point
-darts-popup-miss = Miss
+darts-popup-bullseye = В яблучко! 50 балів!
+darts-popup-25 = 25 балів
+darts-popup-10 = 10 балів
+darts-popup-5 = 5 балів
+darts-popup-1 = 1 балів
+darts-popup-miss = промах

@@ -1,103 +1,103 @@
-device-pda-slot-component-slot-name-cartridge = Cartridge
+device-pda-slot-component-slot-name-cartridge = Картридж
 
-default-program-name = Program
-notekeeper-program-name = Notekeeper
-nano-task-program-name = NanoTask
-news-read-program-name = Station news
+default-program-name = Програма
+notekeeper-program-name = Нотатоник
+nano-task-program-name = НаноТаск
+news-read-program-name = Новини станції
 
-crew-manifest-program-name = Crew manifest
-crew-manifest-cartridge-loading = Loading ...
-crew-manifest-cartridge-loading-failed = Failed to load crew manifest!
+crew-manifest-program-name = Маніфест екіпажу
+crew-manifest-cartridge-loading = Завантаження ...
+crew-manifest-cartridge-loading-failed = Не вдалося завантажити маніфест екіпажу!
 
-net-probe-program-name = NetProbe
-net-probe-scan = Scanned {$device}!
-net-probe-label-name = Name
-net-probe-label-address = Address
-net-probe-label-frequency = Frequency
-net-probe-label-network = Network
+net-probe-program-name = НетПроб
+net-probe-scan = Проскановано {$device}!
+net-probe-label-name = Назва
+net-probe-label-address = Адреса
+net-probe-label-frequency = Частота
+net-probe-label-network = Мережа
 
-log-probe-program-name = LogProbe
-log-probe-scan = Downloaded logs from {$device}!
-log-probe-label-time = Time
-log-probe-label-accessor = Accessed by
+log-probe-program-name = ЛогПроб
+log-probe-scan = Завантажені логи з {$device}!
+log-probe-label-time = Час
+log-probe-label-accessor = Ким використано
 log-probe-label-number = #
-log-probe-print-button = Print Logs
-log-probe-printout-device = Scanned Device: {$name}
-log-probe-printout-header = Latest logs:
+log-probe-print-button = Друк логів
+log-probe-printout-device = Просканований пристрій: {$name}
+log-probe-printout-header = Останні логи:
 log-probe-printout-entry = #{$number} / {$time} / {$accessor}
 
-astro-nav-program-name = AstroNav
+astro-nav-program-name = АстроНав
 
-med-tek-program-name = MedTek
+med-tek-program-name = МедТек
 
 # NanoTask cartridge
 
 nano-task-ui-heading-high-priority-tasks =
     { $amount ->
-        [zero] No High Priority Tasks
-        [one] 1 High Priority Task
-       *[other] {$amount} High Priority Tasks
+        [zero] Завдань з високим пріоритетом немає
+        [one] 1 Завдання з високим пріоритетом
+       *[other] {$amount} Завдання з високим пріоритетом
     }
 nano-task-ui-heading-medium-priority-tasks =
     { $amount ->
-        [zero] No Medium Priority Tasks
-        [one] 1 Medium Priority Task
-       *[other] {$amount} Medium Priority Tasks
+        [zero] Завдань з середнім пріоритетом немає
+        [one] 1 Завданя з середнім пріоритетом
+       *[other] {$amount} Завдання з середнім пріоритетом
     }
 nano-task-ui-heading-low-priority-tasks =
     { $amount ->
-        [zero] No Low Priority Tasks
-        [one] 1 Low Priority Task
-       *[other] {$amount} Low Priority Tasks
+        [zero] Завдань з низьким пріоритетом немає
+        [one] 1 Завдання з низьким пріоритетом
+       *[other] {$amount} Задвання з низьким пріоритетом
     }
-nano-task-ui-done = Done
-nano-task-ui-revert-done = Undo
-nano-task-ui-priority-low = Low
-nano-task-ui-priority-medium = Medium
-nano-task-ui-priority-high = High
-nano-task-ui-cancel = Cancel
-nano-task-ui-print = Print
-nano-task-ui-delete = Delete
-nano-task-ui-save = Save
-nano-task-ui-new-task = New Task
-nano-task-ui-description-label = Description:
-nano-task-ui-description-placeholder = Get something important
-nano-task-ui-requester-label = Requester:
-nano-task-ui-requester-placeholder = John Nanotrasen
-nano-task-ui-item-title = Edit Task
-nano-task-printed-description = [bold]Description[/bold]: {$description}
-nano-task-printed-requester = [bold]Requester[/bold]: {$requester}
-nano-task-printed-high-priority = [bold]Priority[/bold]: [color=red]High[/color]
-nano-task-printed-medium-priority = [bold]Priority[/bold]: Medium
-nano-task-printed-low-priority = [bold]Priority[/bold]: Low
+nano-task-ui-done = Виконано
+nano-task-ui-revert-done = Повернути
+nano-task-ui-priority-low = Низький
+nano-task-ui-priority-medium = Середній
+nano-task-ui-priority-high = Високий
+nano-task-ui-cancel = Скасувати
+nano-task-ui-print = Друкувати
+nano-task-ui-delete = Видалити
+nano-task-ui-save = Зберегти
+nano-task-ui-new-task = Нове завдання
+nano-task-ui-description-label = Опис:
+nano-task-ui-description-placeholder = Зробити щось важливе
+nano-task-ui-requester-label = Замовник:
+nano-task-ui-requester-placeholder = Джон Нанотрейзен
+nano-task-ui-item-title = Редагувати завдання
+nano-task-printed-description = [bold]Опис[/bold]: {$description}
+nano-task-printed-requester = [bold]Замовник[/bold]: {$requester}
+nano-task-printed-high-priority = [bold]Пріоритет[/bold]: [color=red]Високий[/color]
+nano-task-printed-medium-priority = [bold]Пріоритет[/bold]: Середній
+nano-task-printed-low-priority = [bold]Пріоритет[/bold]: Низький
 
 # Wanted list cartridge
-wanted-list-program-name = Wanted list
-wanted-list-label-no-records = It's all right, cowboy
-wanted-list-search-placeholder = Search by name and status
+wanted-list-program-name = Список розшуку
+wanted-list-label-no-records = Все гаразд, ковбою
+wanted-list-search-placeholder = Пошук за ім'ям та статусом
 
-wanted-list-age-label = [color=darkgray]Age:[/color] [color=white]{$age}[/color]
-wanted-list-job-label = [color=darkgray]Job:[/color] [color=white]{$job}[/color]
-wanted-list-species-label = [color=darkgray]Species:[/color] [color=white]{$species}[/color]
-wanted-list-gender-label = [color=darkgray]Gender:[/color] [color=white]{$gender}[/color]
+wanted-list-age-label = [color=darkgray]Вік:[/color] [color=white]{$age}[/color]
+wanted-list-job-label = [color=darkgray]Посада:[/color] [color=white]{$job}[/color]
+wanted-list-species-label = [color=darkgray]Вид:[/color] [color=white]{$species}[/color]
+wanted-list-gender-label = [color=darkgray]Гендер:[/color] [color=white]{$gender}[/color]
 
-wanted-list-reason-label = [color=darkgray]Reason:[/color] [color=white]{$reason}[/color]
-wanted-list-unknown-reason-label = unknown reason
+wanted-list-reason-label = [color=darkgray]Причина:[/color] [color=white]{$reason}[/color]
+wanted-list-unknown-reason-label = невідома причина
 
-wanted-list-initiator-label = [color=darkgray]Initiator:[/color] [color=white]{$initiator}[/color]
-wanted-list-unknown-initiator-label = unknown initiator
+wanted-list-initiator-label = [color=darkgray]Ініціатор:[/color] [color=white]{$initiator}[/color]
+wanted-list-unknown-initiator-label = невідомий ініціатор
 
-wanted-list-status-label = [color=darkgray]status:[/color] {$status ->
-        [suspected] [color=yellow]suspected[/color]
-        [wanted] [color=red]wanted[/color]
-        [detained] [color=#b18644]detained[/color]
-        [paroled] [color=green]paroled[/color]
-        [discharged] [color=green]discharged[/color]
-        [hostile] [color=darkred]hostile[/color]
-        [eliminated] [color=gray]eliminated[/color]
-        *[other] none
+wanted-list-status-label = [color=darkgray]статус:[/color] {$status ->
+        [suspected] [color=yellow]підозрюваний[/color]
+        [wanted] [color=red]розшукується[/color]
+        [detained] [color=#b18644]затриманий[/color]
+        [paroled] [color=green]достроково зв.[/color]
+        [discharged] [color=green]звільнений[/color]
+        [hostile] [color=darkred]ворожий[/color]
+        [eliminated] [color=gray]ліквідований[/color]
+        *[other] ніякого
     }
 
-wanted-list-history-table-time-col = Time
-wanted-list-history-table-reason-col = Crime
-wanted-list-history-table-initiator-col = Initiator
+wanted-list-history-table-time-col = Час
+wanted-list-history-table-reason-col = Злочин
+wanted-list-history-table-initiator-col = Ініціатор
