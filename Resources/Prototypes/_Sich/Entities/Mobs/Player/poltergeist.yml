@@ -71,6 +71,7 @@
     actions:
     - ActionBlink
     - ActionPolymorphPoltergeistJaunt
+    - ActionRepulse
 #    - ActionPoltergeistShop
 #  - type: Store
 #    categories:
