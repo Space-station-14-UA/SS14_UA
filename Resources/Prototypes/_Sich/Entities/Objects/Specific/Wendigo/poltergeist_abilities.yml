@@ -62,8 +62,8 @@
 - type: entity
   id: SichPoltergeistAbilitiesSound
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: здібності інструментів
-  description: твої здібності інструментів.
+  name: здібності грання зуків
+  description: твої здібності для грання звуків.
   suffix: полтергейст
   components:
   - type: Sprite
@@ -78,4 +78,4 @@
     - item: ScaryRuinsSoundPlayer
     - item: LavalendSoundPlayer
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: musical-module.png }
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: musical-module }
