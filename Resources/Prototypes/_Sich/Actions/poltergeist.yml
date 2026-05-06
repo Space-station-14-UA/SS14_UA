@@ -1,14 +1,14 @@
 - type: entity
   parent: ActionIntrinsicStore
   id: ActionPoltergeistShop
-  name: Купівля здібностей
-  description: відкриває магазин здібностей.
+  name: Магазин здібностей
+  description: Відкриває магазин здібностей.
 
 - type: entity
   parent: BaseActionPolymorph
   id: ActionPolymorphPoltergeistJaunt
   name: Нематеріальна форма
-  description: Перетворися на свою нематеріальну форму аби швидко перемиститися
+  description: Прийняти нематеріальну форму, що дозволяє швидке переміщення.
   components:
   - type: Magic
   - type: Action

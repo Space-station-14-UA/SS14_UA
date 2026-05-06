@@ -25,7 +25,7 @@
   parent: BaseSoundPlayer
   id: ScaryMaintenceSoundPlayer
   name: звуки залаштунків
-  description: грає звуки залаштунків.
+  description: Відтворіть звуки залаштунків.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
@@ -43,7 +43,7 @@
   parent: BaseSoundPlayer
   id: DangerSoundPlayer
   name: звуки небезпеки
-  description: грайте звуки які заставлять інших почуватися у небезпеці.
+  description: Відтворіть звуки, що змусять шкіру живих покритися сиротами.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
@@ -61,7 +61,7 @@
   parent: BaseSoundPlayer
   id: ScarySpaceSoundPlayer
   name: звуки страшного космосу
-  description: грайте звуки які заставлять інших почуватися у небезпеці.
+  description: Відтворіть звуки космосу, що змусять шкіру живих покритися сиротами.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
@@ -79,7 +79,7 @@
   parent: BaseSoundPlayer
   id: ScaryRuinsSoundPlayer
   name: звуки страшних руїн
-  description: Ідеальний різкий зук аби задати атмосферу та зробити усіх напруженими.
+  description: Відтворіть різкий звук, задля несподіваного тиску на жертв.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
@@ -97,7 +97,7 @@
   parent: BaseSoundPlayer
   id: LavalendSoundPlayer
   name: звуки лаваленду
-  description: гарний звук для нагнитання атмосфери.
+  description: Відтворіть звуки для створення гнітючої та напруженої атмосфери.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi

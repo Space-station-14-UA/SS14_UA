@@ -62,8 +62,8 @@
 - type: entity
   id: SichPoltergeistAbilitiesSound
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: здібності грання зуків
-  description: твої здібності для грання звуків.
+  name: здібності відтворення звуків
+  description: Твої здібності для відтворення звуків.
   suffix: полтергейст
   components:
   - type: Sprite

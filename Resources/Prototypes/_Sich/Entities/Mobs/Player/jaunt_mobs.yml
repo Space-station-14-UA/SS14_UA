@@ -2,7 +2,7 @@
   parent: BaseMobJaunt
   id: PoltergeistJaunt
   name: Полтергейст
-  description: Нематеріальна форма Полтергейста
+  description: Нематеріальна форма Полтергейста, якщо ви це бачите ви наврядчі вже живі.
   suffix: полтергейст нематеріальний
   components:
   - type: Sprite
