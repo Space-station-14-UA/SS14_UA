@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseSoundPlayer
-  name: програач звуку
+  name: програвач звуку
   description: грає звуки.
   suffix: полтергейст
   components:

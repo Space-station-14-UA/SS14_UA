@@ -79,7 +79,7 @@
   parent: WelderIndustrial
   id: PoltergeistWelderIndustrial
   name: промисловивй зварник
-  description: Місичний зварник зі збільшеним об'ємом палива та його регенерацією.
+  description: Містичний зварник зі збільшеним об'ємом палива та його регенерацією.
   suffix: полтергейст
   components:
   - type: ItemToggleMeleeWeapon
