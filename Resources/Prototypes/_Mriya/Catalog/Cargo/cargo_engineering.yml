@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MREngineeringToolboxCompact
+  icon:
+    sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi
+    state: icon
+  product: MRCrateEngineeringToolboxCompact
+  cost: 800
+  category: cargoproduct-category-name-engineering
+  group: market

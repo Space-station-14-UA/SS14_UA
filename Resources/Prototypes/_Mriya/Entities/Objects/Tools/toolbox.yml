@@ -1,0 +1,26 @@
+- type: entity
+  name: компактний ящік для інструментів
+  parent: ToolboxBase
+  id: MRToolboxCompact
+  description: Компактний ящік який має надзвичайно еноргімічну вбудову яка дозволяє складати в нього багато невеликих предметів.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi
+    state: icon
+  - type: Item
+    sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi
+    size: Large
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,0,0,1
+      - 1,0,1,0
+      - 4,0,4,0
+      - 6,4,6,2
+      - -1,3,-1,1
+      - 5,0,5,1
+      - 0,4,0,5
+      - 1,6,1,4
+      - 2,4,3,1
+      - 4,5,4,5
+      - 5,4,5,5

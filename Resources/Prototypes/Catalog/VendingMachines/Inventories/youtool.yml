@@ -11,6 +11,9 @@
     NetworkConfigurator: 3
     GasAnalyzer: 3
     FlashlightLantern: 5
+    #Початок змін для Мрії
+    MRToolboxCompact: 2 
+    #Кінець змін для Мрії
     ClothingHandsGlovesColorYellowBudget: 3
     SprayPainter: 3
     SprayPainterAmmo: 5
