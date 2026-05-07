@@ -68,6 +68,3 @@ trait-hemophilia-desc = Ваш організм не здатний утворю
 
 trait-impaired-mobility-name = Обмежена рухливість
 trait-impaired-mobility-desc = Вам важко пересуватися без допоміжних засобів.
-
-trait-lactose-intolerant-name = Непереносимість лактози
-trait-lactose-intolerant-desc = Викликає побічні ефекти після вживання молочних продуктів.

@@ -106,17 +106,3 @@
   category: Disabilities
   components:
     - type: ImpairedMobility
-
-- type: trait
-  id: LactoseIntolerant
-  name: trait-lactose-intolerant-name
-  description: trait-lactose-intolerant-desc
-  category: Disabilities
-  blacklist:
-    species:
-      - IPC
-  components:
-  - type: LactoseIntolerant
-    vomitDelay: 5
-    vomitCooldown: 10
-    vomitChance: 0.8
