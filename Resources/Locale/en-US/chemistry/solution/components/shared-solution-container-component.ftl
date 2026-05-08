@@ -18,7 +18,7 @@ examinable-solution-on-examine-volume-no-max = Об'єм розчину { $fillL
 
 examinable-solution-on-examine-volume-puddle = Рідина { $fillLevel ->
     [exact] [color=white]{$current}u[/color].
-    [full] вличезна та переповнена!
+    [full] величезна та переповнена!
     [mostlyfull] величезна та переповнена!
     [halffull] глибока та плинна.
     [halfempty] дуже глибока.
