@@ -197,7 +197,7 @@
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesGlassesCommand
   name: адміністративні окуляри
-  description: Оновлені сонцезахисні окуляри, які забезпечують захист від спалахів і показують статус ID-картки. 
+  description: Оновлені сонцезахисні окуляри, які забезпечують захист від спалахів і показують статус ID-картки.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/commandglasses.rsi
@@ -284,8 +284,8 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesNoir
-  name: noir-tech glasses
-  description: A pair of glasses that simulate what the world looked like before the invention of color.
+  name: окуляри нуар-тех
+  description: Пара окулярів, що імітують те, як виглядав світ до появи кольору.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/noir.rsi

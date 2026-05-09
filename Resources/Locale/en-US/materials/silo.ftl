@@ -1,10 +1,10 @@
-ore-silo-ui-title = Material Silo
-ore-silo-ui-label-clients = Machines
-ore-silo-ui-label-mats = Materials
+ore-silo-ui-title = Сховище матеріалів
+ore-silo-ui-label-clients = Устаткування
+ore-silo-ui-label-mats = Матеріали
 ore-silo-ui-itemlist-entry = {$linked ->
-    [true] {"[Linked] "}
+    [true] {"[Підключено] "}
     *[False] {""}
 } {$name} ({$beacon}) {$inRange ->
     [true] {""}
-    *[false] (Out of Range)
+    *[false] (Поза зоною дії)
 }

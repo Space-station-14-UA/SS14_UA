@@ -217,8 +217,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitGoliath
-  name: goliath hardsuit helmet
-  description: A sturdy hardsuit helmet, infused with a goliath's hide and an eerie, unblinking eye cut from its mass.
+  name: шолом скафандра Голіафа
+  description: Міцний шолом жорсткого скафандра, просочений шкірою голіафа та оснащений моторошним немиготливим оком, вирізаним із його плоті.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/goliathhelm.rsi
@@ -646,7 +646,7 @@
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitCybersun
   name: шолом скафандру Кіберсан "Джагернаут"
-  description: Цей шолом, виготовлений зі стисненого червоного матеріалу. Нажаль не має прикольних ліхтариків. І звичайних теж. 
+  description: Цей шолом, виготовлений зі стисненого червоного матеріалу. Нажаль не має прикольних ліхтариків. І звичайних теж.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
@@ -993,7 +993,7 @@
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitSanta
   name: шолом скафандру Санти
-  description: Шолом скафандру, наповнений святом та веселощами, який захистить веселого добродія від вакууму космосу. 
+  description: Шолом скафандру, наповнений святом та веселощами, який захистить веселого добродія від вакууму космосу.
   components:
   - type: BreathMask
   - type: Sprite

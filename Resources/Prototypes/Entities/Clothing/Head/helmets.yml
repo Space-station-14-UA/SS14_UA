@@ -31,8 +31,8 @@
 - type: entity
   parent: [ClothingHeadHelmetArmoredBase, BaseSecurityContraband]
   id: ClothingHeadHelmetBasic
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: шолом
+  description: Стандартне спорядження охорони. Захищає голову від ударів.
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/security.rsi
@@ -92,7 +92,7 @@
   parent: ClothingHeadHelmetSwat
   id: ClothingHeadHelmetSwatSyndicate
   name: каска КОРД
-  suffix: Синдикат 
+  suffix: Синдикат
   description: Надзвичайно міцна каска, яку зазвичай використовують воєнізовані сили. Ця прикрашена мерзенними червоними візерунком.
   components:
   - type: Sprite
@@ -446,7 +446,7 @@
   parent: [ ClothingHeadHelmetArmoredBase, BaseMinorContraband ]
   id: ClothingHeadHelmetBone
   name: шолом з кісток
-  description: Крутий шолом з черепів ваших ворогів. 
+  description: Крутий шолом з черепів ваших ворогів.
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/bone_helmet.rsi
@@ -574,8 +574,8 @@
 - type: entity
   parent: ClothingHeadHelmetBase
   id: CardHelmet
-  name: cardboard helmet
-  description: A medieval helmet built from cardboard.
+  name: картонний шолом
+  description: Середньовічний шолом, зроблений із картону.
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/card_helmet.rsi

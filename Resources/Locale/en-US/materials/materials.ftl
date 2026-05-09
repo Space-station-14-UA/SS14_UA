@@ -1,43 +1,43 @@
 # Glass
-materials-glass = glass
-materials-reinforced-glass = reinforced glass
-materials-plasma-glass = plasma glass
-materials-reinforced-plasma-glass = reinforced plasma glass
-materials-uranium-glass = uranium glass
-materials-reinforced-uranium-glass = reinforced uranium glass
+materials-glass = скло
+materials-reinforced-glass = армоване скло
+materials-plasma-glass = плазмове скло
+materials-reinforced-plasma-glass = армоване плазмове скло
+materials-uranium-glass = уранове скло
+materials-reinforced-uranium-glass = армоване уранове скло
 
 # Metals
-materials-steel = steel
-materials-gold = gold
-materials-silver = silver
-materials-plasteel = plasteel
+materials-steel = сталь
+materials-gold = золото
+materials-silver = срібло
+materials-plasteel = пласталь
 
 # Other
-materials-biomass = biomass
-materials-cardboard = cardboard
-materials-cloth = cloth
-materials-durathread = durathread
-materials-plasma = plasma
-materials-plastic = plastic
-materials-wood = wood
-materials-paper = paper
-materials-uranium = uranium
-materials-bananium = bananium
-materials-meat = meat
-materials-web = silk
-materials-bones = bone
-materials-coal = coal
-materials-diamond = diamond
-materials-gunpowder = gunpowder
-materials-cotton = cotton
+materials-biomass = біомаса
+materials-cardboard = картон
+materials-cloth = тканина
+materials-durathread = міцне волокно
+materials-plasma = плазма
+materials-plastic = пластик
+materials-wood = дерево
+materials-paper = папір
+materials-uranium = уран
+materials-bananium = бананіум
+materials-meat = м'ясний лист
+materials-web = шовк
+materials-bones = кістки
+materials-coal = вугілля
+materials-diamond = діамант
+materials-gunpowder = порох
+materials-cotton = бавовна
 
 # Ores
-materials-raw-iron = raw iron
-materials-raw-quartz = raw quartz
-materials-raw-gold = raw gold
-materials-raw-silver = raw silver
-materials-raw-plasma = raw plasma
-materials-raw-uranium = raw uranium
-materials-raw-bananium = raw bananium
-materials-raw-salt = raw salt
-materials-raw-diamond = raw diamond
+materials-raw-iron = залізна руда
+materials-raw-quartz = космічний кварц
+materials-raw-gold = золота руда
+materials-raw-silver = срібна руда
+materials-raw-plasma = плазмова руда
+materials-raw-uranium = уранова руда
+materials-raw-bananium = бананіумна руда
+materials-raw-salt = сіль
+materials-raw-diamond = діамантова руда

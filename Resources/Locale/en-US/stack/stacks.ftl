@@ -1,138 +1,138 @@
-stack-steel = steel
-stack-bananium = bananium
-stack-glass = glass
-stack-plasteel = plasteel
-stack-brass = brass
-stack-plastic = plastic
-stack-silver = silver
-stack-gold = gold
-stack-reinforced-glass = reinforced glass
-stack-plasma-glass = plasma glass
-stack-uranium = uranium
-stack-uranium-glass = uranium glass
-stack-clockwork-glass = clockwork glass
-stack-reinforced-plasma-glass = reinforced plasma glass
-stack-reinforced-uranium-glass = reinforced uranium glass
-stack-gunpowder = gunpowder
-stack-cardboard = cardboard
+stack-steel = сталі
+stack-bananium = бананіуму
+stack-glass = скла
+stack-plasteel = пласталі
+stack-brass = латуні
+stack-plastic = пластику
+stack-silver = срібла
+stack-gold = золота
+stack-reinforced-glass = армованого скла
+stack-plasma-glass = плазмового скла
+stack-uranium = урану
+stack-uranium-glass = уранового скла
+stack-clockwork-glass = годинникового скла
+stack-reinforced-plasma-glass = армованого плазмового скла
+stack-reinforced-uranium-glass = армованого уранового скла
+stack-gunpowder = пороха
+stack-cardboard = картона
 
 stack-bones = {$amount ->
-    [1] bone
-    *[other] bones
+    [1] кістку
+    *[other] кістки
 }
 stack-cloth = {$amount ->
-    [1] cloth
-    *[other] cloths
+    [1] тканину
+    *[other] тканини
 }
 stack-lv-cable = {$amount ->
-    [1] lv cable
-    *[other] lv cables
+    [1] кабель НВ
+    *[other] кабелі НВ
 }
 stack-mv-cable = {$amount ->
-    [1] mv cable
-    *[other] mv cables
+    [1] кабель СВ
+    *[other] кабелі СВ
 }
 stack-hv-cable = {$amount ->
-    [1] hv cable
-    *[other] hv cables
+    [1] кабель ВВ
+    *[other] кабелі ВВ
 }
 stack-explosive-cord = {$amount ->
-    [1] explosive cord
-    *[other] explosive cords
+    [1] детонаційний шнур
+    *[other] детонаційні шнури
 }
 stack-wood-plank = {$amount ->
-    [1] wood plank
-    *[other] wood planks
+    [1] дерев'яну дошку
+    *[other] дерев'яні дошки
 }
 stack-durathread = {$amount ->
-    [1] durathread
-    *[other] durathreads
+    [1] міцне волокно
+    *[other] міцних волокна
 }
 stack-rods = {$amount ->
-    [1] rod
-    *[other] rods
+    [1] стрижень
+    *[other] стрижні
 }
 stack-meat-sheet = {$amount ->
-    [1] meat sheet
-    *[other] meat sheets
+    [1] м'ясний лист
+    *[other] м'ясний листи
 }
 stack-space-carp-tooth = space carp {$amount ->
-    [1] tooth
-    *[other] teeth
+    [1] зуб
+    *[other] зуби
 }
 stack-paper = {$amount ->
-    [1] paper
-    *[other] papers
+    [1] папір
+    *[other] папір
 }
 stack-diamond = {$amount ->
-    [1] diamond
-    *[other] diamonds
+    [1] діамант
+    *[other] діаманти
 }
 stack-silk = {$amount ->
-    [1] silk
-    *[other] silks
+    [1] шовк
+    *[other] шовку
 }
 stack-cotton = {$amount ->
-    [1] cotton
-    *[other] cottons
+    [1] бавовну
+    *[other] бавовни
 }
-stack-artifact-fragment = artifact {$amount ->
-    [1] fragment
-    *[other] fragments
-}
+stack-artifact-fragment = {$amount ->
+    [1] фрагмент
+    *[other] фрагменти
+} артефакту
 
 # best materials
-stack-ground-tobacco = ground tobacco
-stack-ground-cannabis = ground cannabis
-stack-ground-rainbow-cannabis = ground rainbow cannabis
-stack-dried-tobacco-leaves = dried tobacco leaves
-stack-dried-cannabis-leaves = dried cannabis leaves
-stack-dried-rainbow-cannabis-leaves = dried rainbow cannabis leaves
+stack-ground-tobacco = подріблений тютюн
+stack-ground-cannabis = подріблений канабіс
+stack-ground-rainbow-cannabis = подріблений райдужний канабіс
+stack-dried-tobacco-leaves = висушене листя тютюну
+stack-dried-cannabis-leaves = висушене листя канабісу
+stack-dried-rainbow-cannabis-leaves = висушене листя райдужного канабісу
 
-stack-cigarette-filter = cigarette {$amount ->
-    [1] filter
-    *[other] filters
-}
-stack-rolling-paper = rolling {$amount ->
-    [1] paper
-    *[other] papers
-}
+stack-cigarette-filter = {$amount ->
+    [1] фільтр
+    *[other] фільтри
+} для самокруток
+stack-rolling-paper = {$amount ->
+    [1] папір
+    *[other] паперу
+} для самокруток
 
-stack-fulton = fulton
-stack-credit = speso
-stack-plasma = plasma
-stack-biomass = biomass
-stack-pyrotton = pyrotton
-stack-sharkminnow-tooth = sharkminnow tooth
-stack-goliath-hide = goliath hide
-stack-telecrystal = telecrystal
-stack-gold-ore = gold ore
-stack-rough-diamond = rough diamond
-stack-iron-ore = iron ore
-stack-plasma-ore = plasma ore
-stack-silver-ore = silver ore
-stack-space-quartz = space quartz
-stack-uranium-ore = uranium ore
-stack-bananium-ore = bananium ore
-stack-coal = coal
-stack-salt = salt
-stack-inflatable-wall = inflatable wall
-stack-inflatable-door = inflatable door
-stack-ointment = ointment
-stack-aloe-cream = aloe cream
-stack-gauze = gauze
-stack-brutepack = brutepack
-stack-bloodpack = bloodpack
-stack-medicated-suture = medicated-suture
-stack-regenerative-mesh = regenerative-mesh
-stack-micro-manipulator = modular machine part
-stack-pancake = pancake
-stack-blueberry-pancake = blueberry pancake
-stack-chocolate-chip-pancake = chocolate chip pancake
-stack-pizza-box = pizza box
-stack-dark-tile = dark tile
-stack-dark-steel-diagonal-mini-tile = dark steel diagonal mini tile
-stack-dark-steel-diagonal-tile = dark steel diagonal tile
+stack-fulton = фултони
+stack-credit = спесо
+stack-plasma = плазми
+stack-biomass = біомаси
+stack-pyrotton = вогнебавовна
+stack-sharkminnow-tooth = ікла акулячого малька
+stack-goliath-hide = шкіра голіафа
+stack-telecrystal = телекристал
+stack-gold-ore = золотої руди
+stack-rough-diamond = діамантової руди
+stack-iron-ore = залізної руди
+stack-plasma-ore = плазмової руди
+stack-silver-ore = срібної руди
+stack-space-quartz = космічного кварцу
+stack-uranium-ore = уранової руди
+stack-bananium-ore = бананієвої руди
+stack-coal = вугілля
+stack-salt = сіль
+stack-inflatable-wall = надувні барикади
+stack-inflatable-door = надувні двері
+stack-ointment = мазь від опіків
+stack-aloe-cream = крем алое
+stack-gauze = бинти
+stack-brutepack = пакет від синців
+stack-bloodpack = пакет крові
+stack-medicated-suture = медикаментозний шов
+stack-regenerative-mesh = регенеративна сітка
+stack-micro-manipulator = модульні частини машини
+stack-pancake = млинець
+stack-blueberry-pancake = чорничний млинець
+stack-chocolate-chip-pancake = млинець з шоколадними крихтами
+stack-pizza-box = коробка піци
+stack-dark-tile = темна плитка
+stack-dark-steel-diagonal-mini-tile = темна сталева дрібна діагональна плитка
+stack-dark-steel-diagonal-tile = темна сталева діагональна плитка
 stack-dark-steel-herringbone = dark steel herringbone
 stack-dark-steel-horizontal-slats-tile-bordered = dark steel bordered horizontal slat tile
 stack-dark-steel-mini-tile = dark steel mini tile

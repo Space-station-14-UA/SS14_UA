@@ -1,12 +1,12 @@
 # Emergency
-cargoproduct-description-emergencyinflatablewall = Three stacks of inflatable walls for when the stations metal walls don't want to hold atmosphere anymore.
+cargoproduct-description-emergencyinflatablewall = Три стоси надувних барикад на випадок, якщо металеві стіни станції більше не зможуть утримувати атмосферу.
 
 # Materials
-cargoproduct-name-material-gold = gold ingots
-cargoproduct-description-material-gold = 30 ingots of gold.
+cargoproduct-name-material-gold = золоті злитки
+cargoproduct-description-material-gold = 30 злитків золота.
 
-cargoproduct-name-material-plasteel = plasteel sheets
-cargoproduct-description-material-plasteel = 30 sheets of plasteel.
+cargoproduct-name-material-plasteel = листи пласталі.
+cargoproduct-description-material-plasteel = 30 листів пласталі.
 
-cargoproduct-name-material-silver = silver ingots
-cargoproduct-description-material-silver = 30 ingots of silver.
+cargoproduct-name-material-silver = срібні злитки
+cargoproduct-description-material-silver = 30 злитків срібла.

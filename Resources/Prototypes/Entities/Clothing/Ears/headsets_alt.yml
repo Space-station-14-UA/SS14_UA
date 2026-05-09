@@ -169,7 +169,7 @@
 - type: entity
   parent: [ClothingHeadsetAlt, BaseMagicalContraband]
   id: ClothingHeadsetAltWizard
-  name: wizard's over-ear headset
+  name: навушники чарівника
   components:
     - type: Headset
     - type: EncryptionKeyHolder

@@ -80,8 +80,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBagPet
-  name: pet bag
-  description: A small bag designed for use by pets and small animals.
+  name: сумка для улюбленця
+  description: Маленька сумка, призначена для використання домашніми улюбленцями та дрібними тваринами.
   components:
   - type: Sprite
     sprite: Clothing/Back/Specific/petbag.rsi
@@ -104,8 +104,8 @@
 - type: entity
   parent: Clothing
   id: ClothingBackpackHarmpack
-  name: H.A.R.M.P.A.C.K.
-  description: Now you can reload, punch, and eat a snack - simultaneously.
+  name: Х.А.Р.М.П.A.К.
+  description: Тепер ти можеш перезаряджатися, бити кулаком та їсти одночасно.
   components:
   - type: Sprite
     sprite: Clothing/Back/Specific/harmpack.rsi
@@ -126,8 +126,8 @@
 - type: entity
   parent: ClothingBackpack
   id: XenoborgMaterialBag
-  name: silicon storage square
-  description: A knockoff version of a bluespace bag, can vacumn up select materials, unfit for use by humanoids due to harmful emissions.
+  name: комірка зберігання борга
+  description: Підробна версія блюспейс-сумки, може всмоктувати окремі матеріали, непридатна для використання гуманоїдами через шкідливі викиди.
   components:
   - type: Sprite
     sprite: Objects/Specific/Robotics/silicon_storage_cube.rsi

@@ -639,8 +639,8 @@
 - type: entity
   parent: ClothingMaskClownBase
   id: ClothingMaskBlushingClown
-  name: blushing clown mask
-  description: A mask for a blushing clown.
+  name: маска почервонілого клоуна
+  description: Маска для почервонілого клоуна.
   components:
   - type: Sprite
     sprite: Clothing/Mask/blushingclown.rsi
@@ -650,8 +650,8 @@
 - type: entity
   parent: ClothingMaskMime
   id: ClothingMaskBlushingMime
-  name: blushing mime mask
-  description: Those ruddy cheeks just want to be rubbed.
+  name: маска почервонілого міма
+  description: Ці рум’яні щоки так і просять, щоб їх потерли.
   components:
   - type: Sprite
     sprite: Clothing/Mask/blushingmime.rsi
@@ -683,8 +683,8 @@
 - type: entity
   parent: [ClothingMaskMime, BaseSecurityContraband]
   id: ClothingMaskMimeSecurity
-  name: security mime mask
-  description: You have the right to remain silent.
+  name: маска міма-охоронця
+  description: Ви маєте право зберігати мовчання.
   components:
   - type: Sprite
     sprite: Clothing/Mask/mime_security.rsi
@@ -711,7 +711,7 @@
   - type: Item
     storedRotation: -90
   - type: AddAccentClothing # Sich revert remove italian
-    accent: ReplacementAccent 
+    accent: ReplacementAccent
     replacement: italian
 
 - type: entity
@@ -733,8 +733,8 @@
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskWeldingGas
-  name: welding gas mask
-  description: A gas mask with built in welding goggles and face shield. Looks like a skull, clearly designed by a nerd.
+  name: зварювальний протигаз
+  description: Протигаз із вбудованими зварювальними окулярами та захисним щитком для обличчя. Схожий на череп — явно розроблений якимось ботаном.
   components:
   - type: Sprite
     sprite: Clothing/Mask/welding-gas.rsi

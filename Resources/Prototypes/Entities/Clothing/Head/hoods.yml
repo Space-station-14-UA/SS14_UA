@@ -763,8 +763,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatHoodVoidCloak
-  name: void cloak hood
-  description: The hood of a void cloak. For those who have gone to the dark side of the force.
+  name: капюшон плаща безодні
+  description: Капюшон плаща безодні. Для тих, хто перейшов на темний бік сили.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hoods/voidcloak.rsi

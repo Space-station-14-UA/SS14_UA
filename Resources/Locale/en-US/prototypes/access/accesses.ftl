@@ -1,55 +1,55 @@
-id-card-access-level-command = Command
-id-card-access-level-captain = Captain
-id-card-access-level-head-of-personnel = Head of Personnel
-id-card-access-level-cryogenics = Cryogenics
+id-card-access-level-command = Командування
+id-card-access-level-captain = Капітан
+id-card-access-level-head-of-personnel = Голова Персоналу
+id-card-access-level-cryogenics = Кріогеніка
 id-card-access-level-emergency-shuttle-repeal = E.Shuttle Repeal All
 
-id-card-access-level-head-of-security = Head of Security
-id-card-access-level-security = Security
-id-card-access-level-armory = Armory
-id-card-access-level-brig = Brig
-id-card-access-level-detective = Detective
-id-card-access-level-genpop-enter = Enter Genpop
-id-card-access-level-genpop-leave = Leave Genpop
+id-card-access-level-head-of-security = Голова СБ
+id-card-access-level-security = Служба Безпеки
+id-card-access-level-armory = Зброярня
+id-card-access-level-brig = Бріг
+id-card-access-level-detective = Детектив
+id-card-access-level-genpop-enter = Вхід у в'язницю
+id-card-access-level-genpop-leave = Вихід з в'язниці
 
-id-card-access-level-chief-engineer = Chief Engineer
-id-card-access-level-engineering = Engineering
-id-card-access-level-atmospherics = Atmospherics
+id-card-access-level-chief-engineer = Головний Інженер
+id-card-access-level-engineering = Інженерний
+id-card-access-level-atmospherics = Атмос
 
-id-card-access-level-research-director = Research Director
-id-card-access-level-research = Research
+id-card-access-level-research-director = Директор НВ
+id-card-access-level-research = Науковий
 
-id-card-access-level-chief-medical-officer = Chief Medical Officer
-id-card-access-level-medical = Medical
-id-card-access-level-chemistry = Chemistry
-id-card-access-level-paramedic = Paramedic
+id-card-access-level-chief-medical-officer = Головний Лікар
+id-card-access-level-medical = Медичний
+id-card-access-level-chemistry = Хімік
+id-card-access-level-paramedic = Парамедик
 
-id-card-access-level-quartermaster = Quartermaster
-id-card-access-level-cargo = Cargo
-id-card-access-level-salvage = Salvage
+id-card-access-level-quartermaster = Керівник Карго
+id-card-access-level-cargo = Карго
+id-card-access-level-salvage = Шахтар
 
-id-card-access-level-bar = Bar
-id-card-access-level-kitchen = Kitchen
-id-card-access-level-hydroponics = Hydroponics
-id-card-access-level-service = Service
-id-card-access-level-janitor = Janitor
-id-card-access-level-theatre = Theatre
-id-card-access-level-chapel = Chapel
-id-card-access-level-lawyer = Lawyer
+id-card-access-level-bar = Бар
+id-card-access-level-kitchen = Кухня
+id-card-access-level-hydroponics = Ботаніка
+id-card-access-level-service = Сервіс
+id-card-access-level-janitor = Прибиральник
+id-card-access-level-theatre = Театр
+id-card-access-level-chapel = Каплиця
+id-card-access-level-lawyer = Юрист
 
-id-card-access-level-maintenance = Maintenance
+id-card-access-level-maintenance = Тех. тунелі
 
-id-card-access-level-external = External
+id-card-access-level-external = Зовнішній
 
-id-card-access-level-nuclear-operative = Nuclear Operative
-id-card-access-level-syndicate-agent = Syndicate Agent
+id-card-access-level-nuclear-operative = Ядерний Оперативник
+id-card-access-level-syndicate-agent = Агент Синдикату
 
-id-card-access-level-central-command = Central Command
+id-card-access-level-central-command = Центральне Командування
 
-id-card-access-level-wizard = Wizard
+id-card-access-level-wizard = Чарівник
 
-id-card-access-level-station-ai = Artifical Intelligence
-id-card-access-level-borg = Cyborg
-id-card-access-level-basic-silicon = Robot
+id-card-access-level-station-ai = Штучний інтелект
+id-card-access-level-borg = Кіборг
+id-card-access-level-basic-silicon = Робот
 
-id-card-access-level-basic-xenoborg = Xenoborg
+id-card-access-level-basic-xenoborg = Ксеноборг

@@ -1,21 +1,21 @@
 # Positive
-magic-9-ball-1 = Yes
-magic-9-ball-2 = YES!!!!
-magic-9-ball-3 = Without a doubt
-magic-9-ball-4 = It is certain
-magic-9-ball-5 = Outlook good
-magic-9-ball-6 = Positive
-magic-9-ball-7 = Absolutely
+magic-9-ball-1 = Так
+magic-9-ball-2 = ТАК!!!!
+magic-9-ball-3 = Без сумніву
+magic-9-ball-4 = Це безсумнівно
+magic-9-ball-5 = Прогноз сприятливий
+magic-9-ball-6 = Підтверджую
+magic-9-ball-7 = Безперечно
 
 # Negative
-magic-9-ball-8 = No
-magic-9-ball-9 = NOOO!!!!!!
-magic-9-ball-10 = No no no no no no no
-magic-9-ball-11 = Nuh uh
-magic-9-ball-12 = Nah
-magic-9-ball-13 = Negative
-magic-9-ball-14 = Absolutely not
+magic-9-ball-8 = Ні
+magic-9-ball-9 = Нііі!!!!!!
+magic-9-ball-10 = Ні ні ні ні ні ні ні
+magic-9-ball-11 = Ні-ні
+magic-9-ball-12 = Та ні
+magic-9-ball-13 = Заперечую
+magic-9-ball-14 = Ні в якому разі
 
 # Neutral
-magic-9-ball-15 = Perchance
-magic-9-ball-16 = I dunno
+magic-9-ball-15 = Можливо
+magic-9-ball-16 = Я не знаю

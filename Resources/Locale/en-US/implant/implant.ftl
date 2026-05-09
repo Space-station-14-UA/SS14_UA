@@ -1,27 +1,27 @@
 ## Implanter Attempt Messages
 
-implanter-component-implanting-target = {$user} is trying to implant you with something!
-implanter-component-implant-failed = The {$implant} cannot be given to {$target}!
-implanter-draw-failed-permanent = The {$implant} in {$target} is fused with { OBJECT($target) } and cannot be removed!
-implanter-draw-failed = You tried to remove an implant but found nothing.
-implanter-draw-failed-catastrophically = The implanter finds nothing and catastrophically fails, shunting genetic material into {$user}'s hand!
-implanter-component-implant-already = {$target} already has the {$implant}!
+implanter-component-implanting-target = {$user} намагається щось вам імплантувати!
+implanter-component-implant-failed = {$implant} не може бути застосований до {$target}!
+implanter-draw-failed-permanent = {$implant} в {$target} зрісся з { OBJECT($target) } та не може бути вилучений!
+implanter-draw-failed = Ви спробували видалити імплант, але нічого не знайшли.
+implanter-draw-failed-catastrophically = Імплантер нічого не знаходить і катастрофічно виходить з ладу, спрямовуючи генетичний матеріал у руку {$user}!
+implanter-component-implant-already = {$target} вже має {$implant}!
 
 ## UI
-implanter-set-draw-verb = Set Implant Draw
-implanter-set-draw-window = Set Implant Draw
-implanter-set-draw-info = Select the implant type this implanter should remove:
-implanter-set-draw-type = Implant type:
+implanter-set-draw-verb = Налаштувати вилучення імпланту
+implanter-set-draw-window = Налаштування вилучення імпланту
+implanter-set-draw-info = Оберіть тип імпланта, який має видалити цей імплантер:
+implanter-set-draw-type = Тип імпланту:
 
-implanter-draw-text = Draw
-implanter-inject-text = Inject
+implanter-draw-text = Вилучити
+implanter-inject-text = Ввести
 
-implanter-empty-text = Empty
+implanter-empty-text = Порожній
 
 implanter-label-inject = [color=green]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Режим: [color=white]{$modeString}[/color]
 
 implanter-label-draw = [color=red]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Режим: [color=white]{$modeString}[/color]
 
 implanter-contained-implant-text = [color=green]{$desc}[/color]

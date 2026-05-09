@@ -292,8 +292,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseMagicalContraband]
   id: ClothingHeadsetWizard
-  name: wizard headset
-  description: A headset used by the dreaded space wizards.
+  name: гарнітура чаклуна
+  description: Гарнітура, якою користуються грізні космічні чарівники.
   components:
     - type: ContainerFill
       containers:
@@ -307,8 +307,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseMajorContraband]
   id: ClothingHeadsetNinja
-  name: green headset
-  description: Who could refuse to wear this stylish black and green headset?
+  name: зелена гарнітура
+  description: Хто б міг відмовитися носити цю стильну чорно-зелену гарнітуру?
   components:
   - type: Sprite
     sprite: Clothing/Ears/Headsets/ninja.rsi

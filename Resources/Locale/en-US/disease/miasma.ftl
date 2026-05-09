@@ -1,4 +1,4 @@
-ammonia-smell = Something smells pungent!
+ammonia-smell = Відчувається різкий запах!
 
 ## Perishable
 

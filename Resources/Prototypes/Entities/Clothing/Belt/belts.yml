@@ -35,8 +35,8 @@
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltQuiver
-  name: quiver
-  description: Can hold up to 15 arrows, and fits snug around your waist.
+  name: сагайдак
+  description: Вміщує до 15 стріл і зручно фіксується на поясі.
   components:
   - type: Sprite
     sprite: Clothing/Belt/quiver.rsi
@@ -84,8 +84,8 @@
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseMagicalContraband ]
   id: ClothingBeltWand
-  name: wand belt
-  description: A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.
+  name: пояс для жезлів
+  description: Пояс, призначений для зберігання різних жезлів сили. Справжня поясна сумка для екзотичної магії.
   components:
   - type: Sprite
     sprite: Clothing/Belt/wand.rsi
@@ -203,8 +203,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingBeltMilitaryWebbing ]
   id: ClothingBeltMilitaryWebbingERT
-  name: ERT chest rig
-  description: A set of tactical webbing worn by Emergency Response Team operatives.
+  name: розвантажувальний жилет ГШР
+  description: Комплект тактичних ремінних систем, який носять оперативники групи швидкого реагування
   components:
   - type: Sprite
     sprite: Clothing/Belt/militarywebbingert.rsi

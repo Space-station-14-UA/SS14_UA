@@ -24,8 +24,8 @@
 - type: entity
   parent: ClothingHandsGlovesBoxingBase
   id: ClothingHandsGlovesBoxingRed
-  name: red boxing gloves
-  description: Red gloves for competitive boxing.
+  name: червоні боксерські рукавички
+  description: Червоні боксерські рукавички, ідеальні для спортивних змагань.
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/Boxing/boxingred.rsi
@@ -71,7 +71,7 @@
 - type: entity
   parent: ClothingHandsGlovesBoxingBase
   id: ClothingHandsGlovesBoxingYellow
-  name: Жовті боксерські рукавички
+  name: жовті боксерські рукавички
   description: Жовті боксерські рукавички, ідеальні для спортивних змагань.
   components:
   - type: Sprite
@@ -99,26 +99,26 @@
 - type: entity
   parent: [ ClothingHandsGlovesBoxingRiggedBase, ClothingHandsGlovesBoxingRed ]
   id: ClothingHandsGlovesBoxingRiggedRed
-  name: red boxing gloves
-  description: Red gloves for competitive boxing.
+  name: червоні боксерські рукавички
+  description: Червоні боксерські рукавички, ідеальні для спортивних змагань.
 
 - type: entity
   parent: [ ClothingHandsGlovesBoxingRiggedBase, ClothingHandsGlovesBoxingBlue ]
   id: ClothingHandsGlovesBoxingRiggedBlue
-  name: blue boxing gloves
-  description: Blue gloves for competitive boxing.
+  name: сині боксерські рукавички
+  description: Сині боксерські рукавички, ідеальні для спортивних змагань.
 
 - type: entity
   parent: [ ClothingHandsGlovesBoxingRiggedBase, ClothingHandsGlovesBoxingGreen ]
   id: ClothingHandsGlovesBoxingRiggedGreen
-  name: green boxing gloves
-  description: Green gloves for competitive boxing.
+  name: зелені боксерські рукавички
+  description: Зелені боксерські рукавички, ідеальні для спортивних змагань.
 
 - type: entity
   parent: [ ClothingHandsGlovesBoxingRiggedBase, ClothingHandsGlovesBoxingYellow ]
   id: ClothingHandsGlovesBoxingRiggedYellow
-  name: yellow boxing gloves
-  description: Yellow gloves for competitive boxing.
+  name: жовті боксерські рукавички
+  description: Жовті боксерські рукавички, ідеальні для спортивних змагань.
 
 - type: entity
   id: GlovesBoxingRiggedRandomSpawner

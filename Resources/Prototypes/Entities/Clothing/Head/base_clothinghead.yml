@@ -253,7 +253,7 @@
   abstract: true
   id: ClothingHeadHatHoodWinterBase
   name: base winter coat hood
-  description: A hood, made to keep your head warm.
+  description: Капюшон, створений, щоб тримати голову в теплі.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

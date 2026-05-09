@@ -1,19 +1,19 @@
 ﻿## Strings for the battery (SMES/substation) menu
 
-battery-menu-footer-left = Danger: high voltage
+battery-menu-footer-left = Небезпека: висока напруга!
 battery-menu-footer-right = 7.2 REV 6
-battery-menu-out = OUT
-battery-menu-in = IN
-battery-menu-charge-header = Charge Circuit
-battery-menu-discharge-header = Discharge Circuit
-battery-menu-storage-header = Storage Cells
-battery-menu-passthrough = Passthrough
-battery-menu-max = Max:
-battery-menu-current = Current:
-battery-menu-stored = Stored:
-battery-menu-energy = Energy:
-battery-menu-eta-full = ETA (full):
-battery-menu-eta-empty = ETA (empty):
+battery-menu-out = ВИХІД
+battery-menu-in = ВХІД
+battery-menu-charge-header = Схема заряджання
+battery-menu-discharge-header = Схема розряджання
+battery-menu-storage-header = Зарядні комірки
+battery-menu-passthrough = Передача
+battery-menu-max = Максимум:
+battery-menu-current = Поточний:
+battery-menu-stored = Заряд:
+battery-menu-energy = Енергія:
+battery-menu-eta-full = До (повний):
+battery-menu-eta-empty = До (пустий):
 battery-menu-eta-value = ~{ $minutes } min
 battery-menu-eta-value-max = >{ $minutes } min
 battery-menu-eta-value-na = N/A

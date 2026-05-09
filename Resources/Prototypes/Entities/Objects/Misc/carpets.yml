@@ -3,7 +3,7 @@
   name: килим
   parent: FloorTileItemBase
   id: FloorCarpetItemRed
-  suffix: Red
+  suffix: Червоний
   components:
   - type: Sprite
     state: carpet-red
@@ -86,7 +86,7 @@
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemSkyBlue
-  suffix: Небесно Блакитний
+  suffix: Небесно-блакитний
   components:
   - type: Sprite
     state: carpet-skyblue

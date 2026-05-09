@@ -101,7 +101,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretRND
   name: науковий берет
-  description: Берет для справжніх науковців. 
+  description: Берет для справжніх науковців.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/beret_rnd.rsi
@@ -236,8 +236,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretCommand
-  name: command beret
-  description: A beret with the Nanotrasen logo. It has an aura of authority.
+  name: берет командування
+  description: Берет із логотипом НаноТрейзен. Від нього віє авторитетом.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/beret_command.rsi
@@ -291,7 +291,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatCardborg
   name: картонна голова робота
-  description: Голова зроблена з кортону. Має прорізи для очей та рота. 
+  description: Голова зроблена з кортону. Має прорізи для очей та рота.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/cardborg_h.rsi
@@ -383,8 +383,8 @@
 - type: entity
   parent: ClothingHeadHatFedoraBrown
   id: ClothingHeadHatFedoraPress
-  name: press fedora
-  description: It has a little note stuck in the band saying "PRESS". Practically an all-access pass!
+  name: федора журналіста
+  description: На стрічці прикріплена маленька записка з написом “PRESS”. Практично перепустка всюди!
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/presshat.rsi
@@ -948,8 +948,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadWehcellentCap
-  name: wehcellent cap
-  description: "\"It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!\""
+  name: вехова кепка
+  description: "\"Це була сітчаста кепка! Тайдери носять такі постійно! У неї навіть є отвори ззаду, щоб забезпечувати протяг і вентиляцію!\""
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/wehcellentcap.rsi
@@ -1076,8 +1076,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatHolyWatermelon
-  name: watermelon halo
-  description: Holy moly.
+  name: кавуновий німб
+  description: Святі небеса.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/holyhatmelon.rsi
@@ -1543,8 +1543,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatMitreClown
-  name: honkmother mitre
-  description: It's hard for parishoners to see a banana peel on the floor when they're looking up at your glorious chapeau.
+  name: мітра Гонк-матері
+  description: Парафіянам важко помітити бананову шкірку на підлозі, коли вони дивляться вгору на твій славетний капелюх.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/mitre_clown.rsi
