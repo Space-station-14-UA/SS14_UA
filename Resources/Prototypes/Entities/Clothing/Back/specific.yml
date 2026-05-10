@@ -104,7 +104,7 @@
 - type: entity
   parent: Clothing
   id: ClothingBackpackHarmpack
-  name: Х.А.Р.М.П.A.К.
+  name: Х.А.Р.М.П.А.К.
   description: Тепер ти можеш перезаряджатися, бити кулаком та їсти одночасно.
   components:
   - type: Sprite
