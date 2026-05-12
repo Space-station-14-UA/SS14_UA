@@ -2,7 +2,7 @@
   name: компактний ящік для інструментів
   parent: ToolboxBase
   id: MRToolboxCompact
-  description: Компактний ящік який має надзвичайно еноргімічну вбудову яка дозволяє складати в нього багато невеликих предметів.
+  description: Компактний ящик який має надзвичайно ергономічну будову яка дозволяє складати в нього багато невеликих предметів, а сам ящик класти у рюкзак.
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi

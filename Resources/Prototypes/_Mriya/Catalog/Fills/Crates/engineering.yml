@@ -2,7 +2,7 @@
   parent: CrateEngineering
   id: MRCrateEngineeringToolboxCompact
   name: ящик з компактними ящиками
-  description: Містить у собі 4 компактних ящика для інструментів.
+  description: Містить у собі 4 компактних ящики для інструментів.
   components:
   - type: EntityTableContainerFill
     containers:
