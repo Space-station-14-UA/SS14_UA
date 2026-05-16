@@ -1,0 +1,6 @@
+# static
+
+- type: latheRecipePack
+  id: MRCryptoStatic
+  recipes:
+  - MRCryptoRecepy

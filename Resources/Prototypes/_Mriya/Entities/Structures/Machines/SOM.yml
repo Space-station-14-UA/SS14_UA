@@ -1,0 +1,111 @@
+- type: entity
+  id: MRSOM
+  parent: [ BaseStructure, ConstructibleMachine ]
+  name: С.О.М
+  description: Це Супер Обчислювальна Машина, яка може бути використана за для складних обчислень, таких як видобування крипти, та генерація дати.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Machines/Anomaly/ape.rsi
+    layers:
+    - state: base
+    - state: unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: firing
+      shader: unshaded
+      visible: false
+      map: ["enum.EmitterVisualLayers.Lights"]
+    - state: locked
+      shader: unshaded
+      visible: false
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: Appearance
+  - type: WiresVisuals
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+          - MachineLayer
+  - type: Animateable
+  - type: InteractionOutline
+  - type: Anchorable
+    delay: 2
+  - type: Physics
+    bodyType: Static
+  - type: Damageable
+    damageContainer: MRSOMDamageContainer
+    damageModifierSet: MRSOMmodifire
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: TemperatureDamage
+    heatDamageThreshold: 400 # 126.85 C*
+    coldDamageThreshold: 253 # -20.15 C*
+    coldDamage:
+      types:
+        Cold: 5 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 5 #per second, scales with temperature & other constants
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 1 #per second, scales with pressure and other constants.
+  - type: WiresPanel
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: Repairable
+  - type: Pullable
+  - type: StaticPrice
+    price: 1000
+  - type: Emitter
+    onState: firing
+    powerUseActive: 50000
+    boltType: MRRandomCrypto
+    underpoweredState: underpowered
+    selectableTypes:
+    - MRRandomCrypto
+    - AnomalousParticleEpsilon
+    fireBurstSize: 1
+    fireBurstDelayMin: 1
+    fireBurstDelayMax: 1
+  - type: Gun
+    projectileSpeed: 10
+    fireRate: 10
+    showExamineText: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: PowerConsumer
+    voltage: High
+    drawRate: 100
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower

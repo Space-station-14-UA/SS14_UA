@@ -1,0 +1,55 @@
+# тут усілякі костилі зі спавнерами аби С.О.М працював
+
+- type: entity
+  id: MRRandomCrypto
+  name: Генерація випадкової криптовалюти
+  parent: MRRandomSpawnerBase
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/coins.rsi
+    state: coin_gold
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        weight: 100
+        prob: 1
+        children:
+        - id: MREballSpawner
+        - id: MREPotujnoCoinSpawner
+
+# спавнери столів
+
+- type: entity
+  parent: MarkerBase
+  id: MREballSpawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotEballTable
+        
+- type: entity
+  parent: MarkerBase
+  id: MREPotujnoCoinSpawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotPotujnoCoinTable
+
+# столи 
+       
+- type: entityTable
+  id: MRHotEballTable
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MREball
+    
+- type: entityTable
+  id: MRHotPotujnoCoinTable
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MRPotujnoCoin

@@ -1,0 +1,12 @@
+
+- type: latheRecipe
+  id: MRBaseSOMRecepy
+  abstract: true
+  completetime: 1
+  materials:
+    Steel: 1
+  
+- type: latheRecipe
+  parent: MRBaseSOMRecepy
+  id: MRCryptoRecepy
+  result: MRRandomCrypto
