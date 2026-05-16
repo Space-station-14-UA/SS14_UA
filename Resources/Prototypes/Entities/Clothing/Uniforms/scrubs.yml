@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: UniformScrubsColorPurple
-  name: purple scrubs
-  description: A combination of comfort and utility intended to make removing every last organ someone has and selling them to a space robot much more official looking.
+  name: фіолетовий медичний костюм
+  description: Поєднання комфорту та практичності, створений для того, щоб процес вилучення абсолютно всіх органів у когось та їх продажу космічному роботу мав куди більш офіційний вигляд.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Scrubs/purple.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: UniformScrubsColorGreen
-  name: green scrubs
-  description: A combination of comfort and utility intended to make removing every last organ someone has and selling them to a space robot much more official looking.
+  name: зелений медичний костюм
+  description: Поєднання комфорту та практичності, створений для того, щоб процес вилучення абсолютно всіх органів у когось та їх продажу космічному роботу мав куди більш офіційний вигляд.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Scrubs/green.rsi
@@ -23,8 +23,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: UniformScrubsColorBlue
-  name: blue scrubs
-  description: A combination of comfort and utility intended to make removing every last organ someone has and selling them to a space robot much more official looking.
+  name: синій медичний костюм
+  description: Поєднання комфорту та практичності, створений для того, щоб процес вилучення абсолютно всіх органів у когось та їх продажу космічному роботу мав куди більш офіційний вигляд.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Scrubs/blue.rsi
