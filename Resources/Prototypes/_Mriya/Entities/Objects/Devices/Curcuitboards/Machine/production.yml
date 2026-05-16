@@ -1,0 +1,15 @@
+- type: entity
+  id: MRSOMSuperComputingBlock
+  parent: BaseMachineCircuitboard
+  name: супер обчислювальний блок
+  description: Надзвичайно складний та потужний обчислювальний блок, який напичканий усілякою електронікою. Є необхідним для будови супер обчислюальної машини, та має написану інструкцію по її побудові на ньому.
+  components:
+    - type: MachineBoard
+      prototype: MRSOM
+      stackRequirements:
+        Manipulator: 10
+        Glass: 20
+        Steel: 30
+        Plasma: 10
+        Cable: 30
+        CableHV: 30

@@ -48,7 +48,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -57,15 +57,19 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: AtmosExposed
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 400 # 126.85 C*
     coldDamageThreshold: 253 # -20.15 C*
     coldDamage:
       types:
-        Cold: 5 #per second, scales with temperature & other constants
+        Cold: 2.5 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat: 5 #per second, scales with temperature & other constants
+        Heat: 2.5 #per second, scales with temperature & other constants
   - type: Barotrauma
     damage:
       types:
@@ -80,6 +84,8 @@
   - type: Pullable
   - type: StaticPrice
     price: 1000
+  - type: Machine
+    board: MRSOMSuperComputingBlock
   - type: Emitter
     onState: firing
     powerUseActive: 50000
@@ -87,10 +93,10 @@
     underpoweredState: underpowered
     selectableTypes:
     - MRRandomCrypto
-    - AnomalousParticleEpsilon
-    fireBurstSize: 1
-    fireBurstDelayMin: 1
-    fireBurstDelayMax: 1
+    - MRRandomDisk
+    fireBurstSize: 0
+    fireBurstDelayMin: 60 # стриляє раз на хвилину
+    fireBurstDelayMax: 60
   - type: Gun
     projectileSpeed: 10
     fireRate: 10

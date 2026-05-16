@@ -10,7 +10,7 @@
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 5000
+    price: 500
 
 - type: entity
   parent: MRPotujnoCoin
@@ -24,4 +24,4 @@
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 10000
+    price: 1200
