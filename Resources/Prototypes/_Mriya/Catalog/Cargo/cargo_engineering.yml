@@ -7,3 +7,13 @@
   cost: 800
   category: cargoproduct-category-name-engineering
   group: market
+  
+- type: cargoProduct
+  id: MRSOMSuperComputingBlock
+  icon:
+    sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi
+    state: icon
+  product: MRCrateEngineeringSOMSuperComputingBlock
+  cost: 10000
+  category: cargoproduct-category-name-engineering
+  group: market
