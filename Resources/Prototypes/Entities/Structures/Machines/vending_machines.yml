@@ -715,7 +715,7 @@
   parent: VendingMachine
   id: VendingMachineDrGibb
   name: Автомат Доктора Гібба
-  description: Вибух різноманіття смаків саме у Доктора Гібба! 
+  description: Вибух різноманіття смаків саме у Доктора Гібба!
   components:
   - type: VendingMachine
     pack: DrGibbInventory
@@ -1081,8 +1081,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineSnack
-  name: Гелловінський Автомат Вафл Корп
-  description: Святковий варіант автомату із солодощами Вафл корп, які точно не викликають залежність! Як він працює? Ну, вам точно не варто розбивати його щоб це дізнатися...
+  name: Автомат Вафл Корп
+  description: Автомат із солодощами Вафл Корп, які точно не викликають залежність! Як він працює? Ну, вам точно не варто розбивати його щоб це дізнатися...
   components:
   - type: VendingMachine
     pack: GetmoreChocolateCorpInventory
@@ -1099,7 +1099,7 @@
   - type: SpeakOnUIClosed
     pack: GetmoreChocolateCorpGoodbyes
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/Halloween_Snack.rsi
+    sprite: Structures/Machines/VendingMachines/snack.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -1149,7 +1149,7 @@
   suffix: Blue
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/Halloween_Snack.rsi
+    sprite: Structures/Machines/VendingMachines/snack-blue.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -1169,7 +1169,7 @@
   suffix: Orange
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/Halloween_Snack.rsi
+    sprite: Structures/Machines/VendingMachines/snack-orange.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -1189,7 +1189,7 @@
   suffix: Green
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/Halloween_Snack.rsi
+    sprite: Structures/Machines/VendingMachines/snack-green.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -1209,7 +1209,7 @@
   suffix: Teal
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/Halloween_Snack.rsi
+    sprite: Structures/Machines/VendingMachines/snack-teal.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
@@ -1945,7 +1945,7 @@
   parent: VendingMachine
   id: VendingMachineSciDrobe
   name: НаукОдягМат
-  description: Простий торговий автомат, придатний для видачі добре пошитого та (не) вогнестійкого наукового одягу. 
+  description: Простий торговий автомат, придатний для видачі добре пошитого та (не) вогнестійкого наукового одягу.
   components:
   - type: VendingMachine
     pack: SciDrobeInventory
