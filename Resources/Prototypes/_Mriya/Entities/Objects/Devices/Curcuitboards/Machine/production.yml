@@ -13,6 +13,9 @@
         Plasma: 10
         Cable: 30
         CableHV: 30
+    - type: Tag
+      tags:
+      - MRSOMSuperComputingBlock
 
 - type: entity
   id: MRSOMSuperComputingBlockUpgraded

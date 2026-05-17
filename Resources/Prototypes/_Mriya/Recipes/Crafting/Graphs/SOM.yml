@@ -6,8 +6,16 @@
       edges:
         - to: somUpgradedBlock
           steps:
-            - component: MRSOMUpgrade
-            - component: MRSOMSuperComputingBlock
+            - tag:  MRSOMUpgrade
+              name: набір покращення для С.О.М
+              icon:
+                sprite: Objects/Misc/module.rsi
+                state: generic
+            - tag:  MRSOMSuperComputingBlock
+              name: супер обчислювальний блок
+              icon:
+                sprite: Objects/Misc/module.rsi
+                state: generic
               doAfter: 10
     - node: somUpgradedBlock
       entity: MRSOMSuperComputingBlockUpgraded

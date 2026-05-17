@@ -119,7 +119,7 @@
 
 - type: entity
   id: MRSOMUpgraded
-  parent: [ BaseStructure, ConstructibleMachine ]
+  parent: MRSOM
   name: Покращений С.О.М
   description: Це Покращенна Супер Обчислювальна Машина, яка може бути використана за для складних обчислень, таких як видобування крипти, та генерація дати, але при цьому генерує купу гарячого СО2.
   components:
@@ -152,3 +152,5 @@
     fireBurstSize: 1
     fireBurstDelayMin: 60 # стриляє раз на хвилину
     fireBurstDelayMax: 60
+  - type: Machine
+    board: MRSOMSuperComputingBlockUpgraded

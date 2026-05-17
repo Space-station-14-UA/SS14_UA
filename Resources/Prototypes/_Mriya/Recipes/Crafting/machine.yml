@@ -1,6 +1,6 @@
 - type: construction
   id: somUpgradedBlock
-  graph: somUpgradedBlock
+  graph: MRSOMUpgrade
   startNode: start
   targetNode: somUpgradedBlock
   category: construction-category-misc
