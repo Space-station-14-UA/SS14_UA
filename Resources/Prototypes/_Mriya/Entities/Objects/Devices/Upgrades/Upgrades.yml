@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseItem
+  id: MRSOMUpgrade
+  name: набір покращенні для С.О.М
+  description: Це набір для покращення швидкості праці С.О.М. За допомогою нього С.О.М буде вичисляти дві речі за раз. Аби покращіти С.О.М за допопмогою цього, треба його використати на його обчислювальному блоці.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: generic
+    - type: Construction
+      graph: MRSOMUpgrade
+      node: somUpgrade

@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: MRSOMUpgrade
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: somUpgradedBlock
+          steps:
+            - component: MRSOMUpgrade
+            - component: MRSOMSuperComputingBlock
+              doAfter: 10
+    - node: somUpgradedBlock
+      entity: MRSOMSuperComputingBlockUpgraded
