@@ -1,12 +1,11 @@
 
 - type: latheRecipe
-  id: MRBaseSOMRecepy
-  abstract: true
+  id: MRSOMUpgradeRecepy
   completetime: 1
+  result: MRSOMUpgrade
   materials:
-    Steel: 1
-  
-- type: latheRecipe
-  parent: MRBaseSOMRecepy
-  id: MRCryptoRecepy
-  result: MRRandomCrypto
+    Steel: 1000
+    Plasma: 1000
+    Gold: 1000
+    Silver: 1000
+    Dimond: 100

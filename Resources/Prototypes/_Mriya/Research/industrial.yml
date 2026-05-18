@@ -1,0 +1,14 @@
+
+# T2
+
+- type: technology
+  id: MRSOMUpgradeReseurche
+  name: research-technology-upgraded-calculations
+  icon:
+    sprite: Objects/Tools/handdrilldiamond.rsi
+    state: handdrill
+  discipline: Industrial
+  tier: 2
+  cost: 14000
+  recipeUnlocks:
+    - MRSOMUpgradeRecepy

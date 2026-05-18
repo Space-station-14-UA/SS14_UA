@@ -1,6 +1,9 @@
 # static
 
+
+# Dynamic
+
 - type: latheRecipePack
-  id: MRCryptoStatic
+  id: MRImprovedCalcuations
   recipes:
-  - MRCryptoRecepy
+  - MRSOMUpgradeRecepy
