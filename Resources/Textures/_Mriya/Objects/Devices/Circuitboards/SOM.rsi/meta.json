@@ -8,27 +8,7 @@
   },
   "states": [
     {
-      "name": "crypto_potujno",
-	  "delays": [
-         [
-        0.1,
-	    0.1,
-        0.1,
-		0.1,
-        0.1,
-        0.1,
-	    0.1,
-        0.1,
-		0.1,
-        0.1,
-        0.1,
-	    0.1,
-        0.1
-      ]
-        ]
-    },
-    {
-      "name": "crypto_E-bal",
+      "name": "super_computing_block",
 	  "delays": [
          [
         0.1,

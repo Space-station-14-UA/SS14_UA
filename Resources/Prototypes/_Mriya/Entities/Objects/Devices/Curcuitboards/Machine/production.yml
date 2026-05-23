@@ -4,6 +4,9 @@
   name: супер обчислювальний блок
   description: Надзвичайно складний та потужний обчислювальний блок, який напичканий усілякою електронікою. Є необхідним для будови супер обчислюальної машини, та має написану інструкцію по її побудові на ньому.
   components:
+    - type: Sprite
+      sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+      state: super_computing_block
     - type: MachineBoard
       prototype: MRSOM
       stackRequirements:
