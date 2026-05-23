@@ -87,6 +87,7 @@
   - type: Machine
     board: MRSOMSuperComputingBlock
   - type: Emitter
+    underpoweredState: underpowered
     onState: firing
     powerUseActive: 50000
     boltType: MRRandomCrypto
@@ -115,6 +116,13 @@
       input:
         !type:CableDeviceNode
         nodeGroupID: HVPower
+  - type: Lock
+    locked: false
+  - type: LockVisuals
+  - type: LockedAnchorable
+  - type: LockedWiresPanel
+  - type: AccessReader
+    access: [[ "Engineering" ]]
 
 
 - type: entity

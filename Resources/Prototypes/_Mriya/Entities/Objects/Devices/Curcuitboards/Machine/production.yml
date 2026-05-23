@@ -7,6 +7,8 @@
     - type: Sprite
       sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
       state: super_computing_block
+    - type: Item
+      size: Normal
     - type: MachineBoard
       prototype: MRSOM
       stackRequirements:
@@ -29,6 +31,8 @@
     - type: Sprite
       sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
       state: super_computing_block_upgaded
+    - type: Item
+      size: Normal
     - type: MachineBoard
       prototype: MRSOMUpgraded
       stackRequirements:

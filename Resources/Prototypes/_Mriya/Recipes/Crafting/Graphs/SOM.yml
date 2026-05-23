@@ -9,13 +9,13 @@
             - tag:  MRSOMUpgrade
               name: набір покращення для С.О.М
               icon:
-                sprite: Objects/Misc/module.rsi
-                state: generic
+                sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
+                state: icon
             - tag:  MRSOMSuperComputingBlock
               name: супер обчислювальний блок
               icon:
-                sprite: Objects/Misc/module.rsi
-                state: generic
+                sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+                state: super_computing_block
               doAfter: 10
     - node: somUpgradedBlock
       entity: MRSOMSuperComputingBlockUpgraded

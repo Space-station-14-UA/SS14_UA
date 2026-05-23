@@ -5,8 +5,8 @@
   id: MRSOMUpgradeReseurche
   name: research-technology-upgraded-calculations
   icon:
-    sprite: Objects/Tools/handdrilldiamond.rsi
-    state: handdrill
+    sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
+    state: icon
   discipline: Industrial
   tier: 2
   cost: 14000
