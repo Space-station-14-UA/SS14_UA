@@ -5,12 +5,12 @@
   description: Це напечатаний у фізичному вигляді, потужно коїн. Він є доволі цінним, тому карго будуть дуже раді його продати.
   components:
   - type: Sprite
-    sprite: Objects/Misc/coins.rsi
-    state: coin_iron
+    sprite: _Mriya/Objects/Specific/crypto.rsi
+    state: crypto_potujno
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 500
+    price: 800
 
 - type: entity
   parent: MRPotujnoCoin
@@ -19,9 +19,9 @@
   description: Це напечатаний у фізичному вигляді Є-бал. Він є доволі цінним, тому карго будуть дуже раді його продати.
   components:
   - type: Sprite
-    sprite: Objects/Misc/coins.rsi
-    state: coin_gold
+    sprite: _Mriya/Objects/Specific/crypto.rsi
+    state: crypto_E-bal
   - type: Item
     size: Tiny
   - type: StaticPrice
-    price: 1200
+    price: 1500
