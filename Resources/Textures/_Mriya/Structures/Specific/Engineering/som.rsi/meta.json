@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage404",
+  "copyright": "drawn by svetoslav228",
   "size": {
     "x": 96,
     "y": 96
@@ -11,7 +11,15 @@
       "name": "base"
     },
     {
-      "name": "firing"
+      "name": "firing",
+	  "delays": [
+         [
+        0.2,
+	    0.2,
+        0.2,
+		0.2
+      ]
+        ]
     },
     {
       "name": "locked"

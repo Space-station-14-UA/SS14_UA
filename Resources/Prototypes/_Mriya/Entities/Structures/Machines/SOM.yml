@@ -7,6 +7,7 @@
   - type: Sprite
     noRot: true
     sprite: _Mriya/Structures/Specific/Engineering/som.rsi
+    drawdepth: Mobs
     layers:
     - state: base
     - state: unshaded
