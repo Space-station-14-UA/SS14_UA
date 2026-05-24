@@ -44,6 +44,7 @@
   components:
     - type: Sprite
       sprite: _Mriya/Structures/Specific/Engineering/gas_burst.rsi
+      drawdepth: Mobs
       state: gas_burst
     - type: GasMiner
       spawnGas: CarbonDioxide

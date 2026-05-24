@@ -8,6 +8,7 @@
     noRot: true
     sprite: _Mriya/Structures/Specific/Engineering/som.rsi
     drawdepth: Mobs
+    offset: 0,1
     layers:
     - state: base
     - state: unshaded
@@ -133,9 +134,11 @@
   components:
   - type: Sprite
     noRot: true
-    sprite: Structures/Machines/Anomaly/ape.rsi
+    sprite: _Mriya/Structures/Specific/Engineering/som.rsi
+    drawdepth: Mobs
+    offset: 0,1
     layers:
-    - state: base
+    - state: upgraded
     - state: unshaded
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
