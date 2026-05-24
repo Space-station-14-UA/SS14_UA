@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     noRot: true
-    sprite: Structures/Machines/Anomaly/ape.rsi
+    sprite: _Mriya/Structures/Specific/Engineering/som.rsi
     layers:
     - state: base
     - state: unshaded
@@ -29,12 +29,12 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.4"
-        density: 190
+          bounds: "-1.5,-0.5,1.5,0.6"
+        density: 50
         mask:
-        - MachineMask
+        - LargeMobMask
         layer:
-          - MachineLayer
+        - WallLayer
   - type: Animateable
   - type: InteractionOutline
   - type: Anchorable
@@ -87,7 +87,6 @@
   - type: Machine
     board: MRSOMSuperComputingBlock
   - type: Emitter
-    underpoweredState: underpowered
     onState: firing
     powerUseActive: 50000
     boltType: MRRandomCrypto

@@ -8,22 +8,22 @@
   },
   "states": [
     {
-      "name": "base",
+      "name": "base"
     },
     {
-      "name": "firing",
+      "name": "firing"
     },
     {
-      "name": "locked",
+      "name": "locked"
     },
     {
-      "name": "panel",
+      "name": "panel"
     },
     {
-      "name": "underpowered",
+      "name": "underpowered"
     },
     {
-      "name": "unshaded",
+      "name": "unshaded"
     }
   ]
 }
