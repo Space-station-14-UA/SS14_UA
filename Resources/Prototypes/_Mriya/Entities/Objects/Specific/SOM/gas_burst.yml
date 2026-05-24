@@ -42,6 +42,9 @@
   placement:
     mode: SnapgridCenter
   components:
+    - type: Sprite
+      sprite: _Mriya/Structures/Specific/Engineering/gas_burst.rsi
+      state: gas_burst
     - type: GasMiner
       spawnGas: CarbonDioxide
       spawnTemperature: 2000
