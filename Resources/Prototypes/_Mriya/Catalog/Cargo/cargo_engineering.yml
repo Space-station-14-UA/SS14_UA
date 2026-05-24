@@ -11,8 +11,8 @@
 - type: cargoProduct
   id: MRSOMSuperComputingBlock
   icon:
-    sprite: _Mriya/Objects/Tools/Toolboxes/toolbox_compact.rsi
-    state: icon
+    sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+    state: super_computing_block
   product: MRCrateEngineeringSOMSuperComputingBlock
   cost: 10000
   category: cargoproduct-category-name-engineering
