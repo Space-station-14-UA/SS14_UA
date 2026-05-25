@@ -7,12 +7,12 @@
         - to: somUpgradedBlock
           steps:
             - tag:  MRSOMUpgrade
-              name: набір покращення для С.О.М
+              name: som-upgrade-kit
               icon:
                 sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
                 state: icon
             - tag:  MRSOMSuperComputingBlock
-              name: супер обчислювальний блок
+              name: som-super-computing-block
               icon:
                 sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
                 state: super_computing_block
