@@ -1,4 +1,4 @@
-## розділи
+# розділи
 
 - type: guideEntry
   id: MRIndustrialProduction
@@ -7,7 +7,7 @@
   children:
     - MRSOMGuide
 
-## гайди
+# гайди
 
 - type: guideEntry
   id: MRSOMGuide

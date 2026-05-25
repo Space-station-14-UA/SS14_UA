@@ -141,6 +141,9 @@
   - type: LockedWiresPanel
   - type: AccessReader
     access: [[ "Engineering" ]]
+  - type: GuideHelp
+    guides:
+    - MRSOMGuide
 
 
 - type: entity
