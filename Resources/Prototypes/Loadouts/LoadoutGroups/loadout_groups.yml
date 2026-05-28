@@ -256,7 +256,7 @@
   loadouts:
   - PassengerFace
 
-# MR. "Why is this added"
+# MR. Adds student graduation hat as a head loadout for passengers (contributor sponsor only)
 - type: loadoutGroup
   id: PassengerHead
   name: loadout-group-passenger-head
@@ -1043,7 +1043,7 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorBeret
-  # MR. "Why is this added"
+  # MR. Contributor sponsor student hat option for Research Director
   - MRStudenthat
 
 - type: loadoutGroup
@@ -1090,10 +1090,10 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
-  # MR. "Why is this added"
+  # MR. Contributor sponsor student hat option for Scientist
   - MRStudenthat
 
-# MR. "Why is this added"
+# MR. Adds student graduation hat as a head loadout for Research Assistant (contributor sponsor only)
 - type: loadoutGroup
   id: ResearchAssistantHead
   name: loadout-group-research-assistant-head

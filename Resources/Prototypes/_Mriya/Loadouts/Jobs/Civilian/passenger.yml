@@ -420,8 +420,7 @@
     outerClothing: ClothingOuterCoatJensen
   sponsorTag: "sponsorOuterclothing_2"
 
-# Student hat (contributor sponsor only)
-# MR. "Why is this added"
+# MR. Student graduation hat — coded by Crvenih, drawn by Pyrizhok_333x2
 - type: loadout
   id: MRStudenthat
   equipment:
