@@ -50,6 +50,8 @@
   - PassengerGloves
   - PassengerOuterClothing
   - PassengerShoes
+  # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+  - PassengerHead
   - Glasses
   - Survival
   - Trinkets
@@ -359,6 +361,8 @@
   id: JobResearchAssistant
   groups:
   - GroupTankHarness
+  # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+  - ResearchAssistantHead
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses

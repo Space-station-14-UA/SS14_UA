@@ -310,6 +310,14 @@
 #  minLimit: 0
 #  loadouts: []
 
+# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadoutGroup
+  id: PassengerHead
+  name: loadout-group-passenger-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
+
 - type: loadoutGroup
   id: BartenderHead
   name: loadout-group-bartender-head
@@ -1035,6 +1043,9 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorBeret
+  # MRIYA DOWN
+  # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1080,6 +1091,9 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
+  # MRIYA DOWN
+  # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ScientistNeck
@@ -1161,6 +1175,14 @@
 #  name: loadout-group-jobtrinkets
 #  minLimit: 0
 #  loadouts:
+
+# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadoutGroup
+  id: ResearchAssistantHead
+  name: loadout-group-research-assistant-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
 
 # Security
 - type: loadoutGroup
