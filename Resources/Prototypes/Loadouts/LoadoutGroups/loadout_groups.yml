@@ -256,14 +256,6 @@
   loadouts:
   - PassengerFace
 
-# MR. Adds student graduation hat as a head loadout for passengers (contributor sponsor only)
-- type: loadoutGroup
-  id: PassengerHead
-  name: loadout-group-passenger-head
-  minLimit: 0
-  loadouts:
-  - MRStudenthat
-
 - type: loadoutGroup
   id: PassengerGloves
   name: loadout-group-passenger-gloves
