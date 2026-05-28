@@ -1,2 +1,6 @@
-# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-# MRStudenthat added inline to ScientistHead in main loadout_groups.yml
+# MR. "Student graduation hat — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadout
+  id: MRStudenthat
+  equipment:
+    head: MRStudenthat
+  sponsorTag: "contributor"
