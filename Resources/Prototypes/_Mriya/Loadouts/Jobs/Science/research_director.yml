@@ -1,3 +1,8 @@
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-# The MRStudenthat loadout is defined in _Mriya/Loadouts/Jobs/Civilian/passenger.yml
-# and added to ResearchDirectorHead group in _Mriya/Loadouts/LoadoutGroups/loadout_groups.yml
+- type: loadoutGroup
+  id: ResearchDirectorHead
+  name: loadout-group-research-director-head
+  minLimit: 0
+  loadouts:
+  - ResearchDirectorBeret
+  - MRStudenthat

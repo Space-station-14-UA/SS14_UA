@@ -1,4 +1,21 @@
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-# The MRStudenthat loadout is defined in _Mriya/Loadouts/Jobs/Civilian/passenger.yml
-# and wired via ResearchAssistantHead group and JobResearchAssistant role loadout
-# in _Mriya/Loadouts/LoadoutGroups/loadout_groups.yml and _Mriya/Loadouts/RoleLoadouts/role_loadouts.yml
+- type: loadoutGroup
+  id: ResearchAssistantHead
+  name: loadout-group-research-assistant-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
+
+# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: roleLoadout
+  id: JobResearchAssistant
+  groups:
+  - GroupTankHarness
+  - ResearchAssistantHead
+  - ResearchAssistantJumpsuit
+  - ScientistBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  #- ResearchAssistantJobTrinkets
+  - GroupSpeciesBreathTool

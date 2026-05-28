@@ -16,17 +16,3 @@
   - Trinkets
   #- PassengerJobTrinkets
   - GroupSpeciesBreathTool
-
-# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: roleLoadout
-  id: JobResearchAssistant
-  groups:
-  - GroupTankHarness
-  - ResearchAssistantHead
-  - ResearchAssistantJumpsuit
-  - ScientistBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  #- ResearchAssistantJobTrinkets
-  - GroupSpeciesBreathTool
