@@ -1,3 +1,10 @@
+# MR. "Student graduation hat — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadout
+  id: MRStudenthat
+  equipment:
+    head: MRStudenthat
+  sponsorTag: "contributor"
+
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
 - type: loadoutGroup
   id: PassengerHead
