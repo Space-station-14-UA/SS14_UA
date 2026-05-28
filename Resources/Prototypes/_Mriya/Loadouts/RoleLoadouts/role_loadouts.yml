@@ -2,10 +2,29 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
+  - GroupTankHarness
+  - PassengerJumpsuit
+  - CommonBackpack
+  - PassengerNeck
+  - PassengerFace
+  - PassengerGloves
+  - PassengerOuterClothing
+  - PassengerShoes
   - PassengerHead
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
 
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
 - type: roleLoadout
   id: JobResearchAssistant
   groups:
+  - GroupTankHarness
   - ResearchAssistantHead
+  - ResearchAssistantJumpsuit
+  - ScientistBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
