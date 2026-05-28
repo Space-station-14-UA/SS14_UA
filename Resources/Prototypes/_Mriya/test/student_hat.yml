@@ -1,0 +1,80 @@
+# MR. "Why is this added"
+# Student hat loadout group
+- type: loadoutGroup
+  id: MRStudentHatHead
+  name: loadout-group-mr-student-hat-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
+
+# MR. "Why is this added"
+# Passenger role loadout with student hat
+- type: roleLoadout
+  id: JobPassenger
+  groups:
+  - GroupTankHarness
+  - PassengerJumpsuit
+  - CommonBackpack
+  - PassengerNeck
+  - PassengerFace
+  - MRStudentHatHead
+  - PassengerGloves
+  - PassengerOuterClothing
+  - PassengerShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+# MR. "Why is this added"
+# Research Director role loadout with student hat
+- type: roleLoadout
+  id: JobResearchDirector
+  groups:
+  - GroupTankHarness
+  - ResearchDirectorHead
+  - ResearchDirectorNeck
+  - ResearchDirectorJumpsuit
+  - ScientistBackpack
+  - ResearchDirectorOuterClothing
+  - ScientistGloves
+  - ResearchDirectorShoes
+  - Glasses
+  - MRStudentHatHead
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+# MR. "Why is this added"
+# Scientist role loadout with student hat
+- type: roleLoadout
+  id: JobScientist
+  groups:
+  - GroupTankHarness
+  - ScientistHead
+  - ScientistNeck
+  - ScientistJumpsuit
+  - ScientistBackpack
+  - ScientistOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - ScientistPDA
+  - Glasses
+  - MRStudentHatHead
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+# MR. "Why is this added"
+# Research Assistant role loadout with student hat
+- type: roleLoadout
+  id: JobResearchAssistant
+  groups:
+  - GroupTankHarness
+  - ResearchAssistantJumpsuit
+  - ScientistBackpack
+  - Glasses
+  - MRStudentHatHead
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

@@ -420,6 +420,14 @@
     outerClothing: ClothingOuterCoatJensen
   sponsorTag: "sponsorOuterclothing_2"
 
+# Student hat (contributor sponsor only)
+# MR. "Why is this added"
+- type: loadout
+  id: MRStudenthat
+  equipment:
+    head: MRStudenthat
+  sponsorTag: "contributor"
+
 # Shoes
 
 - type: loadout
