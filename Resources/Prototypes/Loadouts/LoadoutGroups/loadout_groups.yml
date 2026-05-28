@@ -256,6 +256,14 @@
   loadouts:
   - PassengerFace
 
+# MR. "Why is this added"
+- type: loadoutGroup
+  id: PassengerHead
+  name: loadout-group-passenger-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
+
 - type: loadoutGroup
   id: PassengerGloves
   name: loadout-group-passenger-gloves
@@ -1035,6 +1043,8 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorBeret
+  # MR. "Why is this added"
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1080,6 +1090,16 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
+  # MR. "Why is this added"
+  - MRStudenthat
+
+# MR. "Why is this added"
+- type: loadoutGroup
+  id: ResearchAssistantHead
+  name: loadout-group-research-assistant-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ScientistNeck
