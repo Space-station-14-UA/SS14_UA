@@ -40,6 +40,7 @@ loadout-group-passenger-mask = Passenger mask
 loadout-group-passenger-gloves = Passenger gloves
 loadout-group-passenger-outerclothing = Passenger outer clothing
 loadout-group-passenger-shoes = Passenger shoes
+loadout-group-passenger-head = Passenger head
 loadout-group-passenger-neck = Passenger neck
 
 loadout-group-bartender-head = Bartender head
@@ -147,6 +148,7 @@ loadout-group-scientist-shoes = Scientist shoes
 loadout-group-scientist-id = Scientist ID
 
 loadout-group-research-assistant-jumpsuit = Research Assistant jumpsuit
+loadout-group-research-assistant-head = Research Assistant head
 
 # Security
 loadout-group-head-of-security-head = Head of Security head
