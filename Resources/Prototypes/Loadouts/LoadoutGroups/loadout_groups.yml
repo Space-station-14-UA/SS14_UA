@@ -257,6 +257,13 @@
   - PassengerFace
 
 - type: loadoutGroup
+  id: PassengerHead
+  name: loadout-group-passenger-head
+  minLimit: 0
+  loadouts:
+  - MRStudenthat
+
+- type: loadoutGroup
   id: PassengerGloves
   name: loadout-group-passenger-gloves
   minLimit: 0
