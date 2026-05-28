@@ -1,10 +1,6 @@
-# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: loadoutGroup
-  id: ScientistHead
-  name: loadout-group-scientist-head
-  minLimit: 0
-  loadouts:
-  - RoboticistCap
-  - SkullBandana
-  - ScientificBeret
-  - MRStudenthat
+# MR. "Student graduation hat — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadout
+  id: MRStudenthat
+  equipment:
+    head: MRStudenthat
+  sponsorTag: "contributor"

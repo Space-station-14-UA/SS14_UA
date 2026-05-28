@@ -1035,6 +1035,8 @@
   minLimit: 0
   loadouts:
   - ResearchDirectorBeret
+  # MRIYA DOWN
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1080,6 +1082,8 @@
   - RoboticistCap
   - SkullBandana
   - ScientificBeret
+  # MRIYA DOWN
+  - MRStudenthat
 
 - type: loadoutGroup
   id: ScientistNeck
