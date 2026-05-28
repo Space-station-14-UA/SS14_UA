@@ -1,21 +1,3 @@
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: loadoutGroup
-  id: ResearchAssistantHead
-  name: loadout-group-research-assistant-head
-  minLimit: 0
-  loadouts:
-  - MRStudenthat
-
-# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: roleLoadout
-  id: JobResearchAssistant
-  groups:
-  - GroupTankHarness
-  - ResearchAssistantHead
-  - ResearchAssistantJumpsuit
-  - ScientistBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  #- ResearchAssistantJobTrinkets
-  - GroupSpeciesBreathTool
+# ResearchAssistantHead group added inline to main loadout_groups.yml
+# ResearchAssistantHead wired inline to JobResearchAssistant in main role_loadouts.yml

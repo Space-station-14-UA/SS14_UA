@@ -1,7 +1,0 @@
-# MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: loadoutGroup
-  id: PassengerHead
-  name: loadout-group-passenger-head
-  minLimit: 0
-  loadouts:
-  - MRStudenthat

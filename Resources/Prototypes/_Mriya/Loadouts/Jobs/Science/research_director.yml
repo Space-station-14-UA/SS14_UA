@@ -1,8 +1,2 @@
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
-- type: loadoutGroup
-  id: ResearchDirectorHead
-  name: loadout-group-research-director-head
-  minLimit: 0
-  loadouts:
-  - ResearchDirectorBeret
-  - MRStudenthat
+# MRStudenthat added inline to ResearchDirectorHead in main loadout_groups.yml
