@@ -30,7 +30,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.4,-0.2,1.4,0.6"
+          bounds: "-1.4,-0.2,1.4,0.8"
         density: 50
         mask:
         - LargeMobMask
