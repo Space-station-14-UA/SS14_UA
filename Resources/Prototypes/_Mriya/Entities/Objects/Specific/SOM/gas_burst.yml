@@ -48,4 +48,5 @@
       state: gas_burst
     - type: GasMiner
       spawnGas: CarbonDioxide
+      spawnAmount: 100
       spawnTemperature: 2000
