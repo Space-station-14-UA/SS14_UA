@@ -107,7 +107,7 @@
     board: MRSOMSuperComputingBlock
   - type: Emitter
     onState: firing
-    powerUseActive: 50000
+    powerUseActive: 100000
     boltType: MRRandomCrypto
     underpoweredState: underpowered
     selectableTypes:
@@ -173,7 +173,7 @@
       map: ["enum.LockVisualLayers.Lock"]
   - type: Emitter
     onState: firing
-    powerUseActive: 60000
+    powerUseActive: 120000
     boltType: MRRandomCrypto
     underpoweredState: underpowered
     selectableTypes:
