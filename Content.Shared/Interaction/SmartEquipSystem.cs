@@ -28,6 +28,10 @@ public sealed partial class SmartEquipSystem : EntitySystem
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
+    private const string SuitStorageSlot = "suitstorage"; // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст
+    private const string BeltSlot = "belt"; // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст
+    private const string Pocket1Slot = "pocket1"; // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст
+    private const string Pocket2Slot = "pocket2"; // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -184,6 +188,20 @@ public sealed partial class SmartEquipSystem : EntitySystem
         // case 3 (itemslot item):
         if (TryComp<ItemSlotsComponent>(slotItem, out var slots))
         {
+            // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст start
+            if (handItem == null && (equipmentSlot == BeltSlot || equipmentSlot == Pocket1Slot || equipmentSlot == Pocket2Slot || equipmentSlot == SuitStorageSlot))
+            {
+                if (!_inventory.CanUnequip(uid, equipmentSlot, out var unequipReason))
+                {
+                    _popup.PopupClient(Loc.GetString(unequipReason), uid, uid);
+                    return;
+                }
+
+                _inventory.TryUnequip(uid, equipmentSlot, inventory: inventory, predicted: true, checkDoafter: true);
+                _hands.TryPickup(uid, slotItem, handsComp: hands);
+                return;
+            }
+            // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст start end
             if (handItem == null)
             {
                 ItemSlot? toEjectFrom = null;
