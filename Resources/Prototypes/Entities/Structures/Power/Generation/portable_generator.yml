@@ -245,13 +245,13 @@
       supplyRampTolerance: 2500
 
 - type: entity
+  parent: [SolutionTank, SolutionSmall, PortableGeneratorBase]
+  id: PortableGeneratorJrPacman
   name: Портативний генератор типу J.R.P.A.C.M.A.N.
   description: |-
     Невеликий генератор, здатний забезпечити електроенергією окремі приміщення в разі надзвичайних ситуацій.
     Працює на зварювальному паливі та має потужність до 8 кВт.
     Розрахований на вік від 3 років.
-  parent: PortableGeneratorBase
-  id: PortableGeneratorJrPacman
   suffix: Welding Fuel, 8 kW
   components:
     - type: AmbientSound
@@ -303,10 +303,6 @@
       solution: tank
       reagents:
         WeldingFuel: 1
-    - type: SolutionContainerManager
-      solutions:
-        tank:
-          maxVol: 50
     - type: RefillableSolution
       solution: tank
     - type: PortableGenerator

@@ -12,6 +12,7 @@ cargo-console-menu-points-amount = ${$amount}
 cargo-console-menu-shuttle-status-label = Статус шатла:{" "}
 cargo-console-menu-shuttle-status-away-text = Відсутній
 cargo-console-menu-order-capacity-label = Місткість замовлення:{" "}
+cargo-console-menu-order-capacity-number = {$count}/{$capacity}
 cargo-console-menu-call-shuttle-button = Активувати телепад
 cargo-console-menu-permissions-button = Дозволи
 cargo-console-menu-categories-label = Категорії:{" "}
@@ -52,23 +53,20 @@ cargo-console-fund-transfer-broadcast = [bold]{$name} переказав {$amoun
 cargo-console-fund-transfer-user-unknown = Невідомо
 
 cargo-console-paper-reason-default = Без причини
-cargo-console-paper-approver-default = Self
-cargo-console-paper-print-name = Замовлення #{$orderNumber}
+cargo-console-paper-approver-default = Unknown
+cargo-console-paper-print-name = Замовлення №{$orderNumber}
 cargo-console-paper-print-text =
-    ░▀███░░░░██░░░
-    ░░░████░░██░░░
-    ░░░██░░████░░░
-    ░░░██░░░░███▄░
-    {"[head=3]"}НДС "СІЧ" НАНОТРЕЙЗЕН{"[/head]"}
-    {"[head=3]"}ЗАМОВЛЕННЯ ТОВАРІВ №{$orderNumber}{"[/head]"}
-    {"[head=3]"}«__»«__»«2234р.» {"[/head]"}
+    {"[color=#7b6640]"}█▄ █ ▀█▀{"[/color]"} {"[head=2]"}НАЗВА СТАНЦІЇ{"[/head]"}
+    {"[color=#7b6640]"}█ ▀█ {"[color=#0000]"}░{"[/color]"}█{"[color=#0000]"}░{"[/color]"} {"[/color]"} {"[bold]"}ДАТА:{"[/bold]"} __________
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    Замовник: {$requester}
-    Платник: {$account} [font="Monospace"]\[{$accountcode}\][/font]
-    Назва та кількість товарів: {$itemName}, x{$orderQuantity}
-    Підстави: {$reason}
+    {"[head=3]"}Замовлення №{$orderNumber}{"[/head]"}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    Розглянуто: {$approver}
+    {"[bold]"}Назва та кількість товарів:{"[/bold]"} {$itemName}, x{$orderQuantity}
+    {"[bold]"}Замовник:{"[/bold]"} {$requester}
+    {"[bold]"}Платник:{"[/bold]"} {$account} [font="Monospace"]\[{$accountcode}\][/font]
+    {"[bold]"}Підстави:{"[/bold]"} {$reason}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    {"[bold]"}Підтверджено:{"[/bold]"} {$approver}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     ПЕЧАТКА/ПІДПИС
 

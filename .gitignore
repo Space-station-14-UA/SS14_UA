@@ -309,7 +309,12 @@ Resources/MapImages
 
 # Direnv stuff
 .direnv/
+
 Resources/ConfigPresets/Build/development.toml
 Resources/ConfigPresets/Build/sich_vanila_config.toml
 Resources/ConfigPresets/Build/sich_map_config.toml
 Resources/ConfigPresets/Build/rmc_conf.toml
+
+
+# C# Dev Kit cache file
+*.lscache

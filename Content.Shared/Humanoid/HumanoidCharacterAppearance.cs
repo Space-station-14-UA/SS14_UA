@@ -125,12 +125,17 @@ public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCha
             _ => strategy.ClosestSkinColor(new Color(random.NextFloat(1), random.NextFloat(1), random.NextFloat(1), 1)),
         };
 
-        //sich height width 
+        //height width 
         var height = random.NextFloat(protoMan.Index<SpeciesPrototype>(species).MinHeight, protoMan.Index<SpeciesPrototype>(species).MaxHeight);
         var width = random.NextFloat(protoMan.Index<SpeciesPrototype>(species).MinWidth, protoMan.Index<SpeciesPrototype>(species).MaxWidth);
-        //sich height width
+        //height width
 
-        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, height, width, new());
+        // Safety step. Most systems which called Random() also called this, and not doing so caused issues with markings.
+        // In the future it could *maybe* be removed, but it's probably worth the extra CPU cycles to validate this info.
+        return EnsureValid(
+            new HumanoidCharacterAppearance(newEyeColor, newSkinColor, height, width, new()),
+            species,
+            sex);
     }
 
     public static Color ClampColor(Color color)

@@ -1,25 +1,20 @@
 # When adding new drinks also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\drinks_soda.yml
 - type: entity
   abstract: true
-  parent: [ DrinkBaseMaterialMetal, DrinkBase, DrinkBaseOpenable, DrinkVisualsOpenable ]
-  id: DrinkCanBaseFull
-  suffix: Full
+  parent: [ DrinkBaseMaterialMetal, SolutionSmall, DrinkBase, DrinkBaseOpenable, DrinkVisualsOpenable ]
+  id: DrinkCanBase
   components:
-  - type: SolutionContainerManager
+  - type: Solution
+    solution:
+      maxVol: 40 # Cans are about 330ml which translates to about 40u
+  - type: SolutionManager
     solutions:
-      drink:
-        maxVol: 30
-      grindable: &grindable
-        reagents: # 5u -> 1/2 steel sheet (10u)
-        - ReagentId: Aluminium # Fun fact: soda can makeup is approx. 75% aluminium and 25% tin/iron.
-          Quantity: 4
-        - ReagentId: Iron
-          Quantity: 1
+    - SolutionCanComposite
   - type: SolutionTransfer
     canChangeTransferAmount: true
     maxTransferAmount: 15
   - type: Extractable
-    grindableSolutionName: grindable
+    grindableSolutionName: composite
   - type: FitsInDispenser
     solution: drink
   - type: Tool
@@ -36,22 +31,37 @@
     tags:
     - DrinkCan
 
-## Filled
+# When adding new drinks also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\drinks_soda.yml
+- type: entity
+  abstract: true
+  parent: DrinkCanBase
+  id: DrinkCanBaseFull
+  suffix: Full # :)
 
 - type: entity
-  parent: DrinkCanBaseFull
-  id: DrinkColaCan
+  parent: SolutionComposite
+  id: SolutionCanComposite
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    solution:
+      maxVol: 5
+      reagents: # 5u -> 1/2 steel sheet (10u)
+      - ReagentId: Aluminium # Fun fact: soda can makeup is approx. 75% aluminium and 25% tin/iron.
+        Quantity: 4
+      - ReagentId: Iron
+        Quantity: 1
+
+## Filled
+
+### Needed because empty cola is important to construction
+- type: entity
+  abstract: true
+  parent: DrinkCanBase
+  id: DrinkColaCanBase
   name: космо-кола
   description: Освіжаючий напій.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Cola
-          Quantity: 30
-      grindable: *grindable
   - type: Tag
     tags:
     - Cola
@@ -61,17 +71,23 @@
   - type: Item
     sprite: Objects/Consumable/Drinks/cola.rsi
 
+- type: entity
+  parent: DrinkColaCanBase
+  id: DrinkColaCan
+  suffix: Full
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cola
+        Quantity: 40
+
 # created when taking apart an ied
 - type: entity
-  parent: [ DrinkBaseOpenableOpen, DrinkColaCan ]
+  parent: [ DrinkBaseOpenableOpen, DrinkColaCanBase ]
   id: DrinkColaCanEmpty
   suffix: Empty
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-      grindable: *grindable
   - type: Tag
     tags:
     - Cola
@@ -84,14 +100,11 @@
   name: холодний чай
   description: Освіжаюча банку холодного чаю.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: IcedTea
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: IcedTea
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/ice_tea_can.rsi
   - type: Item
@@ -103,14 +116,11 @@
   name: лимон-лайм
   description: Ви хотіли апельсинову газованку.. А отримали лимонно-лаймову.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: LemonLime
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: LemonLime
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lemon-lime.rsi
   - type: Item
@@ -122,14 +132,11 @@
   name: Smite Cranberry can
   description: Y'all want a Smite Cranberry? Beloved by administrators everywhere. Drink in moderation. A limited run for the holidays!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: LemonLimeCranberry
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: LemonLimeCranberry
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lemon-lime-cranberry.rsi
   - type: Item
@@ -174,14 +181,11 @@
   name: виноградна содова
   description: Підсолоджений напій з виноградним смаком та насиченим фіолетовим кольором.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: GrapeSoda
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: GrapeSoda
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/purple_can.rsi
   - type: Item
@@ -193,14 +197,11 @@
   name: корнепиво
   description: Трохи смачного кореневого пива тепер у портативній бляшанці!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: RootBeer
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: RootBeer
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/rootbeer.rsi
   - type: Item
@@ -216,14 +217,11 @@
   name: содова
   description: Газована вода. Чому б не зробити віскі з содовою?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: SodaWater
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SodaWater
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/sodawater.rsi
   - type: Item
@@ -235,14 +233,11 @@
   name: Сонячний космічний вітер
   description: Проникає крізь тебе, як космічний вітер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: SpaceMountainWind
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SpaceMountainWind
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/space_mountain_wind.rsi
   - type: Item
@@ -254,14 +249,11 @@
   name: Роз-Герм
   description: Смак у роті, наче пробоїна в оболонці.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: SpaceUp
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SpaceUp
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/space-up.rsi
   - type: Item
@@ -273,14 +265,11 @@
   name: Сон драй
   description: Солодка імбирна газована вода з космосу!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: SolDry
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SolDry
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/sol_dry.rsi
   - type: Item
@@ -292,14 +281,11 @@
   name: Старкіст
   description: Смак зірки в рідкому вигляді. І трохи тунця...?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Starkist
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Starkist
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/starkist.rsi
   - type: Item
@@ -311,14 +297,11 @@
   name: тонік
   description: Хінін має кумедний смак, але принаймні він вбереже вас від космічної малярії.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: TonicWater
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: TonicWater
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tonic.rsi
   - type: Item
@@ -330,14 +313,11 @@
   name: Чотирнадцять Локо
   description: "MBO повідомило членів екіпажу, що вживання «Чотирнадцяти Локо» може призвести до судом, сліпоти, сп'яніння або навіть смерті. Будь ласка, пийте відповідально."
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: FourteenLoko
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: FourteenLoko
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/fourteen_loko.rsi
   - type: Item
@@ -349,14 +329,11 @@
   name: Жало перемінника
   description: Робиш маленький ковток і відчуваєш печіння...
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ChangelingSting
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ChangelingSting
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/changelingsting.rsi
   - type: Item
@@ -368,14 +345,11 @@
   name: Доктор Гібб
   description: Смачна суміш із 42 різних смаків.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DrGibb
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DrGibb
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/dr_gibb.rsi
   - type: Item
@@ -387,18 +361,15 @@
   name: криваво-червоне вариво
   description: Домашній напій, виготовлений з божевільних умів Синдикату. Лікарі не рекомендують.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Stimulants
-          Quantity: 5
-        - ReagentId: NuclearCola
-          Quantity: 20
-        - ReagentId: Ice
-          Quantity: 5
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Stimulants
+        Quantity: 10
+      - ReagentId: NuclearCola
+        Quantity: 25
+      - ReagentId: Ice
+        Quantity: 5
   - type: Sprite
     sprite: Objects/Consumable/Drinks/robustnukie.rsi
   - type: Item
@@ -410,14 +381,11 @@
   name: Ред Буль
   description: Банка «Ред Буль», в якій стільки кофеїну, що можна вбити коня.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: EnergyDrink
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: EnergyDrink
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/energy_drink.rsi
   - type: Item
@@ -429,14 +397,11 @@
   name: Шамблери
   description: ~Налий мені соку Шамблер!~
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ShamblersJuice
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ShamblersJuice
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/shamblersjuice.rsi
   - type: Item
@@ -448,14 +413,11 @@
   name: Поверґейм
   description: Єдиний напій з PWR, якого жадають справжні геймери. Коли геймер говорить про ґеймерпаливо, він має на увазі саме його.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PwrGame
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: PwrGame
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pwrgame.rsi
   - type: Item
@@ -467,14 +429,11 @@
   name: пиво
   description: Маленька радість, великий смак, ніяких турбот!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Beer
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Beer
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/beer_can.rsi
   - type: Item
@@ -490,14 +449,11 @@
   name: вино
   description: Ваш шлях до того, щоб забути про всі турботи та розважитися!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Wine
-          Quantity: 30
-      grindable: *grindable
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Wine
+        Quantity: 40
   - type: Sprite
     sprite: Objects/Consumable/Drinks/wine_can.rsi
   - type: Item

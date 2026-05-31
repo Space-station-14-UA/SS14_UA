@@ -10,8 +10,8 @@ reagent-desc-buzzochloric-bees = Рідкі бджоли. О Господи, Р�
 reagent-name-ground-bee = Мелена бджола
 reagent-desc-ground-bee = Мука з бджоли. Гидота.
 
-reagent-name-saxoite = Саксоїд
-reagent-desc-saxoite = Пахне джазом.
+reagent-name-brass = латунь
+reagent-desc-brass = Пахне годинниковим механізмом.
 
 reagent-name-licoxide = Лікоксид
 reagent-desc-licoxide = Синтетична акумуляторна кислота. Виглядає... електризуюче.

@@ -20,7 +20,7 @@
           type: ChameleonBoundUserInterface
 
 - type: entity
-  parent: [Clothing, ClothingSlotBase]
+  parent: [SolutionTank, SolutionGinormous, Clothing, ClothingSlotBase]
   id: ClothingBackpackWaterTank
   name: рюкзак з баком води
   description: Вміщує велику кількість рідини. Постачає її до розпилювальних насадок у ваших руках і має слот збоку для цих насадок.
@@ -54,10 +54,6 @@
   - type: SolutionAmmoProvider
     solutionId: tank
     proto: BulletWaterShot
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 1000 #much water
   - type: SolutionTransfer
     transferAmount: 50
     maxTransferAmount: 100

@@ -388,7 +388,7 @@
     board: HellfireHeaterMachineCircuitBoard
 
 - type: entity
-  parent: [ BaseMachinePowered, SmallConstructibleMachine ]
+  parent: [ SolutionTank, SolutionHuge, BaseMachinePowered, SmallConstructibleMachine ]
   id: BaseGasCondenser
   name: конденсатор
   description: Конденсує гази в рідину. Тепер нам потрібен водопровід.
@@ -466,10 +466,6 @@
         pipeDirection: South
   - type: Transform
     noRot: false
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 400
   - type: MixableSolution
     solution: tank
   - type: DrainableSolution

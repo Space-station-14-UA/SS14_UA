@@ -76,10 +76,16 @@ stack-cotton = {$amount ->
     [1] бавовну
     *[other] бавовни
 }
+
 stack-artifact-fragment = {$amount ->
     [1] фрагмент
     *[other] фрагменти
 } артефакту
+
+stack-conveyor-belt = {$amount ->
+    [1] конвеєрна стрічка
+    *[other] конвеєрних стрічок
+}
 
 # best materials
 stack-ground-tobacco = подріблений тютюн

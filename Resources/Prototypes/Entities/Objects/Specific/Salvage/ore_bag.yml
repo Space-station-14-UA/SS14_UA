@@ -31,8 +31,11 @@
   parent: OreBag
   id: BorgOreBag
   name: інтегрована сумка для руди
-  description: Велика сумка для руди, вбудована в корпус шахтарського борга.
+  description: Велика сумка для руди, вбудована в корпус шахтарського борга. Притягує руду коли активна
   components:
+    - type: MagnetPickup
+      slotFlags: null
+      requireActiveHand: true
     - type: Storage
       grid:
       - 0,0,9,5
