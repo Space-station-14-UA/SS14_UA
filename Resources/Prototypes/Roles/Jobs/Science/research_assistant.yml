@@ -8,10 +8,6 @@
 #      department: Science
 #      time: 5h
 #      inverted: true # stop playing intern if you're good at science! (ні?)
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - IPC
   startingGear: ResearchAssistantGear
   icon: "JobIconResearchAssistant"
   supervisors: job-supervisors-science

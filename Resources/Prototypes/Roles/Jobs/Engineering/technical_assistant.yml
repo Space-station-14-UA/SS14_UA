@@ -10,10 +10,6 @@
 #      department: Engineering
 #      time: 5h
 #      inverted: true # stop playing intern if you're good at engineering! (ні?)
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - IPC
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

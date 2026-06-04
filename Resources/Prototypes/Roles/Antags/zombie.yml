@@ -8,6 +8,10 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
+  - !type:SpeciesRequirement
+    inverted: true
+    species:
+    - IPC
 
 - type: antagSpecifier
   parent: RestrictedAntag

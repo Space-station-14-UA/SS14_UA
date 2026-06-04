@@ -8,10 +8,6 @@
 #      department: Medical
 #      time: 5h
 #      inverted: true # stop playing intern if you're good at med! (ні?)
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - IPC
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
   supervisors: job-supervisors-medicine
