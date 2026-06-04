@@ -1,6 +1,0 @@
-
-- type: damageContainer
-  id: IPC
-  supportedGroups:
-    - Brute
-    - Burn
