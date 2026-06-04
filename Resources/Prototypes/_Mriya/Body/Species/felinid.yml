@@ -88,7 +88,6 @@
         layer:
         - MobLayer
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Felinid
   - type: SlowOnDamage # Frontier
     speedModifierThresholds:

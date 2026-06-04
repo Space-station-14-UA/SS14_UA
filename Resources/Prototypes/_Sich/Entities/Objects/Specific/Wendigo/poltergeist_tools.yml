@@ -107,7 +107,6 @@
     soundHit:
       path: /Audio/Magic/Eldritch/voidblink.ogg
   - type: SolutionRegeneration
-    solution: Welder
     generated:
       reagents:
       - ReagentId: WeldingFuel

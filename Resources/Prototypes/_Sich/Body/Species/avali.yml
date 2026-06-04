@@ -156,7 +156,6 @@
       Female: FemaleAvali
       Unsexed: MaleAvali
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Avali # PLACEHOLDER for now :3
   - type: DamageVisuals
     damageOverlayGroups:

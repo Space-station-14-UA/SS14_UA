@@ -209,7 +209,6 @@
     wilhelm:
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Robotic
   - type: DamageVisuals
     damageOverlayGroups:
