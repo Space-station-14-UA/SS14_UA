@@ -220,7 +220,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Oil
-        Quantity: 300
+        Quantity: 600
     bloodlossDamage:
       types:
         Heat: 0.25

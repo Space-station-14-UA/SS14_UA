@@ -149,7 +149,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Blood
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     hidden: true
     soundHit:
