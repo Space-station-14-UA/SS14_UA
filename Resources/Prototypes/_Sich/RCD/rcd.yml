@@ -7,36 +7,36 @@
   category: Airlocks
   sprite: /Textures/_Sich/Interface/Radial/RCD/airlock_command.png
   mode: ConstructObject
-  prototype: AirlockCommand
+  prototype: SichAirlockCommandLocked
   cost: 4
   delay: 4
   collisionMask: FullTileMask
   rotation: Camera
   fx: EffectRCDConstruct4
-  
+
 - type: rcd
   id: AirlockGlassCommand
   category: Airlocks
   sprite: /Textures/_Sich/Interface/Radial/RCD/airlock_glass_command.png
   mode: ConstructObject
-  prototype: AirlockCommandGlass
+  prototype: SichAirlockCommandGlassLocked
   cost: 4
   delay: 4
   collisionMask: FullTileMask
   rotation: Camera
   fx: EffectRCDConstruct4
-  
+
 - type: rcd
   id: HighSecDoor
   category: Airlocks
   sprite: /Textures/_Sich/Interface/Radial/RCD/highsec.png
   mode: ConstructObject
-  prototype: HighSecDoor
+  prototype: HighSecCommandLocked
   cost: 15
   delay: 15
   collisionMask: FullTileMask
   rotation: Camera
-  fx: EffectRCDConstruct4
+  fx: EffectRCDConstruct5
 
 - type: rcd
   id: BlastDoor
@@ -48,7 +48,7 @@
   delay: 30
   collisionMask: Impassable
   rotation: Camera
-  fx: EffectRCDConstruct4
+  fx: EffectRCDConstruct6
 
 - type: rcd
   id: ShuttersNormal
