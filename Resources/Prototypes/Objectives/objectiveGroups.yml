@@ -99,6 +99,7 @@
     MedicalTechFabCircuitboardStealObjective: 1
     FireAxeStealObjective: 1                            #eng
     AmePartFlatpackStealObjective: 1
+    RCDEliteStealObjective: 1                           # Завдання для Мрії
     ExpeditionsCircuitboardStealObjective: 1            #sup
     CargoShuttleCircuitboardStealObjective: 1
     BibleStealObjective: 1
