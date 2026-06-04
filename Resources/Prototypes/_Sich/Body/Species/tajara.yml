@@ -138,7 +138,6 @@
       Female: FemaleTajara
       Unsexed: MaleTajara
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Tajara
   - type: DamageVisuals
     damageOverlayGroups:
