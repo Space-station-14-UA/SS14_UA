@@ -210,6 +210,8 @@
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
   - type: Damageable
     damageModifierSet: Robotic
+  - type: Injurable
+    damageContainer: IPC
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
