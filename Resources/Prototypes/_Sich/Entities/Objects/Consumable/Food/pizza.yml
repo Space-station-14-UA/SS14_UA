@@ -17,15 +17,13 @@
     - state: beer-pizza
   - type: SliceableFood
     slice: FoodPizzaBeerSlice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 39
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 14
-        - ReagentId: Beer
-          Quantity: 20
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 39
+      - ReagentId: Beer
+        Quantity: 20
 
 - type: entity
   name: шматок пивної піци
@@ -45,15 +43,13 @@
     - state: beer-slice
   - type: Item
     heldPrefix: beer-slice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 9.5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: Beer
-          Quantity: 2.5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: Beer
+        Quantity: 2.5
 
 - type: entity
   name: винна піца
@@ -72,15 +68,13 @@
     - state: wine-pizza
   - type: SliceableFood
     slice: FoodPizzaWineSlice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 39
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 14
-        - ReagentId: Wine
-          Quantity: 20
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 14
+      - ReagentId: Wine
+        Quantity: 20
 
 - type: entity
   name: шматочок винної піци
@@ -99,12 +93,10 @@
     - state: wine-slice
   - type: Item
     heldPrefix: wine-slice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 9.5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: Wine
-          Quantity: 2.5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: Wine
+        Quantity: 2.5
