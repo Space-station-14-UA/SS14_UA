@@ -88,7 +88,6 @@
         layer:
         - MobLayer
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Felinid
   - type: SlowOnDamage # Frontier
     speedModifierThresholds:
@@ -103,7 +102,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Blood
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     soundHit:
       collection: Punch

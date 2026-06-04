@@ -209,7 +209,6 @@
     wilhelm:
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Robotic
   - type: DamageVisuals
     damageOverlayGroups:
@@ -220,7 +219,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Oil
-        Quantity: 300
+        Quantity: 600
     bloodlossDamage:
       types:
         Heat: 0.25
