@@ -60,8 +60,9 @@
     delay: 2
   - type: Physics
     bodyType: Static
-  - type: Damageable
+  - type: Injurable
     damageContainer: MRSOMDamageContainer
+  - type: Damageable
     damageModifierSet: MRSOMmodifire
   - type: Destructible
     thresholds:
