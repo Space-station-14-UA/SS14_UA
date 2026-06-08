@@ -272,6 +272,7 @@
   id: Bark
   name: chat-emote-name-bark
   category: Vocal
+  icon: _Mriya/Interface/Emotes/bark.png # Mriya: додано іконку
   available: false
   whitelist:
     components:
@@ -294,6 +295,7 @@
   id: Snarl
   name: chat-emote-name-snarl
   category: Vocal
+  icon: _Mriya/Interface/Emotes/snarl.png # Mriya: додано іконку
   available: false
   whitelist:
     components:
@@ -314,6 +316,7 @@
   id: Whine
   name: chat-emote-name-whine
   category: Vocal
+  icon: _Mriya/Interface/Emotes/whine.png # Mriya: додано іконку
   available: false
   whitelist:
     components:
@@ -336,6 +339,7 @@
   id: Howl
   name: chat-emote-name-howl
   category: Vocal
+  icon: _Mriya/Interface/Emotes/howl.png # Mriya: додано іконку
   available: false
   whitelist:
     components:

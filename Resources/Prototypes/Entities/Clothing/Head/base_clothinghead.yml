@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: Clothing
+  parent: [SolutionFood, SolutionToolSmall, Clothing]
   id: ClothingHeadBase
   components:
   - type: Clothing
@@ -13,13 +13,11 @@
     storedRotation: -90
   - type: Edible
     requiresSpecialDigestion: true
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 10
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
   - type: Tag
     tags:
     - ClothMade
@@ -48,7 +46,7 @@
   abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadLightBase
-  name: base helmet with light
+  name: базовий шолом із ліхтариком
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -61,7 +59,7 @@
     equippedPrefix: off
   - type: Item
     heldPrefix: off
-    size: Normal
+    size: Normal # I'm not updating the solution because these probably shouldn't be edible...
   - type: ToggleableVisuals
     spriteLayer: light
   - type: ItemTogglePointLight
@@ -109,7 +107,7 @@
   abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadEVAHelmetBase
-  name: base space helmet
+  name: базовий космічний шолом
   components:
 # SlotBlocker blocked until UI change
 #  - type: SlotBlock
@@ -147,7 +145,7 @@
   abstract: true
   # No parent since we aren't actually an item.
   id: ClothingHeadHardsuitBase
-  name: base hardsuit helmet
+  name: базовий шолом скафандра
   categories: [ HideSpawnMenu ]
   components:
 # SlotBlocker blocked until UI change
@@ -197,7 +195,7 @@
   # No parent since it isn't an item
   # must parent both this and the desired helmet base when using
   id: ClothingHeadSuitWithLightBase
-  name: base hardsuit helmet with light
+  name: базовий шолом скафандра з ліхтариком
   categories: [ HideSpawnMenu ]
   components:
 # SlotBlocker blocked until UI change
@@ -252,7 +250,7 @@
 - type: entity
   abstract: true
   id: ClothingHeadHatHoodWinterBase
-  name: base winter coat hood
+  name: базовий капюшон зимового пальта
   description: Капюшон, створений, щоб тримати голову в теплі.
   categories: [ HideSpawnMenu ]
   components:

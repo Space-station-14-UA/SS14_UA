@@ -56,7 +56,9 @@
     ClothingShoesBootsCowboyBrown: 1
     ClothingShoesBootsCowboyBlack: 1
     ClothingShoesBootsCowboyWhite: 1
-    SichBigShotGlasses: 2
+    SichBigShotGlasses: 2  # Mriya
+    ClothingHeadHatWizardFake: 1
+    ClothingOuterWizardFake: 1
   contrabandInventory:
     ClothingHeadHatRichard: 1
     ToyFigurineBoxer: 1

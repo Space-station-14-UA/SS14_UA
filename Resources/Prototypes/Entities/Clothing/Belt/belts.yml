@@ -36,7 +36,7 @@
   parent: ClothingBeltStorageBase
   id: ClothingBeltQuiver
   name: сагайдак
-  description: Вміщує до 15 стріл і зручно фіксується на поясі.
+  description: Вміщує до 16 стріл і зручно фіксується на поясі.
   components:
   - type: Sprite
     sprite: Clothing/Belt/quiver.rsi

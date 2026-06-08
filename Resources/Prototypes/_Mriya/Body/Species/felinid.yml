@@ -1,0 +1,235 @@
+- type: markingsGroup
+  parent:
+  - Undergarments
+  - MRHumanoid_base # starcup: added for standardized marking limits
+  id: Felinid
+  limits:
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ FelinidTailBasic ]
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: true
+      default: [ FelinidEarsBasic ]
+    enum.HumanoidVisualLayers.Snout:
+      limit: 1
+      required: false
+
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceFelinid
+  name: felinid appearance
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+  - type: InitialBody
+    organs:
+      Torso: OrganFelinidTorso # starcup
+      Head: OrganFelinidHead # starcup
+      ArmLeft: OrganFelinidArmLeft # starcup
+      ArmRight: OrganFelinidArmRight # starcup
+      HandRight: OrganFelinidHandRight # starcup
+      HandLeft: OrganFelinidHandLeft # starcup
+      LegLeft: OrganFelinidLegLeft # starcup
+      LegRight: OrganFelinidLegRight # starcup
+      FootLeft: OrganFelinidFootLeft # starcup
+      FootRight: OrganFelinidFootRight # starcup
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganAnimalHeart # starcup
+      Stomach: OrganAnimalStomach # starcup
+      Liver: OrganAnimalLiver # starcup
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Felinid
+  # - type: Sprite
+  #   scale: 0.8, 0.8
+
+- type: entity
+  parent:
+  - AppearanceFelinid
+  - BaseSpeciesMobOrganic # starcup: changed from BaseMobHuman for consistency
+  id: MobFelinid
+  name: Urist McFelinid
+  components:
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+  - type: Hunger
+  - type: Thirst
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatHuman
+      amount: 3
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.28
+        density: 140
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Felinid
+  - type: SlowOnDamage # Frontier
+    speedModifierThresholds:
+      60: 0.85  # 0.7 is base speed.
+      80: 0.75  # 0.5 is base speed.
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#AA0000"
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 300
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 4
+        Piercing: 1
+  #  - type: Thieving
+  #    stealthy: true
+  #    stripTimeReduction: 1
+  - type: Speech
+    speechSounds: FelinidSpeechSounds # starcup
+    speechVerb: Felinid
+    allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl',] # starcup: added Trill
+  - type: DamageOnHighSpeedImpact # Landing on all fours!
+    damage:
+      types:
+        Blunt: 1
+  - type: Stamina
+    baseCritThreshold: 85
+  - type: TypingIndicator
+    proto: felinid
+  # - type: PseudoItem
+  #   storedOffset: 0,17
+  #   shape:
+  #  - 0,0,1,4
+  #  - 0,2,3,4
+  #  - 4,0,5,4
+  - type: Vocal
+    wilhelm: "/Audio/_Mriya/Voice/Felinid/cat_wilhelm.ogg"
+    sounds:
+      Male: MaleFelinid
+      Female: FemaleFelinid
+      Unsexed: MaleFelinid
+  # - type: ItemCougher # Frontier
+  #   item: Hairball
+  #   action: ActionHairball
+  #   coughPopup: hairball-cough
+  # - type: Felinid
+  # - type: NoShoesSilentFootsteps # Frontier
+  # - type: Inventory # Frontier
+  #   speciesId: felinid # Frontier
+
+- type: entity
+  parent: OrganBase
+  id: OrganFelinid
+  abstract: true
+  suffix: Felinid
+
+- type: entity
+  id: OrganFelinidMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
+  parent: OrganFelinid
+  id: OrganFelinidInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  parent: OrganHuman
+  id: OrganFelinidExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Mriya/Mobs/Species/Felinid/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _Mriya/Mobs/Species/Felinid/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Felinid
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganFelinidExternal ]
+  id: OrganFelinidTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganFelinidExternal ]
+  id: OrganFelinidHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.Hair
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganFelinidExternal ]
+  id: OrganFelinidArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganFelinidExternal ]
+  id: OrganFelinidArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganFelinidExternal ]
+  id: OrganFelinidHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganFelinidExternal ]
+  id: OrganFelinidHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganFelinidExternal ]
+  id: OrganFelinidLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganFelinidExternal ]
+  id: OrganFelinidLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganFelinidExternal ]
+  id: OrganFelinidFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganFelinidExternal ]
+  id: OrganFelinidFootRight
+

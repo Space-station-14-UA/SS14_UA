@@ -10,7 +10,7 @@ public sealed partial class ParrotAccentSystem : EntitySystem
 {
     private static readonly Regex WordCleanupRegex = new Regex("[^a-zA-Z0-9а-яА-ЯїЇєЄіґҐ -]");
 
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     public override void Initialize()
     {

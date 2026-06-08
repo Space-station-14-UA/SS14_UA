@@ -25,16 +25,16 @@
   - type: ActiveEdgeSpreader
   - type: EdgeSpreader
     id: Smoke
-  - type: SolutionContainerManager
-    solutions:
-      solutionArea:
-        maxVol: 600
-        canReact: false
+  - type: Solution
+    id: solutionArea
+    solution:
+      maxVol: 600 # Required for it to spawn correctly, but should be removed in the future:tm: Arguably could move the solution to SmokeComponent as well considering it's nonreactive
+      canReact: false
 
 - type: entity
   parent: BaseFoam
   id: Smoke
-  name: smoke
+  name: дим
   categories: [ HideSpawnMenu ]
   components:
   - type: Occluder
@@ -50,7 +50,7 @@
 - type: entity
   parent: BaseFoam
   id: TearGasSmoke
-  name: tear gas
+  name: сльозогінний газ
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -73,7 +73,7 @@
 - type: entity
   parent: Smoke
   id: WizardSmoke
-  name: smoke
+  name: дим
   categories: [ HideSpawnMenu ]
   components:
   - type: Smoke
@@ -82,7 +82,7 @@
 - type: entity
   parent: BaseFoam
   id: Foam
-  name: foam
+  name: піна
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -113,7 +113,7 @@
 
 - type: entity
   id: MetalFoam
-  name: metal foam
+  name: металопіна
   categories: [ HideSpawnMenu ]
   parent: Foam
   components:
@@ -139,7 +139,7 @@
 
 - type: entity
   id: IronMetalFoam
-  name: iron metal foam
+  name: залізна металопіна
   categories: [ HideSpawnMenu ]
   parent: MetalFoam
   components:
@@ -148,7 +148,7 @@
 
 - type: entity
   id: AluminiumMetalFoam
-  name: aluminium metal foam
+  name: алюмінієва металопіна
   categories: [ HideSpawnMenu ]
   parent: MetalFoam
   components:
@@ -157,7 +157,7 @@
 
 - type: entity
   id: BaseFoamedMetal
-  name: base foamed metal
+  name: базова металопіна
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -199,8 +199,9 @@
     replacementTiles:
     - FloorMetalFoam
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -212,8 +213,8 @@
 
 - type: entity
   id: FoamedIronMetal
-  name: foamed iron metal
-  description: "For sealing hull breaches."
+  name: залізна металопіна
+  description: "Для герметизації пробоїн у корпусі."
   parent: BaseFoamedMetal
   components:
   - type: Sprite
@@ -234,8 +235,8 @@
 
 - type: entity
   id: FoamedAluminiumMetal
-  name: foamed aluminium metal
-  description: "Leftover sparse foam from an aluminum foam grenade. Easily destroyed."
+  name: алюмінієва металопіна
+  description: "Залишки розрідженої піни від алюмінієвої пінної гранати. Легко руйнується."
   parent: BaseFoamedMetal
   components:
   - type: Sprite
@@ -254,8 +255,9 @@
     - map: [ "enum.EdgeLayer.West" ]
       state: metal_foam-west
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: FlimsyMetallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
     - trigger:

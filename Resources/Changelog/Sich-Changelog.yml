@@ -847,3 +847,43 @@
   id: 52
   time: '2026-05-14T18:16:28.0000000+00:00'
   url: https://github.com/Space-station-14-UA/SS14_UA/pull/16
+- author: Svetoslav228
+  changes:
+  - message: "\u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u0456 \u044F\u0449\u0438\
+      \u043A\u0438 \u0456\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u0442\u0456\u0432\
+      , \u0442\u0435\u043F\u0435\u0440 \u0431\u0456\u043B\u044C\u0448\u0435 \u043D\
+      \u0435 \u0431\u0440\u0430\u043A\u043E\u0432\u0430\u043D\u0456"
+    type: Fix
+  id: 53
+  time: '2026-05-17T13:08:54.0000000+00:00'
+  url: https://github.com/Space-station-14-UA/SS14_UA/pull/17
+- author: crvenih
+  changes:
+  - message: "\u0410\u043A\u0430\u0434\u0435\u043C\u0456\u0447\u043D\u0430 \u0448\u0430\
+      \u043F\u043E\u0447\u043A\u0430"
+    type: Add
+  id: 54
+  time: '2026-05-23T08:23:22.0000000+00:00'
+  url: https://github.com/Space-station-14-UA/SS14_UA/pull/22
+- author: ISP3CTRE
+  changes:
+  - message: "\u041D\u043E\u0432\u0438\u0439 \u0432\u0438\u0434 - \u0444\u0435\u043B\
+      \u0456\u043D\u0456\u0434\u0438"
+    type: Add
+  - message: "\u041D\u043E\u0432\u0456 \u0445\u0432\u043E\u0441\u0442\u0438 \u0434\
+      \u043B\u044F \u0442\u0430\u044F\u0440 \u0432 \u043C\u0435\u043D\u044E \u043C\
+      \u0430\u0440\u043A\u0443\u0432\u0430\u043D\u044C"
+    type: Add
+  id: 55
+  time: '2026-05-26T14:29:19.0000000+00:00'
+  url: https://github.com/Space-station-14-UA/SS14_UA/pull/23
+- author: juststesh
+  changes:
+  - message: Added student graduation hat loadout for scientists (contributor sponsor
+      only).
+    type: Add
+  - message: Moved student hat loadout to _Mriya/test.
+    type: Tweak
+  id: 56
+  time: '2026-05-28T18:35:47.0000000+00:00'
+  url: https://github.com/Space-station-14-UA/SS14_UA/pull/26

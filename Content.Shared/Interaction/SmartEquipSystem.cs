@@ -18,16 +18,16 @@ namespace Content.Shared.Interaction;
 /// <summary>
 /// This handles smart equipping or inserting/ejecting from slots through keybinds--generally shift+E and shift+B
 /// </summary>
-public sealed class SmartEquipSystem : EntitySystem
+public sealed partial class SmartEquipSystem : EntitySystem
 {
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedStorageSystem _storage = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly ItemSlotsSystem _slots = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedStorageSystem _storage = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private ItemSlotsSystem _slots = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private ActionBlockerSystem _actionBlocker = default!;
+    [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -184,6 +184,20 @@ public sealed class SmartEquipSystem : EntitySystem
         // case 3 (itemslot item):
         if (TryComp<ItemSlotsComponent>(slotItem, out var slots))
         {
+            // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст start
+            if (handItem == null && (_slots.TryGetSlot(slotItem, "gun_magazine", out _) || _slots.TryGetSlot(slotItem, "cell_slot", out _)))
+            {
+                if (!_inventory.CanUnequip(uid, equipmentSlot, out var unequipReason))
+                {
+                    _popup.PopupClient(Loc.GetString(unequipReason), uid, uid);
+                    return;
+                }
+
+                _inventory.TryUnequip(uid, equipmentSlot, inventory: inventory, predicted: true, checkDoafter: true);
+                _hands.TryPickup(uid, slotItem, handsComp: hands);
+                return;
+            }
+            // Mriya: хоткей швидкого доступу дістає сам предмет,а не його вміст end
             if (handItem == null)
             {
                 ItemSlot? toEjectFrom = null;

@@ -365,6 +365,7 @@ ui-options-accessability-header-content = Контент
 ui-options-enable-color-name = Додати кольори до імен символів
 ui-options-colorblind-friendly = Дружній режим для дальтоників
 ui-options-reduced-motion = Зменшити рух візуальних ефектів
+ui-options-disable-ai-static = Вимкнути ефект статичних перешкод на екрані камери ШІ
 ui-options-screen-shake-intensity = Інтенсивність тремтіння екрана
 
 ui-options-chat-window-opacity = Непрозорість вікна чату
@@ -412,3 +413,6 @@ ui-options-admin-enable-overlay-starting-job = Показувати старто
 ui-options-admin-overlay-merge-distance = Відстань злиття стеків
 ui-options-admin-overlay-ghost-fade-distance = Діапазон згасання оверлею привидів від курсору миші
 ui-options-admin-overlay-ghost-hide-distance = Діапазон приховання оверлею привидів від курсору миші
+
+ui-options-admin-strip-overlay-title = Оверлей інвентарю
+ui-options-admin-strip-overlay-setting = Показувати оверлей інвентарю за замовчуванням

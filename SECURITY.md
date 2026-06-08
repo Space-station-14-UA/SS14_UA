@@ -7,3 +7,4 @@ and then **privately** message anyone with the `@Wizard` or `@SS14 Maintainer` r
 
 In either case, **do not publicly disclose the vulnerability until we explicitly give
 you permission to do so**.
+ 

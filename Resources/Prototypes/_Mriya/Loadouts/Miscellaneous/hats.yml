@@ -1,0 +1,6 @@
+# MR. "Student graduation hat — coded by Crvenih, drawn by Pyrizhok_333x2"
+- type: loadout
+  id: MRStudenthat
+  equipment:
+    head: MRStudenthat
+  sponsorTag: "contributor"

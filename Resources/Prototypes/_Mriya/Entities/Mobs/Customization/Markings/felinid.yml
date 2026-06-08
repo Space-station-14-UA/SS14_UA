@@ -1,0 +1,235 @@
+# Felinid Ears
+
+- type: marking
+  id: FelinidEarsBasic
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: basic_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: basic_inner
+
+- type: marking
+  id: FelinidEarsCurled
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: curled_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: curled_inner
+
+- type: marking
+  id: FelinidEarsDroopy
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: droopy_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: droopy_inner
+
+- type: marking
+  id: FelinidEarsFuzzy
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: basic_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: fuzzy_inner
+
+- type: marking
+  id: FelinidEarsStubby
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: stubby_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: stubby_inner
+
+- type: marking
+  id: FelinidEarsTall
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: tall_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: tall_inner
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: tall_fuzz
+
+- type: marking
+  id: FelinidEarsTorn
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: torn_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: torn_inner
+
+- type: marking
+  id: FelinidEarsWide
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: wide_outer
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_ears.rsi
+    state: wide_inner
+
+# Felinid Tails
+
+- type: marking
+  id: FelinidTailBasic
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+
+- type: marking
+  id: FelinidTailBasicWithBow
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_bow
+
+- type: marking
+  id: FelinidTailBasicWithBell
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_bell
+
+- type: marking
+  id: FelinidTailBasicWithBowAndBell
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_bow
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: basic_bell
+
+- type: marking
+  id: FelinidFluffyTailRings
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: Felinid_fluffy_tail_full
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: felinid_fluffy_tail_rings
+
+- type: marking
+  id: FelinidFluffyTail
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_tails.rsi
+    state: Felinid_fluffy_tail_full
+
+- type: marking
+  id: FelinidTiger
+  bodyPart: Tail
+  groupWhitelist: [Felinid, Tajara] # starcup
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_primary
+  - sprite: _Mriya/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_secondary
+  - sprite: _Mriya/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_tertiary
+
+- type: marking
+  id: FurredLeftArm
+  bodyPart: LArm
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_l_arm
+
+- type: marking
+  id: FurredRightArm
+  bodyPart: RArm
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_r_arm
+
+- type: marking
+  id: FurredLeftLeg
+  bodyPart: LLeg
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_l_leg
+
+- type: marking
+  id: FurredRightLeg
+  bodyPart: RLeg
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_r_leg
+
+- type: marking
+  id: FurredLeftFoot
+  bodyPart: LFoot
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_l_foot
+
+- type: marking
+  id: FurredRightFoot
+  bodyPart: RFoot
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_r_foot
+
+- type: marking
+  id: FurredLeftHand
+  bodyPart: LHand
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_l_hand
+
+- type: marking
+  id: FurredRightHand
+  bodyPart: RHand
+  groupWhitelist: [Felinid]
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/Felinid/felinid_limbs.rsi
+    state: furred_r_hand

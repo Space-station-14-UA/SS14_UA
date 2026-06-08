@@ -4,24 +4,21 @@
 
 # Transformable container - normal glass
 - type: entity
-  parent: [DrinkBaseMaterialGlass, DrinkBaseCup, DrinkVisualsFillOverlay]
+  parent: [DrinkBaseMaterialGlass, SolutionSmall, DrinkBaseCup, DrinkVisualsFillOverlay]
   id: DrinkGlass
   name: метаморфічна склянка
   description: Склянка-метаморфоза, яка автоматично перетворюється на келих, відповідний до напою, що в ній знаходиться. На дні відшліфований номер патенту.
   components:
+  - type: Item
+    size: Small
   - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_clear.rsi
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
   - type: SolutionContainerVisuals
     maxFillLevels: 9
     metamorphic: true
     metamorphicDefaultSprite:
       sprite: Objects/Consumable/Drinks/glass_clear.rsi
       state: icon
-  - type: TransformableContainer
 
 - type: entity
   parent: DrinkGlass
@@ -31,10 +28,6 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/jar.rsi
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 50
   - type: SolutionContainerVisuals
     metamorphicDefaultSprite:
       sprite: Objects/Consumable/Drinks/jar.rsi
@@ -49,13 +42,11 @@
   id: DrinkAbsintheGlass
   suffix: абсент
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Absinthe
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Absinthe
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/absintheglass.rsi
     state: icon
@@ -65,13 +56,11 @@
   id: DrinkAcidSpitGlass
   suffix: кислотний плювок
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: AcidSpit
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: AcidSpit
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/acidspitglass.rsi
     state: icon
@@ -81,13 +70,11 @@
   id: DrinkAleGlass
   suffix: ель
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Ale
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Ale
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/aleglass.rsi
     state: icon
@@ -97,13 +84,11 @@
   id: DrinkAlienBrainHemorrhage
   suffix: alien brain hemorrhage
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: AlienBrainHemorrhage
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: AlienBrainHemorrhage
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/alienbrainhemorrhage.rsi
     state: icon
@@ -113,13 +98,11 @@
   id: DrinkAlliesCocktail
   suffix: коктейль союзників
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: AlliesCocktail
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: AlliesCocktail
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/alliescocktail.rsi
     state: icon
@@ -129,13 +112,11 @@
   id: DrinkAloe
   suffix: алое
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Aloe
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Aloe
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/aloe.rsi
     state: icon
@@ -145,13 +126,11 @@
   id: DrinkAmasecGlass
   suffix: амасек
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Amasec
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Amasec
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/amasecglass.rsi
     state: icon
@@ -161,13 +140,11 @@
   id: DrinkAndalusia
   suffix: андалузія
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Andalusia
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Andalusia
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/andalusia.rsi
     state: icon
@@ -177,13 +154,11 @@
   id: DrinkAntifreeze
   suffix: антифріз
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Antifreeze
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Antifreeze
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/antifreeze.rsi
     state: icon
@@ -193,13 +168,11 @@
   id: DrinkArnoldPalmer
   suffix: арнольд палмер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ArnoldPalmer
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ArnoldPalmer
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/arnoldpalmer.rsi
     state: icon
@@ -209,13 +182,11 @@
   id: DrinkAtomicBombGlass
   suffix: атомна бомба
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: AtomicBomb
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: AtomicBomb
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/atomicbombglass.rsi
     state: icon
@@ -225,13 +196,11 @@
   id: DrinkB52Glass
   suffix: b-52
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: B52
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: B52
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/b52glass.rsi
     state: icon
@@ -241,13 +210,11 @@
   id: DrinkBahamaMama
   suffix: багама мама
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BahamaMama
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BahamaMama
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bahama_mama.rsi
     state: icon
@@ -257,13 +224,11 @@
   id: DrinkBananaHonkGlass
   suffix: банана гонк
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BananaHonk
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BananaHonk
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bananahonkglass.rsi
     state: icon
@@ -273,13 +238,11 @@
   id: DrinkBarefootGlass
   suffix: барефут
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Barefoot
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Barefoot
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/b&p.rsi
     state: icon
@@ -289,13 +252,11 @@
   id: DrinkBeepskySmashGlass
   suffix: біпскі смеш
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BeepskySmash
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BeepskySmash
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/beepskysmashglass.rsi
     state: icon
@@ -305,13 +266,11 @@
   id: DrinkBeerglass
   suffix: пиво
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Beer
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Beer
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/beerglass.rsi
     state: icon
@@ -321,13 +280,11 @@
   id: DrinkBerryJuice
   suffix: ягідний сік
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: JuiceBerry
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: JuiceBerry
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/berryjuice.rsi
     state: icon
@@ -337,13 +294,11 @@
   id: DrinkBlackRussianGlass
   suffix: чорний росіянин
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlackRussian
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BlackRussian
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/blackrussianglass.rsi
     state: icon
@@ -353,13 +308,11 @@
   id: DrinkBlueCuracaoGlass
   suffix: блакитний куракао
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlueCuracao
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BlueCuracao
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/curacaoglass.rsi
     state: icon
@@ -369,13 +322,11 @@
   id: DrinkBloodyMaryGlass
   suffix: кривава мері
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BloodyMary
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BloodyMary
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bloodymaryglass.rsi
     state: icon
@@ -385,13 +336,11 @@
   id: DrinkBlueHawaiianGlass
   suffix: блакитний гавайський
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlueHawaiian
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BlueHawaiian
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bluehawaiian.rsi
     state: icon
@@ -401,13 +350,11 @@
   id: DrinkBooger
   suffix: козявка
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Booger
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Booger
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/booger.rsi
     state: icon
@@ -417,13 +364,11 @@
   id: DrinkBraveBullGlass
   suffix: хоробрий бик
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BraveBull
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BraveBull
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bravebullglass.rsi
     state: icon
@@ -433,13 +378,11 @@
   id: DrinkBronxGlass
   suffix: bronx
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Bronx
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Bronx
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bronx.rsi
     state: icon
@@ -449,13 +392,11 @@
   id: BudgetInsulsDrinkGlass
   suffix: бюджетні інсули
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BudgetInsulsDrink
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BudgetInsulsDrink
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/budgetinsulsdrink.rsi
     state: icon
@@ -465,13 +406,11 @@
   id: DrinkCarrotJuice
   suffix: морквяний сік
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: JuiceCarrot
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: JuiceCarrot
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/carrotjuice.rsi
     state: icon
@@ -481,13 +420,11 @@
   id: DrinkChocolateGlass
   suffix: гаряче какао
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: HotCocoa
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: HotCocoa
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/chocolateglass.rsi
     state: icon
@@ -497,13 +434,11 @@
   id: RubberneckGlass
   suffix: резинка на шиї
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Rubberneck
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Rubberneck
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rubberneck.rsi
     state: icon
@@ -513,13 +448,11 @@
   id: DrinkCoconutRum
   suffix: кокосовий ром
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CoconutRum
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CoconutRum
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/coconutrum.rsi
     state: icon
@@ -529,13 +462,11 @@
   id: DrinkCoconutWaterGlass
   suffix: кокосова вода
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CoconutWater
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CoconutWater
+        Quantity: 60
 #TODO  - type: Icon
 
 - type: entity
@@ -543,13 +474,11 @@
   id: DrinkCoffee
   suffix: кава
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Coffee
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Coffee
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/coffee.rsi
     state: icon
@@ -559,13 +488,11 @@
   id: DrinkCognacGlass
   suffix: коньяк
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Cognac
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cognac
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/cognacglass.rsi
     state: icon
@@ -575,13 +502,11 @@
   id: DrinkCosmopolitan
   suffix: космополітан
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Cosmopolitan
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cosmopolitan
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/cosmopolitan.rsi
     state: icon
@@ -591,26 +516,22 @@
   id: DrinkCream
   suffix: вершки
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Cream
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cream
+        Quantity: 60
 
 - type: entity
   parent: DrinkGlass
   id: DrinkCrushDepthGlass
   suffix: crush depth
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CrushDepth
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CrushDepth
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/crushdepth.rsi
     state: icon
@@ -620,13 +541,11 @@
   id: DrinkCubaLibreGlass
   suffix: куба лібре
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CubaLibre
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CubaLibre
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/cubalibreglass.rsi
     state: icon
@@ -636,13 +555,11 @@
   id: DrinkDarkandStormyGlass
   suffix: dark and stormy
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DarkandStormy
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DarkandStormy
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/dark&stormy.rsi
     state: icon
@@ -652,13 +569,11 @@
   id: DrinkDeadRumGlass
   suffix: мертвий ром
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DeadRum
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DeadRum
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rumglass.rsi
     state: icon
@@ -668,13 +583,11 @@
   id: DrinkDemonsBlood
   suffix: кров демона
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DemonsBlood
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DemonsBlood
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/demonsblood.rsi
     state: icon
@@ -684,13 +597,11 @@
   id: DrinkDevilsKiss
   suffix: поцілунок диявола
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DevilsKiss
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DevilsKiss
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/devilskiss.rsi
     state: icon
@@ -700,13 +611,11 @@
   id: DrinkDoctorsDelightGlass
   suffix: лікарська насолода
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DoctorsDelight
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DoctorsDelight
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/doctorsdelightglass.rsi
     state: icon
@@ -716,13 +625,11 @@
   id: DrinkDriestMartiniGlass
   suffix: найсухіший мартіні
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DriestMartini
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DriestMartini
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/driestmartiniglass.rsi
     state: icon
@@ -732,13 +639,11 @@
   id: DrinkDrGibbGlass
   suffix: доктор гібб
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DrGibb
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DrGibb
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/dr_gibb_glass.rsi
     state: icon
@@ -748,13 +653,11 @@
   id: DrinkEggnog
   suffix: eggnog
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Eggnog
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Eggnog
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/eggnogglass.rsi
     state: icon
@@ -764,13 +667,11 @@
   id: DrinkElectricSharkGlass
   suffix: electric shark
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ElectricShark
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ElectricShark
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/electricshark.rsi
     state: icon
@@ -780,13 +681,11 @@
   id: DrinkErikaSurprise
   suffix: еріка-сюрприз
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ErikaSurprise
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ErikaSurprise
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/erikasurprise.rsi
     state: icon
@@ -796,13 +695,11 @@
   id: DrinkFourteenLokoGlass
   suffix: чтирнадцять локо
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: FourteenLoko
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/fourteen_loko_glass.rsi
     state: icon
@@ -812,13 +709,11 @@
   id: DrinkGargleBlasterGlass
   suffix: міжгалактичний водний бластер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: GargleBlaster
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/gargleblasterglass.rsi
     state: icon
@@ -828,13 +723,11 @@
   id: DrinkGinGlass
   suffix: джин
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Gin
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
     state: icon
@@ -844,13 +737,11 @@
   id: DrinkGinFizzGlass
   suffix: джин фіз
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: GinFizz
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/ginfizzglass.rsi
     state: icon
@@ -860,13 +751,11 @@
   id: DrinkGinTonicglass
   suffix: джин-тонік
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: GinTonic
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/gintonicglass.rsi
     state: icon
@@ -876,13 +765,11 @@
   id: DrinkGildlagerGlass
   suffix: гільдлагер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Gildlager
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/gildlagerglass.rsi
     state: icon
@@ -892,13 +779,11 @@
   id: DrinkGrapeJuice
   suffix: виноградний сік
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceGrape
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/grapejuice.rsi
     state: icon
@@ -908,13 +793,11 @@
   id: DrinkGrapeSodaGlass
   suffix: виноградна газованка
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: GrapeSoda
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/gsodaglass.rsi
     state: icon
@@ -924,13 +807,11 @@
   id: DrinkGreenTeaGlass
   suffix: зелений чай
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: GreenTea
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi
     state: icon
@@ -940,13 +821,11 @@
   id: DrinkGrenadineGlass
   suffix: ґренадін
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Grenadine
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/grenadineglass.rsi
     state: icon
@@ -956,13 +835,11 @@
   id: DrinkGrogGlass
   suffix: ґроґ
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Grog
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/grogglass.rsi
     state: icon
@@ -972,13 +849,11 @@
   id: DrinkHippiesDelightGlass
   suffix: насолода гіппі
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: HippiesDelight
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/hippiesdelightglass.rsi
     state: icon
@@ -989,13 +864,11 @@
   suffix: бухло
   description: Ви дійсно досягли дна... Ваша печінка спакувала валізи і пішла вчора ввечері.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Hooch
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/glass_brown2.rsi
     state: icon
@@ -1005,13 +878,11 @@
   id: DrinkIcedCoffeeGlass
   suffix: кава з льодом
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IcedCoffee
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/icedcoffeeglass.rsi
     state: icon
@@ -1021,13 +892,11 @@
   id: DrinkIcedGreenTeaGlass
   suffix: холодний зелений чай
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IcedGreenTea
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/icedgreenteaglass.rsi
     state: icon
@@ -1037,13 +906,11 @@
   id: DrinkIcedTeaGlass
   suffix: холодний чай
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IcedTea
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/icedteaglass.rsi
     state: icon
@@ -1053,13 +920,11 @@
   id: DrinkIcedBeerGlass
   suffix: холодне пиво
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IcedBeer
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/iced_beerglass.rsi
     state: icon
@@ -1069,13 +934,11 @@
   id: DrinkIceGlass
   suffix: лід
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Ice
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/iceglass.rsi
     state: icon
@@ -1085,13 +948,11 @@
   id: DrinkIceCreamGlass
   suffix: морозиво
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IceCream
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/icecreamglass.rsi
     state: icon
@@ -1101,13 +962,11 @@
   id: IrishBoolGlass
   suffix: ірландський буул
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IrishBool
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/beerglass.rsi
     state: icon
@@ -1117,13 +976,11 @@
   id: DrinkIrishSlammer
   suffix: Пінгвінячя граната
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IrishSlammer
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/irishslammer.rsi
     state: icon
@@ -1133,13 +990,11 @@
   id: DrinkIrishCoffeeGlass
   suffix: ірландська кава
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IrishCoffee
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/irishcoffeeglass.rsi
     state: icon
@@ -1149,13 +1004,11 @@
   id: DrinkIrishCreamGlass
   suffix: ірландські вершки
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: IrishCream
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/irishcreamglass.rsi
     state: icon
@@ -1165,13 +1018,11 @@
   id: DrinkCoffeeLiqueurGlass
   suffix: кавовий лікер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: CoffeeLiqueur
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/coffeeliqueurglass.rsi
     state: icon
@@ -1181,13 +1032,11 @@
   id: DrinkJackRoseGlass
   suffix: jack rose
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JackRose
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/jackrose.rsi
     state: icon
@@ -1197,13 +1046,11 @@
   id: DrinkJungleBirdGlass
   suffix: jungle bird
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JungleBird
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/junglebird.rsi
     state: icon
@@ -1213,13 +1060,11 @@
   id: DrinkKalimotxoGlass
   suffix: kalimotxo
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Kalimotxo
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/kalimotxo.rsi
     state: icon
@@ -1229,13 +1074,11 @@
   id: DrinkOrangeLimeSodaGlass
   suffix: citrus bikeshed
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: OrangeLimeSoda
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/orangelime_soda.rsi
     state: icon
@@ -1245,13 +1088,11 @@
   id: DrinkLemonadeGlass
   suffix: лимонад
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Lemonade
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/lemonadeglass.rsi
     state: icon
@@ -1261,13 +1102,11 @@
   id: DrinkLemonJuice
   suffix: сік лимону
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceLemon
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/lemonjuiceglass.rsi
     state: icon
@@ -1277,13 +1116,11 @@
   id: DrinkLemonLime
   suffix: лимон-лайм
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: LemonLime
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/lemonlime.rsi
     state: icon
@@ -1293,13 +1130,11 @@
   id: DrinkLimeJuice
   suffix: сік лайму
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceLime
-          Quantity: 30
+          Quantity: 60
 #TODO Icon
 
 - type: entity
@@ -1307,13 +1142,11 @@
   id: DrinkLongIslandIcedTeaGlass
   suffix: лонґ айленд
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: LongIslandIcedTea
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/longislandicedteaglass.rsi
     state: icon
@@ -1323,13 +1156,11 @@
   id: DrinkManhattanGlass
   suffix: мангетан
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Manhattan
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/manhattanglass.rsi
     state: icon
@@ -1339,13 +1170,11 @@
   id: DrinkManhattanProjectGlass
   suffix: проєкт мангетан
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: ManhattanProject
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/proj_manhattanglass.rsi
     state: icon
@@ -1355,13 +1184,11 @@
   id: DrinkManlyDorfGlass
   suffix: мужній дорф
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: ManlyDorf
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/manlydorfglass.rsi
     state: icon
@@ -1371,13 +1198,11 @@
   id: DrinkMargaritaGlass
   suffix: маргаріта
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Margarita
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/margaritaglass.rsi
     state: icon
@@ -1387,13 +1212,11 @@
   id: DrinkMartiniGlass
   suffix: класичне мартіні
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Martini
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/martiniglass.rsi
     state: icon
@@ -1403,13 +1226,11 @@
   id: DrinkMeadGlass
   suffix: медовуха
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Mead
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/meadglass.rsi
     state: icon
@@ -1428,13 +1249,11 @@
   id: DrinkMojito
   suffix: мохіто
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Mojito
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/mojito.rsi
     state: icon
@@ -1444,13 +1263,11 @@
   id: DrinkMonkeyBusinessGlass
   suffix: monkey business
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: MonkeyBusiness
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/monkeybusiness.rsi
     state: icon
@@ -1460,13 +1277,11 @@
   id: DrinkNeurotoxinGlass
   suffix: нейротоксин
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Neurotoxin
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/neurotoxinglass.rsi
     state: icon
@@ -1476,13 +1291,11 @@
   id: DrinkNothing
   suffix: нічого
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Nothing
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/nothing.rsi
     state: icon
@@ -1492,13 +1305,11 @@
   id: DrinkNTCahors
   suffix: неотеологічний кагор
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: NTCahors
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/wineglass.rsi
     state: icon
@@ -1508,13 +1319,11 @@
   id: DrinkNuclearColaGlass
   suffix: ядерна кола
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: NuclearCola
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/nuclear_colaglass.rsi
     state: icon
@@ -1524,13 +1333,11 @@
   id: DrinkOrangeJuice
   suffix: сік апельсину
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceOrange
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/orangejuice.rsi
     state: icon
@@ -1540,13 +1347,11 @@
   id: DrinkPainkillerGlass
   suffix: знеболювальне
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Painkiller
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/painkiller.rsi
     state: icon
@@ -1556,13 +1361,11 @@
   id: DrinkPatronGlass
   suffix: покровитель
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Patron
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/patronglass.rsi
     state: icon
@@ -1572,13 +1375,11 @@
   id: DrinkPinaColadaGlass
   suffix: піна колада
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: PinaColada
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/pinacolada.rsi
     state: icon
@@ -1588,13 +1389,11 @@
   id: DrinkPoisonBerryJuice
   suffix: сік отруйних ягід
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceBerryPoison
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/poisonberryjuice.rsi
     state: icon
@@ -1604,13 +1403,11 @@
   id: DrinkPoisonWineGlass
   suffix: отруйне вино
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: PoisonWine
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/pwineglass.rsi
     state: icon
@@ -1620,13 +1417,11 @@
   id: DrinkPoscaGlass
   suffix: поска
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Posca
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/glass_light_yellow.rsi
     state: icon
@@ -1636,13 +1431,11 @@
   id: DrinkRadlerGlass
   suffix: radler
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Radler
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/radler.rsi
     state: icon
@@ -1652,13 +1445,11 @@
   id: DrinkRedMeadGlass
   suffix: червона медовуха
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: RedMead
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/red_meadglass.rsi
     state: icon
@@ -1668,13 +1459,11 @@
   id: DrinkRewriter
   suffix: переписувач
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Rewriter
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rewriter.rsi
     state: icon
@@ -1684,13 +1473,11 @@
   id: DrinkRootBeerGlass
   suffix: корне-пиво
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: RootBeer
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rootbeerglass.rsi
     state: icon
@@ -1700,13 +1487,11 @@
   id: DrinkRootBeerFloatGlass
   suffix: коктейл з корне-пива
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: RootBeerFloat
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rootbeerfloatglass.rsi
     state: icon
@@ -1716,13 +1501,11 @@
   id: DrinkRumGlass
   suffix: ром
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Rum
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/rumglass.rsi
     state: icon
@@ -1732,13 +1515,11 @@
   id: DrinkRoyRogersGlass
   suffix: рой роджерс
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: RoyRogers
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/royrogers.rsi
     state: icon
@@ -1748,13 +1529,11 @@
   id: DrinkSakeGlass
   suffix: саке
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Sake
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/sakeglass.rsi
     state: icon
@@ -1764,13 +1543,11 @@
   id: DrinkSbitenGlass
   suffix: збитень
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Sbiten
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/sbitenglass.rsi
     state: icon
@@ -1780,13 +1557,11 @@
   id: DrinkScrewdriverCocktailGlass
   suffix: викрутка
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: ScrewdriverCocktail
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/screwdriverglass.rsi
     state: icon
@@ -1796,13 +1571,11 @@
   id: DrinkCogChampBase
   suffix: когчамп
   components:
-    - type: SolutionContainerManager
-      solutions:
-        drink:
-          maxVol: 30
+    - type: Solution
+      solution:
           reagents:
             - ReagentId: CogChamp
-              Quantity: 30
+              Quantity: 60
     - type: Icon
       sprite: Objects/Consumable/Drinks/cogchamp.rsi
       state: icon
@@ -1812,13 +1585,11 @@
   id: DrinkSuiDreamGlass
   suffix: "с'ю дрім"
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SuiDream
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/sdreamglass.rsi
     state: icon
@@ -1828,13 +1599,11 @@
   id: DrinkEmeraldGlass
   suffix: динний лікер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: MelonLiquor
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/emeraldglass.rsi
     state: icon
@@ -1844,13 +1613,11 @@
   id: DrinkMoonshineGlass
   suffix: самогон
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Moonshine
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/glass_clear.rsi
     state: icon
@@ -1860,13 +1627,11 @@
   id: DrinkGlassWhite
   suffix: молоко
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Milk
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/glass_white.rsi
     state: icon
@@ -1876,13 +1641,11 @@
   id: DrinkShirleyTempleGlass
   suffix: ширлі темпл
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: ShirleyTemple
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/shirleytemple.rsi
     state: icon
@@ -1892,13 +1655,11 @@
   id: DrinkSilencerGlass
   suffix: мовчун
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Silencer
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/silencerglass.rsi
     state: icon
@@ -1908,13 +1669,11 @@
   id: DrinkSingulo
   suffix: сингуло
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Singulo
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/singulo.rsi
     state: icon
@@ -1924,13 +1683,11 @@
   id: DrinkSolDryGlass
   suffix: соль сухий
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SolDry
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/sol_dry_glass.rsi
     state: icon
@@ -1940,13 +1697,11 @@
   id: DrinkSnowWhite
   suffix: білосніжний
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SnowWhite
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/snowwhite.rsi
     state: icon
@@ -1956,13 +1711,11 @@
   id: DrinkSoyLatte
   suffix: соєве латте
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SoyLatte
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/soy_latte.rsi
     state: icon
@@ -1972,13 +1725,11 @@
   id: DrinkSpaceUpGlass
   suffix: роз-герм
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SpaceUp
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/space-up_glass.rsi
     state: icon
@@ -1988,13 +1739,11 @@
   id: DrinkSpaceMountainWindGlass
   suffix: вітер космічної гори
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SpaceMountainWind
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/space_mountain_wind_glass.rsi
     state: icon
@@ -2004,13 +1753,11 @@
   id: DrinkSyndicatebomb
   suffix: бомба синдикату
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: SyndicateBomb
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/syndicatebomb.rsi
     state: icon
@@ -2020,13 +1767,11 @@
   id: DrinkTeaGlass
   suffix: чай
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Tea
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/teaglass.rsi
     state: icon
@@ -2036,13 +1781,11 @@
   id: DrinkTequilaGlass
   suffix: текіла
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Tequila
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/tequillaglass.rsi
     state: icon
@@ -2052,13 +1795,11 @@
   id: DrinkTequilaSunriseGlass
   suffix: схід сонця з текілою
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: TequilaSunrise
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/tequillasunriseglass.rsi
     state: icon
@@ -2068,13 +1809,11 @@
   id: DrinkTheMartinez
   suffix: Мартінес
   components:
-    - type: SolutionContainerManager
-      solutions:
-        drink:
-          maxVol: 30
-          reagents:
-            - ReagentId: TheMartinez
-              Quantity: 30
+    - type: Solution
+      solution:
+        reagents:
+        - ReagentId: TheMartinez
+          Quantity: 60
     - type: Icon
       sprite: Objects/Consumable/Drinks/the_martinez.rsi
       state: icon
@@ -2084,13 +1823,11 @@
   id: DrinkThreeMileIslandGlass
   suffix: трьох-мильний острів
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ThreeMileIsland
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: ThreeMileIsland
+        Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/threemileislandglass.rsi
     state: icon
@@ -2100,26 +1837,22 @@
   id: DrinkTomatoJuice
   suffix: томатний сік
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceTomato
-          Quantity: 30
+          Quantity: 60
 
 - type: entity
   parent: DrinkGlass
   id: DrinkTortugaGlass
   suffix: tortuga
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Tortuga
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/tortuga.rsi
     state: icon
@@ -2129,13 +1862,11 @@
   id: DrinkToxinsSpecialGlass
   suffix: токсин спешиал
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: ToxinsSpecial
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/toxinsspecialglass.rsi
     state: icon
@@ -2145,13 +1876,11 @@
   id: DrinkVampiroGlass
   suffix: vampiro
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Vampiro
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/vampiro.rsi
     state: icon
@@ -2161,13 +1890,11 @@
   id: DrinkVermouthGlass
   suffix: вермут
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Vermouth
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/vermouthglass.rsi
     state: icon
@@ -2177,13 +1904,11 @@
   id: DrinkVodkaGlass
   suffix: горілка
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Vodka
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
     state: icon
@@ -2193,13 +1918,11 @@
   id: DrinkVodkaMartiniGlass
   suffix: горілка з мартіні
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: VodkaMartini
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/martiniglass.rsi
     state: icon
@@ -2209,13 +1932,11 @@
   id: DrinkVodkaRedBool
   suffix: горілка з ред буулом
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: VodkaRedBool
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
     state: icon
@@ -2225,13 +1946,11 @@
   id: DrinkVodkaTonicGlass
   suffix: горілка з тоніком
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: VodkaTonic
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/vodkatonicglass.rsi
     state: icon
@@ -2242,13 +1961,11 @@
   name: глечик з водою
   description: Пийте більше води.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Water
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/water.rsi
     state: icon
@@ -2258,13 +1975,11 @@
   id: DrinkWatermelonJuice
   suffix: сік кавуна
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: JuiceWatermelon
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/watermelonglass.rsi
     state: icon
@@ -2274,13 +1989,11 @@
   id: DrinkWatermelonWakeup
   suffix: кавунове пробудження
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: WatermelonWakeup
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/champagneglass.rsi
     state: icon
@@ -2290,13 +2003,11 @@
   id: DrinkWhiskeyColaGlass
   suffix: віскі-кола
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: WhiskeyCola
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/whiskeycolaglass.rsi
     state: icon
@@ -2306,13 +2017,11 @@
   id: DrinkWhiskeyGlass
   suffix: віскі
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Whiskey
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/whiskeyglass.rsi
     state: icon
@@ -2322,13 +2031,11 @@
   id: DrinkWhiskeySodaGlass
   suffix: віскі з газованкою
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: WhiskeySoda
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/whiskeysodaglass.rsi
     state: icon
@@ -2338,13 +2045,11 @@
   id: DrinkWhiteRussianGlass
   suffix: білий росіянин
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: WhiteRussian
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/whiterussianglass.rsi
     state: icon
@@ -2354,13 +2059,11 @@
   id: DrinkWineGlass
   suffix: вино
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Wine
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/wineglass.rsi
     state: icon
@@ -2370,13 +2073,11 @@
   id: XenoBasherGlass
   suffix: ксено-башер
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: XenoBasher
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/xenobasher.rsi
     state: icon
@@ -2386,13 +2087,11 @@
   id: DrinkCaipirinha
   suffix: caipirinha
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Caipirinha
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/caipirinha.rsi
     state: icon
@@ -2402,13 +2101,11 @@
   id: DrinkDaiquiri
   suffix: daiquiri
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Daiquiri
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/daiquiri.rsi
     state: icon
@@ -2418,13 +2115,11 @@
   id: DrinkDeathInTheAfternoon
   suffix: death in the afternoon
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: DeathInTheAfternoon
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/deathintheafternoon.rsi
     state: icon
@@ -2434,13 +2129,11 @@
   id: DrinkEmpress75
   suffix: empress 75
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Empress75
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/empress75.rsi
     state: icon
@@ -2450,13 +2143,11 @@
   id: DrinkEspressoMartini
   suffix: espresso martini
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: EspressoMartini
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/espressomartini.rsi
     state: icon
@@ -2466,13 +2157,11 @@
   id: DrinkMayojito
   suffix: mayojito
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Mayojito
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/mayojito.rsi
     state: icon
@@ -2482,13 +2171,11 @@
   id: DrinkMimeosa
   suffix: mimeosa
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Mimeosa
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/mimeosa.rsi
     state: icon
@@ -2498,13 +2185,11 @@
   id: DrinkMimosa
   suffix: mimosa
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: Mimosa
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/mimosa.rsi
     state: icon
@@ -2514,13 +2199,11 @@
   id: DrinkMoscowMule
   suffix: moscow mule
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: MoscowMule
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/moscowmule.rsi
     state: icon
@@ -2530,13 +2213,11 @@
   id: DrinkTheSunAlsoRises
   suffix: the sun also rises
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: TheSunAlsoRises
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/thesunalsorises.rsi
     state: icon
@@ -2546,13 +2227,11 @@
   id: DrinkWhiskeySour
   suffix: whiskey sour
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: WhiskeySour
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/whiskeysour.rsi
     state: icon
@@ -2562,13 +2241,11 @@
   id: DrinkBloodGlass
   suffix: кров
   components:
-    - type: SolutionContainerManager
-      solutions:
-        drink:
-          maxVol: 30
+    - type: Solution
+      solution:
           reagents:
             - ReagentId: Blood
-              Quantity: 30
+              Quantity: 60
     - type: Icon
       sprite: Objects/Consumable/Drinks/bloodglass.rsi
       state: icon
@@ -2579,13 +2256,11 @@
   suffix: bacchus blessing
   description: You didn't think it was possible for a liquid to be so utterly revolting. Are you sure about this...?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    solution:
         reagents:
         - ReagentId: BacchusBlessing
-          Quantity: 30
+          Quantity: 60
   - type: Icon
     sprite: Objects/Consumable/Drinks/bacchusblessing.rsi
     state: icon

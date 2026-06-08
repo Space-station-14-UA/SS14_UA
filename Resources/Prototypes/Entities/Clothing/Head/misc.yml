@@ -302,7 +302,7 @@
     - FacialHair
 
 - type: entity
-  parent: Clothing
+  parent: [SolutionDrink, Clothing]
   id: WaterDropletHat
   name: крапелька води
   description: Робить ваших 8-ми оких друзів у 8 разів милішими!
@@ -328,19 +328,19 @@
       - water
   - type: DrainableSolution
     solution: drink
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 2
-        reagents:
-        - ReagentId: Water
-          Quantity: 2
+  - type: Solution
+    solution:
+      maxVol: 2 # Droplets are pretty small.
+      reagents:
+      - ReagentId: Water
+        Quantity: 2
   - type: DamageOnHighSpeedImpact
     minimumSpeed: 0.1
     damage:
       types:
         Blunt: 1
   - type: Damageable
+  - type: Injurable
     damageContainer: Biological
   - type: Destructible
     thresholds:

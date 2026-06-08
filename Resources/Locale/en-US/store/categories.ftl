@@ -27,3 +27,8 @@ store-category-spellbook-events = Особливі заклинання
 
 # Nukie Delivery
 store-category-nukie-delivery = Пропозиції
+
+# Changeling
+store-category-combat = Бойове
+store-category-utility = Спорядження
+store-category-stealth = Прихованість

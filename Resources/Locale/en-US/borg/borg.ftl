@@ -10,6 +10,7 @@ borg-module-too-many = Для ще одного модуля не вистача
 borg-module-duplicate = Цей модуль вже встановлений у цьому кіборзі.
 borg-module-whitelist-deny = Цей модуль не підходить для такого типу кіборгів...
 borg-module-incompatible = Цей модуль несумісний з {$existing}.
+borg-module-prerequisite-unfulfilled = Цей модуль потребує іншого модуля для роботи...
 
 borg-module-action-name = Активувати {$moduleName}
 borg-module-action-description = Виберіть {$moduleName}, щоб отримати доступ до інструментів, які він надає.

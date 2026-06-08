@@ -50,6 +50,7 @@
   - PassengerGloves
   - PassengerOuterClothing
   - PassengerShoes
+  - PassengerHead
   - Glasses
   - Survival
   - Trinkets
@@ -359,6 +360,7 @@
   id: JobResearchAssistant
   groups:
   - GroupTankHarness
+  - ResearchAssistantHead
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses

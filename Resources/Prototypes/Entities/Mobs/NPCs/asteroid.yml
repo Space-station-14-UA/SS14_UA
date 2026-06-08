@@ -19,7 +19,6 @@
   - type: StatusEffects
     allowed:
     - Electrocution
-    - TemporaryBlindness
     - Adrenaline
   - type: StandingState
   - type: Tag
@@ -307,13 +306,11 @@
   name: рештки володаря рою
   description: Все, що залишилося від рою, здається, це те, що дозволяє йому відламувати від себе шматки, не завдаючи собі болю... Його цілющі властивості скоро стануть інертними, якщо не використовувати їх швидко. Намагайтеся не думати про те, що ви їсте.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 5
-        reagents:
-        - ReagentId: Rororium
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Rororium
+        Quantity: 5
   - type: Sprite
     sprite: Objects/Consumable/Food/rorocore.rsi
     state: boiled

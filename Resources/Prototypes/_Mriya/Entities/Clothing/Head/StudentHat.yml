@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: MRStudenthat
+  name: академічна шапочка
+  description: Академічна шапочка, видно, ця людина дуже розумна. Або купила диплом.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Misc/student.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Misc/student.rsi
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable

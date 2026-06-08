@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: Acidifier
-  name: acid
-  description: Melts you into a puddle of yuck!
+  name: кислота
+  description: Розплавить вас на калюжу бридоти!
   components:
   - type: Transform
     anchored: True

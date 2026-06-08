@@ -1,0 +1,14 @@
+- type: species
+  id: Felinid
+  name: species-name-felinid
+  roundStart: true
+  prototype: MobFelinid
+  dollPrototype: AppearanceFelinid
+  skinColoration: HumanToned
+  minHeight: 0.650
+  defaultHeight: 0.8
+  maxHeight: 1
+  minWidth: 0.650
+  defaultWidth: 0.8
+  maxWidth: 1.1
+
