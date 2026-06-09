@@ -230,9 +230,9 @@
         Heat: -0.5
   - type: ZombieImmune
   - type: Repairable
-    damageValue: -10 # 10 seconds to repair from crit
-    doAfterDelay: 1
-    fuelCost: 0.5
+    damageValue: -4 # 17.5 seconds to repair from crit
+    doAfterDelay: 0.6
+    fuelCost: 0.2
     allowSelfRepair: true
   - type: PassiveDamage #Є щоб оновлюати дамаг в ІПШ бо схоже що гра не оновлює стан моба коли ти жахаєш дефеблрилятором, тож мінус ще бага, ще також дозваолить у теорії робити оставшого зі смерті ІПШ який перезапустився але це займе мільйон років
     allowedStates:

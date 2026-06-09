@@ -4,3 +4,10 @@
   name: stack-MROilpack
   icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: bloodpack }
   spawn: MROilpack
+  
+- type: stack
+  parent: BaseSmallStack
+  id: MRIPCRepairKit
+  name: stack-MRIPCRepairKit
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  spawn: MRIPCRepairKit

@@ -1,5 +1,5 @@
 - type: entity
-  name: Пакет олії
+  name: пакет олії
   description: Містить у собі олію для ІПШ, аби замінювати при її недостачі.
   parent: BaseHealingItem
   id: MROilpack
@@ -13,13 +13,13 @@
   - type: Sprite
     state: bloodpack
   - type: Healing 
-    delay: 3
+    delay: 2
     damageContainers:
       - Silicon
       - IPC
     damage:
       types:
-        Heat: -1 #lowers bloodloss damage
+        Heat: -10
     modifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -45,3 +45,45 @@
   - type: Stack
     stackType: MROilpack
     count: 1
+    
+- type: entity
+  name: металева латка
+  description: Металева латка аби закрити дірки у корпусі ІПШ, та тим самим зупинити витікання олії.
+  parent: BaseHealingItem
+  id: MRIPCRepairKit
+  suffix: Повний
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: medicated-suture
+  - type: Item
+    heldPrefix: medicated-suture
+    storedRotation: -90
+  - type: Healing 
+    delay: 1.5
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Blunt: -5
+        Piercing: -5
+        Slash: -5
+    bloodlossModifier: -10 # a suture should stop ongoing bleeding
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: MRIPCRepairKit
+    count: 10
+  - type: StackPrice
+    price: 20
