@@ -68,6 +68,27 @@
     layers:
     - state: coilhv-30
       map: ["base"]
+  - type: Healing # Початок змін для Мрії
+    delay: 0.6
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Heat: -2
+        Cold: -2
+        Shock: -2 
+        Caustic: -2
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125 # Кінець змін для Мрії
   - type: Item
     heldPrefix: coilhv
   - type: CablePlacer
@@ -122,6 +143,27 @@
     layers:
     - state: coilmv-30
       map: ["base"]
+  - type: Healing # Початок змін для Мрії
+    delay: 0.6
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Heat: -1.8
+        Cold: -1.8
+        Shock: -1.8 
+        Caustic: -1.8
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125 # Кінець змін для Мрії
   - type: Item
     heldPrefix: composite
   - type: CablePlacer
@@ -173,6 +215,27 @@
     layers:
     - state: coillv-30
       map: ["base"]
+  - type: Healing # Початок змін для Мрії
+    delay: 0.6
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Heat: -1.6
+        Cold: -1.6
+        Shock: -1.6 
+        Caustic: -1.6
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125 # Кінець змін для Мрії
   - type: Item
     heldPrefix: coillv
   - type: Stack

@@ -1,0 +1,38 @@
+- type: entity
+  name: Пакет олії
+  description: Містить у собі олію для ІПШ, аби замінювати при її недостачі.
+  parent: BaseHealingItem
+  id: MROilpack
+  suffix: Повний
+  components:
+  - type: Item
+    heldPrefix: oilpack
+  - type: Tag
+    tags:
+    - Bloodpack
+  - type: Sprite
+    state: bloodpack
+  - type: Healing 
+    delay: 3
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Heat: -1 #lowers bloodloss damage
+    modifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: MROilpack
+    count: 10
+  - type: StackPrice
+    price: 10

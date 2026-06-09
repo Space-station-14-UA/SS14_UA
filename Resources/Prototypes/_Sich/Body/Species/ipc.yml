@@ -208,6 +208,8 @@
       Unsexed: UnisexIPC
     wilhelm:
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
+  - type: Injurable
+    damageContainer: IPC
   - type: Damageable
     damageModifierSet: Robotic
   - type: DamageVisuals
