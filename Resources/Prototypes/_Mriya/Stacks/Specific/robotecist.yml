@@ -1,0 +1,6 @@
+- type: stack
+  parent: BaseSmallStack
+  id: MROilpack
+  name: stack-MROilpack
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: bloodpack }
+  spawn: MROilpack

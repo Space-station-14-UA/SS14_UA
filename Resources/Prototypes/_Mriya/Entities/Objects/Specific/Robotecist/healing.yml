@@ -36,3 +36,12 @@
     count: 10
   - type: StackPrice
     price: 10
+    
+- type: entity
+  parent: MROilpack
+  id: MROilpack1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MROilpack
+    count: 1
