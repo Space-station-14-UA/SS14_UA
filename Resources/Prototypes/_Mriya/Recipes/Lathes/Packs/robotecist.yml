@@ -1,0 +1,10 @@
+# static
+
+- type: latheRecipePack
+  id: MRSiliconRepiringItemsStatic
+  recipes:
+  - MRIPCRepairKit
+  - MROilpack
+  - MRIPCOxydisingTape
+  - MRReviringKit
+  - MRIPCAntiRadKit

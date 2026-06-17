@@ -87,6 +87,15 @@
     count: 10
   - type: StackPrice
     price: 20
+    
+- type: entity
+  parent: MRIPCRepairKit
+  id: MRIPCRepairKit1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MRIPCRepairKit
+    count: 1
 
 - type: entity
   name: посилена окислююча ізолента
@@ -171,6 +180,15 @@
     price: 20
     
 - type: entity
+  parent: MRReviringKit
+  id: MRReviringKit1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MRReviringKit
+    count: 1
+    
+- type: entity
   name: набір для усунення радіації
   description: Набір для усунення пошкоджених радіацією частин.
   parent: BaseHealingItem
@@ -207,3 +225,12 @@
     count: 10
   - type: StackPrice
     price: 20
+    
+- type: entity
+  parent: MRIPCAntiRadKit
+  id: MRIPCAntiRadKit1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MRIPCAntiRadKit
+    count: 1

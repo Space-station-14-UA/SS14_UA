@@ -1,0 +1,40 @@
+- type: latheRecipe
+  id: MRIPCRepairKit
+  result: MRIPCRepairKit
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 10
+
+- type: latheRecipe
+  id: MROilpack
+  result: MROilpack1
+  completetime: 1
+  materials:
+    Steel: 10
+    Plastic: 50
+    
+- type: latheRecipe
+  id: MRIPCOxydisingTape
+  result: MRIPCOxydisingTape1
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 50
+    
+- type: latheRecipe
+  id: MRReviringKit
+  result: MRReviringKit1
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 20
+    
+- type: latheRecipe
+  id: MRIPCAntiRadKit
+  result: MRReviringKit1
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 30
+    Plasma: 10

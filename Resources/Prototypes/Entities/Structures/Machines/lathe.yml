@@ -312,6 +312,7 @@
     idleState: fab-idle
     runningState: fab-active
     staticPacks:
+    - MRSiliconRepiringItemsStatic #додано для Мрії
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
