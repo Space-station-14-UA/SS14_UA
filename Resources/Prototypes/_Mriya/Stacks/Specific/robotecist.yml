@@ -11,3 +11,24 @@
   name: stack-MRIPCRepairKit
   icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
   spawn: MRIPCRepairKit
+
+- type: stack
+  parent: BaseSmallStack
+  id: MRIPCOxydisingTape
+  name: stack-MRIPCOxydisingTape
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  spawn: MRIPCOxydisingTape
+  
+- type: stack
+  parent: BaseSmallStack
+  id: MRReviringKit
+  name: stack-MRReviringKit
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  spawn: MRReviringKit
+  
+- type: stack
+  parent: BaseSmallStack
+  id: MRIPCAntiRadKit
+  name: stack-MRIPCAntiRadKit
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  spawn: MRIPCAntiRadKit

@@ -87,3 +87,125 @@
     count: 10
   - type: StackPrice
     price: 20
+
+- type: entity
+  name: посилена окислююча ізолента
+  description: Посилена окислююча ізолента яка гарно закриває відкриті пробоїни на ІПШ, за допомогою того що здатна окислювати олію та зупиняти її втрату.
+  parent: BaseHealingItem
+  id: MRIPCOxydisingTape
+  suffix: Повний
+  components:
+  - type: Tag
+    tags:
+    - Gauze
+  - type: Sprite
+    state: medicated-suture
+  - type: Item
+    heldPrefix: medicated-suture
+    storedRotation: -90
+  - type: Healing 
+    delay: 1.5
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Piercing: -10
+        Slash: -10
+    bloodlossModifier: -20 # a suture should stop ongoing bleeding
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: MRIPCOxydisingTape
+    count: 10
+  - type: StackPrice
+    price: 20
+    
+- type: entity
+  name: набір заміни кабелів
+  description: Набір кабелів для заміни спалених кабелів у ІПШ та інших силіконів.
+  parent: BaseHealingItem
+  id: MRReviringKit
+  suffix: Повна
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    state: regenerative-mesh
+  - type: Item
+    heldPrefix: regenerative-mesh
+  - type: Healing 
+    delay: 1.5
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Heat: -10
+        Cold: -10
+        Shock: -10
+        Caustic: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: MRReviringKit
+    count: 10
+  - type: StackPrice
+    price: 20
+    
+- type: entity
+  name: набір для усунення радіації
+  description: Набір для усунення пошкоджених радіацією частин.
+  parent: BaseHealingItem
+  id: MRIPCAntiRadKit
+  suffix: Повна
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    state: regenerative-mesh
+  - type: Item
+    heldPrefix: regenerative-mesh
+  - type: Healing 
+    delay: 1.5
+    damageContainers:
+      - Silicon
+      - IPC
+    damage:
+      types:
+        Radiation: -20
+        Heat: 1
+        Slash: 2
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: MRIPCAntiRadKit
+    count: 10
+  - type: StackPrice
+    price: 20
