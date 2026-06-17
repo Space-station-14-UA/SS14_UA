@@ -137,6 +137,15 @@
     count: 10
   - type: StackPrice
     price: 20
+
+- type: entity
+  parent: MRIPCOxydisingTape
+  id: MRIPCOxydisingTape1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: MRIPCOxydisingTape
+    count: 1
     
 - type: entity
   name: набір заміни кабелів
