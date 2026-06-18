@@ -5,13 +5,12 @@
   id: MROilpack
   suffix: Повний
   components:
-  - type: Item
-    heldPrefix: oilpack
   - type: Tag
     tags:
     - Bloodpack
   - type: Sprite
-    state: bloodpack
+    sprite: _Mriya/Objects/Specific/Robotecist/oilpack.rsi
+    state: icon
   - type: Healing 
     delay: 2
     damageContainers:
@@ -57,10 +56,8 @@
     tags:
     - Brutepack
   - type: Sprite
-    state: medicated-suture
-  - type: Item
-    heldPrefix: medicated-suture
-    storedRotation: -90
+    sprite: _Mriya/Objects/Specific/Robotecist/ipc_repair_kit.rsi
+    state: icon
   - type: Healing 
     delay: 1.5
     damageContainers:
@@ -108,10 +105,8 @@
     tags:
     - Gauze
   - type: Sprite
-    state: medicated-suture
-  - type: Item
-    heldPrefix: medicated-suture
-    storedRotation: -90
+    sprite: _Mriya/Objects/Specific/Robotecist/oxydising_tape.rsi
+    state: icon
   - type: Healing 
     delay: 1.5
     damageContainers:
@@ -158,9 +153,8 @@
     tags:
     - Ointment
   - type: Sprite
-    state: regenerative-mesh
-  - type: Item
-    heldPrefix: regenerative-mesh
+    sprite: _Mriya/Objects/Specific/Robotecist/reviring_kit.rsi
+    state: icon
   - type: Healing 
     delay: 1.5
     damageContainers:
@@ -208,9 +202,8 @@
     tags:
     - Ointment
   - type: Sprite
-    state: regenerative-mesh
-  - type: Item
-    heldPrefix: regenerative-mesh
+    sprite: _Mriya/Objects/Specific/Robotecist/antirad_kit.rsi
+    state: icon
   - type: Healing 
     delay: 1.5
     damageContainers:

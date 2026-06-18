@@ -2,33 +2,33 @@
   parent: BaseSmallStack
   id: MROilpack
   name: stack-MROilpack
-  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: bloodpack }
+  icon: { sprite: "/Textures/_Mriya/Objects/Specific/Robotecist/oilpack.rsi", state: icon }
   spawn: MROilpack
   
 - type: stack
   parent: BaseSmallStack
   id: MRIPCRepairKit
   name: stack-MRIPCRepairKit
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: {sprite: "/Textures/_Mriya/Objects/Specific/Robotecist/ipc_repair_kit.rsi", state: icon  }
   spawn: MRIPCRepairKit
 
 - type: stack
   parent: BaseSmallStack
   id: MRIPCOxydisingTape
   name: stack-MRIPCOxydisingTape
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: {sprite: "/Textures/_Mriya/Objects/Specific/Robotecist/oxydising_tape.rsi", state: icon }
   spawn: MRIPCOxydisingTape
   
 - type: stack
   parent: BaseSmallStack
   id: MRReviringKit
   name: stack-MRReviringKit
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: {sprite: "/Textures/_Mriya/Objects/Specific/Robotecist/reviring_kit.rsi", state: icon }
   spawn: MRReviringKit
   
 - type: stack
   parent: BaseSmallStack
   id: MRIPCAntiRadKit
   name: stack-MRIPCAntiRadKit
-  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  icon: {sprite: "/Textures/_Mriya/Objects/Specific/Robotecist/antirad_kit.rsi", state: icon }
   spawn: MRIPCAntiRadKit
