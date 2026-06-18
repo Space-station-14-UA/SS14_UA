@@ -243,9 +243,6 @@
         Cold: -0.01
         Heat: -0.01
         Shock: -0.01
-        Blunt: -0.001
-        Piercing: -0.001
-        Slash: -0.001
   - type: SlowOnDamage
     speedModifierThresholds:
       70: 0.6
@@ -329,7 +326,7 @@
   components:
   - type: Metabolizer
     updateInterval: 1.5
-    maxReagents: 2
+    maxReagents: 20 # ІПШ фактично немають метаболізму, рідина просто циркулює по їхній системі
     metabolizerTypes: [IPC]
 
 - type: entity
