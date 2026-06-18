@@ -32,7 +32,7 @@
     
 - type: latheRecipe
   id: MRIPCAntiRadKit
-  result: MRReviringKit1
+  result: MRIPCAntiRadKit1
   completetime: 1
   materials:
     Steel: 50
