@@ -162,7 +162,7 @@
       - IPC
     damage:
       types:
-        Heat: -10
+        Heat: -15
         Cold: -10
         Shock: -10
         Caustic: -10

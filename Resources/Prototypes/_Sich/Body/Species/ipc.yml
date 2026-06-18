@@ -87,6 +87,7 @@
       FootLeft: OrganIPCFootLeft
       FootRight: OrganIPCFootRight
       Brain: OrganIPCBrain
+      Heart: OrganIPCCirculationSystem
   - type: HumanoidProfile
     species: IPC
 
@@ -228,6 +229,9 @@
     bloodlossHealDamage:
       types:
         Heat: -0.5
+  - type: SolutionManager
+  - type: InjectableSolution
+    solution: bloodstream
   - type: ZombieImmune
   - type: Repairable
     damageValue: -2.5 # 20 seconds to repair from crit
@@ -328,6 +332,7 @@
     updateInterval: 1.5
     maxReagents: 20 # ІПШ фактично немають метаболізму, рідина просто циркулює по їхній системі
     metabolizerTypes: [IPC]
+    stages: [ Digestion, Bloodstream, Metabolites ]
 
 - type: entity
   parent: OrganIPC
@@ -399,7 +404,7 @@
   id: OrganIPCFootRight
 
 - type: entity
-  parent: [ OrganIPCInternal, OrganIPCMetabolizer ]
+  parent: OrganIPCInternal
   id: OrganIPCBrain
   name: обчислювальний процесор ІПШ
   description: Схоже це щось типу мозоку для ІПШ? На диво підходить для ММІ, тож можна його вставити туди щоб зробити функціональним знову.
@@ -416,3 +421,16 @@
     - type: InputMover
     - type: Examiner
     - type: BlockMovement   
+    
+- type: entity
+  parent: [ OrganIPCInternal, OrganIPCMetabolizer ]
+  id: OrganIPCCirculationSystem
+  name: система циркуляції ІПШ
+  description: Це система охолодження ІПШ по якій зазвичай циркулює олія аби охолоджувати ІПШ та змазувати деталі.
+  components:
+    - type: Sprite
+      state: posibrain
+      sprite: _Sich/Mobs/Species/IPC/organs.rsi
+    - type: GibbableOrgan
+    - type: Organ
+      category: Heart
