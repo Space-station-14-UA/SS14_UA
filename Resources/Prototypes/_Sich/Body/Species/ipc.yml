@@ -229,9 +229,9 @@
     bloodlossHealDamage:
       types:
         Heat: -0.5
-  - type: SolutionManager
-  - type: InjectableSolution
-    solution: bloodstream
+#  - type: SolutionManager    #краще всеж зробити їм свою віддільну систему яка не пов'язана з метаболізмом
+#  - type: InjectableSolution
+#    solution: bloodstream
   - type: ZombieImmune
   - type: Repairable
     damageValue: -2.5 # 20 seconds to repair from crit

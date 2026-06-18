@@ -19,13 +19,6 @@
         damage:
           types:
             Poison: 4
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.5 #зміни для Мрії кінець
 
 - type: reagent
   id: CarpoToxin
@@ -54,13 +47,6 @@
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: ChloralHydrate
@@ -76,25 +62,13 @@
     Bloodstream:
       effects:
       - !type:Emote
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         emote: Yawn
         showInChat: true
         probability: 0.1
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectDrowsiness
         time: 4
         type: Update
@@ -106,13 +80,6 @@
         damage:
           types:
             Poison: 1.5
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: GastroToxin
@@ -130,21 +97,11 @@
             types:
               Poison: 2
         - !type:Vomit
-          conditions:    #зміни для Мрії початок
-          - !type:MetabolizerTypeCondition
-            type: [IPC] 
-            inverted: true #зміни для Мрії кінець
+          conditions:
           - !type:ReagentCondition
             reagent: GastroToxin
             min: 2
           probability: 0.2
-        - !type:HealthChange #зміни для Мрії початок
-          conditions:
-          - !type:MetabolizerTypeCondition
-            type: [IPC]
-          damage:
-            types:
-              Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: Mold
@@ -162,13 +119,6 @@
         damage:
           types:
             Poison: 1
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: PolytrinicAcid
@@ -365,13 +315,6 @@
         damage:
           types:
             Asphyxiation: 5
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10
@@ -392,13 +335,6 @@
           types:
             Asphyxiation: 5
             Bloodloss: 5
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 5 #зміни для Мрії кінець
 
 - type: reagent
   id: MindbreakerToxin
@@ -415,20 +351,9 @@
     Bloodstream:
       effects:
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 10
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
   # TODO: PROPER hallucinations
 
 - type: reagent
@@ -448,10 +373,7 @@
             Blunt: 2
       # todo: cough, sneeze
       - !type:HealthChange
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Histamine
           min: 45
@@ -461,18 +383,11 @@
             Asphyxiation: 2
             Poison: 2
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
         probability: 0.1
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Histamine
           min: 45
@@ -480,13 +395,6 @@
         visualType: Medium
         messages: [ "histamine-effect-heavy-itchiness" ]
         probability: 0.2
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: Theobromine
@@ -513,13 +421,6 @@
         conditions:
           - !type:MetabolizerTypeCondition
             type: [Animal]
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: Amatoxin
@@ -537,13 +438,6 @@
         damage:
           types:
             Poison: 3
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.4 #зміни для Мрії кінець
 
 - type: reagent
   id: VentCrud
@@ -560,13 +454,6 @@
           damage:
             types:
               Poison: 2
-        - !type:HealthChange #зміни для Мрії початок
-          conditions:
-          - !type:MetabolizerTypeCondition
-            type: [IPC]
-          damage:
-            types:
-              Heat: 2 #зміни для Мрії кінець
 
 - type: reagent
   id: Romerol
@@ -586,13 +473,6 @@
             - !type:ReagentCondition
               reagent: Romerol
               min: 5
-        - !type:HealthChange #зміни для Мрії початок
-          conditions:
-          - !type:MetabolizerTypeCondition
-            type: [IPC]
-          damage:
-            types:
-              Heat: 1 #зміни для Мрії кінець
 
 - type: reagent
   id: UncookedAnimalProteins
@@ -608,7 +488,7 @@
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, IPC] #зміни для Мрії
+          type: [ Animal, Vox ]
           inverted: true
         type: Local
         visualType: MediumCaution
@@ -618,12 +498,12 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, IPC] #зміни для Мрії
+          type: [ Animal, Vox, Plant ]
           inverted: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, IPC]  #зміни для Мрії
+          type: [ Animal, Vox, Plant ]
           inverted: true
         damage:
           types:
@@ -647,13 +527,6 @@
           type: [ Vox ]
         reagent: Protein
         amount: 0.25
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.2 #зміни для Мрії кінець
 
 - type: reagent
   id: Allicin
@@ -677,13 +550,6 @@
         damage:
           types:
             Poison: 0.06
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.2 #зміни для Мрії кінець
 
 - type: reagent
   id: Pax
@@ -699,20 +565,9 @@
     Bloodstream:
       effects:
       - !type:GenericStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         key: Pacified
         component: Pacified
         time: 4
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.2 #зміни для Мрії кінець
 
 - type: reagent
   id: Honk
@@ -742,13 +597,6 @@
         damage:
           types:
             Poison: 0.06
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 
 - type: reagent
@@ -767,13 +615,6 @@
         damage:
           types:
             Poison: 0.6 # Makes it 20 damage per unit.
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: Bungotoxin
@@ -791,13 +632,6 @@
         damage:
           types:
             Poison: 1.8
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 - type: reagent
   id: Vestine
@@ -825,21 +659,10 @@
         walkSpeedModifier: 0.8
         sprintSpeedModifier: 0.8
       - !type:HealthChange
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         damage:
           types:
             Asphyxiation: 1
             Bloodloss: 1
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 1 #зміни для Мрії кінець
 
 - type: reagent
   id: Tazinide
@@ -880,13 +703,6 @@
             Poison: 2
       - !type:SatiateHunger
         factor: -6
-      - !type:HealthChange #зміни для Мрії початок
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-        damage:
-          types:
-            Heat: 0.1 #зміни для Мрії кінець
 
 # inspired by the spider neurotoxin GsMtx-4
 # poisons non-spiders and slows you down at high doses
@@ -905,7 +721,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Arachnid, IPC] #зміни для Мрії
+          type: [Arachnid]
           inverted: true
         damage:
           types:
@@ -916,7 +732,7 @@
           reagent: Mechanotoxin
           min: 2
         - !type:MetabolizerTypeCondition
-          type: [Arachnid, IPC] #зміни для Мрії
+          type: [Arachnid]
           inverted: true
         walkSpeedModifier: 0.8
         sprintSpeedModifier: 0.8
@@ -926,7 +742,7 @@
           reagent: Mechanotoxin
           min: 4
         - !type:MetabolizerTypeCondition
-          type: [Arachnid, IPC] #зміни для Мрії
+          type: [Arachnid]
           inverted: true
         walkSpeedModifier: 0.4
         sprintSpeedModifier: 0.4

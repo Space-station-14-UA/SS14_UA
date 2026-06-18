@@ -14,20 +14,13 @@
       # Main effects
       effects:
       - !type:HealthChange
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         damage:
           types:
             Poison: 0.55
             Blunt: 1.1 # meant to be slightly more than tricordrazine heals
       # OD
       - !type:HealthChange
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Desoxyephedrine
           min: 16
@@ -38,53 +31,26 @@
 
       # Main effects
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 1.20
         sprintSpeedModifier: 1.20
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectDesoxyStamina # You are on meth. You keep going.
         time: 3
       - !type:GenericStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 3
       # Side effects
       - !type:Jitter
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
       - !type:GenericStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         key: Stutter
         component: StutteringAccent
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectPainNumbness
         time: 2
       # Interactions
       - !type:ModifyStatusEffect
-        conditions:   #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Haloperidol
           max: 0.01
@@ -114,38 +80,18 @@
       effects:
       # Main effects
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 1.15
         sprintSpeedModifier: 1.15
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectStunned
         time: 1
         type: Remove
       - !type:ModifyKnockdown
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         time: 1
         type: Remove
       # Side effects
       - !type:Jitter
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         visualType: Medium
         messages: ["ephedrine-effect-tight-pain", "ephedrine-effect-heart-pounds"]
         type: Local
@@ -162,10 +108,7 @@
             Asphyxiation: 2
       # Interactions
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Haloperidol
           max: 0.01
@@ -195,56 +138,28 @@
       effects:
       # Main effects
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectStimulantsStamina # You are on meth. You keep going.
         time: 3
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectStunned
         time: 3.5
         type: Remove
       - !type:ModifyKnockdown
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         time: 3.5
         type: Remove
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectForcedSleeping
         time: 3
         type: Remove
       - !type:GenericStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 3
       # Side effects
       - !type:Jitter
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
       # OD
       - !type:HealthChange
         conditions:
@@ -256,10 +171,7 @@
             Poison: 3
       # Interactions
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Haloperidol
           max: 0.01
@@ -275,16 +187,9 @@
         amount: -10
       # Main effects
       - !type:ModifyBleed
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         amount: -1.5
       - !type:EvenHealthChange
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:MobStateCondition
           mobstate: Critical
         damage: # Doesn't heal poison because if you OD'd I'm not giving you a safety net
@@ -352,10 +257,6 @@
     Bloodstream:
       effects:
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:HealthChange
@@ -363,24 +264,12 @@
           types:
             Poison: 2
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         time: 10
         type: Add
       - !type:Vomit # Vomiting is a symptom of brain damage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         probability: 0.05
       - !type:Drunk # Headaches and slurring are major symptoms of brain damage, this is close enough
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         boozePower: 5
 
 - type: reagent
@@ -395,10 +284,6 @@
     Bloodstream:
       effects:
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
@@ -415,10 +300,6 @@
     Bloodstream:
       effects:
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
@@ -438,17 +319,10 @@
     Bloodstream:
       effects: # It would be nice to have speech slurred or mumbly, but accents are a bit iffy atm. Same for distortion effects.
       - !type:MovementSpeedModifier
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Nocturine
           min: 8
@@ -470,10 +344,6 @@
     Bloodstream:
       effects:
       - !type:GenericStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         key: Muted
         component: Muted
         type: Add
@@ -494,10 +364,6 @@
     Bloodstream:
       effects:
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         type: Local
         messages:
         - generic-reagent-effect-burning-eyes
@@ -516,10 +382,7 @@
         - norepinephricacid-effect-eye-pain
         - norepinephricacid-effect-darkness
         - norepinephricacid-effect-blindness
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: NorepinephricAcid
           min: 20
@@ -528,10 +391,7 @@
       - !type:ModifyStatusEffect
         effectProto: StatusEffectBlindness
         type: Add
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: NorepinephricAcid
           min: 20
@@ -552,10 +412,6 @@
     Bloodstream:
       effects:
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         type: Local
         probability: 0.08
         messages:
@@ -567,10 +423,6 @@
         - norepinephricacid-effect-vision-fade
         - norepinephricacid-effect-vision-fail
       - !type:PopupMessage
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         type: Local
         visualType: MediumCaution
         probability: 0.03
@@ -582,27 +434,17 @@
       - !type:Emote
         emote: Scream
         probability: 0.08
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
       - !type:Emote
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         emote: Cough
         probability: 0.08
       - !type:ModifyStatusEffect
         effectProto: StatusEffectBlindness
         type: Add
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
@@ -610,10 +452,7 @@
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
         time: 1.5
-        conditions: # because of the remainding after effect, threshold is given so the effects ends simultaniously   
-        - !type:MetabolizerTypeCondition #зміни для Мрії початок
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions: # because of the remainding after effect, threshold is given so the effects ends simultaniously
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
@@ -633,10 +472,7 @@
         emote: Laugh
         showInChat: true
         probability: 0.1
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
@@ -644,10 +480,7 @@
         emote: Whistle
         showInChat: true
         probability: 0.1
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
@@ -655,10 +488,7 @@
         emote: Crying
         showInChat: true
         probability: 0.1
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Happiness
           min: 20
@@ -670,18 +500,11 @@
         - "psicodine-effect-anxieties-wash-away"
         - "psicodine-effect-at-peace"
         probability: 0.2
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
+        conditions:
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
       - !type:ModifyStatusEffect
-        conditions:    #зміни для Мрії початок
-        - !type:MetabolizerTypeCondition
-          type: [IPC] 
-          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
