@@ -33,6 +33,10 @@
           0.1
         ]
       ]
+    },},
+  "states": [
+    {
+      "name": "IPC_cooling_cycle"
     }
   ]
 }

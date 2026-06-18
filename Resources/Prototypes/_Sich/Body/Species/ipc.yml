@@ -429,7 +429,7 @@
   description: Це система охолодження ІПШ по якій зазвичай циркулює олія аби охолоджувати ІПШ та змазувати деталі.
   components:
     - type: Sprite
-      state: posibrain
+      state: IPC_cooling_cycle
       sprite: _Sich/Mobs/Species/IPC/organs.rsi
     - type: GibbableOrgan
     - type: Organ
