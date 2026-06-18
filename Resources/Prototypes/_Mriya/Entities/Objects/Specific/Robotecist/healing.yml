@@ -1,7 +1,22 @@
 - type: entity
+  parent: BaseItem
+  id: BaseIPCHealingItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medical.rsi
+  - type: Item
+    size: Small
+  # Inherited
+  - type: StaticPrice
+    price: 0
+
+
+
+- type: entity
   name: пакет олії
   description: Містить у собі олію для ІПШ, аби замінювати при її недостачі.
-  parent: BaseHealingItem
+  parent: BaseIPCHealingItem
   id: MROilpack
   suffix: Повний
   components:
@@ -48,7 +63,7 @@
 - type: entity
   name: металева латка
   description: Металева латка аби закрити дірки у корпусі ІПШ, та тим самим зупинити витікання олії.
-  parent: BaseHealingItem
+  parent: BaseIPCHealingItem
   id: MRIPCRepairKit
   suffix: Повний
   components:
@@ -97,7 +112,7 @@
 - type: entity
   name: посилена окислююча ізострічка
   description: Посилена окислююча ізострічка яка гарно закриває відкриті пробоїни на ІПШ, за допомогою того що здатна окислювати олію та зупиняти її втрату.
-  parent: BaseHealingItem
+  parent: BaseIPCHealingItem
   id: MRIPCOxydisingTape
   suffix: Повний
   components:
@@ -145,7 +160,7 @@
 - type: entity
   name: набір заміни кабелів
   description: Набір кабелів для заміни спалених кабелів у ІПШ та інших силіконів.
-  parent: BaseHealingItem
+  parent: BaseIPCHealingItem
   id: MRReviringKit
   suffix: Повна
   components:
@@ -194,7 +209,7 @@
 - type: entity
   name: набір для усунення радіації
   description: Набір для усунення пошкоджених радіацією частин.
-  parent: BaseHealingItem
+  parent: BaseIPCHealingItem
   id: MRIPCAntiRadKit
   suffix: Повна
   components:

@@ -552,6 +552,10 @@
     Bloodstream:
       effects:
       - !type:PopupMessage
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         type: Local
         probability: 0.08
         messages:
@@ -563,6 +567,10 @@
         - norepinephricacid-effect-vision-fade
         - norepinephricacid-effect-vision-fail
       - !type:PopupMessage
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         type: Local
         visualType: MediumCaution
         probability: 0.03
@@ -574,17 +582,27 @@
       - !type:Emote
         emote: Scream
         probability: 0.08
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
       - !type:Emote
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         emote: Cough
         probability: 0.08
       - !type:ModifyStatusEffect
         effectProto: StatusEffectBlindness
         type: Add
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
@@ -592,7 +610,10 @@
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
         time: 1.5
-        conditions: # because of the remainding after effect, threshold is given so the effects ends simultaniously
+        conditions: # because of the remainding after effect, threshold is given so the effects ends simultaniously   
+        - !type:MetabolizerTypeCondition #зміни для Мрії початок
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: TearGas
           min: 4
@@ -612,7 +633,10 @@
         emote: Laugh
         showInChat: true
         probability: 0.1
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
@@ -620,7 +644,10 @@
         emote: Whistle
         showInChat: true
         probability: 0.1
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
@@ -628,7 +655,10 @@
         emote: Crying
         showInChat: true
         probability: 0.1
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: Happiness
           min: 20
@@ -640,11 +670,18 @@
         - "psicodine-effect-anxieties-wash-away"
         - "psicodine-effect-at-peace"
         probability: 0.2
-        conditions:
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         - !type:ReagentCondition
           reagent: Happiness
           max: 20
       - !type:ModifyStatusEffect
+        conditions:    #зміни для Мрії початок
+        - !type:MetabolizerTypeCondition
+          type: [IPC] 
+          inverted: true #зміни для Мрії кінець
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
