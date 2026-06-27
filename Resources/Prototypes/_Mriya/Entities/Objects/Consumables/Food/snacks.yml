@@ -1,0 +1,29 @@
+# FOOD
+- type: entity
+  parent: FoodSnackBase
+  id: MriyaFoodSnackJellyBee
+  name: шалена бджілка # crazy bee
+  description: Компанія КосмоШен не несе відповідальності за укуси бджолами, під час вживання продукту. # May or may not contain killer bees.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - jelly
+    - bee
+  - type: Sprite
+    path: _Mriya/Consumables/Food/bjilka.rsi
+    state: bjilka
+  - type: Item
+  - type: Food
+    trash: MriyaFoodPacketJellyBeeTrash
+
+# TRASH
+- type: entity
+  noSpawn: true
+  parent: FoodPacketTrash
+  id: MriyaFoodPacketJellyBeeTrash
+  name: порожня шалена бджілка # empty crazy bee
+  compoents:
+  - type: Sprite
+    path: _Mriya/Consumables/Food/bjilka.rsi
+    state: bjilka-trash
+  - type: Item
