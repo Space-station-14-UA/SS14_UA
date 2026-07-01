@@ -6,6 +6,7 @@
   components:
   - type: InputMover
   - type: MobMover
+  - type: RTSControllable
   - type: Loadout
     prototypes: [LimitedPassengerGear]
   - type: NpcFactionMember
@@ -25,6 +26,7 @@
         - SalvageSpecialistGear
     - type: InputMover
     - type: MobMover
+    - type: RTSControllable
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound
@@ -43,6 +45,7 @@
       - PirateGear
   - type: InputMover
   - type: MobMover
+  - type: RTSControllable
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound
@@ -60,6 +63,7 @@
         - SyndicateFootsoldierGearRuin
     - type: InputMover
     - type: MobMover
+    - type: RTSControllable
     - type: HTN
       rootTask:
         task: SimpleHumanoidHostileCompound

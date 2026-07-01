@@ -34,6 +34,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.RotateStoredItem);
             common.AddFunction(ContentKeyFunctions.SaveItemLocation);
             common.AddFunction(ContentKeyFunctions.Point);
+            common.AddFunction(ContentKeyFunctions.RTSHoldPosition);
             common.AddFunction(ContentKeyFunctions.ZoomOut);
             common.AddFunction(ContentKeyFunctions.ZoomIn);
             common.AddFunction(ContentKeyFunctions.ResetZoom);

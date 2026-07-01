@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseAction
+  id: ActionNCRTSToggle
+  name: RTS Mode
+  description: Toggle RTS command mode for controllable NPCs.
+  components:
+  - type: Action
+    icon:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: crew_monitor
+    iconOn:
+      sprite: Interface/Actions/actions_ai.rsi
+      state: crew_monitor
+    checkCanInteract: false
+    checkConsciousness: false
+    priority: -5
+  - type: InstantAction
+    event: !type:ToggleRTSModeActionEvent

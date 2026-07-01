@@ -520,6 +520,9 @@ binds:
   type: State
   key: MouseMiddle
   mod1: Shift
+- function: RTSHoldPosition
+  type: State
+  key: J
 - function: ArcadeUp
   type: State
   key: Up
