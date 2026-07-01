@@ -193,7 +193,6 @@
     sprite: _Sich/Mobs/Species/IPC/parts.rsi
     state: full
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: SheetSteel10
       amount: 3

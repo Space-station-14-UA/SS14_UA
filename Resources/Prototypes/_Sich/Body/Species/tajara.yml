@@ -126,7 +126,6 @@
     noRot: true
     drawdepth: Mobs
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeat
       amount: 4

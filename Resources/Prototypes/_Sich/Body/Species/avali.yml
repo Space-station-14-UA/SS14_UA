@@ -129,7 +129,6 @@
     drawdepth: Mobs
     scale: 0.9, 0.9
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatChicken
       amount: 3

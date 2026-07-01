@@ -22,7 +22,7 @@
   parent: FoodPacketTrash
   id: MRFoodPacketJellyBeeTrash
   name: порожня шалена бджілка # empty crazy bee
-  compoents:
+  components:
   - type: Sprite
     sprite: _Mriya/Objects/Consumables/Food/bjilka.rsi
     state: bjilka-trash
