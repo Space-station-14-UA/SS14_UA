@@ -18,7 +18,6 @@
 
 # TRASH
 - type: entity
-  noSpawn: true
   parent: FoodPacketTrash
   id: MRFoodPacketJellyBeeTrash
   name: порожня шалена бджілка # empty crazy bee
