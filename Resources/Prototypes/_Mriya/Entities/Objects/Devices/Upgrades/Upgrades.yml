@@ -9,9 +9,6 @@
     - type: Sprite
       sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
       state: icon
-    - type: Construction
-      graph: MRSOMUpgrade
-      node: somUpgrade
     - type: Tag
       tags:
       - MRSOMUpgrade
