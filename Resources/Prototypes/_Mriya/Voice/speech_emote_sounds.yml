@@ -1,6 +1,7 @@
 # species
 - type: emoteSounds
   id: MaleFelinid
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
   params:
     variation: 0.125
   sounds:
@@ -43,6 +44,7 @@
 
 - type: emoteSounds
   id: FemaleFelinid
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
   params:
     variation: 0.125
   sounds:

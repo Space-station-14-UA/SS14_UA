@@ -17,3 +17,9 @@
   minWidth:  0.9
   defaultWidth: 1
   maxWidth: 1.1
+  defaultSoundsBySex:
+  - UnisexArachnid
+  - UnisexArachnid
+  - UnisexArachnid
+  voices:
+  - UnisexArachnid

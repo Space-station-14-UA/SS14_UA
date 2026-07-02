@@ -4,6 +4,22 @@
   id: BookBase
   description: 'Книга у твердій обкладинці.'
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/book_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/book_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/book_drop.ogg
+      params:
+        volume: -4  # Mriya: add interaction sounds end
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:

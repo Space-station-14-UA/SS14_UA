@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitColorWhite
-  name: white jumpsuit
-  description: A generic white jumpsuit with no rank markings.
+  name: білий комбінезон
+  description: Білий комбінезон без знаків розрізнення.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/color.rsi

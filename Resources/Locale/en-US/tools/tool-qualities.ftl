@@ -10,6 +10,9 @@ tool-quality-screwing-tool-name = Викрутка
 tool-quality-cutting-name = Різання
 tool-quality-cutting-tool-name = Кусачки
 
+tool-quality-shearing-name = Стрижка
+tool-quality-shearing-tool-name = Кусачки
+
 tool-quality-welding-name = Зварка
 tool-quality-welding-tool-name = Зварювальний апарат
 

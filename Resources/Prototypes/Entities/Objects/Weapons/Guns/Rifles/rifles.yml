@@ -52,6 +52,15 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRRiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRRiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRRiflesDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: АКМС

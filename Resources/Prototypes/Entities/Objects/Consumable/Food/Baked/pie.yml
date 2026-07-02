@@ -25,8 +25,6 @@
   - type: Edible #It's actually possible now to have a pie stored in a tin rather than spawning trash when you finish eating it. But right now I'm just cleaning up.
     trash:
     - FoodPlateTin
-  - type: SliceableFood
-    count: 8
   - type: Tag
     tags:
     - Pie
@@ -62,7 +60,7 @@
 
 - type: entity
   name: яблучний пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieApple
   description: Пиріг із солодким, солодким коханням... або яблуком.
   components:
@@ -74,8 +72,10 @@
     layers:
     - state: tin
     - state: apple
-  - type: SliceableFood
-    slice: FoodPieAppleSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieAppleSlice
+      amount: 8
   - type: Tag
     tags:
     - Fruit
@@ -104,7 +104,7 @@
 
 - type: entity
   name: баклава
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieBaklava
   description: Чудова корисна закуска з горіхових шарів з тонким хлібом.
   components:
@@ -116,8 +116,10 @@
     layers:
     - state: tin
     - state: baklava
-  - type: SliceableFood
-    slice: FoodPieBaklavaSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieBaklavaSlice
+      amount: 8
 
 - type: entity
   name: шматочок баклави
@@ -135,7 +137,7 @@
 
 - type: entity
   name: бананово-кремовий пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieBananaCream
   description: Як вдома, на планеті клоунів! ГОНК!
   components:
@@ -171,8 +173,10 @@
     tags:
     - Fruit
     - Pie
-  - type: SliceableFood
-    slice: FoodPieBananaCreamSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieBananaCreamSlice
+      amount: 8
 
 - type: entity
   name: шматочок бананово-кремового пирога
@@ -196,7 +200,7 @@
 
 - type: entity
   name: ягідний клафуті
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieClafoutis
   description: Немає чорних птахів - це хороший знак.
   components:
@@ -209,8 +213,10 @@
     - state: tin
       color: pink
     - state: berryclafoutis
-  - type: SliceableFood
-    slice: FoodPieClafoutisSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieClafoutisSlice
+      amount: 8
   - type: Tag
     tags:
     - Fruit
@@ -239,7 +245,7 @@
 
 - type: entity
   name: вишневий пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieCherry
   description: Достатньо смачний, щоб змусити дорослого чоловіка плакати.
   components:
@@ -250,8 +256,10 @@
     layers:
     - state: tin
     - state: cherry
-  - type: SliceableFood
-    slice: FoodPieCherrySlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieCherrySlice
+      amount: 8
   - type: Tag
     tags:
     - Fruit
@@ -279,7 +287,7 @@
 
 - type: entity
   name: "м'ясний пиріг"
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieMeat
   description: Старовинний рецепт цирюльника, дуже смачний!
   components:
@@ -290,8 +298,10 @@
     layers:
     - state: tin
     - state: meat
-  - type: SliceableFood
-    slice: FoodPieMeatSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieMeatSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -319,7 +329,7 @@
 
 - type: entity
   name: гарбузовий пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPiePumpkin
   description: Хтось має зробити з цього лате!
   components:
@@ -331,8 +341,10 @@
     layers:
     - state: tin
     - state: pumpkin
-  - type: SliceableFood
-    slice: FoodPiePumpkinSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPiePumpkinSlice
+      amount: 8
   - type: Tag
     tags:
     - Pie
@@ -356,7 +368,7 @@
 
 - type: entity
   name: ксено-пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieXeno
   components:
   - type: FlavorProfile
@@ -367,8 +379,10 @@
     layers:
     - state: tin
     - state: xeno
-  - type: SliceableFood
-    slice: FoodPieXenoSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieXenoSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -397,7 +411,7 @@
 
 - type: entity
   name: морозний пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieFrosty
   description: На смак - синій і холодний.
   components:
@@ -408,8 +422,10 @@
     layers:
     - state: tin
     - state: frosty
-  - type: SliceableFood
-    slice: FoodPieFrostySlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieFrostySlice
+      amount: 8
 
 - type: entity
   name: шматочок морозного пирога
@@ -428,7 +444,7 @@
 
 - type: entity
   name: мімний пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodTartMime
   description: "\"      \""
   components:
@@ -439,8 +455,10 @@
     state: mime
   - type: Item
     heldPrefix: mime
-  - type: SliceableFood
-    slice: FoodTartMimeSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodTartMimeSlice
+      amount: 8
 
 - type: entity
   name: шматочок мімного пирога
@@ -459,7 +477,7 @@
 
 - type: entity
   name: пиріг з аманітою
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPieAmanita
   description: Солодкий і смачний пиріг з отрутою.
   components:
@@ -481,8 +499,10 @@
         Quantity: 8
       - ReagentId: Amatoxin
         Quantity: 10
-  - type: SliceableFood
-    slice: FoodPieAmanitaSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPieAmanitaSlice
+      amount: 8
 
 - type: entity
   name: slice of amanita pie
@@ -512,7 +532,7 @@
 
 - type: entity
   name: пухкий пиріг
-  parent: FoodPieBase
+  parent: [FoodPieBase, BaseSlicingRefinableFood]
   id: FoodPiePlump
   description: Б'юся об заклад, ви обожнюєте оверсайз речі!
   components:
@@ -523,8 +543,10 @@
     layers:
     - state: tin
     - state: plump
-  - type: SliceableFood
-    slice: FoodPiePlumpSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPiePlumpSlice
+      amount: 8
 
 - type: entity
   name: slice of plump pie

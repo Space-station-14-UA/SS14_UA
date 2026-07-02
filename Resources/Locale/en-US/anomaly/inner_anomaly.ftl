@@ -8,7 +8,7 @@ inner-anomaly-start-message-flesh = Ваше тіло стрімко росте.
 inner-anomaly-start-message-grav = Усе стало одночасно неприродно важким і легким... Ви стали носієм гравітаційної аномалії.
 inner-anomaly-start-message-tech = У голові вирує безліч хаотичних думок! Ви стали носієм техно-аномалії.
 inner-anomaly-start-message-rock = Кристали проростають крізь ваші кістки!  Ви стали носієм кам'яної аномалії.
-inner-anomaly-start-message-santa = Ви стаєте одержимими духом Різдва! Ви стали носієм різдвяної аномалії
+inner-anomaly-start-message-santa = Ви стаєте одержимими духом Різдва! Ви стали носієм різдвяної аномалії.
 
 inner-anomaly-end-message = Аномальна активність всередині тебе зникає безслідно...
 

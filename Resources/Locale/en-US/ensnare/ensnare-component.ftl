@@ -1,7 +1,7 @@
-﻿ensnare-component-try-free = You struggle to remove {$ensnare} that's ensnaring you!
-ensnare-component-try-free-complete = You successfully free yourself from the {$ensnare}!
-ensnare-component-try-free-fail = You fail to free yourself from the {$ensnare}!
+﻿ensnare-component-try-free = Ви щосили намагаєтеся звільнитись від {$ensnare}!
+ensnare-component-try-free-complete = Ви успішно звільнились від {$ensnare}!
+ensnare-component-try-free-fail = Вам не вдалося звільнитись від {$ensnare}!
 
-ensnare-component-try-free-complete-other = You successfully free {$user} from the {$ensnare}!
-ensnare-component-try-free-fail-other = You fail to free {$user} from the {$ensnare}!
-ensnare-component-try-free-other = You start removing the {$ensnare} caught on {$user}!
+ensnare-component-try-free-complete-other = Ви успішно звільнили {$user} від {$ensnare}!
+ensnare-component-try-free-fail-other = Вам не вдалося звільнити {$user} від {$ensnare}!
+ensnare-component-try-free-other = Ви почали знімати {$ensnare}, що сплутує {$user}!

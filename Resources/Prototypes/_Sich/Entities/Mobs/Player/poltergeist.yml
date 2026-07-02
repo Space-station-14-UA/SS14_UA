@@ -43,7 +43,7 @@
         type: StoreBoundUserInterface
         requireInputValidation: false
   - type: Damageable
-    damageContainer: ManifestedSpirit
+    damageModifierSet: ManifestedSpirit
   - type: PassiveDamage
     allowedStates:
     - Alive

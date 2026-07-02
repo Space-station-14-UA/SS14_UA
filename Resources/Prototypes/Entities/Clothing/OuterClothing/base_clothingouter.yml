@@ -3,6 +3,21 @@
   parent: Clothing
   id: ClothingOuterBase
   components:
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRGenericPickup
+      params:
+        volume: -9
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRGenericDrop
+      params:
+        volume: -9
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRGenericDrop
+      params:
+        volume: -9 # Mriya: add interaction sounds end
   - type: Clothing
     slots:
     - outerClothing
@@ -148,6 +163,8 @@
         Radiation: 0.25
   - type: ToggleableClothing
     slot: head
+    verbText: toggle-clothing-verb-helmet
+    action: ActionToggleSuitPiece
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
@@ -163,6 +180,22 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_drop.ogg
+      params:
+        volume: -4 # Mriya: add interaction sounds end
   - type: HideLayerClothing
     slots:
     - Tail
@@ -200,6 +233,19 @@
     - Tail
 
 - type: entity
+  parent: ClothingOuterEVASuitBase
+  id: ClothingOuterEVASuitBaseToggleable
+  abstract: true
+  components:
+  - type: ToggleableClothing
+    slot: head
+    verbText: toggle-clothing-verb-helmet
+    action: ActionToggleSuitPiece
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
   parent: ClothingOuterBase
   id: ClothingOuterBaseToggleable
   name: кофта з капюшоном
@@ -208,6 +254,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault
     slot: head
+    verbText: toggle-clothing-verb-hood
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}

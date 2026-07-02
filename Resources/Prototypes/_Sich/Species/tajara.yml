@@ -17,3 +17,10 @@
   defaultWidth: 1
   maxWidth: 1.3
   averageHeight: 128
+  defaultSoundsBySex:
+  - MaleTajara
+  - FemaleTajara
+  - MaleTajara
+  voices:
+  - MaleTajara
+  - FemaleTajara

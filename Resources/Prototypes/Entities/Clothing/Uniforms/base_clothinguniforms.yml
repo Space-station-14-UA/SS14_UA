@@ -1,17 +1,32 @@
 - type: entity
   abstract: true
-  parent: [SolutionFood, SolutionToolNormal, Clothing]
+  parent: [SolutionFood, SolutionToolNormal, Clothing, BaseSlicingRefinable]
   id: UnsensoredClothingUniformBase
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/cloth_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/cloth_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/cloth_drop.ogg
+      params:
+        volume: -4 # Mriya: add interaction sounds end
   - type: Sprite
     state: icon
   - type: Clothing
     slots: [innerclothing]
     equipSound:
       path: /Audio/Items/jumpsuit_equip.ogg
-  - type: Butcherable
-    butcheringType: Knife
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: MaterialCloth1
       amount: 3
   - type: PhysicalComposition # 50% of the amount of cloth you'd obtain upon butchering

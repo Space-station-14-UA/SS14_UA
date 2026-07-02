@@ -1,32 +1,32 @@
 # Headings
-turret-controls-window-title = Autonomous Defense Control System
-turret-controls-window-turret-status-label = Linked devices [{$count}]
-turret-controls-window-armament-controls-label = Armament setting
-turret-controls-window-targeting-controls-label = Authorized personnel
+turret-controls-window-title = Автономна система контролю оборони
+turret-controls-window-turret-status-label = Під’єднані пристрої [{$count}]
+turret-controls-window-armament-controls-label = Налаштування озброєння
+turret-controls-window-targeting-controls-label = Авторизований персонал
 
 # Status reports
-turret-controls-window-no-turrets = <! No linked devices !>
-turret-controls-window-turret-status = » {$device} - Status: {$status}
-turret-controls-window-turret-disabled = ***OFFLINE***
-turret-controls-window-turret-retracted = INACTIVE
-turret-controls-window-turret-retracting = DEACTIVATING
-turret-controls-window-turret-deployed = SEARCHING...
-turret-controls-window-turret-deploying = ACTIVATING
-turret-controls-window-turret-firing = ENGAGING TARGET
-turret-controls-window-turret-error = ERROR [404]
-turret-controls-window-turret-broken = ***INOPERABLE***
+turret-controls-window-no-turrets = <! Під'єднані пристрої відсутні !>
+turret-controls-window-turret-status = » {$device} - Стан: {$status}
+turret-controls-window-turret-disabled = ***ОФЛАЙН***
+turret-controls-window-turret-retracted = НЕАКТИВНИЙ
+turret-controls-window-turret-retracting = ДЕАКТИВАЦІЯ
+turret-controls-window-turret-deployed = ПОШУК...
+turret-controls-window-turret-deploying = АКТИВАЦІЯ
+turret-controls-window-turret-firing = АТАКА ЦІЛІ
+turret-controls-window-turret-error = ПОМИЛКА [404]
+turret-controls-window-turret-broken = ***НЕСПРАВНИЙ***
 
 # Buttons
-turret-controls-window-safe = Inactive
-turret-controls-window-stun = Stun
-turret-controls-window-lethal = Lethal
-turret-controls-window-ignore = Ignore
-turret-controls-window-target = Target
+turret-controls-window-safe = Неактивний
+turret-controls-window-stun = Оглушення
+turret-controls-window-lethal = Летальний
+turret-controls-window-ignore = Ігнорування
+turret-controls-window-target = Ціль
 turret-controls-window-access-group-label = {$prefix} {$label}
-turret-controls-window-all-checkbox = All
+turret-controls-window-all-checkbox = Все
 
 # Flavor
-turret-controls-window-footer = Unauthorized personnel should ensure defenses are inactive before proceeding
+turret-controls-window-footer = Неавторизованому персоналу слід переконатися, що захисні системи неактивні, перш ніж продовжувати рух
 
 # Warnings
-turret-controls-access-denied = Access denied
+turret-controls-access-denied = Доступ заборонено

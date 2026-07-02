@@ -88,7 +88,6 @@
         layer:
         - MobLayer
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Felinid
   - type: SlowOnDamage # Frontier
     speedModifierThresholds:
@@ -103,7 +102,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Blood
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     soundHit:
       collection: Punch
@@ -135,10 +134,7 @@
   #  - 4,0,5,4
   - type: Vocal
     wilhelm: "/Audio/_Mriya/Voice/Felinid/cat_wilhelm.ogg"
-    sounds:
-      Male: MaleFelinid
-      Female: FemaleFelinid
-      Unsexed: MaleFelinid
+    emoteSounds: MaleFelinid
   # - type: ItemCougher # Frontier
   #   item: Hairball
   #   action: ActionHairball

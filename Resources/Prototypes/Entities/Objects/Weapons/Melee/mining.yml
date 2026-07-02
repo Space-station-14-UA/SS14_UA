@@ -94,7 +94,9 @@
   name: руйнівник
   description: Рання версія протокінетичного прискорювача, створена для ближнього бою, а також здатна випускати снаряди, які підсилюють удари нею ж та лікують власника.
   components:
-  - type: Sharp
+  - type: Tool
+    qualities:
+    - Slicing
   - type: Execution
     doAfterDuration: 4.0
   - type: UnpoweredFlashlight

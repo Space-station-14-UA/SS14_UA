@@ -2,6 +2,7 @@
 # TODO complain to upstream
 - type: emoteSounds
   id: UnisexTajara
+  voiceSelectorName: humanoid-profile-editor-voice-neutral
   sounds:
     Scream:
       path: /Audio/_Sich/Voice/Tajaran/cat_scream2.ogg
@@ -36,6 +37,7 @@
         
 - type: emoteSounds
   id: MaleTajara
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
   sounds:
     Scream:
       path: /Audio/_Sich/Voice/Tajaran/cat_scream2.ogg
@@ -68,6 +70,7 @@
         
 - type: emoteSounds
   id: FemaleTajara
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
   sounds:
     Scream:
       path: /Audio/_Sich/Voice/Tajaran/cat_scream2.ogg
@@ -103,6 +106,7 @@
         
 - type: emoteSounds
   id: UnisexIPC
+  voiceSelectorName: humanoid-profile-editor-voice-neutral
   sounds:
     Scream:
       path: /Audio/Effects/beep1.ogg
@@ -129,6 +133,7 @@
 
 - type: emoteSounds
   id: MaleIPC
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
   sounds:
     Scream:
       path: /Audio/Effects/beep1.ogg
@@ -153,6 +158,7 @@
 
 - type: emoteSounds
   id: FemaleIPC
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
   sounds:
     Scream:
       path: /Audio/Effects/beep1.ogg
@@ -179,6 +185,7 @@
 #Avali Sounds
 - type: emoteSounds
   id: MaleAvali
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
   params:
     variation: 0.125
   sounds:
@@ -199,6 +206,7 @@
 
 - type: emoteSounds
   id: FemaleAvali
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
   params:
     variation: 0.125
   sounds:

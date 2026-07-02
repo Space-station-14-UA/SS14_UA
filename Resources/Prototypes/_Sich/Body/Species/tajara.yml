@@ -126,19 +126,14 @@
     noRot: true
     drawdepth: Mobs
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeat
       amount: 4
   - type: Speech
     speechSounds: Tajara
   - type: Vocal
-    sounds:
-      Male: MaleTajara
-      Female: FemaleTajara
-      Unsexed: MaleTajara
+    emoteSounds: MaleTajara
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Tajara
   - type: DamageVisuals
     damageOverlayGroups:
@@ -149,7 +144,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Blood
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     hidden: true
     soundHit:

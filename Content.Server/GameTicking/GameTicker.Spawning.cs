@@ -195,7 +195,7 @@ namespace Content.Server.GameTicking
                 {
                     var roundStart = new List<ProtoId<SpeciesPrototype>>();
 
-                    var speciesPrototypes = _prototypeManager.EnumeratePrototypes<SpeciesPrototype>();
+                    var speciesPrototypes = ProtoMan.EnumeratePrototypes<SpeciesPrototype>();
                     foreach (var proto in speciesPrototypes)
                     {
                         if (proto.RoundStart)
@@ -208,11 +208,16 @@ namespace Content.Server.GameTicking
                 }
                 else
                 {
-                    var weights = _prototypeManager.Index<WeightedRandomSpeciesPrototype>(weightId);
+                    var weights = ProtoMan.Index<WeightedRandomSpeciesPrototype>(weightId);
                     speciesId = weights.Pick(_robustRandom);
                 }
 
-                character = HumanoidCharacterProfile.RandomWithSpecies(speciesId);
+                // The random profile must retain the job priorities set by the player
+                var jobs = character.JobPriorities;
+                character = HumanoidCharacterProfile.RandomWithSpecies(speciesId).WithJobPriorities(jobs);
+
+                // This does not utilize overflow job slots, so if the character profile
+                // had no available job priorities (ie Captain on Dev) set, then the player will spawn as a ghost
             }
 
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
@@ -283,11 +288,6 @@ namespace Content.Server.GameTicking
                 }
             }
 
-            if (player.UserId == new Guid("{e887eb93-f503-4b65-95b6-2f282c014192}"))
-            {
-                AddComp<OwOAccentComponent>(mob);
-            }
-
             var playerPreferences = _prefsManager.GetPreferences(player.UserId);
             _newLifeSystem.SaveCharacterToUsed(player.UserId, playerPreferences.IndexOfCharacter(character));     //🌟Starlight🌟
 
@@ -351,7 +351,7 @@ namespace Content.Server.GameTicking
 
             DebugTools.AssertNotNull(data);
 
-            jobPrototype = _prototypeManager.Index<JobPrototype>(jobId);
+            jobPrototype = ProtoMan.Index<JobPrototype>(jobId);
 
             var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character);
             DebugTools.AssertNotNull(mobMaybe);

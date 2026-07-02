@@ -17,6 +17,21 @@
   - type: Tag
     tags:
     - BoxCardboard
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      path: /Audio/_Mriya/Items/handling/cardboardbox_pickup.ogg
+      params:
+        volume: -3
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/cardboardbox_drop.ogg
+      params:
+        volume: -3
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/cardboardbox_drop.ogg
+      params:
+        volume: -3 # Mriya: add interaction sounds ends
 
 - type: entity
   parent: BoxBaseSmall

@@ -1,6 +1,7 @@
 ## UI
 
-ui-mailing-unit-window-title = {$tag} поштова установка
+ui-mailing-unit-window-title-tagged  = {$tag} поштова установка
+ui-mailing-unit-window-title = {CAPITALIZE($name)}
 
 ui-mailing-unit-button-flush = Надісл.
 ui-mailing-unit-destination-select-label = Виберіть пункт призначення:

@@ -29,8 +29,8 @@ uplink-fire-axe-flaming-desc = Класична зброя, наповнена �
 uplink-gloves-north-star-name = Рукавички Полярної зірки
 uplink-gloves-north-star-desc = Пара рукавичок, які суттєво пришвидшують ваші удари, дозволяючи вам забити людей до смерті серією серйозних ударів.
 
-uplink-gloves-knuckleduster-name = Syndicate Knuckle Dusters
-uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that let you punch hard enough to break the captains jaw into pieces.
+uplink-gloves-knuckleduster-name = Кастети Синдикату
+uplink-gloves-knuckleduster-desc = Пара пластитанових кастетів, які дозволяють врізати так сильно, що щелепа капітана розлетиться на шматки.
 
 uplink-hushpup-name = Хушпуп
 uplink-hushpup-desc = Потужний дробовик із глушником та невеликою місткістю магазину. Поставляється із запасною коробкою картечі. Використовує набої .50 калібру для дробовика.
@@ -288,7 +288,7 @@ uplink-surplus-bundle-desc = Містить випадкове спорядже�
 uplink-super-surplus-bundle-name = Супер ящик надлишків Синдикату
 uplink-super-surplus-bundle-desc = Містить випадкове спорядження Синдикату сумарною вартістю 125 телекристалів. Схоже воно не знадобилося минулом користувачам. Це може бути, як непотрібний мотлох, так і справді хороші речі. МОР ГЕЙМБЛІІІІІН!!!
 
-uplink-starter-kit-name = Базовий набір оперативника  
+uplink-starter-kit-name = Базовий набір оперативника
 uplink-starter-kit-desc = 40 телекристалів на базове спорядження оперативника. Для тих оперативників, які просто не знають, що їм слід купити.
 
 # Tools

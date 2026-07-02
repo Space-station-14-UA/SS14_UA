@@ -97,6 +97,7 @@
     # DO NOT ADD MORE, USE UNIFORM DYING
     SichClothingHeadHatBlackBow: 3
     SichClothingHeadHatWhiteBow: 2
+    MRClothingUniformJumpsuitWaitsuit: 3
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1

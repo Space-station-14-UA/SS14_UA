@@ -3,6 +3,31 @@
   id: BasePaper
   abstract: true
   components:
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      path: /Audio/_Mriya/Items/handling/paper_pickup.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/paper_drop.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Mriya/Items/handling/paper_use.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Mriya/Items/handling/paper_drop.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnThrow
+    sound:
+      path: /Audio/_Mriya/Items/handling/paper_throw.ogg
+      params:
+        volume: -6 # Mriya: add interaction sounds end
   - type: Tag
     tags:
     - Document
@@ -28,12 +53,6 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger: # Excess damage, don't spawn entities
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
         damage: 15
@@ -285,7 +304,7 @@
 - type: entity
   id: PaperSalvageJobLabel
   parent: PaperCargoInvoice
-  name: наліпка на шахтарський вантаж  
+  name: наліпка на шахтарський вантаж
   description: Паперова наліпка, яку ліплять на ящики з шахтарським вантажем по завданню. Продаж такого ящика з необхідним вмістом всередині виконає завдання.
   components:
   - type: Sprite

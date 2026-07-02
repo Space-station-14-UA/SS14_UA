@@ -5,6 +5,17 @@
   name: лом
   description: Багатофункціональний інструмент, який використовується для багатьох завдань, як-от підважування дверей або лупцювання міжвимірних загарбників.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/crowbar_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: -2 # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/crowbar_drop.ogg

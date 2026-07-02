@@ -24,6 +24,15 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRSnipersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRSnipersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRSnipersDrop # Mriya: add interaction sounds end
   # No chamber because HMG may want its own
 
 - type: entity

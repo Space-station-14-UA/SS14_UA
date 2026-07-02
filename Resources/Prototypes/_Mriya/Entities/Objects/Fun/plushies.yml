@@ -1,0 +1,46 @@
+- type: entity #Mriya: add dragon plushie start
+  parent: BasePlushie
+  id: MRplushieDragon
+  name: плюшевий космічний дракон
+  description: "На 99% складається із зла."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/Plushies/dragon.rsi
+    state: icon
+  - type: Item
+    sprite: _Mriya/Objects/Fun/Plushies/dragon.rsi
+  - type: EmitSoundOnUse
+    sound: &MRplushieDragonSound
+      path: /Audio/Animals/space_dragon_roar.ogg
+      params:
+        volume: -5
+        pitch: 2
+  - type: EmitSoundOnLand
+    sound: *MRplushieDragonSound
+  - type: EmitSoundOnActivate
+    sound: *MRplushieDragonSound
+  - type: EmitSoundOnTrigger
+    sound: *MRplushieDragonSound
+  - type: EmitSoundOnCollide
+    sound: *MRplushieDragonSound
+  - type: Edible
+    useSound: *MRplushieDragonSound
+    transferAmount: 10
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/demon_consume.ogg
+      params:
+        volume: -5
+        pitch: 2
+  - type: Clothing
+    quickEquip: false
+    sprite: _Mriya/Objects/Fun/Plushies/dragon.rsi
+    slots:
+    - HEAD
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MRdragonPlushie
+  - type: Tag
+    tags:
+    - Payload
+    - ClothMade #Mriya: add dragon plushie end

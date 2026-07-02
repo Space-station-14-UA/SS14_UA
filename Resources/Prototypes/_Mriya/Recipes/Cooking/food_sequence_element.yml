@@ -1,0 +1,8 @@
+#Mriya: Dragon Plushie
+- type: foodSequenceElement
+  id: MRdragonPlushie
+  scale: 0.6, 0.6
+  name: food-sequence-cotton-burger-content-plushie-dragon
+  sprites:
+  - sprite: _Mriya/Objects/Fun/Plushies/dragon.rsi
+    state: icon

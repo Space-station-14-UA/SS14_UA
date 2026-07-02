@@ -7,6 +7,7 @@ cargoproduct-category-name-engineering = Інженерія
 cargoproduct-category-name-food = Їжа
 cargoproduct-category-name-fun = Веселощі
 cargoproduct-category-name-hydroponics = Ботаніка
+cargoproduct-category-name-instruments = Музичні інструменти
 cargoproduct-category-name-livestock = Тварини
 cargoproduct-category-name-materials = Матеріали
 cargoproduct-category-name-medical = Медицина

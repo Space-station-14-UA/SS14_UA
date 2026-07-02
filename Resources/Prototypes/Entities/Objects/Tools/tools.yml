@@ -4,6 +4,14 @@
   id: Wirecutter
   description: Ріжуть дроти та русню.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/wirecutter_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/wirecutter_drop.ogg
+  # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/wirecutter_drop.ogg
@@ -28,6 +36,7 @@
   - type: Tool
     qualities:
       - Cutting
+      - Shearing
     useSound:
       path: /Audio/Items/wirecutter.ogg
   - type: RandomSprite
@@ -50,6 +59,14 @@
   id: Screwdriver
   description: Крутий інструмент вищого рівня у вигляді викрутки.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/screwdriver_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/screwdriver_drop.ogg
+  # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/screwdriver_drop.ogg
@@ -94,6 +111,18 @@
   id: Wrench
   description: "Звичайний інструмент для збирання та розбирання. Запам'ятайте: по часовій - закручує, проти - викручує."
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/wrench_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/wrench_drop.ogg
+      params:
+        volume: -2
+  # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/wrench_drop.ogg
@@ -136,6 +165,14 @@
   id: Multitool
   description: Удосконалений інструмент для копіювання, зберігання та надсилання електричних імпульсів і сигналів через дроти та машини.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/multitool_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/multitool_drop.ogg
+  # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/multitool_drop.ogg

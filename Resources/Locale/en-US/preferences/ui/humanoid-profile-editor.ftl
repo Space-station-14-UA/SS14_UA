@@ -8,6 +8,7 @@ humanoid-profile-editor-sex-label = Стать:
 humanoid-profile-editor-sex-male-text = Чоловіча
 humanoid-profile-editor-sex-female-text = Жіноча
 humanoid-profile-editor-sex-unsexed-text = Без статі
+humanoid-profile-editor-voice-label = Голос:
 humanoid-profile-editor-age-label = Вік:
 humanoid-profile-editor-skin-color-label = Колір шкіри:
 humanoid-profile-editor-height-label = Висота: {$height}см
@@ -65,3 +66,9 @@ humanoid-profile-editor-trait-count-hint = Доступно балів: [{$curre
 trait-category-disabilities = Обмеження
 trait-category-speech = Особливості вимови
 trait-category-quirks = Дивацтва
+
+# Voices
+humanoid-profile-editor-voice-masculine = Чоловічий
+humanoid-profile-editor-voice-feminine = Жіночий
+humanoid-profile-editor-voice-neutral = Нейтральний
+humanoid-profile-editor-voice-none = Безіменний голос

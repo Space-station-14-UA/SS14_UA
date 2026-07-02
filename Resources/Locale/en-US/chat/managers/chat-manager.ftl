@@ -11,6 +11,8 @@ chat-manager-crit-looc-chat-enabled-message = Персонажі у крит. с
 chat-manager-crit-looc-chat-disabled-message = Персонажі у крит. стані більше не можуть використовувати ЛООС.
 chat-manager-admin-ooc-chat-enabled-message = Чат Адмін ООС було увімкнено.
 chat-manager-admin-ooc-chat-disabled-message = Чат Адмін ООС було вимкнено.
+chat-manager-dead-chat-enabled-message = Чат мертвих було увімкнено.
+chat-manager-dead-chat-disabled-message = Чат мертвих було вимкнено.
 
 chat-manager-max-message-length-exceeded-message = Ваше повідомлення перевищує ліміт у {$limit} символів
 chat-manager-no-headset-on-message = У вас немає гарнітури!
@@ -18,15 +20,19 @@ chat-manager-no-radio-key = Не вказано радіоключ!
 chat-manager-no-such-channel = Не існує каналу з ключем '{$key}'!
 chat-manager-whisper-headset-on-message = Ви не можете шепотіти у радіо!
 
+# Unicode U+201C and U+201D Double quotes.
+chat-manager-speech-double-quote-begin = “
+chat-manager-speech-double-quote-end = ”
+
 chat-manager-server-wrap-message = [bold]{$message}[/bold]
 chat-manager-sender-announcement = Центральне Командування
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} оголошення:[/font][font size=12]
                                                 {$message}[/bold][/font]
-chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]“[BubbleContent]{$message}[/BubbleContent]”[/font]
-chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]“[BubbleContent][bold]{$message}[/bold][/BubbleContent]”[/font]
+chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold]{$message}[/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
 
-chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] шепоче,“[BubbleContent]{$message}[/BubbleContent]”[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Хтось[/BubbleHeader] шепоче, “[BubbleContent]{$message}[/BubbleContent]“[/italic][/font]
+chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] шепоче,{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] шепоче, { chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
@@ -51,6 +57,8 @@ chat-manager-admin-channel-name = АДМІН
 
 chat-manager-rate-limited = Ви відправляєте повідомлення занадто швидко!
 chat-manager-rate-limit-admin-announcement = Попередження про привищення ліміту повідомлень: { $player }
+
+chat-manager-follow-button = (F)
 
 ## Speech verbs for chat
 
@@ -123,6 +131,10 @@ chat-speech-verb-name-goat = Кози
 chat-speech-verb-goat-1 = бекає
 chat-speech-verb-goat-2 = бурчить
 chat-speech-verb-goat-3 = реве
+
+chat-speech-verb-name-sheep = Вівця
+chat-speech-verb-sheep-1 = мекає
+chat-speech-verb-sheep-2 = бекає
 
 chat-speech-verb-name-small-mob = Миші
 chat-speech-verb-small-mob-1 = пищить

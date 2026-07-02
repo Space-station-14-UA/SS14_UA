@@ -16,3 +16,11 @@
   minWidth:  0.825
   defaultWidth: 1
   maxWidth: 1.15
+  defaultSoundsBySex:
+  - MaleIPC
+  - FemaleIPC
+  - UnisexIPC
+  voices:
+  - MaleIPC
+  - FemaleIPC
+  - UnisexIPC

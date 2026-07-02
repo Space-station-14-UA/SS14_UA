@@ -15,3 +15,10 @@
   minWidth: 0.84
   defaultWidth: 1
   maxWidth: 1.27
+  defaultSoundsBySex:
+  - MaleReptilian
+  - FemaleReptilian
+  - MaleReptilian
+  voices:
+  - MaleReptilian
+  - FemaleReptilian

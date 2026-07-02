@@ -1,1 +1,1 @@
-base-computer-ui-component-not-powered = {CAPITALIZE(THE($machine))} відсутнє електрохарчування.
+base-computer-ui-component-not-powered = {CAPITALIZE($machine)} відсутнє електрохарчування.

@@ -41,6 +41,9 @@
     - id: PlushieVulp
     - id: SichPlushieN1 # додавання білду Січі
     - id: SichPlushieError # додавання білду Січі
+    - id: MRplushieDragon # Mriya: added plushie dragon
+    - id: PlushieSheep
+    - id: PlushieSpaceSheep
     - !type:GroupSelector
       children:
       - id: PlushieBee

@@ -56,11 +56,10 @@
     tags:
       - FoodSnack
       - ReptilianFood
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 30
-        reagents:
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
         - ReagentId: Nutriment
           Quantity: 5
 
@@ -218,12 +217,12 @@
   id: FoodSnackMouseChips
   description: Натуральні засушені мишенята. Аж кігтики оближеш! ПОПЕРЕДЖЕННЯ, ПРОДУКТ МОЖЕ МІСТИТИ СИРЕ М'ЯСО!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 3
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 3
   - type: FlavorProfile
     flavors:
       - meaty

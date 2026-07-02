@@ -1,7 +1,7 @@
 ﻿- type: entity
   name: спостерігач
   id: MobWatcherBase
-  parent: [ SimpleSpaceMobBase, FlyingMobBase ]
+  parent: [ SimpleSpaceMobBase, FlyingMobBase, BaseSlicingRefinable ]
   abstract: true
   description: Він ніби дивиться крізь тебе.
   components:
@@ -43,8 +43,8 @@
     thresholds:
       0: Alive
       50: Dead
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: DiamondOre1
       amount: 1
   - type: MovementSpeedModifier

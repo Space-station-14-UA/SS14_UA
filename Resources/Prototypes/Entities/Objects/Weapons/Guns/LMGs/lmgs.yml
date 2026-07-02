@@ -63,6 +63,15 @@
     price: 500
   - type: UseDelay
     delay: 1
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRRiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRRiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRRiflesDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: Л6 АЗО

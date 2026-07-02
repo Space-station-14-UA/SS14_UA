@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: MRClothingUniformJumpsuitWaitsuit
+  name: Офіційний костюм
+  description: Красивий одяг!
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Jumpsuit/waitsuit.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Jumpsuit/waitsuit.rsi
+  - type: Item
+    size: Normal

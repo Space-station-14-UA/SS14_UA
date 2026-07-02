@@ -1,4 +1,4 @@
-dump-verb-name = Dump out on ground
-dump-disposal-verb-name = Dump out into {$unit}
-dump-placeable-verb-name = Dump out onto {$surface}
-dump-smartfridge-verb-name = Restock into {$unit}
+dump-verb-name = Висипати на землю
+dump-disposal-verb-name = Висипати в {$unit}
+dump-placeable-verb-name = Висипати на {$surface}
+dump-smartfridge-verb-name = Поповнити запаси {$unit}

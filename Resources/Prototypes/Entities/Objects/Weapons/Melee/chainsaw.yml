@@ -4,10 +4,13 @@
   id: Chainsaw
   description: Дуже велика бензопила. Зазвичай ви використовуєте її для вирубки дерев... зазвичай.
   components:
+  - type: Tool
+    qualities:
+    - Slicing
+    - Sawing
   - type: Wieldable
     wieldSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsaw_pull.ogg
-  - type: Sharp
   - type: Sprite
     sprite: Objects/Weapons/Melee/chainsaw.rsi
     state: icon

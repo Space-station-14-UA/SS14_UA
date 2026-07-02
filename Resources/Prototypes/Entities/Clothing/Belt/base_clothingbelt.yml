@@ -3,6 +3,22 @@
   parent: Clothing
   id: ClothingBeltBase
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/toolbelt_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/toolbelt_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/toolbelt_drop.ogg
+      params:
+        volume: -4 # Mriya: add interaction sounds end
   - type: Sprite
     state: icon
   - type: Item

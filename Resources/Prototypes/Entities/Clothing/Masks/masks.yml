@@ -194,6 +194,7 @@
   name: маска клоуна
   description: Обов’язковий атрибут для професійного жартівника. Без неї, ти просто ще один чувак у костюмі, а не справжній рядовий клоун!
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Clothing/Mask/clown.rsi
   - type: Clothing
@@ -213,7 +214,6 @@
   id: ClothingMaskClown
   description: A clown mask featuring a foldable wig; a true prankster's attire.
   components:
-  - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing

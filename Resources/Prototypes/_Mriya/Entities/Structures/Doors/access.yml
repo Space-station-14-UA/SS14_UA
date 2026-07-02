@@ -1,0 +1,15 @@
+#normal
+
+- type: entity
+  parent: AirlockCommandLocked
+  id: SichAirlockCommandLocked
+  name: двері командування
+  suffix: Command, Locked
+  
+#glass
+
+- type: entity
+  parent: AirlockCommandGlassLocked
+  id: SichAirlockCommandGlassLocked
+  name: скляні двері командування
+  suffix: Command, Locked

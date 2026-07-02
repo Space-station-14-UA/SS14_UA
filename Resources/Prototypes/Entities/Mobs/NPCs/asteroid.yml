@@ -27,7 +27,7 @@
 
 - type: entity
   id: MobGoliath
-  parent: [ BaseMobAsteroid, MobBloodstream ]
+  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable ]
   name: голіаф
   description: Масивний звір, який використовує довгі мацаки (щупальця), щоб схопити свою здобич. Не варто погрожувати йому за жодних обставин, а краще навіть поряд не стійте.
   components:
@@ -86,8 +86,8 @@
     - Goliath
     - FootstepSound
   - type: NoSlip
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeatGoliath
       amount: 3
     - id: MaterialGoliathHide1
@@ -189,7 +189,7 @@
 
 - type: entity
   id: MobHivelord
-  parent: [ BaseMobAsteroid, FlyingMobBase ]
+  parent: [ BaseMobAsteroid, FlyingMobBase, BaseSlicingRefinable ]
   name: володар рою
   description: Справді інопланетна істота, вона являє собою масу невідомого органічного матеріалу, що постійно коливається. Під час атаки від неї відколюються шматки, які атакують в тандемі з оригіналом.
   components:
@@ -243,8 +243,8 @@
         9
       NavSmash: !type:Bool
         true
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodHivelordRemains
 
 - type: entity
@@ -354,7 +354,7 @@
 
 - type: entity
   id: MobBasilisk
-  parent: [ BaseMobAsteroid, MobBloodstream ]
+  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable ]
   name: василіск
   description: Чи то звір, чи то якась істота. Вкритий товстим панциром, який поглинає енергію. Його погляд змушує жертв замерзати зсередини.
   components:
@@ -422,8 +422,8 @@
     reflectProb: 1
     reflects:
     - Energy
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: DiamondOre1
       amount: 1
       maxAmount: 3

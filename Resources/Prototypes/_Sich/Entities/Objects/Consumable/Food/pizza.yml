@@ -1,7 +1,7 @@
 # Алкоголь тє файно. ТАКОЖ ВАЖЛИВА РЕМАРКА! ПІСЛЯ ОНОВЛЕННЯ КУЛІНАРІЇ - ТО ВИДАЛИТИ!
 - type: entity
   name: пивна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaBeer
   description: У цій піці є пиво. Вітаємо – ви щойно стали найкращим другом інженерів.
   components:
@@ -10,22 +10,22 @@
       - cheesy
       - salty
       - oily
-      - like piss
+      - beer
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
     - state: beer-pizza
-  - type: SliceableFood
-    slice: FoodPizzaBeerSlice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 39
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 14
-        - ReagentId: Beer
-          Quantity: 20
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaBeerSlice
+      amount: 8
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 100
+      - ReagentId: Beer
+        Quantity: 20
 
 - type: entity
   name: шматок пивної піци
@@ -38,49 +38,47 @@
       - cheesy
       - salty
       - oily
-      - like piss
+      - beer
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
     - state: beer-slice
   - type: Item
     heldPrefix: beer-slice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 9.5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: Beer
-          Quantity: 2.5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
+      - ReagentId: Beer
+        Quantity: 2
 
 - type: entity
   name: винна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaWine
   description: У цій піці є вино. Вибір справжній аристократів... Або людей, які дуже хочуть ними здаватися.
   components:
   - type: FlavorProfile
     flavors:
-      - like grape rinds
+      - likegraperinds
       - fruity
       - fishy
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
     - state: wine-pizza
-  - type: SliceableFood
-    slice: FoodPizzaWineSlice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 39
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 14
-        - ReagentId: Wine
-          Quantity: 20
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaWineSlice
+      amount: 8
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 100
+      - ReagentId: Wine
+        Quantity: 20
 
 - type: entity
   name: шматочок винної піци
@@ -90,7 +88,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - like grape rinds
+      - likegraperinds
       - fruity
       - fishy
   - type: Sprite
@@ -99,12 +97,10 @@
     - state: wine-slice
   - type: Item
     heldPrefix: wine-slice
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 9.5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: Wine
-          Quantity: 2.5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
+      - ReagentId: Wine
+        Quantity: 2

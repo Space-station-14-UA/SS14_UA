@@ -56,15 +56,13 @@
       reagents:
       - ReagentId: Holywater
         Quantity: 30
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
-        - ReagentId: Holywater
-          Quantity: 10
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 10
+      - ReagentId: Holywater
+        Quantity: 10
     
 - type: entity
   parent: BasePlushie
@@ -104,15 +102,13 @@
       reagents:
       - ReagentId: Blood
         Quantity: 30
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
-        - ReagentId: Blood
-          Quantity: 10
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 10
   - type: TimerTrigger
     delay: 20
     examinable: false
@@ -162,13 +158,11 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 10
-  - type: SolutionContainerManager #More food for moff from moff
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 15
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 30
   - type: UseDelay
     delay: 0.5
 
@@ -191,13 +185,11 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 15
-  - type: SolutionContainerManager #Бавовна.
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 20
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 30
 
 - type: entity
   parent: SichPlushieMoffMiriadeya
@@ -213,17 +205,15 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 15
-  - type: SolutionContainerManager #Бавовна з. . . Почнемо з цукру? А, й муки :)
-    solutions:
-      food:
-        maxVol: 25
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 20
-        - ReagentId: Sugar
-          Quantity: 2.5
-        - ReagentId: Flour
-          Quantity: 2.5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 20
+      - ReagentId: Sugar #Бавовна з. . . Почнемо з цукру? А, й муки :)
+        Quantity: 2.5
+      - ReagentId: Flour
+        Quantity: 2.5
 
 - type: entity
   parent: SichPlushieMoffMiriadeya
@@ -239,15 +229,13 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 15
-  - type: SolutionContainerManager #plasma
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 15
-        - ReagentId: Ash
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+      - ReagentId: Ash
+        Quantity: 5
 
 ## Мірка. Мірка Злидина. Персонаж Дітрита
 - type: entity
@@ -264,15 +252,13 @@
       head:
       - state: equipped-HELMET
         offset: "0, 0.0625"
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 15
-        - ReagentId: Ethanol #:stare:
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+      - ReagentId: Ethanol #:stare:
+        Quantity: 5
 
 - type: entity
   parent: SichPlushieMoffMirka
@@ -319,17 +305,15 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/Moffs/Ranch/bartender.rsi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 15
-        - ReagentId: IceCream #Хмммм
-          Quantity: 4
-        - ReagentId: Ethanol #Він все ще не п'є!
-          Quantity: 1
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+      - ReagentId: IceCream #Хмммм
+        Quantity: 4
+      - ReagentId: Ethanol #Він все ще не п'є!
+        Quantity: 1
 
 - type: entity
   parent: SichPlushieMoffRanch
@@ -340,12 +324,10 @@
   components:
   - type: Sprite
     sprite: _Sich/Objects/Fun/Plushies/Moffs/Ranch/botanist.rsi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 15
-        - ReagentId: EZNutrient #Ботанік все ж
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+      - ReagentId: EZNutrient #Ботанік все ж
+        Quantity: 5

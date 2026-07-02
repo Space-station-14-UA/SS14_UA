@@ -17,3 +17,9 @@
   minWidth:  0.55
   defaultWidth: 1
   maxWidth: 1.02
+  defaultSoundsBySex:
+  - UnisexVox
+  - UnisexVox
+  - UnisexVox
+  voices:
+  - UnisexVox

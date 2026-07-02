@@ -1,0 +1,4 @@
+- type: flavor
+  id: likegraperinds
+  flavorType: Base
+  description: flavor-base-grape-rinds
