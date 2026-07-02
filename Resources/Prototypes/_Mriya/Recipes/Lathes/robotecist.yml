@@ -1,6 +1,6 @@
 - type: latheRecipe
   id: MRIPCRepairKit
-  result: MRIPCRepairKit
+  result: MRIPCRepairKit1
   completetime: 1
   materials:
     Steel: 50
