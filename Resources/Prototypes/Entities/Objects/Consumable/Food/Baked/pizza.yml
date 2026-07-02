@@ -20,8 +20,6 @@
         Quantity: 120
       - ReagentId: Vitamin
         Quantity: 12
-  - type: SliceableFood
-    count: 12
   - type: Item
     size: Normal
     shape:
@@ -62,7 +60,7 @@
 
 - type: entity
   name: піца «Маргарита»
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMargherita
   description: Смак Італії.
   components:
@@ -74,8 +72,10 @@
   - type: Sprite
     layers:
     - state: margherita
-  - type: SliceableFood
-    slice: FoodPizzaMargheritaSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaMargheritaSlice
+      amount: 8
 
 - type: entity
   name: шматочок піци «Маргарита»
@@ -96,7 +96,7 @@
 
 - type: entity
   name: "м'ясна піца"
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMeat
   description: "Масляна піца зі смачним м'ясом."
   components:
@@ -109,8 +109,10 @@
   - type: Sprite
     layers:
     - state: meat
-  - type: SliceableFood
-    slice: FoodPizzaMeatSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaMeatSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -142,7 +144,7 @@
 
 - type: entity
   name: грибна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMushroom
   description: Дуже особлива піца.
   components:
@@ -154,8 +156,10 @@
   - type: Sprite
     layers:
     - state: mushroom
-  - type: SliceableFood
-    slice: FoodPizzaMushroomSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaMushroomSlice
+      amount: 8
 
 - type: entity
   name: шматочок грибної піци
@@ -177,7 +181,7 @@
 
 - type: entity
   name: овочева піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaVegetable
   description: Станційні вегетеріанці подякують вам за це.
   components:
@@ -192,8 +196,10 @@
   - type: Sprite
     layers:
     - state: vegetable
-  - type: SliceableFood
-    slice: FoodPizzaVegetableSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaVegetableSlice
+      amount: 8
 
 - type: entity
   name: шматочок овочевої піци
@@ -220,7 +226,7 @@
 
 - type: entity
   name: піца донк-кишенька
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaDonkpocket
   description: Хто взагалі подумав що це буде гарна ідея?..
   components:
@@ -230,8 +236,10 @@
   - type: Sprite
     layers:
     - state: donkpocket
-  - type: SliceableFood
-    slice: FoodPizzaDonkpocketSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaDonkpocketSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:
@@ -278,7 +286,7 @@
 
 - type: entity
   name: «сира» піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaDank
   description: Улюблений вибір гіпі.
   components:
@@ -291,8 +299,10 @@
   - type: Sprite
     layers:
     - state: dank
-  - type: SliceableFood
-    slice: FoodPizzaDankSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaDankSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:
@@ -333,7 +343,7 @@
 
 - type: entity
   name: піца з салямі
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaSassysage
   description: Ви дійсно відчуваєте запах нахабства.
   components:
@@ -346,8 +356,10 @@
   - type: Sprite
     layers:
     - state: sassysage
-  - type: SliceableFood
-    slice: FoodPizzaSassysageSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaSassysageSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -379,7 +391,7 @@
 
 - type: entity
   name: «Гавайська» піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaPineapple
   description: Змушує людей плакати. Сльози радості чи смутку залежать від того, наскільки людина любить ананас.
   components:
@@ -393,8 +405,10 @@
   - type: Sprite
     layers:
     - state: pineapple
-  - type: SliceableFood
-    slice: FoodPizzaPineappleSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaPineappleSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -428,7 +442,7 @@
 #TODO: This is a meme pizza from /tg/. It has specially coded mechanics.
 - type: entity
   name: піца «Арнольда»
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaArnold
   description: Привіт, ви подзвонили в піцерію Арнольда. Мене зараз немає, я пішов вбивати пепероні.
   components:
@@ -442,8 +456,10 @@
   - type: Sprite
     layers:
     - state: arnold
-  - type: SliceableFood
-    slice: FoodPizzaArnoldSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaArnoldSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:
@@ -533,7 +549,7 @@
 
 - type: entity
   name: гостра камене-піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaUranium
   description: Гостра піца, вкрита перцем та ураном.
   components:
@@ -546,8 +562,10 @@
   - type: Sprite
     layers:
     - state: uranium-pizza
-  - type: SliceableFood
-    slice: FoodPizzaUraniumSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaUraniumSlice
+      amount: 8
   - type: Tag
     tags:
     - Meat
@@ -612,7 +630,7 @@
 
 - type: entity
   name: бавовняна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaCotton
   description: Пласке тканинне бавовняне тісто з бавовняною начинкою. Неймовірно.
   components:
@@ -625,8 +643,10 @@
     - state: cotton-pizza
   - type: Edible
     requiresSpecialDigestion: true
-  - type: SliceableFood
-    slice: FoodPizzaCottonSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaCottonSlice
+      amount: 8
   - type: Tag
     tags:
     - ClothMade
@@ -673,7 +693,7 @@
 
 - type: entity
   name: world peazza
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaWorldpeas
   description: Modern diplomacy in the shape of a disc.
   components:
@@ -684,8 +704,10 @@
   - type: Sprite
     layers:
     - state: worldpeas
-  - type: SliceableFood
-    slice: FoodPizzaWorldpeasSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaWorldpeasSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:

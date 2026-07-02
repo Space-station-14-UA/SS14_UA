@@ -10,6 +10,14 @@
       visible: false
       shader: unshaded
       map: [ "enum.ToggleableVisuals.Layer" ]
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/weldingtool_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/welder_drop.ogg
+  # Mriya: add interaction sounds end
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/welder_drop.ogg

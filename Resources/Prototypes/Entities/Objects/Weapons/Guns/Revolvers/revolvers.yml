@@ -50,6 +50,15 @@
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRRevolversPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRRevolversDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRRevolversDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: Декард

@@ -4,6 +4,14 @@
   parent: [SolutionTiny, DrinkBase]
   id: DrinkBaseCup
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/other/Cup/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/other/Cup/drop.ogg
+  # Mriya: add interaction sounds end
   - type: Item
     size: Tiny
   - type: FitsInDispenser

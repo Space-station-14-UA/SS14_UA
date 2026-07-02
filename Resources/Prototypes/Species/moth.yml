@@ -15,3 +15,9 @@
   minWidth:  0.8
   defaultWidth: 0.9
   maxWidth: 1.12
+  defaultSoundsBySex:
+  - UnisexMoth
+  - UnisexMoth
+  - UnisexMoth
+  voices:
+  - UnisexMoth

@@ -9,6 +9,15 @@
     size: Small
   - type: Clothing
     slots: [mask]
+    # Mriya: add interaction sounds start
+    equipSound:
+      collection: MRGenericEquip
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/generic_small_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/generic_small_drop.ogg # Mriya: add interaction sounds end
   - type: StaticPrice
     price: 25
 
@@ -33,12 +42,11 @@
 
 - type: entity
   abstract: true
-  parent: [SolutionFood, SolutionToolSmall, ClothingMaskBase]
+  parent: [SolutionFood, SolutionToolSmall, ClothingMaskBase, BaseSlicingRefinable]
   id: ClothingMaskBaseButcherable
   components:
-  - type: Butcherable
-    butcheringType: Knife
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: MaterialCloth1
       amount: 1
   - type: PhysicalComposition # 50% of the amount of cloth you'd obtain upon butchering

@@ -43,6 +43,15 @@
         ents: []
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRShotgunsPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRShotgunsDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRShotgunsDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: Бульдог

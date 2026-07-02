@@ -25,6 +25,15 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRLasersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRLasersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRLasersDrop # Mriya: add interaction sounds end
 
 - type: entity
   parent: [BaseWeaponBattery, BaseGunWieldable]

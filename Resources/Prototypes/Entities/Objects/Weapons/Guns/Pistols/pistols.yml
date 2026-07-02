@@ -68,6 +68,15 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRPistolsPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRPistolsDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRPistolsDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: гадюка

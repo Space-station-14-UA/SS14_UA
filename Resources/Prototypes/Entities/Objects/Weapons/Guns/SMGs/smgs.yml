@@ -58,6 +58,15 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      collection: MRSMGPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: MRSMGDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: MRSMGDrop # Mriya: add interaction sounds end
 
 - type: entity
   name: Атреїди

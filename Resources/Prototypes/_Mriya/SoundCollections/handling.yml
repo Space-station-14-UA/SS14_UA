@@ -1,0 +1,121 @@
+# Pistols
+- type: soundCollection
+  id: MRPistolsPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Pistol/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Pistol/pickup2.ogg
+  - /Audio/_Mriya/Items/weapons/Pistol/pickup3.ogg
+  - /Audio/_Mriya/Items/weapons/Pistol/pickup4.ogg
+
+- type: soundCollection
+  id: MRPistolsDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Pistol/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/Pistol/drop2.ogg
+  - /Audio/_Mriya/Items/weapons/Pistol/drop3.ogg
+
+# SMGs
+- type: soundCollection
+  id: MRSMGPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/SMG/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/SMG/pickup2.ogg
+  - /Audio/_Mriya/Items/weapons/SMG/pickup3.ogg
+
+- type: soundCollection
+  id: MRSMGDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/SMG/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/SMG/drop2.ogg
+# Rifles
+- type: soundCollection
+  id: MRRiflesPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Rifle/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Rifle/pickup2.ogg
+  - /Audio/_Mriya/Items/weapons/Rifle/pickup3.ogg
+
+- type: soundCollection
+  id: MRRiflesDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Rifle/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/Rifle/drop2.ogg
+
+# Lasers
+- type: soundCollection
+  id: MRLasersPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Laser/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Laser/pickup2.ogg
+
+- type: soundCollection
+  id: MRLasersDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Laser/drop1.ogg
+
+# Revolvers
+- type: soundCollection
+  id: MRRevolversPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Revolver/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Revolver/pickup2.ogg
+
+- type: soundCollection
+  id: MRRevolversDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Revolver/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/Revolver/drop2.ogg
+
+# Shotguns
+- type: soundCollection
+  id: MRShotgunsPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Shotgun/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Shotgun/pickup2.ogg
+  - /Audio/_Mriya/Items/weapons/Shotgun/pickup3.ogg
+
+- type: soundCollection
+  id: MRShotgunsDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Shotgun/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/Shotgun/drop2.ogg
+
+# Snipers
+- type: soundCollection
+  id: MRSnipersPickUp
+  files:
+  - /Audio/_Mriya/Items/weapons/Sniper/pickup1.ogg
+  - /Audio/_Mriya/Items/weapons/Sniper/pickup2.ogg
+
+- type: soundCollection
+  id: MRSnipersDrop
+  files:
+  - /Audio/_Mriya/Items/weapons/Sniper/drop1.ogg
+  - /Audio/_Mriya/Items/weapons/Sniper/drop2.ogg
+  - /Audio/_Mriya/Items/weapons/Sniper/drop3.ogg
+
+# Generic
+- type: soundCollection
+  id: MRGenericDrop
+  files:
+  - /Audio/_Mriya/Items/handling/generic_drop1.ogg
+  - /Audio/_Mriya/Items/handling/generic_drop2.ogg
+  - /Audio/_Mriya/Items/handling/generic_drop3.ogg
+  - /Audio/_Mriya/Items/handling/generic_drop4.ogg
+  - /Audio/_Mriya/Items/handling/generic_drop5.ogg
+
+- type: soundCollection
+  id: MRGenericEquip
+  files:
+  - /Audio/_Mriya/Items/handling/generic_equip1.ogg
+  - /Audio/_Mriya/Items/handling/generic_equip2.ogg
+  - /Audio/_Mriya/Items/handling/generic_equip3.ogg
+  - /Audio/_Mriya/Items/handling/generic_equip4.ogg
+  - /Audio/_Mriya/Items/handling/generic_equip5.ogg
+
+- type: soundCollection
+  id: MRGenericPickup
+  files:
+  - /Audio/_Mriya/Items/handling/generic_pickup1.ogg
+  - /Audio/_Mriya/Items/handling/generic_pickup2.ogg
+  - /Audio/_Mriya/Items/handling/generic_pickup3.ogg

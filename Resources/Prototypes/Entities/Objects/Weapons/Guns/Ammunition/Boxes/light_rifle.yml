@@ -4,6 +4,17 @@
   id: BaseMagazineBoxLightRifle
   name: коробка з набоями (.30 гвинтівочний)
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/ammobox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/ammobox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/ammobox_drop.ogg
+  # Mriya: add interaction sounds end
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

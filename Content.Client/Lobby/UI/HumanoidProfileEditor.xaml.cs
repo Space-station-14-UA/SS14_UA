@@ -166,6 +166,16 @@ namespace Content.Client.Lobby.UI
 
             #endregion Sex
 
+            #region Voice
+
+            VoiceButton.OnItemSelected += args =>
+            {
+                VoiceButton.SelectId(args.Id);
+                SetVoice(_voices[args.Id]);
+            };
+
+            #endregion
+
             #region Age
 
             AgeEdit.OnTextChanged += args =>
@@ -441,6 +451,7 @@ namespace Content.Client.Lobby.UI
             UpdateNameEdit();
             UpdateFlavorTextEdit();
             UpdateSexControls();
+            UpdateVoiceControls();
             UpdateGenderControls();
             UpdateHeightControls();
             UpdateWidthControls();

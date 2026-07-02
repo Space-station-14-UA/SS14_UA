@@ -1,0 +1,1 @@
+flavor-base-grape-rinds = як виноград

@@ -4,6 +4,22 @@
   name: диск технологічних балів (1000)
   description: Диск для сервера відділу дослідження та розробки, що містить 1000 балів.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_pickup.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -6
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -6  # Mriya: add interaction sounds end
   - type: Sprite
     sprite: Objects/Specific/Research/researchdisk.rsi
     state: icon

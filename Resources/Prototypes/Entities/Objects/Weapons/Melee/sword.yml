@@ -6,7 +6,6 @@
   id: BaseSword
   abstract: true
   components:
-  - type: Sharp
   - type: Execution
     doAfterDuration: 4.0
   - type: MeleeWeapon
@@ -74,6 +73,11 @@
   id: CaptainSabre
   description: Церемоніальна зброя капітана станції.
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/sabre_drop.ogg
+  # Mriya: add interaction sounds end
   - type: Sprite
     sprite: Objects/Weapons/Melee/captain_sabre.rsi
   - type: MeleeWeapon

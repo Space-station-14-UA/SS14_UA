@@ -42,6 +42,14 @@
     interfaces:
       enum.TransferAmountUiKey.Key:
         type: TransferAmountBoundUserInterface
+  - type: EmitSoundOnPickup # Mriya: add interaction sounds start
+    sound:
+      path: /Audio/_Mriya/Items/handling/drinkglass_pickup.ogg
+      params:
+        volume: -7
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/drinkglass_drop.ogg # Mriya: add interaction sounds end
 
 ## Misc bases
 

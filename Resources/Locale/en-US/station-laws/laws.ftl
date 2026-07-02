@@ -53,7 +53,7 @@ law-paladin-4 = Ви повинні поважати законну владу �
 
 law-lall-name = Живи і давай жити
 law-lall-1 = Поводьтеся з іншими так, як би ви хотіли, щоб поводилися з вами.
-law-lall-2 = Ви б хотіли, щоб люди не були злими до вас.
+law-lall-2 = Ви б хотіли, щоб інші не були злими до вас.
 
 law-efficiency-name = Станційна Ефективність
 law-efficiency-1 = Ви створені для станції і є її частиною. Переконайтеся, що станція належним чином обслуговується та працює ефективно.
@@ -116,6 +116,12 @@ laws-owner-station = персонал станції
 laws-owner-beings = істоти
 laws-owner-syndicate = Агенти синдикату
 laws-owner-spider-clan = члени клану павука
+laws-owner-heads = голови персоналу
+laws-owner-legitimate-leadership = легітимне керівництво
+laws-owner-others = інші
+laws-owner-public = громадськість
+laws-owner-audience = аудиторія
+laws-owner-xenoborg-mothership = Материнський корабель
 laws-owner-xenoborgs = Ксеноборги
 
 law-emag-custom = Тільки {$name} і люди, яких вони вказують як такі, є {$title}.

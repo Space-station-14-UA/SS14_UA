@@ -6,6 +6,13 @@
   id: ClothingHeadHelmetBase
   abstract: true
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/helmet_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/helmet_drop.ogg # Mriya: add interaction sounds end
   - type: Tag
     tags:
     - WhitelistChameleon

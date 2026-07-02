@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable ]
   id: BaseMobFlesh
   name: химерна плоть
   description: Безладна маса плоті, оживлена аномальною енергією.
@@ -43,10 +43,9 @@
   - type: Stamina
     baseCritThreshold: 50
     animationThreshold: 25
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeat
-      amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -205,7 +204,7 @@
         Blunt: 10
 
 - type: entity
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: [ SimpleSpaceMobBase, MobCombat, BaseSlicingRefinable ]
   id: BaseMobFleshSalvage #This one is immune to space!
   name: химерна плоть
   suffix: "Набір правил шахтарів"
@@ -245,10 +244,9 @@
   - type: Stamina
     baseCritThreshold: 50
     animationThreshold: 25
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeat
-      amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:

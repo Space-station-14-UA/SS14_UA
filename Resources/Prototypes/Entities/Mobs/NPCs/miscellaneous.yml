@@ -1,8 +1,8 @@
 - type: entity
   name: лазераптор
   id: MobLaserRaptor
-  parent: SimpleMobBase
-  description: Ця штуковина точно з ери вікінгів.
+  parent: [SimpleMobBase, BaseSlicingRefinable]
+  description:  Ця штуковина точно з ери вікінгів.
   components:
     - type: NpcFactionMember
       factions:
@@ -37,8 +37,8 @@
       thresholds:
         0: Alive
         100: Dead
-    - type: Butcherable
-      spawned:
+    - type: ToolRefinable
+      refineResult:
       - id: FoodMeatChicken
         amount: 2
     - type: MovementSpeedModifier
@@ -160,8 +160,8 @@
         Base: alive
       Dead:
         Base: dead
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeatTomato
       amount: 2
   - type: Destructible

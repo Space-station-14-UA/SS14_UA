@@ -1,6 +1,6 @@
 ## UI
 
-ui-disposal-unit-title = Утилізаційна установка
+ui-disposal-unit-title = {CAPITALIZE($name)}
 
 ui-disposal-unit-label-state = Стан:
 ui-disposal-unit-label-pressure = Стиснення:
@@ -12,11 +12,11 @@ ui-disposal-unit-button-power = Живл.
 
 ## Verbs
 disposal-flush-verb-get-data-text = Змити
-disposal-self-insert-verb-get-data-text = Застрибнути всередину
 disposal-eject-verb-get-data-text = Витягти вміст
 
-## No hands
+## Errors
 disposal-unit-no-hands = У тебе немає рук!
+disposal-unit-is-full = Всередині більше немає місця.
 
 # state
 disposal-unit-state-Ready = Готовий

@@ -14,6 +14,15 @@
     - type: Tag
       tags:
       - ConstructionMaterial
+    - type: EmitSoundOnPickup  # Mriya: add interaction sounds start
+      sound:
+        path: /Audio/_Mriya/Items/handling/component_pickup.ogg
+    - type: EmitSoundOnDrop
+      sound:
+        path: /Audio/_Mriya/Items/handling/component_drop.ogg
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/_Mriya/Items/handling/component_drop.ogg  # Mriya: add interaction sounds end
 
 - type: entity
   id: MicroManipulatorStockPart

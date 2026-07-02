@@ -4,7 +4,7 @@ traitor-round-end-codewords = Кодові слова були: [color=White]{$c
 traitor-round-end-agent-name = зрадником
 
 objective-issuer-syndicate = [color=crimson]Синдикат[/color]
-objective-issuer-unknown = Невідомо
+objective-issuer-unknown = [color=white]Неівдомий[/color]
 
 # Shown at the end of a round of Traitor
 

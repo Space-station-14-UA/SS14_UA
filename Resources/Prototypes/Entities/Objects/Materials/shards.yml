@@ -4,7 +4,9 @@
   id: ShardBase
   description: Це уламок якогось невідомого матеріалу.
   components:
-  - type: Sharp
+  - type: Tool
+    qualities:
+    - Slicing
   - type: Execution
     doAfterDuration: 4.0
   - type: Sprite

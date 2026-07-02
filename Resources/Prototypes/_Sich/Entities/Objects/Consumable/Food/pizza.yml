@@ -1,7 +1,7 @@
 # Алкоголь тє файно. ТАКОЖ ВАЖЛИВА РЕМАРКА! ПІСЛЯ ОНОВЛЕННЯ КУЛІНАРІЇ - ТО ВИДАЛИТИ!
 - type: entity
   name: пивна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaBeer
   description: У цій піці є пиво. Вітаємо – ви щойно стали найкращим другом інженерів.
   components:
@@ -10,18 +10,20 @@
       - cheesy
       - salty
       - oily
-      - like piss
+      - beer
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
     - state: beer-pizza
-  - type: SliceableFood
-    slice: FoodPizzaBeerSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaBeerSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 39
+        Quantity: 100
       - ReagentId: Beer
         Quantity: 20
 
@@ -36,7 +38,7 @@
       - cheesy
       - salty
       - oily
-      - like piss
+      - beer
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
@@ -47,32 +49,34 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 2
+        Quantity: 10
       - ReagentId: Beer
-        Quantity: 2.5
+        Quantity: 2
 
 - type: entity
   name: винна піца
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaWine
   description: У цій піці є вино. Вибір справжній аристократів... Або людей, які дуже хочуть ними здаватися.
   components:
   - type: FlavorProfile
     flavors:
-      - like grape rinds
+      - likegraperinds
       - fruity
       - fishy
   - type: Sprite
     sprite: _Sich/Objects/Consumable/Food/pizza.rsi
     layers:
     - state: wine-pizza
-  - type: SliceableFood
-    slice: FoodPizzaWineSlice
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodPizzaWineSlice
+      amount: 8
   - type: Solution
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 14
+        Quantity: 100
       - ReagentId: Wine
         Quantity: 20
 
@@ -84,7 +88,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - like grape rinds
+      - likegraperinds
       - fruity
       - fishy
   - type: Sprite
@@ -97,6 +101,6 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 2
+        Quantity: 10
       - ReagentId: Wine
-        Quantity: 2.5
+        Quantity: 2

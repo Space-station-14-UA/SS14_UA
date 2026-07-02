@@ -7,6 +7,11 @@
     state: icon
   - type: Clothing
     slots: [gloves]
+    # Mriya: add interaction sounds start
+    equipSound:
+      path: /Audio/_Mriya/Items/handling/generic_equip2.ogg
+      params:
+        volume: -4 # Mriya: add interaction sounds end
   - type: Edible
     requiresSpecialDigestion: true
   - type: Item
@@ -28,14 +33,12 @@
 
 - type: entity
   abstract: true
-  parent: ClothingHandsBase
+  parent: [ClothingHandsBase, BaseSlicingRefinable]
   id: ClothingHandsButcherable
   components:
-  - type: Butcherable
-    butcheringType: Knife
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: MaterialCloth1
-      amount: 1
   - type: PhysicalComposition # 50% of the amount of cloth you'd obtain upon butchering
     materialComposition:
       Cloth: 50

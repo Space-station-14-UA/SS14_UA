@@ -4,6 +4,22 @@
   id: NukeDisk
   description: Ядерний авторизаційний диск, здатний активувати ядерну бомбу, якщо його використати разом із кодом. Записка від Нанотрейзен - «ЦЕ ВАША НАЙВАЖЛИВІША ВЛАСНІСТЬ, ЗБЕРЕЖІТЬ ЦЕЙ БІСІВ ДИСК!»
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_pickup.ogg
+      params:
+        volume: -7
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -7
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -7 # Mriya: add interaction sounds end
   - type: NukeDisk
   - type: SpecialRespawn
     prototype: NukeDisk
@@ -17,13 +33,9 @@
   - type: WarpPoint
     follow: true
     location: nuke disk
-    blacklist:
-      tags:
-      - GhostOnlyWarp
   - type: Tag
     tags:
     - HighRiskItem
-    - GhostOnlyWarp
   - type: StealTarget
     stealGroup: NukeDisk
 
@@ -34,6 +46,22 @@
   suffix: Несправжній
   description: Ядерний авторизаційний диск, здатний активувати ядерну бомбу, якщо його використати разом із кодом. Записка від Нанотрейзен - «ЦЕ ВАША НАЙВАЖЛИВІША ВЛАСНІСТЬ, ЗБЕРЕЖІТЬ ЦЕЙ БІСІВ ДИСК!»
   components:
+  # Mriya: add interaction sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_pickup.ogg
+      params:
+        volume: -7
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -7
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/disk_drop.ogg
+      params:
+        volume: -7 # Mriya: add interaction sounds end
   - type: Sprite
     sprite: Objects/Misc/nukedisk.rsi
     state: icon

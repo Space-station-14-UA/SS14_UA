@@ -36,7 +36,7 @@
 
 #Emergency EVA
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: ClothingOuterEVASuitBaseToggleable
   id: ClothingOuterSuitEmergency
   name: аварійний скафандр ЄВА
   description: Аварійний скафандр ЄВА з вбудованим шоломом. Жахливо повільний, та не має захисту від екстремальних температур, але цього достатньо щоб виграти трохи часу від космічного вакууму.
@@ -54,10 +54,6 @@
     coolingCoefficient: 0.5
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetEVALarge
-    slot: head
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
   - type: Tag
     tags:
     - CorgiWearable
@@ -107,7 +103,7 @@
 
 #Paramedic Voidsuit
 - type: entity
-  parent: [ClothingOuterEVASuitBase, BaseMedicalContraband] #Despite "Voidsuits are light hardsuits", since it parents of EVA Suits, it goes with the other softsuits
+  parent: [ClothingOuterEVASuitBaseToggleable, BaseMedicalContraband] #Despite "Voidsuits are light hardsuits", since it parents of EVA Suits, it goes with the other softsuits
   id: ClothingOuterHardsuitVoidParamed
   name: скафандр парамедика
   description: Скафандр парамедика, дозволяє надавати швидку допомогу навіть в умовах вакууму космосу.
@@ -165,9 +161,6 @@
     mask: /Textures/Effects/LightMasks/double_cone.png
   - type: RotatingLight
     speed: 360
-  - type: ContainerContainer
-    containers:
-      toggleable-clothing: !type:ContainerSlot {}
   - type: Tag
     tags:
     - WhitelistChameleon

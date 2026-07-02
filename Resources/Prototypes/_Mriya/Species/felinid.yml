@@ -11,4 +11,10 @@
   minWidth: 0.650
   defaultWidth: 0.8
   maxWidth: 1.1
-
+  defaultSoundsBySex:
+  - MaleFelinid
+  - FemaleFelinid
+  - MaleFelinid
+  voices:
+  - MaleFelinid
+  - FemaleFelinid

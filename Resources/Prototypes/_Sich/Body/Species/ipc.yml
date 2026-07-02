@@ -194,7 +194,6 @@
     sprite: _Sich/Mobs/Species/IPC/parts.rsi
     state: full
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: SheetSteel10
       amount: 3
@@ -203,10 +202,7 @@
   - type: TypingIndicator
     proto: robot
   - type: Vocal
-    sounds:
-      Male: MaleIPC
-      Female: FemaleIPC
-      Unsexed: UnisexIPC
+    emoteSounds: MaleIPC
     wilhelm:
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
   - type: Injurable

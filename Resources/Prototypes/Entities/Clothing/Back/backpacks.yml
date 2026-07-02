@@ -13,6 +13,26 @@
     quickEquip: false
     slots:
     - back
+    # Mriya: add interaction sounds start
+    equipSound:
+      path: /Audio/_Mriya/Items/handling/backpack_equip.ogg
+      params:
+        volume: -9
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_pickup.ogg
+      params:
+        volume: -9
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_drop.ogg
+      params:
+        volume: -11
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Mriya/Items/handling/backpack_drop.ogg
+      params:
+        volume: -11 # Mriya: add interaction sounds end
   - type: Storage
     grid:
     - 0,0,6,3
@@ -34,6 +54,7 @@
     tags:
     - WhitelistChameleon
     - Backpack
+
 
 - type: entity
   parent: ClothingBackpack
