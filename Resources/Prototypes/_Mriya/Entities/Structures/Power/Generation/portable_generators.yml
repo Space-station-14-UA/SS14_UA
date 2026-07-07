@@ -14,7 +14,7 @@
     range: 5
     volume: -2 #гучний бо зібраний з чого попало
     sound:
-      path: /Audio/Ambience/Objects/engine_hum.ogg
+      path: /Audio/_Mriya/Ambience/Machinery/assembling-machine-t1-2.ogg
     enabled: false
   - type: Fixtures
     fixtures:
