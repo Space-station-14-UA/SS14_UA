@@ -27,8 +27,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: ActivatableUI
@@ -69,6 +67,7 @@
       tags:
         - Incenerateble
   - type: Lathe
+    producingSound: /Audio/_Mriya/Ambience/Machinery/furnace.ogg
     idleState: icon
     runningState: building
     unlitIdleState: unlit
@@ -77,6 +76,7 @@
     - MRInceneration
   - type: LatheHeatProducing
     energyPerSecond: 6000
+  - type: RequireProjectileTarget
     
 - type: entity
   id: MRInceneratorMedium
@@ -100,6 +100,7 @@
       tags:
         - Incenerateble
   - type: Lathe
+    producingSound: /Audio/_Mriya/Ambience/Machinery/electric-furnace.ogg
     idleState: icon
     runningState: building
     unlitIdleState: unlit
@@ -131,6 +132,7 @@
       tags:
         - Incenerateble
   - type: Lathe
+    producingSound: /Audio/_Mriya/Ambience/Machinery/heating-tower-loop.ogg
     idleState: icon
     runningState: building
     unlitIdleState: unlit
