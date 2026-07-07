@@ -1,0 +1,141 @@
+- type: entity
+  id: MRBasePowerlesLathe
+  parent: BaseMachine
+  abstract: true
+  name: верстат
+  components:
+  - type: Appearance
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+          - MachineLayer
+  - type: Lathe
+  - type: MaterialStorage
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
+  - type: Transform
+    anchored: true
+  - type: Pullable
+  - type: StaticPrice
+    price: 800
+  - type: ResearchClient
+  - type: TechnologyDatabase
+  
+- type: entity
+  id: MRInceneratorSmall
+  parent: MRBasePowerlesLathe
+  name: малий спалювач
+  description: Простий саморобний спалювач який продукує тепло при спалені речей у ньому.  Викидує 6000 Джоулів енерії у атмосферу.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Incenerateble
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - MRInceneration
+  - type: LatheHeatProducing
+    energyPerSecond: 6000
+    
+- type: entity
+  id: MRInceneratorMedium
+  parent: MRBasePowerlesLathe
+  name: середній спалювач
+  description: Доволі великий спалювач який вже здатен спалювати більше ефективно вироблюючи більше тепла у атмосферу, за одницю палива. Викидує 30 000 Джоулів енерії у атмосферу.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Incenerateble
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - MRInceneration
+  - type: LatheHeatProducing
+    energyPerSecond: 30000
+    
+- type: entity
+  id: MRInceneratorBig
+  parent: MRBasePowerlesLathe
+  name: великий спалювач
+  description: Здоровезний спалювач, який здатен виробляти тонни тепла у атмосферу навколо себе. Використовується у індустріальних цілях із-за дуже високої ефективності спалення речовин. Викидує 300 000 Джоулів енерії у атмосферу.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Incenerateble
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - MRInceneration
+  - type: LatheHeatProducing
+    energyPerSecond: 300000

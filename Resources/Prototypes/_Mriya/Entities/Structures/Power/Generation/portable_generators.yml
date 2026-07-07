@@ -12,7 +12,7 @@
     price: 500
   - type: AmbientSound
     range: 5
-    volume: -5
+    volume: -2 #гучний бо зібраний з чого попало
     sound:
       path: /Audio/Ambience/Objects/engine_hum.ogg
     enabled: false
@@ -37,7 +37,6 @@
     noRot: true
 
   # Construction, interaction
-  - type: WiresPanel
   - type: UserInterface
     interfaces:
       enum.GeneratorComponentUiKey.Key:
@@ -69,8 +68,8 @@
 
     # Core functionality
   - type: PortableGenerator
-    startSoundEmpty: { collection: GeneratorTugEmpty }
-    startSound: { collection: GeneratorTug }
+    startSoundEmpty: { collection: MRStirlingStart }
+    startSound: { collection: MRStirlingStart }
   - type: FuelGenerator
   - type: PowerSupplier
     supplyRate: 3000
@@ -166,6 +165,7 @@
       gasType: CarbonDioxide
       #чотири молі вугликислого газу за кусок вугілля.
       moleRatio: 4
+      temperature: 200
     - type: PowerMonitoringDevice
       group: Generator
       loadNodes:
