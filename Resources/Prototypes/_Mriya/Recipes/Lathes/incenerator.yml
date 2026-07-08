@@ -1,20 +1,20 @@
 - type: latheRecipe
   id: MRBurnPlasma
-  completetime: 30
+  completetime: 60
   result: MRPlasmaBurnIcon
   materials:
     Plasma: 100
     
 - type: latheRecipe
   id: MRBurnCoal
-  completetime: 30
+  completetime: 60
   result: MRCoalBurnIcon
   materials:
-    Coal: 100
+    Coal: 200
 
 - type: latheRecipe
   id: MRBurnWood
-  completetime: 30
+  completetime: 60
   result: MRWoodBurnIcon
   materials:
-    Wood: 100
+    Wood: 500
