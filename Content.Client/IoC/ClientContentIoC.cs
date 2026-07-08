@@ -28,7 +28,7 @@ using Content.Shared.FeedbackSystem;
 using Content.Shared.IoC;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
-using Content.Client.Sich.Sponsors;
+using Content.Client.Mriya.Sponsors;
 
 namespace Content.Client.IoC
 {

@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Afk;
 using Content.Server.Database;
-using Content.Server.Sich.Sponsors;
+using Content.Server.Mriya.Sponsors;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
 using Content.Shared.Construction.Prototypes;

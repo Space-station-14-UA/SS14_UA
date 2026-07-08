@@ -5,7 +5,7 @@ using Content.Server.GameTicking;
 using Content.Server.Ghost.Roles;
 using Content.Server.Mind;
 using Content.Server.Roles.Jobs;
-using Content.Server.Sich.Sponsors;
+using Content.Server.Mriya.Sponsors;
 using Content.Shared.Actions;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;

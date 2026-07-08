@@ -19,7 +19,7 @@ using Content.Client.Playtime;
 using Content.Client.Radiation.Overlays;
 using Content.Client.Replay;
 using Content.Client.Screenshot;
-using Content.Client.Sich.Sponsors;
+using Content.Client.Mriya.Sponsors;
 using Content.Client.Singularity;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface;

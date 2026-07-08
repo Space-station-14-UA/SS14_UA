@@ -2,7 +2,7 @@ using Content.Server.Access.Systems;
 using Content.Server.Humanoid;
 using Content.Server.Mind;
 using Content.Server.PDA;
-using Content.Server.Sich.Sponsors;
+using Content.Server.Mriya.Sponsors;
 using Content.Server.Station.Components;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
