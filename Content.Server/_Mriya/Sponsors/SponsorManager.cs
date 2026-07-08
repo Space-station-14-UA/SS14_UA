@@ -107,7 +107,7 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
         return _cachedPlayerPrefs.ContainsKey(session.UserId);
     }
 
-    private async Task<SichSponsor?> GetOrCreateSponsorAsync(NetUserId userId, CancellationToken cancel)
+    private async Task<MriyaSponsor?> GetOrCreateSponsorAsync(NetUserId userId, CancellationToken cancel)
     {
         var prefs = await _db.GetSponsorDataForAsync(userId, cancel);
         return prefs;
@@ -131,7 +131,7 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
 
     #region Raw Data Access
 
-    public bool TryGetCachedSponsor(NetUserId userId, [NotNullWhen(true)] out SichSponsor? playerSponsor)
+    public bool TryGetCachedSponsor(NetUserId userId, [NotNullWhen(true)] out MriyaSponsor? playerSponsor)
     {
         if (_cachedPlayerPrefs.TryGetValue(userId, out var spons))
         {
@@ -143,7 +143,7 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
         return false;
     }
 
-    public SichSponsor GetSponsor(NetUserId userId)
+    public MriyaSponsor GetSponsor(NetUserId userId)
     {
         var spons = _cachedPlayerPrefs[userId].Sponsor;
         if (spons == null)
@@ -154,7 +154,7 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
         return spons;
     }
 
-    public SichSponsor? GetSichSponsorOrNull(NetUserId? userId)
+    public MriyaSponsor? GetSichSponsorOrNull(NetUserId? userId)
     {
         if (userId == null)
             return null;
@@ -269,7 +269,7 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
         _prefsManager.RefreshPreferences(userId);
     }
 
-    public void UpdateCache(NetUserId userId, SichSponsor updatedSponsor)
+    public void UpdateCache(NetUserId userId, MriyaSponsor updatedSponsor)
     {
         if (_cachedPlayerPrefs.TryGetValue(userId, out var data))
         {
@@ -293,5 +293,5 @@ public sealed class SponsorManager : ISponsorManager, IPostInjectInit
 public sealed class PlayerSponsorData
 {
     public bool SponsorLoaded;
-    public SichSponsor? Sponsor;
+    public MriyaSponsor? Sponsor;
 }

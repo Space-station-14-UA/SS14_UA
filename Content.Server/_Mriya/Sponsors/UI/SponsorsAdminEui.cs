@@ -25,7 +25,7 @@ public sealed class AdminSponsorsEui : BaseEui
     private readonly ISawmill _sawmill;
     private bool _isLoading;
 
-    private readonly List<(SichSponsor a, string? lastUserName)> _sponsors = new();
+    private readonly List<(MriyaSponsor a, string? lastUserName)> _sponsors = new();
     private readonly List<DbSponsorRank> _sponsorRanks = new();
 
     public AdminSponsorsEui()
@@ -250,7 +250,7 @@ public sealed class AdminSponsorsEui : BaseEui
         var existing = await _db.GetSponsorDataForAsync(userId);
         if (existing != null) return;
 
-        var sponsor = new SichSponsor
+        var sponsor = new MriyaSponsor
         {
             UserId = userId.UserId,
             RoleAssignments = ca.RankIds.Select(rankId => new SponsorRoleAssignment
@@ -271,7 +271,7 @@ public sealed class AdminSponsorsEui : BaseEui
         StateDirty();
         _isLoading = true;
 
-        var (sponsors, ranks) = await _db.GetAllSichSponsorsAsync();
+        var (sponsors, ranks) = await _db.GetAllMriyaSponsorsAsync();
 
         _sponsors.Clear();
         _sponsors.AddRange(sponsors);

@@ -18,7 +18,7 @@ public sealed partial class PersonalSponsorEui : BaseEui
     private ISawmill _sawmill = default!;
 
     private bool _isLoading = true;
-    private SichSponsor? _cachedSponsor;
+    private MriyaSponsor? _cachedSponsor;
 
     public PersonalSponsorEui()
     {

@@ -43,7 +43,7 @@ public sealed class SponsorListEui : BaseEui
         _isLoading = true;
         StateDirty();
 
-        var (sponsors, ranks) = await _db.GetAllSichSponsorsAsync();
+        var (sponsors, ranks) = await _db.GetAllMriyaSponsorsAsync();
 
         _publicSponsors.Clear();
         var ranksDict = ranks.ToDictionary(r => r.Id);

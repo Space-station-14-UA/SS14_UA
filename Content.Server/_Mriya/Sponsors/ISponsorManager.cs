@@ -15,9 +15,9 @@ public interface ISponsorManager
     void OnClientDisconnected(ICommonSession session);
     bool HavePreferencesLoaded(ICommonSession session);
 
-    bool TryGetCachedSponsor(NetUserId userId, [NotNullWhen(true)] out SichSponsor? playerPreferences);
-    SichSponsor GetSponsor(NetUserId userId);
-    SichSponsor? GetSichSponsorOrNull(NetUserId? userId);
+    bool TryGetCachedSponsor(NetUserId userId, [NotNullWhen(true)] out MriyaSponsor? playerPreferences);
+    MriyaSponsor GetSponsor(NetUserId userId);
+    MriyaSponsor? GetSichSponsorOrNull(NetUserId? userId);
 
     /// <summary>
     /// Перевіряє, чи має гравець в своїх активних рангах вказаний тег.
@@ -49,5 +49,5 @@ public interface ISponsorManager
     /// Миттєво оновлює об'єкт у кеші без запиту до БД. 
     /// Використовується після того, як гравець змінив налаштування (наприклад, колір) через UI і ми вже зберегли це в БД.
     /// </summary>
-    void UpdateCache(NetUserId userId, SichSponsor updatedSponsor);
+    void UpdateCache(NetUserId userId, MriyaSponsor updatedSponsor);
 }
