@@ -33,7 +33,7 @@
   # Visuals
   - type: Appearance
   - type: Sprite
-    sprite: Structures/Power/Generation/portable_generator.rsi
+    sprite: _Mriya/Structures/Power/Generetion/stirling_generator.rsi
     noRot: true
 
   # Construction, interaction
@@ -129,9 +129,9 @@
   components:
     - type: Sprite
       layers:
-        - state: portgen0
+        - state: stirling
           map: [ "enum.GeneratorVisualLayers.Body" ]
-        - state: portgen_on_unlit
+        - state: stirlingon_unlit
           map: [ "enum.GeneratorVisualLayers.Unlit" ]
           shader: unshaded
           visible: false
@@ -139,8 +139,8 @@
       visuals:
         enum.GeneratorVisuals.Running:
           enum.GeneratorVisualLayers.Body:
-            True: { state: portgen0on }
-            False: { state: portgen0 }
+            True: { state: stirlingon }
+            False: { state: stirling }
           enum.GeneratorVisualLayers.Unlit:
             True: { visible: true }
             False: { visible: false }
@@ -172,8 +172,8 @@
         - output_lv
         - output_hv
         - output_mv
-      sprite: Structures/Power/Generation/portable_generator.rsi
-      state: portgen0
+      sprite: _Mriya/Structures/Power/Generetion/stirling_generator.rsi
+      state: stirling
     - type: PowerSupplier
       supplyRampRate: 5000
       supplyRampTolerance: 1500
