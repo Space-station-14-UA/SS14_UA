@@ -82,6 +82,10 @@
   - type: LatheHeatProducing
     energyPerSecond: 6000
   - type: RequireProjectileTarget
+  - type: ApcPowerReceiver #кастиль аби працювала анімація як повинна
+    powerLoad: 0
+    needsPower: false
+  - type: ExtensionCableReceiver
     
 - type: entity
   id: MRInceneratorMedium
