@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   id: MRSimpleGeneratorBase
-  parent: [ BaseMachine, StructureWheeled]
+  parent: BaseMachine
   components:
   # Basic properties
   - type: Transform
@@ -11,7 +11,7 @@
   - type: StaticPrice
     price: 500
   - type: AmbientSound
-    range: 5
+    range: 10
     volume: -2 #гучний бо зібраний з чого попало
     sound:
       path: /Audio/_Mriya/Ambience/Machinery/assembling-machine-t1-2.ogg
@@ -61,6 +61,11 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 5
+            max: 10
   - type: GuideHelp
     guides:
     - PortableGenerator

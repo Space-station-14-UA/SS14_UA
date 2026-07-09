@@ -27,6 +27,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 5
+            max: 10
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: ActivatableUI
