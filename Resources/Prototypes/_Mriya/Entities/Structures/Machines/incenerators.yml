@@ -57,7 +57,7 @@
   description: Простий саморобний спалювач який продукує тепло при спалені речей у ньому.  Викидує 6000 Джоулів енерії у атмосферу.
   components:
   - type: Sprite
-    sprite: Structures/Machines/protolathe.rsi
+    sprite: _Mriya/Structures/Machines/small_icenerator.rsi
     snapCardinals: true
     layers:
     - state: icon
@@ -74,7 +74,7 @@
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/furnace.ogg
     idleState: icon
-    runningState: building
+    runningState: icon
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
