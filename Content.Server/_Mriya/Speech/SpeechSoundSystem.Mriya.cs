@@ -37,7 +37,6 @@ public sealed partial class SpeechSoundSystem
         if (_cfg.GetCVar(CCVars.MriyaSpeechBububu))
         {
             OnEntitySpokeMriya(ent.Owner, ent.Comp, args);
-
         }
         else
         {
@@ -63,6 +62,9 @@ public sealed partial class SpeechSoundSystem
 
         foreach (var word in words)
         {
+            if (component.PendingSpeechSounds.Count >= _cfg.GetCVar(CCVars.MriyaSpeechBububuMaxWord))
+                break;
+
             var soundData = GetSpeechSoundMriya((uid, component), word);
             if (soundData == null)
                 continue;

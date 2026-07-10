@@ -36,8 +36,14 @@ public sealed partial class CCVars
         CVarDef.Create("discord.start_round_stats_webhook_embed_color", Color.LawnGreen.ToHex(), CVar.SERVERONLY);
 
     /// <summary>
-    ///     HEX color of end round stats discord webhook's embed.
+    ///     Set to true to enable Mriya's speech "bububu" sound effect when a player speaks.
     /// </summary>
     public static readonly CVarDef<bool> MriyaSpeechBububu =
         CVarDef.Create("mriya.speech_bububu", true, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Set max number of words in a message to trigger Mriya's speech "bububu" sound effect.
+    /// </summary>
+    public static readonly CVarDef<int> MriyaSpeechBububuMaxWord =
+        CVarDef.Create("mriya.speech_bububu", 10, CVar.SERVERONLY);
 }
