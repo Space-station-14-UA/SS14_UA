@@ -1,12 +1,16 @@
+using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Speech;
 using Robust.Shared.Audio;
+using Robust.Shared.Configuration;
 using Robust.Shared.Random;
 
 namespace Content.Server.Speech;
 
 public sealed partial class SpeechSoundSystem
 {
+    [Dependency] private IConfigurationManager _cfg = default!; // Mriya: Added dependency for configuration manager
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -22,11 +26,22 @@ public sealed partial class SpeechSoundSystem
             if (currentTime >= comp.NextSpeechSoundTime)
             {
                 var soundData = comp.PendingSpeechSounds.Dequeue();
-
                 _audio.PlayPvs(soundData.Sound, uid, soundData.Params);
-
-                comp.NextSpeechSoundTime = currentTime + TimeSpan.FromSeconds(comp.DelayBetweenWords);
+                comp.NextSpeechSoundTime = currentTime + TimeSpan.FromSeconds(soundData.DelayAfter);
             }
+        }
+    }
+
+    private void OnEntitySpokeHandler(Entity<SpeechComponent> ent, ref EntitySpokeEvent args)
+    {
+        if (_cfg.GetCVar(CCVars.MriyaSpeechBububu))
+        {
+            OnEntitySpokeMriya(ent.Owner, ent.Comp, args);
+
+        }
+        else
+        {
+            OnEntitySpoke(ent.Owner, ent.Comp, args);
         }
     }
 
@@ -42,7 +57,6 @@ public sealed partial class SpeechSoundSystem
             return;
 
         component.LastTimeSoundPlayed = currentTime;
-
         component.PendingSpeechSounds.Clear();
 
         var words = args.Message.Split(new[] { ' ', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries);
@@ -50,10 +64,25 @@ public sealed partial class SpeechSoundSystem
         foreach (var word in words)
         {
             var soundData = GetSpeechSoundMriya((uid, component), word);
-            if (soundData != null)
+            if (soundData == null)
+                continue;
+
+            var data = soundData.Value;
+
+            var randomDelay = _random.NextFloat(component.MinDelayBetweenWords, component.MaxDelayBetweenWords);
+
+            char lastChar = word[^1];
+            if (lastChar == '.' || lastChar == ',' || lastChar == '!' || lastChar == '?' || lastChar == ';' || lastChar == ':')
             {
-                component.PendingSpeechSounds.Enqueue(soundData.Value);
+                if (lastChar == '.' || lastChar == '!' || lastChar == '?')
+                    randomDelay += component.PunctuationDelay;
+                else
+                    randomDelay += (component.PunctuationDelay * 0.5f);
             }
+
+            data.DelayAfter = randomDelay;
+
+            component.PendingSpeechSounds.Enqueue(data);
         }
 
         component.NextSpeechSoundTime = currentTime;

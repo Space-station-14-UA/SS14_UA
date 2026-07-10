@@ -34,4 +34,10 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> DiscordStartRoundStatsWebhookColor =
         CVarDef.Create("discord.start_round_stats_webhook_embed_color", Color.LawnGreen.ToHex(), CVar.SERVERONLY);
+
+    /// <summary>
+    ///     HEX color of end round stats discord webhook's embed.
+    /// </summary>
+    public static readonly CVarDef<bool> MriyaSpeechBububu =
+        CVarDef.Create("mriya.speech_bububu", true, CVar.SERVERONLY);
 }
