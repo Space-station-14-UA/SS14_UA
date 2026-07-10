@@ -17,7 +17,7 @@ namespace Content.Server.Speech
         {
             base.Initialize();
 
-            SubscribeLocalEvent<SpeechComponent, EntitySpokeEvent>(OnEntitySpoke);
+            SubscribeLocalEvent<SpeechComponent, EntitySpokeEvent>(OnEntitySpokeMriya); // Use Mriya method overload
         }
 
         public SoundSpecifier? GetSpeechSound(Entity<SpeechComponent> ent, string message)
