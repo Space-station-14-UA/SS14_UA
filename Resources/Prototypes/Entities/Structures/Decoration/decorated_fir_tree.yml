@@ -5,6 +5,7 @@
   description: Дуже святкове дерево для дуже святкового свята.
   components:
   - type: Sprite
+    noRot: true
     sprite: Structures/Decoration/decorated_fir_tree.rsi
     layers:
       - state: base

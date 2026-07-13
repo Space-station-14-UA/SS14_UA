@@ -5,7 +5,7 @@ using Content.Server.GameTicking;
 using Content.Server.Ghost.Roles;
 using Content.Server.Mind;
 using Content.Server.Roles.Jobs;
-using Content.Server.Sich.Sponsors;
+using Content.Server.Mriya.Sponsors;
 using Content.Shared.Actions;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
@@ -338,7 +338,7 @@ namespace Content.Server.Ghost
 
         private void OnGhostnadoRequest(GhostnadoRequestEvent msg, EntitySessionEventArgs args)
         {
-            if (CanGhostWarp(args.SenderSession, out var uid))
+            if (!CanGhostWarp(args.SenderSession, out var uid))
             {
                 Log.Warning($"User {args.SenderSession.Name} tried to ghostnado without being a ghost.");
                 return;
@@ -521,11 +521,10 @@ namespace Content.Server.Ghost
                 _minds.TransferTo(mind.Owner, ghost, mind: mind.Comp);
             Log.Debug($"Spawned ghost \"{ToPrettyString(ghost)}\" for {mind.Comp.CharacterName}.");
 
+            RaiseLocalEvent(ghost, new SpawnGhostForPlayerEvent(mind), true); // mriya
+
             // we changed the entity name above
             // we have to call this after the mind has been transferred since some mind roles modify the ghost's name
-
-            RaiseLocalEvent(ghost, new SpawnGhostForPlayerEvent(mind), true);
-
             _nameMod.RefreshNameModifiers(ghost);
             return ghost;
         }

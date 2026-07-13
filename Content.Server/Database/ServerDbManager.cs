@@ -26,7 +26,7 @@ using MSLogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace Content.Server.Database
 {
-    public interface IServerDbManager
+    public partial interface IServerDbManager
     {
         void Init();
 
@@ -39,17 +39,6 @@ namespace Content.Server.Database
             NetUserId userId,
             HumanoidCharacterProfile defaultProfile,
             CancellationToken cancel);
-
-        Task<((SichSponsor sponsor, string? lastUserName)[] sponsors, SponsorRank[] ranks)> GetAllSichSponsorsAsync(CancellationToken cancel = default);
-        Task<SponsorRank?> GetSponsorRankAsync(int id, CancellationToken cancel = default);
-        Task RemoveSponsorRankAsync(int rankId, CancellationToken cancel = default);
-        Task AddSponsorRankAsync(SponsorRank rank, CancellationToken cancel = default);
-        Task UpdateSponsorRankAsync(SponsorRank rank, CancellationToken cancel = default);
-
-        Task<SichSponsor?> GetSponsorDataForAsync(NetUserId userId, CancellationToken cancel = default);
-        Task RemoveSponsorAsync(NetUserId userId, CancellationToken cancel = default);
-        Task AddSponsorAsync(SichSponsor sponsor, CancellationToken cancel = default);
-        Task UpdateSponsorAsync(SichSponsor sponsor, CancellationToken cancel = default);
 
         Task SaveSelectedCharacterIndexAsync(NetUserId userId, int index);
 
@@ -476,64 +465,6 @@ namespace Content.Server.Database
             _sqliteInMemoryConnection?.Dispose();
             _db.Shutdown();
         }
-
-        #region MRSponsors
-
-        public Task<((SichSponsor sponsor, string? lastUserName)[] sponsors, SponsorRank[] ranks)>
-            GetAllSichSponsorsAsync(CancellationToken cancel)
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetAllSichSponsorsAsync(cancel));
-        }
-
-        public Task<SponsorRank?> GetSponsorRankAsync(int id, CancellationToken cancel = default)
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetSponsorRankDataForAsync(id, cancel));
-        }
-
-        public Task RemoveSponsorRankAsync(int rankId, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.RemoveSponsorRankAsync(rankId, cancel));
-        }
-
-        public Task AddSponsorRankAsync(SponsorRank rank, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.AddSponsorRankAsync(rank, cancel));
-        }
-
-        public Task UpdateSponsorRankAsync(SponsorRank rank, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.UpdateSponsorRankAsync(rank, cancel));
-        }
-
-        public Task<SichSponsor?> GetSponsorDataForAsync(NetUserId userId, CancellationToken cancel = default)
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetSponsorDataForAsync(userId, cancel));
-        }
-
-        public Task RemoveSponsorAsync(NetUserId userId, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.RemoveSponsorAsync(userId, cancel));
-        }
-
-        public Task AddSponsorAsync(SichSponsor sponsor, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.AddSponsorAsync(sponsor, cancel));
-        }
-
-        public Task UpdateSponsorAsync(SichSponsor sponsor, CancellationToken cancel = default)
-        {
-            DbWriteOpsMetric.Inc();
-            return RunDbCommand(() => _db.UpdateSponsorAsync(sponsor, cancel));
-        }
-        #endregion
 
         public Task<Preference> InitPrefsAsync(
             NetUserId userId,

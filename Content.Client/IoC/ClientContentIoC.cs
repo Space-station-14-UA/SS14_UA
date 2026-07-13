@@ -1,4 +1,5 @@
 using Content.Client.Administration.Managers;
+using Content.Client.Audio.Midi;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
@@ -28,7 +29,7 @@ using Content.Shared.FeedbackSystem;
 using Content.Shared.IoC;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
-using Content.Client.Sich.Sponsors;
+using Content.Client.Mriya.Sponsors;
 
 namespace Content.Client.IoC
 {
@@ -67,7 +68,8 @@ namespace Content.Client.IoC
             collection.Register<ClientsidePlaytimeTrackingManager>();
             collection.Register<ClientFeedbackManager>();
             collection.Register<ISharedFeedbackManager, ClientFeedbackManager>();
-            collection.Register<IClientSponsorManager, ClientSponsorManager>();
+            collection.Register<IClientSponsorManager, ClientSponsorManager>(); // mriya
+            collection.Register<MidiFileCollectionManager>();
         }
     }
 }

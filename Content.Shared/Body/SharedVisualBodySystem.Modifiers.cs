@@ -11,7 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Network;
-using Content.Shared.Sich.HeightAbjust;
+using Content.Shared.Mriya.HeightAbjust;
 
 namespace Content.Shared.Body;
 

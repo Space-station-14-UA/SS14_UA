@@ -93,6 +93,10 @@
     speedModifierThresholds:
       60: 0.85  # 0.7 is base speed.
       80: 0.75  # 0.5 is base speed.
+  - type: ActionSpeedModifier # Mriya: пришвидшує карабкання на стійки, столи і т.д.
+    multipliers:
+      MRClimbing: 0.2
+  - type: FelinidMouseSense # Mriya: чуття на мишей
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
