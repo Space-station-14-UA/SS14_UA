@@ -82,7 +82,7 @@
   - type: LatheHeatProducing
     energyPerSecond: 6000
   - type: RequireProjectileTarget
-  - type: ApcPowerReceiver #кастиль аби працювала анімація як повинна
+  - type: ApcPowerReceiver #треба аби працювала анімація як повинна
     powerLoad: 0
     needsPower: false
   - type: ExtensionCableReceiver
@@ -92,9 +92,15 @@
   parent: MRBasePowerlesLathe
   name: середній спалювач
   description: Доволі великий спалювач який вже здатен спалювати більше ефективно вироблюючи більше тепла у атмосферу, за одницю палива. Викидує 30 000 Джоулів енерії у атмосферу.
+  placement:
+    mode: AlignTileAny
   components:
+  - type: SpriteFade
+    alwaysFade: true
   - type: Sprite
-    sprite: Structures/Machines/protolathe.rsi
+    sprite: _Mriya/Structures/Machines/medium_incenerator.rsi
+    drawdepth: Mobs
+    offset: 0.5,1.5
     snapCardinals: true
     layers:
     - state: icon
@@ -104,6 +110,26 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: inserting
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,0.9,0.9,-0.4"
+        density: 1750
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.7,0.1,1.4,-0.45"
+        density: 1750
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
   - type: MaterialStorage
     whitelist:
       tags:
@@ -111,13 +137,19 @@
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/electric-furnace.ogg
     idleState: icon
-    runningState: building
+    runningState: icon
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
     - MRInceneration
   - type: LatheHeatProducing
     energyPerSecond: 30000
+  - type: Anchorable
+    delay: 5
+  - type: ApcPowerReceiver #треба аби працювала анімація як повинна
+    powerLoad: 0
+    needsPower: false
+  - type: ExtensionCableReceiver
     
 - type: entity
   id: MRInceneratorBig
