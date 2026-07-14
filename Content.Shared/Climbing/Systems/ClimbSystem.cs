@@ -24,6 +24,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
+using Content.Shared._Mriya.ActionSpeed; // Mriya
 
 namespace Content.Shared.Climbing.Systems;
 
@@ -45,6 +46,7 @@ public sealed partial class ClimbSystem : VirtualController
     [Dependency] private EntityQuery<ClimbableComponent> _climbableQuery = default!;
     [Dependency] private EntityQuery<FixturesComponent> _fixturesQuery = default!;
     [Dependency] private EntityQuery<TransformComponent> _xformQuery = default!;
+    [Dependency] private readonly ActionSpeedModifierSystem _actionSpeed = default!; // Mriya: зміна швидкості взбирання
 
     private const string ClimbingFixtureName = "climb";
     private const int ClimbingCollisionGroup = (int) (CollisionGroup.TableLayer | CollisionGroup.LowImpassable);
@@ -221,7 +223,9 @@ public sealed partial class ClimbSystem : VirtualController
         if (ev.Cancelled)
             return false;
 
-        var args = new DoAfterArgs(EntityManager, user, comp.ClimbDelay, new ClimbDoAfterEvent(),
+        var climbDelay = comp.ClimbDelay * _actionSpeed.GetMultiplier(entityToMove, "MRClimbing"); // Mriya: зміна швидкості
+
+        var args = new DoAfterArgs(EntityManager, user, climbDelay, new ClimbDoAfterEvent(), //Mriya: comp.ClimbDelay >> climbDelay
             entityToMove,
             target: climbable,
             used: entityToMove)

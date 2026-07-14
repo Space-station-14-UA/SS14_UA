@@ -145,6 +145,7 @@
   - type: ZombieAccentOverride
     accent: zombieMoth
   - type: Speech
+    speechSounds: Moth # Mriya
     speechVerb: Moth
     allowedEmotes: ['Chitter', 'Squeak', 'Flap']
   - type: TypingIndicator

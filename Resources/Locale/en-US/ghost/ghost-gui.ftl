@@ -1,12 +1,12 @@
-ghost-gui-return-to-body-button = Повернутися у тіло
+ghost-gui-return-to-body-button = Повернутися в тіло
 ghost-gui-ghost-warp-button = Примарний портал
-ghost-gui-ghost-roles-button = Ролі привидів ({$count})
-ghost-gui-toggle-ghost-visibility-popup-on = Увімкнення видимості привидів.
-ghost-gui-toggle-ghost-visibility-popup-off = Вимкнення видимості привидів.
-ghost-gui-toggle-lighting-manager-popup-normal = Звичайне освітлення
-ghost-gui-toggle-lighting-manager-popup-personal-light = Увімкнуто персональне світло.
-ghost-gui-toggle-lighting-manager-popup-fullbright = Без освітлення
-ghost-gui-toggle-fov-popup = Переключено поле зору.
+ghost-gui-ghost-roles-button = Ролі примар ({$count})
+ghost-gui-toggle-ghost-visibility-popup-on = Видимість примар увімкнено.
+ghost-gui-toggle-ghost-visibility-popup-off = Видимість примар вимкнено.
+ghost-gui-toggle-lighting-manager-popup-normal = Звичайне освітлення.
+ghost-gui-toggle-lighting-manager-popup-half-bright = Напівнапівморок.
+ghost-gui-toggle-lighting-manager-popup-fullbright = Повне світло.
+ghost-gui-toggle-fov-popup = Перемикання поля зору (FOV).
 
 ghost-gui-toggle-hearing-popup-on = Тепер ви можете прослухати всі повідомлення.
 ghost-gui-toggle-hearing-popup-off = Тепер ви можете чути лише радіо та повідомлення поблизу.

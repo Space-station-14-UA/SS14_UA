@@ -23,15 +23,5 @@
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
-  <ItemGroup>
-    <EmbeddedResource Remove="sich\sponsors\SponsorsWindow.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AdditionalFiles Update="Sich\Sponsors\SponsorsWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </AdditionalFiles>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LateJoin\" />
-  </ItemGroup>
+  <Import Project="..\RobustToolbox\MSBuild\Robust.EntitySystemSubscriptionsGenerator.targets" />
 </Project>

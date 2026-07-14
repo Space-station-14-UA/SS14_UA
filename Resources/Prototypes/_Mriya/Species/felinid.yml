@@ -5,12 +5,12 @@
   prototype: MobFelinid
   dollPrototype: AppearanceFelinid
   skinColoration: HumanToned
-  minHeight: 0.650
-  defaultHeight: 0.8
+  minHeight: 0.875
+  defaultHeight: 0.95
   maxHeight: 1
-  minWidth: 0.650
-  defaultWidth: 0.8
-  maxWidth: 1.1
+  minWidth: 0.875
+  defaultWidth: 0.95
+  maxWidth: 1
   defaultSoundsBySex:
   - MaleFelinid
   - FemaleFelinid

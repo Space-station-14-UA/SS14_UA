@@ -1,4 +1,4 @@
-shared-solution-container-component-on-examine-main-text = Містить [color={$color}]{$desc}[/color] { $chemCount ->
+shared-solution-container-component-on-examine-main-text = Містить {INDEFINITE($desc)} [color={$color}]{$desc} {$desc}[/color] { $chemCount ->
     [1] речовину.
    *[other] хімічну суміш.
     }
