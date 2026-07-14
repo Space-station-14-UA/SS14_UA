@@ -359,14 +359,36 @@ cmd-options-help = Використання: options [tab]
 
 ## Accessibility menu
 
-ui-options-accessability-header-visuals = Вигляд
-ui-options-accessability-header-content = Контент
+ui-options-accessibility-header-reduced-motion = Reduced Motion
+ui-options-accessibility-header-visuals = Visuals
+ui-options-accessibility-header-content = Content
 
-ui-options-enable-color-name = Додати кольори до імен символів
-ui-options-colorblind-friendly = Дружній режим для дальтоників
-ui-options-reduced-motion = Зменшити рух візуальних ефектів
-ui-options-disable-ai-static = Вимкнути ефект статичних перешкод на екрані камери ШІ
-ui-options-screen-shake-intensity = Інтенсивність тремтіння екрана
+ui-options-enable-color-name = Add colors to character names
+ui-options-colorblind-friendly = Colorblind friendly mode
+
+ui-options-reduced-motion = Reduce general visual effects
+ui-options-reduced-motion-tooltip = Toggle on to show alternative sprites with reduced motion for some items.
+
+# accessibility option tooltips taken from CVar summary blocks.
+
+ui-options-disable-ai-static = AI camera static
+ui-options-disable-ai-static-tooltip = Replaces the AI static camera effect with a plain gradient.
+ui-options-disable-blurry-vision = Blurry vision
+ui-options-disable-blurry-vision-tooltip = Replaces the movement in the blurry shader with a static effect.
+ui-options-disable-drunk-overlay = Drunk overlay
+ui-options-disable-drunk-overlay-tooltip = Replaces the movement in the drunk shader with a static offset.
+ui-options-disable-flash-effect = Flash
+ui-options-disable-flash-effect-tooltip = Replaces the 'flash' effect with a reduced movement equivalent.
+ui-options-disable-heat-distortion = Heat distortion
+ui-options-disable-heat-distortion-tooltip = Decreases motion on the heat distortion shader.
+ui-options-disable-nv-noise = Night vision overlay
+ui-options-disable-nv-noise-tooltip = Disables the noise effect on the night vision overlay.
+ui-options-disable-rainbow-overlay = Rainbow overlay
+ui-options-disable-rainbow-overlay-tooltip = Replaces the movement in the rainbow overlay shader with a static offset.
+ui-options-disable-singulo-warp = Singularity
+ui-options-disable-singulo-warp-tooltip = Disables the screen warping effect on the singularity.
+
+ui-options-screen-shake-intensity = Screen shake intensity
 
 ui-options-chat-window-opacity = Непрозорість вікна чату
 ui-options-speech-bubble-text-opacity = Прозорість текстових бульбашок

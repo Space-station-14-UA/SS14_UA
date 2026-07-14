@@ -20,6 +20,7 @@
     - Reptilian
     - Vulpkanin
     - Avali
+    - Felinid # Mriya
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
@@ -78,6 +79,7 @@
     - Human
     - Reptilian
     - Vulpkanin
+    - Felinid # Mriya
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth

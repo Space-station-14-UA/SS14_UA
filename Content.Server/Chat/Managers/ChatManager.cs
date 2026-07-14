@@ -6,7 +6,7 @@ using Content.Server.Discord.DiscordLink;
 using Content.Server.Ghost;
 using Content.Server.Players.RateLimiting;
 using Content.Server.Preferences.Managers;
-using Content.Server.Sich.Sponsors;
+using Content.Server.Mriya.Sponsors;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
@@ -52,9 +52,9 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private ILogManager _logManager = default!;
     [Dependency] private ILocalizationManager _localizationManager = default!;
 
-    private ISawmill _sawmill = default!;
+    private ISawmill? _sawmill = default!;
 
-    [Dependency] private readonly ISponsorManager _sichSponsorManager = default!;
+    [Dependency] private ISponsorManager _mriyaSponsorManager = default!; // mriya
 
     /// <summary>
     /// The maximum length a player-sent message can be sent
@@ -123,8 +123,11 @@ internal sealed partial class ChatManager : IChatManager
     {
         var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", FormattedMessage.EscapeText(message)));
         ChatMessageToAll(ChatChannel.Server, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride);
-        _sawmill.Info(message);
 
+        // _sawmill might have not been initialized when DispatchServerAnnouncement is called
+        // during server setup when some cvars are changed
+        _sawmill?.Info(message);
+        
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Server announcement: {message}");
     }
 
@@ -293,9 +296,9 @@ internal sealed partial class ChatManager : IChatManager
         Color? colorOverride = null;
         var wrappedMessage = Loc.GetString("chat-manager-send-ooc-wrap-message", ("playerName",player.Name), ("message", FormattedMessage.EscapeText(message)));
 
-        if(_sichSponsorManager.TryGetCachedSponsor(player.UserId, out var sponsor))
+        if(_mriyaSponsorManager.TryGetCachedSponsor(player.UserId, out var sponsor)) // mriya
         {
-            var oocColor = _sichSponsorManager.GetOocColor(player.UserId);
+            var oocColor = _mriyaSponsorManager.GetOocColor(player.UserId);
             if (oocColor != null)
             {
                 colorOverride = Color.FromHex(oocColor);

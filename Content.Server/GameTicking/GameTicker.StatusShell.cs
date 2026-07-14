@@ -76,8 +76,8 @@ namespace Content.Server.GameTicking
                 jObject["map"] = _gameMapManager.GetSelectedMap()?.MapName;
                 jObject["round_id"] = _gameTicker.RoundId;
                 jObject["players"] = _cfg.GetCVar(CCVars.AdminsCountInReportedPlayerCount)
-                    ? GetFakePlayers()
-                    : GetFakePlayers() - _adminManager.ActiveAdmins.Count();
+                    ? _playerManager.PlayerCount
+                    : _playerManager.PlayerCount - _adminManager.ActiveAdmins.Count();
                 jObject["soft_max_players"] = _cfg.GetCVar(CCVars.SoftMaxPlayers);
                 jObject["panic_bunker"] = _cfg.GetCVar(CCVars.PanicBunkerEnabled);
                 jObject["run_level"] = (int)_runLevel;
@@ -107,15 +107,6 @@ namespace Content.Server.GameTicking
             }
         }
 
-        private int GetFakePlayers()
-        {
-            int result = 0;
-            var playerFakeMaxCount = _cfg.GetCVar(CCVars.MaxFakePlayerCount);
-            float coefFakePlayers = Math.Max(1, _cfg.GetCVar(CCVars.FakePlayerCoef));
-            var playerFakeLimiter = Math.Min((int)(_playerManager.PlayerCount * coefFakePlayers), playerFakeMaxCount);
-            result = Math.Max(playerFakeLimiter, _playerManager.PlayerCount);
-            return result;
-        }
         private static string GetClockEmojiTime(DateTime start)
         {
             TimeSpan diff = DateTime.UtcNow - start;

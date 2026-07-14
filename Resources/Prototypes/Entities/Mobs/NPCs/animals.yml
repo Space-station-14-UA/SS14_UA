@@ -412,7 +412,7 @@
     solution:
       reagents:
       - ReagentId: Slime
-        Quantity: 5
+        Quantity: 10
   - type: ToolRefinable
     refineResult:
     - id: FoodMeatSlime
@@ -569,6 +569,11 @@
       types:
         Asphyxiation: -0.5
   - type: CombatMode
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Slime
+        Quantity: 20
   - type: ToolRefinable
     refineResult:
     - id: FoodMeatSlime
@@ -2031,6 +2036,7 @@
     - ChefPilot
     - Mouse
     - Meat
+    - MRMouseDetectable # Mriya: маркер для здібності на чуття мишей
   - type: Respirator
     damage:
       types:
@@ -3829,7 +3835,7 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
-      
+
 - type: entity
   name: діона-німфа
   parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]

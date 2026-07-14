@@ -1,4 +1,4 @@
-using Content.Client.Sich.Sponsors;
+using Content.Client.Mriya.Sponsors;
 using Content.Shared.Clothing;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
