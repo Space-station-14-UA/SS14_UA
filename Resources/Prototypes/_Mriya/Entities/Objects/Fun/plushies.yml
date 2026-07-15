@@ -1,4 +1,6 @@
-- type: entity #Mriya: add dragon plushie start
+# Mriya
+# Dragon plushie
+- type: entity
   parent: BasePlushie
   id: MRplushieDragon
   name: плюшевий космічний дракон
@@ -43,4 +45,25 @@
   - type: Tag
     tags:
     - Payload
-    - ClothMade #Mriya: add dragon plushie end
+    - ClothMade
+
+# Shrimp plushie
+- type: entity
+  parent: BasePlushie
+  id: MRplushieShrimp
+  name: плюшева креветка
+  description: "Проста зварена плюшева креветка. Ні, креветки не цвіркають."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
+    state: icon
+  - type: Item
+    sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
+    slots:
+    - HEAD
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MRshrimpPlushie
