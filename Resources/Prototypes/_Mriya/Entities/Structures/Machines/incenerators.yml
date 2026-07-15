@@ -100,8 +100,7 @@
   - type: Sprite
     sprite: _Mriya/Structures/Machines/medium_incenerator.rsi
     drawdepth: Mobs
-    offset: 0.5,1.5
-    snapCardinals: true
+    offset: 0.5,1
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
