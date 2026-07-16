@@ -1,30 +1,30 @@
 ﻿<Document>
-  # The Wizard
+  # Чарівник
 
   <Box>
-    [color=#457573][italic]IT'S WIZARD TIME MOTHERF-...[italic][/color]
+    [color=#457573][italic]ЧАС ЧАРІВНИКІВ, УБЛЮД-...[italic][/color]
   </Box>
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineWizard" Caption=""/>
   </Box>
-  Wizards are a force of chaos and unpredictability. You never know what one is going to do next.
-  Generally sent by the [color=#40E0D0]Space Wizards Federation[/color] or some schmuck turned into one by rolling a nat 20 on a cursed die.
-  And since a Wizard is highly unpredictable, one may show up when you least expect it!
+  Чарівники - це сила хаосу та непередбачуваності. Ви ніколи не знаєте, що хтось збирається робити далі.
+  Зазвичай їх надсилає [color=#40E0D0]Федерація Космічних Чарівників[/color] або якийсь придурок, який перетворився на одного з них, викинувши чисту 20 на проклятому кубику.
+  А оскільки Чарівник дуже непередбачуваний, він може з'явитися, коли ви найменше цього очікуєте!
 
-  ## The Grimoire
+  ## ґримуар чаклуна
   <Box>
     <GuideEntityEmbed Entity="WizardsGrimoire" Caption="Wizards Grimoire"/>
   </Box>
 
-  [bold]By wizard law of eld your Grimoire is bound to you.[/bold] This means you cannot share your Grimoire with anyone else. The spells and equipment inside are for you and you alone.
-  The Wizard's Grimoire is used to get all sorts of magical spells, equipment, and creatures. What's available to you is [italic]extremely powerful[/italic] so you only have 10 [color=#FF0000]W[/color][color=#FFA500]i[/color][color=#FFFF00]z[/color][color=#00FF00]€[/color][color=#0000FF]o[/color][color=#4B0082]i[/color][color=#8F00FF]n[/color]™ to spend on them.
-  Your only limit, other than the price, is your creativity. Try to find some combinations!
+  [bold]За законом чарівників ваш Гримуар прив'язаний до вас.[/bold] Це означає, що ви не можете ділитися своїм Гримуаром ні з ким іншим. Заклинання та спорядження всередині призначені для вас і тільки для вас.
+  Гримуар Чарівника використовується для отримання всіляких магічних заклинань, спорядження та істот. Те, що вам доступне, є [italic]надзвичайно потужним[/italic], тому у вас є лише 10 [color=#FF0000]W[/color][color=#FFA500]i[/color][color=#FFFF00]z[/color][color=#00FF00]€[/color][color=#0000FF]o[/color][color=#4B0082]i[/color][color=#8F00FF]n[/color]™ щоб витратити на них.
+  Ваше єдине обмеження, окрім ціни, - це ваша креативність. Спробуйте знайти кілька комбінацій!
 
   <Box>
     <GuideEntityEmbed Entity="PonderingOrbWizard" Caption="The Pondering Orb"/>
   </Box>
 
-  If you ever find yourself wanting to ponder, look no further! The [bold]Pondering Orb[/bold] allows the Wizard to tap into the Station's camera network to spy on others unsuspectingly.
-  Could be useful if you're trying to plan something out or stay one step ahead of [color=red]Security[/color].
+  Якщо ви коли-небудь захочете поміркувати, то ви знайшли саме те, що вам потрібно! [bold]Сфера Роздумів[/bold] дозволяє Чарівнику підключатися до мережі камер Станції, щоб нічого не підозрюючи шпигувати за іншими.
+  Може бути корисним, якщо ви намагаєтеся щось спланувати або бути на крок попереду [color=red]Служби Безпеки[/color].
 
 </Document>
