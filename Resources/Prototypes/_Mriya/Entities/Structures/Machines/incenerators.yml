@@ -67,6 +67,22 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: inserting
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 5
+            max: 10
   - type: MaterialStorage
     whitelist:
       tags:
@@ -91,7 +107,7 @@
   id: MRInceneratorMedium
   parent: MRBasePowerlesLathe
   name: середній спалювач
-  description: Доволі великий спалювач який вже здатен спалювати більше ефективно вироблюючи більше тепла у атмосферу, за одницю палива. Викидує 30 000 Джоулів енерії у атмосферу.
+  description: Доволі великий спалювач який вже здатен спалювати більше ефективно вироблюючи більше тепла у атмосферу, за одницю палива. Викидує 40 000 Джоулів енерії у атмосферу.
   placement:
     mode: AlignTileAny
   components:
@@ -129,6 +145,22 @@
         - LargeMobMask
         layer:
         - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 10
+            max: 20
   - type: MaterialStorage
     whitelist:
       tags:
@@ -142,7 +174,7 @@
     staticPacks:
     - MRInceneration
   - type: LatheHeatProducing
-    energyPerSecond: 30000
+    energyPerSecond: 40000
   - type: Anchorable
     delay: 5
   - type: ApcPowerReceiver #треба аби працювала анімація як повинна
@@ -156,9 +188,13 @@
   name: великий спалювач
   description: Здоровезний спалювач, який здатен виробляти тонни тепла у атмосферу навколо себе. Використовується у індустріальних цілях із-за дуже високої ефективності спалення речовин. Викидує 300 000 Джоулів енерії у атмосферу.
   components:
+  - type: SpriteFade
+    alwaysFade: true
   - type: Sprite
-    sprite: Structures/Machines/protolathe.rsi
+    sprite: _Mriya/Structures/Machines/big_incenerator.rsi
     snapCardinals: true
+    drawdepth: Mobs
+    offset: 0,3.25
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -167,6 +203,17 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: inserting
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 1.25
+        density: 1750
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
   - type: MaterialStorage
     whitelist:
       tags:
@@ -174,10 +221,16 @@
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/heating-tower-loop.ogg
     idleState: icon
-    runningState: building
+    runningState: icon
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
     - MRInceneration
   - type: LatheHeatProducing
     energyPerSecond: 300000
+  - type: Anchorable
+    delay: 60
+  - type: ApcPowerReceiver #треба аби працювала анімація як повинна
+    powerLoad: 0
+    needsPower: false
+  - type: ExtensionCableReceiver
