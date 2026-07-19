@@ -13,7 +13,13 @@ ghost-gui-toggle-hearing-popup-off = Тепер ви можете чути ли�
 
 ghost-target-window-title = Примарний портал
 ghost-target-window-current-button = Переміститися: {$name}
-ghost-target-window-warp-to-most-followed = Переміщення до найбільш Відстежуваного
+ghost-target-window-warp-to-title = [bold]Швидке переміщення[/bold]
+ghost-target-window-warp-to-most-followed = Найпопулярніші
+ghost-target-window-warp-to-random-followed = Випадковий з обраних
+ghost-target-window-warp-to-random = Випадковий гравець
+ghost-target-window-warp-to-most-followed-tooltip = Переміститися до гравця, за яким стежать найбільше
+ghost-target-window-warp-to-random-followed-tooltip = Переміститися до випадкового гравця з тих, за якими стежать
+ghost-target-window-warp-to-random-tooltip = Переміститися до випадкового гравця
 
 ghost-roles-window-title = Ролі привидів
 ghost-roles-window-available-button = Доступно ({$rolesCount})

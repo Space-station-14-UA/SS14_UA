@@ -1,0 +1,38 @@
+﻿- type: soundCollection
+  id: Dionacry
+  files:
+  - /Audio/_Mriya/Voice/Diona/dionacry.ogg
+
+- type: soundCollection
+  id: Dionawhistle
+  files:
+  - /Audio/_Mriya/Voice/Diona/dionawhistle1.ogg
+  - /Audio/_Mriya/Voice/Diona/dionawhistle2.ogg
+
+- type: soundCollection
+  id: Dionacough
+  files:
+  - /Audio/_Mriya/Voice/Diona/dionacough.ogg
+
+- type: soundCollection
+  id: Dionayawn
+  files:
+  - /Audio/_Mriya/Voice/Diona/dionayawn.ogg
+
+- type: soundCollection
+  id: Dionasigh
+  files:
+  - /Audio/_Mriya/Voice/Diona/dionasigh.ogg
+
+- type: soundCollection
+  id: MothGasp
+  files:
+  - /Audio/_Mriya/Voice/Moth/moth_gasp_1.ogg
+  - /Audio/_Mriya/Voice/Moth/moth_gasp_2.ogg
+
+- type: soundCollection
+  id: MothSneeze
+  files:
+  - /Audio/_Mriya/Voice/Moth/moth_sneeze_1.ogg
+  - /Audio/_Mriya/Voice/Moth/moth_sneeze_2.ogg
+
