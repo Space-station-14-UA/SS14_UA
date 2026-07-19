@@ -122,7 +122,7 @@
     alwaysFade: true
   - type: Sprite
     sprite: _Mriya/Structures/Machines/medium_incenerator.rsi
-    drawdepth: Mobs
+    drawdepth: Overdoors
     offset: 0.5,1
     layers:
     - state: icon
@@ -206,7 +206,7 @@
   - type: Sprite
     sprite: _Mriya/Structures/Machines/big_incenerator.rsi
     snapCardinals: true
-    drawdepth: Mobs
+    drawdepth: Overdoors
     offset: 0,3.25
     layers:
     - state: icon
