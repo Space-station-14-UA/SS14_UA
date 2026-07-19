@@ -182,6 +182,12 @@
     - type: PowerSupplier
       supplyRampRate: 5000
       supplyRampTolerance: 1500
+    - type: Construction
+      graph: MRStirlingGeneratorCoal
+      node: stirlingcoal
+      containers:
+      - machine_board
+      - machine_parts
 
 - type: entity
   name: генератор Стирлінга на деревені
@@ -196,3 +202,9 @@
     - type: MaterialStorage
       storageLimit: 3000
       materialWhiteList: [Wood]
+    - type: Construction
+      graph: MRStirlingGeneratorWood
+      node: stirlingwood
+      containers:
+      - machine_board
+      - machine_parts

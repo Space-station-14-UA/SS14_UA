@@ -11,6 +11,9 @@
             "name": "stirling"
         },
         {
+            "name": "stirling_frame"
+        },
+        {
             "name": "stirlingon",
             "delays": [
                 [

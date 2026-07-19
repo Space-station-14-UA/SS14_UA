@@ -73,16 +73,14 @@
         !type:DamageTrigger
         damage: 200
       behaviors:
+      - !type:EmptyAllContainersBehaviour
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: smallinceneratorframe
       - !type:DoActsBehavior
         acts: ["Destruction"]
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 5
-            max: 10
   - type: MaterialStorage
     whitelist:
       tags:
@@ -97,11 +95,20 @@
     - MRInceneration
   - type: LatheHeatProducing
     energyPerSecond: 6000
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
   - type: RequireProjectileTarget
   - type: ApcPowerReceiver #треба аби працювала анімація як повинна
     powerLoad: 0
     needsPower: false
   - type: ExtensionCableReceiver
+  - type: Construction
+    graph: MRSmallIncenerator
+    node: smallincenerator
+    containers:
+    - machine_board
+    - machine_parts
     
 - type: entity
   id: MRInceneratorMedium
@@ -181,6 +188,12 @@
     powerLoad: 0
     needsPower: false
   - type: ExtensionCableReceiver
+  - type: Construction
+    graph: MRMediumIncenerator
+    node: mediumincenerator
+    containers:
+    - machine_board
+    - machine_parts
     
 - type: entity
   id: MRInceneratorBig
@@ -214,6 +227,22 @@
         - LargeMobMask
         layer:
         - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 30
+            max: 50
   - type: MaterialStorage
     whitelist:
       tags:
