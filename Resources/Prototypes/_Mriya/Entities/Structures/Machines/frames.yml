@@ -63,6 +63,7 @@
     noRot: true
     
 - type: entity
+  parent: MRStirlingGeneratorFrameCoal
   id: MRStirlingGeneratorFrameWood
   name: рама двигуна стірлінга на дереві
   description: двигун стірлінга практично побудований.
