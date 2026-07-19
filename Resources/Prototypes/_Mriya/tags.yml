@@ -1,5 +1,3 @@
-- type: Tag
-  id: Incenerateble #для вайтлісту речей які можна покласти у спалювачі.
 
 - type: Tag
   id: MRMouseDetectable

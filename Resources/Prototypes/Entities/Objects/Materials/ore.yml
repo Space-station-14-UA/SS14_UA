@@ -282,9 +282,6 @@
       Coal: 100
   - type: Item
     heldPrefix: coal
-  - type: Tag #початок змін для Мрії
-    tags:
-    - Incenerateble #кінець змін для Мрії
 
 - type: entity
   parent: Coal

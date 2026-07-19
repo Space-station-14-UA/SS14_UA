@@ -83,7 +83,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Incenerateble
+        - Sheet
+        - RawMaterial
+        - Ore
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/furnace.ogg
     idleState: icon
@@ -170,7 +172,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Incenerateble
+        - Sheet
+        - RawMaterial
+        - Ore
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/electric-furnace.ogg
     idleState: icon
@@ -245,7 +249,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Incenerateble
+        - Sheet
+        - RawMaterial
+        - Ore
   - type: Lathe
     producingSound: /Audio/_Mriya/Ambience/Machinery/heating-tower-loop.ogg
     idleState: icon

@@ -218,7 +218,6 @@
     heldPrefix: wood
   - type: Tag
     tags:
-    - Incenerateble #додано для Мрії
     - Wooden
     - RawMaterial
     - ConstructionMaterial

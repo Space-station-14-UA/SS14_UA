@@ -77,9 +77,6 @@
       reagents:
       - ReagentId: Plasma
         Quantity: 10
-  - type: Tag #початок змін для Мрії
-    tags:
-    - Incenerateble #кінець змін для Мрії
 
 - type: entity
   parent: SheetPlasma
