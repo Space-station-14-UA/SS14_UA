@@ -6,3 +6,12 @@
   sprites:
   - sprite: _Mriya/Objects/Fun/Plushies/dragon.rsi
     state: icon
+
+# Shrimp plushie
+- type: foodSequenceElement
+  id: MRshrimpPlushie
+  scale: 0.6, 0.6
+  name: food-sequence-cotton-burger-content-plushie-shrimp
+  sprites:
+  - sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
+    state: icon

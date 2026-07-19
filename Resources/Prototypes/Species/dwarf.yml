@@ -8,7 +8,7 @@
   minHeight: 0.8
   defaultHeight: 1
   maxHeight: 1.05
-  AverageHeight: 150
+  averageHeight: 150
   minWidth: 0.8
   defaultWidth: 1
   maxWidth: 1.05

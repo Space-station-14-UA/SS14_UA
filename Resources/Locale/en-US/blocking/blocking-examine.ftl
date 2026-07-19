@@ -1,9 +1,9 @@
 # Blocking examines
 blocking-examinable-verb-text = Захист
-blocking-examinable-verb-message = Характеристики захисту.
-blocking-fraction = Воно блокує [color=lightblue]{$value}%[/color] вхідної шкоди та:
-blocking-coefficient-value = - Блокує [color=lightblue]{$value}%[/color] [color=yellow]{$type}[/color] шкоди.
-blocking-reduction-value = - Блокує [color=lightblue]{$value}[/color] менше [color=yellow]{$type}[/color] шкоди.
+blocking-examinable-verb-message = Оглянути показники захисту.
+blocking-fraction = Блокує до [color=lightblue]{$value}%[/color] вхідної шкоди, а також:
+blocking-coefficient-value = - Блокує до [color=lightblue]{$value}%[/color] [color=yellow]{$type}[/color] шкоди.
+blocking-reduction-value = - Блокує до [color=lightblue]{$value}[/color] [color=yellow]{$type}[/color] шкоди.
 
 # Shown when examining the shield. Each entry represents the shield's health condition
 comp-shield-damaged-1 = Він виглядає повністю цілим.

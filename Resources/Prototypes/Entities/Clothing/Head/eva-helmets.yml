@@ -15,12 +15,12 @@
     - WhitelistChameleon
     - CorgiWearable
 
-#Large EVA Helmet
+#Emergency pressure suit helmet
 - type: entity
   parent: ClothingHeadEVAHelmetBase
   id: ClothingHeadHelmetEVALarge
-  name: шолом ЄВА
-  description: Старий, але надійний шолом, призначений для позакорабельної діяльності.
+  name: аварійний шолом
+  description: Важко повірити, що ця дешева на вигляд штука герметична, але це так.
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/eva_large.rsi

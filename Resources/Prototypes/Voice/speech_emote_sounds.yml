@@ -247,6 +247,10 @@
       collection: BikeHorn
     Crying:
       path: /Audio/Voice/Vox/vox_cry.ogg
+    Yawn:
+      path: /Audio/_Mriya/Voice/Vox/vox_yawn.ogg
+    Whistle:
+      path: /Audio/_Mriya/Voice/Vox/vox_cawf.ogg
     Weh:
       collection: Weh
     Hew:
@@ -281,6 +285,16 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: DeathGasp
+    Crying: #Mriya
+      collection: Dionacry
+    Whistle: #Mriya
+      collection: Dionawhistle
+    Cough: #Mriya
+      collection: Dionacough
+    Yawn: #Mriya
+      collection: Dionayawn
+    Sigh: #Mriya
+      collection: Dionasigh
   params:
     variation: 0.125
 
@@ -298,6 +312,18 @@
       path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
     Click:
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
+    Cough:
+      path: /Audio/_Mriya/Voice/Arachnid/arachnid_cough.ogg
+    Crying:
+      path: /Audio/_Mriya/Voice/Arachnid/arachnid_cry.ogg
+    Yawn:
+      path: /Audio/_Mriya/Voice/Arachnid/arachnid_yawn.ogg
+    Sigh:
+      path: /Audio/_Mriya/Voice/Arachnid/arachnid_sigh.ogg
+    Sneeze:
+      collection: MaleSneezes
+    Whistle:
+      collection: Whistles
     Weh:
       collection: Weh
     Hew:
@@ -305,7 +331,7 @@
     Honk:
       collection: BikeHorn
     Gasp:
-      collection: MaleGasp
+      path: /Audio/_Mriya/Voice/Arachnid/arachnid_gasp.ogg
     DefaultDeathgasp:
       collection: DeathGasp
 
@@ -413,6 +439,18 @@
       path: /Audio/Voice/Moth/moth_chitter.ogg
     Squeak:
       path: /Audio/Voice/Moth/moth_squeak.ogg
+    Cough:
+      path: /Audio/_Mriya/Voice/Moth/moth_cough.ogg
+    Crying:
+      path: /Audio/_Mriya/Voice/Moth/moth_cry.ogg
+    Sigh:
+      path: /Audio/_Mriya/Voice/Moth/moth_sigh.ogg
+    Sneeze:
+      collection: MothSneeze
+    Yawn:
+      path: /Audio/_Sich/Voice/Avali/avali_yawn.ogg # TODO: замінити звук на звук для молей.
+    Whistle:
+      path: /Audio/_Mriya/Voice/Moth/moth_whistle.ogg # Mriya end
     Weh:
       collection: Weh
     Hew:
@@ -420,7 +458,7 @@
     Honk:
       collection: BikeHorn
     Gasp:
-      collection: MaleGasp
+      collection: MothGasp # Mriya edit
     DefaultDeathgasp:
       collection: MothDeathGasp
 
