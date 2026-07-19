@@ -73,7 +73,6 @@
         !type:DamageTrigger
         damage: 200
       behaviors:
-      - !type:EmptyAllContainersBehaviour
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
