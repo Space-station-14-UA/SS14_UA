@@ -1,0 +1,14 @@
+﻿# Plushies
+- type: loadout
+  id: MRplushieDragon
+  storage:
+    back:
+    - MRplushieDragon
+  groupBy: "plushie"
+
+- type: loadout
+  id: MRplushieShrimp
+  storage:
+    back:
+    - MRplushieShrimp
+  groupBy: "plushie"

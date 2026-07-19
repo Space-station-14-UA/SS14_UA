@@ -34,7 +34,7 @@
       collection: Whistles
     Weh:
       collection: Weh
-        
+
 - type: emoteSounds
   id: MaleTajara
   voiceSelectorName: humanoid-profile-editor-voice-masculine
@@ -67,7 +67,7 @@
       collection: Whistles
     Weh:
       collection: Weh
-        
+
 - type: emoteSounds
   id: FemaleTajara
   voiceSelectorName: humanoid-profile-editor-voice-feminine
@@ -102,8 +102,8 @@
       collection: Whistles
     Weh:
       collection: Weh
-        
-        
+
+
 - type: emoteSounds
   id: UnisexIPC
   voiceSelectorName: humanoid-profile-editor-voice-neutral
@@ -191,6 +191,10 @@
   sounds:
     Scream:
       collection: AvaliScreams
+    Sigh:
+      path: /Audio/_Sich/Voice/Avali/avali_hiss.ogg
+    Sneeze:
+      path: /Audio/_Mriya/Voice/Moth/moth_sneeze_1.ogg # TODO: замінити звук на більш відповідний для авалі.
     Laugh:
       collection: AvaliLaugh
     Cough:
@@ -199,10 +203,12 @@
       collection: AvaliCry
     Whistle:
       collection: AvaliWhistle
+    Yawn:
+      path: /Audio/_Sich/Voice/Avali/avali_yawn.ogg
     Gasp:
-      collection: MaleGasp
+      path: /Audio/_Sich/Voice/Avali/avali_gasp.ogg
     DefaultDeathgasp:
-      collection: MaleDeathGasp
+      path: /Audio/_Sich/Voice/Avali/avali_deathgasp.ogg
 
 - type: emoteSounds
   id: FemaleAvali

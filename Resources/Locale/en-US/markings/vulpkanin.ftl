@@ -220,33 +220,83 @@ marking-VulpPointsSharpFootRight-points_sharp-foot-r = Повністю
 
 # Hair
 
-marking-VulpHairAdhara = Адгара
+marking-VulpHairAdhara = Адхара
+marking-VulpHairAdhara-adhara = Адхара
+
 marking-VulpHairAnita = Аніта
-marking-VulpHairApollo = Аполло
-marking-VulpHairBelle = Бель
-marking-VulpHairBraided = Заплетене
-marking-VulpHairBun = Гулька
-marking-VulpHairCleanCut = Охайне
+marking-VulpHairAnita-anita = Аніта
+
+marking-VulpHairApollo = Аполлон
+marking-VulpHairApollo-apollo = Аполлон
+
+marking-VulpHairBelle = Белль
+marking-VulpHairBelle-belle = Белль
+
+marking-VulpHairBraided = Заплетене волосся
+marking-VulpHairBraided-braided = Заплетене волосся
+
+marking-VulpHairBun = Пучок
+marking-VulpHairBun-bun = Пучок
+
+marking-VulpHairCleanCut = Акуратна стрижка
+marking-VulpHairCleanCut-clean_cut = Акуратна стрижка
+
 marking-VulpHairCurl = Кучері
+marking-VulpHairCurl-curl = Кучері
+
 marking-VulpHairHawk = Ірокез
-marking-VulpHairJagged = Скуйовджене
+marking-VulpHairHawk-hawk = Ірокез
+
+marking-VulpHairJagged = Рване волосся
+marking-VulpHairJagged-jagged = Рване волосся
+
 marking-VulpHairJeremy = Джеремі
+marking-VulpHairJeremy-jeremy = Джеремі
+
 marking-VulpHairKajam = Каджам
-marking-VulpHairKeid = Кеїд
+marking-VulpHairKajam-kajam = Каджам
+
+marking-VulpHairKeid = Кейд
+marking-VulpHairKeid-keid = Кейд
+
 marking-VulpHairKleeia = Клея
-marking-VulpHairMizar = Мізар
-marking-VulpHairPunkBraided = Панківське заплетене
-marking-VulpHairRaine = Раїн
-marking-VulpHairRough = Неохайне
-marking-VulpHairShort = Коротке
-marking-VulpHairShort2 = Коротке 2
-marking-VulpHairSpike = Шипасте
+marking-VulpHairKleeia-kleeia = Клея
+
+marking-VulpHairMizar = Міцар
+marking-VulpHairMizar-mizar = Міцар
+
+marking-VulpHairPunkBraided = Панк-коси
+marking-VulpHairPunkBraided-punkbraided = Панк-коси
+
+marking-VulpHairRaine = Рейн
+marking-VulpHairRaine-raine = Рейн
+
+marking-VulpHairRough = Недбале волосся
+marking-VulpHairRough-rough = Недбале волосся
+
+marking-VulpHairShort = Коротке волосся
+marking-VulpHairShort-short = Коротке волосся
+
+marking-VulpHairShort2 = Коротке волосся 2
+marking-VulpHairShort2-short2 = Коротке волосся 2
+
+marking-VulpHairSpike = Колючки
+marking-VulpHairSpike-spike = Колючки
 
 
 # Facial Hair
 
-marking-VulpFacialHairRuff = Рафф
+marking-VulpFacialHairRuff = Комір
+marking-VulpFacialHairRuff-ruff = Комір
+
 marking-VulpFacialHairElder = Старійшина
+marking-VulpFacialHairElder-elder = Старійшина
+
 marking-VulpFacialHairElderChin = Підборіддя старійшини
+marking-VulpFacialHairElderChin-elder_chin = Підборіддя старійшини
+
 marking-VulpFacialHairKita = Кіта
-marking-VulpFacialHairGoatee = Борода
+marking-VulpFacialHairKita-kita = Кіта
+
+marking-VulpFacialHairGoatee = Борода (Еспаньйолка на морді)
+marking-VulpFacialHairGoatee-goatee = Борода (Еспаньйолка на морді)

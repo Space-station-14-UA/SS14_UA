@@ -5,6 +5,8 @@
   name: вітрина з охоронним роботом
   description: Нефункціональна копія старого робота-охоронця.
   components:
+  - type: Sprite
+    noRot: true
   - type: Anchorable
   - type: Damageable
     damageModifierSet: Metallic

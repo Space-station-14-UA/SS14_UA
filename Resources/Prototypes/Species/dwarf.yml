@@ -5,12 +5,13 @@
   prototype: MobDwarf
   dollPrototype: AppearanceDwarf
   skinColoration: HumanToned
-  minHeight: 0.65
-  defaultHeight: 0.7
-  maxHeight: 0.75
-  minWidth: 0.65
+  minHeight: 0.8
+  defaultHeight: 1
+  maxHeight: 1.05
+  averageHeight: 150
+  minWidth: 0.8
   defaultWidth: 1
-  maxWidth: 1.15
+  maxWidth: 1.05
   defaultSoundsBySex:
   - UnisexDwarf
   - FemaleDwarf

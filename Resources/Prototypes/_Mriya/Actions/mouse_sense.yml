@@ -1,0 +1,11 @@
+- type: entity
+  parent: BaseAction
+  id: ActionMRMouseSense
+  name: Чуття на мишей
+  description: Вроджене чуття фелінідів дозволяє відчути присутність мишей на короткий проміжок часу в невеликому радіусі. Працює навіть через стіни.
+  components:
+  - type: Action
+    useDelay: 60
+    icon: Interface/Actions/eyeopen.png
+  - type: InstantAction
+    event: !type:MouseSenseActionEvent

@@ -46,6 +46,9 @@
   - OffsetCaneNT
   - Cane
   - TowelColorWhite
+  #Mriya:
+  - MRplushieDragon
+  - MRplushieShrimp
 
 - type: loadoutGroup
   id: Glasses
