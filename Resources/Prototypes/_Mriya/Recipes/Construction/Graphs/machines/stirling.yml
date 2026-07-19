@@ -38,7 +38,7 @@
               prototype: SheetSteel1
               amount: 10
             - !type:SpawnPrototype
-              prototype: MetalRod1
+              prototype: PartRodMetal1
               amount: 2
             - !type:DeleteEntity
           steps:
@@ -101,7 +101,7 @@
               prototype: SheetSteel1
               amount: 10
             - !type:SpawnPrototype
-              prototype: MetalRod1
+              prototype: PartRodMetal1
               amount: 2
             - !type:DeleteEntity
           steps:
