@@ -2,7 +2,7 @@
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband, BaseToggleClothing ]
   id: ClothingOuterHardsuitMirage #Mriya
   name: скафандр Міраж
-  description: Броньований скафандр, призначений для облаштування планетарних засідок, та прихованого переміщення оперативників. Значно слабший за більшість бойових скафандрів в умовах прямого бойового зіткнення. Має відокремлений шолом. 
+  description: Броньований скафандр, призначений для облаштування планетарних засідок, та прихованого переміщення оперативників. Значно слабший за більшість бойових скафандрів в умовах прямого бойового зіткнення.
   components:
   - type: Sprite
     sprite: _Mriya/Clothing/OuterClothing/Hardsuits/mirage.rsi
