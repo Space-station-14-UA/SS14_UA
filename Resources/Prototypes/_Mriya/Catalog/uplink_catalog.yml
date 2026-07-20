@@ -6,8 +6,8 @@
   productEntity: ClothingBackpackDuffelMirage
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 14
+    Telecrystal: 10
   cost:
-    Telecrystal: 16
+    Telecrystal: 12
   categories:
   - UplinkWearables
