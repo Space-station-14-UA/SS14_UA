@@ -1,14 +1,14 @@
 ## SpaceVillainGame
 
-space-villain-game-player-attack-message = Ти завдаєш {$attackAmount} шкоди {$enemyName}!
-space-villain-game-player-heal-message = Ти використовуєш {$magicPointAmount} магії щоб вилікувати {$healAmount} шкоди!
-space-villain-game-player-recharge-message = Ти відновлюєш {$regainedPoints} очків.
-space-villain-game-player-wins-message = Ти переміг!
-space-villain-game-enemy-dies-message = {$enemyName} вмирає.
-space-villain-game-player-loses-message = Ти програв!
-space-villain-game-enemy-cheers-message = {$enemyName} радіє.
-space-villain-game-enemy-dies-with-player-message = {$enemyName} вмирає, але забирає тебе з собою.
-space-villain-game-enemy-throws-bomb-message = {$enemyName} кидає бомбу, вибух завдає тобі {$damageReceived} шкоди!
-space-villain-game-enemy-steals-player-power-message = {$enemyName} краде {$stolenAmount} твоєї сили!
-space-villain-game-enemy-heals-message = {$enemyName} лікує {$healedAmount} шкоди!
-space-villain-game-enemy-attacks-message = {$enemyName} завдає тобі {$damageDealt} шкоди!
+space-villain-game-player-attack-message = Ви атакуєте {$enemyName}, завдаючи {$attackAmount} шкоди!
+space-villain-game-player-heal-message = Ви використовуєте {$magicPointAmount} {-spacevillain-magic}, щоб відновити {$healAmount} {-spacevillain-health}!
+space-villain-game-player-recharge-message = Ви відновлюєте {$regainedPoints} {-spacevillain-magic}!
+space-villain-game-player-wins-message = Ви перемогли!
+space-villain-game-enemy-dies-message = {CAPITALIZE($enemyName)} гине.
+space-villain-game-player-loses-message = Ви програли!
+space-villain-game-enemy-cheers-message = {CAPITALIZE($enemyName)} радіє.
+space-villain-game-enemy-dies-with-player-message = {CAPITALIZE($enemyName)} гине, але забирає вас із собою.
+space-villain-game-enemy-throws-bomb-message = {CAPITALIZE($enemyName)} кидає бомбу, яка вибухає й завдає вам {$damageReceived} шкоди!
+space-villain-game-enemy-steals-player-power-message = {CAPITALIZE($enemyName)} викрадає {$stolenAmount} вашої {-spacevillain-magic}!
+space-villain-game-enemy-heals-message = {CAPITALIZE($enemyName)} відновлює {$healedAmount} {-spacevillain-health}!
+space-villain-game-enemy-attacks-message = {CAPITALIZE($enemyName)} атакує вас, завдаючи {$damageDealt} шкоди!

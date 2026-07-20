@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingOuterEVASuitBase
   id: ClothingOuterHardsuitEVA
-  name: скафандр ЄВА
-  description: М'який скафандр із базовою здатністю захищати власника від вакууму космосу у випадку надзвичайних ситуацій.
+  name: скафандр EVA
+  description: Легкий космічний скафандр із базовою здатністю захищати власника від космічного вакууму.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/eva.rsi
@@ -38,8 +38,8 @@
 - type: entity
   parent: ClothingOuterEVASuitBaseToggleable
   id: ClothingOuterSuitEmergency
-  name: аварійний скафандр ЄВА
-  description: Аварійний скафандр ЄВА з вбудованим шоломом. Жахливо повільний, та не має захисту від екстремальних температур, але цього достатньо щоб виграти трохи часу від космічного вакууму.
+  name: аварійний скафандр
+  description: Цей громіздкий скафандр без термоізоляції явно не призначений для тривалого перебування у відкритому космосі, попри заяви NanoTrasen, що він відповідає корпоративним стандартам.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/eva_emergency.rsi
@@ -65,8 +65,8 @@
 - type: entity
   parent: ClothingOuterEVASuitBase
   id:  ClothingOuterHardsuitEVAPrisoner
-  name: скафандр ЄВА в'язня
-  description: Аварійний скафандр для в'язнів. Він жахливо повільний і має слабкий температурний захист, але цього достатньо, щоб виграти вам час у суворому вакуумі космосу.
+  name: скафандр в'язня
+  description: Аварійний скафандр, призначений для ув'язнених. Він не зовсім розрахований на тривале перебування у відкритому космосі, але деякі наглядачі вважають відсутність термоізоляції перевагою.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Suits/eva_prisoner.rsi

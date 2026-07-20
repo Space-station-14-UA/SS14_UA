@@ -10,29 +10,32 @@
 
   Крадій - це дрібні, але хитрі [color=green]злочинці[/color], які просто не можуть тримати руки при собі. Після останнього арешту вам примусово встановили [bold]імплант пацифізму[/bold], але ви не дозволите цьому зупинити ваше прагнення поповнити власну колекцію.
 
-  ## Мистецтво крадіжки
-  На відміну від інших антагоністів, [bold]для вас уникати неприємностей - це практично обов'язкова умова[/bold] через ваш імплант.
-  Ви можете накивати пятами якщо [color=#cb0000]Служба безпеки[/color] полізе у бійку, а оскільки ви працюєте наодинці, у вас немає друзів, які витягнуть вас із халепи.
 
-  Та попри всі труднощі, завдяки рішучості, спритності рук, кільком інструментам та вашим [color=cyan]навичкам кишенькової крадіжки[/color] ви зможете успішно поцупити все, що забажаєте.
+  ## Art of the Steal
+  Unlike other antagonists, it's important to [bold]stay out of trouble[/bold] because of your pacifism implant.
+  While you can still use [color=yellow]stun weapons[/color] in a pinch, you should run if [color=#cb0000]Security[/color] picks a fight with you.
+  You work alone, and you don't have any friends to pull you out of danger.
 
-  Навички кишенькового злодія дають вам величезну перевагу: [bold]можливість забирати речі у людей так, що вони цього навіть не помітять[/bold]. Трохи попрактикувавшись, ви зможете витягнути у когось гаманець, невимушено підтримуючи бесіду.
+  But against all odds, you'll successfully swipe what you want using determination, sleight of hand, a few tools, and your [color=cyan]pickpocketing skills[/color].
 
-  Також наполегливо рекомендуємо знайти пару рукавичок, адже за відбитками пальців на вкрадених речах вас усе ще можуть викрити, якщо ці речі знайдуть.
+  The pickpocketing skills you have give you a major advantage: [bold]the ability to take things from people without them even noticing[/bold]. With a little practice, you can steal their wallet and keep up a conversation at the same time.
 
-  ## Робочі інструменти
-  У ваших загребущих руках є ще два козирі: ваш [color=cyan]маяк[/color] та ваш [color=cyan]ранець[/color].
+  It is advised to get a pair of gloves, as your fingerprints could still be traced back to the stolen goods if they're found.
 
-  Ваш [color=cyan]маяк[/color] забезпечує безпечну доставку здобичі, яку важко або незручно тягнути з собою на евакуаційний шатл. Просто знайдіть затишне місце на станції, розгорніть маяк і налаштуйте його координати на свій сховок.
-  Будь-які цінні речі поруч із ним будуть [bold]телепортовані до вашого сховища наприкінці зміни[/bold], що зарахує вам виконання цілей.
 
-  Однак, якщо маяк знайдуть, це миттєво викриє вас і дозволить екіпажу легко повернути свої «втрачені» речі. [bold]Тому сховайте його якнайкраще![/bold]
+  ## Tools of the Trade
+  You've got two more aces up your stolen sleeves: your [color=cyan]thieving beacon[/color] and your [color=cyan]thieving satchel[/color].
+
+  Your [color=cyan]thieving beacon[/color] provides safe passage home for trinkets that may not be easy to carry with you on the evac shuttle. Simply find a secluded part of the station to unfold the thieving beacon, then set its coordinates to your hideout.
+  Any shinies near it will be [bold]teleported to your vault when the shift ends[/bold], fulfilling your objectives.
+
+  However, this will instantly out you if found and make it extremely easy for people to reclaim their "missing" possessions. [bold]Make sure to hide it well![/bold]
 
   <Box>
     <GuideEntityEmbed Entity="ThiefBeacon"/>
   </Box>
 
-  Ваш [color=cyan]ранець[/color] містить... ну, все, що ви не забули туди покласти. [bold]Ви можете обрати два готові набори[/bold], які допоможуть вам провернути масштабніші пограбування.
+  Ваш [color=cyan]thieving ранець[/color] містить... ну, все, що ви не забули туди покласти. [bold]Ви можете обрати два готові набори[/bold], які допоможуть вам провернути масштабніші пограбування.
 
   <Box>
     <GuideEntityEmbed Entity="SatchelThief"/>
@@ -48,15 +51,25 @@
     <GuideEntityEmbed Entity="Fulton" Caption="Контрабандист"/>
     <GuideEntityEmbed Entity="Telecrystal" Caption="Синдикат"/>
   </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ClothingBackpackSatchelSmugglerUnanchored"/>
+  </Box>
+
+  After approving your selection, the kits will fold out into a [color=cyan]smuggler's satchel[/color].
+  Larger kits will fall onto the floor around you.
+  [bold]Don't let anyone see your kits or smuggler's satchel[/bold], as they will recognize it as contraband!
+  The smuggler's satchel can be wrenched to the hull plating underneath floor tiles if you need to hide items from prying eyes.
+
 
   ## Окраса колекції
   Ваша клептоманія заведе вас далеко. Сьогодні вам захочеться вкрасти кілька фігурок, а завтра - цілий промисловий апарат.
 
   Неважливо, що саме. Рано чи пізно все це стане частиною вашої колекції.
 
-  Ви можете викрасти речі, просто [bold]тримаючи їх при собі[/bold], коли дістанетеся до ЦентКомму (CentComm). Якщо це неможливо, великі об'єкти можна вкрасти, [bold]залишивши їх біля свого маяка[/bold].
+  You can steal items by [bold]having them on your person[/bold] when you get to CentComm. Failing this, you can steal larger items by [bold]leaving them by your thieving beacon.[/bold]
 
-  Деякі більш [italic]рухливі[/italic] цілі можуть не захотіти співпрацювати. Переконайтеся, що вони живі й перебувають поруч із вами або вашим маяком наприкінці зміни.
+  Some of the more [italic]animate[/italic] objectives may not cooperate with you. Make sure they're alive and with you or your thieving beacon when the shift ends.
+  A [color=cyan]pet carrier[/color] is optional, but might make the critters easier to handle.
 
   Серед речей, якими ви захочете поживитися, можуть бути (але не обмежуючись цим):
 
