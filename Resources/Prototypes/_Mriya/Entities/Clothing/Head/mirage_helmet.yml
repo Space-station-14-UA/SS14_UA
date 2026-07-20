@@ -1,0 +1,19 @@
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetMirage #Mriya
+  name: шолом скафандру
+  description: Броньований шолом скафандру, призначений для проведення спецоперацій. Він не є герметичним. Власність Мародерів Горлаксу.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hardsuits/mirage.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hardsuits/mirage.rsi
+  - type: PointLight
+    color: green
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
