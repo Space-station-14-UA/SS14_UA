@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: MRClothingUniformJumpsuitCargoNP
+  name: комбінезон НП
+  description: Міцний комбінезон, виданий співробітникам служби доставки з минулого.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/novapost.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: MRClothingUniformJumpsuitCargoNPWhite
+  name: комбінезон НП з білим верхом
+  description: Міцний комбінезон, виданий співробітникам служби доставки з минулого.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/novapost_white.rsi
