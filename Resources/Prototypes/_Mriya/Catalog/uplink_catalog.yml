@@ -1,9 +1,9 @@
 - type: listing
-  id: UplinkHardsuitMirage #Mriya
+  id: MRUplinkHardsuitMirage #Mriya
   name: uplink-hardsuit-mirage-name
   description: uplink-hardsuit-mirage-desc
   icon: { sprite: /Textures/_Mriya/Clothing/OuterClothing/Hardsuits/mirage.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelMirage
+  productEntity: MRClothingBackpackDuffelMirage
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 10

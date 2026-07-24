@@ -1,12 +1,12 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelMirage #Mriya
+  id: MRClothingBackpackDuffelMirage #Mriya
   name: набір з скафандром "Міраж"
   description: "Містить легкий скафандр та все, що необхідно для тривалого перебування у засідці."
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitMirage
+      - id: MRClothingOuterHardsuitMirage
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled

@@ -1,6 +1,6 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: ClothingHeadHelmetMirage #Mriya
+  id: MRClothingHeadHelmetMirage #Mriya
   name: шолом скафандру
   description: Броньований шолом скафандру, призначений для проведення спецоперацій. Власність Мародерів Горлаксу.
   components:

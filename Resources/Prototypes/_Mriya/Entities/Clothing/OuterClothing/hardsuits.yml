@@ -1,6 +1,6 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband, BaseToggleClothing ]
-  id: ClothingOuterHardsuitMirage #Mriya
+  id: MRClothingOuterHardsuitMirage #Mriya
   name: скафандр Міраж
   description: Броньований скафандр, призначений для облаштування планетарних засідок, та прихованого переміщення оперативників. Значно слабший за більшість бойових скафандрів в умовах прямого бойового зіткнення.
   components:
