@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: MRClothingOuterCoatNP
+  name: куртка нп
+  description: Стильна куртка, видана співробітникам служби доставки з минулого.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Coats/novapost.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Coats/novapost.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, MRClothingOuterCoatNP]
+  id: MRClothingOuterCoatNPOpened
