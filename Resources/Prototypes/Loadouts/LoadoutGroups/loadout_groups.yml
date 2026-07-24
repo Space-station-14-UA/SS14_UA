@@ -798,6 +798,8 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
+  # Mriya down
+  - MRCargoTechnicianHeadNP
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -805,6 +807,9 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  # Mriya down
+  - MRCargoTechnicianJumpsuitNP
+  - MRCargoTechnicianJumpsuitNPWhite
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -820,6 +825,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
+  - CargoTechnicianCoatNP
 
 - type: loadoutGroup
   id: CargoTechnicianShoes

@@ -17,3 +17,5 @@
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, MRClothingOuterCoatNP]
   id: MRClothingOuterCoatNPOpened
+  name: куртка нп
+  description: Стильна куртка, видана співробітникам служби доставки з минулого.
