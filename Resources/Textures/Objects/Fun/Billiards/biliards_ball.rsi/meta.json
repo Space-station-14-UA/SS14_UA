@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "ball"
+    },
+    {
+      "name": "ball_triangle"
     }
   ]
 }

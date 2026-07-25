@@ -13,94 +13,132 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      # --- ФІЗИЧНІ БОРТИ ---
+      # ==========================================
+      # ФІЗИЧНІ БОРТИ (6 окремих шматків)
+      # ==========================================
+      
+      # Верхній борт (вкорочений по краях)
       border_north:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5, 0.65, 0.5, 0.73"
+          bounds: "-0.34, 0.62, 0.34, 0.73" # Не доходить до країв на 0.1
         density: 100
-        # restitution: 0.9
-        mask:
-        - MachineMask
-        - InteractImpassable
-        layer:
-        - MidImpassable
-        - LowImpassable
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
         friction: 0.0001
+        
+      # Нижній борт (вкорочений по краях)
       border_south:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5, -0.73, 0.5, -0.65"
+          bounds: "-0.34, -0.66, 0.34, -0.75"
         density: 100
-        mask:
-        - MachineMask
-        - InteractImpassable
-        layer:
-        - MidImpassable
-        - LowImpassable
-        # restitution: 0.9
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
         friction: 0.0001
-      border_west:
+        
+      # Лівий борт (Верхня половина)
+      border_west_top:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5, -0.65, -0.42, 0.65"
+          bounds: "-0.50, 0.06, -0.4, 0.56" # Від центру до кута
         density: 100
-        mask:
-        - MachineMask
-        - InteractImpassable
-        layer:
-        - MidImpassable
-        - LowImpassable
-        # restitution: 0.9
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
         friction: 0.0001
-      border_east:
+        
+      # Лівий борт (Нижня половина)
+      border_west_bottom:
         shape:
           !type:PhysShapeAabb
-          bounds: "0.42, -0.65, 0.5, 0.65"
+          bounds: "-0.50, -0.09, -0.4, -0.59"
         density: 100
-        mask:
-        - MachineMask
-        - InteractImpassable
-        layer:
-        - MidImpassable
-        - LowImpassable
-        # restitution: 0.9
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
+        friction: 0.0001
+        
+      # Правий борт (Верхня половина)
+      border_east_top:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.40, 0.06, 0.50, 0.56"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
+        friction: 0.0001
+        
+      # Правий борт (Нижня половина)
+      border_east_bottom:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.4, -0.09, 0.50, -0.59"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ MidImpassable, LowImpassable ]
         friction: 0.0001
 
-      # --- ТРИГЕРИ ЛУЗ ---
+      # ==========================================
+      # ТРИГЕРИ ЛУЗ (Тепер сидять глибоко в дірках)
+      # ==========================================
+      
       pocket_nw:
         shape:
-          !type:PhysShapeAabb
-          bounds: "-0.45, 0.60, -0.35, 0.68"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: -0.43,0.65
         hard: false
+        mask: [ DoorPassable ]
+        
       pocket_ne:
         shape:
-          !type:PhysShapeAabb
-          bounds: "0.35, 0.60, 0.45, 0.68"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: 0.43,0.65
         hard: false
+        mask: [ DoorPassable ]
+        
       pocket_sw:
         shape:
-          !type:PhysShapeAabb
-          bounds: "-0.45, -0.68, -0.35, -0.60"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: -0.43,-0.68
         hard: false
+        mask: [ DoorPassable ]
+        
       pocket_se:
         shape:
-          !type:PhysShapeAabb
-          bounds: "0.35, -0.68, 0.45, -0.60"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: 0.43,-0.68
         hard: false
+        mask: [ DoorPassable ]
+        
       pocket_w:
         shape:
-          !type:PhysShapeAabb
-          bounds: "-0.47, -0.05, -0.38, 0.05"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: -0.46,-0.01
         hard: false
+        mask: [ DoorPassable ]
+        
       pocket_e:
         shape:
-          !type:PhysShapeAabb
-          bounds: "0.38, -0.05, 0.47, 0.05"
+          !type:PhysShapeCircle
+          radius: 0.05
+          position: 0.46,-0.01
         hard: false
-
+        mask: [ DoorPassable ]
   - type: Damageable
     damageContainer: Structure
+  - type: Storage
+    grid:
+    - 0,0,4,3
+    maxItemSize: Small # Дозволяє класти лише маленькі предмети (кульки)
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: BilliardsTable
 
 - type: entity
   id: BilliardsBall
@@ -111,30 +149,31 @@
   - type: Sprite
     sprite: /Textures/Objects/Fun/Billiards/biliards_ball.rsi
     state: ball
-    scale: 0.1,0.1
+    scale: 0.08,0.08
   - type: Item
-    size: Small
+    size: Tiny
   - type: TileFrictionModifier
     modifier: 0.2
   - type: Physics
-    bodyType: Dynamic # Куля рухається і реагує на фізику
-    linearDamping: 1.0 # Тертя об сукно (щоб куля плавно зупинялася)
-    angularDamping: 1.5 # Згасання обертання
+    bodyType: Dynamicц
+    linearDamping: 1.0
+    angularDamping: 1.5
     sleepingAllowed: false
   - type: Damageable
+  - type: BilliardsBall
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.05 # 2 пікселі у радіусі (діаметр 4px)
-        density: 5 # Достатньо важка для стабільного руху
-        restitution: 0.4 # Висока пружність (гарний відскок)
-        friction: 0.0001 # Низьке тертя при зіткненнях
+          radius: 0.03
+        density: 5
+        restitution: 0.4
+        friction: 0.0001
         mask:
-        - InteractImpassable
+        - DoorPassable
         layer:
-        - InteractImpassable
+        - DoorPassable
 
 - type: entity
   name: більярдний кий
@@ -143,5 +182,77 @@
   description: кий
   components:
   - type: MeleeThrowOnHit
-    speed: 3
-    distance: 3
+    speed: 5
+    distance: 5
+
+- type: entity
+  id: SpawnBilliardsTriangle
+  parent: BaseItem
+  name: спавнер піраміди більярдних куль
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/biliards_ball.rsi
+    state: ball_triangle
+    scale: 1,1
+    drawdepth: Effects
+  - type: Construction
+    graph: BilliardsTriangleGraph
+    node: triangle
+  - type: BilliardsSpawner
+    ballPrototype: BilliardsBall
+    ballSpacing: 0.082
+    rows: 5
+
+- type: constructionGraph
+  id: BilliardsTriangleGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: triangle
+      steps:
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+  - node: triangle
+    entity: SpawnBilliardsTriangle
+
+- type: construction
+  id: SpawnBilliardsTriangle
+  name: піраміда більярдних куль
+  description: Зберіть 15 більярдних куль у спеціальний трикутник для початку гри.
+  graph: BilliardsTriangleGraph
+  startNode: start
+  targetNode: triangle
+  category: Fun # Категорія в меню "G"
+  placementMode: PlaceFree # Дозволяє вільно розмістити привид будь-де на столі без жорсткої прив'язки до сітки станції
+  icon:
+    sprite: Objects/Fun/Billiards/biliards_ball.rsi
+    state: ball_triangle
