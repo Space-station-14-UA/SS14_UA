@@ -182,10 +182,9 @@
 # feel free to hook them into random content.
 
 - type: entity
-  name: Скуррет Емоційної Підтримки
-  id: MobBaseEmotionalSupportScurret
-  parent: MobBaseScurret
   abstract: true
+  id: MobBaseEmotionalSupportScurret
+  name: Скуррет Емоційної Підтримки
   components:
     - type: Loadout
       prototypes: [ EmotionalSupportScurretGear ]

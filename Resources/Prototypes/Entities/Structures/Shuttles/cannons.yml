@@ -41,7 +41,7 @@
 
 - type: entity
   id: ShuttleGunSvalinnMachineGun
-  parent: [ ShuttleGunBase, ConstructibleMachine]
+  parent: [ ShuttleGunBase, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: СЛУ-400с «Кулемет Свалінн»
   description: Базова стаціонарна лазерна установка. Ефективний проти живих цілей та електроніки. Використовує для стрільби звичайні елементи живлення і має надзвичайно високу скорострільність.
   categories: [ DoNotMap ]
@@ -58,16 +58,6 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       cell_slot: !type:ContainerSlot
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Gun
     fireRate: 5
     useKey: false
@@ -99,7 +89,7 @@
 
 - type: entity
   id: ShuttleGunPerforator
-  parent: [ ShuttleGunBase, ConstructibleMachine]
+  parent: [ ShuttleGunBase, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: СЛУ-1200с "Перфоратор"
   description: Вдосконалений стаціонарний лазерна установка. Знищує електроніку та надзвичайно небезпечна для здоров'я! Використовує енергетичну обіймицю для стрільби.
   categories: [ DoNotMap ]
@@ -116,16 +106,6 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       cell_slot: !type:ContainerSlot
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Gun
     fireRate: 1
     soundGunshot:
@@ -159,7 +139,7 @@
 
 - type: entity
   id: ShuttleGunFriendship
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [ShuttleGunBase, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: ВИБ-320г «Дружба»
   description: Невеликий стаціонарний гранатомет, що вміщує 2 гранати.
   categories: [ DoNotMap ]
@@ -175,16 +155,6 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       ballistic-ammo: !type:Container
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 200
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Gun
     projectileSpeed: 80
     fireRate: 1
@@ -213,7 +183,7 @@
 
 - type: entity
   id: ShuttleGunDuster
-  parent: [ShuttleGunBase, ConstructibleMachine]
+  parent: [ShuttleGunBase, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: ВИБ-2100г «Пиловик»
   description: Потужний стаціонарний гранатомет. Для використання потрібен картрідж.
   categories: [ DoNotMap ]
@@ -229,16 +199,6 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       gun_magazine: !type:ContainerSlot
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 350
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Gun
     projectileSpeed: 40
     fireRate: 0.3
@@ -312,7 +272,7 @@
 
 - type: entity
   id: ShuttleGunKinetic
-  parent: [ ShuttleGunBase, ConstructibleMachine]
+  parent: [ ShuttleGunBase, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: ПТК-800 «Дематеріалізатор матерії»
   description: Шахтарська стаціонарна турель. Поступово накопичує заряди самостійно, надзвичайно ефективна для розкопок астероїдів.
   categories: [ DoNotMap ]
@@ -326,16 +286,6 @@
     containers:
       machine_board: !type:Container
       machine_parts: !type:Container
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Gun
     projectileSpeed: 20
     fireRate: 2

@@ -1,6 +1,6 @@
 - type: entity
   name: бегонкер
-  parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat, BaseSlicingRefinable ]
+  parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobBehonker
   abstract: true
   description: Літаюча демонічна частинка Гонкоматері.
@@ -115,6 +115,7 @@
         reagents:
         - ReagentId: Laughter
           Quantity: 300
+          
 - type: entity
   name: бегонкер
   parent: BaseMobBehonker

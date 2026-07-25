@@ -50,28 +50,36 @@
     state: sign_right
 
 - type: entity
-  id: WoodenSupport
+  abstract: true
   parent: BaseStructure
-  name: "дерев'яна підпора"
-  description: Підвищує впевненість у тому, що камінь не впаде на голову.
+  id: BaseWoodenSupport
   placement:
     mode: SnapgridCenter
   components:
   - type: PlacementReplacement
     key: walls
-  - type: Tag
-    tags:
-    - Wooden
   - type: Sprite
     noRot: true
     sprite: Objects/Decoration/mines.rsi
-    state: support
   - type: Damageable
     damageModifierSet: Wood
   - type: Injurable
     damageContainer: StructuralInorganic
   - type: Physics
     bodyType: Static
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+
+- type: entity
+  parent: BaseWoodenSupport
+  id: WoodenSupport
+  name: "дерев'яна підпора"
+  description: Підвищує впевненість у тому, що камінь не впаде на голову.
+  components:
   - type: Fixtures
     fixtures:
       fix1:
@@ -83,12 +91,6 @@
         layer:
         - WallLayer
         density: 1000
-  - type: MeleeSound
-    soundGroups:
-      Brute:
-        path: /Audio/Effects/chop.ogg
-        params:
-          variation: 0.05
   - type: Destructible
     thresholds:
     - trigger:
@@ -104,12 +106,11 @@
             max: 3
 
 - type: entity
+  parent: BaseWoodenSupport
   id: WoodenSupportBeam
   name: "дерев'яні опорні балки"
-  parent: WoodenSupport
   components:
   - type: Sprite
-    sprite: Objects/Decoration/mines.rsi
     state: support_beams
   - type: Fixtures
     fixtures:
@@ -125,29 +126,16 @@
         density: 1000
 
 - type: entity
+  parent: BaseWoodenSupport
   id: WoodenSupportWall
-  parent: BaseStructure
   name: "стіна дерев'яних опор"
   description: Стара, гнила стіна.
-  placement:
-    mode: SnapgridCenter
   components:
-  - type: PlacementReplacement
-    key: walls
   - type: Tag
     tags:
     - Wall
-    - Wooden
   - type: Sprite
-    noRot: true
-    sprite: Objects/Decoration/mines.rsi
     state: support_wall
-  - type: Damageable
-    damageModifierSet: Wood
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Physics
-    bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
@@ -174,11 +162,13 @@
             max: 5
 
 - type: entity
+  parent: BaseWoodenSupport
   id: WoodenSupportWallBroken
-  parent: WoodenSupportWall
   components:
+  - type: Tag
+    tags:
+    - Wall
   - type: Sprite
-    sprite: Objects/Decoration/mines.rsi
     state: support_wall_broken
   - type: Destructible
     thresholds:

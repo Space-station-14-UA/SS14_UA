@@ -6,6 +6,7 @@
   - MobBloodstream
   - BaseMobAnimal
   - BaseSlicingRefinable
+  - BaseMobDestructible
   id: MobHellspawn
   description: Нестримна сила кривавої бійні.
   components:

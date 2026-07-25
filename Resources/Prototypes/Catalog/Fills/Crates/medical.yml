@@ -22,30 +22,15 @@
   parent: CrateMedical
   id: CrateChemistrySupplies
   name: ящик з хімічним обладнанням
-  description: Ящик з базовим хім. обладнанням. Містить у собі колби, пляшечки шприци, баночки для пігулок та піпетки.
+  description: Ящик, що містить різноманітний лабораторний посуд, крапельниці, шприци та контейнери для таблеток. Хімікати продаються окремо.
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
-        - id: BoxSyringe
         - id: BoxBeaker
-        - id: BoxPillCanister
-        - id: Dropper
-          amount: 2
         - id: BoxBottle
           amount: 2
-
-- type: entity
-  parent: CrateMedical
-  id: CrateChemistryVials
-  name: ящик з флаконами
-  description: Ящик, який містить у собі флакони.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: BoxVial
 
 - type: entity
   parent: CrateMedical

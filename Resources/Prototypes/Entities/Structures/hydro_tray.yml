@@ -1,6 +1,6 @@
 - type: entity
   name: гідропонний лоток
-  parent: [ hydroponicsSoil, SmallConstructibleMachine]
+  parent: [ BaseHydroponicsSoil, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
   id: hydroponicsTray
   description: "Космічна ферма міжзоряного рівня, що дозволяє швидко вирощувати та селекціонувати сільськогосподарські культури. Тільки... не забувайте про космічні бур'яни."
   components:
@@ -78,13 +78,9 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
   - type: WiresPanel

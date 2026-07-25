@@ -1,30 +1,27 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
-using Content.Shared.Speech;
+using Content.Shared.Speech.EntitySystems;
 
 namespace Content.Server.Speech.EntitySystems;
 
-public sealed class MothAccentSystem : EntitySystem
+public sealed class MothAccentSystem : RelayAccentSystem<MothAccentComponent>
 {
     private static readonly Regex RegexLowerBuzz = new Regex("[zзж]{1,3}");
     private static readonly Regex RegexUpperBuzz = new Regex("[ZЗЖ]{1,3}");
 
-    public override void Initialize()
+    public override string Accentuate(string message, Entity<MothAccentComponent>? ent = null)
     {
-        base.Initialize();
-        SubscribeLocalEvent<MothAccentComponent, AccentGetEvent>(OnAccent);
-    }
-
-    private void OnAccent(EntityUid uid, MothAccentComponent component, AccentGetEvent args)
-    {
-        var message = args.Message;
-
         // Triple lower-case "z", "з", "ж"
         message = RegexLowerBuzz.Replace(message, match => new string(match.Value[0], 3));
 
         // Triple upper-case "Z", "З", "Ж"
         message = RegexUpperBuzz.Replace(message, match => new string(match.Value[0], 3));
 
-        args.Message = message;
+        //// buzzz
+        //message = RegexLowerBuzz.Replace(message, "zzz");
+        //// buZZZ
+        //message = RegexUpperBuzz.Replace(message, "ZZZ");
+
+        return message;
     }
 }

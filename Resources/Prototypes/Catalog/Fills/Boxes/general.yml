@@ -54,20 +54,22 @@
     - BoxCardboard
 
 - type: entity
-  name: коробка з мишоловками
-  parent: BoxCardboard
-  id: BoxMousetrap
-  description: Коробка повна мишоловок для.. мишей. Витягайте обережно, безпека ваших пальців не гарантується.
+  parent: BoxBaseHug
+  id: BoxHug
+  name: коробка обіймів
+  description: Спеціальна коробка для чутливих людей.
   components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: Mousetrap
-        amount: 4
+  - type: PhysicalComposition # Half of the "regular" cardboard box
+    materialComposition:
+      Cardboard: 50
   - type: Sprite
     layers:
-      - state: box
-      - state: mousetraps
+    - state: box_hug
+    - state: heart
+  - type: Tag
+    tags:
+    - BoxCardboard
+    - BoxHug
 
 - type: entity
   name: коробка з лампочками
@@ -251,7 +253,7 @@
     containers:
       storagebase:
         id: Brutepack
-        amount: 3
+        amount: 2
 
 - type: entity
   name: коробка з надувними стінами
@@ -322,7 +324,7 @@
     whitelist:
       tags:
         - TrashBag
-        - TrashBagBlue
+        - TrashBagHolding
   - type: Sprite
     layers:
       - state: box

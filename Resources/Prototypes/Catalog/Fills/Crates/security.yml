@@ -1,26 +1,17 @@
 - type: entity
   parent: CrateSecgear
   id: CrateSecurityArmor
-  name: ящик з бронею
-  description: Містить у собі 3 куленепробивних бронежилета. Потребує доступ Безпеки для відкриття.
+  name: armor crate
+  description: Contains three standard-issue helmets and three bulletproof vests. Requires Security access to open.
   components:
   - type: EntityTableContainerFill
     containers:
-      entity_storage:
-        id: ClothingOuterArmorBulletproof
-        amount: 3
-
-- type: entity
-  parent: CrateSecgear
-  id: CrateSecurityHelmet
-  name: ящик з шоломами
-  description: Містить у собі три стандартні каски для голови. Можливо, вони врятують вам життя. Потребує доступ Безпеки для відкриття.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: ClothingHeadHelmetBasic
-        amount: 3
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingHeadHelmetBasic
+          amount: 3
+        - id: ClothingOuterArmorBulletproof
+          amount: 3
 
 - type: entity
   parent: CrateSecgear

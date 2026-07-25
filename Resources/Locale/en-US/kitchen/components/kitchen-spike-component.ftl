@@ -28,6 +28,8 @@ comp-kitchen-spike-begin-butcher = { CAPITALIZE(THE($user)) } починає р�
 comp-kitchen-spike-butcher-self = Ви розділили { THE($victim) }!
 comp-kitchen-spike-butcher = { CAPITALIZE(THE($user)) } розділив { THE($victim) }!
 
+comp-kitchen-spike-butcher-empty = У { CAPITALIZE($victim) } не залишилося м'яса для розробки!
+
 comp-kitchen-spike-need-tool-quality = Щоб обробити {$target}, потрібен інструмент із функцією: { $quality }.
 
 comp-kitchen-spike-unhook-verb = Звільнити

@@ -1,8 +1,8 @@
 - type: entity
   name: лазераптор
   id: MobLaserRaptor
-  parent: [SimpleMobBase, BaseSlicingRefinable]
-  description:  Ця штуковина точно з ери вікінгів.
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
+  description: Ця штуковина точно з ери вікінгів.
   components:
     - type: NpcFactionMember
       factions:

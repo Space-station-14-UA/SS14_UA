@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: MRClothingHeadHatRedsoftNP
+  name: кепка НП
+  description: Кепка пофарбована у червоний колір, працівника служби доставки з минулого.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Soft/novapost.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Soft/novapost.rsi
