@@ -1,0 +1,147 @@
+- type: entity
+  id: TableBilliards
+  parent: BaseStructure
+  name: більярдний стіл
+  description: Стандартний більярдний стіл із зеленим сукном. Ідеальне місце для відпочинку після зміни.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/billiards_table.rsi
+    state: table
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      # --- ФІЗИЧНІ БОРТИ ---
+      border_north:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5, 0.65, 0.5, 0.73"
+        density: 100
+        # restitution: 0.9
+        mask:
+        - MachineMask
+        - InteractImpassable
+        layer:
+        - MidImpassable
+        - LowImpassable
+        friction: 0.0001
+      border_south:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5, -0.73, 0.5, -0.65"
+        density: 100
+        mask:
+        - MachineMask
+        - InteractImpassable
+        layer:
+        - MidImpassable
+        - LowImpassable
+        # restitution: 0.9
+        friction: 0.0001
+      border_west:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5, -0.65, -0.42, 0.65"
+        density: 100
+        mask:
+        - MachineMask
+        - InteractImpassable
+        layer:
+        - MidImpassable
+        - LowImpassable
+        # restitution: 0.9
+        friction: 0.0001
+      border_east:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.42, -0.65, 0.5, 0.65"
+        density: 100
+        mask:
+        - MachineMask
+        - InteractImpassable
+        layer:
+        - MidImpassable
+        - LowImpassable
+        # restitution: 0.9
+        friction: 0.0001
+
+      # --- ТРИГЕРИ ЛУЗ ---
+      pocket_nw:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45, 0.60, -0.35, 0.68"
+        hard: false
+      pocket_ne:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.35, 0.60, 0.45, 0.68"
+        hard: false
+      pocket_sw:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45, -0.68, -0.35, -0.60"
+        hard: false
+      pocket_se:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.35, -0.68, 0.45, -0.60"
+        hard: false
+      pocket_w:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.47, -0.05, -0.38, 0.05"
+        hard: false
+      pocket_e:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.38, -0.05, 0.47, 0.05"
+        hard: false
+
+  - type: Damageable
+    damageContainer: Structure
+
+- type: entity
+  id: BilliardsBall
+  parent: BaseItem
+  name: більярдна куля
+  description: Важка і гладка куля для гри в більярд.
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/Billiards/biliards_ball.rsi
+    state: ball
+    scale: 0.1,0.1
+  - type: Item
+    size: Small
+  - type: TileFrictionModifier
+    modifier: 0.2
+  - type: Physics
+    bodyType: Dynamic # Куля рухається і реагує на фізику
+    linearDamping: 1.0 # Тертя об сукно (щоб куля плавно зупинялася)
+    angularDamping: 1.5 # Згасання обертання
+    sleepingAllowed: false
+  - type: Damageable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.05 # 2 пікселі у радіусі (діаметр 4px)
+        density: 5 # Достатньо важка для стабільного руху
+        restitution: 0.4 # Висока пружність (гарний відскок)
+        friction: 0.0001 # Низьке тертя при зіткненнях
+        mask:
+        - InteractImpassable
+        layer:
+        - InteractImpassable
+
+- type: entity
+  name: більярдний кий
+  parent: BaseBallBat
+  id: BilliardKuy
+  description: кий
+  components:
+  - type: MeleeThrowOnHit
+    speed: 3
+    distance: 3
