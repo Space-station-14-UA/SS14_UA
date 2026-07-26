@@ -27,7 +27,7 @@
 
 - type: entity
   id: MobGoliath
-  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable ]
+  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable, BaseMobDestructible ]
   name: голіаф
   description: Масивний звір, який використовує довгі мацаки (щупальця), щоб схопити свою здобич. Не варто погрожувати йому за жодних обставин, а краще навіть поряд не стійте.
   components:
@@ -189,7 +189,7 @@
 
 - type: entity
   id: MobHivelord
-  parent: [ BaseMobAsteroid, FlyingMobBase, BaseSlicingRefinable ]
+  parent: [ BaseMobAsteroid, FlyingMobBase, BaseSlicingRefinable, BaseMobDestructible ]
   name: володар рою
   description: Справді інопланетна істота, вона являє собою масу невідомого органічного матеріалу, що постійно коливається. Під час атаки від неї відколюються шматки, які атакують в тандемі з оригіналом.
   components:
@@ -354,7 +354,7 @@
 
 - type: entity
   id: MobBasilisk
-  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable ]
+  parent: [ BaseMobAsteroid, MobBloodstream, BaseSlicingRefinable, BaseMobDestructible ]
   name: василіск
   description: Чи то звір, чи то якась істота. Вкритий товстим панциром, який поглинає енергію. Його погляд змушує жертв замерзати зсередини.
   components:

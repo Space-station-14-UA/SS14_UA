@@ -4,9 +4,17 @@ agent-id-new = { $number ->
    *[other] Отримано {$number} нових допусків з {$card}.
 }
 
-agent-id-card-current-name = Ім'я:
-agent-id-card-current-job = Робота:
-agent-id-card-job-icon-label = Іконка роботи:
-agent-id-menu-title = ID картка агента
-
 agent-id-open-ui-verb = Змінити налаштування
+
+agent-id-ui-menu-title = ID-картка агента
+agent-id-ui-tab-settings = Налаштування
+agent-id-ui-tab-job-icons = Іконки професій
+
+agent-id-ui-input-name = Ім'я:
+agent-id-ui-input-job = Посада:
+
+agent-id-ui-os = Nuke#OS ™
+agent-id-ui-os-flavor = Якщо сумніваєшся — ніхто не ставить запитань міму
+# Get your mind out of the gutter.
+agent-id-ui-footer-flavor-left = Звичайна ID-картка, нічого цікавого
+agent-id-ui-footer-flavor-right = v2.0

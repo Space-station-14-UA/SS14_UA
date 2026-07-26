@@ -198,7 +198,7 @@
 
 - type: entity
   name: портативний спалах
-  parent: [BaseMachine, BaseSecurityContraband]
+  parent: [BaseMachine, BaseSecurityContraband, BaseMachineDestructible]
   id: PortableFlasher
   description: Надзвичайно яскрава лампочка-спалах із датчиком наближення, корисна для встановлення режиму обмеженого доступу в приміщенні.
   components:
@@ -242,3 +242,11 @@
       guides:
       - Security
       - Antagonists
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 175
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalGlassBreak

@@ -1,7 +1,7 @@
 ﻿- type: entity
   name: звичайний слайм
   id: BaseMobAdultSlimes
-  parent: [ BaseMobSlimes, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision ]
+  parent: [ BaseMobSlimes, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision, BaseMobDestructible ]
   abstract: true
   description: Це так схоже на желе. Цікаво, який він на смак?
   components:

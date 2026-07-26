@@ -1,6 +1,6 @@
 - type: entity
   id: SingularityBeacon
-  parent: [BaseMachinePowered, BaseSyndicateContraband]
+  parent: [BaseMachinePowered, BaseSyndicateContraband, BaseMachineDestructible]
   name: маяк сингулярности
   description: Девайс синдикату що притягує сингулярність. Якщо він почав рухатися і ви це помітили - тікайте.
   components:
@@ -29,15 +29,15 @@
     baseRange: 80
   - type: SinguloFood
     energy: 120
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: ApcPowerReceiver
     powerLoad: 5000
   - type: StaticPrice
     price: 7500
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak

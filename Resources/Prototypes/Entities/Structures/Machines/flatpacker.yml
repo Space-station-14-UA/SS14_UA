@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: MachineFlatpacker
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: Флетпакер 1001
   description: Промислова машина, що використовується для прискорення будівництва машин на станції.
   components:
@@ -30,6 +30,14 @@
         anim:
           True: { visible: true }
           False: { visible: false }
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: FlatpackCreator
     baseMachineCost:
       Steel: 750

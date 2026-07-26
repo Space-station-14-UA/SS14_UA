@@ -1,0 +1,27 @@
+# Head
+- type: loadout
+  id: MRCargoTechnicianHeadNP
+  equipment:
+    head: MRClothingHeadHatRedsoftNP
+  sponsorTag: "sponsor_1"
+  
+
+# Jumpsuit
+- type: loadout
+  id: MRCargoTechnicianJumpsuitNP
+  equipment:
+    jumpsuit: MRClothingUniformJumpsuitCargoNP
+  sponsorTag: "sponsor_1"
+
+- type: loadout
+  id: MRCargoTechnicianJumpsuitNPWhite
+  equipment:
+    jumpsuit: MRClothingUniformJumpsuitCargoNPWhite
+  sponsorTag: "sponsor_2"
+
+# OuterClothing
+- type: loadout
+  id: CargoTechnicianCoatNP
+  equipment:
+    outerClothing: MRClothingOuterCoatNP
+  sponsorTag: "sponsor_2"

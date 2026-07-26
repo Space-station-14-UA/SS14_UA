@@ -1,6 +1,6 @@
 - type: entity
   id: MachineAnomalyVessel
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: накопичувач аномалій
   description: Контейнер, здатний отримувати бали досліджень з відсканованих аномалій.
   components:
@@ -73,10 +73,8 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 175
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
@@ -113,7 +111,7 @@
 
 - type: entity
   id: MachineAPE
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: A.P.E.
   description: Anomalous Particle Emitter - випромінювач аномальних частинок, здатний стріляти нестабільними частинками, які можуть взаємодіяти з аномаліями.
   components:
@@ -148,6 +146,14 @@
         - MachineMask
         layer:
         - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: Rotatable
     rotateWhileAnchored: true
   - type: Machine

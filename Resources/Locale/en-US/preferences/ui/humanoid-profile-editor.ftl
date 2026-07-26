@@ -6,6 +6,7 @@ humanoid-profile-editor-randomize-age-button = Вік
 humanoid-profile-editor-randomize-sex-button = Стать
 humanoid-profile-editor-randomize-skin-button = Колір шкіри
 humanoid-profile-editor-randomize-eye-button = Колір очей
+humanoid-profile-editor-randomize-markings-button = Маркування
 humanoid-profile-editor-name-label = Ім'я:
 humanoid-profile-editor-appearance-tab = Зовнішність
 humanoid-profile-editor-clothing = Показати одяг

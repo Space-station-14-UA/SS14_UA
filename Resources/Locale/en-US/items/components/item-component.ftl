@@ -13,4 +13,5 @@ item-component-size-Small = маленький
 item-component-size-Normal = середній
 item-component-size-Large = великий
 item-component-size-Huge = величезний
-item-component-size-Ginormous = гігантський 
+item-component-size-Ginormous = гігантський
+item-component-size-Colossal = колосальний

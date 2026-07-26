@@ -4,7 +4,6 @@
   name: артефакт
   description: Дивний артефакт невідомого походження, епохи та часу. Здається, він бачив багато всього.
   abstract: true
-  noSpawn: true
   components:
   # Visual
   - type: Appearance

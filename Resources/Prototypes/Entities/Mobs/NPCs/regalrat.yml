@@ -1,7 +1,7 @@
 - type: entity
   name: король пацюк
   id: MobRatKing
-  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision ]
+  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision, BaseMobDestructible ]
   description: Він щур! Він рулить техами!
   components:
   - type: CombatMode

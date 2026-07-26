@@ -1,9 +1,9 @@
 - type: entity
-  id: TableBase
+  abstract: true
   parent: BaseStructure
+  id: TableBase
   name: стіл
   description: Квадратний шматок металу, що стоїть на чотирьох металевих ніжках.
-  abstract: true
   components:
   - type: Animateable
   - type: Damageable
@@ -43,10 +43,10 @@
     - ForceFixRotations
 
 - type: entity
-  id: CounterBase
-  parent: TableBase
-  name: прилавок
   abstract: true
+  parent: TableBase
+  id: CounterBase
+  name: прилавок
   components:
   - type: Fixtures
     fixtures:

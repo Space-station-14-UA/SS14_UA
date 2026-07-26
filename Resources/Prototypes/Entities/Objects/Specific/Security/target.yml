@@ -1,7 +1,7 @@
 - type: entity
-  id: BaseTarget
-  parent: BaseStructureDynamic
   abstract: true
+  parent: BaseStructureDynamic
+  id: BaseTargetIndestructible
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
@@ -27,6 +27,12 @@
   - type: Damageable
   - type: Injurable
     damageContainer: Inorganic
+
+- type: entity
+  abstract: true
+  parent: BaseTargetIndestructible
+  id: BaseTarget
+  components:
   - type: Destructible
     thresholds:
     - trigger:
@@ -44,10 +50,11 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
+
 - type: entity
-  name: мішень-людина
-  id: TargetHuman
   parent: BaseTarget
+  id: TargetHuman
+  name: мішень-людина
   description: Мішень для стрільб. Це людина.
   components:
   - type: Sprite
@@ -55,9 +62,9 @@
     state: target_h
 
 - type: entity
-  name: мішень-синдикатівець
-  id: TargetSyndicate
   parent: BaseTarget
+  id: TargetSyndicate
+  name: мішень-синдикатівець
   description: Мішень для стрільб. Це агент синдикату!
   components:
   - type: Sprite
@@ -65,9 +72,9 @@
     state: target_s
 
 - type: entity
-  name: мішень-клоун
-  id: TargetClown
   parent: BaseTarget
+  id: TargetClown
+  name: мішень-клоун
   description: Мішень для стрільб. Це клоун, стережися! Фух.. Всього лише мішень, але будь пильним!
   components:
   - type: Sprite
@@ -76,27 +83,11 @@
 
 # put it on a salvage or something
 - type: entity
-  name: дивна мішень
+  parent: BaseTargetIndestructible
   id: TargetStrange
-  parent: BaseTarget
+  name: дивна мішень
   description: Мішень для стрільб. Ви не зовсім впевнені, що це таке, але здається, що мішень дуже робастна!
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
     state: target_f
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 2000
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel:
-            min: 10
-            max: 10
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
