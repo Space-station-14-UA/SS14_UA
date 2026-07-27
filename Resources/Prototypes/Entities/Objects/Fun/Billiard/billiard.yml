@@ -169,7 +169,7 @@
           radius: 0.03
         density: 3
         restitution: 0.45
-        friction: 0.0001
+        friction: 0.001
         mask:
         - DoorPassable
         layer:
@@ -181,9 +181,11 @@
   id: BilliardKuy
   description: кий
   components:
+  - type: BilliardsCue
   - type: MeleeThrowOnHit
-    speed: 3
+    speed: 4
     distance: 3
+    cameraRecoilOnThrown: false
 
 - type: entity
   id: SpawnBilliardsTriangle
