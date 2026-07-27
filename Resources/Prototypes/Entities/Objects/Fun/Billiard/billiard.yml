@@ -155,7 +155,7 @@
   - type: TileFrictionModifier
     modifier: 0.2
   - type: Physics
-    bodyType: Dynamicц
+    bodyType: Dynamic
     linearDamping: 1.0
     angularDamping: 1.5
     sleepingAllowed: false
