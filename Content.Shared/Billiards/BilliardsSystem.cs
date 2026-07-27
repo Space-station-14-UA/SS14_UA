@@ -1,11 +1,6 @@
-using Content.Shared.Anomaly.Components;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
-using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Components;
-using Content.Shared.Weapons.Melee.Events;
-using Robust.Shared.Audio.Systems;
-using Robust.Shared.GameStates;
 using Robust.Shared.Physics.Events;
 
 namespace Content.Shared.Billiards;
