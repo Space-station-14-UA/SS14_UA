@@ -148,8 +148,14 @@
   components:
   - type: Sprite
     sprite: /Textures/Objects/Fun/Billiards/biliards_ball.rsi
-    state: ball
+    layers:
+    - state: ball
+      map: [ "enum.BilliardsVisualLayers.Base" ]
+    - state: ball_second
+      map: [ "enum.BilliardsVisualLayers.Stripe" ]
+      visible: false
     scale: 0.08,0.08
+  - type: Appearance
   - type: Item
     size: Tiny
   - type: TileFrictionModifier
@@ -159,6 +165,7 @@
     linearDamping: 1.0
     angularDamping: 1.5
     sleepingAllowed: false
+    predict: true
   - type: Damageable
   - type: BilliardsBall
   - type: Fixtures
@@ -204,6 +211,18 @@
     ballPrototype: BilliardsBall
     ballSpacing: 0.082
     rows: 5
+    gameType: Pyramid
+
+- type: entity
+  id: SpawnBilliardsAmericanPool
+  parent: SpawnBilliardsTriangle
+  name: спавнер піраміди американського більярду
+  components:
+  - type: Construction
+    graph: BilliardsTriangleGraph
+    node: triangle
+  - type: BilliardsSpawner
+    gameType: AmericanPool
 
 - type: constructionGraph
   id: BilliardsTriangleGraph
@@ -243,16 +262,74 @@
         doAfter: 0.1
       - component: BilliardsBall
         doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
   - node: triangle
     entity: SpawnBilliardsTriangle
 
+- type: constructionGraph
+  id: BilliardsAmericanPoolGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: AmericanPool
+      steps:
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+      - component: BilliardsBall
+        doAfter: 0.1
+  - node: AmericanPool
+    entity: SpawnBilliardsAmericanPool
+
 - type: construction
   id: SpawnBilliardsTriangle
-  name: піраміда більярдних куль
-  description: Зберіть 15 більярдних куль у спеціальний трикутник для початку гри.
+  name: більярд піраміда
+  description: Зберіть 16 більярдних куль у трикутник для початку гри.
   graph: BilliardsTriangleGraph
   startNode: start
   targetNode: triangle
+  category: Fun # Категорія в меню "G"
+  placementMode: PlaceFree # Дозволяє вільно розмістити привид будь-де на столі без жорсткої прив'язки до сітки станції
+  icon:
+    sprite: Objects/Fun/Billiards/biliards_ball.rsi
+    state: ball_triangle
+
+- type: construction
+  id: SpawnBilliardsAmericanPool
+  name: більярд американка
+  description: Зберіть 15 більярдних куль у трикутник для початку гри.
+  graph: BilliardsAmericanPoolGraph
+  startNode: start
+  targetNode: AmericanPool
   category: Fun # Категорія в меню "G"
   placementMode: PlaceFree # Дозволяє вільно розмістити привид будь-де на столі без жорсткої прив'язки до сітки станції
   icon:

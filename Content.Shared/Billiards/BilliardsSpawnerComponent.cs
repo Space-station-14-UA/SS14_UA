@@ -14,4 +14,7 @@ public sealed partial class BilliardsSpawnerComponent : Component
 
     [DataField]
     public int Rows = 5;
+
+    [DataField]
+    public BilliardsGameType GameType = BilliardsGameType.Pyramid;
 }

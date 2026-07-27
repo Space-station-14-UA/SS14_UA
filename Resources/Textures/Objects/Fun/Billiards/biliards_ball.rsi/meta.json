@@ -11,6 +11,9 @@
       "name": "ball"
     },
     {
+      "name": "ball_second"
+    },
+    {
       "name": "ball_triangle"
     }
   ]

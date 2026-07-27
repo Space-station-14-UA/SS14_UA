@@ -2,18 +2,34 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using System.Numerics;
 using Robust.Shared.Network;
+using Robust.Shared.Random;
+using System.Collections.Generic;
+using System.Linq;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Billiards;
 
 public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
 {
-    [Dependency] private SharedTransformSystem _transform = default!;
-    [Dependency] private INetManager _net = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+
+    private readonly Color[] _poolColors =
+    {
+        Color.FromHex("#F1B82D"), // 1/9 Жовтий
+        Color.FromHex("#1958A7"), // 2/10 Синій
+        Color.FromHex("#D93126"), // 3/11 Червоний
+        Color.FromHex("#482563"), // 4/12 Фіолетовий
+        Color.FromHex("#E67425"), // 5/13 Помаранчевий
+        Color.FromHex("#1E7535"), // 6/14 Зелений
+        Color.FromHex("#7B2D26")  // 7/15 Бордовий
+    };
 
     public override void Initialize()
     {
         base.Initialize();
-
         SubscribeLocalEvent<BilliardsSpawnerComponent, MapInitEvent>(OnMapInit);
     }
 
@@ -32,7 +48,10 @@ public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
         var mapId = xform.MapID;
 
         float spacing = component.BallSpacing;
-        float rowStepY = spacing * 0.866025f; // MathF.Sqrt(3) / 2
+        float rowStepY = spacing * 0.866025f;
+
+        var ballSet = GenerateBallSet(component.GameType);
+        int ballIndex = 0;
 
         for (int row = 0; row < component.Rows; row++)
         {
@@ -41,15 +60,91 @@ public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
 
             for (int col = 0; col <= row; col++)
             {
+                if (ballIndex >= ballSet.Count) break;
+
                 float localX = startX + (col * spacing);
                 var localPos = new Vector2(localX, localY);
-                var rotatedPos = worldRot.RotateVec(localPos);
-                var finalPos = originPos + rotatedPos;
+                var finalPos = originPos + worldRot.RotateVec(localPos);
 
-                Spawn(component.BallPrototype, new MapCoordinates(finalPos, mapId));
+                var ballUid = Spawn(component.BallPrototype, new MapCoordinates(finalPos, mapId));
+                ApplyBallAppearance(ballUid, ballSet[ballIndex].Color, ballSet[ballIndex].IsStriped);
+
+                ballIndex++;
             }
         }
 
+        var cueBallLocalPos = new Vector2(0, spacing * 5);
+        var cueBallFinalPos = originPos + worldRot.RotateVec(cueBallLocalPos);
+
+        var cueBallUid = Spawn(component.BallPrototype, new MapCoordinates(cueBallFinalPos, mapId));
+        ApplyBallAppearance(cueBallUid, Color.White, false);
+
         QueueDel(uid);
     }
+
+    private List<(Color Color, bool IsStriped)> GenerateBallSet(BilliardsGameType type)
+    {
+        var set = new List<(Color, bool)>();
+
+        if (type == BilliardsGameType.Pyramid)
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                set.Add((Color.White, false));
+            }
+        }
+        else if (type == BilliardsGameType.AmericanPool)
+        {
+            var randomSet = new List<(Color, bool)>();
+
+            for (int i = 0; i < 7; i++)
+            {
+                randomSet.Add((_poolColors[i], false));
+                randomSet.Add((_poolColors[i], true));
+            }
+
+            _random.Shuffle(randomSet);
+
+            for (int i = 0; i < 15; i++)
+            {
+                if (i == 4)
+                {
+                    set.Add((Color.Black, false));
+                }
+                else
+                {
+                    set.Add(randomSet[0]);
+                    randomSet.RemoveAt(0);
+                }
+            }
+        }
+
+        return set;
+    }
+
+    private void ApplyBallAppearance(EntityUid uid, Color color, bool isStriped)
+    {
+        _appearance.SetData(uid, BilliardsVisuals.Color, color);
+        _appearance.SetData(uid, BilliardsVisuals.Stripe, isStriped);
+    }
+}
+
+[Serializable, NetSerializable]
+public enum BilliardsVisuals : byte
+{
+    Color,
+    Stripe
+}
+
+[Serializable, NetSerializable]
+public enum BilliardsVisualLayers : byte
+{
+    Base,
+    Stripe
+}
+
+public enum BilliardsGameType : byte
+{
+    Pyramid,
+    AmericanPool
 }
