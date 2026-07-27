@@ -11,6 +11,8 @@
   - type: DatasetVocalizer
     dataset: SmartFridgeAds
   - type: Speech
+    useSoundLimitOverride: true # mriya
+    soundLimitOverride: 1 # mriya
   - type: Appearance
   - type: Sprite
     sprite: Structures/Machines/smartfridge.rsi

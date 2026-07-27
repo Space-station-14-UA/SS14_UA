@@ -234,7 +234,7 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
                         (target, target.Comp),
                         // Similar logic as above, but this makes the displacement layer go below the
                         // original sprite. So it should be all the displacements, then all the sprite layers on top
-                        index + i + 1,
+                        index + i + numDisplacements + 1, // Mriya: layers fix
                         layerId,
                         out _
                     );

@@ -1,0 +1,19 @@
+﻿{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "copyright": "Topknotbox by SP3CTRE.",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+        {
+            "name": "topknotbox_headband",
+            "directions": 4
+        },
+        {
+            "name": "topknotbox_basehair",
+            "directions": 4
+        }
+    ]
+}

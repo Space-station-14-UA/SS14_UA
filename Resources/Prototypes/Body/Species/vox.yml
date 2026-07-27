@@ -169,6 +169,10 @@
     speechVerb: Vox
     speechSounds: Vox
     allowedEmotes: ['Click', 'Chitter']
+    useSoundLimitOverride: true # mriya
+    soundLimitOverride: 5 # mriya
+    minDelayBetweenWords: 0.25 # mriya
+    maxDelayBetweenWords: 0.3 # mriya
   - type: TypingIndicator
     proto: vox
   - type: CreamPied

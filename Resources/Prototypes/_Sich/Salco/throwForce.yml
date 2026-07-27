@@ -68,9 +68,14 @@
   components:
     - type: Action
       useDelay: 1
-      icon: { sprite: Objects/Magic/cotelekinesis.rsi, state: icon }
-      iconOn: { sprite: Objects/Magic/cotelekinesis.rsi, state: icon-on }
       itemIconStyle: NoItem
+    - type: Sprite
+      sprite: Objects/Magic/cotelekinesis.rsi
+      layers: 
+      - state: "icon"
+        map: ["enum.ActionVisuals.Icon"]
+      - state: "icon-on"
+        map: ["enum.ActionVisuals.IconToggled"]
     - type: InstantAction
       event: !type:ToggleActionEvent # tags
     - type: Tag

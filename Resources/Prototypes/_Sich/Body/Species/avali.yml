@@ -175,9 +175,6 @@
     speedModifierThresholds:
       50: 0.7
       70: 0.5
-  - type: Temperature
-    currentTemperature: 296.15 #Початкова температура (стокове 310.25)
-    specificHeat: 54 #Кількість тепла для зміни температури, більше - складніше змінити температуру (стокове 42, у ніан 46)
   - type: TemperatureDamage
     heatDamageThreshold: 320 #Пошкодження від тепла (стокове 325, 320 у ніан)
     coldDamageThreshold: 220 #Пошкодження від холоду (стокове 260, 230 у ніан)
