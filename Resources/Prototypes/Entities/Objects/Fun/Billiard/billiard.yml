@@ -12,19 +12,15 @@
   - type: Physics
     bodyType: Static
   - type: Fixtures
-    fixtures:
-      # ==========================================
-      # ФІЗИЧНІ БОРТИ (6 окремих шматків)
-      # ==========================================
-      
+    fixtures:      
       # Верхній борт (вкорочений по краях)
       border_north:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.34, 0.62, 0.34, 0.73" # Не доходить до країв на 0.1
+          bounds: "-0.34, 0.62, 0.34, 0.72  " # Не доходить до країв на 0.1
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
         
       # Нижній борт (вкорочений по краях)
@@ -34,7 +30,7 @@
           bounds: "-0.34, -0.66, 0.34, -0.75"
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
         
       # Лівий борт (Верхня половина)
@@ -44,7 +40,7 @@
           bounds: "-0.50, 0.06, -0.4, 0.56" # Від центру до кута
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
         
       # Лівий борт (Нижня половина)
@@ -54,7 +50,7 @@
           bounds: "-0.50, -0.09, -0.4, -0.59"
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
         
       # Правий борт (Верхня половина)
@@ -64,7 +60,7 @@
           bounds: "0.40, 0.06, 0.50, 0.56"
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
         
       # Правий борт (Нижня половина)
@@ -74,12 +70,8 @@
           bounds: "0.4, -0.09, 0.50, -0.59"
         density: 100
         mask: [ MachineMask, DoorPassable ]
-        layer: [ MidImpassable, LowImpassable ]
+        layer: [ TableLayer ]
         friction: 0.0001
-
-      # ==========================================
-      # ТРИГЕРИ ЛУЗ (Тепер сидять глибоко в дірках)
-      # ==========================================
       
       pocket_nw:
         shape:
@@ -133,7 +125,7 @@
   - type: Storage
     grid:
     - 0,0,4,3
-    maxItemSize: Small # Дозволяє класти лише маленькі предмети (кульки)
+    maxItemSize: Small
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -165,7 +157,6 @@
     linearDamping: 1.0
     angularDamping: 1.5
     sleepingAllowed: false
-    predict: true
   - type: Damageable
   - type: BilliardsBall
   - type: Fixtures
@@ -173,12 +164,13 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.03
-        density: 3
+          radius: 0.035
+        density: 5
         restitution: 0.45
-        friction: 0.001
+        friction: 0.01
         mask:
         - DoorPassable
+        - Impassable
         layer:
         - DoorPassable
 
@@ -190,8 +182,8 @@
   components:
   - type: BilliardsCue
   - type: MeleeThrowOnHit
-    speed: 4
-    distance: 3
+    speed: 5
+    distance: 0.000000001
     cameraRecoilOnThrown: false
 
 - type: entity
