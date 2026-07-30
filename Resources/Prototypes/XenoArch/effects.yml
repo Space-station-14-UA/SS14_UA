@@ -169,7 +169,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactEffectUniversalIntercom
-  description: Отримує здатність до використання пристрою для зв'язку на великі відстані
+  description: Отримує здатність пристрою для зв'язку на великі відстані
   components:
   - type: XAEApplyComponents
     components:
@@ -232,7 +232,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactWandering
-  description: Starts to move sporadically
+  description: Починає спорадично рухатися
   components:
   - type: XAEApplyComponents
     components:
@@ -287,7 +287,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactDrill
-  description: Obtains ability of drill
+  description: Отримує здатність до нарізання
   components:
   - type: XAEApplyComponents
     components:
@@ -499,7 +499,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectLightFlicker
-  description: Minor electromagnetic interference
+  description: Незначний електромагнітний імпульс
   components:
   - type: XAELightFlicker
 
@@ -531,7 +531,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactFloraSpawn
-  description: Виробляє флору
+  description: Створює флору
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
@@ -679,7 +679,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactChargeBattery
-  description: Заряджає акумулятори
+  description: Заряджає батареї
   components:
   - type: XAEChargeBattery
   - type: XAETelepathic
@@ -689,7 +689,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactKnock
-  description: Mild electromagnetic interference
+  description: Середній електромагнітний імпульс
   components:
   - type: XAEKnock
   - type: XAELightFlicker
@@ -738,7 +738,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactRareMaterialSpawnSilver
-  description: Створюйте рідкісні матеріали
+  description: Створює рідкісні матеріали
   components:
   - type: XenoArtifactNode
     maxDurability: 4
@@ -760,7 +760,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactRareMaterialSpawnPlasma
-  description: Створюйте тверду плазму
+  description: Створює тверду плазму
   components:
   - type: XenoArtifactNode
     maxDurability: 4
@@ -826,7 +826,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactAngryCarpSpawn
-  description: Створєю ворожу рибу
+  description: Створює ворожу рибу
   components:
   - type: XenoArtifactNode
     maxDurability: 3
@@ -914,7 +914,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactCashSpawn
-  description: Створює $гроші$
+  description: Створює гроші
   components:
   - type: XenoArtifactNode
     maxDurability: 2
@@ -1067,7 +1067,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEmp
-  description: Небезпечний електромагнітний імпульс
+  description: Сильний електромагнітний імпульс
   components:
   - type: XenoArtifactNode
     maxDurability: 5
@@ -1183,7 +1183,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactShuffle
-  description: Мінює місцями розумних істот між собою #not ALL beings, but oh well...
+  description: Міняє місцями розумних істот між собою #not ALL beings, but oh well...
   components:
   - type: XAEShuffle
   - type: XAETelepathic
@@ -1257,7 +1257,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactBoom
-  description: Вибух
+  description: Вибух!
   components:
   - type: XAETriggerExplosives
   - type: Explosive
@@ -1271,7 +1271,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasPlasma
-  description: Expels plasma
+  description: Виділяє плазму
   components:
   - type: XAECreateGas
     gases:
@@ -1280,7 +1280,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasTritium
-  description: Expels tritium
+  description: Виділяє тритіум
   components:
   - type: XAECreateGas
     gases:
@@ -1289,7 +1289,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasAmmonia
-  description: Expels ammonia
+  description: Виділяє аміак
   components:
   - type: XAECreateGas
     gases:
@@ -1298,7 +1298,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasFrezon
-  description: Expels frezon
+  description: Виділяє фрезон
   components:
   - type: XAECreateGas
     gases:
@@ -1307,7 +1307,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasNitrousOxide
-  description: Expels nitrous oxide
+  description: Виділяє закис азоту
   components:
   - type: XAECreateGas
     gases:
@@ -1316,7 +1316,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactEffectCreationGasCarbonDioxide
-  description: Expels carbon dioxide
+  description: Виділяє вуглекислий газ
   components:
   - type: XAECreateGas
     gases:
