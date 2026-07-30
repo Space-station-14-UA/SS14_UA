@@ -1,0 +1,54 @@
+<Document>
+# Наука
+[color=#c96dbf]Наука[/color], часто звана Науковий відділ (НВ), - це робота, яка полягає у генеруванні очок досліджень для розблокування нових технологій та використанні цих технологій для виробництва нових предметів на верстатах, щоб допомогти станції.
+
+## Персонал
+Персонал [color=#c96dbf]Наукового відділу[/color] складається з наукових асистентів та вчених. [color=#c96dbf]Науковим відділом[/color] керує Директор наукового відділу (ДНВ).
+
+  <Box>
+   <GuideEntityEmbed Entity="ToyFigurineScientist" Caption="Вчений"/>
+   <GuideEntityEmbed Entity="ToyFigurineResearchDirector" Caption="RD"/>
+  </Box>
+
+## Технології
+  <Box>
+    <GuideEntityEmbed Entity="ComputerResearchAndDevelopment"/>
+    <GuideEntityEmbed Entity="ResearchAndDevelopmentServer"/>
+  </Box>
+Найважливішою річчю у вашому відділі є НВ сервер (сервер наукового відділу), який зберігає розблоковані технології, та комп'ютер вчених, який дозволяє вам розблоковувати [color=#a4885c]технології[/color].
+
+Кожна технологія коштує [color=#a4885c]Бали досліджень[/color] і розблоковує рецепти на верстатах. Деякі технології також мають передумови, які ви повинні розблокувати, перш ніж зможете їх дослідити.
+
+[textlink="Натисніть тут, щоб переглянути список технологій." link="Technologies"].
+
+## Дисципліни
+Технології розподілені за 4 різними дисциплінами:
+  <Box>
+    <GuideEntityEmbed Entity="Wrench" Caption="Індустріальна"/>
+    <GuideEntityEmbed Entity="WeaponTetherGun" Caption="Експериментальна"/>
+    <GuideEntityEmbed Entity="ComputerTelevision" Caption="Цивільні послуги"/>
+    <GuideEntityEmbed Entity="WeaponXrayCannon" Caption="Озброєння"/>
+  </Box>
+
+<GuideEntityEmbed Entity="ComputerResearchAndDevelopment"/> Використовуйте найближчу R&D консоль, щоб дізнатися, який тип досліджень прихований за кожним деревом дисциплін.
+
+## Рівні
+Кожне дерево дисциплін має до 3 рівнів (тірів) технологій. На початку єдиний рівень, який відкритий і доступний для вас - це рівень 1.
+
+Щоб просуватися далі, вам потрібно дослідити до [color=brown]75%[/color] поточного рівня, щоб перейти до наступного. Отже, щоб розблокувати дослідження Т2, вам потрібно дослідити 75% від Т1.
+
+А от з [color=green]Рівнем 3[/color] стає цікавіше. Якщо ви досліджуєте технологію Т3, ви [color=brown]блокуєте[/color] технології Т3 з інших дерев дисциплін. Хіба що ви зможете знайти інший спосіб обійти це... ймовірно, вам варто запитати свого [color=purple]Директора з досліджень[/color].
+
+## Верстати
+  <Box>
+    <GuideEntityEmbed Entity="Protolathe"/>
+    <GuideEntityEmbed Entity="CircuitImprinter"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ExosuitFabricator"/>
+    <GuideEntityEmbed Entity="MedicalTechFab"/>
+    <GuideEntityEmbed Entity="SecurityTechFab"/>
+  </Box>
+На верстаті ви можете вибрати сервер, щоб дозволити йому друкувати будь-які розблоковані вами рецепти. Для рецептів потрібні різноманітні матеріали (сталь, скло, пластик, золото, плазма), які можна отримати у відділі постачання (Cargo) або утилізації (Salvage).
+
+</Document>

@@ -1,0 +1,20 @@
+<Document>
+# Технології
+
+Усі технології мають вартість та вимоги до рівня для дослідження. Їх розблокування додає різноманітні рецепти, які можна друкувати на різних токарних верстатах.
+
+Нижче перелічені різні технології та відповідні їм дисципліни.
+
+## Індустріальні
+<GuideTechDisciplineEmbed Discipline="Industrial"/>
+
+## Озброєння
+<GuideTechDisciplineEmbed Discipline="Arsenal"/>
+
+## Експериментальна
+<GuideTechDisciplineEmbed Discipline="Experimental"/>
+
+## Цивільні послуги
+<GuideTechDisciplineEmbed Discipline="CivilianServices"/>
+
+</Document>
