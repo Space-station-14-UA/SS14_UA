@@ -596,7 +596,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactHeatWave
-  description: Сильно нагріває навколишній газ
+  description: Нагріває навколишній газ
   components:
   - type: XAETemperature
     targetTemp: 500
@@ -697,7 +697,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactMagnet
-  description: Створєю невеликий гравітаційний колодязь
+  description: Створює невеликий гравітаційний колодязь
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
@@ -711,7 +711,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactMagnetNegative
-  description: Створєю невеликий гравітаційний колодязь
+  description: Створює невеликий гравітаційний колодязь
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
