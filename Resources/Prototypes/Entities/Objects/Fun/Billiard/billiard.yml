@@ -11,6 +11,9 @@
     state: table
   - type: Physics
     bodyType: Static
+  - type: Construction
+    graph: TableBilliards
+    node: tableBilliards
   - type: Fixtures
     fixtures:      
       # Верхній борт (вкорочений по краях)
@@ -131,6 +134,8 @@
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
   - type: BilliardsTable
+  - type: Anchorable
+  - type: Rotatable
 
 - type: entity
   id: BilliardsBall
@@ -203,7 +208,7 @@
   name: спавнер піраміди більярдних куль
   components:
   - type: Sprite
-    sprite: Objects/Fun/Billiards/biliards_ball.rsi
+    sprite: Objects/Fun/Billiards/billiards_ball.rsi
     state: ball_triangle
     scale: 1,1
     drawdepth: Effects
@@ -329,7 +334,7 @@
 - type: construction
   id: SpawnBilliardsAmericanPool
   name: більярд американка
-  description: Зберіть 15 більярдних куль у трикутник для початку гри.
+  description: Зберіть 16 більярдних куль у трикутник для початку гри.
   graph: BilliardsAmericanPoolGraph
   startNode: start
   targetNode: AmericanPool
@@ -338,3 +343,78 @@
   icon:
     sprite: Objects/Fun/Billiards/biliards_ball.rsi
     state: ball_triangle
+
+- type: entity
+  parent: BaseFlatpack
+  id: BilliardsTableFlatpack
+  name: Більярд флетпак
+  description: Флетпак для конструювання столу для більярду. Використайте мультитул.
+  components:
+  - type: Sprite
+    layers:
+    - state: billiard-table
+  - type: Flatpack
+    entity: TableBilliards
+  - type: StaticPrice
+    price: 600
+
+- type: constructionGraph
+  id: TableBilliards
+  start: start
+  graph:
+    - node: start
+    - node: tableBilliards
+      entity: TableBilliards
+      edges:
+        - to: start
+          conditions:
+            - !type:ContainerEmpty
+             container: "storagebase"
+             examineText: "Сховище не порожнє!"
+             guideStep: "Спорожніть схвоище столу!"
+          completed:
+            - !type:SpawnPrototype
+              prototype: BilliardsTableFlatpack
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 3
+
+- type: entity
+  name: коробка для більярду
+  parent: BoxCardboard
+  id: BoxBilliardBalls
+  description: Коробка для більярдних куль
+  components:
+  - type: Sprite
+    layers:
+      - state: box
+      - state: balls
+  - type: Storage
+    grid:
+    - 0,0,3,3
+    whitelist: # TODO cardboard boxes shouldn't have whitelisting
+      components:
+      - BilliardsBall
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: BilliardsBall
+          amount: 16
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateBilliardComplect
+  name: ящик з комплектом для більярду
+  description: Флетпак більярдного столу, коробка метаморфозних куль та два кия - все що треба для гарного вечора!
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxBilliardBalls
+        - id: BilliardsTableFlatpack
+        - id: BilliardCue
+          amount: 2
