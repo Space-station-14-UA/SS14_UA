@@ -5,19 +5,19 @@ using Robust.Shared.Physics.Events;
 
 namespace Content.Shared.Billiards;
 
-public sealed partial class BilliardsSystem : EntitySystem
+public sealed partial class BilliardSystem : EntitySystem
 {
     [Dependency] private SharedStorageSystem _storage = default!;
 
     [SubscribeLocalEvent]
-    private void OnTableCollide(Entity<BilliardsTableComponent> ent, ref StartCollideEvent args)
+    private void OnTableCollide(Entity<BilliardTableComponent> ent, ref StartCollideEvent args)
     {
         if (!args.OurFixtureId.StartsWith("pocket_"))
             return;
 
         var ballUid = args.OtherEntity;
 
-        if (!HasComp<BilliardsBallComponent>(ballUid))
+        if (!HasComp<BilliardBallComponent>(ballUid))
             return;
 
         if (!TryComp<StorageComponent>(ent.Owner, out var storage))
@@ -27,9 +27,9 @@ public sealed partial class BilliardsSystem : EntitySystem
     }
 
     [SubscribeLocalEvent]
-    private void OnAttemptMeleeThrowOnHit(Entity<BilliardsCueComponent> ent, ref AttemptMeleeThrowOnHitEvent args)
+    private void OnAttemptMeleeThrowOnHit(Entity<BilliardCueComponent> ent, ref AttemptMeleeThrowOnHitEvent args)
     {
-        if (!HasComp<BilliardsBallComponent>(args.Target))
+        if (!HasComp<BilliardBallComponent>(args.Target))
             args.Cancelled = true;
     }
 }

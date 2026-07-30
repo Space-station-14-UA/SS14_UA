@@ -5,7 +5,7 @@ using Robust.Client.Player;
 using Robust.Client.State;
 using Robust.Client.UserInterface;
 
-public sealed partial class BilliardsAimSystem : EntitySystem
+public sealed partial class BilliardAimSystem : EntitySystem
 {
     [Dependency] private IOverlayManager _overlayManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;
@@ -13,12 +13,12 @@ public sealed partial class BilliardsAimSystem : EntitySystem
     [Dependency] private IStateManager _stateManager = default!;
     [Dependency] private IUserInterfaceManager _uiManager = default!;
 
-    private BilliardsAimOverlay _overlay = default!;
+    private BilliardAimOverlay _overlay = default!;
 
     public override void Initialize()
     {
         base.Initialize();
-        _overlay = new BilliardsAimOverlay(EntityManager, _playerManager, _inputManager, _stateManager, _uiManager);
+        _overlay = new BilliardAimOverlay(EntityManager, _playerManager, _inputManager, _stateManager, _uiManager);
         _overlayManager.AddOverlay(_overlay);
     }
 

@@ -16,7 +16,7 @@ using System;
 
 namespace Content.Client.Billiards;
 
-public sealed class BilliardsAimOverlay : Overlay
+public sealed class BilliardAimOverlay : Overlay
 {
     private readonly IEntityManager _entManager;
     private readonly IPlayerManager _playerManager;
@@ -28,7 +28,7 @@ public sealed class BilliardsAimOverlay : Overlay
 
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
 
-    public BilliardsAimOverlay(
+    public BilliardAimOverlay(
         IEntityManager entManager,
         IPlayerManager playerManager,
         IInputManager inputManager,
@@ -55,7 +55,7 @@ public sealed class BilliardsAimOverlay : Overlay
         if (!_entManager.TryGetComponent<HandsComponent>(player, out var hands)) return;
 
         var activeHandEntity = _hands.GetActiveItem((player.Value, hands));
-        if (activeHandEntity == null || !_entManager.HasComponent<BilliardsCueComponent>(activeHandEntity))
+        if (activeHandEntity == null || !_entManager.HasComponent<BilliardCueComponent>(activeHandEntity))
             return;
 
         var currentState = _stateManager.CurrentState;
@@ -77,7 +77,7 @@ public sealed class BilliardsAimOverlay : Overlay
             }
         }
 
-        if (targetBall == null || !_entManager.HasComponent<BilliardsBallComponent>(targetBall.Value))
+        if (targetBall == null || !_entManager.HasComponent<BilliardBallComponent>(targetBall.Value))
             return;
 
         var playerPos = _transform.GetMapCoordinates(player.Value);

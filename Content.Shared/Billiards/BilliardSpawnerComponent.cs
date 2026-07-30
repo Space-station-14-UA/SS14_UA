@@ -4,7 +4,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Billiards;
 
 [RegisterComponent, NetworkedComponent]
-public sealed partial class BilliardsSpawnerComponent : Component
+public sealed partial class BilliardSpawnerComponent : Component
 {
     [DataField]
     public EntProtoId BallPrototype = "BilliardsBall";
@@ -16,5 +16,5 @@ public sealed partial class BilliardsSpawnerComponent : Component
     public int Rows = 5;
 
     [DataField]
-    public BilliardsGameType GameType = BilliardsGameType.Pyramid;
+    public BilliardGameType GameType = BilliardGameType.Pyramid;
 }

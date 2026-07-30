@@ -3,18 +3,16 @@ using Robust.Shared.Map;
 using System.Numerics;
 using Robust.Shared.Network;
 using Robust.Shared.Random;
-using System.Collections.Generic;
-using System.Linq;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Billiards;
 
-public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
+public sealed partial class BilliardBallSpawnerSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private INetManager _net = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
 
     private readonly Color[] _poolColors =
     {
@@ -30,10 +28,10 @@ public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<BilliardsSpawnerComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<BilliardSpawnerComponent, MapInitEvent>(OnMapInit);
     }
 
-    private void OnMapInit(EntityUid uid, BilliardsSpawnerComponent component, MapInitEvent args)
+    private void OnMapInit(EntityUid uid, BilliardSpawnerComponent component, MapInitEvent args)
     {
         if (_net.IsClient)
             return;
@@ -82,18 +80,18 @@ public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
         QueueDel(uid);
     }
 
-    private List<(Color Color, bool IsStriped)> GenerateBallSet(BilliardsGameType type)
+    private List<(Color Color, bool IsStriped)> GenerateBallSet(BilliardGameType type)
     {
         var set = new List<(Color, bool)>();
 
-        if (type == BilliardsGameType.Pyramid)
+        if (type == BilliardGameType.Pyramid)
         {
             for (int i = 0; i < 15; i++)
             {
                 set.Add((Color.White, false));
             }
         }
-        else if (type == BilliardsGameType.AmericanPool)
+        else if (type == BilliardGameType.AmericanPool)
         {
             var randomSet = new List<(Color, bool)>();
 
@@ -124,26 +122,26 @@ public sealed partial class BilliardsBallSpawnerSystem : EntitySystem
 
     private void ApplyBallAppearance(EntityUid uid, Color color, bool isStriped)
     {
-        _appearance.SetData(uid, BilliardsVisuals.Color, color);
-        _appearance.SetData(uid, BilliardsVisuals.Stripe, isStriped);
+        _appearance.SetData(uid, BilliardVisuals.Color, color);
+        _appearance.SetData(uid, BilliardVisuals.Stripe, isStriped);
     }
 }
 
 [Serializable, NetSerializable]
-public enum BilliardsVisuals : byte
+public enum BilliardVisuals : byte
 {
     Color,
     Stripe
 }
 
 [Serializable, NetSerializable]
-public enum BilliardsVisualLayers : byte
+public enum BilliardVisualLayers : byte
 {
     Base,
     Stripe
 }
 
-public enum BilliardsGameType : byte
+public enum BilliardGameType : byte
 {
     Pyramid,
     AmericanPool
