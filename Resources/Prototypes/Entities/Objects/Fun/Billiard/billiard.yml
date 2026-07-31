@@ -16,17 +16,15 @@
     node: tableBilliard
   - type: Fixtures
     fixtures:      
-      # Верхній борт (вкорочений по краях)
       border_north:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.34, 0.62, 0.34, 0.72  " # Не доходить до країв на 0.1
+          bounds: "-0.34, 0.62, 0.34, 0.72  "
         density: 100
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
         
-      # Нижній борт (вкорочений по краях)
       border_south:
         shape:
           !type:PhysShapeAabb
@@ -36,11 +34,10 @@
         layer: [ TableLayer ]
         friction: 0.0001
         
-      # Лівий борт (Верхня половина)
       border_west_top:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.50, 0.06, -0.4, 0.56" # Від центру до кута
+          bounds: "-0.50, 0.06, -0.4, 0.56"
         density: 100
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
@@ -56,7 +53,6 @@
         layer: [ TableLayer ]
         friction: 0.0001
         
-      # Правий борт (Верхня половина)
       border_east_top:
         shape:
           !type:PhysShapeAabb
@@ -66,7 +62,6 @@
         layer: [ TableLayer ]
         friction: 0.0001
         
-      # Правий борт (Нижня половина)
       border_east_bottom:
         shape:
           !type:PhysShapeAabb
