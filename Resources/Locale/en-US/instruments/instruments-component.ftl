@@ -45,6 +45,7 @@ instruments-component-midi-file-collection-size-label = Завантажено {
 instruments-component-midi-file-collection-open-dir-button = Відкрити папку
 instruments-component-midi-file-collection-reload-button = Перезавантажити колекцію
 instruments-component-midi-file-collection-delete-all-button = Очистити колекцію
+instruments-component-menu-midi-min-volume-slider-label = Мінімальна гучність MIDI-входу
 
 # SwappableInstrumentComponent
 swappable-instrument-component-style-set = Встановлено стиль: "{$style}"

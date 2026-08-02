@@ -131,9 +131,7 @@
   name: "стіна дерев'яних опор"
   description: Стара, гнила стіна.
   components:
-  - type: Tag
-    tags:
-    - Wall
+  - type: Wall
   - type: Sprite
     state: support_wall
   - type: Fixtures
@@ -165,9 +163,7 @@
   parent: BaseWoodenSupport
   id: WoodenSupportWallBroken
   components:
-  - type: Tag
-    tags:
-    - Wall
+  - type: Wall
   - type: Sprite
     state: support_wall_broken
   - type: Destructible

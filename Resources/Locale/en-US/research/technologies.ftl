@@ -44,6 +44,7 @@ research-technology-dual-wielding-technology = Технологія подвій
 research-technology-basic-robotics = Базова робототехніка
 research-technology-basic-anomalous-research = Базові аномальні дослідження
 research-technology-basic-xenoarcheology = Базова ксеноархеологія
+research-technology-telesci = ТелеСці
 research-technology-alternative-research = Альтернативні дослідження
 research-technology-magnets-tech = Магнітне обладнання
 research-technology-advanced-parts = Передові компоненти

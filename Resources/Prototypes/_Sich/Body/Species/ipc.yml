@@ -328,6 +328,7 @@
   id: OrganIPCInternal
   abstract: true
   components:
+  - type: ChildOrgan
   - type: Sprite
     sprite: _Sich/Mobs/Species/IPC/organs.rsi
 
