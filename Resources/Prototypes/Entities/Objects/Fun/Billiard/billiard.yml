@@ -120,7 +120,7 @@
         mask: [ DoorPassable ]
   - type: Damageable
   - type: Injurable
-    damageContainer: Structure
+    damageContainer: StructuralInorganic
   - type: Storage
     grid:
     - 0,0,4,3
@@ -323,9 +323,6 @@
   targetNode: triangle
   category: Fun
   placementMode: PlaceFree
-  icon:
-    sprite: Objects/Fun/Billiards/biliards_ball.rsi
-    state: ball_triangle
 
 - type: construction
   id: SpawnBilliardAmericanPool
@@ -336,9 +333,6 @@
   targetNode: AmericanPool
   category: Fun
   placementMode: PlaceFree
-  icon:
-    sprite: Objects/Fun/Billiards/biliards_ball.rsi
-    state: ball_triangle
 
 - type: entity
   parent: BaseFlatpack
