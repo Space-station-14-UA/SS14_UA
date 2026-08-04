@@ -42,8 +42,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-        
-      # Лівий борт (Нижня половина)
+
       border_west_bottom:
         shape:
           !type:PhysShapeAabb
