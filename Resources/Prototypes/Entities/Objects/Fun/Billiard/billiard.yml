@@ -413,3 +413,13 @@
         - id: BilliardTableFlatpack
         - id: BilliardCue
           amount: 2
+
+- type: cargoProduct
+  id: CrateBilliardComplect
+  icon:
+    sprite: Objects/Fun/Billiards/Billiard_table.rsi
+    state: table
+  product: CrateBilliardComplect
+  cost: 5000
+  category: cargoproduct-category-name-fun
+  group: market
