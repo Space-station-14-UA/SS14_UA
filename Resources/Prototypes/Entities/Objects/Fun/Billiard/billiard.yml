@@ -7,7 +7,7 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: Objects/Fun/Billiards/Billiard_table.rsi
+    sprite: Objects/Fun/Billiards/billiard_table.rsi
     state: table
   - type: Physics
     bodyType: Static
@@ -139,7 +139,7 @@
   description: Важка і гладка куля для гри в більярд.
   components:
   - type: Sprite
-    sprite: Objects/Fun/Billiards/Billiard_ball.rsi
+    sprite: Objects/Fun/Billiards/billiard_ball.rsi
     layers:
     - state: ball
       map: [ "enum.BilliardVisualLayers.Base" ]
@@ -183,7 +183,7 @@
   - type: Item
     size: Small
   - type: Sprite
-    sprite: Objects/Fun/Billiards/Billiard_cue.rsi
+    sprite: Objects/Fun/Billiards/billiard_cue.rsi
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -180
@@ -203,7 +203,7 @@
   name: спавнер піраміди більярдних куль
   components:
   - type: Sprite
-    sprite: Objects/Fun/Billiards/Billiard_ball.rsi
+    sprite: Objects/Fun/Billiards/billiard_ball.rsi
     state: ball_triangle
     scale: 1,1
     drawdepth: Effects
@@ -417,7 +417,7 @@
 - type: cargoProduct
   id: CrateBilliardComplect
   icon:
-    sprite: Objects/Fun/Billiards/Billiard_table.rsi
+    sprite: Objects/Fun/Billiards/billiard_table.rsi
     state: table
   product: CrateBilliardComplect
   cost: 5000
