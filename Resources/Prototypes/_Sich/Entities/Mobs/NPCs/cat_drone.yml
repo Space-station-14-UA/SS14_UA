@@ -19,8 +19,6 @@
       Dead:
         Base: cat_drone_dead
   - type: Temperature
-    currentTemperature: 313.15
-    specificHeat: 46
   - type: TemperatureDamage
     heatDamageThreshold: 423
     coldDamageThreshold: 0
