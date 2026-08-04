@@ -119,6 +119,7 @@
         hard: false
         mask: [ DoorPassable ]
   - type: Damageable
+  - type: Injurable
     damageContainer: Structure
   - type: Storage
     grid:
@@ -315,8 +316,8 @@
 
 - type: construction
   id: SpawnBilliardTriangle
-  name: більярдна піраміда
-  description: Розставити 15 куль та биток для піраміди. Будь-які кулі автоматично підготуються до гри.
+  name: construction-billiard-pyramid
+  description: construction-billiard-pyramid-description
   graph: BilliardTriangleGraph
   startNode: start
   targetNode: triangle
@@ -328,8 +329,8 @@
 
 - type: construction
   id: SpawnBilliardAmericanPool
-  name: більярд американка
-  description: Розставити 15 куль з битком для пулу. Використані кулі самі набудуть потрібного кольору.
+  name: construction-billiard-american
+  description: construction-billiard-american-description
   graph: BilliardAmericanPoolGraph
   startNode: start
   targetNode: AmericanPool
