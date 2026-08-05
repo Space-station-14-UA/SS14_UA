@@ -1134,7 +1134,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactMaterialSpawnSteel
-  description: Створює залізо
+  description: Створює сталь
   components:
   - type: XAEApplyComponents
     applyIfAlreadyHave: true
