@@ -262,7 +262,9 @@
   description: Або проявляє охоронця, або відкликає його назад у своє тіло.
   components:
   - type: Action
-    icon: Interface/Actions/manifest.png
     useDelay: 2
+  - type: Sprite
+    layers:
+    - texture: Interface/Actions/manifest.png
   - type: InstantAction
     event: !type:GuardianToggleActionEvent

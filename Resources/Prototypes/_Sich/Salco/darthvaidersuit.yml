@@ -130,12 +130,13 @@
     useDelay: 2
     raiseOnAction: true
     itemIconStyle: BigAction
-    icon: 
-      sprite: Objects/Magic/cotelekinesis.rsi
-      state: icon
-    iconOn:
-      sprite: Objects/Magic/cotelekinesis.rsi
-      state: icon-on
+  - type: Sprite
+    sprite: Objects/Magic/cotelekinesis.rsi
+    layers: 
+    - state: "icon"
+      map: ["enum.ActionVisuals.Icon"]
+    - state: "icon-on"
+      map: ["enum.ActionVisuals.IconToggled"]
   - type: InstantAction
     event: !type:OnRetractableItemActionEvent
   - type: RetractableItemAction

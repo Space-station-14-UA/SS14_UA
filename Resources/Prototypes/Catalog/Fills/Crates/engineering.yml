@@ -141,30 +141,6 @@
         amount: 5
 
 - type: entity
-  parent: CrateGenericSteel
-  id: CrateEngineeringJetpack
-  name: ящик з реактивними ранцями
-  description: Містить у собі 2 реактивних ранця для тих, хто не вміє користуватися вогнегасниками.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: JetpackBlue
-        amount: 2
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateEngineeringMiniJetpack
-  name: ящик з міні реактивними ранцями
-  description: Містить у собі 2 міні реактивних ранця для тих, хто не вміє користуватися вогнегасником, а також хоче більше труднощів.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: JetpackMini
-        amount: 2
-
-- type: entity
   parent: CrateEngineering
   id: CrateAirlockKit
   name: комплект для будівництва шлюзів
@@ -178,21 +154,6 @@
         - id: CableApcStack
         - id: DoorElectronics
           amount: 6
-
-- type: entity
-  parent: CrateCommandSecure
-  id: CrateEvaKit
-  name: комплект ЄВА
-  description: Комплект, що складається з двох прекрасних костюмів з пінополіуретану та шоломів для них. Газові балони в комплетк не входять.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:AllSelector
-        children:
-        - id: ClothingHeadHelmetEVA
-          amount: 2
-        - id: ClothingOuterHardsuitEVA
-          amount: 2
 
 - type: entity
   parent: CrateEngineering

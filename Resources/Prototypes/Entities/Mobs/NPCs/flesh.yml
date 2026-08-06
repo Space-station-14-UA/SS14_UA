@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable ]
+  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobFlesh
   name: химерна плоть
   description: Безладна маса плоті, оживлена аномальною енергією.
@@ -204,7 +204,7 @@
         Blunt: 10
 
 - type: entity
-  parent: [ SimpleSpaceMobBase, MobCombat, BaseSlicingRefinable ]
+  parent: [ SimpleSpaceMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobFleshSalvage #This one is immune to space!
   name: химерна плоть
   suffix: "Набір правил шахтарів"

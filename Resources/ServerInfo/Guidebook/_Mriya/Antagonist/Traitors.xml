@@ -1,0 +1,113 @@
+<Document>
+  # Зрадники
+
+  <Box>
+    [color=#999999][italic]"ВІСКІ. ЕХО. ВІСКІ. ЛІМА. АЛЬФА. ДЕЛЬТА. АГЕНТЕ, ВАС АКТИВОВАНО."[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="PosterContrabandSyndicateRecruitment" Caption=""/>
+  </Box>
+  Зрадники – це антагоністи, яких наймає [color=#ff0000]Синдикат.[/color] Ви — сплячий агент, який має доступ до різних інструментів та зброї через ваш [bold]аплінк[/bold].
+  Ви також отримуєте [bold]кодові слова[/bold] виявити інших агентів, а скоординована команда зрадників може мати [italic]нищівні наслідки.[/italic]
+
+  Будь-хто, окрім [textlink="керівників відділів" link="Command"] або працівників [textlink="Служби безпеки" link="Security"] може бути зрадником.
+
+  ## Аплінк & Активація
+  [color=cyan]Аплінк[/color] це ваш найважливіший інструмент як зрадника. Ви можете обміняти 20 [color=red]телекристалів[/color] (TC) з якими починаєте, на предмети, які допоможуть вам у досягненні ваших цілей.
+
+  Натиснувши [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color], ви побачите свій персональний аплінк код. Щоб активувати з’єднання, встановіть код на мелодію дзвінка вашого КПК. Його можна використовувати з [bold]будь-яким КПК, будь-кого[/bold], тому будьте обережні, не діліться ним!
+  Натиснувши [color=yellow][bold][keybind="OpenCharacterMenu"][/bold][/color] також дозволяє переглянути ваші цілі та кодові слова.
+
+  Якщо у вас немає КПК під час активації, вам буде надано [color=cyan]імплант аплінку[/color][bold] за повну [color=red]TC[/color] вартість імпланту.[/bold]
+  До нього можна отримати доступ з вашої панелі швидкого доступу.
+  <Box>
+    <GuideEntityEmbed Entity="PassengerPDA" Caption="PDA"/>
+    <GuideEntityEmbed Entity="Telecrystal" Caption="Telecrystals"/>
+    <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="Uplink Implant"/>
+  </Box>
+
+  [bold]Обов’язково закрийте аплінк в КПК, щоб ніхто інший не міг його побачити.[/bold] Ви ж не хочете, щоб [color=#cb0000]Служба безпеки[/color] помітила, що він у вас є, і конфіскувала його у вас!
+
+  Імплантовані аплінки недоступні для інших людей, тому вони не мають жодних заходів безпеки. Однак їх можна видалити за допомогою порожнього імплантера.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponPistolCobra" Caption="Зброя"/>
+    <GuideEntityEmbed Entity="MagazineBoxLightRifle" State="icon" Caption="Набої"/>
+    <GuideEntityEmbed Entity="C4" Caption="Вибухівка"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndie" Caption="Одяг"/>
+    <GuideEntityEmbed Entity="Stimpack" Caption="Хімікати"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ChameleonProjector" Caption="Омана"/>
+    <GuideEntityEmbed Entity="Emag" Caption="Втручання"/>
+    <GuideEntityEmbed Entity="StorageImplanter" Caption="Імпланти"/>
+    <GuideEntityEmbed Entity="MobMonkeySyndicateAgentNukeops" Caption="Помічники"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesOutlawGlasses" Caption="Пустощі"/>
+  </Box>
+
+  Покупки, які ви робите, мають допомагати вам у досягненні цілей. Частина спорядження може вам не знадобитися, тож вам доведеться обирати: діяти нишком чи йти напролом.
+
+  ## Координація
+  Кодові слова – це слова або фрази, які знає кожен зрадник. Вони забезпечують непомітний спосіб ідентифікувати або встановити контакт з іншим зрадником, що може бути корисним, якщо ваші цілі включають [italic][color=cyan]допомогу йому в досягненні його цілей.[/color][/italic]
+
+  Коли ви знайдете друзів, [bold]ви зможете зняти [color=red]телекристали[/color] зі свого аплінку, щоб віддати їм.[/bold] Вони можуть помістити їх у свій власний аплінк, щоб витратити їх для себе.
+
+  Деякі пропозиції, доступні на вашому аплінку, вимагають понад 20 TC для придбання, тому, якщо ви хочете їх отримати, вам доведеться поділитися.
+
+  ## Вбивство
+  Однією з ваших цілей може бути [italic][color=cyan]вбити або позбутися члена екіпажу.[/color][/italic]
+
+  Ви можете [color=cyan]Позбутися[/color] вашої цілі [bold]не дозволяючи їй дістатися до ЦентКому[/bold] за допомогою евакуаційного човника або рятувальної капсули.
+
+  Якщо ви не можете залишити свою ціль живою, або вона занадто важлива, щоб залишити її живою, вам доведеться забруднити руки та [colour=cyan]вбити[/color] її. Переконайтеся, що ваша ціль мертва, коли [bold]евакуаційний шатл прибуде до ЦентКому,[/bold] і не дозволяйте її реанімувати.
+
+  Пам’ятайте, Синдикат хоче смерті лише ваших цілей. [color=red]Намагайтеся уникати масових убивств або серйозних пошкоджень станції,[/color] оскільки чим більше невинних життів ви забираєте, тим більшою небезпекою ви стаєте.
+
+  ## Втеча & Самознищення
+  Ваші цілі можуть вимагати від вас [italic][color=cyan]дістатися до CentComm, не будучи вбитим або захопленим.[/color][/italic] Не дозволяйте [color=#cb0000]службі безпеки[/color] зупинити вас, виконайте інші свої цілі та [bold]поверніться живим.[/bold]
+
+  Або ж ваші цілі можуть вимагати від вас [italic][color=cyan]славної смерті.[/color][/italic] [bold]Переконайтеся, що ви не повернетеся з мертвих,[/bold] інакше ви можете прокинутися в кайданках.
+
+  ## Асигнування
+  Найчастіше вам доведеться [italic][color=cyan]вкрасти майно керівника відділу.[/color][/italic]
+
+  Ціль може бути в їхньому офісі або при собі. Можливо, доведеться вбити того, хто її носить, якщо ви не можете його обкрасти.
+
+  Деякі з завдань, які вам можуть доручити, включають:
+  - Крадіжка у [color=yellow]Капітана[/color], [bold]ID картки[/bold], [bold]антикварного лазерного пістолету[/bold], [bold]реактивний ранець[/bold], or [bold]диск ядерної автентифікації[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="CaptainIDCard" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
+    <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
+    <GuideEntityEmbed Entity="NukeDisk" Caption=""/>
+  </Box>
+  - Крадіжка у [color=#5b97bc]Головного лікаря[/color], [bold]гіпоспрей[/bold] або [bold]ручна консоль екіпажу[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="Hypospray" Caption=""/>
+    <GuideEntityEmbed Entity="HandheldCrewMonitorEmpty" Caption=""/>
+  </Box>
+  - Крадіжка у [color=#c96dbf]Директора наукового відділу[/color] [bold]експериментальний дослідницький скафандр[/bold] або [bold]ручний телепортер[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitRd" Caption=""/>
+    <GuideEntityEmbed Entity="HandTeleporter" Caption=""/>
+  </Box>
+  - Крадіжка у [color=#cb0000]Голови безпеки[/color] [bold]energy magnum[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
+  </Box>
+  - Крадіжка у [color=#f39f27]Головного інженера[/color] [bold]просунуті магнітні чоботи[/bold] та [bold]елітний ПШБ[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="ClothingShoesBootsMagAdv" Caption=""/>
+    <GuideEntityEmbed Entity="RCDElite" Caption=""/>
+  </Box>
+  - Крадіжка у [color=#b18644]Квартирмейстра[/color], [bold]requisition digi-board[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption=""/>
+  </Box>
+  - Зарізання Ієна, собаки [color=#9fed58]Голови Персоналу[/color], та отримання [bold]м'яса коргі[/bold].
+  <Box>
+    <GuideEntityEmbed Entity="MobCorgiIan" Caption=""/>
+    <GuideEntityEmbed Entity="FoodMeatCorgi" Caption=""/>
+  </Box>
+
+</Document>

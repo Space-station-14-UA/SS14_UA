@@ -201,7 +201,7 @@
 - type: entity
   parent: ClothingShoesChameleon
   id: ClothingShoesChameleonNoSlips
-  name: чорне взуття #actual name and description in uplink_catalog.yml
+  name: чорне взуття #actual name and description in wearables.yml
   suffix: Непідковзні, Хамелеон
   description: Стильне чорне взуття.
   components:

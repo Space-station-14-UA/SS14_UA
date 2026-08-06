@@ -38,27 +38,23 @@
     - type: Clickable
     - type: InteractionOutline
     - type: FultonBeacon
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.FoldedVisuals.State:
-          foldedLayer:
-            True: { state: folded_extraction }
-            False: { state: extraction_point }
     - type: Sprite
       sprite: Objects/Tools/fulton.rsi
       drawdepth: SmallObjects
       noRot: true
       layers:
         - state: extraction_point
-          map: [ "foldedLayer" ]
+          map: ["unfoldedLayer"]
+          visible: false
+        - state: folded_extraction
+          map: ["foldedLayer"]
 
 - type: entity
+  parent: [ BaseItem, BaseItemDestructible ]
   id: Fulton
-  parent: BaseItem
-  suffix: Full
   name: фултон
-  description: Використовується для евакуації ящиків та інших великих об'єктів. Ну, або вербовки членів екіпажу в вашу приступну організацію через викрадення на секретний космічний форпост. Потребує маяк фултонів для роботи.
+  suffix: Full
+  description: Використовується для евакуації контейнерів, предметів або примусового вербування людей до вашої бази операцій.
   components:
   - type: Fulton
   - type: Item
@@ -75,17 +71,6 @@
     drawdepth: SmallObjects
     sprite: Objects/Tools/fulton.rsi
     state: extraction_pack
-  - type: Damageable
-  - type: Injurable
-    damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
 
 - type: entity
   id: Fulton1

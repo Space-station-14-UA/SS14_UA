@@ -1,0 +1,125 @@
+<Document>
+  # Nuclear Operatives
+
+  <Box>
+    [color=#999999][italic]«ОПЕРАТИВНИКИ, ПРИГОТУВАТИСЯ. ВАШІ ЗАВДАННЯ ПРОСТІ.[/italic][/color]
+  </Box>
+  <Box>
+    [color=#999999][italic]ДОСТАВТЕ ЗАРЯД І ВИБИРАЙТЕСЯ ДО ТОГО, ЯК ВІН ЗДЕТОНУЄ. ПОЧАТИ МІСІЮ».[/italic][/color]
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="PosterContrabandEnlistGorlex" Caption=""/>
+  </Box>
+
+  Вас щойно обрали ядерним оперативником [color=#ff0000]Синдикату[/color]. У вас одна мета - підірвати одне з найкращих суден Nanotrasen за допомогою термоядерної вибухівки.
+
+  ## Оперативники
+  Ваша команда складатиметься з кількох різних ролей:
+  - [bold]Оперативники[/bold] це звичайні солдати, які виконують усю брудну роботу.
+  - [bold]Медик[/bold] він працює з реагентами для створення ліків або хімічної зброї.
+  - [bold]Командир[/bold], він розробляє план і керує командою.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndie"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieMedic" Caption="corpsman's hardsuit"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitSyndieCommander" Caption="commander's hardsuit"/>
+  </Box>
+
+  Якщо вас обрали Медиком чи Командиром, але ви не почуваєтеся впевнено, один із ваших товаришів по команді може перебрати ваші обов'язки на себе.
+
+  ## Диск
+
+  Кожен оперативник починає з [color=cyan]пінпоінтером[/color], який слід увімкнути та завжди тримати при собі. Він постійно вказуватиме на [color=cyan]диск ядерної авторизації.[/color]
+  Диск належить [color=yellow]Капітану[/color], який майже завжди носить його із собою. Йдіть за напрямком стрілки пінпоінтера до диска і [italic]зробіть усе можливе, щоб здобути його[/italic].
+
+  <Box>
+    <GuideEntityEmbed Entity="PinpointerNuclear"/>
+    <GuideEntityEmbed Entity="NukeDisk"/>
+  </Box>
+
+  ## Підготовка
+  Кожен член вашого загону отримав [color=cyan]аплінк[/color] для купівлі всього необхідного для місії, подібного до [textlink="зрадників." link="Traitors"]
+
+  <Box>
+    <GuideEntityEmbed Entity="BaseUplinkRadio40TC" Caption="your uplink"/>
+  </Box>
+
+  Ви можете купувати таке ж спорядження, як і зрадники, але вам доступне якісніше екіпірування та більше телекристалів на витрати.
+  <Box>
+    <GuideEntityEmbed Entity="WeaponLightMachineGunL6" Caption="Weaponry"/>
+    <GuideEntityEmbed Entity="MagazineLightRifleBox" State="icon" Caption="Ammo"/>
+    <GuideEntityEmbed Entity="C4" Caption="Explosives"/>
+    <GuideEntityEmbed Entity="ClothingOuterHardsuitJuggernaut" Caption="Wearables"/>
+    <GuideEntityEmbed Entity="Stimpack" Caption="Chemicals"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ChameleonProjector" Caption="Deception"/>
+    <GuideEntityEmbed Entity="Emag" Caption="Disruption"/>
+    <GuideEntityEmbed Entity="MacroBombImplanter" Caption="Implants"/>
+    <GuideEntityEmbed Entity="BorgChassisSyndicateAssault" Caption="Allies"/>
+    <GuideEntityEmbed Entity="ClothingEyesGlassesOutlawGlasses" Caption="Pointless"/>
+  </Box>
+
+  Вам також доведеться вирішити, чи хочете ви [color=red]оголосити війну[/color]. Це рішення дає кожному члену вашої команди [bold]по 40 додаткових телекристалів[/bold].
+  Однак екіпаж одразу дізнається про вашу присутність і матиме купу часу, щоб підготуватися до вашого прибуття.
+
+  [bold]Командир[/bold] — єдиний, хто може оголосити війну. Робіть свій вибір швидше, [italic]час дії пропозиції обмежений![/italic]
+  <Box>
+    <GuideEntityEmbed Entity="NukeOpsDeclarationOfWar"/>
+  </Box>
+
+  ## Шлях до станції
+  План є, спорядження є. Тепер до справи.
+
+  Вирушайте разом з іншими оперативниками до свого [color=cyan]шатла[/color].
+  На борту ви знайдете папку з [color=cyan]кодом ядерної авторизації[/color].
+  Запам'ятайте код, а потім [bold]перевірте, чи збігається ID ядерної боєголовки з тією, що на вашому шатлі.[/bold] Якщо ні, то ви активуватимете боєголовку станції.
+
+  Шатл обладнаний [color=cyan]IFF-комп'ютером[/color] (розпізнавання «свій-чужий»). Він дозволяє ховатися від інших кораблів та сканерів маси, коли функцію [italic]Show IFF[/italic] вимкнено.
+
+  Коли всі будуть готові, здійснюйте надсвітловий перехід (FTL) до станції та летіть до неї, використовуючи [color=cyan]джетпаки[/color] на шатлі. Не забудьте код, ваші пінпоінтери та саму боєголовку, якщо забираєте її з собою.
+
+  <Box>
+    <GuideEntityEmbed Entity="BoxFolderNuclearCodes"/>
+    <GuideEntityEmbed Entity="ComputerIFFSyndicate"/>
+    <GuideEntityEmbed Entity="JetpackBlack"/>
+  </Box>
+
+  ## Боєголовка та процедура активації
+  Ви зайшли так далеко. Закінчіть справу.
+
+  - Здобудьте [bold]диск ядерної авторизації[/bold] та вставте його в боєголовку.
+  - Введіть [bold]код ядерної авторизації[/bold] та натисніть «[bold]E[/bold]» на клавіатурі для підтвердження (Enter).
+  - [bold]Прикріпіть[/bold] (anchor) боєголовку до міцної підлоги всередині станції.
+  - [bold]Щоб запустити послідовність детонації, натисніть [color=#EB2D3A]ARM[/color][/bold]. Через 300 секунд боєголовка вибухне.
+  - [bold]Захищайте боєголовку від співробітників NT та кіборгів[/bold], навіть ціною власного життя! Умови місії [italic]не передбачають вашого повернення[/italic].
+
+  Щоб [bold]знешкодити[/bold] боєголовку, потрібно 30 секунд. Повторна активація можлива, але шанси на успіх місії падають, якщо ви дозволите перервати зворотний відлік.
+  Якщо боєголовку активують знову, таймер продовжиться з моменту зупинки.
+
+  <Box>
+    <GuideEntityEmbed Entity="NuclearBomb" Caption="Термоядерна вибухівка"/>
+  </Box>
+
+  ## Умови перемоги
+
+  [color=#00ff00]Переможець[/color] раунду оголошується на фінальному екрані разом із масштабом його перемоги.
+
+  [bold][color=red]Цілковита перемога Синдикату![/color][/bold]
+  - Боєголовка детонує на станції.
+  - Екіпаж тікає на евакуаційному шатлі, але боєголовка залишається активованою.
+  - Активовану боєголовку доставлено до Центрального командування на евакуаційному шатлі.
+
+  [bold][color=red]Часткова перемога Синдикату[/color][/bold]
+  - Принаймні один оперативник виживає, а екіпаж тікає, залишивши диск.
+
+  [bold][color=#999999]Нейтральний результат[/color][/bold]
+  - Боєголовка детонує за межами станції.
+
+  [bold][color=green]Часткова перемога екіпажу[/color][/bold]
+  - Екіпаж тікає на евакуаційному шатлі разом із диском, а частина оперативників гине.
+
+  [bold][color=green]Цілковита перемога екіпажу![/color][/bold]
+  - Усі оперативники ліквідовані.
+  - Екіпаж підриває аванпост ядерних оперативників за допомогою боєголовки.
+</Document>

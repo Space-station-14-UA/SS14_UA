@@ -260,9 +260,6 @@
       types:
         Heat: 0.4    #типу перегрів бо у космосі вакум та неможливо охолоджуватися нормально + у ІПШ й так більший дамаг від опіків
         Blunt: 0.2    #гідравлика чи пневматика нелюбить велику різницю у тиску
-  - type: Temperature
-    currentTemperature: 313.15
-    specificHeat: 46
   - type: Flammable
     damage:
       types:
@@ -331,6 +328,7 @@
   id: OrganIPCInternal
   abstract: true
   components:
+  - type: ChildOrgan
   - type: Sprite
     sprite: _Sich/Mobs/Species/IPC/organs.rsi
 

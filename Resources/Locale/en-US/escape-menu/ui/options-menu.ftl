@@ -107,6 +107,7 @@ ui-options-ambient-occlusion = Увімкнути Ambient Occlusion
 ui-options-fps-counter = Показати лічильник FPS
 ui-options-vp-width = Ширина вікна перегляду:
 ui-options-hud-layout = Макет HUD:
+ui-options-sharpness = Зернистість:
 
 ## Controls menu
 

@@ -13,9 +13,11 @@
   - type: Magic
   - type: Action
     useDelay: 20
-    icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: jaunt
+  - type: Sprite
+    sprite: Objects/Magic/magicactions.rsi
+    layers:
+    - state: "jaunt"
+      map: ["enum.ActionVisuals.Icon"]
   - type: InstantAction
     event: !type:PolymorphActionEvent
       protoId: PoltergeistJaunt

@@ -20,7 +20,13 @@ public sealed partial class SpeechComponent
     public float MaxDelayBetweenWords = 0.25f;
 
     [DataField]
-    public float PunctuationDelay = 0.2f;
+    public float PunctuationDelay = 0.25f;
+
+    [DataField]
+    public bool UseSoundLimitOverride = false;
+
+    [DataField]
+    public int SoundLimitOverride = 1;
 }
 
 public struct SpeechSoundData

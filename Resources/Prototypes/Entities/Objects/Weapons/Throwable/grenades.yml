@@ -284,9 +284,9 @@
     price: 1000
 
 - type: entity
+  parent: [ VolatileGrenadeBase, TimerGrenadeBase ]
   name: ядерна граната
   description: Будь ласка, не кидайте її! Подумайте про дітей!!!
-  parent: TimerGrenadeBase
   id: NuclearGrenade
   components:
   - type: Sprite
@@ -301,26 +301,16 @@
     totalIntensity: 20000 # ~15 tile radius.
     intensitySlope: 5
     maxIntensity: 50
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:TriggerBehavior
-        keyOut: timer # immediately explode
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Appearance
   - type: TimerTriggerVisuals
     primingSound:
       path: /Audio/Effects/countdown.ogg
 
 - type: entity
+  parent: [ BaseItem, BaseItemDestructible ]
+  id: ModularGrenade
   name: модульна граната
   description: Корпус від гранати. Для її роботоспособності також потрібен пусковий механізм та заряд.
-  parent: BaseItem
-  id: ModularGrenade
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/modular.rsi
@@ -336,9 +326,6 @@
   - type: Construction
     graph: ModularGrenadeGraph
     node: emptyCase
-  - type: Damageable
-  - type: Injurable
-    damageContainer: Inorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -346,8 +333,6 @@
         damage: 50
       behaviors:
       - !type:TriggerBehavior
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:

@@ -1,90 +1,116 @@
 - type: entity
-  parent: CratePlastic
-  id: CrateServiceJanitorialSupplies
-  name: ящик з прибиральницьким приладдям
-  description: Боріться з брудом та сміттям за допомогою набору "Базові Засоби Прибиральника Нанотрейзен™"! Містить три відра, знаки "мокра підлоги" та чинади. Також є швабра, спрей з очищувачем, дротяна щітка та сміттєвий пакет. "НЕ ХОДИТИ ПО ПОМИТОМУ!!!"
+  parent: CrateFreezer
+  id: CrateServiceBarSupply
+  name: bartending supplies crate
+  description: Extra bar supplies, in case the clown was allowed in the bar unsupervised.
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
-        - !type:NestedSelector
-          tableId: AllSoapsTable
-        - id: MopItem
-        - id: MopBucketCubeWrapped
-        - id: Bucket
+        - id: DrinkGlass
+          amount: 5
+        - id: DrinkShotGlass
+          amount: 5
+        - id: DrinkShaker
+          amount: 2
+        - id: DrinkOrangeJuice
+          amount: 2
+        - id: DrinkLimeJuice
+          amount: 2
+        - id: DrinkTomatoJuice
+          amount: 2
+        - id: DrinkWaterBottleFull
+          amount: 2
+        - id: DrinkSodaWaterCan
+          amount: 2
+        - id: DrinkCreamCarton
+          amount: 2
+
+- type: entity
+  parent: CrateFreezer
+  id: CrateServiceCooking
+  name: kitchen supplies crate
+  description: Extra kitchen supplies, in case the botanists are absent.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ReagentContainerFlour
           amount: 3
-        - id: WetFloorSign
+        - id: ReagentContainerRice
+          amount: 3
+        - id: FoodBoxCloth
+        - id: DrinkMilkCarton
+          amount: 4
+        - id: DrinkSoyMilkCarton
           amount: 2
-        - id: SprayBottleSpaceCleaner
+        - id: ReagentContainerSugar
           amount: 2
-        - id: TrashBag
+        - id: FoodCondimentPacketSalt
+          amount: 3
+        - id: FoodCondimentBottleEnzyme
           amount: 2
-        - id: Plunger
+        - id: FoodContainerEgg
           amount: 2
-        - id: BoxCleanerGrenades
-        - id: WireBrush
 
 - type: entity
   parent: CratePlastic
-  id: CrateServiceCleanerGrenades
-  name: оптовий ящик з чинадами
-  description: Містить у собі дві коробки чинад (чисто-гранати), для глибоко в'їдених плям. "Це вже якийсь прибиральницький терор."
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: BoxCleanerGrenades
-        amount: 2
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateServiceReplacementLights
-  name: ящик з лампочками
-  description: Нехай світло штучної Сатії осяє цю станцію! Або, принаймні, світло дванадцяти трубчасти ламп та стількох ж лампочок. Не давайте це ніанам, не впевнившись, що вони емоційно стабільні.
+  id: CrateServiceDinnerware
+  name: kitchen dinnerware crate
+  description: Extra kitchen supplies, in case the clown was allowed in the cafeteria unsupervised.
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
-        - id: BoxLighttube
-        - id: BoxLightbulb
+        - id: FoodBowlBig
+          amount: 4
+        - id: FoodPlate
+          amount: 4
+        - id: FoodPlateSmall
+          amount: 4
+        - id: FoodKebabSkewer
+          amount: 4
+        - id: KitchenKnife
+        - id: DrinkGlass
+          amount: 4
+        - id: FoodPlateMuffinTin
+          amount: 4
+        - id: FoodPlateTin
+          amount: 4
+        - id: BoxUtensil
 
 - type: entity
-  parent: CrateGenericSteel
-  id: CrateServiceColorfulLights
-  name: ящик з різнокольоровими лампочками
-  description: Це не вечірка, поки на ній ще щось видно, а вуха не болять. Не давайте це різнокольоровим ніанам, не впевнившись, що вони емоційно стабільні.
+  parent: CrateFreezer
+  id: CrateServiceGetMore
+  name: Getmore Bakemore crate
+  description: Getmore branded snacks and baking supplies for the creative chef, all without the need of emptying your station's Getmore machines!
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
-        - id: BoxLightbulbColorfulMixed
-        - id: BoxLighttubeColorfulMixed
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateServiceHolidayLights
-  name: ящик з святковими лампочками
-  description: "\"Свято наближається - Свято наближається!\" Прикрасьте станцію комбінацією червоно-зеленого світла спеціально напередодні свята! Не давайте це святковим ніанам, не впевнившись, що вони емоційно стабільні."
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: BoxLighttubeHoliday
-        amount: 2
-
-- type: entity
-  parent: CrateGenericSteel
-  id: CrateMousetrapBoxes
-  name: ящик з мишоловками
-  description: Мишоловки, на випадок, коли навала пацюків атакує сервіс. Використовуйте економно... Або ні.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage:
-        id: BoxMousetrap
+        - id: FoodSnackRaisins
+          amount: 6
+        - id: FoodSnackChocolate
+          amount: 6
+        - id: FoodSnackPistachios
+          amount: 2
+        - id: ReagentContainerFlour
+          amount: 3
+        - id: ReagentContainerSugar
+          amount: 2
+        - id: FoodCondimentPacketSalt
+          amount: 3
+        - id: DrinkMilkCarton
+          amount: 2
+        - id: DrinkSoyMilkCarton
+          amount: 1
+        - id: FoodContainerEgg
+          amount: 2
+        - id: FoodBoxCloth
 
 - type: entity
   parent: CrateGenericSteel
@@ -327,22 +353,6 @@
       entity_storage:
         id: BoxCardboard
         amount: 6
-
-- type: entity
-  parent: CratePlastic
-  id: CrateJanitorBiosuit
-  name: ящик з костюмами біозахисту прибиральників
-  description: Містить у собі 2 костюми біологічного захисту, щоб жодна хвороба чи калюжа кислоти не заваодила прибиранню станції.
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:AllSelector
-        children:
-        - !type:NestedSelector
-          tableId: FillBiohazardGearJanitor
-          rolls: 2
-        - id: ClothingMaskSterile
-          amount: 2
 
 - type: entity
   parent: CrateTrashCart

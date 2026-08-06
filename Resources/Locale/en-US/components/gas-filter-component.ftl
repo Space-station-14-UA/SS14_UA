@@ -6,4 +6,4 @@ comp-gas-filter-ui-filter-gas-select = Виберіть газ для фільт
 comp-gas-filter-ui-filter-gas-confirm = Вибрати газ
 comp-gas-filter-ui-filter-gas-none = Нічого
 
-comp-gas-filter-ui-needs-anchor = Прикрутіть спочатку!
+comp-gas-filter-filtered-gas-examine = Він фільтрує [color={$statusColor}]{$filteredGas}[/color].

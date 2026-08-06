@@ -26,9 +26,9 @@
   description: Колода карт таро Охоронця, здатна прив'язати особистого охоронця до вашого тіла.
   components:
   - type: Sprite
-    sprite: Objects/Misc/Lights/lamp.rsi
+    sprite: Objects/Magic/deck.rsi
     layers:
-      - state: lamp
+      - state: deck
   - type: GuardianCreator
     guardianProto: MobIfritGuardian
     emptyPopup: guardian-deck-invalid-creation
