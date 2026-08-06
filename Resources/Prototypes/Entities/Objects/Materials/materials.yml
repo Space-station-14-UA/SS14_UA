@@ -523,6 +523,7 @@
   description: Павучий матеріал.
   suffix: Повний
   components:
+  - type: Material
   - type: PhysicalComposition
     materialComposition:
       WebSilk: 100

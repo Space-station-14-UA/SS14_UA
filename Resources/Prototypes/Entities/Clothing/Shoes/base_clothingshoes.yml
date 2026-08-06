@@ -83,10 +83,6 @@
 
 - type: entity
   abstract: true
-  parent: ClothingShoesBaseButcherable
+  parent: [ ClothingShoesBaseButcherable, TemperatureProtectionMinimal ]
   id: ClothingShoesBaseWinterBoots
   description: М'які та теплі чоботи, що допоможуть пережити навіть найхолоднішу зиму.
-  components:
-  - type: TemperatureProtection
-    heatingCoefficient: 1.025
-    coolingCoefficient: 0.5

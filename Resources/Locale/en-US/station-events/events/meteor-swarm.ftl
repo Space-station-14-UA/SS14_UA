@@ -7,4 +7,3 @@ station-event-meteor-cow-start-announcement = Станція стикаєтьс�
 station-event-meteor-clown-start-announcement = Станція стикається з невизначеним скупченням уламків. ГОНК! Негайно евакуюйте сховище сміх газу.  
 station-event-meteor-potato-start-announcement = Станція стикається з невизначеним скупченням уламків. Виявлено високий вміст крохмалю.  
 station-event-fun-swarm-start-announcement = Станція стикається з невизначеним скупченням уламків. Будь ласка, панікуйте відповідно.
-station-event-bio-swarm-start-announcement = Виявлено метеорити, що рухаються курсом зіткнення зі станцією. Зафіксовано біологічну активність.

@@ -1,6 +1,6 @@
 - type: entity
   id: ChemMaster
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: ХімМастер 4000
   description: Хімічний маніпулятор промислового класу з можливістю виробництва пігулок.
   placement:
@@ -41,17 +41,12 @@
         - MachineLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: !type:DamageTrigger
+        damage: 175
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: ActivatableUI
     key: enum.ChemMasterUiKey.Key
   - type: ActivatableUIRequiresPower

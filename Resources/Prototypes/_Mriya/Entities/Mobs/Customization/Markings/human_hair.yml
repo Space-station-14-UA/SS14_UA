@@ -1,0 +1,14 @@
+﻿- type: marking
+  id: MRHumanHairTopknotBox
+  bodyPart: Hair
+  coloring:
+    layers:
+      topknotbox_headband:
+        type:
+          !type:SimpleColoring
+          color: "#C3C3C3"
+  sprites:
+  - sprite: _Mriya/Mobs/Customization/human_hair.rsi
+    state: topknotbox_basehair
+  - sprite: _Mriya/Mobs/Customization/human_hair.rsi
+    state: topknotbox_headband

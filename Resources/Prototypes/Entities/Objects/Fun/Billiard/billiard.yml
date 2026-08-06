@@ -1,0 +1,419 @@
+- type: entity
+  id: TableBilliard
+  parent: BaseStructure
+  name: більярдний стіл
+  description: Стандартний більярдний стіл із зеленим сукном. Ідеальне місце для відпочинку після зміни.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/billiard_table.rsi
+    state: table
+  - type: Physics
+    bodyType: Static
+  - type: Construction
+    graph: TableBilliard
+    node: tableBilliard
+  - type: Fixtures
+    fixtures:      
+      border_north:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.34, 0.62, 0.34, 0.72  "
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+        
+      border_south:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.34, -0.66, 0.34, -0.75"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+        
+      border_west_top:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.50, 0.06, -0.4, 0.56"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+
+      border_west_bottom:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.50, -0.09, -0.4, -0.59"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+        
+      border_east_top:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.40, 0.06, 0.50, 0.56"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+        
+      border_east_bottom:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.4, -0.09, 0.50, -0.59"
+        density: 100
+        mask: [ MachineMask, DoorPassable ]
+        layer: [ TableLayer ]
+        friction: 0.0001
+      
+      pocket_nw:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: -0.44,0.66
+        hard: false
+        mask: [ DoorPassable ]
+        
+      pocket_ne:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: 0.44,0.66
+        hard: false
+        mask: [ DoorPassable ]
+        
+      pocket_sw:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: -0.44,-0.69
+        hard: false
+        mask: [ DoorPassable ]
+        
+      pocket_se:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: 0.44,-0.69
+        hard: false
+        mask: [ DoorPassable ]
+        
+      pocket_w:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: -0.466,-0.01
+        hard: false
+        mask: [ DoorPassable ]
+        
+      pocket_e:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.06
+          position: 0.46,-0.01
+        hard: false
+        mask: [ DoorPassable ]
+  - type: Damageable
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Storage
+    grid:
+    - 0,0,4,3
+    maxItemSize: Small
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: BilliardTable
+  - type: Anchorable
+  - type: Rotatable
+
+- type: entity
+  id: BilliardBall
+  parent: BaseItem
+  name: більярдна куля
+  description: Важка і гладка куля для гри в більярд.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/billiard_ball.rsi
+    layers:
+    - state: ball
+      map: [ "enum.BilliardVisualLayers.Base" ]
+    - state: ball_second
+      map: [ "enum.BilliardVisualLayers.Stripe" ]
+      visible: false
+    scale: 0.08,0.08
+  - type: Appearance
+  - type: Item
+    size: Tiny
+  - type: TileFrictionModifier
+    modifier: 0.2
+  - type: Physics
+    bodyType: Dynamic
+    linearDamping: 1.0
+    angularDamping: 1.5
+    sleepingAllowed: false
+  - type: Damageable
+  - type: BilliardBall
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.035
+        density: 5
+        restitution: 0.45
+        friction: 0.01
+        mask:
+        - DoorPassable
+        - Impassable
+        layer:
+        - DoorPassable
+
+- type: entity
+  parent: BaseItem
+  id: BilliardCue
+  name: більярдний кий
+  description: Більярдний кий, щоб грати в більярд
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/billiard_cue.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -180
+    damage:
+        types:
+          Blunt: 5
+          Structural: 1
+  - type: BilliardCue
+  - type: MeleeThrowOnHit
+    speed: 5
+    distance: 0.000000001
+    cameraRecoilOnThrown: false
+
+- type: entity
+  id: SpawnBilliardTriangle
+  parent: BaseItem
+  name: спавнер піраміди більярдних куль
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Billiards/billiard_ball.rsi
+    state: ball_triangle
+    scale: 1,1
+    drawdepth: Effects
+  - type: Construction
+    graph: BilliardTriangleGraph
+    node: triangle
+  - type: BilliardSpawner
+    ballPrototype: BilliardBall
+    ballSpacing: 0.082
+    rows: 5
+    gameType: Pyramid
+
+- type: entity
+  id: SpawnBilliardAmericanPool
+  parent: SpawnBilliardTriangle
+  name: спавнер піраміди американського більярду
+  components:
+  - type: Construction
+    graph: BilliardTriangleGraph
+    node: triangle
+  - type: BilliardSpawner
+    gameType: AmericanPool
+
+- type: constructionGraph
+  id: BilliardTriangleGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: triangle
+      steps:
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+  - node: triangle
+    entity: SpawnBilliardTriangle
+
+- type: constructionGraph
+  id: BilliardAmericanPoolGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: AmericanPool
+      steps:
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+      - component: BilliardBall
+        doAfter: 0.1
+  - node: AmericanPool
+    entity: SpawnBilliardAmericanPool
+
+- type: construction
+  id: SpawnBilliardTriangle
+  name: construction-billiard-pyramid
+  description: construction-billiard-pyramid-description
+  graph: BilliardTriangleGraph
+  startNode: start
+  targetNode: triangle
+  category: Fun
+  placementMode: PlaceFree
+
+- type: construction
+  id: SpawnBilliardAmericanPool
+  name: construction-billiard-american
+  description: construction-billiard-american-description
+  graph: BilliardAmericanPoolGraph
+  startNode: start
+  targetNode: AmericanPool
+  category: Fun
+  placementMode: PlaceFree
+
+- type: entity
+  parent: BaseFlatpack
+  id: BilliardTableFlatpack
+  name: Більярд флетпак
+  description: Флетпак для конструювання столу для більярду. Використайте мультитул.
+  components:
+  - type: Sprite
+    layers:
+    - state: billiard-table
+  - type: Flatpack
+    entity: TableBilliard
+  - type: StaticPrice
+    price: 600
+
+- type: constructionGraph
+  id: TableBilliard
+  start: start
+  graph:
+    - node: start
+    - node: tableBilliard
+      entity: TableBilliard
+      edges:
+        - to: start
+          conditions:
+            - !type:ContainerEmpty
+             container: "storagebase"
+             examineText: "Сховище не порожнє!"
+             guideStep: "Спорожніть схвоище столу!"
+          completed:
+            - !type:SpawnPrototype
+              prototype: BilliardTableFlatpack
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 3
+
+- type: entity
+  name: коробка для більярду
+  parent: BoxCardboard
+  id: BoxBilliardBalls
+  description: Коробка для більярдних куль
+  components:
+  - type: Sprite
+    layers:
+      - state: box
+      - state: balls
+  - type: Storage
+    grid:
+    - 0,0,3,3
+    whitelist: # TODO cardboard boxes shouldn't have whitelisting
+      components:
+      - BilliardBall
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: BilliardBall
+          amount: 16
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateBilliardComplect
+  name: ящик з комплектом для більярду
+  description: Флетпак більярдного столу, коробка метаморфозних куль та два кия - все що треба для гарного вечора!
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxBilliardBalls
+        - id: BilliardTableFlatpack
+        - id: BilliardCue
+          amount: 2
+
+- type: cargoProduct
+  id: CrateBilliardComplect
+  icon:
+    sprite: Objects/Fun/Billiards/billiard_table.rsi
+    state: table
+  product: CrateBilliardComplect
+  cost: 5000
+  category: cargoproduct-category-name-fun
+  group: market

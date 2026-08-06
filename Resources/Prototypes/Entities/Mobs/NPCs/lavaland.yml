@@ -1,7 +1,7 @@
 ﻿- type: entity
   name: спостерігач
   id: MobWatcherBase
-  parent: [ SimpleSpaceMobBase, FlyingMobBase, BaseSlicingRefinable ]
+  parent: [ SimpleSpaceMobBase, FlyingMobBase, BaseSlicingRefinable, BaseMobDestructible ]
   abstract: true
   description: Він ніби дивиться крізь тебе.
   components:

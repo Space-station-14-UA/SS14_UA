@@ -55,7 +55,7 @@ trait-french-name = Французький акцент
 trait-french-desc = Здається, у вашому акценті є певна «je ne sais quoi».
 
 trait-spanish-name = Іспанський акцент
-trait-spanish-desc = Hola señor, donde esta la biblioteca.
+trait-spanish-desc = Hola señor, ¿dónde está la biblioteca?
 
 trait-scottish-name = Шотландський акцент
 trait-scottish-desc = Ви розмовляєте, як справжній шотландець!

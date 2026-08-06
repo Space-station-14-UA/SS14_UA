@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Client.DisplacementMap;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
-using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid;
 using Robust.Client.GameObjects;
@@ -235,11 +234,18 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
                         (target, target.Comp),
                         // Similar logic as above, but this makes the displacement layer go below the
                         // original sprite. So it should be all the displacements, then all the sprite layers on top
-                        index + i + 1,
+                        index + i + numDisplacements + 1, // Mriya: layers fix
                         layerId,
                         out _
                     );
                     numDisplacements++;
+                }
+
+                if (proto.Shaders is not null &&
+                    proto.Shaders.TryGetValue(rsi.RsiState, out var shader))
+                {
+                    // TODO: fix this when LayerSetShader is moved out of component
+                    target.Comp.LayerSetShader(index + i + 1 + numDisplacements, shader);
                 }
             }
 

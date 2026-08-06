@@ -1,6 +1,6 @@
 - type: entity
   id: MachineArtifactAnalyzer
-  parent: [ BaseMachinePowered, SmallConstructibleMachine ]
+  parent: [ BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible ]
   name: аналізатор артефактів
   description: Платформа, здатна виконувати аналіз різних видів артефактів.
   components:
@@ -45,6 +45,14 @@
         - LowImpassable
         - BulletImpassable
         hard: False
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
   - type: Transform
     anchored: true
   - type: ApcPowerReceiver
@@ -81,7 +89,7 @@
 
 - type: entity
   id: MachineArtifactCrusher
-  parent: [ ConstructibleMachine, BaseMachinePowered ]
+  parent: [ ConstructibleMachine, BaseMachinePowered, BaseConstructibleMachineDestructible ]
   name: подрібнювач артефактів
   description: Краще не допускати, щоб ваші пальці застрягли в цій штуці...
   components:
@@ -121,6 +129,17 @@
         - HighImpassable
         layer:
         - HighImpassable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:EmptyContainersBehaviour
+        containers:
+        - entity_storage
   - type: EntityStorage
     capacity: 1
     whitelist:

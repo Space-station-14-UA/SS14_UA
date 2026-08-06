@@ -44,7 +44,7 @@
 [color=#a4885c]Ключі шифрування[/color] дають вам доступ до відповідного каналу.
   
 Розглядаючи нашу інженерну гарнітуру раніше, ми бачимо [color=#32cd32]Загальну[/color] та [color=#f37746]Інженерну[/color], тому що інженерна гарнітура починається з цих [color=#a4885c]ключів шифрування[/color].
-  
+
 <Box>
   <GuideEntityEmbed Entity="EncryptionKeyCommon"/>
   <GuideEntityEmbed Entity="EncryptionKeyEngineering"/>

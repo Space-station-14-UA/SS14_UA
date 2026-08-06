@@ -7,23 +7,13 @@
 # Large Plate
 
 - type: entity
-  name: широка тарілка
+  abstract: true
   parent: BaseItem
-  id: FoodPlate
-  description: Велика тарілка, відмінно підходить для хліба.
+  id: BaseFoodPlate
   components:
-  - type: Sprite
-    sprite: Objects/Consumable/Food/plates.rsi
-    state: plate
   - type: Item
     shape:
     - 0,0,1,0
-    storedOffset: 0,-6
-    inhandVisuals:
-      left:
-      - state: plate-inhand-left
-      right:
-      - state: plate-inhand-right
   - type: DamageOnLand
     damage:
       types:
@@ -46,25 +36,48 @@
           collection: GlassBreak
           params:
             volume: -8
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          FoodPlateTrash:
-            min: 1
-            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Tag
     tags:
     - Trash
-  - type: PhysicalComposition
-    materialComposition:
-      Glass: 50
   - type: SpaceGarbage
 
 - type: entity
-  name: розбита тарілка
+  parent: BaseFoodPlate
+  id: FoodPlate
+  name: велика тарілка
+  description: Велика тарілка, відмінно підходить для хліба.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/plates.rsi
+    state: plate
+  - type: Item
+    storedOffset: 0,-6
+    inhandVisuals:
+      left:
+      - state: plate-inhand-left
+      right:
+      - state: plate-inhand-right
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FoodPlateTrash:
+            min: 1
+            max: 1
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 50
+
+- type: entity
   parent: BaseItem
   id: FoodPlateTrash
+  name: розбита тарілка
   description: Розбита тарілка. Марно.
   components:
   - type: Sprite
@@ -82,9 +95,9 @@
 # Small Plate
 
 - type: entity
-  name: маленька тарілка
-  parent: FoodPlate
+  parent: BaseFoodPlate
   id: FoodPlateSmall
+  name: маленька тарілка
   description: Маленька тарілочка. Делікатна.
   components:
   - type: Sprite
@@ -97,25 +110,17 @@
       - state: plate-inhand-left
       right:
       - state: plate-inhand-right
-# Needs the full thing because inherting is dumb sometimes.
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
         damage: 5
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-          params:
-            volume: -8
       - !type:SpawnEntitiesBehavior
         spawn:
           FoodPlateSmallTrash:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: PhysicalComposition
     materialComposition:
       Glass: 25
@@ -133,7 +138,7 @@
 # Plastic Plate
 
 - type: entity
-  parent: BaseItem
+  parent: BaseFoodPlate
   id: FoodPlatePlastic
   name: велика пластикова тарілка
   description: Велика синя пластикова тарілка, чудово підходить для святкового торта.
@@ -142,8 +147,6 @@
     sprite: Objects/Consumable/Food/plates.rsi
     state: plate-plastic
   - type: Item
-    shape:
-    - 0,0,1,0
     storedOffset: 0,-6
     inhandVisuals:
       left:
@@ -155,7 +158,7 @@
     - Trash
 
 - type: entity
-  parent: BaseItem
+  parent: BaseFoodPlate
   id: FoodPlateSmallPlastic
   name: мала пластикова тарілочка
   description: Блакитна пластикова тарілочка, ідеально підходить для шматочків святкового торта.
@@ -164,8 +167,6 @@
     sprite: Objects/Consumable/Food/plates.rsi
     state: plate-small-plastic
   - type: Item
-    shape:
-    - 0,0,1,0
     storedOffset: 0,-3
     inhandVisuals:
       left:
@@ -179,9 +180,9 @@
 # Pie Tin
 
 - type: entity
-  name: форма для пирога
   parent: BaseItem
   id: FoodPlateTin
+  name: форма для пирога
   description: Дешева фольгована форма для пирогів.
   components:
   - type: Sprite

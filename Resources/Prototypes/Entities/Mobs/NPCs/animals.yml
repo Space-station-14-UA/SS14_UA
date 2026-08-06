@@ -199,7 +199,7 @@
 
 - type: entity
   name: курка
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobChicken
   description: "З'явилася раніше яйця і є динозавром!"
   components:
@@ -348,17 +348,12 @@
     lifetime: 21
 
 - type: entity
-  name: тарган
+  abstract: true
   parent: [SolutionFood, SolutionTiny, SimpleMobBase, BaseSlicingRefinable, MobNightVision]
-  id: MobCockroach
-  description: Ця станція просто кишить жучками.
+  id: BaseCockroach
   components:
   - type: Sprite
     drawdepth: SmallMobs
-    sprite: Mobs/Animals/cockroach.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: cockroach
   - type: Item
     size: Tiny
   - type: HTN
@@ -385,14 +380,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 5
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: cockroach
-      Critical:
-        Base: cockroach_dead
-      Dead:
-        Base: cockroach_dead
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -422,15 +409,6 @@
     tags:
     - Trash
     - VimPilot
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Blunt
-        damage: 10
-      behaviors:
-      - !type:GibBehavior
-        recursive: false
   - type: NonSpreaderZombie
   - type: StepTrigger
     requiredTriggeredSpeed: 1
@@ -449,8 +427,37 @@
         Piercing: 0
 
 - type: entity
+  parent: BaseCockroach
+  id: MobCockroach
+  name: тарган
+  description: Ця станція просто кишить жучками.
+  components:
+  - type: Sprite
+    sprite: Mobs/Animals/cockroach.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cockroach
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cockroach
+      Critical:
+        Base: cockroach_dead
+      Dead:
+        Base: cockroach_dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 10
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+
+- type: entity
   name: глоктарган
-  parent: [MobCockroach, BaseSlicingRefinable]
+  parent: MobCockroach
   suffix: Admeme
   id: MobGlockroach
   description: Ця станція просто кишить бу- О, БОЖЕ, У ЦЬОГО ТАРГАНА ЗБРОЯ!!!
@@ -476,13 +483,10 @@
   - type: NpcFactionMember
     factions:
     - SimpleHostile
-  - type: ToolRefinable
-    refineResult:
-    - id: FoodMeatSlime
 
 - type: entity
   name: тарганоміль
-  parent: [ BaseMobMothroach, MobCockroach, BaseSlicingRefinable ]
+  parent: [ BaseMobMothroach, BaseCockroach, BaseSlicingRefinable ]
   id: MobMothroach
   description: Це чарівний побічний продукт численних спроб генетичного змішування молей з тарганами.
   components:
@@ -656,7 +660,7 @@
 
 - type: entity
   name: качка кряква #Quack
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobDuckMallard
   description: "Чарівна качка крижень, пухнаста і м'яка!"
   components:
@@ -859,7 +863,7 @@
 
 - type: entity
   name: корова
-  parent: [ BaseMobRuminant, SimpleMobBase, BaseSlicingRefinable ]
+  parent: [ BaseMobRuminant, SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible ]
   id: MobCow
   description: Муу.
   components:
@@ -950,7 +954,7 @@
 
 - type: entity
   name: краб
-  parent: [ SimpleMobBase, BaseMobHemocyanin, BaseSlicingRefinable ]
+  parent: [ SimpleMobBase, BaseMobHemocyanin, BaseSlicingRefinable, BaseMobDestructible ]
   id: MobCrab
   description: Існує народна легенда, що він вбиває клешнями космонавтів за неприємні зауваження. Будьте ввічливі та толерантні заради власної безпеки.
   components:
@@ -1018,7 +1022,7 @@
 
 - type: entity
   name: коза
-  parent: [ BaseMobRuminant, SimpleMobBase, BaseSlicingRefinable ]
+  parent: [ BaseMobRuminant, SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible ]
   id: MobGoat
   description: Її хребет складається з довгих гострих сегментів, не дивно, що вона така сварлива.
   components:
@@ -1286,7 +1290,7 @@
         Quantity: 25
 
 - type: entity
-  parent: [ MobSheepBase, SimpleMobBase ]
+  parent: [ MobSheepBase, SimpleMobBase, BaseMobDestructible ]
   id: MobSheep
   name: вівця
   description: Чарівна генно-модифікована хімічна фабрика, що виробляє молоко та бавовну.
@@ -1323,7 +1327,7 @@
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
   name: гусак
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobGoose
   description: Його шлунок і розум - загадка, непідвладна людському розумінню.
   components:
@@ -1374,7 +1378,7 @@
 
 - type: entity
   name: горила
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, BaseMobDestructible ]
   id: MobGorilla
   description: "Б'є, реве, виглядає круто. Не підходьте до них близько."
   components:
@@ -1459,6 +1463,7 @@
   - MobCombat
   - StripableInventoryBase
   - BaseSlicingRefinable
+  - BaseMobDestructible
   id: MobKangaroo
   description: Великий сумчастий травоїдний ссавець. Має потужні задні ноги, з нігтями, що нагадують довгі кігті.
   components:
@@ -1550,7 +1555,7 @@
 - type: entity
   name: генетичний пращур
   id: MobBaseAncestor
-  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase]
+  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase, BaseMobDestructible]
   description: Генетичний двоногий предок... Е-е... чогось. Так, на станції точно є щось, що походить від того, що б це не було.
   abstract: true
   components:
@@ -1796,9 +1801,6 @@
       types:
         Slash: 5
         Piercing: 4
-  - type: Temperature
-    currentTemperature: 310.15
-    specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 360
     coldDamageThreshold: 285
@@ -2217,7 +2219,7 @@
 
 - type: entity
   name: ящірка #Weh
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobLizard
   description: Нешкідливий дракон.
   components:
@@ -2274,7 +2276,7 @@
 
 - type: entity
   name: слимак
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobSlug
   description: І вони назвали це ящіркою?
   components:
@@ -2395,7 +2397,7 @@
 
 # Would be cool to have some functionality for the parrot to be able to sit on stuff
 - type: entity
-  parent: [ SimpleMobBase, FlyingMobBase, BaseSlicingRefinable ]
+  parent: [ SimpleMobBase, FlyingMobBase, BaseSlicingRefinable, BaseMobDestructible ]
   id: MobParrotBase
   name: папуга
   abstract: true
@@ -2482,7 +2484,7 @@
 
 - type: entity
   name: пінгвін
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobPenguin
   description: Їхнє життя - це постійний біль через їхні внутрішні коліна.
   components:
@@ -2529,9 +2531,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-  - type: Temperature
-    currentTemperature: 310.15
-    specificHeat: 46
   - type: TemperatureDamage
     heatDamageThreshold: 335
     coldDamageThreshold: 230
@@ -2621,7 +2620,7 @@
   # I have included a snake_hiss.ogg sound file so if you want to use that be my guest
 - type: entity
   name: змія
-  parent: [SimpleMobBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobSnake
   description: Шссссс! Укуси не отруйні.
   components:
@@ -2671,7 +2670,7 @@
 # Code unique spider prototypes or combine them all into one spider and get a
 # random sprite state when you spawn it.
 - type: entity
-  parent: [ SimpleMobBase, BaseMobHemocyanin, MobCombat, BaseSlicingRefinable, MobNightVision ]
+  parent: [ SimpleMobBase, BaseMobHemocyanin, MobCombat, BaseSlicingRefinable, MobNightVision, BaseMobDestructible ]
   id: MobSpiderBase
   abstract: true
   components:
@@ -2879,6 +2878,7 @@
         reagents:
         - ReagentId: Laughter
           Quantity: 150
+
 - type: entity
   name: павук-чаклун
   parent: MobGiantSpider
@@ -2893,7 +2893,7 @@
 
 - type: entity
   name: опосум
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobPossum
   description: «О, Опосум! Мій Опосум!» -- Волт Вітмен, 1865.
   components:
@@ -2966,7 +2966,7 @@
 
 - type: entity
   name: єнот
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobRaccoon
   description: Сміттє-панда!
   components:
@@ -3019,7 +3019,7 @@
 
 - type: entity
   name: лисиця
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobFox
   description: Це лисиця.
   components:
@@ -3101,7 +3101,7 @@
 
 - type: entity
   abstract: true
-  parent: [SimpleMobBase, StripableInventoryBase]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseMobDestructible]
   id: MobCorgiBase
   name: коргі
   description: Нарешті, космічний коргі!
@@ -3129,7 +3129,28 @@
         - MobLayer
   - type: Inventory
     speciesId: dog
-    templateId: pet
+    templateId: Corgi
+    displacements:
+      belt:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_belt_displacement
+      ears:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_belt_displacement
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_head_displacement
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_mask_displacement
   - type: InteractionPopup
     interactSuccessString: petting-success-dog
     interactFailureString: petting-failure-generic
@@ -3223,9 +3244,6 @@
     damageModifierSet: Infernal
   - type: Injurable
     damageContainer: BiologicalMetaphysical
-  - type: Temperature
-    currentTemperature: 310.15
-    specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 4000 #They come from hell, so..
     coldDamageThreshold: 260
@@ -3265,7 +3283,7 @@
 
 - type: entity
   name: кіт
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobCat
   description: Котячий улюбленець, дуже кумедний.
   components:
@@ -3501,7 +3519,7 @@
 
 - type: entity
   name: лінивець
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobSloth
   description: Дуже повільна тварина. Для людей з низьким рівнем енергії.
   components:
@@ -3558,7 +3576,7 @@
 
 - type: entity
   name: тхір
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobFerret
   description: Просто дурний хлопчисько!
   components:
@@ -3767,7 +3785,7 @@
 
 - type: entity
   name: свиня
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobPig
   description: Хрю.
   components:
@@ -3838,7 +3856,7 @@
 
 - type: entity
   name: діона-німфа
-  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobDionaNymph
   description: Це як кіт, тільки.... гіллястий.
   components:
@@ -3926,7 +3944,7 @@
 
 - type: entity
   name: reindeer buck
-  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable ]
+  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: MobReindeerBuck
   description: You think it can pull a sleigh?
   components:
@@ -4020,77 +4038,3 @@
         Base: reindeer_doe_dead
       Dead:
         Base: reindeer_doe_dead
-
-- type: entity
-  parent: MobCorgiBase
-  id: MobCorgiSmart
-  name: smart corgi
-  description: An unusually smart dog.
-  components:
-  # Use corgi sprite, need to add handcuff layer
-  - type: Sprite
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: corgi
-    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
-      color: "#ffffff"
-      sprite: Objects/Misc/handcuffs.rsi # Would do a custom dog handcuff sprite but unfortunately handcuffs have their overlay baked-in to the cuff itself so this is mostly filler
-      state: body-overlay-2
-      visible: false
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-  # Custom inventory template
-  - type: Inventory
-    speciesId: dog
-    templateId: SmartCorgi
-    displacements:
-      belt:
-        sizeMaps:
-          32:
-            sprite: Mobs/Pets/displacements.rsi
-            state: corgi_belt_displacement
-      ears:
-        sizeMaps:
-          32:
-            sprite: Mobs/Pets/displacements.rsi
-            state: corgi_belt_displacement
-      head:
-        sizeMaps:
-          32:
-            sprite: Mobs/Pets/displacements.rsi
-            state: corgi_head_displacement
-  - type: Hands # HANDS!
-    activeHandId: Right
-    hands:
-      Right:
-        location: Right
-      Left:
-        location: Left
-  - type: Puller
-  - type: Cuffable # bad dog!
-  - type: BlockWriting # dogs can't write, paws unwieldy; mouth-writing is a myth
-  - type: Stripping
-  - type: ComplexInteraction
-  # Implement custom borgi body type
-  - type: RotationVisuals
-    defaultRotation: 90
-    horizontalRotation: 180
-  - type: Grammar
-    attributes:
-      gender: epicene # Gender neutral
-      proper: true
-  - type: Tag
-    tags:
-    - VimPilot
-    - CanPilot
-    - DoorBumpOpener
-  - type: StatusIcon
-    bounds: -0.5,-0.5,0.5,0.5
-  - type: JobStatus # marks them as crew
-  - type: NpcFactionMember
-    factions:
-    - NanoTrasen

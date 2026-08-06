@@ -24,17 +24,16 @@
 
 - type: entity
   parent: CrateGenericSteel
-  id: CrateMaterialTextiles
-  name: ящик з текстилем
-  description: 60 шматків тканини та 30 міцних волокон. Мрія молі.
+  id: CrateMaterialCloth
+  name: cloth crate
+  description: 90 pieces of cloth.
   components:
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
         children:
         - id: MaterialCloth
-          amount: 2
-        - id: MaterialDurathread
+          amount: 3
 
 - type: entity
   parent: CrateGenericSteel

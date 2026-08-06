@@ -1,0 +1,13 @@
+- type: listing
+  id: MRUplinkHardsuitMirage #Mriya
+  name: uplink-hardsuit-mirage-name
+  description: uplink-hardsuit-mirage-desc
+  icon: { sprite: /Textures/_Mriya/Clothing/OuterClothing/Hardsuits/mirage.rsi, state: icon }
+  productEntity: MRClothingBackpackDuffelMirage
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkWearables

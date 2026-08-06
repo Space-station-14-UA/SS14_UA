@@ -74,7 +74,7 @@
 - type: entity
   abstract: true
   id: BaseSubstation
-  parent: [ CoreSubstation, BaseMachine, ConstructibleMachine ]
+  parent: [ CoreSubstation, BaseMachine, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: підстанція
   description: Зменшує напругу електроенергії, що подається до неї.
   placement:
@@ -104,19 +104,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 175
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
       - !type:ExplodeBehavior
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MachineFrameDestroyed:
-            min: 1
-            max: 1
       - !type:SpawnGasBehavior
         gasMixture:
           volume: 1000

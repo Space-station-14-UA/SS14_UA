@@ -2,7 +2,7 @@
   id: TegCenter
   name: термоелектричний генератор
   description: Високоефективний генератор, який використовує теплообмін між гарячим і холодним газами для виробництва електроенергії.
-  parent: BaseMachinePowered
+  parent: [ BaseMachinePowered, BaseMachineDestructible ]
   placement:
     mode: SnapgridCenter
   components:
@@ -109,7 +109,7 @@
   id: TegCirculator
   name: циркулятор
   description: Пропускає газ через термоелектричний генератор для обміну теплом. Має вхідний і вихідний отвір.
-  parent: BaseMachine
+  parent: [ BaseMachine, BaseMachineDestructible ]
   placement:
     mode: SnapgridCenter
   components:

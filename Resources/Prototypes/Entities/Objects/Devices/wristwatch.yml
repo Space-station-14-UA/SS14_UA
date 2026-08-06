@@ -1,6 +1,6 @@
 - type: entity
   id: Wristwatch
-  parent: BaseItem
+  parent: [ BaseItem, BaseItemDestructible ]
   name: ручний годинник
   description: Дешевий годинник для визначення часу. Скільки часу ви витратили, граючи в Space Station 14?
   components:
@@ -27,15 +27,9 @@
   - type: Destructible
     thresholds:
     - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
         !type:DamageGroupTrigger
         damageGroup: Brute
-        damage: 25
+        damage: 5
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Breakage" ]
