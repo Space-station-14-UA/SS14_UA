@@ -6,6 +6,9 @@
   components:
   - type: Action
     useDelay: 60
-    icon: Interface/Actions/eyeopen.png
+  - type: Sprite
+    layers:
+    - texture: Interface/Actions/eyeopen.png
+      map: ["enum.ActionVisuals.Icon"]
   - type: InstantAction
     event: !type:MouseSenseActionEvent

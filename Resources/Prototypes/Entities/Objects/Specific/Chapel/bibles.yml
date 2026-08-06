@@ -102,8 +102,11 @@
   description: Викличте посіпаку, який допоможе вам і здобуде людський інтелект, у якому колись жила душа.
   components:
   - type: Action
-    icon: { sprite: Clothing/Head/Hats/witch.rsi, state: icon }
     useDelay: 1
+  - type: Sprite
+    sprite: Clothing/Head/Hats/witch.rsi
+    layers:
+    - state: icon
   - type: InstantAction
     event: !type:SummonActionEvent
 

@@ -71,6 +71,8 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending
+    useSoundLimitOverride: true # mriya
+    soundLimitOverride: 1 # mriya
   - type: Vocalizer
     minVocalizeInterval: 8m
     maxVocalizeInterval: 10m
@@ -2172,6 +2174,8 @@
   - type: SpeakOnUIClosed
     pack: PrideDrobeGoodbyes
   - type: Speech
+    useSoundLimitOverride: true # mriya
+    soundLimitOverride: 1 # mriya
   - type: PointLight
     radius: 1.5
     energy: 2.0 # reduced energy since the color is pure white

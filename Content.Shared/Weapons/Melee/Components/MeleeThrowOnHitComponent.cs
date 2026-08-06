@@ -42,6 +42,12 @@ public sealed partial class MeleeThrowOnHitComponent : Component
     public bool ActivateOnThrown;
 
     /// <summary>
+    /// Should this also work on a throw-hit?
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool CameraRecoilOnThrown = true;
+
+    /// <summary>
     /// Whether the entity can apply knockback this instance of being thrown.
     /// If true, the entity cannot apply knockback.
     /// </summary>
