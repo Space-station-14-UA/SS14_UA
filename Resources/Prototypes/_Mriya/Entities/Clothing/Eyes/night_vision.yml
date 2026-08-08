@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingEyesBase, BaseSecurityContraband]
+  id: MRClothingEyesNightVisionSecurity
+  name: службовий ПНБ
+  description: Прилад нічного бачення — оптичний прилад, що слугує для отримання у темряві видимого зображення об'єктів та місцевості. Призначений для виявлення, розпізнавання та спостереження цілей за умов пониженого або відсутнього освітлення.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Eyes/Glasses/security_nightvision.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Eyes/Glasses/security_nightvision.rsi
+  - type: NightVision
+    enabled: false
+    relayOverlay: true
+    action: MRActionToggleNightVision
+    lightingColor: "#FF1010AA"
+    overlayColor: "#FF101066"
+    noiseAmount: 0.1
+    noiseMultiplier: 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon

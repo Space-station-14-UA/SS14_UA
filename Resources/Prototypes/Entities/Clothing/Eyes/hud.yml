@@ -63,12 +63,10 @@
   name: службовий ПД
   description: Проєкторний дисплей, який сканує гуманоїдів, що знаходяться в полі зору, й надає точні дані про їхній ідентифікаційний статус та службові записи.
   components:
-  # Mriya: security HUD resprite start
   - type: Sprite
-    sprite: _Mriya/Clothing/Eyes/Hud/sec.rsi
+    sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Clothing
-    sprite: _Mriya/Clothing/Eyes/Hud/sec.rsi
-  # Mriya: security HUD resprite end
+    sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Tag
     tags:
     - HudSecurity

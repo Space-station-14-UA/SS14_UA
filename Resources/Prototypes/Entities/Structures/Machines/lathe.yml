@@ -397,6 +397,9 @@
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
+    # Mriya: security night vision start
+    - MRSecurityNightVision
+    # Mriya: security night vision end
     - SecurityBoards
     - SecurityExplosives
     - SecurityAmmo
