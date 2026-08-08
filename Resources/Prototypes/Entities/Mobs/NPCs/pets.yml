@@ -1,10 +1,21 @@
 # Bounds Guide
 #1D2L3U4R
 
+# This prototype is used as a parent by unique named pets (e.g Pun Pun, Ian, Hamlet)
 - type: entity
-  name: Іан
-  parent: [MobCorgi, BaseSlicingRefinable]
+  abstract: true
+  id: BaseUniquePet
+  components:
+  - type: Grammar
+    attributes:
+      proper: true # Makes the pet's ingame name count as a proper noun (e.g, they have colored names when that accessibility setting is enabled)
+  - type: NameIdentifier
+    group: null # Strips the numeric identifier from the pet's ingame name
+
+- type: entity
+  parent: [ BaseUniquePet, MobCorgi, BaseSlicingRefinable ]
   id: MobCorgiIan
+  name: Іан
   description: Улюблений коргі екіпажу.
   components:
   - type: Sprite
@@ -57,9 +68,9 @@
     stealGroup: AnimalIan
 
 - type: entity
-  name: Старий Іан
-  parent: [MobCorgiIan, BaseSlicingRefinable]
+  parent: [ MobCorgiIan, BaseSlicingRefinable ]
   id: MobCorgiIanOld
+  name: Старий Іан
   description: Улюблений коргі екіпажу. Обожнюю його колеса.
   components:
   - type: Sprite
@@ -82,10 +93,10 @@
     - id: MaterialHideCorgi
 
 - type: entity
-  name: Ліза
   parent: MobCorgiIan
   id: MobCorgiLisa
-  description: "Улюблена коргі Іана."
+  name: Ліза
+  description: Улюблена коргі Іана.
   components:
   - type: Sprite
     layers:
@@ -124,9 +135,9 @@
             state: corgi_mask_displacement
 
 - type: entity
-  name: справжня миша
   parent: MobCorgiIan
   id: MobCorgiMouse
+  name: справжня миша
   description: Це 100% справжня голодна миша.
   components:
   - type: Sprite
@@ -147,9 +158,9 @@
       gender: female
 
 - type: entity
-  name: Цуценя Іан
-  parent: [MobCorgiPuppy, BaseSlicingRefinable]
+  parent: [ MobCorgiPuppy, BaseSlicingRefinable ]
   id: MobCorgiIanPup
+  name: Цуценя Іан
   description: Улюблене цуценя екіпажу, оууу...
   components:
   - type: Grammar
@@ -165,9 +176,9 @@
     stealGroup: AnimalIan
 
 - type: entity
-  name: «Виконання»
-  parent: MobCat
+  parent: [ BaseUniquePet, MobCat ]
   id: MobCatRuntime
+  name: «Виконання»
   description: Професійний мисливець на мишей. Художник по втечам.
   components:
   - type: NpcFactionMember
@@ -188,9 +199,9 @@
     stealGroup: AnimalNamedCat
 
 - type: entity
-  name: «Виняток»
+  parent: [ BaseUniquePet, MobCatCalico ]
   id: MobCatException
-  parent: MobCatCalico
+  name: «Виняток»
   description: Попросіть ввічливо, і, можливо, вони віддадуть вам одне зі своїх вільних життів.
   components:
   - type: NpcFactionMember
@@ -208,9 +219,9 @@
     stealGroup: AnimalNamedCat
 
 - type: entity
-  name: Флопченко
+  parent: [ BaseUniquePet, MobCatCaracal ]
   id: MobCatFloppa
-  parent: MobCatCaracal
+  name: Флопченко
   description: Працівник ГУР за лінією фронту.
   components:
   - type: Fixtures
@@ -235,9 +246,9 @@
     stealGroup: AnimalNamedCat
 
 - type: entity
-  name: Бандіто
-  parent: MobFerret
+  parent: [ BaseUniquePet, MobFerret ]
   id: MobBandito
+  name: Бандіто
   description: Просто дурний хлопчисько!
   components:
   - type: Grammar
@@ -250,9 +261,9 @@
     - VimPilot
 
 - type: entity
-  name: Бінґус
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
+  parent: [ BaseUniquePet, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable , BaseMobDestructible ]
   id: MobBingus
+  name: Бінґус
   description: Бінґус моє кохання...
   components:
   - type: Sprite
@@ -307,9 +318,9 @@
     stealGroup: AnimalNamedCat
 
 - type: entity
-  name: МакҐріфф
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
+  parent: [ BaseUniquePet, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable , BaseMobDestructible ]
   id: MobMcGriff
+  name: МакҐріфф
   description: Цей собака відчуває, що тут чимось пахне, і це щось - ЗЛОЧИН!
   components:
   - type: Sprite
@@ -383,9 +394,9 @@
   - type: MessyDrinker
 
 - type: entity
-  name: «Паперова робота»
-  parent: [MobSloth, BaseSlicingRefinable]
+  parent: [ BaseUniquePet, MobSloth, BaseSlicingRefinable ]
   id: MobPaperwork
+  name: «Паперова робота»
   description: Отримав нову роботу - сортувати книги в бібліотеці після того, як його перевели з космічної станції 13. Здається, йому це вдається так само повільно.
   components:
   - type: Sprite
@@ -417,9 +428,9 @@
       gender: male
 
 - type: entity
-  name: Вальтер
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
+  parent: [ BaseUniquePet, SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable , BaseMobDestructible ]
   id: MobWalter
+  name: Уолтер
   description: Він любить ліки та ласощі. Уолтер.
   components:
   - type: Sprite
@@ -480,9 +491,9 @@
   - type: MessyDrinker
 
 - type: entity
-  name: Морті
-  parent: MobPossum
+  parent: [ BaseUniquePet, MobPossum ]
   id: MobPossumMorty
+  name: Морті
   description: Мешканець станції. Чутливий, але витривалий хлопець.
   components:
   - type: InteractionPopup
@@ -504,10 +515,10 @@
     stealGroup: AnimalMorty
 
 - type: entity
-  name: Морті
   parent: MobPossumMorty
   id: MobPossumMortyOld
-  suffix: Старий спрайт
+  name: Морті
+  suffix: Old sprite
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -523,9 +534,9 @@
         Base: possum_dead_old
 
 - type: entity
-  name: Поппі # the Safety Possum
   parent: MobPossumMorty
   id: MobPossumPoppy
+  name: Поппі # the Safety Possum
   description: Це опосум, невеликий сумчастий ссавець. Він носить відповідні засоби індивідуального захисту.
   components:
   - type: Grammar
@@ -546,9 +557,9 @@
         Base: poppy_dead
 
 - type: entity
-  name: Мортиція
-  parent: MobRaccoon
+  parent: [ BaseUniquePet, MobRaccoon ]
   id: MobRaccoonMorticia
+  name: Мортиція
   description: Могутнє створіння ночі. Її тіні завжди на місці.
   components:
   - type: InteractionPopup
@@ -568,9 +579,9 @@
     - VimPilot
 
 - type: entity
-  name: Олександр
-  parent: MobPig
+  parent: [ BaseUniquePet, MobPig ]
   id: MobAlexander
+  name: Олександр
   description: Найкращий колега шеф-кухаря.
   components:
   - type: InteractionPopup
@@ -590,9 +601,9 @@
     - VimPilot
 
 - type: entity
-  name: Рено
-  parent: [MobFox, BaseSlicingRefinable]
+  parent: [ BaseUniquePet, MobFox, BaseSlicingRefinable ]
   id: MobFoxRenault
+  name: Рено
   description: Вірний лис капітана.
   components:
   - type: InteractionPopup
@@ -620,9 +631,9 @@
     stealGroup: AnimalRenault
 
 - type: entity
-  name: Гамлет
-  parent: [MobHamster, BaseSlicingRefinable]
+  parent: [ BaseUniquePet, MobHamster, BaseSlicingRefinable ]
   id: MobHamsterHamlet
+  name: Гамлет
   description: "Буркотливий, милий і пухнастий хом'як."
   components:
   - type: Sprite
@@ -689,9 +700,9 @@
     predicted: true
 
 - type: entity
-  name: Шива
-  parent: MobGiantSpider
+  parent: [ BaseUniquePet, MobGiantSpider ]
   id: MobSpiderShiva
+  name: Шива
   description: Перша захисниця станції.
   components:
   - type: InteractionPopup
@@ -756,9 +767,9 @@
     stealGroup: AnimalShiva
 
 - type: entity
-  name: Віллоу
-  parent: MobKangaroo
+  parent: [ BaseUniquePet, MobKangaroo ]
   id: MobKangarooWillow
+  name: Віллоу
   description: Віллоу - боксерський кенгуру.
   components:
   - type: InteractionPopup
@@ -787,10 +798,10 @@
     prototypes: [ BoxingKangarooGear ]
 
 - type: entity
-  name: Смайл
+  parent: [ BaseUniquePet, MobAdultSlimes, StripableInventoryBase, BaseSlicingRefinable ]
   id: MobSlimesPet
-  parent: [MobAdultSlimes, StripableInventoryBase, BaseSlicingRefinable]
-  description: Цей шедевр-ксенобіології пройшов через тисячі експериментів. Але це наймиліше створіння у світі. Посміхнися, слайме!
+  name: Посмішка
+  description: Цей шедевр-ксенобіології пройшов через тисячі експериментів. Але це наймиліше створіння у світі. Усміхнена Посмішка!
   components:
   - type: Sprite
     layers:
@@ -868,9 +879,9 @@
       gender: female
 
 - type: entity
-  name: Пун Пун
-  parent: MobMonkey
+  parent: [ BaseUniquePet, MobMonkey ]
   id: MobMonkeyPunpun
+  name: Пун Пун
   description: Яскравий представник мавп з необмеженим доступом до алкоголю.
   components:
   - type: GhostRole
@@ -902,9 +913,9 @@
       gender: male
 
 - type: entity
-  name: Тропіко
-  parent: MobCrab
+  parent: [ BaseUniquePet, MobCrab ]
   id: MobCrabAtmos
+  name: Тропіко
   description: Благородний і стійкий захисник Атмосії. Віва!
   components:
 #  - type: GhostRole
@@ -929,10 +940,10 @@
     stealGroup: AnimalTropico
 
 - type: entity
-  name: Polly the parrot
-  parent: MobParrotBase
+  parent: [ BaseUniquePet, MobParrotBase ]
   id: MobPollyParrot
-  description: An expert in quantum cracker theory
+  name: Polly the parrot
+  description: An expert in quantum cracker theory.
   components:
   - type: Vocalizer
     maxVocalizeInterval: 240 # polly is chattier
