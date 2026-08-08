@@ -1,16 +1,14 @@
 using Content.Server.Mriya.Sponsors.UI;
-using Content.Shared.Ghost;
-using Content.Shared.Mind;
+using Content.Shared.Ghost.Components;
 using Content.Shared.Mind.Components;
 using Robust.Shared.Player;
-using Robust.Shared.Serialization;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Server.Mriya.Sponsors;
 
-public sealed class SponsorGhostSystem : EntitySystem
+public sealed partial class SponsorGhostSystem : EntitySystem
 {
-    [Dependency] private readonly ISponsorManager _sponsorManager = default!;
+    [Dependency] private ISponsorManager _sponsorManager = default!;
 
     public override void Initialize()
     {
