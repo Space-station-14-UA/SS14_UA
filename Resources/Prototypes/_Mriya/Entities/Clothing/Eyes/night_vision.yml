@@ -19,3 +19,25 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingEyesBase, BaseSyndicateContraband]
+  id: MRClothingEyesNightVisionBlood
+  name: кривавий ПНБ
+  description: Прилад нічного бачення, розроблений на основі запозичених зразків. Заливає темряву криваво-алим світлом, але не захищає очі від спалахів.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Eyes/Glasses/blood_nightvision.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Eyes/Glasses/blood_nightvision.rsi
+  - type: NightVision
+    enabled: false
+    relayOverlay: true
+    action: MRActionToggleNightVision
+    lightingColor: "#FF2400AA"
+    overlayColor: "#B00000AA"
+    noiseAmount: 0.1
+    noiseMultiplier: 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon
