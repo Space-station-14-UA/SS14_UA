@@ -29,7 +29,7 @@
       border_south:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.408, -0.792, 0.408, -0.9"
+          bounds: "-0.408, -0.9, 0.408, -0.792"
         density: 100
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
@@ -47,7 +47,7 @@
       border_west_bottom:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.6, -0.108, -0.48, -0.708"
+          bounds: "-0.6, -0.708, -0.48, -0.108"
         density: 100
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
@@ -65,7 +65,7 @@
       border_east_bottom:
         shape:
           !type:PhysShapeAabb
-          bounds: "0.48, -0.108, 0.6, -0.708"
+          bounds: "0.48, -0.708, 0.6, -0.108"
         density: 100
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
