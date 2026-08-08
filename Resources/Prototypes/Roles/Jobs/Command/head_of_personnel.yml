@@ -18,10 +18,9 @@
       time: 2.5h
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 2.5h
+      time: 2.5
     - !type:AgeRequirement
       requiredAge: 25
-  weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
