@@ -30,8 +30,6 @@ analysis-console-info-scanner = Сканування...
 analysis-console-info-scanner-paused = Призупинено.
 analysis-console-progress-text = {$seconds ->
     [one] T-{$seconds} секунда
-    [few] T-{$seconds} секунди
-    [many] T-{$seconds} секунд
     *[other] T-{$seconds} секунд
 }
 analysis-console-extract-value = [font="Monospace" size=11][color=orange]Вузол {$id} (+{$value})[/color][/font]

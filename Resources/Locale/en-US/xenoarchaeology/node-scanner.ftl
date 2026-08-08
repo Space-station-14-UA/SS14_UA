@@ -1,5 +1,5 @@
 node-scan-tooltip = Сканувати активні вузли
-node-scan-no-data = Дані про активні вузли не знайдені
+node-scan-no-data = Не знайдено даних про активні вузли
 node-scan-display-title = Сканер вузлів
 
 node-scanner-artifact-state-ready = Артефакт готовий до взаємодії
