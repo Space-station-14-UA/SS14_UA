@@ -33,3 +33,6 @@ reagent-desc-vomit = У нії можна побачити кілька шмат
 
 reagent-name-grey-matter = сіра речовина
 reagent-desc-grey-matter = Сік думок, те, що витікає з вух.
+
+reagent-name-living-tissue = жива тканина
+reagent-desc-living-tissue = Суміш нутрощів позаземного походження. Ви відчуваєте, як вона витріщається на вас.

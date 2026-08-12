@@ -1,5 +1,6 @@
 blink-artifact-popup = Артефакт зник у мить ока!
 foam-artifact-popup = З артефакту ллється дивна піна!
+interact-artifact-more = Воно жадає більшого...
 
 shuffle-artifact-popup = Ви відчуваєте, що миттєво телепортуєтесь!
 charge-artifact-popup = Ви відчуваєте, як повітря дзижчить електрикою.

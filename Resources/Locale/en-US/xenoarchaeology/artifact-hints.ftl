@@ -53,7 +53,8 @@ xenoarch-trigger-tip-tritium = Тритій
 xenoarch-trigger-tip-ammonia = Амоніак
 xenoarch-trigger-tip-n2o = Закис азоту
 xenoarch-trigger-tip-frezon = Фрезон
-xenoarch-trigger-tip-radiation = Радіація
+xenoarch-trigger-tip-radiation = Важке іонне випромінювання
+xenoarch-trigger-tip-microwave = Мікрохвильове випромінювання
 xenoarch-trigger-tip-brute-damage = Фізичні пошкодження
 xenoarch-trigger-tip-interaction = Фізична взаємодія
 xenoarch-trigger-tip-wrenching = Пригвинчування
@@ -68,6 +69,13 @@ xenoarch-trigger-tip-blood = Кров
 xenoarch-trigger-tip-throw = Кидання
 xenoarch-trigger-tip-death = Смерть
 xenoarch-trigger-tip-magnet = Магнітні хвилі
+xenoarch-trigger-tip-money = Хабарництво
+xenoarch-trigger-tip-knowledge = Засвоєння знань
+xenoarch-trigger-tip-carbs = Вживання вуглеводів
+xenoarch-trigger-tip-meat = Вживання білків
+xenoarch-trigger-tip-produce = Вживання корисних продуктів
+xenoarch-trigger-tip-stamp = Бюрократичне схвалення
+xenoarch-trigger-tip-shock = Удар струмом
 
 ### Description hints
 xenoarch-trigger-examine-wrenching = Тут обертається ослаблений фрагмент.
