@@ -101,11 +101,6 @@
     animation: WeaponArcBite
   - type: Edible
     useSound: *PlushieSharkSound
-  - wideAnimationRotation: 90
-    soundHit: *PlushieSharkSound
-    animation: WeaponArcBite
-  - type: Edible
-    useSound: *PlushieSharkSound
   - type: Clothing
     quickEquip: false
     sprite: _Mriya/Objects/Fun/Plushies/Teri.rsi
@@ -113,7 +108,7 @@
     - HEAD
   - type: FoodSequenceElement
     entries:
-      CottonBurger: MRTeriPlushie
+      CottonBurger: MRplushieTeri
 
 # Car plushie
 - type: entity
@@ -135,7 +130,7 @@
     sprite: 
   - type: FoodSequenceElement
     entries:
-      CottonBurger: MRCarPlushie
+      CottonBurger: MRplushieSenseiCar
 
 # Lizard leader plushie
 - type: entity
@@ -183,7 +178,7 @@
     speechVerb: Reptilian # for pais (In the secret stash) (я загалом ентіті копіював з Веха тому я хз що цей текст значить)
   - type: FoodSequenceElement
     entries:
-      CottonBurger: LizardPlushie
+      CottonBurger: MRplushieLizardRanquill
   - type: Tag
     tags:
     - Payload

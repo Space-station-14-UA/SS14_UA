@@ -43,7 +43,7 @@
     - id: SichPlushieError # додавання білду Січі
     - id: MRplushieDragon # Mriya: dragon plushie
     - id: MRplushieShrimp # Mriya: shrimp plushie
-    - - id: MRplushieTeri # Mriya: android plushie
+    - id: MRplushieTeri # Mriya: android plushie
     - id: MRplushieSenseiCar # Mriya: car plushie
     - id: MRplushieLizardRanquill # Mriya: lizardranquill plushie
     - id: PlushieSheep
