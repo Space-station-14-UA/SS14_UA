@@ -57,6 +57,9 @@
     #Mriya:
   - MRplushieDragon
   - MRplushieShrimp
+  - MRplushieTeri
+  - MRplushieSenseiCar
+  - MRplushieLizardRanquill
 
 - type: loadoutGroup
   id: AssistiveItems

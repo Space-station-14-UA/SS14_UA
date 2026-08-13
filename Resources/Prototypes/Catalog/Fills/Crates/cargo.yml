@@ -209,9 +209,12 @@
     - id: SichPlushieMoffMirka
       weight: 0.005
     - id: SichPlushieMoffRanch
-      weight: 0.005
+      weight: 0.01 #  Чотири з цих іграшок це окремі символи вдячності важливим для Мрії людям. І ще дракон
     - id: MRplushieDragon # Mriya: dragon plushie
     - id: MRplushieShrimp # Mriya: shrimp plushie
+    - id: MRplushieTeri # Mriya: android plushie
+    - id: MRplushieSenseiCar # Mriya: car plushie
+    - id: MRplushieLizardRanquill # Mriya: lizardranquill plushie
 
 - type: entityTable
   id: LotteryUsefulEntityTable
