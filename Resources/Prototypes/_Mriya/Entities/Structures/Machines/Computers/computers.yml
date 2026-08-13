@@ -38,6 +38,22 @@
           False: { visible: true }
 
 - type: bureaucraticDocument
+  id: GeneralDocument
+  name: Загальний шаблон
+  text: |
+    [color={field=logo_color|Колір лого}]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
+    [color={field=logo_color|Колір лого}]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [head=3][bold][italic]{field=header|Заголовок}[/head][/bold][/italic]
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    {field=main_content|Суть вашого документу/заяви/тощо}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    [bold]Оформлено[/bold]: {field=username|Ім'я відповідального за звільнення} {field=userjob|Посада відповідального за звільнення}
+    {field=final|Додаткове поле}
+    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    ПЕЧАТКА/ПІДПИС
+
+- type: bureaucraticDocument
   id: OrderOfRelease
   name: Наказ про звільнення
   text: |
@@ -56,17 +72,3 @@
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     ПЕЧАТКА/ПІДПИС
 
-- type: bureaucraticDocument
-  id: CentComRequest
-  name: Запит до Центрального командування
-  text: |
-    [color=Navy]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
-    [color=Navy]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
-    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    [bold]ВІДПРАВНИК:[/bold] {field=username|Ім'я заявника} ({field=userjob|Посада})
-    [bold]АДРЕСАТ:[/bold]Цетнральне Командування
-    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    [head=3]{field=RequestHeader|Заголовок звернення}[/head]
-    {field=reason|Звернення}
-    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    ПЕЧАТКА/ПІДПИС
