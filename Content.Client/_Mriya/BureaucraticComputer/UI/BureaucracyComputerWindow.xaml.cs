@@ -130,7 +130,7 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
                 Margin = new Thickness(5)
             };
 
-            textEdit.ToolTip = _loc.GetString("bureaucratic-computer-window-text-edit-tooltip");
+            textEdit.ToolTip = _loc.GetString("bureaucracy-computer-window-text-edit-tooltip");
 
             var prefilledText = string.Empty;
             switch (fieldId.ToLowerInvariant())

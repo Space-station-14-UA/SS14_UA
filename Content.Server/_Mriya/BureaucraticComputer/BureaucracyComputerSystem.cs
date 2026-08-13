@@ -24,34 +24,11 @@ public sealed partial class BureaucracyComputerSystem : SharedBureacraticCompute
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<BureaucracyComputerComponent, InteractHandEvent>(OnInteractHand);
 
         Subs.BuiEvents<BureaucracyComputerComponent>(BureaucracyUiKey.Key, subs =>
         {
             subs.Event<BureaucracyPrintMessage>(OnPrintMessage);
         });
-    }
-
-    private void OnInteractHand(EntityUid uid, BureaucracyComputerComponent component, InteractHandEvent args)
-    {
-        if (!TryComp<ActorComponent>(args.User, out var actor))
-            return;
-
-        var station = _station.GetOwningStation(args.User);
-        var stationName = station.HasValue ? Name(station.Value) : "";
-
-        var charName = Name(args.User);
-        var charJob = "";
-
-        if (_idCardSystem.TryFindIdCard(args.User, out var idCard))
-        {
-            charJob = idCard.Comp.LocalizedJobTitle ?? idCard.Comp.JobTitle ?? "";
-        }
-
-        _uiSystem.OpenUi(uid, BureaucracyUiKey.Key, actor.PlayerSession);
-
-        var state = new BureaucracyAutoFillState(stationName, charName, charJob);
-        _uiSystem.SetUiState(uid, BureaucracyUiKey.Key, state);
     }
 
     private void OnPrintMessage(EntityUid uid, BureaucracyComputerComponent component, BureaucracyPrintMessage args)

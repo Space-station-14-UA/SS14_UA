@@ -1,4 +1,4 @@
-bureaucratic-computer-window-text-edit-tooltip = Введіть дані для цього поля тут. 
+bureaucracy-computer-window-text-edit-tooltip = Введіть дані для цього поля тут. 
                                                  Ця інформація буде перенесена у фінальний документ.
 bureaucracy-computer-window-title = Бюрократичний комп'ютер
 bureaucracy-computer-available-templates = Доступні шаблони:

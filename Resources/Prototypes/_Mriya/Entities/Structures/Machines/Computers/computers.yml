@@ -1,10 +1,12 @@
 - type: entity
-  id: BureaucracyComputer
+  id: MRBureaucracyComputer
   name: "Комп'ютер бюрократії"
   description: "Комп'ютер для бюрократії!"
   parent: BaseComputerAiAccess
   components:
   - type: BureaucracyComputer
+  - type: ActivatableUI
+    key: enum.BureaucraticComputer.BureaucracyUiKey.Key
   - type: UserInterface
     interfaces:
       enum.BureaucraticComputer.BureaucracyUiKey.Key:
