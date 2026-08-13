@@ -119,7 +119,7 @@
 - type: entity
   parent: BasePlushie
   id: MRplushieSenseiCar
-  name: іграшкова червона машинка
+  name: плюшева червона машинка
   suffix: Дякую, Сенсей
   description: |
    "Стильна та популярна іграшка зроблена по секретним кресленням компанії 'Гарячі Колеса'"
