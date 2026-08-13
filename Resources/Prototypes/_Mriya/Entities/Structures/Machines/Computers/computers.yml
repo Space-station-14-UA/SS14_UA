@@ -7,7 +7,7 @@
   - type: BureaucracyComputer
   - type: UserInterface
     interfaces:
-      enum.Content.Shared._Mriya.BureaucraticComputer.BureaucracyUiKey.Key:
+      enum.BureaucraticComputer.BureaucracyUiKey.Key:
         type: BureaucracyComputerBoundUserInterface
   - type: Sprite
     layers:

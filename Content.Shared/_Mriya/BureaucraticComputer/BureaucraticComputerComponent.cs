@@ -5,7 +5,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 
 namespace Content.Shared._Mriya.BureaucraticComputer;
 
-[RegisterComponent, AutoGenerateComponentPause]
+[RegisterComponent]
 public sealed partial class BureaucracyComputerComponent : Component
 {
     /// <summary>

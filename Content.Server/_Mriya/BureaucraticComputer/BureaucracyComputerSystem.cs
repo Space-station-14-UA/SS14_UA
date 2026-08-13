@@ -1,14 +1,7 @@
-using Content.Server.Cargo.Components;
 using Content.Server.Station.Systems;
-using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
-using Content.Shared.Cargo;
-using Content.Shared.Cargo.Components;
-using Content.Shared.Cargo.Prototypes;
 using Content.Shared.Interaction;
-using Content.Shared.Inventory;
 using Content.Shared.Paper;
-using Content.Shared.PDA;
 using Content.Shared._Mriya.BureaucraticComputer;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
@@ -19,14 +12,14 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._Mriya.BureaucraticComputer;
 
-public sealed class BureaucracyComputerSystem : SharedBureacraticComputerSystem
+public sealed partial class BureaucracyComputerSystem : SharedBureacraticComputerSystem
 {
-    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly PaperSystem _paperSystem = default!;
-    [Dependency] private readonly SharedIdCardSystem _idCardSystem = default!;
+    [Dependency] private UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private PaperSystem _paperSystem = default!;
+    [Dependency] private SharedIdCardSystem _idCardSystem = default!;
 
     public override void Initialize()
     {

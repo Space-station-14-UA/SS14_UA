@@ -1,18 +1,14 @@
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
-using Robust.Shared.Toolshed.TypeParsers;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Content.Shared._Mriya.BureaucraticComputer;
 
-public abstract class SharedBureacraticComputerSystem : EntitySystem
+public abstract partial class SharedBureacraticComputerSystem : EntitySystem
 {
     public static readonly Regex FieldRegex = new(@"\{field=([^|\}]+)(?:\|([^\}]+))?\}", RegexOptions.Compiled);
-    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] protected IGameTiming Timing = default!;
 }
 
 [Serializable, NetSerializable]
