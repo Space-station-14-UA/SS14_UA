@@ -125,7 +125,7 @@
     state: icon
   - type: EmitSoundOnUse
     sound: &carhorn
-      path: Audio/Effects/Vehicle/carhorn.ogg
+      path: /Audio/Effects/Vehicle/carhorn.ogg
   - type: Item
     sprite: 
   - type: FoodSequenceElement
