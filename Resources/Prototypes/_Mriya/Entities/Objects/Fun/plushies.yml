@@ -55,7 +55,7 @@
   suffix: Дякую, Црвеніх
   description: | 
    "Проста зварена плюшева креветка. Ні, креветки не цвіркають."
-   [color=2AFEB7]Дякую, Црвеніх![/color]
+   [color=lightblue]Дякую, Црвеніх![/color]
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
@@ -79,7 +79,7 @@
   suffix: Дякую, Савелій
   description: |
    "Плюшева іграшка зроблена на честь головної героїні андроїда зі старого мультику. У творі персонаж вдало проводить майже неможливі секретні операції використовуючи для цього неймовірні гаджети, загадкові тактики та свою червону катану, і все заради порятунку своїх друзів." 
-   [color=2AFEB7]Дякую, Савелій![/color]
+   [color=lightblue]Дякую, Савелій![/color]
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Fun/Plushies/Teri.rsi
@@ -118,7 +118,7 @@
   suffix: Дякую, Сенсей
   description: |
    "Стильна та популярна іграшка зроблена по секретним кресленням компанії 'Гарячі Колеса'"
-   [color=2AFEB7]Дякую, Сенсей![/color]
+   [color=lightblue]Дякую, Сенсей![/color]
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Fun/Plushies/Senseicar.rsi
@@ -140,7 +140,7 @@
   suffix: Дякую, Ранкіль
   description: | 
    "Ця м'яка іграшкова зроблена на честь персонажа з короткого мультику про малих ящірок. У самому мультику вона використовує свій гучномовець щоб кликати своїх лускатих друзів дивитися на гарні картинки з іншими ящірками."
-   [color=2AFEB7]Дякую, Ранкіль![/color]
+   [color=lightblue]Дякую, Ранкіль![/color]
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Fun/Plushies/lizardRanquill.rsi
