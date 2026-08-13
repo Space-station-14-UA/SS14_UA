@@ -42,7 +42,7 @@
   name: Загальний шаблон
   text: |
     [color={field=logo_color|Колір лого}]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
-    [color={field=logo_color|Колір лого}]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
+    [color={field=logo_color|Колір лого}]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогоднішня дата}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     [head=3][bold][italic]{field=header|Заголовок}[/head][/bold][/italic]
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -58,7 +58,7 @@
   name: Наказ про звільнення
   text: |
     [color=Navy]█▄ █ ▀█▀[/color] [head=2]{field=StationName|Назва станції}[/head]
-    [color=Navy]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогодняшня дата}
+    [color=Navy]█ ▀█ [color=#0000]░[/color]█[color=#0000]░[/color][/color] [bold]ДАТА:[/bold]{field=date|Сьогоднішня дата}
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
     [head=3][bold][italic]Наказ про звільнення[/head][/bold][/italic]
     ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
