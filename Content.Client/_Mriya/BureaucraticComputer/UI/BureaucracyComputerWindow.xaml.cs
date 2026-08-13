@@ -186,7 +186,7 @@ public sealed partial class BureaucracyComputerWindow : FancyWindow
 
         foreach (Match match in FieldRegex.Matches(doc.Text))
         {
-            var fullMatch = match.Value; // Наприклад: [stationname|Назва]
+            var fullMatch = match.Value; // Наприклад: {field=date|Сьогодняшня дата}
             var fieldId = match.Groups[1].Value.Trim();
 
             // Беремо текст з TextEdit, якщо він є, інакше ставимо лінію для краси

@@ -1,4 +1,9 @@
+using Content.Shared.Access.Systems;
+using Content.Shared.Interaction;
+using Content.Shared.Station;
+using Content.Shared.UserInterface;
 using Content.Shared.Verbs;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
@@ -13,6 +18,17 @@ public abstract partial class SharedBureacraticComputerSystem : EntitySystem
     [Dependency] protected IGameTiming Timing = default!;
     [Dependency] protected ILocalizationManager Loc = default!;
     [Dependency] private SharedUserInterfaceSystem _uiSystem = default!;
+    [Dependency] private SharedIdCardSystem _idCardSystem = default!;
+    [Dependency] private SharedStationSystem _station = default!;
+
+    [SubscribeLocalEvent]
+    private void AfterOpenUI(Entity<ActivatableUIComponent> ent, ref AfterActivatableUIOpenEvent args)
+    {
+        if (ent.Comp.Key is not BureaucracyUiKey.Key)
+            return;
+
+        SetupAutoFill(ent.Owner, args.User);
+    }
 
     [SubscribeLocalEvent]
     private void OnGetVerbs(Entity<BureaucracyComputerComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
@@ -31,11 +47,33 @@ public abstract partial class SharedBureacraticComputerSystem : EntitySystem
             Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/settings.svg.192dpi.png")),
             Act = () =>
             {
-                _uiSystem.TryToggleUi(ent.Owner, BureaucracyUiKey.Key, user);
+                SetupAutoFill(ent.Owner, user);
             }
         };
 
         args.Verbs.Add(verb);
+    }
+
+    private void SetupAutoFill(EntityUid computer, EntityUid user)
+    {
+        if (!TryComp<ActorComponent>(user, out var actor))
+            return;
+
+        var station = _station.GetOwningStation(user);
+        var stationName = station.HasValue ? Name(station.Value) : "";
+
+        var charName = Name(user);
+        var charJob = "";
+
+        if (_idCardSystem.TryFindIdCard(user, out var idCard))
+        {
+            charJob = idCard.Comp.LocalizedJobTitle ?? idCard.Comp.JobTitle ?? "";
+        }
+
+        _uiSystem.OpenUi(computer, BureaucracyUiKey.Key, actor.PlayerSession);
+
+        var state = new BureaucracyAutoFillState(stationName, charName, charJob);
+        _uiSystem.SetUiState(computer, BureaucracyUiKey.Key, state);
     }
 }
 
