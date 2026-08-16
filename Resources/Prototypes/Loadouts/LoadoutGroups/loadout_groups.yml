@@ -258,6 +258,7 @@
   - MRCasualPurpleJumpskirt
   - MRCasualRedJumpsuit
   - MRCasualRedJumpskirt
+  - MRMercenaryJumpsuit
 
 - type: loadoutGroup
   id: PassengerFace
@@ -272,6 +273,8 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
+  # MRIYA DOWN
+  - MRMercenaryGlovers
 
 - type: loadoutGroup
   id: CommonBackpack
@@ -280,6 +283,8 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
+  # MRIYA DOWN
+  - MRMercenaryBackpack
 
 - type: loadoutGroup
   id: PassengerNeck
@@ -313,6 +318,7 @@
   - MRYellowShoes
   - MRPurpleShoes
   - MRTouristShoes
+  - MRMercenaryBoots
 
 #- type: loadoutGroup
 #  id: PassengerJobTrinkets

@@ -8,6 +8,16 @@
       role: JobPassenger
       time: 18000 #5 hrs, stopgap for newbies and raiders
 
+# Veteran time
+- type: loadoutEffectGroup
+  id: MRVeteran
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 216000 #60 годин, для справжів ветеранів СБ *віддав честь*
+
 # White
 - type: loadout
   id: MRWhiteJumpsuit
@@ -332,6 +342,15 @@
     jumpsuit: ClothingUniformJumpskirtCasualRed
   groupBy: "colorful"
 
+# Mercenary jumpsuit
+- type: loadout
+  id: MRMercenaryJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitMercenary
+
 # Hawaiian Shirts
 - type: loadout
   id: MRHawaiiBlack
@@ -428,7 +447,6 @@
     shoes: ClothingShoesColorWhite
   groupBy: "colorful"
   
-  
 - type: loadout
   id: MRBrownShoes
   equipment:
@@ -471,3 +489,47 @@
     shoes: ClothingShoesTourist
   sponsorTag: "sponsorShoes_1"
 
+# Mercenary boots
+- type: loadout
+  id: MRMercenaryBoots
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    shoes: ClothingShoesBootsMerc
+
+# Mercenary beret
+- type: loadout
+  id: MRMercenaryBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    shoes: ClothingHeadHatBeretMerc
+
+# Mercenary glovers
+- type: loadout
+  id: MRMercenaryGlovers
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    shoes: ClothingHandsGlovesMercFingerless
+
+# Mercenary backpack 
+- type: loadout
+  id: MRMercenaryBackpack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    shoes: ClothingBackpackMerc
+
+# Mercenary glasses
+- type: loadout
+  id: MRMercenaryGlasses
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MRVeteran
+  equipment: 
+    shoes: ClothingEyesGlassesMercenary

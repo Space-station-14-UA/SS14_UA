@@ -5,6 +5,15 @@
   minLimit: 0
   loadouts:
   - MRStudenthat
+  - MRMercenaryBeret
+
+# MR. By Pyrizhok_333x2
+- type: loadoutGroup
+  id: PassengerEyes
+  name: loadout-group-passenger-eyes
+  minLimit: 0
+  loadouts:
+  - MRMercenaryGlasses
 
 # MR. "Student graduation hat for contributor sponsors — coded by Crvenih, drawn by Pyrizhok_333x2"
 - type: loadoutGroup
