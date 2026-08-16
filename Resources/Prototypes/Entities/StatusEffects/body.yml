@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: MobStatusEffectBase
   id: BloodstreamStatusEffectBase
   abstract: true
@@ -18,7 +18,7 @@
 - type: entity
   parent: BloodstreamStatusEffectDebuff
   id: StatusEffectBloodloss
-  name: bloodloss
+  name: крововтрата
   components:
   - type: StutteringAccent
   - type: DrunkStatusEffect
@@ -47,7 +47,7 @@
 - type: entity
   parent: BloodstreamStatusEffectDebuff
   id: StatusEffectHemorrhage # Increases the amount of blood lost when bleeding.
-  name: hemorrhage
+  name: кровотеча
   components:
   - type: HemophiliaStatusEffect
     bleedReductionMultiplier: 1 # We don't want it to also reduce coagulation, it would stack with Anticoagulant.
