@@ -83,7 +83,7 @@
 - type: entity
   parent: [ ClothingShoesMilitaryBase ]
   id: ClothingShoesBootsMerc
-  name: військові чоботи
+  name: чоботи найманця
   description: Чоботи, які пройшли через багато конфліктів і які довели свою бойову надійність.
   components:
   - type: Sprite

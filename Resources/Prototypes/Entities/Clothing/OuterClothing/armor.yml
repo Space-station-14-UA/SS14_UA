@@ -191,7 +191,7 @@
 - type: entity
   parent: [ BaseMajorContraband, ClothingOuterVestWeb] #web vest so it should have some pockets for ammo
   id: ClothingOuterVestWebMerc
-  name: військовий бронежилет
+  name: бронежилет найманця
   description: Високоякісний бронежилет виготовлений з міцного синтетичного матеріалу. Окрім ефективного захисту, він ще й забезпечує гарну рухливість та гнучкість.
   components:
   - type: Sprite
