@@ -80,13 +80,13 @@
 
 - type: entity
   parent: StaminaModifierStatusEffect
-  name: 2x максимальна стаміна
+  name: 2x максимальна витривалість
   id: StatusEffectDesoxyStamina
 
 - type: entity
   parent: StaminaModifierStatusEffect
   id: StatusEffectStimulantsStamina
-  name: 1.5x максимальна стаміна
+  name: 1.5x максимальна витривалість
   components:
   - type: StaminaModifierStatusEffect
     modifier: 1.5
