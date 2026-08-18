@@ -25,11 +25,11 @@ guidebook-reagent-plant-metabolisms-rate = [bold]Метаболізм росли
 guidebook-reagent-physical-description = [italic]Здається, це {$description}.[/italic]
 guidebook-reagent-recipes-mix-info = {$minTemp ->
     [0] {$hasMax ->
-            [true] {CAPITALIZE($verb)} при температурі нижче {NATURALFIXED($maxTemp, 2)}к
+            [true] {CAPITALIZE($verb)} при температурі нижче {NATURALFIXED($maxTemp, 2)}К
             *[false] {CAPITALIZE($verb)}
         }
     *[other] {CAPITALIZE($verb)} при температурі {$hasMax ->
-            [true] від {NATURALFIXED($minTemp, 2)}к до {NATURALFIXED($maxTemp, 2)}к
-            *[false] вище {NATURALFIXED($minTemp, 2)}к
+            [true] від {NATURALFIXED($minTemp, 2)}К до {NATURALFIXED($maxTemp, 2)}К
+            *[false] вище {NATURALFIXED($minTemp, 2)}К
         }
 }
