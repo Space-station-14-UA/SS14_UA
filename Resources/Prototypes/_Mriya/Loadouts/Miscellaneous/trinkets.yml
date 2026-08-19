@@ -12,3 +12,24 @@
     back:
     - MRplushieShrimp
   groupBy: "plushie"
+
+- type: loadout
+  id: MRplushieTeri
+  storage:
+    back:
+    - MRplushieTeri
+  groupBy: "plushie"
+
+- type: loadout
+  id: MRplushieSenseiCar
+  storage:
+    back:
+    - MRplushieSenseiCar
+  groupBy: "plushie"
+
+- type: loadout
+  id: MRplushieLizardRanquill
+  storage:
+    back:
+    - MRplushieLizardRanquill 
+  groupBy: "plushie"
