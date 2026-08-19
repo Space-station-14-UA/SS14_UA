@@ -505,7 +505,7 @@
   - !type:GroupLoadoutEffect
     proto: MRVeteran
   equipment: 
-    shoes: ClothingHeadHatBeretMerc
+    head: ClothingHeadHatBeretMerc
 
 # Mercenary glovers
 - type: loadout
@@ -514,7 +514,7 @@
   - !type:GroupLoadoutEffect
     proto: MRVeteran
   equipment: 
-    shoes: ClothingHandsGlovesMercFingerless
+    glovers: ClothingHandsGlovesMercFingerless
 
 # Mercenary backpack 
 - type: loadout
@@ -523,7 +523,7 @@
   - !type:GroupLoadoutEffect
     proto: MRVeteran
   equipment: 
-    shoes: ClothingBackpackMerc
+    back: ClothingBackpackMerc
 
 # Mercenary glasses
 - type: loadout
@@ -532,4 +532,4 @@
   - !type:GroupLoadoutEffect
     proto: MRVeteran
   equipment: 
-    shoes: ClothingEyesGlassesMercenary
+    eyes: ClothingEyesGlassesMercenary
