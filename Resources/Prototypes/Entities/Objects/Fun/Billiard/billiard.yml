@@ -130,6 +130,9 @@
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
   - type: BilliardTable
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
   - type: Anchorable
   - type: Rotatable
 
