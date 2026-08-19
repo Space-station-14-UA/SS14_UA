@@ -223,7 +223,7 @@
 - type: entity
   parent: BaseOneTimeXenoArtifactEffect
   id: XenoArtifactBecomeRandomInstrument
-  description: Отримує можливість грати як на музичних інструментах
+  description: Отримує здатність музичного інструменту
   components:
   - type: XAEApplyComponents
     components:
@@ -1226,7 +1226,7 @@
 - type: entity
   parent: BaseXenoArtifactEffect
   id: XenoArtifactHealAll
-  description: Чудове зцілення
+  description: Чудотворне зцілення
   components:
   - type: XAEDamageInArea
     damageChance: 1
