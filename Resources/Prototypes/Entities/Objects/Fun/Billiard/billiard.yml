@@ -16,7 +16,7 @@
     graph: TableBilliard
     node: tableBilliard
   - type: Fixtures
-    fixtures:      
+    fixtures:
       border_north:
         shape:
           !type:PhysShapeAabb
@@ -25,7 +25,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-        
+
       border_south:
         shape:
           !type:PhysShapeAabb
@@ -34,7 +34,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-        
+
       border_west_top:
         shape:
           !type:PhysShapeAabb
@@ -52,7 +52,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-        
+
       border_east_top:
         shape:
           !type:PhysShapeAabb
@@ -61,7 +61,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-        
+
       border_east_bottom:
         shape:
           !type:PhysShapeAabb
@@ -70,7 +70,7 @@
         mask: [ MachineMask, DoorPassable ]
         layer: [ TableLayer ]
         friction: 0.0001
-      
+
       pocket_nw:
         shape:
           !type:PhysShapeCircle
@@ -78,7 +78,7 @@
           position: -0.528, 0.792
         hard: false
         mask: [ DoorPassable ]
-        
+
       pocket_ne:
         shape:
           !type:PhysShapeCircle
@@ -86,7 +86,7 @@
           position: 0.528, 0.792
         hard: false
         mask: [ DoorPassable ]
-        
+
       pocket_sw:
         shape:
           !type:PhysShapeCircle
@@ -94,7 +94,7 @@
           position: -0.528, -0.828
         hard: false
         mask: [ DoorPassable ]
-        
+
       pocket_se:
         shape:
           !type:PhysShapeCircle
@@ -102,7 +102,7 @@
           position: 0.528, -0.828
         hard: false
         mask: [ DoorPassable ]
-        
+
       pocket_w:
         shape:
           !type:PhysShapeCircle
@@ -110,7 +110,7 @@
           position: -0.5592, -0.012
         hard: false
         mask: [ DoorPassable ]
-        
+
       pocket_e:
         shape:
           !type:PhysShapeCircle
@@ -203,6 +203,9 @@
   id: SpawnBilliardTriangle
   parent: BaseItem
   name: спавнер піраміди більярдних куль
+  suffix: Spawn
+  categories:
+  - Spawner
   components:
   - type: Sprite
     sprite: Objects/Fun/Billiards/billiard_ball.rsi
@@ -222,6 +225,9 @@
   id: SpawnBilliardAmericanPool
   parent: SpawnBilliardTriangle
   name: спавнер піраміди американського більярду
+  suffix: Spawn
+  categories:
+  - Spawner
   components:
   - type: Construction
     graph: BilliardTriangleGraph
@@ -238,36 +244,101 @@
     - to: triangle
       steps:
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
+          map: [ "enum.BilliardVisualLayers.Base" ]
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
   - node: triangle
     entity: SpawnBilliardTriangle
@@ -281,36 +352,100 @@
     - to: AmericanPool
       steps:
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
       - component: BilliardBall
+        name: construction-graph-component-billiard-ball
+        icon:
+          sprite: "Objects/Fun/Billiards/billiard_ball.rsi"
+          state: "ball"
         doAfter: 0.1
   - node: AmericanPool
     entity: SpawnBilliardAmericanPool
