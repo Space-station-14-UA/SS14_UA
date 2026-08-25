@@ -9,8 +9,6 @@
     layers:
     - state: stunbaton_off
       map: [ "enum.ToggleableVisuals.Layer" ]
-  - type: Stunbaton
-    energyPerUse: 50
   - type: ItemToggle
     predictable: false
     soundActivate:
