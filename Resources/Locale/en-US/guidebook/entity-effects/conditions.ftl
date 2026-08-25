@@ -25,13 +25,13 @@ entity-condition-guidebook-group-damage =
                  }
     }
 
-entity-condition-guidebook-total-hunger =
+entity-condition-guidebook-total-satiation =
     { $max ->
-        [2147483648] ціль має принаймні {NATURALFIXED($min, 2)} загального голоду
-        *[other] { $min ->
-                    [0] ціль має щонайбільше {NATURALFIXED($max, 2)} загального голоду
-                    *[other] ціль має від {NATURALFIXED($min, 2)} до {NATURALFIXED($max, 2)} загального голоду
-                 }
+        [2147483648] ціль має принаймні {NATURALFIXED($min, 2)} загального рівня: {$type}
+       *[other] { $min ->
+                    [0] ціль має щонайбільше {NATURALFIXED($max, 2)} загального рівня: {$type}
+                   *[other] ціль має від {NATURALFIXED($min, 2)} до {NATURALFIXED($max, 2)} загального рівня: {$type}
+                }
     }
 
 entity-condition-guidebook-reagent-threshold =

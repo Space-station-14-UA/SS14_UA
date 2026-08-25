@@ -67,22 +67,13 @@ entity-effect-guidebook-smoke-area =
         *[other] створити
     } велику кількість диму
 
-entity-effect-guidebook-satiate-thirst =
+entity-effect-guidebook-satiate =
     { $chance ->
         [1] Втамовує
-        *[other] втамувати
+       *[other] втамувати
     } { $relative ->
-        [1] спрагу в середньому темпі
-        *[other] спрагу в {NATURALFIXED($relative, 3)}x від середнього темпу
-    }
-
-entity-effect-guidebook-satiate-hunger =
-    { $chance ->
-        [1] Втамовує
-        *[other] втамувати
-    } { $relative ->
-        [1] голод в середньому темпі
-        *[other] голод в {NATURALFIXED($relative, 3)}x від середнього темпу
+        [1] {$type} помірно
+       *[other] {$type} із середньою швидкістю x{NATURALFIXED($relative, 3)}
     }
 
 entity-effect-guidebook-health-change =
@@ -495,12 +486,6 @@ entity-effect-guidebook-plant-phalanximine =
         *[other] відновити
     } життєздатність рослини, яка стала нежиттєздатною через мутацію
 
-entity-effect-guidebook-plant-remove-kudzu =
-    { $chance ->
-        [1] Видаляє
-        *[other] видалити
-    } зарості кудзу з рослини
-
 entity-effect-guidebook-plant-diethylamine =
     { $chance ->
         [1] Збільшує
@@ -524,6 +509,18 @@ entity-effect-guidebook-plant-seeds-remove =
         [1] Видаляє
         *[other] видалити
     } насіння рослини
+
+entity-effect-guidebook-plant-mutate-exude-gasses =
+    { $chance ->
+        [1] Мутує
+       *[other] мутувати
+    } рослину, щоб вона виділяла гази в обсязі від {$minValue} до {$maxValue} моль
+
+entity-effect-guidebook-plant-mutate-consume-gasses =
+    { $chance ->
+        [1] Мутує
+       *[other] мутувати
+    } рослину, щоб вона споживала гази в обсязі від {$minValue} до {$maxValue} моль
 
 entity-effect-guidebook-plant-mutate-chemicals =
     { $chance ->

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
+  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized, StructureHealthContainer ]
   id: CrateArtifactContainer
   name: контейнер для артефактів
   description: Використовується для безпечного зберігання та перенесення артефактів.
@@ -54,17 +54,16 @@
     - type: PlaceableSurface
       isPlaceable: false
     - type: Damageable
-      damageModifierSet: StructuralMetallicStrong
-    - type: Injurable
-      damageContainer: StructuralInorganic
+      damageModifierSet: PlasteelMod
     - type: Destructible
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 100
         behaviors:
-        - !type:DoActsBehavior
-          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalGlassBreak
     - type: Appearance
     - type: EntityStorageVisuals
       stateDoorOpen: artifact_container_open
@@ -94,7 +93,7 @@
       price: 250
 
 - type: entity
-  parent: BaseStorageItem
+  parent: [ BaseStorageItem, StructureHealthContainerWeak ]
   id: HandheldArtifactContainer
   name: ручний контейнер для артефактів
   description: Ручний контейнер, який використовується для безпечного зберігання та переміщення невеликих артефактів.
@@ -137,17 +136,16 @@
       path: /Audio/Items/toolbox_drop.ogg
   - type: LockVisuals
   - type: Damageable
-    damageModifierSet: StructuralMetallicStrong
-  - type: Injurable
-    damageContainer: StructuralInorganic
+    damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 60
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
   - type: PaperLabel
     labelSlot:
       insertVerbText: Attach Label

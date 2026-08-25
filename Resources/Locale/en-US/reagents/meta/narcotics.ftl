@@ -31,8 +31,11 @@ reagent-desc-nocturine = Змушує вас почуватися дуже вт�
 reagent-name-mute-toxin = мовчанка
 reagent-desc-mute-toxin = Робить вас нездатними говорити під час засвоєння.
 
-reagent-name-norepinephric-acid = норадреналінова кислота
-reagent-desc-norepinephric-acid = Робить вас нездатними бачити під час метаболізму.
+reagent-name-tacitic-acid = тацитова кислота
+reagent-desc-tacitic-acid = Паралітична речовина, що вражає гортань, позбавляючи здатності говорити. Через оніміння ціль не здогадується про це, доки не спробує заговорити.
+
+reagent-name-norepinephric-acid = норепінефринова кислота
+reagent-desc-norepinephric-acid = М'яка хімічна речовина, що блокує зорові рецептори, позбавляючи зору під час метаболізму.
 
 reagent-name-tear-gas = сльозогінний газ
 reagent-desc-tear-gas = Хімічна речовина, яка викликає сильне роздратування та плач, зазвичай використовується для боротьби з масовими заворушеннями.

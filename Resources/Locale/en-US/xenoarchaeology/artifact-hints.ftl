@@ -76,6 +76,10 @@ xenoarch-trigger-tip-meat = Вживання білків
 xenoarch-trigger-tip-produce = Вживання корисних продуктів
 xenoarch-trigger-tip-stamp = Бюрократичне схвалення
 xenoarch-trigger-tip-shock = Удар струмом
+xenoarch-trigger-tip-particle = Частинки, що впливають на сингулярність
+xenoarch-trigger-tip-anomparticle = Частинки, що впливають на аномалію
+xenoarch-trigger-tip-stamina-damage = Органічне виснаження
+xenoarch-trigger-tip-laser = Удари високоінтенсивних фотонів
 
 ### Description hints
 xenoarch-trigger-examine-wrenching = Тут обертається ослаблений фрагмент.

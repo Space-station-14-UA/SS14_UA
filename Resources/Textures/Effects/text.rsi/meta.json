@@ -1,311 +1,296 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by rolfero (github) for Space Station 14 та Pgriha (гітхаб/ДС) зробив кириличні для Січі",
-  "size": {
-    "x": 4,
-    "y": 6
-  },
-  "states": [
-    {
-      "name": "0"
-    },
-    {
-      "name": "1"
-    },
-    {
-      "name": "2"
-    },
-    {
-      "name": "3"
-    },
-    {
-      "name": "4"
-    },
-    {
-      "name": "5"
-    },
-    {
-      "name": "6"
-    },
-    {
-      "name": "7"
-    },
-    {
-      "name": "8"
-    },
-    {
-      "name": "9"
-    },
-    {
-      "name": "a"
-    },
-    {
-      "name": "b"
-    },
-    {
-      "name": "c"
-    },
-    {
-      "name": "d"
-    },
-    {
-      "name": "e"
-    },
-    {
-      "name": "f"
-    },
-    {
-      "name": "g"
-    },
-    {
-      "name": "h"
-    },
-    {
-      "name": "i"
-    },
-    {
-      "name": "j"
-    },
-    {
-      "name": "k"
-    },
-    {
-      "name": "l"
-    },
-    {
-      "name": "m"
-    },
-    {
-      "name": "n"
-    },
-    {
-      "name": "o"
-    },
-    {
-      "name": "p"
-    },
-    {
-      "name": "q"
-    },
-    {
-      "name": "r"
-    },
-    {
-      "name": "s"
-    },
-    {
-      "name": "t"
-    },
-    {
-      "name": "u"
-    },
-    {
-      "name": "v"
-    },
-    {
-      "name": "w"
-    },
-    {
-      "name": "x"
-    },
-    {
-      "name": "y"
-    },
-    {
-      "name": "z"
-    },
-    {
-      "name": "exclamation"
-    },
-    {
-      "name": "question"
-    },
-    {
-      "name": "star"
-    },
-    {
-      "name": "plus"
-    },
-    {
-      "name": "dash"
-    },
-    {
-      "name": "colon"
-    },
-    {
-      "name": "blank"
-    },
-	  {
-      "name": "а"
-    },
-    {
-      "name": "б"
-    },
-    {
-      "name": "в"
-    },
-    {
-      "name": "г"
-    },
-    {
-      "name": "ґ"
-    },
-    {
-      "name": "д"
-    },
-    {
-      "name": "е"
-    },
-    {
-      "name": "є"
-    },
-    {
-      "name": "ж"
-    },
-    {
-      "name": "з"
-    },
-    {
-      "name": "и"
-    },
-    {
-      "name": "і"
-    },
-    {
-      "name": "ї"
-    },
-    {
-      "name": "й"
-    },
-    {
-      "name": "к"
-    },
-    {
-      "name": "л"
-    },
-    {
-      "name": "м"
-    },
-    {
-      "name": "н"
-    },
-    {
-      "name": "о"
-    },
-    {
-      "name": "п"
-    },
-    {
-      "name": "р"
-    },
-    {
-      "name": "с"
-    },
-    {
-      "name": "т"
-    },
-    {
-      "name": "у"
-    },
-    {
-      "name": "ф"
-    },
-    {
-      "name": "х"
-    },
-    {
-      "name": "ц"
-    },
-    {
-      "name": "ч"
-    },
-    {
-      "name": "ш"
-    },
-    {
-      "name": "щ"
-    },
-    {
-      "name": "ь"
-    },
-    {
-      "name": "ю"
-    },
-    {
-      "name": "я"
-    },
-    {
-      "name": "apostrophe"
-    },
-    {
-      "name": "dot"
-    },
-    {
-      "name": "coma"
-    },
-    {
-      "name": "slash"
-    },
-    {
-      "name": "quotation"
-    },
-    {
-      "name": "vbar"
-    },
-    {
-      "name": "tilde"
-    },
-    {
-      "name": "equal"
-    },
-    {
-      "name": "underscore"
-    },
-    {
-      "name": "bracket-left"
-    },
-    {
-      "name": "bracket-right"
-    },
-    {
-      "name": "square_bracket-left"
-    },
-    {
-      "name": "square_bracket-right"
-    },
-    {
-      "name": "curly_bracket-left"
-    },
-    {
-      "name": "curly_bracket-right"
-    },
-    {
-      "name": "hash"
-    },
-    {
-      "name": "greater"
-    },
-    {
-      "name": "less"
-    },
-    {
-      "name": "percent"
-    },
-    {
-      "name": "caret"
-    },
-    {
-      "name": "bullet"
-    },
-    {
-      "name": "inverted_exclamation"
-    },
-    {
-      "name": "invereted_question"
-    },
-    {
-      "name": "semicolon"
-    }
-  ]
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Created by rolfero (github) for Space Station 14 та Pgriha (гітхаб/ДС) зробив кириличні",
+    "size": {
+        "x": 4,
+        "y": 6
+    },
+    "states": [
+        {
+            "name": "0"
+        },
+        {
+            "name": "1"
+        },
+        {
+            "name": "2"
+        },
+        {
+            "name": "3"
+        },
+        {
+            "name": "4"
+        },
+        {
+            "name": "5"
+        },
+        {
+            "name": "6"
+        },
+        {
+            "name": "7"
+        },
+        {
+            "name": "8"
+        },
+        {
+            "name": "9"
+        },
+        {
+            "name": "a"
+        },
+        {
+            "name": "b"
+        },
+        {
+            "name": "c"
+        },
+        {
+            "name": "d"
+        },
+        {
+            "name": "e"
+        },
+        {
+            "name": "f"
+        },
+        {
+            "name": "g"
+        },
+        {
+            "name": "h"
+        },
+        {
+            "name": "i"
+        },
+        {
+            "name": "j"
+        },
+        {
+            "name": "k"
+        },
+        {
+            "name": "l"
+        },
+        {
+            "name": "m"
+        },
+        {
+            "name": "n"
+        },
+        {
+            "name": "o"
+        },
+        {
+            "name": "p"
+        },
+        {
+            "name": "q"
+        },
+        {
+            "name": "r"
+        },
+        {
+            "name": "s"
+        },
+        {
+            "name": "t"
+        },
+        {
+            "name": "u"
+        },
+        {
+            "name": "v"
+        },
+        {
+            "name": "w"
+        },
+        {
+            "name": "x"
+        },
+        {
+            "name": "y"
+        },
+        {
+            "name": "z"
+        },
+        {
+            "name": "angle-l"
+        },
+        {
+            "name": "angle-r"
+        },
+        {
+            "name": "apostrophe"
+        },
+        {
+            "name": "backslash"
+        },
+        {
+            "name": "blank"
+        },
+        {
+            "name": "bracket-l"
+        },
+        {
+            "name": "bracket-r"
+        },
+        {
+            "name": "caret"
+        },
+        {
+            "name": "colon"
+        },
+        {
+            "name": "comma"
+        },
+        {
+            "name": "dash"
+        },
+        {
+            "name": "equals"
+        },
+        {
+            "name": "exclamation"
+        },
+        {
+            "name": "hash"
+        },
+        {
+            "name": "paren-l"
+        },
+        {
+            "name": "paren-r"
+        },
+        {
+            "name": "percent"
+        },
+        {
+            "name": "period"
+        },
+        {
+            "name": "plus"
+        },
+        {
+            "name": "question"
+        },
+        {
+            "name": "quotation"
+        },
+        {
+            "name": "semicolon"
+        },
+        {
+            "name": "slash"
+        },
+        {
+            "name": "speso"
+        },
+        {
+            "name": "star"
+        },
+        {
+            "name": "underscore"
+        },
+        {
+          "name": "а"
+        },
+        {
+          "name": "б"
+        },
+        {
+          "name": "в"
+        },
+        {
+          "name": "г"
+        },
+        {
+          "name": "ґ"
+        },
+        {
+          "name": "д"
+        },
+        {
+          "name": "е"
+        },
+        {
+          "name": "є"
+        },
+        {
+          "name": "ж"
+        },
+        {
+          "name": "з"
+        },
+        {
+          "name": "и"
+        },
+        {
+          "name": "і"
+        },
+        {
+          "name": "ї"
+        },
+        {
+          "name": "й"
+        },
+        {
+          "name": "к"
+        },
+        {
+          "name": "л"
+        },
+        {
+          "name": "м"
+        },
+        {
+          "name": "н"
+        },
+        {
+          "name": "о"
+        },
+        {
+          "name": "п"
+        },
+        {
+          "name": "р"
+        },
+        {
+          "name": "с"
+        },
+        {
+          "name": "т"
+        },
+        {
+          "name": "у"
+        },
+        {
+          "name": "ф"
+        },
+        {
+          "name": "х"
+        },
+        {
+          "name": "ц"
+        },
+        {
+          "name": "ч"
+        },
+        {
+          "name": "ш"
+        },
+        {
+          "name": "щ"
+        },
+        {
+          "name": "ь"
+        },
+        {
+          "name": "ю"
+        },
+        {
+          "name": "я"
+        },
+    ]
 }
