@@ -1,0 +1,13 @@
+## Статичні
+- type: latheRecipePack
+  id: SecuritySpaceWorkBase
+  recipes:
+  - ClothingOuterHardsuitEVAPrisoner
+
+# Динамічні
+
+- type: latheRecipePack
+  id: SecuritySpaceWork
+  recipes:
+  - ClothingOuterHardsuitSecurity
+  - JetpackSecurity

@@ -1,0 +1,164 @@
+# Hardsuits
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurity
+  result: ClothingOuterHardsuitSecurity
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 1000
+    Steel: 1000
+    Plastic: 500
+    Glass: 300
+    Plasteel: 500
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEVAPrisoner # Примітка для Пиріжка - В одному файлі рецептів МОЖУТЬ одночасно знаходитися рецепти які доступні раундстартом та від різних технологій.
+  result: ClothingOuterHardsuitEVAPrisoner
+  categories:
+  - Clothing
+  completetime: 10
+  materials:
+    Durathread: 500
+    Steel: 750
+    Cloth: 500
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEVA
+  result: ClothingOuterHardsuitEVA
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 500
+    Steel: 500
+    Cloth: 500
+
+- type: latheRecipe
+  id: ClothingHeadHelmetEVA
+  result: ClothingHeadHelmetEVA
+  categories:
+  - Clothing
+  completetime: 10
+  materials:
+    Steel: 250
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterSuitEmergency
+  result: ClothingOuterSuitEmergency
+  categories:
+  - Clothing
+  completetime: 10
+  materials:
+    Steel: 500
+    Cloth: 500
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSpatio
+  result: ClothingOuterHardsuitSpatio
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 1000
+    Steel: 1000
+    Plastic: 500
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEngineering
+  result: ClothingOuterHardsuitEngineering
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 500
+    Steel: 1000
+    Plastic: 500
+    Glass: 300
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitAtmos
+  result: ClothingOuterHardsuitAtmos
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 500
+    Steel: 1000
+    Plastic: 1500
+    Glass: 300
+
+# Jetpacks
+
+- type: latheRecipe
+  id: JetpackSecurity
+  result: JetpackSecurity
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Steel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  id: JetpackBlue
+  result: JetpackBlue
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Steel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  id: JetpackMini
+  result: JetpackMini
+  categories:
+  - Clothing
+  completetime: 10
+  materials:
+    Steel: 500
+    Plastic: 500
+
+# Рецепт для емагнутих автолатів, АХАХАХАХАХХАХАХАА! Злий сміх
+
+# Hardsuits
+
+- type: latheRecipe
+  id: ClothingOuterEVASuitSyndicate
+  result: ClothingOuterEVASuitSyndicate
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Durathread: 500
+    Steel: 500
+    Cloth: 500
+
+
+- type: latheRecipe
+  id: ClothingHeadHelmetSyndicate
+  result: ClothingHeadHelmetSyndicate
+  categories:
+  - Clothing
+  completetime: 10
+  materials:
+    Steel: 250
+    Glass: 200
+
+# Jetpack
+
+- type: latheRecipe
+  id: JetpackBlack
+  result: JetpackBlack
+  categories:
+  - Clothing
+  completetime: 15
+  materials:
+    Steel: 1000
+    Plastic: 500

@@ -1,0 +1,17 @@
+# Тир 1 
+
+- type: technology
+  id: SpaceWorkIndustrial
+  name: research-technology-space-works
+  icon:
+    sprite: Objects/Tanks/Jetpacks/blue.rsi
+    state: icon
+  discipline: Industrial
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitEngineering
+  - ClothingOuterHardsuitAtmos
+  - JetpackMini
+  - JetpackBlue

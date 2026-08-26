@@ -138,10 +138,12 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
+    - HardsuitsSpaceWorksBase
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
     - SyndicateAmmoStatic
+    - SyndicateSpaceWorkStatic
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -212,6 +214,8 @@
     - Janitor
     - Instruments
     - Equipment
+    - HardsuitsSpaceWorks
+    - JetpackSpaceWorks
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -393,6 +397,7 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - SecuritySpaceWorkBase
     dynamicPacks:
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
@@ -402,6 +407,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SecuritySpaceWork
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

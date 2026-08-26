@@ -1,0 +1,9 @@
+## Статичні
+
+# Для емангутого автолата
+- type: latheRecipePack
+  id: SyndicateSpaceWorkStatic
+  recipes:
+  - ClothingOuterEVASuitSyndicate
+  - ClothingHeadHelmetSyndicate
+  - JetpackBlack

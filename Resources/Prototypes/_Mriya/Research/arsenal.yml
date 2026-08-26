@@ -1,0 +1,14 @@
+# Тир 1
+
+- type: technology
+  id: SpaceWorkSecurity
+  name: research-technology-security-space-works
+  icon:
+    sprite: Objects/Tanks/Jetpacks/security.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSecurity
+  - JetpackSecurity
