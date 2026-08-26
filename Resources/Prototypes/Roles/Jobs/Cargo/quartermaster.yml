@@ -15,7 +15,6 @@
       time: 10h
     - !type:AgeRequirement
       requiredAge: 25
-  weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain

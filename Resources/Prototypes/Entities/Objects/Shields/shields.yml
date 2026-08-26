@@ -333,6 +333,7 @@
   id: EnergyShield
   description: Екзотичний енергетичний щит у складеному вигляді може поміститися навіть у кишені.
   components:
+    - type: ItemToggleExaminableStatus
     - type: ItemToggle
       soundActivate:
         path: /Audio/Weapons/ebladeon.ogg
@@ -438,6 +439,9 @@
   id: TelescopicShield
   description: Удосконалений щит для захисту від бунту, виготовлений з легких матеріалів, який розкладається для зручності зберігання.
   components:
+    - type: ItemToggleExaminableStatus
+      onText: item-toggle-examined-active
+      offText: item-toggle-examined-not-active
     - type: ItemToggle
       soundActivate:
         path: /Audio/Weapons/telescopicon.ogg

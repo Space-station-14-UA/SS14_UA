@@ -14,7 +14,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectStutter
-  name: stutter
+  name: заїкання
   components:
   - type: StutteringAccent
 
@@ -22,7 +22,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectSlurred
-  name: slurred
+  name: невиразна мова
   components:
   - type: SlurredAccent
 
@@ -38,7 +38,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectOwO
-  name: owoaccent
+  name: owo-акцент
   components:
   - type: OwOAccent
 
@@ -54,7 +54,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectRatvarianLanguage
-  name: ratvarian language patterns
+  name: ратваріанські мовні патерни
   components:
   - type: RatvarianLanguage
 
@@ -62,6 +62,6 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectBark
-  name: barkaccent
+  name: гавкатливий акцент
   components:
   - type: BarkAccent

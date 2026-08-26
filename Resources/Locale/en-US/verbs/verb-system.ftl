@@ -8,27 +8,28 @@ verb-self-target-pronoun = Себе
 
 # verb categories & common verbs. These appear across multiple systems, so they may as well go here.
 
-verb-categories-admin = Адмін
-verb-categories-debug = Дебаг
+verb-categories-admin = Адміністратор
+verb-categories-debug = Налагодження
 verb-categories-examine = Оглянути
-verb-categories-eject = Дістати
+verb-categories-eject = Витягти
 verb-categories-insert = Вставити
-verb-categories-buckle = Пристібнути
-verb-categories-unbuckle = Відстібнути
-verb-categories-rotate = Обернути
-verb-categories-smite = Ударити
-verb-categories-tricks = Хитрощі
-verb-categories-transfer = Встановити кількість до трансферу
+verb-categories-buckle = Пристебнути
+verb-categories-unbuckle = Відстебнути
+verb-categories-rotate = Повернути
+verb-categories-smite = Покарати
+verb-categories-tricks = Трюки
+verb-categories-transfer = Встановити об'єм передачі
 verb-categories-split = Розділити
-verb-categories-instrument-style = Стиль інструменту
+verb-categories-instrument-style = Стиль інструмента
 verb-categories-channel-select = Канали
 verb-categories-set-sensor = Сенсор
 verb-categories-timer = Встановити затримку
 verb-categories-lever = Важіль
-verb-categories-select-type = Оберіть Тип
-verb-categories-fax = Встановити Місцепризначення
-verb-categories-power-level = Рівень енергії
+verb-categories-select-type = Обрати тип
+verb-categories-fax = Встановити призначення
+verb-categories-power-level = Рівень потужності
 verb-categories-adjust = Налаштувати
+verb-categories-select-target = Обрати ціль
 
 verb-common-toggle-light = Вімкнути світло
 verb-common-close = Зачинити

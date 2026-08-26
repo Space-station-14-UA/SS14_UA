@@ -117,8 +117,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-  - type: Hunger
-  - type: Thirst
   - type: Icon
     sprite: _Sich/Mobs/Species/Tajara/parts.rsi
     state: full

@@ -52,7 +52,10 @@
   parent: BasePlushie
   id: MRplushieShrimp
   name: плюшева креветка
-  description: "Проста зварена плюшева креветка. Ні, креветки не цвіркають."
+  suffix: Дякую, Црвеніх
+  description: | 
+   "Проста зварена плюшева креветка. Ні, креветки не цвіркають."
+   [color=yellow]Дякую, Црвеніх![/color]
   components:
   - type: Sprite
     sprite: _Mriya/Objects/Fun/Plushies/shrimp.rsi
@@ -67,3 +70,129 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: MRshrimpPlushie
+
+# Android plushie
+- type: entity
+  parent: BasePlushie
+  id: MRplushieTeri
+  name: плюшевий андроїд
+  suffix: Дякую, Савелій
+  description: |
+   "Плюшева іграшка зроблена на честь головної героїні андроїда зі старого мультику. У творі персонаж вдало проводить майже неможливі секретні операції використовуючи для цього неймовірні гаджети, загадкові тактики та свою червону катану, і все заради порятунку своїх друзів." 
+   [color=yellow]Дякую, Савелій![/color]
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/Plushies/Teri.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound: &PlushieSharkSound
+      path: /Audio/Items/Toys/rawr.ogg
+  - type: EmitSoundOnLand
+    sound: *PlushieSharkSound
+  - type: EmitSoundOnTrigger
+    sound: *PlushieSharkSound
+  - type: EmitSoundOnActivate
+    sound: *PlushieSharkSound
+  - type: EmitSoundOnCollide
+    sound: *PlushieSharkSound
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    soundHit: *PlushieSharkSound
+    animation: WeaponArcBite
+  - type: Edible
+    useSound: *PlushieSharkSound
+  - type: Clothing
+    quickEquip: false
+    sprite: _Mriya/Objects/Fun/Plushies/Teri.rsi
+    slots:
+    - HEAD
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MRplushieTeri
+
+# Car plushie
+- type: entity
+  parent: BasePlushie
+  id: MRplushieSenseiCar
+  name: плюшева червона машинка
+  suffix: Дякую, Сенсей
+  description: |
+   "Стильна та популярна іграшка зроблена по секретним кресленням компанії 'Гарячі Колеса'"
+   [color=yellow]Дякую, Сенсей![/color]
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/Plushies/Senseicar.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound: &carhorn
+      path: /Audio/Effects/Vehicle/carhorn.ogg
+  - type: Item
+    sprite: 
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MRplushieSenseiCar
+
+# Lizard leader plushie
+- type: entity
+  parent: BasePlushie
+  id: MRplushieLizardRanquill #Лускатики!
+  name: плюшева Ящіранкіль
+  suffix: Дякую, Ранкіль
+  description: | 
+   "Ця м'яка іграшкова зроблена на честь персонажа з короткого мультику про малих ящірок. У самому мультику вона використовує свій гучномовець щоб кликати своїх лускатих друзів дивитися на гарні картинки з іншими ящірками."
+   [color=yellow]Дякую, Ранкіль![/color]
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/Plushies/lizardRanquill.rsi
+    state: icon
+  - type: Item
+    sprite: _Mriya/Objects/Fun/Plushies/lizardRanquill.rsi
+  - type: EmitSoundOnUse
+    sound: &PlushieLizardSound
+      path: /Audio/Items/Toys/weh.ogg
+      params:
+        volume: -5
+  - type: EmitSoundOnLand
+    sound: *PlushieLizardSound
+  - type: EmitSoundOnActivate
+    sound: *PlushieLizardSound
+  - type: EmitSoundOnTrigger
+    sound: *PlushieLizardSound
+  - type: EmitSoundOnCollide
+    sound: *PlushieLizardSound
+  - type: Edible
+    useSound: *PlushieLizardSound
+    transferAmount: 10
+  - type: MeleeWeapon
+    soundHit: *PlushieLizardSound
+  - type: Clothing
+    quickEquip: false
+    sprite: _Mriya/Objects/Fun/Plushies/lizardRanquill.rsi
+    slots:
+    - HEAD
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.03"
+  - type: Speech
+    speechVerb: Reptilian # for pais (In the secret stash) (я загалом ентіті копіював з Веха тому я хз що цей текст значить)
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: MRplushieLizardRanquill
+  - type: Tag
+    tags:
+    - Payload
+    - ClothMade
+    - PlushieLizard
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceThatMakesYouWeh
+        Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 20
+      - ReagentId: JuiceThatMakesYouWeh
+        Quantity: 10

@@ -69,8 +69,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-  - type: Hunger
-  - type: Thirst
   - type: Butcherable
     spawned:
     - id: FoodMeatHuman

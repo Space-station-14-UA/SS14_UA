@@ -103,7 +103,9 @@
       - VimPilot
       - CannotSuicide
   - type: MovementAlwaysTouching
-  - type: PressureImmunity
+  - type: PermanentStatusEffects
+    statusEffects:
+    - StatusEffectPressureImmunity
   - type: ProtectedFromStepTriggers
   - type: NoSlip
   - type: Insulated

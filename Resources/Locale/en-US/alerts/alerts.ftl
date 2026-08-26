@@ -30,9 +30,6 @@ alerts-weightless-desc =
 alerts-walking-name = Йдеш
 alerts-walking-desc = Ви йдете, рухаєтеся в повільному темпі.
 
-alerts-stunned-name = [color=yellow]Оглушений[/color]
-alerts-stunned-desc = Вас [color=yellow]оглушили[/color]! Щось послаблює вашу здатність до рухів та взаємодії з об'єктами.
-
 alerts-knockdown-name = [color=yellow]Збито з ніг[/color]
 alerts-knockdown-desc = Ви [color=yellow]збиті з ніг[/color]! Щось підкосило або штовхнуло вас, обмежуючи вашу здатність рухатися.
 
@@ -81,12 +78,6 @@ alerts-thirsty-desc = Трохи водички зараз не завадить
 alerts-parched-name = [color=red]Сильна спрага[/color]
 alerts-parched-desc = Ви дуже хочете пити. Спрага сповільнює ваші рухи.
 
-alerts-muted-name = Німий
-alerts-muted-desc = Ви втратили здатність говорити.
-
-alerts-vow-silence-name = Обітниця мовчання
-alerts-vow-silence-desc = Ви прийняли обітницю, яка забороняє усне чи письмове спілкування як частину посвячення у секту Містіко Мімон. Натисніть, щоб порушити обітницю.
-
 alerts-vow-broken-name = Обітниця порушена
 alerts-vow-broken-desc = Ви порушили свою обітницю мімам. Ви вмієте говорити і писати, але ви втратили свої сили щонайменше на цілих 5 хвилин!!! Натисніть, щоб спробувати повторно прийняти обітницю.
 
@@ -101,9 +92,6 @@ alerts-bleed-desc = Ти [color=red]стікаєш кров'ю[/color].
 
 alerts-pacified-name = [color=green]Заспокоєний[/color]
 alerts-pacified-desc = Ви заспокоєні, ви не зможете напасти на когось безпосередньо.
-
-alerts-adrenaline-name = [color=red]Адреналін[/color]
-alerts-adrenaline-desc = Ви сповнені адреналіну: біль не сповільнить вас.
 
 alerts-suit-power-name = Живлення Костюму
 alerts-suit-power-desc = Скільки заряду має ваш костюм космічного ніндзя.
@@ -125,3 +113,6 @@ alerts-stealthy-desc = Режим крадіжки. Натисніть, щоб �
 
 alerts-prying-name = Злом
 alerts-prying-desc = Ви можете вроджено відчиняти двері силою, використовуючи альтернативну взаємодію.
+
+alerts-changeling-chemicals-name = Хімікати
+alerts-changeling-chemicals-desc = Хімікати, що накопичуються в наших залозах. Вони потрібні для дії багатьох наших здібностей. Вони відновлюються з часом.

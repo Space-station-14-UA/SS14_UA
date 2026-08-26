@@ -15,7 +15,6 @@
       time: 10h
     - !type:AgeRequirement
       requiredAge: 25
-  weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
   supervisors: job-supervisors-captain

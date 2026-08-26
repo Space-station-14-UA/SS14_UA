@@ -43,10 +43,12 @@ public sealed partial class ClimbSystem : VirtualController
     [Dependency] private SharedStunSystem _stunSystem = default!;
     [Dependency] private SharedTransformSystem _xformSystem = default!;
 
-    [Dependency] private EntityQuery<ClimbableComponent> _climbableQuery = default!;
-    [Dependency] private EntityQuery<FixturesComponent> _fixturesQuery = default!;
-    [Dependency] private EntityQuery<TransformComponent> _xformQuery = default!;
-    [Dependency] private readonly ActionSpeedModifierSystem _actionSpeed = default!; // Mriya: зміна швидкості взбирання
+    [Dependency] private EntityQuery<BonkableComponent> _bonkQuery;
+    [Dependency] private EntityQuery<ClimbableComponent> _climbableQuery;
+    [Dependency] private EntityQuery<FixturesComponent> _fixturesQuery;
+    [Dependency] private EntityQuery<TransformComponent> _xformQuery;
+    [Dependency] private ActionSpeedModifierSystem _actionSpeed = default!; // Mriya: зміна швидкості взбирання
+
 
     private const string ClimbingFixtureName = "climb";
     private const int ClimbingCollisionGroup = (int) (CollisionGroup.TableLayer | CollisionGroup.LowImpassable);
