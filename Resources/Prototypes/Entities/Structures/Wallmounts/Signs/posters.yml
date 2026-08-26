@@ -1,21 +1,16 @@
 - type: entity
   abstract: true
-  parent: BaseSign
+  parent: BaseSignWeak
   id: PosterBase
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/posters.rsi
-  - type: Damageable
-    damageModifierSet: Card
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
         damage: 5
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: /Audio/Effects/poster_broken.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           PosterBroken:
@@ -27,7 +22,7 @@
     node: start
 
 - type: entity
-  parent: BaseSign
+  parent: BaseSignWeak
   id: PosterBroken
   name: "Порваний пострер"
   description: "Неможливо розібрати, що зображено на постері. Він знищений."
@@ -36,17 +31,6 @@
     drawdepth: WallTops
     sprite: Structures/Wallmounts/posters.rsi
     state: poster_broken
-  - type: Damageable
-    damageModifierSet: Card
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 5
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: /Audio/Effects/poster_broken.ogg
   - type: Construction
     graph: PosterGraph
     node: tornPoster

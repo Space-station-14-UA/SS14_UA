@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMachinePowered
+  parent: [ BaseMachinePowered, StructureHealthMachineWeak ]
   id: FaxMachineBase
   name: факс дальнього радіусу дії
   description: Блюспейс технології застосування бюрократії.
@@ -41,8 +41,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: ActivatableUI
     key: enum.FaxUiKey.Key
   - type: ActivatableUIRequiresPower

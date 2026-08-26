@@ -1,4 +1,4 @@
-﻿### EmitterComponent
+### EmitterComponent
 
 # Shows when attempting to turn the emitter on or off without proper access
 comp-emitter-access-locked = Доступ до {$target} заблокований!
@@ -15,6 +15,6 @@ emitter-component-current-type = Поточний вибраний тип - це
 emitter-component-type-set = Тип встановлений на: {$type}
 
 emitter-destroyed-broadcast = Увімкнений емітер {$location} було знищено.
-emitter-deconstructed-broadcast = Увімкнений емітер {$location} було розібрано.
 emitter-unlocked-broadcast = Увімкнений емітер {$location} було розблоковано.
 emitter-unpowered-broadcast = Увімкнений емітер {$location} втратив живлення.
+emitter-turn-off-broadcast = Увімкнений емітер {$location} було вимкнено.

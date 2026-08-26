@@ -7,7 +7,7 @@ namespace Content.Shared.Billiards;
 public sealed partial class BilliardSpawnerComponent : Component
 {
     [DataField]
-    public EntProtoId BallPrototype = "BilliardsBall";
+    public EntProtoId BallPrototype = "BilliardBall";
 
     [DataField]
     public float BallSpacing = 0.13f;

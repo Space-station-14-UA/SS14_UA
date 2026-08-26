@@ -15,7 +15,6 @@
   - type: Item
     size: Normal
     sprite: _Sich/Objects/Weapons/Melee/energykatanablue.rsi
-  - type: EnergyKatana
   - type: Clothing
     sprite: _Sich/Objects/Weapons/Melee/energykatanablue.rsi
     slots:
@@ -40,7 +39,6 @@
   - type: Item
     size: Normal
     sprite: _Sich/Objects/Weapons/Melee/energykatanared.rsi
-  - type: EnergyKatana
   - type: Clothing
     sprite: _Sich/Objects/Weapons/Melee/energykatanared.rsi
     slots:

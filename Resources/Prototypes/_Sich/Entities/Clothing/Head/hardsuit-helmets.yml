@@ -1,443 +1,443 @@
-#SolFed
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitSolFed
-  categories: [ HideSpawnMenu ]
-  name: шолом Сонячної Федерації
-  description: Шолом що використовується Поліцією СолФеду. За демократію!
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/solfed.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/solfed.rsi
-  - type: PointLight
-    color: blue
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #SolFed
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitSolFed
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Сонячної Федерації
+#   description: Шолом що використовується Поліцією СолФеду. За демократію!
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/solfed.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/solfed.rsi
+#   - type: PointLight
+#     color: blue
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
         
-#Ukraine (USN)
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitUkraine
-  categories: [ HideSpawnMenu ]
-  name: шолом Української Космічної Держави
-  description: Бойовий шолом солдатів УКД, заснованій на армійському костюмі типу "Булат".
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/ukraine.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/ukraine.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Ukraine (USN)
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitUkraine
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Української Космічної Держави
+#   description: Бойовий шолом солдатів УКД, заснованій на армійському костюмі типу "Булат".
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/ukraine.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/ukraine.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
 
-#Renuin
-- type: entity
-  parent: ClothingHeadHardsuitBase
-  id: SichClothingHeadHelmetHardsuitRenuin
-  categories: [ HideSpawnMenu ]
-  name: шолом-акваріум Міжпланетної Асоціації Ренюінь
-  description: Шолом від скафандру Ренюіня. Підозріло схожий на скафандри виробництва Кіберсану.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/renuin.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/renuin.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Renuin
+# - type: entity
+#   parent: ClothingHeadHardsuitBase
+#   id: SichClothingHeadHelmetHardsuitRenuin
+#   categories: [ HideSpawnMenu ]
+#   name: шолом-акваріум Міжпланетної Асоціації Ренюінь
+#   description: Шолом від скафандру Ренюіня. Підозріло схожий на скафандри виробництва Кіберсану.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/renuin.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/renuin.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
         
-#Dorenvir
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitDorenvir
-  categories: [ HideSpawnMenu ]
-  name: важкий шолом Доренвірської Конфедерації
-  description: Міцний шолом розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/dorenvir.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/dorenvir.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Dorenvir
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitDorenvir
+#   categories: [ HideSpawnMenu ]
+#   name: важкий шолом Доренвірської Конфедерації
+#   description: Міцний шолом розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/dorenvir.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/dorenvir.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
 
-#Hegemony
-- type: entity
-  parent: ClothingHeadHardsuitBase
-  id: SichClothingHeadHelmetHardsuitHegemony
-  categories: [ HideSpawnMenu ]
-  name: шолом Гегемонії Зіра
-  description: Бойовий шолом що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/hegemony.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/hegemony.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Hegemony
+# - type: entity
+#   parent: ClothingHeadHardsuitBase
+#   id: SichClothingHeadHelmetHardsuitHegemony
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Гегемонії Зіра
+#   description: Бойовий шолом що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/hegemony.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/hegemony.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
         
-#Adomai
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitAdomai
-  categories: [ HideSpawnMenu ]
-  name: шолом Нового Королівства Адомай
-  description: Шолом Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/adomai.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: unshaded
-    - state: light-overlay
-      visible: false
-      shader: unshaded
-      map: [ "light" ]
-  - type: HandheldLight
-    addPrefix: false
-  - type: ToggleableVisuals
-    clothingVisuals:
-      head:
-      - state: equipped-head-light
-        shader: unshaded
-  - type: PointLight
-    color: blue
-  - type: Clothing
-    clothingVisuals:
-      head:
-      - state: equipped-head
-      - state: equipped-head-unshaded
-        shader: unshaded
-  - type: PressureProtection
-    highPressureMultiplier: 0.72
-    lowPressureMultiplier: 1000
+# #Adomai
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitAdomai
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Нового Королівства Адомай
+#   description: Шолом Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/adomai.rsi
+#     layers:
+#     - state: icon
+#     - state: icon-unshaded
+#       shader: unshaded
+#     - state: light-overlay
+#       visible: false
+#       shader: unshaded
+#       map: [ "light" ]
+#   - type: HandheldLight
+#     addPrefix: false
+#   - type: ToggleableVisuals
+#     clothingVisuals:
+#       head:
+#       - state: equipped-head-light
+#         shader: unshaded
+#   - type: PointLight
+#     color: blue
+#   - type: Clothing
+#     clothingVisuals:
+#       head:
+#       - state: equipped-head
+#       - state: equipped-head-unshaded
+#         shader: unshaded
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.72
+#     lowPressureMultiplier: 1000
    
-#Mikaris
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitMikaris
-  categories: [ HideSpawnMenu ]
-  name: шолом Мікаріс
-  description: Ніанський шолом з широким броньованим склом, яке дуже розширює поле зору Ніани.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/mikaris.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/mikaris.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Mikaris
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitMikaris
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Мікаріс
+#   description: Ніанський шолом з широким броньованим склом, яке дуже розширює поле зору Ніани.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/mikaris.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/mikaris.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
    
-#Centcom
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitCentcom
-  categories: [ HideSpawnMenu ]
-  name: шолом Центрального Командування
-  description: Шолом що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/centcom.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/centcom.rsi
-  - type: PointLight
-    color: white
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Centcom
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitCentcom
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Центрального Командування
+#   description: Шолом що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/centcom.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/centcom.rsi
+#   - type: PointLight
+#     color: white
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
         
-#Inquisitor
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitERTInquisitor
-  categories: [ HideSpawnMenu ]
-  name: шолом ГШР Інквізитора
-  description: Шолом що використовується підрозділом ГШР, який націлений на знищення оккультних загроз. Хто зробив йому цей дивний ірокез...
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/ertinquisitor.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/ertinquisitor.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# #Inquisitor
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitERTInquisitor
+#   categories: [ HideSpawnMenu ]
+#   name: шолом ГШР Інквізитора
+#   description: Шолом що використовується підрозділом ГШР, який націлений на знищення оккультних загроз. Хто зробив йому цей дивний ірокез...
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/ertinquisitor.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/ertinquisitor.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
         
-#Death Shadow (CIA)
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitShadow
-  categories: [ HideSpawnMenu ]
-  name: шолом тіней смерті
-  description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/shadow.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: unshaded
-    - state: light-overlay
-      visible: false
-      shader: unshaded
-      map: [ "light" ]
-  - type: HandheldLight
-    addPrefix: false
-  - type: ToggleableVisuals
-    clothingVisuals:
-      head:
-      - state: equipped-head-light
-        shader: unshaded
-  - type: Clothing
-    clothingVisuals:
-      head:
-      - state: equipped-head
-      - state: equipped-head-unshaded
-        shader: unshaded
-  - type: PressureProtection
-    highPressureMultiplier: 0.72
-    lowPressureMultiplier: 1000
-  - type: PointLight
-    color: blue
+# #Death Shadow (CIA)
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitShadow
+#   categories: [ HideSpawnMenu ]
+#   name: шолом тіней смерті
+#   description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/shadow.rsi
+#     layers:
+#     - state: icon
+#     - state: icon-unshaded
+#       shader: unshaded
+#     - state: light-overlay
+#       visible: false
+#       shader: unshaded
+#       map: [ "light" ]
+#   - type: HandheldLight
+#     addPrefix: false
+#   - type: ToggleableVisuals
+#     clothingVisuals:
+#       head:
+#       - state: equipped-head-light
+#         shader: unshaded
+#   - type: Clothing
+#     clothingVisuals:
+#       head:
+#       - state: equipped-head
+#       - state: equipped-head-unshaded
+#         shader: unshaded
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.72
+#     lowPressureMultiplier: 1000
+#   - type: PointLight
+#     color: blue
 
-# Blackwater Mercenary
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitBlackwater
-  categories: [ HideSpawnMenu ]
-  name: шолом Блеквотер
-  description: Шолом бойового скафандру моделі MR-5, який використовується найманцями Асоціації Блеквотер.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/blackwatermerc.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/blackwatermerc.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# # Blackwater Mercenary
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitBlackwater
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Блеквотер
+#   description: Шолом бойового скафандру моделі MR-5, який використовується найманцями Асоціації Блеквотер.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/blackwatermerc.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/blackwatermerc.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
 
-# Mercenary
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetHardsuitMerc
-  categories: [ HideSpawnMenu ]
-  name: шолом найманця
-  description: Шолом модифікованого бойового скафандру лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# # Mercenary
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetHardsuitMerc
+#   categories: [ HideSpawnMenu ]
+#   name: шолом найманця
+#   description: Шолом модифікованого бойового скафандру лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
+#   components:
+#   - type: BreathMask
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
 
-# League
-- type: entity
-  parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: SichClothingHeadHelmetHardsuitLeague
-  categories: [ HideSpawnMenu ]
-  name: шолом Ліги Архіваріусів
-  description: Шолом МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/league.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/league.rsi
-  - type: PointLight
-    color: yellow
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9 
+# # League
+# - type: entity
+#   parent: ClothingHeadHelmetHardsuitSyndieCommander
+#   id: SichClothingHeadHelmetHardsuitLeague
+#   categories: [ HideSpawnMenu ]
+#   name: шолом Ліги Архіваріусів
+#   description: Шолом МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/league.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/league.rsi
+#   - type: PointLight
+#     color: yellow
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9 
  
-# Mansus Legion
-- type: entity
-  parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: SichClothingHeadHelmetHardsuitMansus
-  categories: [ HideSpawnMenu ]
-  name: Шолом-капюшон Легіонера Мансуса
-  description: Капюшон, під яким знаходиться модифікований шолом-протигаз.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/mansuslegion.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/mansuslegion.rsi
-  - type: PointLight
-    color: red
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# # Mansus Legion
+# - type: entity
+#   parent: ClothingHeadHelmetHardsuitSyndieCommander
+#   id: SichClothingHeadHelmetHardsuitMansus
+#   categories: [ HideSpawnMenu ]
+#   name: Шолом-капюшон Легіонера Мансуса
+#   description: Капюшон, під яким знаходиться модифікований шолом-протигаз.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/mansuslegion.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/mansuslegion.rsi
+#   - type: PointLight
+#     color: red
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9
 
-#Debug Hardsuit
-- type: entity
-  parent: ClothingHeadHelmetHardsuitSyndieCommander
-  id: SichClothingHeadHelmetHardsuitAdmin
-  categories: [ HideSpawnMenu ]
-  name: шолом мандрівника блюспейс-простором [admeme]
-  description: Модифікований блюспейс шолом. Чому він підозріло схожий на байкерський шолом?..
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/debugadmin.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/debugadmin.rsi
-  - type: PointLight
-    color: "#b3f9ff"
-  - type: PressureProtection
-    highPressureMultiplier: 0.0
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.0
-        Slash: 0.0
-        Piercing: 0.0
-        Heat: 0.0
-        Radiation: 0.0
-        Caustic: 0.0
+# #Debug Hardsuit
+# - type: entity
+#   parent: ClothingHeadHelmetHardsuitSyndieCommander
+#   id: SichClothingHeadHelmetHardsuitAdmin
+#   categories: [ HideSpawnMenu ]
+#   name: шолом мандрівника блюспейс-простором [admeme]
+#   description: Модифікований блюспейс шолом. Чому він підозріло схожий на байкерський шолом?..
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/debugadmin.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/debugadmin.rsi
+#   - type: PointLight
+#     color: "#b3f9ff"
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.0
+#     lowPressureMultiplier: 1000
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.0
+#         Slash: 0.0
+#         Piercing: 0.0
+#         Heat: 0.0
+#         Radiation: 0.0
+#         Caustic: 0.0
 
-- type: entity
-  parent: ClothingHeadHardsuitBase
-  id: SichClothingHeadHelmetHardsuitCIO3
-  categories: [ HideSpawnMenu ]
-  name: cio-3 hardsuit
-  description: Шолом солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/cio3.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/cio3.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
+# - type: entity
+#   parent: ClothingHeadHardsuitBase
+#   id: SichClothingHeadHelmetHardsuitCIO3
+#   categories: [ HideSpawnMenu ]
+#   name: cio-3 hardsuit
+#   description: Шолом солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/Head/Hardsuits/cio3.rsi
+#   - type: Clothing
+#     sprite: Clothing/Head/Hardsuits/cio3.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.08
+#     lowPressureMultiplier: 1000
 
-- type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: SichClothingHeadHelmetVoidsuitIHS
-  name: шолом БАГ
-  description: Кріпкий та бойовий шолом скафандру Безпеки Айронгамер.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
-  - type: PointLight
-    color: "#47CC9E"
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+# - type: entity
+#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+#   id: SichClothingHeadHelmetVoidsuitIHS
+#   name: шолом БАГ
+#   description: Кріпкий та бойовий шолом скафандру Безпеки Айронгамер.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+#   - type: PointLight
+#     color: "#47CC9E"
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.9
+#         Slash: 0.9
+#         Piercing: 0.9
+#         Heat: 0.9

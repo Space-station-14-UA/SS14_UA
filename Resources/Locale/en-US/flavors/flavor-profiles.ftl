@@ -318,7 +318,6 @@ flavor-complex-manhattan-project = ніби я став Смертю, руйні
 flavor-complex-margarita = як з дуже сильного похмілля.
 flavor-complex-martini = як у шпигунському фільмі
 flavor-complex-mojito = як зайти в тінь після перебування на спекотному сонці
-flavor-complex-neurotoxin = як підземний випробувальний центр
 flavor-complex-patron = наче під серенаду маріачі
 flavor-complex-radler = як гострий лимонад
 flavor-complex-red-mead = як битва вікінгів

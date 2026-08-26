@@ -36,6 +36,7 @@ instruments-component-channels-menu = Вибір MIDI-каналів
 instruments-component-channels-all-button = Увімк
 instruments-component-channels-clear-button = Вимк
 instruments-component-channels-all-channels-label = Усі канали
+instruments-component-channels-percussion-channel-name = [Перкусія]
 instruments-component-channels-name-display-selector-label = Відображення назви
 instruments-component-channels-name-display-selector-track-button = Трек
 instruments-component-channels-name-display-selector-program-button = Програма

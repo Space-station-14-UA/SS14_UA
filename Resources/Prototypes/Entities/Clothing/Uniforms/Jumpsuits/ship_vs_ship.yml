@@ -1,0 +1,74 @@
+#Where all of the uniforms for the yet-to-be-implimented ship vs. ship gamemode go (or Nanotrasen VS. Syndicate, if you'd like.)
+#In its own file to further avoid bloating jumpsuits.yml.
+
+#CREW
+#Recruit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRecruitNT
+  name: комбінезон рекрута
+  description: Вишуканий сірий комбінезон із синім оздобленням. Ідеально підходить для поважного помічника.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/recruit_nt.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/recruit_nt.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseSyndicateContraband ]
+  id: ClothingUniformJumpsuitRecruitSyndie
+  name: комбінезон рекрута синдикату
+  description: Підозрілий темно-сірий комбінезон. Наче пасажири й без того не були достатньо підозрілими.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/recruit_syndie.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/recruit_syndie.rsi
+
+#Repairman
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRepairmanNT
+  name: комбінезон ремонтника
+  description: Комбінезон, що нагадує про певну посаду в одному з відділів екіпажу. Сподіваємося, вам не доведеться виконувати ту саму роботу, що й ТИМ фрікам.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/repairman_nt.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/repairman_nt.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseSyndicateContraband ]
+  id: ClothingUniformJumpsuitRepairmanSyndie
+  name: комбінезон ремонтика синдикату
+  description: Функціональний, модний та крутий. Інженери Нанотрейзен можуть лише мріяти про те, щоб виглядати так само добре.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/repairman_syndie.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/repairman_syndie.rsi
+
+#Paramedic
+- type: entity
+  parent: [ ClothingUniformBase, BaseSyndicateContraband ]
+  id: ClothingUniformJumpsuitParamedicSyndie
+  name: комбінезон парамедика синдикату
+  description: Чомусь, коли ви це одягаєте, з'являється стійке відчуття, що ви за крок від порушення Женевської конвенції.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/paramedic_syndie.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/paramedic_syndie.rsi
+
+#HEADS OF STAFF
+#Chief Engineer
+- type: entity
+  parent: [ ClothingUniformBase, BaseSyndicateContraband ]
+  id: ClothingUniformJumpsuitChiefEngineerSyndie
+  name: комбінезон головного інженера синдикату
+  description: Зловісний комбінезон зі світловідбивним жилетом та червоною спідньою сорочкою. #TODO: Write a better description for this once Ship vs. Ship is real and actual player habits begin forming
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/ce_syndie.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuits/ShipVsShip/ce_syndie.rsi

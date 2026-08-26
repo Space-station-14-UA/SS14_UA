@@ -16,5 +16,8 @@ reagent-desc-foaming-agent = Використовується в граната�
 reagent-name-welding-fuel = зварювальне паливо
 reagent-desc-welding-fuel = Використовується зварювальниками для зварювання.
 
+reagent-name-xenoborg-oil = ксеноборгове мастило
+reagent-desc-xenoborg-oil = Легке мастило, яке використовується для того, щоб органічні істоти ковзалися або отримали опіки.
+
 reagent-name-fluorosurfactant = фторосурфактант
 reagent-desc-fluorosurfactant = Перфторована сульфонова кислота, яка утворює піну при змішуванні з водою.
