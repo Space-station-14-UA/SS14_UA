@@ -87,6 +87,7 @@
       FootLeft: OrganIPCFootLeft
       FootRight: OrganIPCFootRight
       Brain: OrganIPCBrain
+      Heart: OrganIPCCirculationSystem
   - type: HumanoidProfile
     species: IPC
 
@@ -204,6 +205,8 @@
     emoteSounds: MaleIPC
     wilhelm:
       path: /Audio/_Sich/Voice/IPC/wilhelm.ogg
+  - type: Injurable
+    damageContainer: IPC
   - type: Damageable
     damageModifierSet: Robotic
   - type: DamageVisuals
@@ -222,11 +225,14 @@
     bloodlossHealDamage:
       types:
         Heat: -0.5
+#  - type: SolutionManager    #краще всеж зробити їм свою віддільну систему яка не пов'язана з метаболізмом
+#  - type: InjectableSolution
+#    solution: bloodstream
   - type: ZombieImmune
   - type: Repairable
-    damageValue: -10 # 10 seconds to repair from crit
-    doAfterDelay: 1
-    fuelCost: 0.5
+    damageValue: -2.5 # 20 seconds to repair from crit
+    doAfterDelay: 0.5
+    fuelCost: 0.1
     allowSelfRepair: true
   - type: PassiveDamage #Є щоб оновлюати дамаг в ІПШ бо схоже що гра не оновлює стан моба коли ти жахаєш дефеблрилятором, тож мінус ще бага, ще також дозваолить у теорії робити оставшого зі смерті ІПШ який перезапустився але це займе мільйон років
     allowedStates:
@@ -237,9 +243,6 @@
         Cold: -0.01
         Heat: -0.01
         Shock: -0.01
-        Blunt: -0.01
-        Piercing: -0.01
-        Slash: -0.01
   - type: SlowOnDamage
     speedModifierThresholds:
       70: 0.6
@@ -320,8 +323,9 @@
   components:
   - type: Metabolizer
     updateInterval: 1.5
-    maxReagents: 2
+    maxReagents: 20 # ІПШ фактично немають метаболізму, рідина просто циркулює по їхній системі
     metabolizerTypes: [IPC]
+    stages: [ Digestion, Bloodstream, Metabolites ]
 
 - type: entity
   parent: OrganIPC
@@ -394,7 +398,7 @@
   id: OrganIPCFootRight
 
 - type: entity
-  parent: [ OrganIPCInternal, OrganIPCMetabolizer ]
+  parent: OrganIPCInternal
   id: OrganIPCBrain
   name: обчислювальний процесор ІПШ
   description: Схоже це щось типу мозоку для ІПШ? На диво підходить для ММІ, тож можна його вставити туди щоб зробити функціональним знову.
@@ -411,3 +415,16 @@
     - type: InputMover
     - type: Examiner
     - type: BlockMovement   
+    
+- type: entity
+  parent: [ OrganIPCInternal, OrganIPCMetabolizer ]
+  id: OrganIPCCirculationSystem
+  name: система циркуляції ІПШ
+  description: Це система охолодження ІПШ по якій зазвичай циркулює олія аби охолоджувати ІПШ та змазувати деталі.
+  components:
+    - type: Sprite
+      state: IPC_cooling_cycle
+      sprite: _Sich/Mobs/Species/IPC/organs.rsi
+    - type: GibbableOrgan
+    - type: Organ
+      category: Heart
