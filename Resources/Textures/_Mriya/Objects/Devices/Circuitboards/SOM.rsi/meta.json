@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "drawn by Svetoslav228",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "super_computing_block",
+	  "delays": [
+         [
+        0.1,
+	    0.1,
+        0.1,
+		0.1,
+        0.1,
+        0.1,
+	    0.1,
+        0.1,
+		0.1,
+        0.1,
+        0.1,
+	    0.1,
+        0.1
+      ]
+        ]
+    },
+    {
+      "name": "super_computing_block_upgaded",
+	  "delays": [
+         [
+        0.1,
+	    0.1,
+        0.1,
+		0.1,
+        0.1,
+        0.1,
+	    0.1,
+        0.1,
+		0.1,
+        0.1,
+        0.1,
+	    0.1,
+        0.1
+      ]
+        ]
+    }
+  ]
+}

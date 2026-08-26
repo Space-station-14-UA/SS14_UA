@@ -30,7 +30,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
     private float _updateTimer = 1.0f;
 
     private const float UpdateTime = 1.0f;
-    private const float RoguePowerConsumerThreshold = 100000;
+    private const float RoguePowerConsumerThreshold = 200000;
 
     public override void Initialize()
     {

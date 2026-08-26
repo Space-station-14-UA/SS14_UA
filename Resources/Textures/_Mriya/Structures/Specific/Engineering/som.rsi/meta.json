@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "drawn by svetoslav228",
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "firing",
+	  "delays": [
+         [
+        0.2,
+	    0.2,
+        0.2,
+		0.2
+      ]
+        ]
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "panel"
+    },
+    {
+      "name": "underpowered"
+    },
+    {
+      "name": "unshaded"
+    },
+    {
+      "name": "upgraded"
+    }
+  ]
+}
