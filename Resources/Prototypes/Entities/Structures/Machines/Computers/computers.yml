@@ -695,6 +695,9 @@
         type: IdCardConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
+      enum.BureaucraticComputer.BureaucracyUiKey.Key: # Mriya
+        type: BureaucracyComputerBoundUserInterface # Mriya
+  - type : BureaucracyComputer # Mriya
   - type: CrewManifestViewer
     ownerKey: enum.IdCardConsoleUiKey.Key
   - type: Speech
