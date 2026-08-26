@@ -6,7 +6,7 @@
   parent: MRRandomSpawnerBase
   components:
   - type: Sprite
-    sprite: Objects/Misc/coins.rsi
+    sprite: _Mriya/Objects/Specific/crypto.rsi
     state: coin_gold
   - type: EntityTableSpawner
     table: !type:GroupSelector

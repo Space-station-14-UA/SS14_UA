@@ -23,6 +23,12 @@
       shader: unshaded
       visible: false
       map: ["enum.LockVisualLayers.Lock"]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
   - type: Appearance
   - type: WiresVisuals
   - type: Fixtures
@@ -30,7 +36,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.4,-0.2,1.4,0.8"
+          bounds: "-1.4,-0.2,1.4,0.3"
         density: 50
         mask:
         - LargeMobMask
@@ -39,7 +45,7 @@
       fix2:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.4,-0.2,-0.4,-0.7"
+          bounds: "0.4,-0.7,1.4,-0.2"
         density: 50
         mask:
         - LargeMobMask
@@ -48,7 +54,7 @@
       fix3:
         shape:
           !type:PhysShapeAabb
-          bounds: "0.4,-0.2,1.4,-0.7"
+          bounds: "-1.4,-0.7,-0.4,-0.2"
         density: 50
         mask:
         - LargeMobMask
@@ -79,7 +85,6 @@
         acts: ["Destruction"]
   - type: AtmosExposed
   - type: Temperature
-    currentTemperature: 310.15
     specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 400 # 126.85 C*
@@ -106,9 +111,12 @@
     price: 1000
   - type: Machine
     board: MRSOMSuperComputingBlock
+  - type: PowerState
+    idlePowerDraw: 100
+    workingPowerDraw: 100000
+    ensureApc: false
   - type: Emitter
     onState: firing
-    powerUseActive: 100000
     boltType: MRRandomCrypto
     underpoweredState: underpowered
     selectableTypes:
@@ -172,9 +180,12 @@
       shader: unshaded
       visible: false
       map: ["enum.LockVisualLayers.Lock"]
+  - type: PowerState
+    idlePowerDraw: 100
+    workingPowerDraw: 120000
+    ensureApc: false
   - type: Emitter
     onState: firing
-    powerUseActive: 120000
     boltType: MRRandomCrypto
     underpoweredState: underpowered
     selectableTypes:
