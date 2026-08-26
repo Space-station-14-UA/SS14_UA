@@ -153,6 +153,13 @@
   - type: GuideHelp
     guides:
     - MRSOMGuide
+  - type: NotifyOnNonFunctioning
+    locDestroyed: som-destroyed-broadcast
+    locUnlocked: som-unlocked-broadcast
+    locUnpowered: som-unpowered-broadcast
+    locTurnedOff: som-turn-off-broadcast
+    radioChannel: Engineering
+    requirePowered: true
 
 
 - type: entity
