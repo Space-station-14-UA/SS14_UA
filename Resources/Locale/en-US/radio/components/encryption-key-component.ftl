@@ -6,5 +6,5 @@ encryption-keys-are-locked = Слот для ключів шифрування �
 encryption-keys-panel-locked = Спочатку відкрийте сервісну панель!
 
 examine-encryption-channels-prefix = Доступні частоти:
-examine-encryption-channel = [color={$color}]{$key} для {$id} ({NATURALFIXED($freq, 1)})[/color]
+examine-encryption-channel = [color={$color}]{$key} для {$id} ({$freq})[/color]
 examine-encryption-default-channel = Стандартним каналом є [color={$color}]{$channel}[/color].

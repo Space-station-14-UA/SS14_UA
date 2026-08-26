@@ -1,7 +1,6 @@
 using Content.Server.EUI;
 using Content.Server.Ghost.Roles.UI;
 using Content.Shared.Administration;
-using Content.Shared.Ghost;
 using JetBrains.Annotations;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
@@ -10,22 +9,23 @@ using Robust.Shared.Network;
 using Content.Server.RoundEnd;
 using Content.Server.GameTicking;
 using Content.Shared.CCVar;
+using Content.Shared.Ghost.Components;
 
 namespace Content.Server.Ghost.Roles;
 
 [UsedImplicitly]
-public sealed class NewLifeSystem : EntitySystem
+public sealed partial class NewLifeSystem : EntitySystem
 {
-    [Dependency] private readonly EuiManager _euiManager = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly IConfigurationManager _configuration = default!;
+    [Dependency] private EuiManager _euiManager = default!;
+    [Dependency] private GameTicker _gameTicker = default!;
+    [Dependency] private IConfigurationManager _configuration = default!;
 
     private readonly Dictionary<ICommonSession, NewLifeEui> _openUis = [];
     private readonly Dictionary<NetUserId, HashSet<int>> _roundCharactersUsed = [];
     private readonly Dictionary<NetUserId, int> _newLifesLeft = [];
     private readonly Dictionary<NetUserId, TimeSpan> _lastGhostTime = [];
-    private int MaxNewLifes = 5;
-    private TimeSpan Cooldown;
+    private int _maxNewLifes = 5;
+    private TimeSpan _cooldown;
     public override void Initialize()
     {
         base.Initialize();
@@ -37,14 +37,14 @@ public sealed class NewLifeSystem : EntitySystem
 
     private void UpdateMaxNewLifes(int value)
     {
-        MaxNewLifes = value;
+        _maxNewLifes = value;
         //update all open uis
         UpdateAllEui();
     }
 
     private void UpdateCooldown(int value)
     {
-        Cooldown = TimeSpan.FromSeconds(value);
+        _cooldown = TimeSpan.FromSeconds(value);
         //update all open uis
         UpdateAllEui();
     }
@@ -66,16 +66,16 @@ public sealed class NewLifeSystem : EntitySystem
     public void OpenEui(ICommonSession session)
     {
         if (session.AttachedEntity is not { Valid: true } attached ||
-            !EntityManager.HasComponent<GhostComponent>(attached))
+            !HasComp<GhostComponent>(attached))
             return;
 
         if (_openUis.ContainsKey(session))
             CloseEui(session);
 
         var usedSlots = _roundCharactersUsed.TryGetValue(session.UserId, out var slots) ? slots : [];
-        var remainingLives = _newLifesLeft.TryGetValue(session.UserId, out var remaining) ? remaining : MaxNewLifes;
+        var remainingLives = _newLifesLeft.TryGetValue(session.UserId, out var remaining) ? remaining : _maxNewLifes;
         var lastGhostTime = _lastGhostTime.TryGetValue(session.UserId, out var last) ? last : TimeSpan.Zero;
-        var eui = _openUis[session] = new NewLifeEui(usedSlots, remainingLives, MaxNewLifes, lastGhostTime, Cooldown);
+        var eui = _openUis[session] = new NewLifeEui(usedSlots, remainingLives, _maxNewLifes, lastGhostTime, _cooldown);
 
         _euiManager.OpenEui(eui, session);
         eui.StateDirty();
@@ -131,7 +131,7 @@ public sealed class NewLifeSystem : EntitySystem
         }
         else
         {
-            _newLifesLeft.Add(userId, MaxNewLifes - 1);
+            _newLifesLeft.Add(userId, _maxNewLifes - 1);
         }
     }
     internal bool SlotIsAvailable(NetUserId userId, int slot)
@@ -140,9 +140,9 @@ public sealed class NewLifeSystem : EntitySystem
 }
 
 [AnyCommand]
-public sealed class NewLife : IConsoleCommand
+public sealed partial class NewLife : IConsoleCommand
 {
-    [Dependency] private readonly IEntityManager _e = default!;
+    [Dependency] private IEntityManager _e = default!;
 
     public string Command => "newlife";
     public string Description => "Opens the new life request window.";

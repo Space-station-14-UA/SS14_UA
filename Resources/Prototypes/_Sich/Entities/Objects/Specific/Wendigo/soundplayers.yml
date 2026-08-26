@@ -10,6 +10,9 @@
   - type: UseDelayTriggerCondition # prevent spam
   - type: TriggerOnActivate
   - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
   - type: Speech
     speechSounds: Pai
   - type: UseDelay

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._Harmony.ReadyManifest;
 using Content.Shared.Roles;
@@ -12,7 +12,7 @@ namespace Content.Client._Harmony.ReadyManifest.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ReadyManifestUi : FancyWindow
 {
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
 
     public ReadyManifestUi()
     {
@@ -59,7 +59,8 @@ public sealed partial class ReadyManifestUi : FancyWindow
                 .Where(job => job.SetPreference)
                 .ToArray();
 
-            Array.Sort(jobs, JobUIComparer.Instance);
+            if (JobUIComparer.TryCreate(_prototypeManager, null, out var comparer))
+                Array.Sort(jobs, comparer);
 
             foreach (var job in jobs)
             {
