@@ -223,7 +223,7 @@
 - type: entity
   parent: [ ClothingHeadBase ]
   id: ClothingHeadHatBeretMerc
-  name: військовий берет
+  name: берет найманця
   description: Берет оливкового кольору, на емблемі зображено шакала на камені.
   components:
   - type: Sprite
