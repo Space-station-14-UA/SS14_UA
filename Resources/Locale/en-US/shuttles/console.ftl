@@ -23,8 +23,11 @@ shuttle-console-iff-label = {$name} ({$distance}m)
 shuttle-console-exclusion = Область виключення
 
 shuttle-console-nav-settings = Налаштування
-shuttle-console-iff-toggle = Показати Свій-Чужий
-shuttle-console-dock-toggle = Показати доки
+shuttle-console-nav-legend = Легенда
+shuttle-console-nav-other-dock = Зовнішні стикувальні шлюзи
+shuttle-console-nav-cargo-dock = Стикувальні шлюзи карго
+shuttle-console-nav-arrivals-dock = Стикувальні шлюзи прибуття
+shuttle-console-iff-toggle = Показувати IFF
 
 # MAP
 

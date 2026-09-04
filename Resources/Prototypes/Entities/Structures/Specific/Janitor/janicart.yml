@@ -1,6 +1,6 @@
 # Mop Bucket
 - type: entity
-  parent: [SolutionGinormous, SolutionTank, BaseStructureDynamic, StructureWheeled]
+  parent: [SolutionGinormous, SolutionTank, BaseStructureDynamic, StructureWheeled, StructureHealthContainerWeak]
   id: MopBucket
   name: відро для швабри
   description: Зберігає воду та сльози прибиральника в перемішку з вмістом всіх калюж станції.
@@ -92,16 +92,23 @@
     guides:
     - Janitorial
   - type: Damageable
-  - type: Injurable
-    damageContainer: Inorganic
+    damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 70
+        damage: 60
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -3
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlastic1:
+            min: 0
+            max: 2
   - type: DnaSubstanceTrace
   - type: Fixtures
     fixtures:
@@ -144,7 +151,7 @@
 
 # Janicart
 - type: entity
-  parent: [SolutionGinormous, SolutionTank, BaseStructureDynamic, StructureWheeled]
+  parent: [SolutionGinormous, SolutionTank, BaseStructureDynamic, StructureWheeled, StructureHealthContainer]
   id: JanitorialTrolley
   name: візок прибиральника
   description: Це є альфа і омега в сфері ідеальної чистоти станції.
@@ -262,21 +269,24 @@
   - type: ExaminableSolution
     solution: tank
   - type: Damageable
-    damageModifierSet: Metallic
-  - type: Injurable
-    damageContainer: Inorganic
+    damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 100
       behaviors:
       - !type:EmptyAllContainersBehaviour
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+          params:
+            volume: -3
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlastic1:
+            min: 0
+            max: 2
   - type: ItemMapper
     mapLayers:
       cart_plunger:

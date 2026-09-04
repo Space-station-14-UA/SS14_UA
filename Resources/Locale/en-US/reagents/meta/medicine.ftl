@@ -56,11 +56,12 @@ reagent-desc-phalanximine = Сучасний хімічний препарат, 
 reagent-name-polypyrylium-oligomers = Олігомери поліпірилу
 reagent-desc-polypyrylium-oligomers = Фіолетова суміш коротких поліелектролітних ланцюгів, яку нелегко синтезувати в лабораторії. Лікує асфіксію та грубі пошкодження. З часом зупиняє кровотечу.
 
+reagent-name-romerodone = ромеродон
+reagent-desc-romerodone = Побічний продукт центрифугування крові зомбі, можливо, за допомогою цього вдасться створити ліки.
+
+
 reagent-name-ambuzol = амбузол
 reagent-desc-ambuzol = Високотехнологічна речовина, здатна зупинити розвиток зомбі-інфекції.
-
-reagent-name-ambuzol-plus = амбузол плюс
-reagent-desc-ambuzol-plus = Додатково модифікований омнізином, захищає живі організми від інфекції.
 
 reagent-name-pulped-banana-peel = мелена шкірка банана
 reagent-desc-pulped-banana-peel = Шкірка банана має певну ефективність проти кровотечі.

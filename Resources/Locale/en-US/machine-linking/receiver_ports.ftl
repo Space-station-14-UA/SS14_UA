@@ -28,6 +28,9 @@ signal-port-description-doorbolt = Болтує двері при ВИСОКОМ
 signal-port-name-trigger-receiver = Тригер
 signal-port-description-trigger-receiver = Активує певний механізм на пристрої.
 
+signal-port-name-timer = Таймер
+signal-port-description-timer = Запускає зворотний відлік таймера пристрою.
+
 signal-port-name-order-sender = Відправник замовлень
 signal-port-description-order-sender = Відправник замовлення вантажної консолі
 
@@ -89,3 +92,9 @@ signal-port-description-logic-enable = Завантажує вхідний си�
 
 signal-port-name-logic-random-input = Вхідний сигнал
 signal-port-description-logic-random-input = Отримує будь-який сигнал для активації випадкового виходу.
+
+signal-port-name-target-receiver = Приймач цілі
+signal-port-description-target-receiver = Отримує інформацію про ціль від пошукача цілей.
+
+signal-port-name-target-source = Пошукач цілі
+signal-port-description-target-source = Надсилає інформацію про ціль до приймача цілей.

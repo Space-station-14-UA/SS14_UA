@@ -12,8 +12,5 @@ fold-flip-verb = Перевернути
 fold-zip-verb = Застебнути
 fold-unzip-verb = Розстебнути
 
-fold-verb-clothing-jacket = Зняти куртку
-unfold-verb-clothing-jacket = Одягнути куртку
-
 fold-lower-visor-verb = Опустити забрало
 fold-raise-visor-verb = Підняти забрало

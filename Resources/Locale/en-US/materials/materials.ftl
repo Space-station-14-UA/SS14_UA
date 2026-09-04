@@ -30,6 +30,7 @@ materials-coal = вугілля
 materials-diamond = діамант
 materials-gunpowder = порох
 materials-cotton = бавовна
+materials-xenoborg-crystal = кристал ксеноборга
 
 # Ores
 materials-raw-iron = залізна руда

@@ -8,3 +8,4 @@ limited-charges-recharging = {$seconds ->
     [one] Залишилася [color=yellow]{$seconds}[/color] секунда до наступного заряду.
     *[other] Залишилось [color=yellow]{$seconds}[/color] секунд до наступного заряду.
 }
+limited-charges-no-charges = No charges left!

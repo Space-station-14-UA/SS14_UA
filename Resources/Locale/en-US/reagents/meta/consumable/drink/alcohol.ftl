@@ -229,9 +229,6 @@ reagent-desc-monkey-business = Варто лише здогадатися, як 
 reagent-name-moonshine = самогон
 reagent-desc-moonshine = Кустарний домашній алкоголь. Що може піти не так?
 
-reagent-name-neurotoxin = нейротоксин
-reagent-desc-neurotoxin = Сильний нейротоксин, який вводить суб'єкта в стан, подібний до смерті.
-
 reagent-name-painkiller = болезаспокійливий засіб
 reagent-desc-painkiller = Ліки від того, що вас мучить.
 

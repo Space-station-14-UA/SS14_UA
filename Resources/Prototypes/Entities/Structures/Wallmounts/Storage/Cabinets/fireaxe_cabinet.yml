@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseWallmountCabinetGlass
+  parent: [ BaseWallmountCabinetGlass, StructureHealthContainerStrong ]
   id: FireAxeCabinet
   name: шафа для пожежної сокири
   description: Тут є невелика етикетка з написом «Тільки для екстреного використання», а також  інформація про безпечне використання сокири. Нібито.
@@ -10,11 +10,9 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200 #20ish crowbar hits
+        damage: 140
       behaviors:
       - !type:EmptyAllContainersBehaviour
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak

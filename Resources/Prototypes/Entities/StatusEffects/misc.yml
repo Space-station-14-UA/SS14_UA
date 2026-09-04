@@ -47,7 +47,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectForcedSleeping
-  name: forced sleep
+  name: примусовий сон
   components:
   - type: ForcedSleepingStatusEffect
   - type: StunnedStatusEffect
@@ -57,7 +57,7 @@
 - type: entity
   parent: MobStatusEffectBase # Not even rejuvenate can cure SSD...
   id: StatusEffectSSDSleeping
-  name: forced sleep
+  name: примусовий сон
   components:
   - type: ForcedSleepingStatusEffect
   - type: StunnedStatusEffect
@@ -68,7 +68,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectPressureImmunity
-  name: pressure immunity
+  name: імунітет до тиску
   components:
   - type: PressureImmunityStatusEffect
 
@@ -77,7 +77,7 @@
   abstract: true
   parent: MobStatusEffectBase
   id: MutedStatusEffectBase
-  name: muted
+  name: німота
   components:
   - type: StatusEffectAlert
     alert: Muted
@@ -104,11 +104,18 @@
   - type: MutedStatusEffect
     speakPopup: ventriloquist-puppet-cant-speak
 
+- type: entity
+  parent: [ MobStatusEffectBase, MobStatusEffectDebuff ]
+  id: StatusEffectChangelingMuted
+  name: imperceptibly muted
+  components:
+  - type: MutedStatusEffect
+
 # Blurs your vision and makes you randomly fall asleep
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectDrowsiness
-  name: drowsiness
+  name: сонливість
   components:
   - type: DrowsinessStatusEffect
 
@@ -116,29 +123,36 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectSeeingRainbow
-  name: hallucinations
+  name: галюцинації
   components:
   - type: SeeingRainbowsStatusEffect
+  - type: ExaminableStatusEffect
+    messageId: status-effect-examine-seeing-rainbow
 
 # Causes your vision to become blurry and gives me a headache.
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectWoozy
-  name: woozy
+  name: запаморочення
   components:
   - type: DrunkStatusEffect
 
 # Causes you to get drunk
 - type: entity
-  parent: [ StatusEffectWoozy, StatusEffectSlurred ]
+  parent: [ StatusEffectWoozy, StatusEffectSlurred, StatusEffectClumsyDrunk ]
   id: StatusEffectDrunk
-  name: drunk
+  name: сп'яніння
+  components:
+  - type: ExaminableStatusEffect
+    messageId: status-effect-examine-drunk
+  - type: StatusEffectAlert
+    alert: DrunkAlert
 
 # Prevents the target from seeing
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectBlindness
-  name: temporary blindness
+  name: тимчасова сліпота
   components:
   - type: StatusEffect
     whitelist:
@@ -147,12 +161,14 @@
       - Blindable
       requireAll: true
   - type: BlindnessStatusEffect
+  - type: ExaminableStatusEffect
+    messageId: status-effect-examine-temporary-blindness
 
 # Obstructs the target's vision with the flash overlay.
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectFlashed
-  name: flashed
+  name: спалах
   components:
   - type: StatusEffect
     whitelist:

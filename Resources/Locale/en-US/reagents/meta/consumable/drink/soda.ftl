@@ -4,8 +4,8 @@ reagent-desc-cola = Солодкий, газований безалкоголь�
 reagent-name-shirley-temple = Ширлі Темпл
 reagent-desc-shirley-temple = Улюблений серед молодших членів команди.
 
-reagent-name-changeling-sting = укус перевертня
-reagent-desc-changeling-sting = Ви робите маленький ковток і відчуваєте печіння...
+reagent-name-changeling-sting = Жало перемінника
+reagent-desc-changeling-sting = Слабоалкогольна газованка. Ви робите крихітний ковток і відчуваєте печіння...
 
 reagent-name-dr-gibb = Доктор Гібб
 reagent-desc-dr-gibb = Смачна суміш із 42 різних смаків.

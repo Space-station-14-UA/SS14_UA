@@ -119,8 +119,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-  - type: Hunger
-  - type: Thirst
   - type: Icon
     sprite: _Sich/Mobs/Species/Avali/parts.rsi
     state: full
