@@ -11,3 +11,17 @@
     Telecrystal: 12
   categories:
   - UplinkWearables
+
+- type: listing
+  id: MRUplinkSecurityNightVision
+  name: uplink-security-night-vision-name
+  description: uplink-security-night-vision-desc
+  icon: { sprite: /Textures/_Mriya/Clothing/Eyes/Glasses/blood_nightvision.rsi, state: icon }
+  productEntity: MRClothingEyesNightVisionBlood
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkWearables
