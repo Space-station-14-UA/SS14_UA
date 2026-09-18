@@ -94,6 +94,11 @@
   id: MobHuman
   name: Urist McHands
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
   - type: Butcherable
     spawned:
     - id: FoodMeatHuman

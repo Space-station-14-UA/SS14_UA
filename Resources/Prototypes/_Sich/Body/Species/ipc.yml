@@ -95,6 +95,13 @@
   id: MobIPC
   name: Urist McBot
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - RobotTalk
+    understands:
+    - TauCetiBasic
+    - RobotTalk
   - type: Sprite #це усе треба бо воно перезаписує те що у парентах
     layers:
     # Torso

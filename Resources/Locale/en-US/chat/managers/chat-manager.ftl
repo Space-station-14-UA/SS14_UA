@@ -28,11 +28,12 @@ chat-manager-server-wrap-message = [bold]{$message}[/bold]
 chat-manager-sender-announcement = Центральне Командування
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} оголошення:[/font][font size=12]
                                                 {$message}[/bold][/font]
-chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
-chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold]{$message}[/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$language}{$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][color={$color}]{$message}[/color][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$language}{$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold][color={$color}]{$message}[/color][/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-language-prefix = ({$language}){" "}
 
-chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] шепоче,{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] шепоче, { chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
+chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] {$language}шепоче,{ chat-manager-speech-double-quote-begin }[BubbleContent][color={$color}]{$message}[/color][/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] {$language}шепоче, { chat-manager-speech-double-quote-begin }[BubbleContent][color={$color}]{$message}[/color][/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->

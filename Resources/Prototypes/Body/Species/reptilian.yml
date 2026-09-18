@@ -118,6 +118,13 @@
   id: MobReptilian
   name: Urist McScales
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Draconic
+    understands:
+    - TauCetiBasic
+    - Draconic
   - type: Puller
     needsHands: false
   - type: Butcherable

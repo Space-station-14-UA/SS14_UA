@@ -113,6 +113,13 @@
   id: MobAvali
   name: Urist McRaptor
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Schechi
+    understands:
+    - TauCetiBasic
+    - Schechi
   - type: Tag
     tags:
     - CanPilot

@@ -6,6 +6,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Roles;
 using Content.Shared.StatusIcon;
+using Content.Shared._EinsteinEngines.Language;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -44,6 +45,13 @@ public sealed partial class ZombieComponent : Component
 
     [DataField]
     public float ZombieMovementSpeedDebuff = 0.70f;
+
+    /// <summary>
+    /// Language zombies are forced onto. TauCetiBasic so the zombie accent
+    /// ("грааа", "мізки") is heard by the crew instead of Xeno obfuscation.
+    /// </summary>
+    [DataField]
+    public ProtoId<LanguagePrototype> ForcedLanguage = "TauCetiBasic";
 
     /// <summary>
     /// The skin color of the zombie

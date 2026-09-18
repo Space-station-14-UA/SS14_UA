@@ -1,3 +1,4 @@
+using Content.Shared._EinsteinEngines.Language;
 using Content.Shared.Chat;
 
 namespace Content.Shared.Radio;
@@ -6,7 +7,14 @@ namespace Content.Shared.Radio;
 /// Event raised when a radio message is received.
 /// </summary>
 [ByRefEvent]
-public readonly record struct RadioReceiveEvent(string Message, EntityUid MessageSource, RadioChannelPrototype Channel, EntityUid RadioSource, MsgChatMessage ChatMsg);
+public readonly record struct RadioReceiveEvent(
+    string Message,
+    EntityUid MessageSource,
+    RadioChannelPrototype Channel,
+    EntityUid RadioSource,
+    MsgChatMessage ChatMsg,
+    MsgChatMessage LanguageObfuscatedChatMsg,
+    LanguagePrototype Language);
 
 /// <summary>
 /// Event raised on the parent entity of a headset radio when a radio message is received.

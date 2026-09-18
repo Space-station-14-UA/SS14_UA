@@ -111,6 +111,13 @@
   id: MobTajara
   name: Urist McPaws
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - SiikMaas
+    understands:
+    - TauCetiBasic
+    - SiikMaas
   - type: Tag
     tags:
     - CanPilot

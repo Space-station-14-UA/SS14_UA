@@ -123,6 +123,13 @@
   id: MobDwarf
   name: Urist McHands the Dwarf
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - SolCommon
+    understands:
+    - TauCetiBasic
+    - SolCommon
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:

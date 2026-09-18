@@ -1,4 +1,8 @@
 using System.Linq;
+using Content.Shared._EinsteinEngines.Language;
+using Content.Shared._EinsteinEngines.Language.Events;
+using Content.Shared.CCVar;
+using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.IdentityManagement;
@@ -17,6 +21,7 @@ public sealed partial class ChatSystem
         string originalMessage,
         ChatTransmitRange range,
         string? nameOverride,
+        LanguagePrototype language,
         bool hideLog = false,
         bool ignoreActionBlocker = false
         )
@@ -24,7 +29,7 @@ public sealed partial class ChatSystem
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
-        var message = TransformSpeech(source, originalMessage);
+        var message = TransformSpeech(source, originalMessage, language);
 
         if (message.Length == 0)
             return;
@@ -49,16 +54,13 @@ public sealed partial class ChatSystem
 
         name = FormattedMessage.EscapeText(name);
 
-        var wrappedMessage = Loc.GetString(speech.Bold ? "chat-manager-entity-say-bold-wrap-message" : "chat-manager-entity-say-wrap-message",
-            ("entityName", name),
-            ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
-            ("fontType", speech.FontId),
-            ("fontSize", speech.FontSize),
-            ("message", FormattedMessage.EscapeText(message)));
+        var wrappedMessage = WrapPublicMessage(source, name, FormattedMessage.EscapeText(message), language);
+        var obfuscated = _language.ObfuscateSpeech(message, language);
+        var wrappedObfuscated = WrapPublicMessage(source, name, FormattedMessage.EscapeText(obfuscated), language);
 
-        SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, source, range);
+        SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, source, range, language: language, obfuscated: obfuscated, obfuscatedWrappedMessage: wrappedObfuscated);
 
-        var ev = new EntitySpokeEvent(source, message, null, null);
+        var ev = new EntitySpokeEvent(source, message, null, null, language);
         RaiseLocalEvent(source, ev, true);
 
         // To avoid logging any messages sent by entities that are not players, like vendors, cloning, etc.
@@ -90,6 +92,7 @@ public sealed partial class ChatSystem
         ChatTransmitRange range,
         RadioChannelPrototype? channel,
         string? nameOverride,
+        LanguagePrototype language,
         bool hideLog = false,
         bool ignoreActionBlocker = false
         )
@@ -97,11 +100,9 @@ public sealed partial class ChatSystem
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
-        var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage));
+        var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage), language);
         if (message.Length == 0)
             return;
-
-        var obfuscatedMessage = ObfuscateMessageReadability(message, 0.2f);
 
         // get the entity's name by visual identity (if no override provided).
         string nameIdentity = FormattedMessage.EscapeText(nameOverride ?? Identity.Name(source, EntityManager));
@@ -119,15 +120,7 @@ public sealed partial class ChatSystem
         }
         name = FormattedMessage.EscapeText(name);
 
-        var wrappedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
-            ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
-
-        var wrappedobfuscatedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
-            ("entityName", nameIdentity), ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
-
-        var wrappedUnknownMessage = Loc.GetString("chat-manager-entity-whisper-unknown-wrap-message",
-            ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
-
+        var languageObfuscatedMessage = _language.ObfuscateSpeech(message, language);
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
@@ -140,19 +133,49 @@ public sealed partial class ChatSystem
             if (MessageRangeCheck(session, data, range) != MessageRangeCheckResult.Full)
                 continue; // Won't get logged to chat, and ghosts are too far away to see the pop-up, so we just won't send it to them.
 
-            if (data.Range <= WhisperClearRange || data.Observer)
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, message, wrappedMessage, source, false, session.Channel);
-            //If listener is too far, they only hear fragments of the message
+            if (!data.Observer
+                && language.SpeechOverride.RequireSight
+                && TryComp<BlindableComponent>(listener, out var blind)
+                && blind.IsBlind)
+                continue;
+
+            var overrideEv = new ChatMessageOverrideInRange(language.SpeechOverride.RequireSpeech, language.SpeechOverride.RequireSight);
+            RaiseLocalEvent(listener, ref overrideEv);
+            if (overrideEv.Cancelled)
+                continue;
+
+            var canUnderstandLanguage = _language.CanUnderstand(listener, language.ID);
+            var perceivedMessage = canUnderstandLanguage ? message : languageObfuscatedMessage;
+
+            string result, wrappedMessage;
+            if (!language.SpeechOverride.RequireLOS && data.Range <= WhisperClearRange
+                || _examineSystem.InRangeUnOccluded(source, listener, WhisperClearRange)
+                || data.Observer)
+            {
+                result = perceivedMessage;
+                wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, FormattedMessage.EscapeText(result), language);
+            }
             else if (_examineSystem.InRangeUnOccluded(source, listener, WhisperMuffledRange))
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedobfuscatedMessage, source, false, session.Channel);
-            //If listener is too far and has no line of sight, they can't identify the whisperer's identity
+            {
+                result = ObfuscateMessageReadability(perceivedMessage, 0.2f);
+                wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", nameIdentity, FormattedMessage.EscapeText(result), language);
+            }
             else
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.Channel);
+            {
+                if (language.SpeechOverride.RequireLOS)
+                    continue;
+
+                result = ObfuscateMessageReadability(perceivedMessage, 0.2f);
+                wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-unknown-wrap-message", string.Empty, FormattedMessage.EscapeText(result), language);
+            }
+
+            _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, false, session.Channel);
         }
 
-        _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
+        var replayWrap = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, FormattedMessage.EscapeText(message), language);
+        _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, replayWrap, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
 
-        var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
+        var ev = new EntitySpokeEvent(source, message, channel, ObfuscateMessageReadability(message, 0.2f), language);
         RaiseLocalEvent(source, ev, true);
         if (!hideLog)
             if (originalMessage == message)
@@ -178,6 +201,7 @@ public sealed partial class ChatSystem
         string action,
         ChatTransmitRange range,
         string? nameOverride,
+        LanguagePrototype? language = null,
         bool hideLog = false,
         bool checkEmote = true,
         bool ignoreActionBlocker = false,
@@ -186,6 +210,8 @@ public sealed partial class ChatSystem
     {
         if (!_actionBlocker.CanEmote(source) && !ignoreActionBlocker)
             return;
+
+        language ??= _language.GetLanguage(source);
 
         // get the entity's apparent name (if no override provided).
         var ent = Identity.Entity(source, EntityManager);

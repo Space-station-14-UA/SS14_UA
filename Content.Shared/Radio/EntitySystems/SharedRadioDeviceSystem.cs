@@ -268,7 +268,8 @@ public abstract partial class SharedRadioDeviceSystem : EntitySystem
             InGameICChatType.Whisper,
             ChatTransmitRange.GhostRangeLimit,
             nameOverride: name,
-            checkRadioPrefix: false);
+            checkRadioPrefix: false,
+            languageOverride: args.Language);
     }
 
     [SubscribeLocalEvent]

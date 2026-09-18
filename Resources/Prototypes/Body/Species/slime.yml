@@ -82,6 +82,13 @@
   id: MobSlimePerson
   name: Urist McWobble
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Bubblish
+    understands:
+    - TauCetiBasic
+    - Bubblish
   - type: Storage
     clickInsert: false
     grid:

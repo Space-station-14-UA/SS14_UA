@@ -69,4 +69,28 @@ public sealed partial class TraitPrototype : IPrototype
     /// </summary>
     [DataField]
     public ProtoId<TraitCategoryPrototype>? Category;
+
+    /// <summary>
+    /// Languages this trait teaches the character to speak.
+    /// </summary>
+    [DataField]
+    public List<string>? LanguagesSpoken;
+
+    /// <summary>
+    /// Languages this trait teaches the character to understand.
+    /// </summary>
+    [DataField]
+    public List<string>? LanguagesUnderstood;
+
+    /// <summary>
+    /// Languages this trait removes from the character's spoken list.
+    /// </summary>
+    [DataField]
+    public List<string>? RemoveLanguagesSpoken;
+
+    /// <summary>
+    /// Languages this trait removes from the character's understood list.
+    /// </summary>
+    [DataField]
+    public List<string>? RemoveLanguagesUnderstood;
 }

@@ -75,6 +75,13 @@
   id: MobSkeletonPerson
   name: Urist McBones
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Calcic
+    understands:
+    - TauCetiBasic
+    - Calcic
   - type: Damageable
     damageModifierSet: Skeleton
   - type: Injurable

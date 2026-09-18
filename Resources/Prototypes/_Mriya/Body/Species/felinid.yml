@@ -63,6 +63,13 @@
   id: MobFelinid
   name: Urist McFelinid
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Nekomimetic
+    understands:
+    - TauCetiBasic
+    - Nekomimetic
   - type: Tag
     tags:
     - CanPilot

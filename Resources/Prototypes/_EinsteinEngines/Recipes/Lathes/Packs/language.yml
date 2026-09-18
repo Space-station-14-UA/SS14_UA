@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: latheRecipePack
+  id: Translators
+  recipes:
+  - CanilunztTranslator
+  - BubblishTranslator
+  - NekomimeticTranslator
+  - DraconicTranslator
+  - SolCommonTranslator
+  - RootSpeakTranslator
+  - MofficTranslator
+  - XenoTranslator
+  - AnimalTranslator
+  - ValyrianStandardTranslator
+  - ChittinTranslator
+  - SiikMaasTranslator
+  - NewKinPidginTranslator
+  - SchechiTranslator
+  - GruntishTranslator
+
+- type: latheRecipePack
+  id: TranslatorImplanters
+  recipes:
+  - BasicGalaticCommonTranslatorImplanter
+  - AdvancedGalaticCommonTranslatorImplanter
+  - CanilunztTranslatorImplanter
+  - BubblishTranslatorImplanter
+  - NekomimeticTranslatorImplanter
+  - DraconicTranslatorImplanter
+  - SolCommonTranslatorImplanter
+  - RootSpeakTranslatorImplanter
+  - MofficTranslatorImplanter
+  - ValyrianStandardTranslatorImplanter
+  - ChittinTranslatorImplanter
+  - SiikMaasTranslatorImplanter
+  - NewKinPidginTranslatorImplanter
+  - SchechiTranslatorImplanter
+  - GruntishTranslatorImplanter

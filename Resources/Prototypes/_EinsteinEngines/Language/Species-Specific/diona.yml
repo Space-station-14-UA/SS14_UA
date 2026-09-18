@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Spoken by dionas.
+# TODO: Replace this with a much better language.
+- type: language
+  id: RootSpeak
+  isVisibleLanguage: true
+  speech:
+    color: "#a64e14dd" # Goob Edit - More uniqueness from Novu-Nederic
+    # fontId: Noganas #* FONTS NOT ALREADY HERE ARE NOT BEING ADDED
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 5
+    replacement:
+    - hs
+    - zt
+    - kr
+    - st
+    - sh

@@ -212,6 +212,8 @@
     - Janitor
     - Instruments
     - Equipment
+    - Translators
+    - TranslatorImplanters
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo

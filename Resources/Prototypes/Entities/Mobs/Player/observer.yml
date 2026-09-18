@@ -39,6 +39,7 @@
   description: Буу!
   categories: [ HideSpawnMenu ]
   components:
+  - type: UniversalLanguageSpeaker # Einstein Engines - Language
   - type: Sprite
     sprite: Mobs/Ghosts/ghost_human.rsi
     color: "#fff8"

@@ -38,6 +38,9 @@
   - Fingerprint
   - Grammar # Pronouns
   - HumanoidProfile # Age, Sex, Gender
+  - LanguageKnowledge # Einstein Engines - Language
+  - LanguageSpeaker # Einstein Engines - Language
+  - ForeignerTrait # Einstein Engines - Language
   - InnerBodyAnomalyVisuals # How you look with anomalies
   - MeleeWeapon # Attack animation, damage and sound
   - NpcFactionMember

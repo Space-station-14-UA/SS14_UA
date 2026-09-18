@@ -163,6 +163,13 @@
   id: MobVox
   name: Urist McVox
   components:
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - NewKinPidgin
+    understands:
+    - TauCetiBasic
+    - NewKinPidgin
   - type: Damageable
     damageModifierSet: Vox
   - type: Speech

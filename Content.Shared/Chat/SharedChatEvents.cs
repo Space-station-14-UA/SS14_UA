@@ -1,3 +1,4 @@
+using Content.Shared._EinsteinEngines.Language;
 using Content.Shared.Inventory;
 using Content.Shared.Radio;
 using Content.Shared.Speech;
@@ -66,12 +67,14 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     /// message gets sent on this channel, this should be set to null to prevent duplicate messages.
     /// </summary>
     public RadioChannelPrototype? Channel;
+    public readonly LanguagePrototype Language; // Einstein Engines - Language
 
-    public EntitySpokeEvent(EntityUid source, string message, RadioChannelPrototype? channel, string? obfuscatedMessage)
+    public EntitySpokeEvent(EntityUid source, string message, RadioChannelPrototype? channel, string? obfuscatedMessage, LanguagePrototype language)
     {
         Source = source;
         Message = message;
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
+        Language = language;
     }
 }

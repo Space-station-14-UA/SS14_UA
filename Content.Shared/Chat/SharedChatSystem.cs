@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Text.RegularExpressions;
+using Content.Shared._EinsteinEngines.Language;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Popups;
@@ -320,6 +321,7 @@ public abstract partial class SharedChatSystem : EntitySystem
         string action,
         ChatTransmitRange range,
         string? nameOverride,
+        LanguagePrototype? language = null,
         bool hideLog = false,
         bool checkEmote = true,
         bool ignoreActionBlocker = false,
@@ -350,7 +352,8 @@ public abstract partial class SharedChatSystem : EntitySystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false)
+        bool ignoreActionBlocker = false,
+        LanguagePrototype? languageOverride = null)
     { }
 
     /// <summary>
@@ -375,7 +378,8 @@ public abstract partial class SharedChatSystem : EntitySystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        LanguagePrototype? languageOverride = null
         )
     { }
 

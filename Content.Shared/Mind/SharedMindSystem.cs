@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._EinsteinEngines.Language.Components;
+using Content.Shared._EinsteinEngines.Language.Events;
+using Content.Shared._EinsteinEngines.Language.Systems;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Emoting;
@@ -769,6 +772,17 @@ public abstract partial class SharedMindSystem : EntitySystem
         }
 
         EnsureComp<ExaminerComponent>(uid);
+
+        // Einstein Engines - Language
+        if (TryComp<LanguageSpeakerComponent>(uid, out var languageSpeaker) &&
+            languageSpeaker.SpokenLanguages.Count > 0)
+            return;
+
+        var newSpeaker = EnsureComp<LanguageSpeakerComponent>(uid);
+        newSpeaker.SpokenLanguages.Add(SharedLanguageSystem.FallbackLanguagePrototype);
+        newSpeaker.UnderstoodLanguages.Add(SharedLanguageSystem.FallbackLanguagePrototype);
+        RaiseLocalEvent(uid, new LanguagesUpdateEvent());
+        Dirty(uid, newSpeaker);
     }
 }
 

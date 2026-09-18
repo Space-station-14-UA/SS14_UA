@@ -1,0 +1,16 @@
+lathe-recipe-BaseTranslatorImplanter-name = імплантер перекладача
+lathe-recipe-BasicGalaticCommonTranslatorImplanter-subname = базовий імплант-перекладач Тау-Кіта Базової
+lathe-recipe-AdvancedGalaticCommonTranslatorImplanter-subname = просунутий імплант-перекладач Тау-Кіта Базової
+lathe-recipe-BubblishTranslatorImplanter-subname = імплант-перекладач бульбашкової
+lathe-recipe-NekomimeticTranslatorImplanter-subname = імплант-перекладач некоміметичної
+lathe-recipe-DraconicTranslatorImplanter-subname = імплант-перекладач сінта'унаті
+lathe-recipe-CanilunztTranslatorImplanter-subname = імплант-перекладач канілунц
+lathe-recipe-SolCommonTranslatorImplanter-subname = імплант-перекладач Сол Загальної
+lathe-recipe-ChittinTranslatorImplanter-subname = імплант-перекладач хітинової
+lathe-recipe-RootSpeakTranslatorImplanter-subname = імплант-перекладач кореневої
+lathe-recipe-MofficTranslatorImplanter-subname = імплант-перекладач мофік
+lathe-recipe-ValyrianStandardTranslatorImplanter-subname = імплант-перекладач валірійської
+lathe-recipe-SiikMaasTranslatorImplanter-subname = імплант-перекладач сіік'маас
+lathe-recipe-SchechiTranslatorImplanter-subname = імплант-перекладач шечі
+lathe-recipe-NewKinPidginTranslatorImplanter-subname = імплант-перекладач ка'ракк
+lathe-recipe-GruntishTranslatorImplanter-subname = імплант-перекладач грантіш

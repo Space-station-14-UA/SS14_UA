@@ -132,6 +132,7 @@ public sealed partial class ZombieSystem
 
         //you're a real zombie now, son.
         var zombiecomp = AddComp<ZombieComponent>(target);
+        _language.UpdateEntityLanguages(target);
 
         //we need to basically remove all of these because zombies shouldn't
         //get diseases, breath, be thirst, be hungry, die in space, get double sentience, have offspring or be paraplegic.

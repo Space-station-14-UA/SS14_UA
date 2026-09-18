@@ -2,6 +2,7 @@ using Content.Shared.Chat;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Popups;
 using Content.Shared.StatusEffectNew;
+using Content.Shared._EinsteinEngines.Language.Systems;
 
 namespace Content.Shared.Speech.Muting;
 
@@ -11,6 +12,7 @@ namespace Content.Shared.Speech.Muting;
 public sealed partial class MutedStatusEffectSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedLanguageSystem _language = default!;
 
     /// <inheritdoc />
     public override void Initialize()
@@ -47,6 +49,9 @@ public sealed partial class MutedStatusEffectSystem : EntitySystem
             return;
 
         var target = args.Args.Uid;
+
+        if (!_language.GetLanguage(target).SpeechOverride.RequireSpeech)
+            return;
 
         _popup.PopupEntity(Loc.GetString(ent.Comp.SpeakPopup), target, target);
 

@@ -212,6 +212,7 @@ ui-options-function-open-inventory-menu = Відкритий інвентар
 ui-options-function-open-a-help = Відкрити адмін допомогу
 ui-options-function-open-abilities-menu = Відкрити меню дій
 ui-options-function-open-emotes-menu = Відкрити меню емоцій
+ui-options-function-open-language-menu = Відкрити меню мов
 ui-options-function-toggle-round-end-summary-window = Перемкнути підсумкове вікно кінця раунду
 ui-options-function-open-entity-spawn-window = Відкрити меню створення сутності
 ui-options-function-open-sandbox-window = Відкрити меню пісочниці

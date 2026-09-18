@@ -1,6 +1,9 @@
 using System.Linq;
 using System.Text;
+using Content.Shared._EinsteinEngines.Language;
+using Content.Shared._EinsteinEngines.Language.Events;
 using Content.Shared.Chat;
+using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Ghost.Components;
 using Content.Shared.Players;
 using Content.Shared.Speech.Prototypes;
@@ -64,15 +67,49 @@ public sealed partial class ChatSystem
     /// <summary>
     ///     Sends a chat message to the given players in range of the source entity.
     /// </summary>
-    private void SendInVoiceRange(ChatChannel channel, string message, string wrappedMessage, EntityUid source, ChatTransmitRange range, NetUserId? author = null)
+    private void SendInVoiceRange(
+        ChatChannel channel,
+        string message,
+        string wrappedMessage,
+        EntityUid source,
+        ChatTransmitRange range,
+        NetUserId? author = null,
+        LanguagePrototype? language = null,
+        string? obfuscated = null,
+        string? obfuscatedWrappedMessage = null)
     {
+        language ??= _language.GetLanguage(source);
+        obfuscated ??= message;
+        obfuscatedWrappedMessage ??= wrappedMessage;
+
         foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
             var entRange = MessageRangeCheck(session, data, range);
             if (entRange == MessageRangeCheckResult.Disallowed)
                 continue;
             var entHideChat = entRange == MessageRangeCheckResult.HideChat;
-            _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
+
+            if (session.AttachedEntity is not { Valid: true } listener)
+                continue;
+
+            if (language.SpeechOverride.RequireLOS && !data.Observer && !_examineSystem.InRangeUnOccluded(source, listener, VoiceRange))
+                continue;
+
+            if (!data.Observer
+                && language.SpeechOverride.RequireSight
+                && TryComp<BlindableComponent>(listener, out var blind)
+                && blind.IsBlind)
+                continue;
+
+            var overrideEv = new ChatMessageOverrideInRange(language.SpeechOverride.RequireSpeech, language.SpeechOverride.RequireSight);
+            RaiseLocalEvent(listener, ref overrideEv);
+            if (channel == ChatChannel.Local && overrideEv.Cancelled)
+                continue;
+
+            if (channel == ChatChannel.LOOC || channel == ChatChannel.Emotes || _language.CanUnderstand(listener, language.ID))
+                _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
+            else
+                _chatManager.ChatMessageToOne(channel, obfuscated, obfuscatedWrappedMessage, source, entHideChat, session.Channel, author: author);
         }
 
         _replay.RecordServerMessage(new ChatMessage(channel, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
@@ -132,8 +169,11 @@ public sealed partial class ChatSystem
         return newMessage;
     }
 
-    public string TransformSpeech(EntityUid sender, string message)
+    public string TransformSpeech(EntityUid sender, string message, LanguagePrototype? language = null)
     {
+        if (language != null && !language.SpeechOverride.RequireSpeech)
+            return message;
+
         var ev = new TransformSpeechEvent(sender, message);
         RaiseLocalEvent(sender, ev, true);
 

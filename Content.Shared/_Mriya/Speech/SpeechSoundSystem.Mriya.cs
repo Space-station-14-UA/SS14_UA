@@ -50,6 +50,9 @@ public sealed partial class SpeechSoundSystem
         if (ent.Comp.SpeechSounds == null || string.IsNullOrWhiteSpace(args.Message))
             return;
 
+        if (!args.Language.SpeechOverride.RequireSpeech)
+            return;
+
         var currentTime = _gameTiming.CurTime;
         var cooldown = TimeSpan.FromSeconds(ent.Comp.SoundCooldownTime);
 

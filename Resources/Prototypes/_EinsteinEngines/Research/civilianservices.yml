@@ -1,0 +1,59 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Tier 2 — handheld translators + basic common implant
+- type: technology
+  id: BasicTranslation
+  name: research-technology-basic-translation
+  icon:
+    sprite: _EinsteinEngines/Objects/Devices/translator.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 7500
+  technologyPrerequisites:
+  - AdvancedEntertainment
+  recipeUnlocks:
+  - BasicGalaticCommonTranslatorImplanter
+  - CanilunztTranslator
+  - BubblishTranslator
+  - NekomimeticTranslator
+  - DraconicTranslator
+  - SolCommonTranslator
+  - RootSpeakTranslator
+  - MofficTranslator
+  - ValyrianStandardTranslator
+  - ChittinTranslator
+  - SiikMaasTranslator
+  - NewKinPidginTranslator
+  - SchechiTranslator
+  - GruntishTranslator
+
+# Tier 3 — translator implants + animal/xeno handhelds
+- type: technology
+  id: AdvancedTranslation
+  name: research-technology-advanced-translation
+  icon:
+    sprite: Objects/Specific/Medical/implanter.rsi
+    state: implanter0
+  discipline: CivilianServices
+  tier: 3
+  cost: 10000
+  technologyPrerequisites:
+  - BasicTranslation
+  recipeUnlocks:
+  - AdvancedGalaticCommonTranslatorImplanter
+  - CanilunztTranslatorImplanter
+  - BubblishTranslatorImplanter
+  - NekomimeticTranslatorImplanter
+  - DraconicTranslatorImplanter
+  - SolCommonTranslatorImplanter
+  - RootSpeakTranslatorImplanter
+  - MofficTranslatorImplanter
+  - ValyrianStandardTranslatorImplanter
+  - ChittinTranslatorImplanter
+  - SiikMaasTranslatorImplanter
+  - SchechiTranslatorImplanter
+  - NewKinPidginTranslatorImplanter
+  - GruntishTranslatorImplanter
+  - AnimalTranslator
+  - XenoTranslator

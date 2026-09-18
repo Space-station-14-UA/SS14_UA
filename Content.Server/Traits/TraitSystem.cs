@@ -1,3 +1,4 @@
+using Content.Server._EinsteinEngines.Language;
 using Content.Shared.GameTicking;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -12,6 +13,7 @@ public sealed partial class TraitSystem : EntitySystem
 {
     [Dependency] private SharedHandsSystem _sharedHandsSystem = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private LanguageSystem _language = default!;
 
     public override void Initialize()
     {
@@ -47,6 +49,8 @@ public sealed partial class TraitSystem : EntitySystem
             if (traitPrototype.Components.Count > 0)
                 EntityManager.AddComponents(args.Mob, traitPrototype.Components, false);
 
+            ApplyTraitLanguages(args.Mob, traitPrototype);
+
             // Add all JobSpecials required by the prototype
             foreach (var special in traitPrototype.Specials)
             {
@@ -66,6 +70,33 @@ public sealed partial class TraitSystem : EntitySystem
                 inhandEntity,
                 checkActionBlocker: false,
                 handsComp: handsComponent);
+        }
+    }
+
+    private void ApplyTraitLanguages(EntityUid mob, TraitPrototype trait)
+    {
+        if (trait.LanguagesSpoken != null)
+        {
+            foreach (var language in trait.LanguagesSpoken)
+                _language.AddLanguage(mob, language, addSpoken: true, addUnderstood: false);
+        }
+
+        if (trait.LanguagesUnderstood != null)
+        {
+            foreach (var language in trait.LanguagesUnderstood)
+                _language.AddLanguage(mob, language, addSpoken: false, addUnderstood: true);
+        }
+
+        if (trait.RemoveLanguagesSpoken != null)
+        {
+            foreach (var language in trait.RemoveLanguagesSpoken)
+                _language.RemoveLanguage(mob, language, removeSpoken: true, removeUnderstood: false);
+        }
+
+        if (trait.RemoveLanguagesUnderstood != null)
+        {
+            foreach (var language in trait.RemoveLanguagesUnderstood)
+                _language.RemoveLanguage(mob, language, removeSpoken: false, removeUnderstood: true);
         }
     }
 }

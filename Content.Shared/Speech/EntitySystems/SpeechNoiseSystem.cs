@@ -20,6 +20,9 @@ public sealed partial class SpeechSoundSystem : EntitySystem
         if (ent.Comp.SpeechSounds == null)
             return;
 
+        if (!args.Language.SpeechOverride.RequireSpeech)
+            return;
+
         var currentTime = _gameTiming.CurTime;
         var cooldown = TimeSpan.FromSeconds(ent.Comp.SoundCooldownTime);
 

@@ -1,3 +1,5 @@
+using Content.Server._EinsteinEngines.Language;
+using Content.Shared._EinsteinEngines.Language.Events;
 using Content.Shared.NPC.Prototypes;
 using Content.Server.Actions;
 using Content.Server.Body.Systems;
@@ -44,6 +46,7 @@ namespace Content.Server.Zombies
         [Dependency] private MobStateSystem _mobState = default!;
         [Dependency] private SharedPopupSystem _popup = default!;
         [Dependency] private SharedRoleSystem _role = default!;
+        [Dependency] private LanguageSystem _language = default!;
 
         public readonly ProtoId<NpcFactionPrototype> Faction = "Zombie";
 
@@ -73,6 +76,8 @@ namespace Content.Server.Zombies
             SubscribeLocalEvent<ZombieComponent, MindAddedMessage>(OnMindAdded);
             SubscribeLocalEvent<ZombieComponent, MindRemovedMessage>(OnMindRemoved);
             SubscribeLocalEvent<ZombieComponent, AttemptConvertRevolutionaryEvent>(OnAttemptConvert);
+            SubscribeLocalEvent<ZombieComponent, DetermineEntityLanguagesEvent>(OnLanguageApply);
+            SubscribeLocalEvent<ZombieComponent, ComponentShutdown>(OnZombieShutdown);
 
             SubscribeLocalEvent<PendingZombieComponent, MapInitEvent>(OnPendingMapInit);
             SubscribeLocalEvent<PendingZombieComponent, BeforeRemoveAnomalyOnDeathEvent>(OnBeforeRemoveAnomalyOnDeath);
@@ -343,6 +348,27 @@ namespace Content.Server.Zombies
             ghostRole.RoleDescription = Loc.GetString("zombie-role-desc");
             ghostRole.RoleRules = Loc.GetString("zombie-role-rules");
             ghostRole.MindRoles.Add(MindRoleZombie);
+        }
+
+        private void OnLanguageApply(Entity<ZombieComponent> ent, ref DetermineEntityLanguagesEvent args)
+        {
+            if (ent.Comp.LifeStage is ComponentLifeStage.Removing
+                or ComponentLifeStage.Stopping
+                or ComponentLifeStage.Stopped)
+                return;
+
+            args.SpokenLanguages.Clear();
+            args.UnderstoodLanguages.Clear();
+            args.SpokenLanguages.Add(ent.Comp.ForcedLanguage);
+            args.UnderstoodLanguages.Add(ent.Comp.ForcedLanguage);
+        }
+
+        private void OnZombieShutdown(Entity<ZombieComponent> ent, ref ComponentShutdown args)
+        {
+            if (TerminatingOrDeleted(ent))
+                return;
+
+            _language.UpdateEntityLanguages(ent.Owner);
         }
     }
 }

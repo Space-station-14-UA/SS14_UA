@@ -1,9 +1,11 @@
 using System.Globalization;
+using Content.Server._EinsteinEngines.Language; // Einstein Engines - Language
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Station.Systems;
+using Content.Shared._EinsteinEngines.Language; // Einstein Engines - Language
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -46,6 +48,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private ReplacementAccentSystem _wordreplacement = default!;
     [Dependency] private ExamineSystemShared _examineSystem = default!;
     [Dependency] private EntityQuery<GhostHearingComponent> _ghostHearingQuery = default!;
+    [Dependency] private LanguageSystem _language = default!; // Einstein Engines - Language
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
@@ -131,9 +134,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false)
+        bool ignoreActionBlocker = false,
+        LanguagePrototype? languageOverride = null)
     {
-        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker);
+        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker, languageOverride);
     }
 
     /// <inheritdoc />
@@ -147,7 +151,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        LanguagePrototype? languageOverride = null
         )
     {
         if (HasComp<GhostComponent>(source))
@@ -191,6 +196,8 @@ public sealed partial class ChatSystem : SharedChatSystem
             message = message[1..];
         }
 
+        var language = languageOverride ?? _language.GetLanguage(source); // Einstein Engines - Language
+
         bool shouldCapitalize = (desiredType != InGameICChatType.Emote);
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
         // Capitalizing the word I only happens in English, so we check language here
@@ -202,19 +209,22 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Was there an emote in the message? If so, send it.
         if (player != null && emoteStr != message && emoteStr != null)
         {
-            SendEntityEmote(source, emoteStr, range, nameOverride, ignoreActionBlocker);
+            SendEntityEmote(source, emoteStr, range, nameOverride, language, ignoreActionBlocker);
         }
 
         // This can happen if the entire string is sanitized out.
         if (string.IsNullOrEmpty(message))
             return;
 
+        if (language.SpeechOverride.ChatTypeOverride is { } chatTypeOverride)
+            desiredType = chatTypeOverride;
+
         // This message may have a radio prefix, and should then be whispered to the resolved radio channel
         if (checkRadioPrefix)
         {
             if (TryProcessRadioMessage(source, message, out var modMessage, out var channel))
             {
-                SendEntityWhisper(source, modMessage, range, channel, nameOverride, hideLog, ignoreActionBlocker);
+                SendEntityWhisper(source, modMessage, range, channel, nameOverride, language, hideLog, ignoreActionBlocker);
                 return;
             }
         }
@@ -223,13 +233,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         switch (desiredType)
         {
             case InGameICChatType.Speak:
-                SendEntitySpeak(source, message, range, nameOverride, hideLog, ignoreActionBlocker);
+                SendEntitySpeak(source, message, range, nameOverride, language, hideLog, ignoreActionBlocker);
                 break;
             case InGameICChatType.Whisper:
-                SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
+                SendEntityWhisper(source, message, range, null, nameOverride, language, hideLog, ignoreActionBlocker);
                 break;
             case InGameICChatType.Emote:
-                SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                SendEntityEmote(source, message, range, nameOverride, language, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
         }
     }
