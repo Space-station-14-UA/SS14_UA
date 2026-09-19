@@ -304,31 +304,31 @@
 #         Piercing: 0.9
 #         Heat: 0.9
 
-# # Mercenary
-# - type: entity
-#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-#   id: SichClothingHeadHelmetHardsuitMerc
-#   categories: [ HideSpawnMenu ]
-#   name: шолом найманця
-#   description: Шолом модифікованого бойового скафандру лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
-#   components:
-#   - type: BreathMask
-#   - type: Sprite
-#     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
-#   - type: Clothing
-#     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
-#   - type: PointLight
-#     color: yellow
-#   - type: PressureProtection
-#     highPressureMultiplier: 0.08
-#     lowPressureMultiplier: 1000
-#   - type: Armor
-#     modifiers:
-#       coefficients:
-#         Blunt: 0.9
-#         Slash: 0.9
-#         Piercing: 0.9
-#         Heat: 0.9
+ # Mercenary
+ - type: entity
+   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+   id: SichClothingHeadHelmetHardsuitMerc
+   categories: [ HideSpawnMenu ]
+   name: шолом найманця
+   description: Шолом модифікованого бойового скафандру лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
+   components:
+   - type: BreathMask
+   - type: Sprite
+     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
+   - type: Clothing
+     sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
+   - type: PointLight
+     color: yellow
+   - type: PressureProtection
+     highPressureMultiplier: 0.08
+     lowPressureMultiplier: 1000
+   - type: Armor
+     modifiers:
+       coefficients:
+         Blunt: 0.9
+         Slash: 0.9
+         Piercing: 0.9
+         Heat: 0.9
 
 # # League
 # - type: entity
@@ -422,22 +422,22 @@
 #     highPressureMultiplier: 0.08
 #     lowPressureMultiplier: 1000
 
-# - type: entity
-#   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-#   id: SichClothingHeadHelmetVoidsuitIHS
-#   name: шолом БАГ
-#   description: Кріпкий та бойовий шолом скафандру Безпеки Айронгамер.
-#   components:
-#   - type: Sprite
-#     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
-#   - type: Clothing
-#     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
-#   - type: PointLight
-#     color: "#47CC9E"
-#   - type: Armor
-#     modifiers:
-#       coefficients:
-#         Blunt: 0.9
-#         Slash: 0.9
-#         Piercing: 0.9
-#         Heat: 0.9
+ - type: entity
+   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+   id: SichClothingHeadHelmetVoidsuitIHS
+   name: шолом БАГ
+   description: Кріпкий та бойовий шолом скафандру Безпеки Айронгамер.
+   components:
+   - type: Sprite
+     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+   - type: Clothing
+     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+   - type: PointLight
+     color: "#47CC9E"
+   - type: Armor
+     modifiers:
+       coefficients:
+         Blunt: 0.9
+         Slash: 0.9
+         Piercing: 0.9
+         Heat: 0.9
