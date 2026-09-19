@@ -8,6 +8,8 @@
     sprite: _Mriya/Clothing/Head/Hardsuits/mirage.rsi
   - type: Clothing
     sprite: _Mriya/Clothing/Head/Hardsuits/mirage.rsi
+  - type: HandheldLight
+    addPrefix: false
   - type: PointLight
     color: green
   - type: Armor
