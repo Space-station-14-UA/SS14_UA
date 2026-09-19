@@ -67,19 +67,7 @@
       "name": "poster3_contraband"
     },
     {
-      "name": "poster4_contraband"
-    },
-    {
       "name": "poster5_contraband"
-    },
-    {
-      "name": "poster6_contraband"
-    },
-    {
-      "name": "poster7_contraband"
-    },
-    {
-      "name": "poster8_contraband"
     },
     {
       "name": "poster9_contraband"
@@ -101,9 +89,6 @@
     },
     {
       "name": "poster15_contraband"
-    },
-    {
-      "name": "poster16_contraband"
     },
     {
       "name": "poster17_contraband"
@@ -130,9 +115,6 @@
       "name": "poster24_contraband"
     },
     {
-      "name": "poster25_contraband"
-    },
-    {
       "name": "poster26_contraband"
     },
     {
@@ -140,9 +122,6 @@
     },
     {
       "name": "poster28_contraband"
-    },
-    {
-      "name": "poster29_contraband"
     },
     {
       "name": "poster30_contraband"
@@ -181,9 +160,6 @@
       "name": "poster42_contraband"
     },
     {
-      "name": "poster43_contraband"
-    },
-    {
       "name": "poster44_contraband"
     },
     {
@@ -196,16 +172,10 @@
       "name": "poster47_contraband"
     },
     {
-      "name": "poster48_contraband"
-    },
-    {
       "name": "poster50_contraband"
     },
     {
       "name": "poster55_contraband"
-    },
-    {
-      "name": "poster56_contraband"
     },
     {
       "name": "poster57_contraband"
@@ -217,9 +187,6 @@
       "name": "poster59_contraband"
     },
     {
-      "name": "poster60_contraband"
-    },
-    {
       "name": "poster61_contraband"
     },
     {
@@ -229,13 +196,7 @@
       "name": "poster63_contraband"
     },
     {
-      "name": "poster51_contraband"
-    },
-    {
       "name": "poster64_contraband"
-    },
-    {
-      "name": "poster65_contraband"
     },
     {
       "name": "poster66_contraband"
@@ -247,76 +208,22 @@
       "name": "poster2_legit"
     },
     {
-      "name": "poster3_legit"
-    },
-    {
-      "name": "poster4_legit"
-    },
-    {
-      "name": "poster5_legit"
-    },
-    {
-      "name": "poster6_legit"
-    },
-    {
-      "name": "poster7_legit"
-    },
-    {
-      "name": "poster8_legit"
-    },
-    {
       "name": "poster9_legit"
-    },
-    {
-      "name": "poster10_legit"
     },
     {
       "name": "poster11_legit"
     },
     {
-      "name": "poster12_legit"
-    },
-    {
-      "name": "poster13_legit"
-    },
-    {
       "name": "poster14_legit"
-    },
-    {
-      "name": "poster15_legit"
-    },
-    {
-      "name": "poster16_legit"
-    },
-    {
-      "name": "poster17_legit"
     },
     {
       "name": "poster18_legit"
     },
     {
-      "name": "poster19_legit"
-    },
-    {
-      "name": "poster20_legit"
-    },
-    {
-      "name": "poster21_legit"
-    },
-    {
-      "name": "poster22_legit"
-    },
-    {
       "name": "poster23_legit"
     },
     {
-      "name": "poster24_legit"
-    },
-    {
       "name": "poster25_legit"
-    },
-    {
-      "name": "poster26_legit"
     },
     {
       "name": "poster27_legit"
@@ -325,13 +232,7 @@
       "name": "poster28_legit"
     },
     {
-      "name": "poster29_legit"
-    },
-    {
       "name": "poster30_legit"
-    },
-    {
-      "name": "poster31_legit"
     },
     {
       "name": "poster32_legit"
@@ -344,12 +245,6 @@
     },
     {
       "name": "poster35_legit"
-    },
-    {
-      "name": "poster36_legit"
-    },
-    {
-      "name": "poster37_legit"
     },
     {
       "name": "poster38_legit"
@@ -388,22 +283,10 @@
       "name": "poster49_legit"
     },
     {
-      "name": "poster50_legit"
-    },
-    {
-      "name": "poster51_legit"
-    },
-    {
-      "name": "poster52_legit"
-    },
-    {
       "name": "poster53_legit"
     },
     {
       "name": "poster54_legit"
-    },
-    {
-      "name": "poster55_legit"
     },
     {
       "name": "poster56_legit"
