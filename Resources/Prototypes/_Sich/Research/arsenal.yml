@@ -23,8 +23,8 @@
     sprite: _Sich/Objects/Weapons/Guns/Ammunition/grenades.rsi
     state: bola
   discipline: Arsenal
-  tier: 1
-  cost: 1000
+  tier: 2
+  cost: 10000
   recipeUnlocks:
   - BoxGrenadesBola
   - BoxGrenadesStinger
