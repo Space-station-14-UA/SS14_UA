@@ -291,6 +291,54 @@
         },
         {
           "name": "я"
+        },
+        {
+          "name": "less"
+        },
+        {
+          "name": "curly_bracket-left"
+        },
+        {
+          "name": "bracket-right"
+        },
+        {
+          "name": "square_bracket-left"
+        },
+        {
+          "name": "bullet"
+        },
+        {
+          "name": "curly_bracket-right"
+        },
+        {
+          "name": "dot"
+        },
+        {
+          "name": "coma"
+        },
+        {
+          "name": "inverted_exclamation"
+        },
+        {
+          "name": "tilde"
+        },
+        {
+          "name": "square_bracket-right"
+        },
+        {
+          "name": "greater"
+        },
+        {
+          "name": "bracket-left"
+        },
+        {
+          "name": "invereted_question"
+        },
+        {
+          "name": "equal"
+        },
+        {
+          "name": "vbar"
         }
     ]
 }
