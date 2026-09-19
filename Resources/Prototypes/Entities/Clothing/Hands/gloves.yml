@@ -333,7 +333,7 @@
 - type: entity
   parent: [ BaseSecurityCargoContraband, ClothingHandsGlovesCombat, BaseSlicingRefinable ]
   id: ClothingHandsMercGlovesCombat
-  name: військові рукавички
+  name: рукавички найманця
   description: Бойові рукавички високої якості, що захищають руки від механічних травм у бою.
   components:
   - type: Sprite
@@ -386,7 +386,7 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesMercFingerless
-  name: військові рукавички без пальців
+  name: рукавички найманця без пальців
   description: Рукавички, які можуть не захистити вас від опіків пальців, але зроблять вас крутішим.
   components:
   - type: Sprite
