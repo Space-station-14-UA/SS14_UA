@@ -1,0 +1,41 @@
+- type: entity
+  name: діамантове кайло
+  parent: BaseItem
+  id: MRdiamondPickaxe
+  description: Володіння блискучим діамантовим кайлом є мрією будь якого шахтаря що прагне підкорити собі найміцніші гірські породи. Ідеальний інструмент для видобутку обсидіану.
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: _Mriya/Objects/Weapons/Melee/diamondpickaxe.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.4 # Це швидкість атаки, напевно
+    wideAnimationRotation: -135
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg" 
+      params:
+        volume: -3
+    damage:
+      types:
+        Piercing: 5 
+        Structural: 15
+  - type: Wieldable
+  - type: IncreaseDamageOnWield # Оце змінює шкоду якщо предмет тримається обома руками, а нижче змінені стати які працюють як модифікатор та додаються до базового значення
+    damage:
+      types:
+        Piercing: 10 # сума - 15 (я не збільшив шкоду відповідно до того як збільшується шкода в діамантового бура, бо це буде скоріше інструмент масових вбивств аніж кайло)
+        Structural: 45 # сума - 60
+  - type: Item
+    size: Normal
+    shape: # Це форма предмету. Сам поки не розубрався, але такі значення роблять форму Т
+    - 0,0,2,0
+    - 1,1,1,2
+    sprite: _Mriya/Objects/Weapons/Melee/diamondpickaxe.rsi
+    storedRotation: -45 # Це розгортає спрайт icon у інвентарі. Дозволяє робити предмет зручнішим у інвентарі не змінюючи спрайт безпосередньо
+  - type: UseDelay # хз що це
+  - type: PhysicalComposition
+    materialComposition: # хз що це
+      Steel: 100
+      Wood: 100
