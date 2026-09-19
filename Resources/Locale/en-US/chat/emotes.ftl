@@ -38,6 +38,7 @@ chat-emote-name-whine = Скиглити
 chat-emote-name-howl = Вити
 chat-emote-name-growl = Гарчати
 chat-emote-name-flap = Махати крилами
+chat-emote-name-blink = Моргнути
 
 # Message
 chat-emote-msg-scream = кричить!
@@ -80,3 +81,4 @@ chat-emote-msg-whine = скиглить.
 chat-emote-msg-howl = виє.
 chat-emote-msg-growl = ричить.
 chat-emote-msg-flap = махає своїми крилами.
+chat-emote-msg-blink = моргає.

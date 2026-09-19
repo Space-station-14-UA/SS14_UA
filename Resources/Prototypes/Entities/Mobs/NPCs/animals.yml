@@ -1982,12 +1982,16 @@
     speechSounds: Squeak
     speechVerb: SmallMob
     allowedEmotes: ['Squeak']
+  - type: EyeBlinking
+    eyelidsSprite: /Textures/Mobs/Animals/mouse.rsi
+    eyelidsColor: "#c9c9c9"
   - type: Sprite
     drawdepth: SmallMobs
     sprite: Mobs/Animals/mouse.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: mouse-0
+    - map: ["enum.HumanoidVisualLayers.Eyelids"]
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -2164,6 +2168,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: mouse-1
+    - map: ["enum.HumanoidVisualLayers.Eyelids"]
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -2183,6 +2188,8 @@
         Base: splat-1
   - type: Item
     heldPrefix: 1
+  - type: EyeBlinking
+    eyelidsColor: "#b57f4c"
 
 - type: entity
   parent: MobMouse
@@ -2192,6 +2199,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: mouse-2
+    - map: ["enum.HumanoidVisualLayers.Eyelids"]
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -2211,6 +2219,8 @@
         Base: splat-2
   - type: Item
     heldPrefix: 2
+  - type: EyeBlinking
+    eyelidsColor: "#6b6b6b"
 
 - type: entity
   name: ракова миша
