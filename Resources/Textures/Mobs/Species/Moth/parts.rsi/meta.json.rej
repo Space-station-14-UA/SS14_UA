@@ -1,0 +1,17 @@
+diff a/Resources/Textures/Mobs/Species/Moth/parts.rsi/meta.json b/Resources/Textures/Mobs/Species/Moth/parts.rsi/meta.json	(rejected hunks)
+@@ -57,6 +57,14 @@
+     {
+       "name": "eyes",
+       "directions": 4
+-    }
++    },
++    {
++      "name": "eyelid-left",
++      "directions": 4
++    },
++    {
++      "name": "eyelid-right",
++      "directions": 4
++     }
+   ]
+ }

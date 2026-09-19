@@ -17,5 +17,5 @@ goodfeeling-artifact-drastic-1 = Ви хочете обійняти усіх, к
 goodfeeling-artifact-drastic-2 = Все вкрай чудово!
 goodfeeling-artifact-drastic-3 = Ви відчуваєте ейфорію.
 goodfeeling-artifact-drastic-4 = Ви відчуваєте запаморочення.
-goodfeeling-artifact-drastic-5 = Раптом, ви такі щасливі, що хочете гоп, гоп, чіда, гоп!
+goodfeeling-artifact-drastic-5 = Раптом ви такі щасливі, що хочете гоп, гоп, чіда, гоп!
 goodfeeling-artifact-drastic-6 = Ви відчуваєте, що цілий світ готовий вам допомогти.
