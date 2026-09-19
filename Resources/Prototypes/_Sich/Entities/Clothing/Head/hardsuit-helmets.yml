@@ -317,6 +317,8 @@
      sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
    - type: Clothing
      sprite: _Sich/Clothing/Head/Hardsuits/merc.rsi
+   - type: HandheldLight
+     addPrefix: false
    - type: PointLight
      color: yellow
    - type: PressureProtection
@@ -432,6 +434,8 @@
      sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
    - type: Clothing
      sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
+   - type: HandheldLight
+     addPrefix: false
    - type: PointLight
      color: "#47CC9E"
    - type: Armor
