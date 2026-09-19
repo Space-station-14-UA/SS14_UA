@@ -1,567 +1,567 @@
-# SolFed
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitSolFed
-  name: скафандр Сонячної Федерації
-  description: Скафандр що використовується Поліцією СолФеду. За демократію!
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/solfed.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/solfed.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.5
-        Heat: 0.4
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitSolFed
+# # SolFed
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitSolFed
+#   name: скафандр Сонячної Федерації
+#   description: Скафандр що використовується Поліцією СолФеду. За демократію!
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/solfed.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/solfed.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.4
+#         Piercing: 0.5
+#         Heat: 0.4
+#         Radiation: 0.5
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitSolFed
 
-# Ukraine (USN)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitUkraine
-  name: скафандр Української Космічної Держави
-  description: Бойовий скафандр солдатів УКД, заснованій на армійському костюмі типу "Булат"
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/ukraine.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/ukraine.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.4
-        Heat: 0.3
-        Radiation: 0.4
-        Caustic: 0.4
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitUkraine
+# # Ukraine (USN)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitUkraine
+#   name: скафандр Української Космічної Держави
+#   description: Бойовий скафандр солдатів УКД, заснованій на армійському костюмі типу "Булат"
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/ukraine.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/ukraine.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.3
+#         Slash: 0.3
+#         Piercing: 0.4
+#         Heat: 0.3
+#         Radiation: 0.4
+#         Caustic: 0.4
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitUkraine
     
-# Renuin
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitRenuin
-  name: скафандр Міжпланетної Асоціації Ренюінь
-  description: Скафандр Ренюіньського ВПК, що використовується в умовах бойових дій у вакуумі. Підозріло схожий на скафандри виробництва Кіберсану.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/renuin.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/renuin.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.5
-        Heat: 0.5
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitRenuin
+# # Renuin
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitRenuin
+#   name: скафандр Міжпланетної Асоціації Ренюінь
+#   description: Скафандр Ренюіньського ВПК, що використовується в умовах бойових дій у вакуумі. Підозріло схожий на скафандри виробництва Кіберсану.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/renuin.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/renuin.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.4
+#         Piercing: 0.5
+#         Heat: 0.5
+#         Radiation: 0.5
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.8
+#     sprintModifier: 0.8
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitRenuin
     
-# Dorenvir (Dwarves)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitDorenvir
-  name: броньований скафандр Доренвірської Конфедерації
-  description: Міцний скафандр розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/dorenvir.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/dorenvir.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.3
-        Radiation: 0.2
-        Caustic: 0.3
-  - type: ClothingSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitDorenvir
+# # Dorenvir (Dwarves)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitDorenvir
+#   name: броньований скафандр Доренвірської Конфедерації
+#   description: Міцний скафандр розроблений компаніями Дворфів, який дозволяє перебувати у екстремальних умовах найрізноманітніших планет.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/dorenvir.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/dorenvir.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.5
+#         Slash: 0.4
+#         Piercing: 0.4
+#         Heat: 0.3
+#         Radiation: 0.2
+#         Caustic: 0.3
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.6
+#     sprintModifier: 0.6
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitDorenvir
 
-# Mikaris (Nian)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitMikaris
-  name: скафандр Мікарісу
-  description: Ніанський скафандр з широким броньованим склом, яке дуже розширює поле зору Ніани.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/mikaris.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/mikaris.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.7
-        Piercing: 0.8
-        Heat: 0.4
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitMikaris
+# # Mikaris (Nian)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitMikaris
+#   name: скафандр Мікарісу
+#   description: Ніанський скафандр з широким броньованим склом, яке дуже розширює поле зору Ніани.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/mikaris.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/mikaris.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.5
+#         Slash: 0.7
+#         Piercing: 0.8
+#         Heat: 0.4
+#         Radiation: 0.5
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitMikaris
     
-# Adomai (Tajaran)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitAdomai
-  name: скафандр Нового Королівства Адомай
-  description: Скафандр Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/adomai.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/adomai.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.3
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.2
-        Radiation: 0.7
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitAdomai
+# # Adomai (Tajaran)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitAdomai
+#   name: скафандр Нового Королівства Адомай
+#   description: Скафандр Нового Королівства Адомай, зроблений спеціально під представників раси Таяран.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/adomai.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/adomai.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.3
+#         Slash: 0.4
+#         Piercing: 0.4
+#         Heat: 0.2
+#         Radiation: 0.7
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitAdomai
     
-# Hegemony (Unathi)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitHegemony
-  name: скафандр Гегемонії Зіра
-  description: Бойовий скафандр що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/hegemony.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/hegemony.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.3
-        Piercing: 0.4
-        Heat: 0.5
-        Radiation: 0.8 # На Могесі немає радіації
-        Caustic: 0.6
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitHegemony
+# # Hegemony (Unathi)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitHegemony
+#   name: скафандр Гегемонії Зіра
+#   description: Бойовий скафандр що підходить представникам раси Унатхів, і розроблений для солдатів Гегемонії Зіра.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/hegemony.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/hegemony.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.3
+#         Piercing: 0.4
+#         Heat: 0.5
+#         Radiation: 0.8 # На Могесі немає радіації
+#         Caustic: 0.6
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.8
+#     sprintModifier: 0.8
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitHegemony
     
-#Centcom
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitCentcom
-  name: скафандр Центрального Командування
-  description: Скафандр що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/centcom.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/centcom.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.5
-        Heat: 0.4
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitCentcom
+# #Centcom
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitCentcom
+#   name: скафандр Центрального Командування
+#   description: Скафандр що використовується Представниками Центрального Командування задля захисту від страшного вакууму.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/centcom.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/centcom.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.4
+#         Piercing: 0.5
+#         Heat: 0.4
+#         Radiation: 0.5
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitCentcom
     
-#Inquisitor
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitERTInquisitor
-  name: скафандр ГШР Інквізитора
-  description: Скафандр що використовується підрозділом ГШР, який націлений на знищення оккультних загроз.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/ertinquisitor.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/ertinquisitor.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.5
-        Radiation: 0.25
-        Caustic: 0.4
-        Cellular: 0.3
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitERTInquisitor
+# #Inquisitor
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitERTInquisitor
+#   name: скафандр ГШР Інквізитора
+#   description: Скафандр що використовується підрозділом ГШР, який націлений на знищення оккультних загроз.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/ertinquisitor.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/ertinquisitor.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.3
+#         Piercing: 0.3
+#         Heat: 0.5
+#         Radiation: 0.25
+#         Caustic: 0.4
+#         Cellular: 0.3
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitERTInquisitor
     
-# Death Shadow (CIA)
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitShadow
-  name: скафандр тіней смерті
-  description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/shadow.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/shadow.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.1
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-        Radiation: 0.1
-        Caustic: 0.1
-        Cellular: 0.1
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitShadow
+# # Death Shadow (CIA)
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitShadow
+#   name: скафандр тіней смерті
+#   description: Бойовий скафандр що використовується професійною Групою Тіней Смерті МКР НТ. Остання сила після Загону Смерті. І останнє що ви скоріш за все побачите...
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/shadow.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/shadow.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.1
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.1
+#         Slash: 0.1
+#         Piercing: 0.1
+#         Heat: 0.1
+#         Radiation: 0.1
+#         Caustic: 0.1
+#         Cellular: 0.1
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitShadow
 
-# Blackwater Mercenary
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitBlackwater
-  name: бойовий скафандр Блеквотер
-  description: Бойовий скафандр моделі MR-5, який використовується найманцями Асоціації Блеквотер.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/blackwatermerc.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/blackwatermerc.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.5
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitBlackwater
+# # Blackwater Mercenary
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitBlackwater
+#   name: бойовий скафандр Блеквотер
+#   description: Бойовий скафандр моделі MR-5, який використовується найманцями Асоціації Блеквотер.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/blackwatermerc.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/blackwatermerc.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.4
+#         Piercing: 0.4
+#         Heat: 0.5
+#         Radiation: 0.5
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitBlackwater
 
-# Mercenary
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitMerc
-  name: бойовий скафандр найманця
-  description: Модифікований бойовий скафандр лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/merc.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/merc.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: StaminaResistance
-    damageCoefficient: 0.75
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.3
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.7
-        Radiation: 0.8
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitMerc
+# # Mercenary
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitMerc
+#   name: бойовий скафандр найманця
+#   description: Модифікований бойовий скафандр лінійки MR, широко використовуваний космічними найманцями. Має підвищений захист від бойових пошкоджень, але погано захищає від екстремального оточення.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/merc.rsi
+#   - type: Item
+#     size: Huge
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/merc.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: StaminaResistance
+#     damageCoefficient: 0.75
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.5
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.3
+#         Slash: 0.4
+#         Piercing: 0.4
+#         Heat: 0.7
+#         Radiation: 0.8
+#         Caustic: 0.5
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.9
+#     sprintModifier: 0.9
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitMerc
 
-# Archivarius League
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitLeague
-  name: броня Ліги Архіваріусів
-  description: Костюм-роба МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/league.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/league.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.3
-        Radiation: 0.2
-        Caustic: 0.4
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitLeague
+# # Archivarius League
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitLeague
+#   name: броня Ліги Архіваріусів
+#   description: Костюм-роба МОГ Ліги Архіваріусів. Від неї віє старовиною, магією та небезпекою.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/league.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/league.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.3
+#         Piercing: 0.3
+#         Heat: 0.3
+#         Radiation: 0.2
+#         Caustic: 0.4
+#   - type: ClothingSpeedModifier
+#     walkModifier: 1.0
+#     sprintModifier: 1.0
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitLeague
     
-# Mansus Legion
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitMansus
-  name: броня легіонера Мансуса
-  description: Стара модель броні Корпорації Хаосу, модифікована задля потреб адептів Завіси Мансуса.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/mansuslegion.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/mansuslegion.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.3
-        Radiation: 0.3
-        Caustic: 0.4
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitMansus
+# # Mansus Legion
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitMansus
+#   name: броня легіонера Мансуса
+#   description: Стара модель броні Корпорації Хаосу, модифікована задля потреб адептів Завіси Мансуса.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/mansuslegion.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/mansuslegion.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.05
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.4
+#         Slash: 0.4
+#         Piercing: 0.4
+#         Heat: 0.3
+#         Radiation: 0.3
+#         Caustic: 0.4
+#   - type: ClothingSpeedModifier
+#     walkModifier: 1.0
+#     sprintModifier: 1.0
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitMansus
     
-#Debug Hardsuit
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitAdmin
-  name: скафандр мандрівника блюспейс-простором [admeme]
-  description: Модифікований скафандр мандрівника у блюспейс-просторі, чи блюспейс-бога, чи як цього хлопа взагалі звати.
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/debugadmin.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/debugadmin.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.0
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.0
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.0 #BEST armor in the game. But Debug.
-        Slash: 0.0
-        Piercing: 0.0
-        Heat: 0.0
-        Cold: 0.0
-        Shock: 0.0
-        Radiation: 0.0
-        Caustic: 0.0
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitAdmin
+# #Debug Hardsuit
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitAdmin
+#   name: скафандр мандрівника блюспейс-простором [admeme]
+#   description: Модифікований скафандр мандрівника у блюспейс-просторі, чи блюспейс-бога, чи як цього хлопа взагалі звати.
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/debugadmin.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/debugadmin.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.0
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.0
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.0 #BEST armor in the game. But Debug.
+#         Slash: 0.0
+#         Piercing: 0.0
+#         Heat: 0.0
+#         Cold: 0.0
+#         Shock: 0.0
+#         Radiation: 0.0
+#         Caustic: 0.0
+#   - type: ClothingSpeedModifier
+#     walkModifier: 1.0
+#     sprintModifier: 1.0
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitAdmin
 
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterHardsuitCIO3
-  name: cio-3 hardsuit
-  description: Броня солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/cio3.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/cio3.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.02
-    lowPressureMultiplier: 1000
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.4
-        Radiation: 0.20
-        Caustic: 0.3
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetHardsuitCIO3
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterHardsuitCIO3
+#   name: cio-3 hardsuit
+#   description: Броня солдатів Оперативних Груп Корпорації Хаосу. Видно сталося щось дійсно серйозне...
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/OuterClothing/Hardsuits/cio3.rsi
+#   - type: Clothing
+#     sprite: Clothing/OuterClothing/Hardsuits/cio3.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.02
+#     lowPressureMultiplier: 1000
+#   - type: ClothingSpeedModifier
+#     walkModifier: 1.0
+#     sprintModifier: 1.0
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.3
+#         Slash: 0.3
+#         Piercing: 0.3
+#         Heat: 0.4
+#         Radiation: 0.20
+#         Caustic: 0.3
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.4
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetHardsuitCIO3
 
-- type: entity
-  parent: ClothingOuterHardsuitBase
-  id: SichClothingOuterVoidsuitIHS
-  name: скафандр БАГ
-  description: Старий та дещо потертий, але все ще дієздатний скафандр Безпеки Айронгамер. Хто це такі? Гарне питання. Що він тут робить? Як ти це хочеш дізнатися, оглядаючи його... Якщо гарно придивитися, то помітите в районі шиї напис "CEV-Eris".
-  components:
-  - type: Sprite
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
-  - type: Clothing
-    sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.5
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.6
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.7
-        Radiation: 0.5
-        Caustic: 0.6
-  - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: SichClothingHeadHelmetVoidsuitIHS
+# - type: entity
+#   parent: ClothingOuterHardsuitBase
+#   id: SichClothingOuterVoidsuitIHS
+#   name: скафандр БАГ
+#   description: Старий та дещо потертий, але все ще дієздатний скафандр Безпеки Айронгамер. Хто це такі? Гарне питання. Що він тут робить? Як ти це хочеш дізнатися, оглядаючи його... Якщо гарно придивитися, то помітите в районі шиї напис "CEV-Eris".
+#   components:
+#   - type: Sprite
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
+#   - type: Clothing
+#     sprite: _Sich/Clothing/OuterClothing/Hardsuits/IHS.rsi
+#   - type: PressureProtection
+#     highPressureMultiplier: 0.5
+#     lowPressureMultiplier: 1000
+#   - type: ExplosionResistance
+#     damageCoefficient: 0.5
+#   - type: Armor
+#     modifiers:
+#       coefficients:
+#         Blunt: 0.6
+#         Slash: 0.5
+#         Piercing: 0.5
+#         Heat: 0.7
+#         Radiation: 0.5
+#         Caustic: 0.6
+#   - type: ClothingSpeedModifier
+#     walkModifier: 0.7
+#     sprintModifier: 0.7
+#   - type: HeldSpeedModifier
+#   - type: ToggleableClothing
+#     clothingPrototype: SichClothingHeadHelmetVoidsuitIHS
