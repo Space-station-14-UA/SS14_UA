@@ -17,9 +17,6 @@
             "name": "light-overlay"
         },
         {
-            "name": "icon-flash"
-        },
-        {
             "name": "equipped-head",
             "directions": 4
         },
