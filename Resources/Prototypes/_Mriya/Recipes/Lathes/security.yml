@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: MRClothingEyesNightVisionSecurity
+  result: MRClothingEyesNightVisionSecurity
+  categories:
+  - Clothing
+  completetime: 4
+  materials:
+    Steel: 300
+    Glass: 500

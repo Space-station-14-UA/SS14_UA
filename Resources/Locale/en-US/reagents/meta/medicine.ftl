@@ -63,6 +63,9 @@ reagent-desc-romerodone = Побічний продукт центрифугув
 reagent-name-ambuzol = амбузол
 reagent-desc-ambuzol = Високотехнологічна речовина, здатна зупинити розвиток зомбі-інфекції.
 
+reagent-name-ambuzol-plus = амбузол плюс
+reagent-desc-ambuzol-plus = Додатково модифікований омнізином, щеплює живих проти інфекції.
+
 reagent-name-pulped-banana-peel = мелена шкірка банана
 reagent-desc-pulped-banana-peel = Шкірка банана має певну ефективність проти кровотечі.
 
