@@ -1,0 +1,128 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Translation by Roct; the original English sprite taken from https://github.com/space-wizards/space-station-14/tree/7389733a0f55c0e19ecc93d387b958bf96c2e183/Resources/Textures/Structures/Wallmounts/posters.rsi",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "poster3_legit"
+        },
+        {
+            "name": "poster4_contraband"
+        },
+        {
+            "name": "poster4_legit"
+        },
+        {
+            "name": "poster5_legit"
+        },
+        {
+            "name": "poster6_contraband"
+        },
+        {
+            "name": "poster6_legit"
+        },
+        {
+            "name": "poster7_contraband"
+        },
+        {
+            "name": "poster7_legit"
+        },
+        {
+            "name": "poster8_contraband"
+        },
+        {
+            "name": "poster8_legit"
+        },
+        {
+            "name": "poster10_legit"
+        },
+        {
+            "name": "poster12_legit"
+        },
+        {
+            "name": "poster13_legit"
+        },
+        {
+            "name": "poster15_legit"
+        },
+        {
+            "name": "poster16_contraband"
+        },
+        {
+            "name": "poster16_legit"
+        },
+        {
+            "name": "poster17_legit"
+        },
+        {
+            "name": "poster19_legit"
+        },
+        {
+            "name": "poster20_legit"
+        },
+        {
+            "name": "poster21_legit"
+        },
+        {
+            "name": "poster22_legit"
+        },
+        {
+            "name": "poster24_legit"
+        },
+        {
+            "name": "poster25_contraband"
+        },
+        {
+            "name": "poster26_legit"
+        },
+        {
+            "name": "poster29_contraband"
+        },
+        {
+            "name": "poster29_legit"
+        },
+        {
+            "name": "poster31_legit"
+        },
+        {
+            "name": "poster36_legit"
+        },
+        {
+            "name": "poster37_legit"
+        },
+        {
+            "name": "poster43_contraband"
+        },
+        {
+            "name": "poster48_contraband"
+        },
+        {
+            "name": "poster50_legit"
+        },
+        {
+            "name": "poster51_contraband"
+        },
+        {
+            "name": "poster51_legit"
+        },
+        {
+            "name": "poster52_legit"
+        },
+        {
+            "name": "poster55_legit"
+        },
+        {
+            "name": "poster56_contraband"
+        },
+        {
+            "name": "poster60_contraband"
+        },
+        {
+            "name": "poster65_contraband"
+        }
+    ]
+}
