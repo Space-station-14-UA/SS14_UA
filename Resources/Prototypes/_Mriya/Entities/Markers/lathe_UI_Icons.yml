@@ -1,0 +1,69 @@
+
+# це для того аби рецепт у речах базованих на латах, який нічого не видає, мав якийсь опис та назву. 
+# Наразі використовується у спалювачах.
+
+- type: entity
+  id: MRBaseIcon
+  abstract: true
+  suffix: НЕ МАПИТИ ЦЕ ЧИСТО ТХНІЧНА ШТУКА
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: EntityTableSpawner #існує аби воно деспанилося через час та не забивало купою ентіті
+    table: !type:NestedSelector
+      tableId: MRNothingTable
+      prob: 0
+      
+- type: entityTable
+  id: MRNothingTable #спавнить нічого
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 0
+      children:
+      - id: Ash
+    
+# для спалювача
+
+- type: entity
+  parent: MRBaseIcon
+  id: MRPlasmaBurnIcon
+  name: Спалити плазму
+  description: Спали плазму аби виробити тепло. один шматок плазми буде горіти хвилину.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/Sheets/other.rsi
+    state: plasma_3
+    layers:
+    - state: plasma_3
+      map: ["base"]
+      
+- type: entity
+  parent: MRBaseIcon
+  id: MRCoalBurnIcon
+  name: Спалити вугілля
+  description: Спали вугілля аби виробити тепло. один шматок угілля буде горіти пів хвилини.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/ore.rsi
+    state: coal
+    
+- type: entity
+  parent: MRBaseIcon
+  id: MRWoodBurnIcon
+  name: Спалити деревену
+  description: Спали деревину аби виробити тепло. одина планка дерева буде горіти 20 секунд.
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+    state: wood
+    layers:
+    - state: wood
+      map: ["base"]
