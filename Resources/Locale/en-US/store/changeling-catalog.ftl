@@ -1,43 +1,43 @@
-changeling-catalog-arm-blade-name = Retractable Arm Blade
-changeling-catalog-arm-blade-desc = Transform your arm into a terrifying flesh blade. Can be toggled.
+changeling-catalog-arm-blade-name = Висувне лезо
+changeling-catalog-arm-blade-desc = Перетворіть свою руку на жахливе плотяне лезо. Можна перемикати.
 
-changeling-catalog-flesh-clothing-name = Flesh Clothing
-changeling-catalog-flesh-clothing-desc = Your body's surface will adapt to mirror the clothing of any person you are transforming into. However, these clothing items are non-functional and will make you easy to identify as a changeling if someone tries to remove them. Can be toggled.
+changeling-catalog-flesh-clothing-name = Одяг із плоті
+changeling-catalog-flesh-clothing-desc = Поверхня вашого тіла адаптується, щоб імітувати одяг будь-якої особи, на яку ви перетворюєтеся. Однак цей одяг не має функціоналу, і вас легко викриють як генокрада, якщо хтось спробує його зняти. Можна перемикати.
 
-changeling-catalog-voice-mimic-name = Voice Mimicry
-changeling-catalog-voice-mimic-desc = Change your vocal coords at will to imitate existing (and imaginary) crew members. Perfect for luring in prey.
+changeling-catalog-voice-mimic-name = Імітація голосу
+changeling-catalog-voice-mimic-desc = Змінюйте свої голосові зв'язки за власним бажанням, щоб імітувати існуючих (та вигаданих) членів екіпажу. Ідеально підходить для заманювання здобичі.
 
-changeling-catalog-biodegrade-name = Biodegrade
-changeling-catalog-biodegrade-desc = You learn to utilize acid glands within your body to vomit acid over constraints, setting yourself free.
+changeling-catalog-biodegrade-name = Біорозклад
+changeling-catalog-biodegrade-desc = Ви вчитеся використовувати кислотні залози у своєму тілі, щоб виригувати кислоту на пута чи кайданки, визволяючи себе.
 
-changeling-catalog-sting-dna-name = Extract DNA
-changeling-catalog-sting-dna-desc = Learn to utilize your stinger to absorb the identity of unsuspecting victims. Does not grant DNA to your store or count as devouring.
+changeling-catalog-sting-dna-name = Вилучення ДНК
+changeling-catalog-sting-dna-desc = Навчіться використовувати своє жало, щоб поглинати особистість ні про що не підозрюючих жертв. Не додає ДНК до вашого запасу та не вважається поглинанням.
 
-changeling-catalog-blind-sting-name = Blind Sting
-changeling-catalog-blind-sting-desc = Causes temporary blindness in the target. Good to escape or initiate a fight. Can be used on self.
+changeling-catalog-blind-sting-name = Засліплювальне жало
+changeling-catalog-blind-sting-desc = Спричиняє тимчасову сліпоту цілі. Добре підходить для втечі або початку бою. Можна використати на собі.
 
-changeling-catalog-cryogenic-sting-name = Cryogenic Sting
-changeling-catalog-cryogenic-sting-desc = Causes movement slowdown in the target. Perfect for keeping prey from running away. Can be used on self.
+changeling-catalog-cryogenic-sting-name = Кріогенне жало
+changeling-catalog-cryogenic-sting-desc = Сповільнює пересування цілі. Ідеально підходить для того, щоб здобич не втекла. Можна використати на собі.
 
-changeling-catalog-lethal-sting-name = Lethal Sting
-changeling-catalog-lethal-sting-desc = Causes very slow damage to the target. Useless in combat, but ensures they will require medical attention. Can be used on self.
+changeling-catalog-lethal-sting-name = Смертельне жало
+changeling-catalog-lethal-sting-desc = Завдає цілі дуже повільних ушкоджень. Марне в бою, але гарантує, що їй знадобиться медична допомога. Можна використати на собі.
 
-changeling-catalog-hallucinogenic-sting-name = Hallucinogenic Sting
-changeling-catalog-hallucinogenic-sting-desc = Causes the target to get high and have difficulty speaking. Causes confusion among the crew. Can be used on self.
+changeling-catalog-hallucinogenic-sting-name = Галюциногенне жало
+changeling-catalog-hallucinogenic-sting-desc = Змушує ціль відчувати кайф та ускладнює мовлення. Спричиняє плутанину серед екіпажу. Можна використати на собі.
 
-changeling-catalog-mute-sting-name = Mute Sting
-changeling-catalog-mute-sting-desc = Causes the target to be incapable of speech. Imperceptible until the target tries to speak. Can be used on self.
+changeling-catalog-mute-sting-name = Жало німоти
+changeling-catalog-mute-sting-desc = Позбавляє ціль здатності говорити. Поки ціль не спробує заговорити, це непомітно. Можна використати на собі.
 
-changeling-catalog-screech-name = Screech [TEMPORARY]
-changeling-catalog-screech-desc = We let out a powerful screech that disarms people who hear it without adequate ear protection. THIS ACTION WILL BE MOVED TO THE HORROR FORM WHEN IT IS IMPLEMENTED.
+changeling-catalog-screech-name = Вереск [ТИМЧАСОВО]
+changeling-catalog-screech-desc = Ми видаємо потужний вереск, який знезброює тих, хто чує його без належного захисту вух. ЦЮ ДІЮ БУДЕ ПЕРЕНЕСЕНО ДО ЖАХЛИВОЇ ФОРМИ, КОЛИ ЇЇ БУДЕ РЕАЛІЗОВАНО.
 
-changeling-catalog-last-resort-name = Last Resort
-changeling-catalog-last-resort-desc = Gib your current body and escape as a weak head slug. If you infest a humanoid corpse, you can return to a full changeling body. Can only be bought when at least one body has been devoured.
+changeling-catalog-last-resort-name = Останній засіб
+changeling-catalog-last-resort-desc = Розриває ваше поточне тіло на шматки й дає змогу втекти у вигляді слабкого головного слимака. Якщо ви заразите гуманоїдний труп, то зможете повернути повноцінне тіло генокрада. Можна придбати лише після поглинання бодай одного тіла.
 
-                                      Warning! This resets your progress as a changeling, removing your store purchases and absorbed identities!
+                                        Увага! Це скидає ваш прогрес генокрада, видаляючи придбані здібності та поглинуті особистості!
 
-changeling-catalog-voice-mindshield-name = Fake Mindshield
-changeling-catalog-voice-mindshield-desc = Modify your neuron's natural waves to copy those produced by Nanotrasen mindshield implants, making you look mindshielded to security members. Can be toggled.
+changeling-catalog-voice-mindshield-name = Фальшивий захист розуму
+changeling-catalog-voice-mindshield-desc = Модифікуйте природні хвилі ваших нейронів, щоб копіювати ті, що виробляються імплантами захисту розуму Nanotrasen. Це зробить вас захищеним в очах службовців безпеки. Можна перемикати.
 
-changeling-catalog-night-vision-name = Night Vision
-changeling-catalog-night-vision-desc = You modify your photoreceptors and heighten your senses as to become able to see in complete darkness.
+changeling-catalog-night-vision-name = Нічний зір
+changeling-catalog-night-vision-desc = Ви модифікуєте свої фоторецептори та загострюєте відчуття, щоб бачити в абсолютній темряві.

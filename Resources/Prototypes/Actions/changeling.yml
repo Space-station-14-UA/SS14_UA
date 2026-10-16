@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseAction
   id: ActionRetractableItemArmBlade
-  name: Arm Blade
-  description: Shed your flesh and reform it into a fleshy blade.
+  name: Клинок із руки
+  description: Скинути свою плоть та перетворити її на м'ясистий клинок.
   components:
   - type: Action
     useDelay: 2
@@ -24,8 +24,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingBiodegrade
-  name: Biodegrade
-  description: "Vomit acid over your restraints, setting yourself free. \n\nRequires 20 Chemicals."
+  name: Біодеградація
+  description: "Заблювати кислотою свої кайдани, звільнивши себе. \n\nПотребує 20 Хімікатів."
   components:
   - type: Action
     useDelay: 10
@@ -45,8 +45,8 @@
 
 - type: entity
   id: ActionChangelingDevour
-  name: "[color=red]Devour[/color]"
-  description: Consume the essence of your victims and subsume their identity and mind into your own.
+  name: "[color=red]Поглинути[/color]"
+  description: Поглинути сутність своїх жертв та включити їхню особистість і розум у свої власні.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -66,8 +66,8 @@
 
 - type: entity
   id: ActionChangelingTransform
-  name: "[color=red]Transform[/color]"
-  description: Transform and assume the identities of those you have devoured.
+  name: "[color=red]Трансформуватися[/color]"
+  description: Перетворитися та прийняти особистості тих, кого ви поглинули.
   components:
   - type: Action
   - type: Sprite
@@ -80,8 +80,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionChangelingStasis
-  name: "[color=red]Enter Stasis[/color]"
-  description: Enter a regenerative stasis, faking death and allowing to regenerate all damage.
+  name: "[color=red]Увійти в стазис[/color]"
+  description: Увійти в регенеративний стазис, прикидаючись мертвим та відновлюючи всі ушкодження.
   components:
   - type: Sprite
     sprite: Interface/Actions/changeling.rsi
@@ -118,8 +118,8 @@
 - type: entity
   parent: ActionIntrinsicStore
   id: ActionChangelingStore
-  name: DNA Store
-  description: Opens the ability store.
+  name: Магазин ДНК
+  description: Відкриває магазин здібностей.
   components:
   - type: Action
   - type: Sprite
@@ -130,8 +130,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingVoiceMimic
-  name: Voice Mimicry
-  description: Model your vocal cords to imitate the voice of someone else.
+  name: Імітація голосу
+  description: Змінити голосові зв'язки, щоб імітувати чужий голос.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -145,8 +145,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingStingDna
-  name: Extract DNA
-  description: "Sneakily absorb the identity of unsuspecting victims. Does not grant DNA to your store or objective progress. \n\nRequires 50 Chemicals."
+  name: Витягти ДНК
+  description: "Потайки поглинути особистість нічого не підозрюючих жертв. Не дає ДНК у ваш магазин та не просуває цілі. \n\nПотребує 50 Хімікатів."
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -199,8 +199,8 @@
 - type: entity
   parent: BaseActionChangelingSting
   id: ActionChangelingStingBlind
-  name: Blind Sting
-  description: "Silently sting a target and worsen their sight for a short duration. \n\nRequires 30 Chemicals."
+  name: Осліплююче жало
+  description: "Безшумно вжалити ціль та погіршити її зір на короткий час. \n\nПотребує 30 Хімікатів."
   components:
   - type: Action
     useDelay: 30
@@ -219,8 +219,8 @@
 - type: entity
   parent: BaseActionChangelingSting
   id: ActionChangelingStingCryogenic
-  name: Cryogenic Sting
-  description: "Silently sting a target and slow down their movement drastically. \n\nRequires 30 Chemicals."
+  name: Кріогенне жало
+  description: "Безшумно вжалити ціль та значно уповільнити її пересування. \n\nПотребує 30 Хімікатів."
   components:
   - type: Action
     useDelay: 10
@@ -239,8 +239,8 @@
 - type: entity
   parent: BaseActionChangelingSting
   id: ActionChangelingStingLead
-  name: Lethal Sting
-  description: "Silently sting a target and inject them with a lethal dose of a slow acting poison. \n\nRequires 50 Chemicals."
+  name: Смертоносне жало
+  description: "Безшумно вжалити ціль та ввести їй смертельну дозу повільнодіючої отрути. \n\nПотребує 50 Хімікатів."
   components:
   - type: Action
     useDelay: 60
@@ -261,8 +261,8 @@
 - type: entity
   parent: BaseActionChangelingSting
   id: ActionChangelingStingHallucinogenic
-  name: Hallucinogenic Sting
-  description: "Silently sting a target and inject them with chemicals that slow down their higher brain functions. \n\nRequires 30 Chemicals."
+  name: Галюциногенне жало
+  description: "Безшумно вжалити ціль та ввести хімікати, що уповільнюють вищі функції мозку. \n\nПотребує 30 Хімікатів."
   components:
   - type: Action
     useDelay: 10
@@ -284,8 +284,8 @@
 - type: entity
   parent: BaseActionChangelingSting
   id: ActionChangelingStingMute
-  name: Mute Sting
-  description: "Silently sting a target and inject them with chemicals that prevent them from speaking. \n\nRequires 30 Chemicals."
+  name: Жало німоти
+  description: "Безшумно вжалити ціль та ввести хімікати, що заважають їй говорити. \n\nПотребує 30 Хімікатів."
   components:
   - type: Action
     useDelay: 30
@@ -304,8 +304,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingLastResort
-  name: "[color=red]Last Resort[/color]"
-  description: We sacrifice our current body in a moment of need, violently expanding to break through obstacles and reforming as a headslug.
+  name: "[color=red]Крайній засіб[/color]"
+  description: Ми жертвуємо поточним тілом у момент потреби, жорстоко розширюючись, щоб пробитися крізь перешкоди, і відновлюємося у формі слимака.
   components:
   - type: ConfirmableAction
     popup: suicide-action-popup
@@ -325,8 +325,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingTakeOverCorpse
-  name: Take Over Corpse
-  description: Infest a corpse to return to your true form.
+  name: Захопити труп
+  description: Заразити труп, щоб повернутися до своєї справжньої форми.
   components:
   - type: Action
     useDelay: 10
@@ -342,8 +342,8 @@
 - type: entity
   parent: ActionToggleNightVision
   id: ActionChangelingNightVision
-  name: Toggle Night Vision
-  description: Turns our night vision on/off.
+  name: Перемикнути нічне бачення
+  description: Вмикає або вимикає наше нічне бачення.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -355,8 +355,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingScreech
-  name: Screech
-  description: We produce a deafening screech that weakens those around us.
+  name: Вереск
+  description: Ми видаємо оглушливий вереск, який ослаблює всіх довкола.
   components:
   - type: Sprite
     sprite: Interface/Actions/changeling2.rsi
@@ -380,8 +380,8 @@
 - type: entity
   parent: FakeMindShieldToggleAction
   id: ActionChangelingFakeMindshieldToggle
-  name: '[color=green]Toggle Fake Mindshield[/color]'
-  description: Turn our mindshield visibility on or off.
+  name: '[color=green]Перемикнути фальшивий захист розуму[/color]'
+  description: Увімкнути або вимкнути видимість нашого захисту розуму.
   components:
   - type: Sprite
     sprite: Interface/Actions/changeling2.rsi
