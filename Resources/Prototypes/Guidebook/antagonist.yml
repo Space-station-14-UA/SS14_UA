@@ -37,7 +37,7 @@
 - type: guideEntry
   id: Changelings
   name: guide-entry-changelings
-  text: "/ServerInfo/Guidebook/Antagonist/Changelings.xml"
+  text: "/ServerInfo/Guidebook/_Mriya/Antagonist/Changelings.xml"
 
 - type: guideEntry
   id: MinorAntagonists
