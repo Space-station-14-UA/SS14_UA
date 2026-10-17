@@ -5,7 +5,7 @@ changeling-cloner-component-spent = Уже використано.
 changeling-cloner-component-reset-verb = Скинути ДНК
 changeling-cloner-component-reset-popup = Ви очищаєте сховище ДНК ін'єктора.
 
-changeling-cloner-component-draw-user = Ви починаєте забір ДНК з {THE($target)}.
+changeling-cloner-component-draw-user = Ви починаєте забір ДНК з {$target}.
 changeling-cloner-component-draw-target = {CAPITALIZE(THE($user))} починає забір ДНК з вас.
-changeling-cloner-component-inject-user = Ви починаєте вводити ДНК у {THE($target)}.
+changeling-cloner-component-inject-user = Ви починаєте вводити ДНК у {$target}.
 changeling-cloner-component-inject-target = {CAPITALIZE(THE($user))} починає вводити ДНК у вас.

@@ -49,7 +49,7 @@ changeling-takeover-start-others = {CAPITALIZE(THE($user))} починає за�
 changeling-takeover-success-self = Ми успішно залізли в тіло та прибрали його форму.
 
 # stings
-changeling-sting-success = Ми тихо жалимо {THE($target)}!
+changeling-sting-success = Ми тихо жалимо {$target}!
 
 # mindshield
 changeling-fake-mindshield-enabled = Ми випромінюємо фальшиві хвилі захисту розуму.
