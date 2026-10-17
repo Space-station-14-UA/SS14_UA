@@ -33,19 +33,19 @@ changeling-transform-bui-drop-identity-cannot-drop = Ми не можемо ви
 changeling-voice-mimic-window-title = Імітація голосу
 
 # flesh clothing
-changeling-flesh-clothing-removed-popop = {CAPITALIZE(THE($item))} розпадається на м'ясисті рештки!
+changeling-flesh-clothing-removed-popop = {CAPITALIZE($item)} розпадається на м'ясисті рештки!
 changeling-flesh-clothing-examine-wearer = [color=crimson]Цей предмет є замаскованою частиною вашого тіла. Він зникне, якщо ви його знімете![/color]
 changeling-flesh-clothing-alert-name = Здібність Одяг із плоті
 changeling-flesh-clothing-alert-desc = Чи увімкнено трансформацію одягу. Натисніть, щоб перемикнути.
 
 # biodegrade
-changeling-biodegrade-used-popup = {CAPITALIZE(THE($user))} блює кислотою на {POSS-ADJ($user)} {$restraint}!
+changeling-biodegrade-used-popup = {CAPITALIZE($user)} блює кислотою на {POSS-ADJ($user)} {$restraint}!
 changeling-biodegrade-used-popup-self = Ми блюємо кислотою на свої {$restraint}!
 
 # last resort
 changeling-takeover-not-dead = Це тіло все ще живе! Ми не можемо залізти в нього живим.
 changeling-takeover-is-changeling = Це тіло відторгає наші спроби захопити його!
-changeling-takeover-start-others = {CAPITALIZE(THE($user))} починає заповзати всередину трупа!
+changeling-takeover-start-others = {CAPITALIZE($user)} починає заповзати всередину трупа!
 changeling-takeover-success-self = Ми успішно залізли в тіло та прибрали його форму.
 
 # stings
