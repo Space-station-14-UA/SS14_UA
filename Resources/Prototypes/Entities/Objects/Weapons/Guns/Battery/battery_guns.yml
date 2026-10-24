@@ -283,7 +283,7 @@
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
 
 - type: entity
-  name: тенувальний лазерний карабін
+  name: тренувальний лазерний карабін
   parent: [BaseLaserRifle, BaseGunWieldable]
   id: WeaponLaserCarbinePractice
   description: Цей модифікований лазерний карабін випускає майже нешкідливі промені потужністю близько 40 ват для стрільби по мішенях.
