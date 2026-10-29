@@ -22,7 +22,7 @@ guidebook-reagent-effects-metabolite-item = {$reagent} з коефіцієнто
 guidebook-reagent-effects-metabolites = Метаболізується в { $items }.
 guidebook-reagent-plant-metabolisms-header = Метаболізм рослин
 guidebook-reagent-plant-metabolisms-rate = [bold]Метаболізм рослин[/bold] [color=gray](базово 1 од. кожні 3 секунди)[/color]
-guidebook-reagent-physical-description = [italic]Здається, це {$description}.[/italic]
+guidebook-reagent-physical-description = [italic]Цей реагент схожий на {$description} речовину.[/italic]
 guidebook-reagent-recipes-mix-info = {$minTemp ->
     [0] {$hasMax ->
             [true] {CAPITALIZE($verb)} при температурі нижче {NATURALFIXED($maxTemp, 2)}К
