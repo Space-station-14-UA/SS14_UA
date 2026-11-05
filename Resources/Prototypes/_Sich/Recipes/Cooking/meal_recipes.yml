@@ -1,7 +1,6 @@
 #Алкогольні піци
 - type: microwaveMealRecipe
   id: RecipeBeerPizza
-  name: рецепт пивної піци
   result: FoodPizzaBeer
   time: 30
   group: Pizza
@@ -16,7 +15,6 @@
 
 - type: microwaveMealRecipe
   id: RecipeWinePizza
-  name: рецепт винної піци
   result: FoodPizzaWine
   time: 30
   group: Pizza

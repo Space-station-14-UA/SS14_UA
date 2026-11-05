@@ -31,7 +31,7 @@
   ### Еволюція
 
   <Box>
-    <GuideEntityEmbed Entity="ActionRetractableItemArmBlade" Caption="Висувне лезо"/>
+    <GuideEntityEmbed Entity="ActionRetractableItemArmblade" Caption="Висувне лезо"/>
     <GuideEntityEmbed Entity="ActionChangelingStingDna" Caption="Вилучення ДНК"/>
     <GuideEntityEmbed Entity="ActionChangelingNightVision" Caption="Нічний зір"/>
   </Box>
