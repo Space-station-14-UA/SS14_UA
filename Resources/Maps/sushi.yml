@@ -65989,7 +65989,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 57.39895,55.59581
-- proto: ClothingShoesTourist
+- proto: ClothingShoesSandalsBlack
   entities:
   - uid: 9188
     components:

@@ -468,6 +468,6 @@
 - type: loadout
   id: MRTouristShoes
   equipment:
-    shoes: ClothingShoesTourist
+    shoes: ClothingShoesSandalsBlack
   sponsorTag: "sponsorShoes_1"
 

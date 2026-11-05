@@ -47910,7 +47910,7 @@ entities:
     - type: Transform
       parent: 2
       pos: -42.424225,-23.464254
-- proto: ClothingShoesTourist
+- proto: ClothingShoesSandalsBlack
   entities:
   - uid: 17279
     components:

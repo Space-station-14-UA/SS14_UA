@@ -177,3 +177,4 @@ chat-speech-verb-vulpkanin-4 = тявкає
 chat-speech-verb-vulpkanin = Вульпканін
 
 chat-speech-verb-name-horror = Нажахано
+chat-speech-verb-name-wawa = Вава
