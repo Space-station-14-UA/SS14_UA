@@ -1,4 +1,4 @@
-adjectives-dataset-1 = привабливий
+<#--adjectives-dataset-1 = привабливий
 adjectives-dataset-2 = пригодник
 adjectives-dataset-3 = агресивний
 adjectives-dataset-4 = тривога
@@ -419,4 +419,4 @@ adjectives-dataset-418 = підозрілий
 adjectives-dataset-419 = сусні
 adjectives-dataset-420 = накурений
 adjectives-dataset-421 = буркотливий
-adjectives-dataset-422 = пухкенький
+adjectives-dataset-422 = пухкенький-->
