@@ -1,0 +1,35 @@
+- type: construction
+  id: MRSmallIncenerator
+  graph: MRSmallIncenerator
+  startNode: start
+  targetNode: smallincenerator
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  
+- type: construction
+  id: MRMediumIncenerator
+  graph: MRMediumIncenerator
+  startNode: start
+  targetNode: mediumincenerator
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  
+- type: construction
+  id: MRStirlingGeneratorCoal
+  graph: MRStirlingGeneratorCoal
+  startNode: start
+  targetNode: stirlingcoal
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  
+- type: construction
+  id: MRStirlingGeneratorWood
+  graph: MRStirlingGeneratorWood
+  startNode: start
+  targetNode: stirlingwood
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
