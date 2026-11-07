@@ -1,4 +1,4 @@
-﻿advertisement-clothes-1 = Одягайся для успіху!
+advertisement-clothes-1 = Одягайся для успіху!
 advertisement-clothes-2 = Приготуйтеся виглядати розкішно!
 advertisement-clothes-3 = Ви тільки подивіться на все це багатство!
 advertisement-clothes-4 = Навіщо залишати стиль на волю долі? Використовуй Adidas!

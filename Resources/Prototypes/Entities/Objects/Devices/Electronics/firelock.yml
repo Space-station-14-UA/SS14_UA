@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: FirelockElectronics
   parent: BaseElectronics
   name: плата протипожежних дверей

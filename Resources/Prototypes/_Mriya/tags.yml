@@ -7,3 +7,5 @@
 - type: Tag
   id: MRSOMSuperComputingBlock # для крафту
 
+- type: Tag
+  id: MRBartka

@@ -1,4 +1,4 @@
-﻿identity-unknown-name = ???
+identity-unknown-name = ???
 
 identity-age-young =  молодого віку
 identity-age-middle-aged = середнього віку

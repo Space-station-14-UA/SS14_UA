@@ -206,7 +206,7 @@
     - EncryptionSecurity
 
 - type: entity
-  parent: [ EncryptionKey, BaseCivilianContraband ]
+  parent: [ EncryptionKey, BaseServiceContraband ]
   id: EncryptionKeyService
   name: ключ шифрування сервісу
   description: Ключ шифрування, що використовується обслуговуючим персоналом, завдання якого полягає в тому, щоб станція була ситою, щасливою та чистою.

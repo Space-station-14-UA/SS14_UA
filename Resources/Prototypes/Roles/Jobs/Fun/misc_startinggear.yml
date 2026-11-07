@@ -152,6 +152,9 @@
     id: AdminPDA
   storage:
     back:
+    - GasAnalyzer
+    - TRayScanner
+    - AccessConfiguratorUniversal
     - Multitool
     - GasAnalyzer
     - GeigerCounter

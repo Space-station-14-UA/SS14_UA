@@ -72,76 +72,20 @@
     - BoxHug
 
 - type: entity
-  name: коробка з лампочками
   parent: BoxCardboard
-  id: BoxLightbulb
-  description: Спеціальна коробка для зберігання лампочок. В неї влазять лише трубчасті та звичайні лампочки. Обережно, крихке!
+  id: BoxLighttubeHoliday
+  name: коробка святкових ламп
   components:
   - type: Sprite
     layers:
-      - state: box
-      - state: light
+    - state: box
+    - state: light
   - type: Storage
     grid:
     - 0,0,5,3
     whitelist:
       components:
       - LightBulb
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: LightBulb
-        amount: 12
-
-- type: entity
-  name: коробка з лампочками теплого світла
-  parent: BoxLightbulb
-  id: BoxWarmLightbulb
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: WarmLightBulb
-        amount: 12
-
-- type: entity
-  name: коробка з трубчастими лампами
-  parent: BoxLightbulb
-  id: BoxLighttube
-  components:
-  - type: Sprite
-    layers:
-      - state: box
-      - state: lighttube
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: LightTube
-        amount: 12
-
-- type: entity
-  name: коробка з різними лампочками
-  parent: BoxLightbulb
-  id: BoxLightMixed
-  components:
-  - type: Sprite
-    layers:
-      - state: box
-      - state: lightmixed
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: LightTube
-          amount: 6
-        - id: LightBulb
-          amount: 6
-
-- type: entity
-  name: коробка з святковими трубчастими лампочками
-  parent: BoxLightbulb
-  id: BoxLighttubeHoliday
-  components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
@@ -284,9 +228,9 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: ClothingShoesBootsPerformer
-        - id: ClothingUniformJumpskirtPerformer
-        - id: ClothingHeadPerformerWig
+        - id: ClothingUniformJumpskirtVirtualSinger
+        - id: ClothingShoesBootsVirtualSinger
+        - id: ClothingHeadVirtualSingerWig
         - id: FoodMealMemoryleek
           amount: 2
 

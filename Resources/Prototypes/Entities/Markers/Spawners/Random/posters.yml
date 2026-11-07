@@ -148,6 +148,8 @@
     - id: SichPosterLegitStalker
     - id: SichPosterLegitWarClown
     - id: SichPosterLegitWarMime
+    - id: PosterLegitRaptor
+    - id: PosterLegitVulture
 
 - type: entity
   parent: MarkerBase

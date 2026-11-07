@@ -358,7 +358,7 @@
 
 - type: entity
   name: космічна гадюка
-  parent: [SimpleSpaceMobBase, BaseSlicingRefinable, BaseMobDestructible]
+  parent: [SimpleSpaceMobBase, BaseSlicingRefinableButchering, BaseMobDestructible]
   id: MobPurpleSnake
   description: Загрозлива фіолетова змія з Кеплер-283c.
   components:
@@ -436,7 +436,7 @@
 
 - type: entity
   name: космічна гадюка
-  parent: [MobPurpleSnake, BaseSlicingRefinable]
+  parent: [MobPurpleSnake, BaseSlicingRefinableButchering]
   id: MobSmallPurpleSnake
   suffix: маленька
   description: Зменшена версія загрозливої фіолетової змії з Кеплер-283c.

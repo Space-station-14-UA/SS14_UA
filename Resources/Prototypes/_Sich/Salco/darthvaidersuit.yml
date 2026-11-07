@@ -75,7 +75,8 @@
   - type: Sprite
     sprite: _Sich/Salco/DarthVader/darthvadercloak.rsi
   - type: StealTarget
-    stealGroup: HeadCloak
+    stealGroup: 
+    - HeadCloak
 
 - type: entity
   parent: ClothingShoesBase

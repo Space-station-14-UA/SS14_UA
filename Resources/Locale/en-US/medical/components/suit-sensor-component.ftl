@@ -1,4 +1,4 @@
-﻿## Modes
+## Modes
 
 suit-sensor-mode-off = Вимкнено
 suit-sensor-mode-binary = Двійковий

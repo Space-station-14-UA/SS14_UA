@@ -1,4 +1,4 @@
-﻿general-station-record-console-window-title = Комп'ютер Станційних Записів
+general-station-record-console-window-title = Комп'ютер Станційних Записів
 general-station-record-console-select-record-info = Виберіть запис ліворуч.
 general-station-record-console-empty-state = Жодного запису не знайдено!
 general-station-record-console-no-record-found = Записів про обрану особу не знайдено.

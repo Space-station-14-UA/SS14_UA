@@ -13,8 +13,11 @@ device-frequency-prototype-name-turret = Сторожова турель
 device-frequency-prototype-name-turret-control = Управління сторожовою вежею
 device-frequency-prototype-name-xenoborg = Ксеноборг
 device-frequency-prototype-name-mothership = Mothership
+device-frequency-prototype-name-arrivals-shuttle-timer = Arrivals Timer
+device-frequency-prototype-name-shuttle-timer = Evac Shuttle Timer
 
 ## camera frequencies
+device-frequency-prototype-name-surveillance-camera = Камери
 device-frequency-prototype-name-surveillance-camera-test = Підмережевий Тест
 device-frequency-prototype-name-surveillance-camera-engineering = Камери Інженерного Відділу
 device-frequency-prototype-name-surveillance-camera-security = Камери Відділу Безпеки
@@ -26,7 +29,7 @@ device-frequency-prototype-name-surveillance-camera-medical = Камери Ме�
 device-frequency-prototype-name-surveillance-camera-general = Камери Загального Огляду
 device-frequency-prototype-name-surveillance-camera-entertainment = Камери Розважального Спрямування
 
-# prefixes for randomly generated device addresses
+# Prefixes for randomly generated device addresses
 device-address-prefix-vent = VNT-
 device-address-prefix-scrubber = SCR-
 device-address-prefix-sensor = SNS-
@@ -43,7 +46,16 @@ device-address-prefix-console = CLS-
 device-address-prefix-fire-alarm = FIR-
 device-address-prefix-air-alarm = AIR-
 
-device-address-prefix-sensor-monitor = MON-
+# Consoles
+device-address-prefix-sensor-monitor = SEM-
+device-address-prefix-camera-monitor = SCM-
+device-address-prefix-crew-monitor = MCM-
+
+# Servers and routers
+device-address-prefix-camera-router = CMR-
+device-address-prefix-camera-router-wireless = CMW-
+device-address-prefix-camera = CAM-
+device-address-prefix-crew-monitoring-server = CMS-
 
 device-address-examine-message = Адреса пристрою - це {$address}.
 

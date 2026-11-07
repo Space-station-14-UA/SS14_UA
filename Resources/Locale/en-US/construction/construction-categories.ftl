@@ -1,4 +1,4 @@
-﻿construction-category-all = Все
+construction-category-all = Все
 construction-category-atmospherics = Атмосфера
 construction-category-furniture = Меблі
 construction-category-storage = Сховища

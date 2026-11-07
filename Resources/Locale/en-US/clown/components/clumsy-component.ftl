@@ -9,3 +9,6 @@ clumsy-defibrillator-fail-message = Ой! Ви вдарили струмом с�
 
 clumsy-catch-fail-message-user = { CAPITALIZE($item) } влучає вам у голову!
 clumsy-catch-fail-message-others = { CAPITALIZE($item) } влучає {$catcher} у голову!
+
+clumsy-grab-fail-message-user = {$item} вислизає з ваших рук...
+clumsy-grab-fail-message-others = {$item} вислизає з їхніх рук...

@@ -28,7 +28,6 @@ chem-master-window-pills-number-label = Кількість:
 chem-master-window-dose-label = Доза (а.о.м.):
 chem-master-window-create-button = Створити
 chem-master-window-bottles-label = Пляшки:
-chem-master-window-unknown-reagent-text = Невідомий реагент
 chem-master-window-sort-type-none = Сортувати за: спочатку найстаріші
 chem-master-window-sort-type-alphabetical = Сортувати за: алфавітом
 chem-master-window-sort-type-quantity = Сортувати за: кількістю

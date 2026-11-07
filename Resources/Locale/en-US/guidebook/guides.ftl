@@ -91,8 +91,9 @@ guide-entry-security = Служба безпеки
 guide-entry-forensics = Криміналістика
 guide-entry-defusal = Знешкодження великої бомби
 guide-entry-criminal-records = Кримінальні записи
-guide-entry-command = Керівництво
+guide-entry-command = Командування
 guide-entry-service = Сервіс
+guide-entry-civilian = Цивільні
 
 guide-entry-newplayer = Новенький? Починай звідси!
 guide-entry-charactercreation = Створення персонажів

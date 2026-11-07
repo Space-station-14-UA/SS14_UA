@@ -1,4 +1,4 @@
-﻿ensnare-component-try-free = Ви щосили намагаєтеся звільнитись від {$ensnare}!
+ensnare-component-try-free = Ви щосили намагаєтеся звільнитись від {$ensnare}!
 ensnare-component-try-free-complete = Ви успішно звільнились від {$ensnare}!
 ensnare-component-try-free-fail = Вам не вдалося звільнитись від {$ensnare}!
 

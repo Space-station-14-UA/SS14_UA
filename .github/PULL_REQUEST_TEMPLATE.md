@@ -21,22 +21,21 @@ Describe how you tested the pull request, and how someone reviewing this PR can 
 ## Requirements
 <!-- Підтвердіть наступне, поставивши X у дужках [X]: -->
 - [ ] I have read and am following the [Pull Request and Changelog Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
-- [ ] I have added media to this PR or it does not require an ingame showcase.
-- [ ] I have tested this pull request and written instructions on how to test it
+- [ ] I have tested this pull request and written instructions on how to test it.
 - [ ] I have added media to this PR or it does not require an in-game showcase.
 <!-- Ви повинні розуміти, що недотримання вищезазначених інструкцій може призвести до закриття вашого запиту на розсуд розробника. -->
 
 ## Breaking changes
 <!-- ЦЬОГО КАТЕГОРИЧНО НЕ ПОВИННО БУТИ В НАШИХ PR, але. Перелічіть будь-які критичні зміни, включаючи простори імен, зміни публічних класів/методів/полів, перейменування прототипів; та надайте інструкції щодо їх виправлення. -->
 
-**Changelog**
+## Changelog
 <!-- Додайте запис у журналі змін, щоб повідомити гравців про нові функції або зміни, які можуть вплинути на ігровий процес.
 Обов'язково прочитайте інструкції та видаліть цей шаблон журналу змін з блоку коментарів, щоб він відображався.
 Журнал змін повинен мати запис ":cl:", щоб бот розпізнав зміни та додав їх до журналу змін гри. -->
 <!--
 :cl:
-- add: Added fun!
-- remove: Removed fun!
-- tweak: Changed fun!
-- fix: Fixed fun!
+- add: Crowbars now randomly spawn in maintenance lockers.
+- remove: Crowbars no longer spawn in maintenance crates.
+- tweak: Crowbar spawn rates have been increased for tool lockers.
+- fix: Crowbars no longer accidentally spawn in microwaves.
 -->

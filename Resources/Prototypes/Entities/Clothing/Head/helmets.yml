@@ -409,7 +409,7 @@
 #ERT HELMETS
 #ERT Leader Helmet
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetArmoredBase ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetArmoredBase ]
   id: ClothingHeadHelmetERTLeader
   name: каска лідера ГШР
   description: Захистна каска для керівника Групи Швидкого Реагування.

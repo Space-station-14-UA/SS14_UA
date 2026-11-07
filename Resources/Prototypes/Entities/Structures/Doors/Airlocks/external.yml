@@ -1,7 +1,7 @@
 - type: entity
   parent: AirlockRCDResistant
   id: AirlockExternal
-  suffix: Зовнішній
+  name: зовнішній шлюз
   description: Воно відкривається, закривається і, можливо розчавить тебе, а за ним може бути лише порожнеча.
   components:
   - type: Door
@@ -61,7 +61,7 @@
 - type: entity
   parent: AirlockExternal
   id: AirlockExternalGlass
-  suffix: Скло, Зовнішній
+  suffix: Glass
   components:
   - type: Door
     occludes: false

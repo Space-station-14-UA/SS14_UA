@@ -79,6 +79,10 @@ units-joule-long = Джоуль
 units-k-joule-long = Кілоджоуль
 units-m-joule-long = Мегаджоуль
 
+## Generic units
+units-u = u
+units-mole = mol
+
 ## Kelvin (Temperature)
 units-u--kelvin = мкК
 units-m--kelvin = мК

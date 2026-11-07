@@ -1,4 +1,4 @@
-﻿comp-containment-turned-on = Захисне поле: запускається.
+comp-containment-turned-on = Захисне поле: запускається.
 comp-containment-turned-off = Захисне поле: припинило роботу
 
 comp-containment-on = Перемикач [color=green]увімкнений[/color], готовий до генерації поля.

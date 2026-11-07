@@ -1,9 +1,16 @@
 - type: entity
   name: гідропонний лоток
   parent: [ BaseHydroponicsSoil, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
-  id: hydroponicsTray
+  id: HydroponicsTray
   description: "Космічна ферма міжзоряного рівня, що дозволяє швидко вирощувати та селекціонувати сільськогосподарські культури. Тільки... не забувайте про космічні бур'яни."
   components:
+  - type: ActivatableUI
+    key: enum.PlantTrayUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.PlantTrayUiKey.Key:
+        type: PlantTrayBoundUserInterface
+        interactionRange: 2
   - type: Fixtures
     fixtures:
       fix1:
@@ -95,7 +102,7 @@
     - Chemicals
 
 - type: entity
-  parent: hydroponicsTray
+  parent: HydroponicsTray
   id: HydroponicsTrayEmpty
   suffix: Порожній
   components:

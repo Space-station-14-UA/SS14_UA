@@ -37,7 +37,7 @@ alerts-handcuffed-name = [color=yellow]У наручниках[/color]
 alerts-handcuffed-desc = На вас наділи [color=yellow]наручники[/color] і ви не можете користуватися руками. Якщо вас хтось потягне, ви не зможете опиратися.
 
 alerts-ensnared-name = [color=yellow]У пастці[/color]
-alerts-ensnared-desc = Ви [color=yellow]у пастці[/color] і не можете вільно рухатись.
+alerts-ensnared-desc = Ви [color=yellow]обплутані[/color], що заважає вашому пересуванню. Натисніть вільною рукою, щоб зняти.
 
 alerts-buckled-name = [color=yellow]Пристебнутий[/color]
 alerts-buckled-desc = Ви [color=yellow]пристебнули[/color] себе до чогось. Клацніть на сповіщення, щоб відстебнутися (якщо ви не у [color=yellow]наручниках[/color]).

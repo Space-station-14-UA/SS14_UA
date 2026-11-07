@@ -1,6 +1,6 @@
 - type: entity
-  id: ClosetWall
   parent: BaseWallCloset
+  id: ClosetWall
   name: настінна технічна шафа
   description: Це сховище для речей.
   components:
@@ -10,9 +10,9 @@
     stateDoorClosed: generic_door
 
 - type: entity
+  parent: BaseWallCloset
   id: ClosetWallEmergency
   name: аварійна настінна шафа
-  parent: BaseWallCloset
   description: Це сховище з кисневим балоном, дихальною маскою, та аварійним костюмом.
   components:
   - type: EntityStorageVisuals
@@ -32,9 +32,9 @@
     stateDoorClosed: n2_door
 
 - type: entity
+  parent: BaseWallCloset
   id: ClosetWallFire
   name: настінна протипожежна шафа
-  parent: BaseWallCloset
   description: Це сховище вогнеборців.
   components:
   - type: EntityStorageVisuals
@@ -43,8 +43,8 @@
     stateDoorClosed: fire_door
 
 - type: entity
-  id: ClosetWallBlue
   parent: BaseWallCloset
+  id: ClosetWallBlue
   name: синя настінна шафа
   description: Гардероб зі стильно-синім одягом.
   components:
@@ -54,8 +54,8 @@
     stateDoorClosed: blue_door
 
 - type: entity
-  id: ClosetWallPink
   parent: BaseWallCloset
+  id: ClosetWallPink
   name: рожева настінна шафа
   description: Гардероб з казково-рожевим одягом.
   components:
@@ -65,8 +65,8 @@
     stateDoorClosed: pink_door
 
 - type: entity
-  id: ClosetWallBlack
   parent: BaseWallCloset
+  id: ClosetWallBlack
   name: чорна стіннна шафа
   description: Гардероб зі стильно-чорним одягом. Ні, ви не знайдете тут пакети для русні.
   components:
@@ -76,8 +76,8 @@
     stateDoorClosed: black_door
 
 - type: entity
-  id: ClosetWallGreen
   parent: BaseWallCloset
+  id: ClosetWallGreen
   name: зелена настінна шафа
   description: Гардероб зі стильно-зеленим одягом.
   components:
@@ -87,8 +87,8 @@
     stateDoorClosed: green_door
 
 - type: entity
-  id: ClosetWallOrange
   parent: BaseWallCloset
+  id: ClosetWallOrange
   name: настінна шафа в'язня 
   components:
   - type: EntityStorageVisuals
@@ -97,8 +97,8 @@
     stateDoorClosed: orange_door
 
 - type: entity
-  id: ClosetWallYellow
   parent: BaseWallCloset
+  id: ClosetWallYellow
   name: жовта настінна шафа
   description: Гардероб зі стильно-жовтим одягом.
   components:
@@ -108,8 +108,8 @@
     stateDoorClosed: yellow_door
 
 - type: entity
-  id: ClosetWallWhite
   parent: BaseWallCloset
+  id: ClosetWallWhite
   name: біла настінна шафа
   description: Гардероб зі стильно-білим одягом.
   components:
@@ -119,8 +119,8 @@
     stateDoorClosed: white_door
 
 - type: entity
-  id: ClosetWallGrey
   parent: BaseWallCloset
+  id: ClosetWallGrey
   name: сіра настінна шафа
   description: Гардероб зі стильно-сірим одягом.
   components:
@@ -130,8 +130,8 @@
     stateDoorClosed: gray_door
 
 - type: entity
-  id: ClosetWallMixed
   parent: BaseWallCloset
+  id: ClosetWallMixed
   name: змішана настінна шафа
   description: Гардероб з різнокольоровим одягом.
   components:
@@ -141,8 +141,8 @@
     stateDoorClosed: mixed_door
 
 - type: entity
-  id: ClosetWallAtmospherics
   parent: BaseWallCloset
+  id: ClosetWallAtmospherics
   name: настінна шафа атмосферного інженера
   components:
   - type: EntityStorageVisuals
@@ -151,8 +151,8 @@
     stateDoorClosed: atmos_door
 
 - type: entity
-  id: LockerWallMedical
   parent: BaseWallLocker
+  id: LockerWallMedical
   name: медична настінна шафа
   components:
   - type: EntityStorageVisuals
@@ -239,11 +239,11 @@
     stateDoorClosed: genpop_door_8
 
 - type: entity
-  id: LockerWallSyndicate
   parent: BaseWallLocker
+  id: LockerWallSyndicate
   name: blood-red wall locker
-  description: It's a wall storage unit with a blood-red design.
   suffix: "Locked"
+  description: It's a wall storage unit with a blood-red design.
   components:
   - type: Appearance
   - type: EntityStorageVisuals

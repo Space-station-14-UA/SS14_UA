@@ -1,5 +1,6 @@
 - type: loadoutGroup
   id: SichEngineerAdvanced
   name: loadout-group-Sich-trinkets
+  minLimit: 0
   loadouts:
   - SichCringineerSign

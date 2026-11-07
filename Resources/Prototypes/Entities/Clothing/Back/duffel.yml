@@ -251,7 +251,7 @@
       shader: unshaded
 
 - type: entity
-  parent: [ ClothingBackpackDuffel, BaseCentcommContraband ]
+  parent: [ ClothingBackpackDuffel, BaseCBURNContraband ]
   id: ClothingBackpackDuffelCBURN
   name: велика сумка РХБЗ
   description: Велика сумка, що містить різноманітне обладнання для стримання біологічних загроз.

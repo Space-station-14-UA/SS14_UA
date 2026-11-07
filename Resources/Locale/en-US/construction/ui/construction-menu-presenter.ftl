@@ -1,4 +1,4 @@
-﻿construction-presenter-to-craft = Щоб виготовити цей предмет, вам потрібно:
+construction-presenter-to-craft = Щоб виготовити цей предмет, вам потрібно:
 construction-presenter-to-build = Щоб побудувати це, спочатку потрібно:
 
 construction-presenter-step-wrapper = {$step-number}. {$text}

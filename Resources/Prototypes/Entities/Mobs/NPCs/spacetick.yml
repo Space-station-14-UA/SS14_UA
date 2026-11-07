@@ -1,7 +1,7 @@
 - type: entity
   name: космо-кліщ
   id: MobTick
-  parent: [SimpleSpaceMobBase, BaseSlicingRefinable]
+  parent: [SimpleSpaceMobBase, BaseSlicingRefinableButchering]
   description: Це космічний кліщ, остерігайтеся його неприємних укусів. ЦентКом повідомляє, що 90 відсотків ампутацій ніг вантажу відбуваються через укуси космічних кліщів.
   components:
   - type: InputMover

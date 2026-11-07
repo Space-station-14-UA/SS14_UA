@@ -1,16 +1,16 @@
 # Base
 - type: entity
-  id: WardrobeBase
-  parent: ClosetSteelBase
   abstract: true
+  parent: ClosetSteelBase
+  id: WardrobeBase
   description: Це сховище для стандартного одягу Нанотрейзен, виробництва Нанотрейзен.
 
 # Colored
 
 # Blue wardrobe
 - type: entity
-  id: WardrobeBlue
   parent: WardrobeBase
+  id: WardrobeBlue
   name: синій гардероб 
   description: Гардероб зі стильно-синім одягом.
   components:
@@ -22,8 +22,8 @@
 
 # Pink wardrobe
 - type: entity
-  id: WardrobePink
   parent: WardrobeBase
+  id: WardrobePink
   name: рожевий гардероб 
   description: Гардероб з казково-рожевим одягом.
   components:
@@ -35,8 +35,8 @@
 
 # Black wardrobe
 - type: entity
-  id: WardrobeBlack
   parent: WardrobeBase
+  id: WardrobeBlack
   name: чорний гардероб 
   description: Гардероб зі стильно-чорним одягом. Не шукайте тут пакети для русні.
   components:
@@ -48,8 +48,8 @@
 
 # Green wardrobe
 - type: entity
-  id: WardrobeGreen
   parent: WardrobeBase
+  id: WardrobeGreen
   name: зелений гардероб 
   description: Гардероб зі стильно-зеленим одягом.
   components:
@@ -61,8 +61,8 @@
 
 # Prison wardrobe
 - type: entity
-  id: WardrobePrison
   parent: WardrobeBase
+  id: WardrobePrison
   name: гардероб в'язня 
   components:
   - type: Appearance
@@ -73,8 +73,8 @@
 
 # Yellow wardrobe
 - type: entity
-  id: WardrobeYellow
   parent: WardrobeBase
+  id: WardrobeYellow
   name: жовтий гардероб 
   description: Гардероб зі стильно-жовтим одягом.
   components:
@@ -86,8 +86,8 @@
 
 # White wardrobe
 - type: entity
-  id: WardrobeWhite
   parent: WardrobeBase
+  id: WardrobeWhite
   name: білий гардероб 
   description: Гардероб зі стильно-білим одягом.
   components:
@@ -99,8 +99,8 @@
 
 # Grey wardrobe
 - type: entity
-  id: WardrobeGrey
   parent: WardrobeBase
+  id: WardrobeGrey
   name: сірий гардероб 
   description: Гардероб зі сірим одягом.
   components:
@@ -112,8 +112,8 @@
 
 # Mixed wardrobe
 - type: entity
-  id: WardrobeMixed
   parent: WardrobeBase
+  id: WardrobeMixed
   name: змішений гардероб 
   description: Гардероб з різнокольоровим одягом.
   components:
@@ -126,8 +126,8 @@
 # Jobs
 
 - type: entity
-  id: WardrobeSecurity
   parent: WardrobeBase
+  id: WardrobeSecurity
   name: гардероб служби безпеки 
   components:
   - type: Appearance
@@ -137,8 +137,8 @@
     stateDoorClosed: red_door
 
 - type: entity
-  id: WardrobeAtmospherics
   parent: WardrobeBase
+  id: WardrobeAtmospherics
   name: гардероб атмосферного інженера
   components:
   - type: Appearance
@@ -148,82 +148,82 @@
     stateDoorClosed: atmos_wardrobe_door
 
 - type: entity
-  id: ClosetJanitor
   parent: WardrobeMixed
+  id: ClosetJanitor
   name: шафа прибиральника
   description: Це сховище для речей прибиральника.
 
 - type: entity
-  id: WardrobeFormal
   parent: WardrobeBlack
+  id: WardrobeFormal
   name: формальна шафа
   description: Це сховище для формального одягу.
 
 - type: entity
-  id: ClosetChef
   parent: WardrobeBlack
+  id: ClosetChef
   name: шафа шеф-кухаря 
   description: Це сховище для інгредієнтів та пасток для пацюків.
 
 - type: entity
-  id: WardrobeChapel
   parent: WardrobeBlack
+  id: WardrobeChapel
   name: гардероб священника
   description: Це сховище релігійного одягу, ухваленого Нанотрейзен.
 
 - type: entity
-  id: ClosetLegal
   parent: WardrobeBlue
+  id: ClosetLegal
   name: ділова шафа
   description: Це сховище речей призначених для судових засідань.
 
 - type: entity
-  id: WardrobeCargo
   parent: WardrobePrison
-  name: гардероб логістики
+  id: WardrobeCargo
+  name: гардероб вантажника
 
 - type: entity
-  id: WardrobeSalvage
   parent: WardrobeMixed
+  id: WardrobeSalvage
   name: гардероб шахтарів
   description: Зокрема, (можливо) не вкрадений з уламку.
 
 - type: entity
-  id: WardrobeEngineering
   parent: WardrobeYellow
+  id: WardrobeEngineering
   name: гардероб інженера 
 
 - type: entity
-  id: WardrobeMedicalDoctor
   parent: WardrobeWhite
+  id: WardrobeMedicalDoctor
   name: гардероб лікаря
 
 - type: entity
-  id: WardrobeRobotics
   parent: WardrobeBlack
+  id: WardrobeRobotics
   name: гардероб робототехніка
 
 - type: entity
-  id: WardrobeChemistry
   parent: WardrobeWhite
+  id: WardrobeChemistry
   name: гардероб хіміка
 
 - type: entity
-  id: WardrobeGenetics
   parent: WardrobeWhite
+  id: WardrobeGenetics
   name: гардероб генетика
 
 - type: entity
-  id: WardrobeVirology
   parent: WardrobeWhite
+  id: WardrobeVirology
   name: гардероб вірусолога
 
 - type: entity
-  id: WardrobeScience
   parent: WardrobeWhite
+  id: WardrobeScience
   name: гардероб вченого
 
 - type: entity
-  id: WardrobeBotanist
   parent: WardrobeGreen
+  id: WardrobeBotanist
   name: гардероб ботаніка

@@ -37,7 +37,8 @@
     tags:
     - HighRiskItem
   - type: StealTarget
-    stealGroup: NukeDisk
+    stealGroup:
+    - NukeDisk
 
 - type: entity
   name: диск ядерної автентифікації

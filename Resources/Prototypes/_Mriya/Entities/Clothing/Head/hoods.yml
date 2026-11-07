@@ -1,0 +1,13 @@
+﻿- type: entity
+  parent: ClothingHeadBase
+  id: MRClothingHeadHatHoodGuglia
+  name: каптур ґуґлі
+  description: Білий каптур ґуґлі, який можна накинути на голову.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hoods/guglia_hood.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hoods/guglia_hood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

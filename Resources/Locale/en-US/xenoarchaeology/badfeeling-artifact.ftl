@@ -1,11 +1,11 @@
 badfeeling-artifact-1 = Здається, щось не так.
 badfeeling-artifact-2 = Ви відчуваєте щось дивне в животі.
-badfeeling-artifact-3 = Ваші інстинкти хочуть вас попередити про щось
+badfeeling-artifact-3 = Ваші інстинкти хочуть вас попередити про щось.
 badfeeling-artifact-4 = Хтось щойно пройшовся над вашою могилою.
 badfeeling-artifact-5 = Щось дивне витає у повітрі.
 badfeeling-artifact-6 = Якийсь дивний сморід у повітрі.
 badfeeling-artifact-7 = Кінчики ваших пальців поколюють.
-badfeeling-artifact-8 = Ви почуваєтесь по-відьомські.
+badfeeling-artifact-8 = Ви почуваєтесь по-відьомськи.
 badfeeling-artifact-9 = У вас жахливе передчуття.
 badfeeling-artifact-10 = У вас погані думки щодо цього.
 badfeeling-artifact-11 = Ваше чоло трохи поколює.

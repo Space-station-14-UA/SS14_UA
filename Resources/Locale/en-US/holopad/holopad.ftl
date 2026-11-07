@@ -1,4 +1,4 @@
-﻿# Window headers
+# Window headers
 holopad-window-title = {CAPITALIZE($title)}
 holopad-window-subtitle = [color=white][bold]Голографічна комунікаційна система[/bold][/color]
 holopad-window-options = [color=darkgray][font size=10][italic]Будь ласка, оберіть варіант зі списку нижче[/italic][/font][/color]
