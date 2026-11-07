@@ -1,4 +1,4 @@
-﻿advertisement-chefvend-1 = Щонайменше шістдесят відсотків яєць доїдуть цілими, гарантуємо!
+advertisement-chefvend-1 = Щонайменше шістдесят відсотків яєць доїдуть цілими, гарантуємо!
 advertisement-chefvend-2 = Рис, рис, крихітко.
 advertisement-chefvend-3 = Мазни туди масла!
 advertisement-chefvend-4 = Ви варті своєї солі? Ми — так.

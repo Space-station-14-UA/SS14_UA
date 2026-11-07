@@ -526,7 +526,7 @@
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndieCommander ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndieCommander ]
   id: ClothingHeadHelmetHardsuitERTLeader
   name: шолом скафандру лідера ГШР
   description: Спеціальний шолом скафандру для лідера Групи Швидкого Реагування.
@@ -545,7 +545,7 @@
 
 #ERT Chaplain Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitERTChaplain
   name: шолом скафандру капелана ГШР
   description: Спеціальний шолом скафандру для капелана Групи Швидкого Реагування.
@@ -557,7 +557,7 @@
 
 #ERT Engineer Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitERTEngineer
   name: шолом скафандру інженера ГШР
   description: Спеціальний шолом скафандру для інженера Групи Швидкого Реагування.
@@ -578,7 +578,7 @@
 
 #ERT Medical Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndieElite ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndieElite ]
   id: ClothingHeadHelmetHardsuitERTMedical
   name: шолом скафандру медика ГШР
   description: Спеціальний шолом скафандру для медика Групи Швидкого Реагування.
@@ -590,7 +590,7 @@
 
 #ERT Security Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitERTSecurity
   name: шолом скафандру охоронця ГШР
   description: Спеціальний шолом скафандру для охоронця Групи Швидкого Реагування.
@@ -609,7 +609,7 @@
 
 #ERT Janitor Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitERTJanitor
   name: шолом скафандру прибиральника ГШР
   description: Спеціальний шолом скафандру для прибиральника Групи Швидкого Реагування.
@@ -621,7 +621,7 @@
 
 #CBURN Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  parent: [ BaseCBURNContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetCBURN
   name: шолом екзокостюму РХБЗ
   description: Стійкий до тиску та вогневкритий шолом, який носять бійці РХБЗ.
@@ -645,7 +645,7 @@
 
 #Deathsquad Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadHardsuitBase ]
+  parent: [ BaseDeathSquadContraband, ClothingHeadHardsuitBase ]
   id: ClothingHeadHelmetHardsuitDeathsquad
   name: шолом скафандру загону смерті
   description: Міцний шолом для спеціальних операцій НТ.

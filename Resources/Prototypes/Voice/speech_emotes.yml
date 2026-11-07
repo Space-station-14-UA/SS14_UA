@@ -267,6 +267,25 @@
    - клацає
    - клацають
 
+- type: emote
+  id: Hiss
+  name: chat-emote-name-hiss
+  category: Vocal
+  available: false
+  icon: Interface/Emotes/hiss.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
+  chatMessages: [chat-emote-msg-hiss]
+  chatTriggers:
+  - hiss
+  - hisses
+  - hissed
+  - hissing
+
 # Vulpkanin
 - type: emote
   id: Bark
@@ -379,6 +398,26 @@
   - гарчать
   - ричить
   - ричать
+
+#vox
+- type: emote
+  id: Caw
+  name: chat-emote-name-caw
+  category: Vocal
+  icon: Interface/Emotes/caw.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
+  chatMessages: [chat-emote-msg-caw]
+  chatTriggers:
+  - caw
+  - caws
+  - cawed
+  - cawing
 
 # hand emotes
 - type: emote
@@ -530,6 +569,12 @@
   - deathgasp
   - видає передсмертний подих # Це та все нижче (до кінця прототипу) - з білду Січі
   - видають передсмертний подих
+
+- type: emote
+  id: KoboldDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  chatMessages: ["chat-emote-msg-deathgasp-kobold"]
 
 - type: emote
   id: MonkeyDeathgasp

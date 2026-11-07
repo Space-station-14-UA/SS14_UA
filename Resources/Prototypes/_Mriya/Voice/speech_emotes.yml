@@ -1,23 +1,4 @@
 - type: emote
-  id: Hiss
-  name: nyan-chat-emote-name-hiss
-  category: Vocal
-  icon: _Mriya/Interface/Emotes/hiss.png
-  available: false
-  whitelist:
-    components:
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: [шипить.]
-  chatTriggers:
-    - Шшшш
-    - Шипіння
-    - Шиплю
-    - Хссс
-
-- type: emote
   id: Meow
   name: nyan-chat-emote-name-meow
   category: Vocal

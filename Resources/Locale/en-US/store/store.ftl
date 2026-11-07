@@ -18,3 +18,7 @@ store-preset-name-nukie-delivery = Блюспейс-доставка Ядерн�
 store-preset-name-changeling = Магазин ДНК
 
 store-listing-locked = Заблоковано
+
+store-generator-examine = { CAPITALIZE(SUBJECT($entity)) } містить [color=yellow]{$amount} {$currency}[/color].
+store-generator-collect-empty-popup = Немає чого збирати.
+store-generator-collect-popup = Ви збираєте {$amount} {$currency} з {$entity}.

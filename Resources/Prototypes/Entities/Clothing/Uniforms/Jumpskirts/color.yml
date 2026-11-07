@@ -278,7 +278,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtColorPink
   name: рожева спідниця-комбінезон
-  description: лише від погляду на це ви почуваєтесь <i>розкішно</i>.
+  description: лише від погляду на це ви почуваєтесь [italic]розкішно[/italic].
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirts/Color/color.rsi

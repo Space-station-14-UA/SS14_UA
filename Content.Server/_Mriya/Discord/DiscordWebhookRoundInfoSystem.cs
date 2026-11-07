@@ -15,7 +15,7 @@ public sealed partial class DiscordWebhookRoundInfoSystem : EntitySystem
 {
     [Dependency] private DiscordWebhook _discord = default!;
     [Dependency] private IConfigurationManager _cfg = default!;
-    [Dependency] private GameTicker _ticker = default!;
+    [Dependency] private ServerGameTicker _ticker = default!;
     [Dependency] private IGameMapManager _gameMapManager = default!;
     [Dependency] private IBaseServer _baseServer = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

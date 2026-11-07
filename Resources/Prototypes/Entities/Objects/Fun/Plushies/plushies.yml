@@ -4,7 +4,7 @@
 
 - type: entity
   abstract: true
-  parent: [SolutionFood, SolutionSmall, BaseItem, BaseStash]
+  parent: [SolutionFood, SolutionSmall, BaseItem]
   id: BasePlushie
   components:
   - type: EmitSoundOnUse
@@ -50,7 +50,39 @@
     - ClothMade
 
 - type: entity
-  parent: BasePlushie
+  abstract: true
+  parent: [BasePlushie, BaseStashPlushie]
+  id: BasePlushieGinormous
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  abstract: true
+  parent: [BasePlushie, BaseStashPlushie]
+  id: BasePlushieNormal
+  components:
+  - type: Item
+    size: Normal
+
+- type: entity
+  abstract: true
+  parent: [BasePlushie, BaseStashPlushie]
+  id: BasePlushieSmall
+  components:
+  - type: Item
+    size: Small
+
+- type: entity
+  abstract: true
+  parent: BasePlushie # too smoll to fit secret stash
+  id: BasePlushieTiny
+  components:
+  - type: Item
+    size: Tiny
+
+- type: entity
+  parent: BasePlushieGinormous
   id: PlushieThrongler
   name: плюшевий тронґлер
   description: "М'яка іграшка, що нагадує вантажникам про те, чого вони більше не можуть мати."
@@ -62,7 +94,6 @@
     wideAnimationRotation: -135
     attackRate: 10
   - type: Item
-    size: Ginormous
     shape:
     - 0,0,3,3
     - 1,4,2,6
@@ -73,7 +104,7 @@
       CottonBurger: ThronglerPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieGhost
   name: плюшевий привид
   description: Початок вашої особистої зграї привидів!
@@ -82,7 +113,6 @@
     sprite: Mobs/Ghosts/ghost_human.rsi
     state: icon
     noRot: true
-  - type: Item
   - type: Physics
     fixedRotation: true
     bodyType: Dynamic
@@ -137,7 +167,7 @@
       CottonBurger: RevenantPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieNormal
   id: PlushieBee
   name: плюшева бджола
   description: Мила іграшка, що нагадує ще милішого програміста. Треба бути монстром, щоб таке знищити.
@@ -146,7 +176,6 @@
     sprite: Objects/Fun/Plushies/bee.rsi
     state: icon
   - type: Item
-    size: Normal
     sprite: Objects/Fun/Plushies/bee.rsi
   - type: Extractable
     grindableSolutionName: food
@@ -167,7 +196,7 @@
       CottonBurger: BeePlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieHampter
   name: "плюшевий хом'як"
   description: "Мила м'яка іграшка, що нагадує хом'яка. Його мордочка виглядає сплющеною."
@@ -229,7 +258,7 @@
         shader: unshaded
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieNuke
   name: плюшевий оперативник
   description: "М'яка іграшка, що нагадує ядерного оперативника синдикату. На етикетці зазначено, що оперативники є суто вигаданими."
@@ -251,7 +280,7 @@
       CottonBurger: NukiePlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieRouny
   name: плюшевий руні
   description: Руні.
@@ -273,7 +302,7 @@
       CottonBurger: RounyPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieLamp
   name: плюшева лампа
   description: Друг, що випромінює світло!
@@ -290,7 +319,7 @@
       CottonBurger: LampPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieArachind
   name: плюшевий арахнід
   description: "Чарівна м'яка іграшка, що нагадує павука. На дотик шовковиста."
@@ -323,7 +352,7 @@
       CottonBurger: ArachnidPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieLizard #Weh!
   name: плюшева ящірка
   description: "Мила м'яка іграшка, що нагадує людину-ящірку. Виготовлена компанією «ЦентКом» як символічна ініціатива по боротьбі з видозміною в робочому середовищі. «Привітайте своїх нових колег, як ви робите це плюшеве, з розпростертими обіймами!»"
@@ -384,7 +413,7 @@
         Quantity: 10
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieExperiment #Arf!
   name: experiment plushie
   description: A plushie of a canid of sorts. It yearns to be detonated on a landmine.
@@ -568,7 +597,7 @@
       CottonBurger: InversedLizardPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieDiona # TODO Better way of doing the flowering visuals. Probably make it an "AppearanceChangeEntityEffect" on reactive?
   name: плюшева діона
   description: "Чарівна м'яка іграшка, що нагадує діону. Любить воду і обійми. Не купати!"
@@ -613,6 +642,12 @@
       - !type:AddReagentToSolution
         reagent: Water
         solution: food
+    - reagents: [ Holywater ]
+      methods: [ Touch ]
+      effects:
+      - !type:AddReagentToSolution
+        reagent: Holywater
+        solution: food
   - type: Fixtures
     fixtures:
       fix1:
@@ -645,7 +680,7 @@
       CottonBurger: DionaPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieSharkBlue
   name: плюшева блакитна акула
   description: Велика і безпечна, якщо ви хочете відкрити для себе світ під поверхнею океану.
@@ -723,7 +758,7 @@
     - ClothMade
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieNormal
   id: PlushieRatvar
   name: плюшевий ратвар
   description: "Невеличка м'яка лялька старшого бога Ратвара."
@@ -732,7 +767,6 @@
     sprite: Objects/Fun/Plushies/ratvar.rsi
     state: icon
   - type: Item
-    size: Normal
     sprite: Objects/Fun/Plushies/ratvar.rsi
   - type: MultiHandedItem
   - type: Clothing
@@ -745,7 +779,7 @@
       CottonBurger: RatvarPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieNormal
   id: PlushieNar
   name: "плюшева нар'сі"
   description: "Невеличка м'яка лялька старшої богині Нар'Сі."
@@ -754,7 +788,6 @@
     sprite: Objects/Fun/Plushies/narsie.rsi
     state: icon
   - type: Item
-    size: Normal
     sprite: Objects/Fun/Plushies/narsie.rsi
   - type: MultiHandedItem
   - type: Clothing
@@ -767,7 +800,7 @@
       CottonBurger: NarPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieCarp
   name: плюшевий короп
   description: "Чарівна м'яка іграшка, що нагадує жахаючого космічного коропа."
@@ -875,7 +908,7 @@
     - PlushieCarpHolo
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieSlime
   name: плюшевий слайм
   description: "Мила м'яка іграшка, що нагадує слимака. По суті, це мішок для хокею з м'ячем."
@@ -908,7 +941,7 @@
       CottonBurger: SlimePlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieSnake
   name: плюшева змія
   description: "Чарівна м'яка іграшка, що нагадує змію."
@@ -946,7 +979,7 @@
       CottonBurger: SnakePlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: ToyMouse
   name: іграшкова миша
   description: Барвиста іграшкова мишка!
@@ -980,7 +1013,7 @@
       CottonBurger: MousePlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieVox
   name: плюшевий вокс
   description: СКРРЕЕРЕРРЕРЕРЕ!
@@ -1019,7 +1052,7 @@
       CottonBurger: VoxPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieAtmosian
   name: плюшевий атмосферник
   description: "Мила м'яка іграшка, що нагадує відважного атмосферника. На жаль, він не виправить для вас розгерметизацію."
@@ -1041,7 +1074,7 @@
       CottonBurger: AtmosianPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieNormal
   id: PlushieXeno
   name: плюшевий ксенос
   description: "Мила м'яка іграшка, що нагадує страшного ксеноморфа. Вам пощастило, що це лише іграшка."
@@ -1049,8 +1082,6 @@
   - type: Sprite
     sprite: Objects/Fun/Plushies/xeno.rsi
     state: icon
-  - type: Item
-    size: Normal
   - type: EmitSoundOnUse
     sound: &PlushieXenoSound
       path: /Audio/Weapons/Xeno/alien_spitacid.ogg
@@ -1082,7 +1113,7 @@
       CottonBurger: XenoPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushiePenguin
   name: плюшевий пінгвін
   description: Я використовую арч, між тим!
@@ -1100,7 +1131,7 @@
       CottonBurger: PenguinPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieHuman
   name: плюшева людина
   description: Це фетровий плюш людини. Вся робота найнижчої якості. Людина гола. Людина плаче. Людина кричить.
@@ -1147,7 +1178,7 @@
       CottonBurger: HumanPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieMoth
   name: плюшева міль
   description: Мила і пухнаста плюшева міль. Насолоджуйся, бзззз!
@@ -1180,7 +1211,7 @@
       CottonBurger: MothPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieSheep
   name: sheep plushie
   description: A soft, wooly, stuffed sheep. 100% cotton.
@@ -1189,7 +1220,7 @@
     sprite: Objects/Fun/Plushies/sheep.rsi
     state: sheeptoy
   - type: Item
-    sprite: Objects/Fun/Plushies/carp.rsi
+    sprite: Objects/Fun/Plushies/sheep.rsi
     heldPrefix: sheeptoy
     storedRotation: -90
   - type: EmitSoundOnUse
@@ -1229,6 +1260,9 @@
   - type: Sprite
     sprite: Objects/Fun/Plushies/sheep.rsi
     state: spacesheeptoy
+  - type: Item
+    sprite: Objects/Fun/Plushies/sheep.rsi
+    heldPrefix: spacesheeptoy
   - type: FoodSequenceElement
     entries:
       CottonBurger: SheepSpacePlushie
@@ -1253,7 +1287,7 @@
     soundHit: *PlushieSpaceSheepSound
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: PlushieVulp
   name: vulpkanin plushie
   description: An adorable stuffed toy that resembles a vulpkanin. Yip! Yap!
@@ -1297,7 +1331,7 @@
     delay: 3.0
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieTiny
   id: ToyIan
   name: ian toy
   description: Unable to eat, but just as fluffy as the real guy!
@@ -1314,8 +1348,6 @@
       head:
       - state: equipped-HELMET
         offset: "0, 0.06"
-  - type: Item
-    size: Tiny
   - type: EmitSoundOnUse
     sound: &SoundIan
       path: /Audio/Items/Toys/ian.ogg
@@ -1336,7 +1368,7 @@
       CottonBurger: IanPlushie
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePlushieSmall
   id: ToyAmongPequeno
   name: among pequeño
   description: Sus!

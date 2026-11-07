@@ -1,1 +1,1 @@
-﻿chameleon-controller-ui-window-name = Керування хамелеоном
+chameleon-controller-ui-window-name = Керування хамелеоном

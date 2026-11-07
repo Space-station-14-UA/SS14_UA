@@ -1,4 +1,4 @@
-﻿bounty-console-menu-title = Консоль нагород карго
+bounty-console-menu-title = Консоль нагород карго
 bounty-console-label-button-text = Друк етикетки
 bounty-console-skip-button-text = Пропустити
 bounty-console-time-label = Час: [color=orange]{$time}[/color]

@@ -59,7 +59,7 @@
   description: Велика конструкція, виготовлена зі сталі та пласталі. Для того, щоб вважатися стіною, потрібен додатковий шар пласталі.
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: Structures/Walls/solid-reinforced.rsi
     state: reinforced_wall_girder
   - type: Construction
     graph: Girder

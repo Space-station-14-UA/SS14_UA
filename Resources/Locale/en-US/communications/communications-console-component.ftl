@@ -28,7 +28,6 @@ comms-console-message-too-long = Повідомлення занадто дов�
 comms-console-message-cannot-send = Зв'язок тимчасово вимкнено
 
 # Placeholder values
-comms-console-announcement-sent-by = Надіслано:
 comms-console-announcement-unknown-sender = Анонім
 
 # Comms console variant titles
@@ -47,3 +46,4 @@ comms-console-level-Red-flavour-label = Будьте пильними
 comms-console-level-Gamma-flavour-label = Рекомендовано максимальну обережність
 comms-console-level-Delta-flavour-label = Хай щастить
 comms-console-level-Epsilon-flavour-label = Вас звільнено
+comms-console-level-Unknown-flavour-label = Будьте пильні

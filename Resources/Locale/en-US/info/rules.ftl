@@ -1,4 +1,4 @@
-﻿# Rules
+# Rules
 
 ui-rules-header = СІЧ правила
 ui-rules-header-rp = СІЧ ролеплей правила

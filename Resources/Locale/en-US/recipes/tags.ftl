@@ -51,7 +51,7 @@ construction-graph-tag-modular-receiver = ствольна коробка
 construction-graph-tag-power-cell-small = батарея малої ємності
 construction-graph-tag-power-cell = батарея
 construction-graph-tag-potato-battery = картопляна батарейка
-construction-graph-tag-super-compact-ai-chip = суперкомпактний чіп ШІ
+construction-graph-tag-super-compact-ai-chip = саморобний мікроконтролер
 
 # other
 construction-graph-tag-light-bulb = лампочка
@@ -75,6 +75,7 @@ soil-construction-graph-any-mushroom = будь-який гриб
 construction-graph-tag-mop-basic = швабра
 construction-graph-tag-paper = офісний папір
 construction-graph-tag-core-pinpointer-piece = частина цілевказівника ядра
+construction-graph-tag-glass-lens = скляна лінза
 
 # toys
 construction-graph-tag-rubber-ducky = гумова качечка

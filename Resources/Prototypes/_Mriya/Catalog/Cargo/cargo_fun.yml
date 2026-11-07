@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MRCarpathianTraditionalClothing
+  icon:
+    sprite: _Mriya/Clothing/Neck/Misc/kryza.rsi
+    state: icon
+  product: MRCrateCarpathianTraditionalClothing
+  cost: 2000
+  category: cargoproduct-category-name-fun
+  group: market

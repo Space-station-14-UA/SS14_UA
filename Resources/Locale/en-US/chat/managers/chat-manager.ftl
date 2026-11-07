@@ -28,6 +28,9 @@ chat-manager-server-wrap-message = [bold]{$message}[/bold]
 chat-manager-sender-announcement = Центральне Командування
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} оголошення:[/font][font size=12]
                                                 {$message}[/bold][/font]
+chat-manager-sender-announcement-wrap-message-signed = [font size=14][bold]{$sender} Announcement:[/bold][/font][font size=12]
+                                                       {$message}[bold]
+                                                       Sent by {$signature}[/bold][/font]
 chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
 chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold]{$message}[/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
 
@@ -57,8 +60,6 @@ chat-manager-admin-channel-name = АДМІН
 
 chat-manager-rate-limited = Ви відправляєте повідомлення занадто швидко!
 chat-manager-rate-limit-admin-announcement = Попередження про привищення ліміту повідомлень: { $player }
-
-chat-manager-follow-button = (F)
 
 ## Speech verbs for chat
 
@@ -175,8 +176,5 @@ chat-speech-verb-vulpkanin-3 = ричить
 chat-speech-verb-vulpkanin-4 = тявкає
 chat-speech-verb-vulpkanin = Вульпканін
 
+chat-speech-verb-name-horror = Нажахано
 chat-speech-verb-name-wawa = Вава
-chat-speech-verb-wawa-1 = інтонує
-chat-speech-verb-wawa-2 = стверджує
-chat-speech-verb-wawa-3 = проголошує
-chat-speech-verb-wawa-4 = розмірковує

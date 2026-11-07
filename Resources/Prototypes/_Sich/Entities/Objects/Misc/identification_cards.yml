@@ -23,7 +23,8 @@
     - DoorBumpOpener
     - WhitelistChameleon
   - type: StealTarget
-    stealGroup: IDCard
+    stealGroup: 
+      - IDCard
 
 #Faction IDs
 

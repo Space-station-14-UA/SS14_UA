@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: ClothingNeckBase
+  id: MRClothingNeckKryza
+  name: криза
+  description: Традиційна лемківська шийна прикраса у вигляді широкого коміра, оздобленого різнокольоровим бісером.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Neck/Misc/kryza.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Neck/Misc/kryza.rsi

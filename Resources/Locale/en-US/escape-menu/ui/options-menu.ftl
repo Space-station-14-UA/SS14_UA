@@ -62,7 +62,6 @@ ui-options-show-ooc-patron-color = Показувати колір OOC Patreon
 ui-options-show-looc-on-head = Показувати чат LOOC над головою персонажа
 ui-options-fancy-speech = Показувати імена у мовних бульбашках
 ui-options-fancy-name-background = Додати фон до імен у мовних бульбашках
-ui-options-chat-follow-button = Показувати кнопку «Стежити» поруч із повідомленнями в чаті, будучи привидом
 ui-options-vsync = Вертикальна синхронізація
 ui-options-max-fps = Максимум FPS:
 ui-options-max-fps-display-rate = Частота оновлення екрана
@@ -89,6 +88,7 @@ ui-options-hud-theme-clockwork = Заводний механізм
 ui-options-hud-theme-retro = Ретро
 ui-options-hud-theme-minimalist = Мінімалістичний
 ui-options-hud-theme-ashen = Попеляста
+ui-options-hud-theme-trasen = Трасен-Нокс
 ui-options-hud-layout-default = За замовчуванням
 ui-options-hud-layout-separated = Розділено
 ui-options-vp-stretch = Розтягнути вікно перегляду відповідно до вікна гри
@@ -402,6 +402,9 @@ ui-options-chat-window-opacity = Непрозорість вікна чату
 ui-options-speech-bubble-text-opacity = Прозорість текстових бульбашок
 ui-options-speech-bubble-speaker-opacity = Прозорість імені розмовника
 ui-options-speech-bubble-background-opacity = Прозорість фону бульбашки
+ui-options-chat-preview = Показувати бульбашки попереднього перегляду чату під час введення
+ui-options-preview-bubble-background-opacity = Прозорість фону бульбашки попереднього перегляду
+ui-options-vacuum-overlay-intensity = Інтенсивність оверлею вакууму
 
 ui-options-censor-nudity = Цензура оголеності
 

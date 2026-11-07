@@ -1,1 +1,1 @@
-﻿virtual-item-dropped-other = Ви впустили {$dropped}!
+virtual-item-dropped-other = Ви впустили {$dropped}!

@@ -1,0 +1,85 @@
+﻿- type: entity
+  id: MRSmokingPipeFaika
+  parent: SmokingPipe
+  name: файка
+  description: Пахне смерекою та тютюном.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumables/Smokeables/Pipes/faika.rsi
+    state: unlit-icon
+  - type: Clothing
+    sprite: _Mriya/Objects/Consumables/Smokeables/Pipes/faika.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+  - type: Item
+    size: Tiny
+    sprite: _Mriya/Objects/Consumables/Smokeables/Pipes/faika.rsi
+
+- type: entity
+  id: MRSmokingPipeFaikaFilledTobacco
+  parent: MRSmokingPipeFaika
+  name: файка
+  suffix: Тютюн
+  description: Пахне смерекою та тютюном.
+  components:
+  - type: ContainerContainer
+    containers:
+      bowl_slot: !type:ContainerSlot
+  - type: ItemSlots
+  - type: SmokingPipe
+    bowl_slot:
+      name: smoking-pipe-slot-component-slot-name-bowl
+      startingItem: GroundTobacco
+      whitelist:
+        tags:
+        - Smokable
+      insertSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+      ejectSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+
+- type: entity
+  id: MRSmokingPipeFaikaFilledCannabis
+  parent: MRSmokingPipeFaika
+  name: файка
+  suffix: Канабіс
+  description: Пахне смерекою та чимось дивним.
+  components:
+  - type: ContainerContainer
+    containers:
+      bowl_slot: !type:ContainerSlot
+  - type: ItemSlots
+  - type: SmokingPipe
+    bowl_slot:
+      name: smoking-pipe-slot-component-slot-name-bowl
+      startingItem: GroundCannabis
+      whitelist:
+        tags:
+        - Smokable
+      insertSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+      ejectSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+
+- type: entity
+  id: MRSmokingPipeFaikaFilledCannabisRainbow
+  parent: MRSmokingPipeFaika
+  name: файка
+  suffix: Веселковий канабіс
+  description: Пахне смерекою та чимось дивним.
+  components:
+  - type: ContainerContainer
+    containers:
+      bowl_slot: !type:ContainerSlot
+  - type: ItemSlots
+  - type: SmokingPipe
+    bowl_slot:
+      name: smoking-pipe-slot-component-slot-name-bowl
+      startingItem: GroundCannabisRainbow
+      whitelist:
+        tags:
+        - Smokable
+      insertSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg
+      ejectSound:
+        path: /Audio/Weapons/Guns/Empty/empty.ogg

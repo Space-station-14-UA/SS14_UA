@@ -1,4 +1,4 @@
-﻿advertisement-gibb-1 = Смакота!
+advertisement-gibb-1 = Смакота!
 advertisement-gibb-2 = Рекомендовано принаймні одним лікарем!
 advertisement-gibb-3 = Продано понад 1 мільйон напоїв!
 advertisement-gibb-4 = Др. Гібб, що найгірше може статися?

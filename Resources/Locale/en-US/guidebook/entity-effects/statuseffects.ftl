@@ -1,4 +1,4 @@
-﻿entity-effect-status-effect-Stun = оглушення
+entity-effect-status-effect-Stun = оглушення
 entity-effect-status-effect-KnockedDown = збиття з ніг
 entity-effect-status-effect-Jitter = тремтіння
 entity-effect-status-effect-SeeingRainbows = галюцинації

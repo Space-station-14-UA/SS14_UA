@@ -1,3 +1,4 @@
+using Content.Shared.Bed.Sleep;
 using Content.Shared.Body.Events;
 using Content.Shared.Chat;
 using Content.Shared.Cloning.Events;
@@ -25,11 +26,13 @@ public sealed partial class BodySystem
         SubscribeLocalEvent<BodyComponent, HumanoidLayerVisibilityChangedEvent>(RefRelayBodyEvent);
 
         SubscribeLocalEvent<BodyComponent, ApplyHeightWidth>(RefRelayBodyEvent); // mriya
-        
+
         SubscribeLocalEvent<BodyComponent, EmoteEvent>(RefRelayBodyEvent);
+        SubscribeLocalEvent<BodyComponent, SleepStateChangedEvent>(RefRelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, MobStateChangedEvent>(RefRelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, BlindnessChangedEvent>(RefRelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, CloningEvent>(RefRelayBodyEvent);
+
         SubscribeLocalEvent<BodyComponent, ToggleEyesActionEvent>(RelayBodyEvent);
         SubscribeLocalEvent<BodyComponent, CanSeeAttemptEvent>(RelayBodyEvent);
     }

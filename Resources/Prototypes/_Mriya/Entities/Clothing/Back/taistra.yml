@@ -1,0 +1,8 @@
+﻿- type: entity
+  parent: ClothingBackpack
+  id: MRClothingBackpackTaistra
+  name: тайстра
+  description: Традиційна карпатська полотняна торба, яку носять через плече для перенесення особистих речей.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Back/Satchels/taistra.rsi

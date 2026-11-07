@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   save: false
   parent: [ BaseSimpleMob, BaseMobAnimal, MobCombat, MobBloodstream, BaseMobDestructible ]
   id: BaseMobArgocyte
@@ -51,7 +51,7 @@
     group: GenericNumber
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteSlurva
   name: слимак
   description: Жалюгідна істота, ні на що не здатна.
@@ -86,7 +86,7 @@
         Blunt: 3
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteBarrier
   name: бар'єр
   components:
@@ -128,7 +128,7 @@
         Blunt: 3
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteSkitter
   name: скіттер
   description: Хитрий маленький прибулець... Дивись, щоб вони не втекли з твоїми пайками!
@@ -168,7 +168,7 @@
         Slash: 3
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteSwiper
   name: підмітальник
   description: Куди подівся той штабель сталі?
@@ -195,7 +195,7 @@
     baseSprintSpeed : 5
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteMolder
   name: формувальник
   components:
@@ -222,7 +222,7 @@
     baseWalkSpeed : 3.5
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocytePouncer
   name: вибивач
   components:
@@ -251,7 +251,7 @@
         Slash: 7.5
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteGlider
   name: планер
   components:
@@ -283,7 +283,7 @@
     baseWalkSpeed: 4.5
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteHarvester
   name: збирач
   components:
@@ -312,7 +312,7 @@
         Slash: 10
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteCrawler
   name: гусінь
   description: Смертоносні зграйні тварини, які шматують нічого не підозрюючих мандрівників.
@@ -345,7 +345,7 @@
     baseWalkSpeed: 5
 
 - type: entity
-  parent: [BaseMobArgocyte, BaseSlicingRefinable]
+  parent: [BaseMobArgocyte, BaseSlicingRefinableButchering]
   id: MobArgocyteEnforcer
   name: примушувач
   components:

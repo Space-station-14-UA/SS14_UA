@@ -1,0 +1,55 @@
+﻿- type: entity
+  parent: ClothingUniformBase
+  id: MRClothingUniformJumpsuitBoiko
+  name: бойківська чоловіча ноша
+  description: "Чоловічий традиційний одяг бойків: вишита довга сорочка та вовняні холошні штани."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/boiko_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/boiko_jumpsuit.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformBase
+  id: MRClothingUniformJumpsuitDolynanUzhanskyi
+  name: долинянсько-ужанська чоловіча ноша
+  description: "Чоловічий традиційний одяг долинян Ужанської долини: вишита сорочка руського крою та гачі."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/dolynan_uzhanskyi_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/dolynan_uzhanskyi_jumpsuit.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformBase
+  id: MRClothingUniformJumpsuitHutsul
+  name: гуцульська чоловіча ноша
+  description: "Чоловічий традиційний одяг гуцулів: вишита сорочка та червоні крашаниці."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/hutsul_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/hutsul_jumpsuit.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformBase
+  id: MRClothingUniformJumpsuitLemko
+  name: лемківська чоловіча ноша
+  description: "Чоловічий традиційний одяг лемків: кошуля, заправлена в холошні."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/lemko_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpsuit/lemko_jumpsuit.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable

@@ -1,4 +1,4 @@
-﻿advertisement-coffee-1 = Випий!
+advertisement-coffee-1 = Випий!
 advertisement-coffee-2 = Різдвяна магія аромоксамиту!
 advertisement-coffee-3 = Покращює здоров'я!
 advertisement-coffee-4 = Хочеш гарячої кави?

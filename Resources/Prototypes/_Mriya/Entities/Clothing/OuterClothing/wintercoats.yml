@@ -1,0 +1,85 @@
+﻿- type: entity
+  parent: ClothingOuterWinterCoat
+  id: MRClothingOuterWinterKozhukhTsinevskyi
+  name: ціневський кожух
+  description: Традиційний бойківський кожух, виготовлений кушнірами із села Цінева.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhuch_tsinevskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhuch_tsinevskyi.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: MRClothingOuterWinterKozhukhLemkivskyi
+  name: лемківський кожух
+  description: |
+    Традиційний лемківський кожух з шкіри молодого ягняти.
+    Кожуху, кожуху, зогрій мі духа!
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhukh_lemkivskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhukh_lemkivskyi.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: MRClothingOuterWinterKozhukhStarokosivskyi
+  name: старокосівський кожух
+  description: Традиційний гуцульський кожух, виготовлений кушнірами із села Старий Косів.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhukh_starokosivskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/kozhukh_starokosivskyi.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: MRClothingOuterWinterVuiosh
+  name: вуйош
+  description: Традиційний теплий піджак долинян із домотканого валяного сукна, оздоблений коміром, манжетами та накладними кишенями.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/vuiosh.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/WinterCoats/vuiosh.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []

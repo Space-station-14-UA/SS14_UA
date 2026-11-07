@@ -1,8 +1,8 @@
 - type: entity
-  name: ручна рація
-  description: Зручна портативна рація.
   parent: BaseItem
   id: RadioHandheld
+  name: ручна рація
+  description: Зручна портативна рація.
   components:
   - type: TelecomExempt
   - type: RadioMicrophone
@@ -16,8 +16,25 @@
     sprite: Objects/Devices/communication.rsi
     layers:
     - state: walkietalkie
-    - state: walkietalkie-on
-    state: walkietalkie
+    - map: [enum.RadioDeviceVisualLayers.Broadcasting]
+      state: walkietalkie-on
+      shader: unshaded
+      visible: false
+    - map: [enum.RadioDeviceVisualLayers.Speaker]
+      state: walkietalkie-active
+      shader: unshaded
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.RadioDeviceVisuals.Broadcasting:
+        enum.RadioDeviceVisualLayers.Broadcasting:
+          True: { visible: true }
+          False: { visible: false }
+      enum.RadioDeviceVisuals.Speaker:
+        enum.RadioDeviceVisualLayers.Speaker:
+          True: { visible: true }
+          False: { visible: false }
   - type: Item
     sprite: Objects/Devices/communication.rsi
     heldPrefix: walkietalkie
@@ -26,10 +43,10 @@
     - Radio
 
 - type: entity
-  name: рація служби безпеки
-  description: Зручна портативна рація СБ.
   parent: [ RadioHandheld, BaseSecurityContraband ]
   id: RadioHandheldSecurity
+  name: рація служби безпеки
+  description: Зручна портативна рація СБ.
   components:
   - type: RadioMicrophone
     broadcastChannel: Security
@@ -41,4 +58,3 @@
     sprite: Objects/Devices/securityhandy.rsi
   - type: Item
     sprite: Objects/Devices/securityhandy.rsi
-    heldPrefix: walkietalkie

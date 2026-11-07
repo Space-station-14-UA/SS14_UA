@@ -34,6 +34,8 @@ petting-success-snake = {$target} отримує ваші пестощі по с
 petting-success-monkey = {$target} отримує ваші пестощі по своїй пустотливій голівці.
 petting-success-nymph = Ви гладите {$target} по її(?) дерев’яній голівці.
 petting-success-scurret = Ви гладите {$target} по його/її вавальній голові.
+petting-success-headslug = Ви гладите {$target} по її слизькій поверхні.
+petting-success-elder-headslug = Ви гладите {$target} по її пульсуючій шкірі.
 
 petting-failure-generic = Ви тягнетесь, аби попестити {$target}, але {$target} не виглядає зацікавлено.
 
@@ -57,6 +59,8 @@ petting-failure-monkey = Ви простягаєте руку, щоб погла
 petting-failure-nymph = Ви простягаєте руку, щоб погладити {$target}, але {$target} роздратовано відмахується своїми гілочками.
 petting-failure-shadow = Ви намагаєтеся погладити {$target}, але ваша рука проходить крізь холодне нічого, наче там нічого й нема...
 petting-failure-scurret = Ви тягнетеся, щоб погладити {$target}, але {$target} робить сальто назад! Ва-ва!
+petting-failure-headslug = Ви намагаєтеся погладити {$target}, але ваша рука грузне в її плоті.
+petting-failure-elder-headslug = Ви намагаєтеся погладити {$target}, але вона трохи вас не кусає!
 
 ## Petting silicons
 

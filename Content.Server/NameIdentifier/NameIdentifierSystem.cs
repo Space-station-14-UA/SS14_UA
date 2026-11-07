@@ -1,4 +1,4 @@
-﻿using Content.Shared.GameTicking;
+using Content.Shared.GameTicking;
 using Content.Shared.NameIdentifier;
 using Content.Shared.NameModifier.EntitySystems;
 using Robust.Shared.Collections;
@@ -115,7 +115,11 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
         if (proto.IdentifierDataset is not null)
         {
             var identifiers = ProtoMan.Index(proto.IdentifierDataset);
-            formatted = Loc.GetString(identifiers.Values.Prefix+formatted);
+            // Наївний хак для українського перекладу.
+            // Через те, що прикметниками зазвичай користуються миші та слиміль (обидві жіночого роду),
+            // ми можемо просто примусити жіночий рід і подивитись чи зламається щось окреме.
+            // В майбутньому варто читати запис певної сутності, знаходити її ключ в .ftl-файлі та читати атрибут gender.
+            formatted = Loc.GetString(identifiers.Values.Prefix+formatted, ("gender", "female"));
         }
 
         return proto.Format is not null

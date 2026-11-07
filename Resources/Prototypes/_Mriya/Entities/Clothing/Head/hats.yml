@@ -1,0 +1,57 @@
+﻿- type: entity
+  parent: ClothingHeadBase
+  id: MRClothingHeadHatKalap
+  name: калап
+  description: |
+    Традиційний чорний головний убір лемків.
+    Калап тримати — мати незаперечний авторитет у сім'ї.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hats/kalap.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hats/kalap.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: MRClothingHeadHatKresania
+  name: кресаня
+  description: Традиційний чорний капелюх гуцулів, оздоблений різнокольоровими стрічками.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hats/kresania.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hats/kresania.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: MRClothingHeadHatKuchmaBlack
+  name: чорна кучма
+  description: Це ж не було ще!
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hats/kuchma_black.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hats/kuchma_black.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: MRClothingHeadHatVengerskyiKapeliukh
+  name: венгерський капелюх
+  description: Традиційний головний убір бойків, відомий як так званий "венгерський капелюх".
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Head/Hats/vengerskyi_kapeliukh.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Head/Hats/vengerskyi_kapeliukh.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable

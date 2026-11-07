@@ -31,8 +31,8 @@
 
 - type: entity
   id: RandomHumanoidSpawnerDeathSquad
-  name: агент Загону Смерті
-  suffix: ГШРроль, Загін Смерті
+  name: Спецназівець загону смерті
+  suffix: ERTRole, Death Squad
   components:
     - type: Sprite
       sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi

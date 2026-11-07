@@ -1,4 +1,4 @@
-﻿## Species Names
+## Species Names
 
 species-name-human = Людина
 species-name-dwarf = Дворф
@@ -11,6 +11,7 @@ species-name-skeleton = Скелет
 species-name-vox = Вокс
 species-name-gingerbread = смачна випічка
 species-name-vulpkanin = Вульпканін
+species-name-horror = Моторошна потвора
 
 ## Misc species things
 

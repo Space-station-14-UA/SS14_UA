@@ -1,4 +1,4 @@
-﻿advertisement-smite-1 = СМАЙТ! Приборкай свою спрагу!
+advertisement-smite-1 = СМАЙТ! Приборкай свою спрагу!
 advertisement-smite-2 = Неймовірний вибух ароматів лимона та лайму!
 advertisement-smite-3 = Продано понад 1 мільйон напоїв!
 advertisement-smite-4 = СМАЙТ! Кинь 2д8 для визначення ефекту.

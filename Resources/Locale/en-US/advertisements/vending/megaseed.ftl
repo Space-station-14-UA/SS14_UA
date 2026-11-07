@@ -1,4 +1,4 @@
-﻿advertisement-megaseed-1 = Ми любимо рослини!
+advertisement-megaseed-1 = Ми любимо рослини!
 advertisement-megaseed-2 = Виростити кілька культур
 advertisement-megaseed-3 = Рости, крихітко, рости!
 advertisement-megaseed-4 = Так, синку!

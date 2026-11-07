@@ -22,65 +22,6 @@ artifact-effect-hint-polymorph = Трансмогріфікаційна акти
 artifact-effect-hint-magnet = Магнітні хвилі
 artifact-effect-hint-visual = Візуальні спотворення
 
-# the triggers should be more obvious than the effects
-# gives people an idea of what to do: don't be too specific (i.e. no "welders")
-
-artifact-trigger-hint-electricity = Електрика
-artifact-trigger-hint-heat = Високі температури
-artifact-trigger-hint-physical = Фізична травма
-artifact-trigger-hint-tool = Використання інструменту
-artifact-trigger-hint-music = Звукові коливання
-artifact-trigger-hint-water = Гідрореактивний
-artifact-trigger-hint-blood = Реакція з гематологічною рідиною
-artifact-trigger-hint-magnet = Магнітні хвилі
-artifact-trigger-hint-death = Життєва сутність
-artifact-trigger-hint-radiation = Радіація
-artifact-trigger-hint-pressure = Екстремальний тиск
-artifact-trigger-hint-regular-gases = Стандартні атмосферні гази
-artifact-trigger-hint-plasma = Газоподібна плазма
-artifact-trigger-hint-land = Активне гальмування
-artifact-trigger-hint-examine = Вивчення
-artifact-trigger-hint-medical = Терапевтичні хімічні речовини
-
-xenoarch-trigger-tip-music = Гармонійні звукові вібрації
-xenoarch-trigger-tip-heat = Газ високої температури
-xenoarch-trigger-tip-cold = Газ низької температури
-xenoarch-trigger-tip-no-oxygen = Середовище без кисню
-xenoarch-trigger-tip-water = Вода
-xenoarch-trigger-tip-co2 = Вуглекислий газ
-xenoarch-trigger-tip-plasma = Газоподібна плазма
-xenoarch-trigger-tip-tritium = Тритій
-xenoarch-trigger-tip-ammonia = Амоніак
-xenoarch-trigger-tip-n2o = Закис азоту
-xenoarch-trigger-tip-frezon = Фрезон
-xenoarch-trigger-tip-radiation = Важке іонне випромінювання
-xenoarch-trigger-tip-microwave = Мікрохвильове випромінювання
-xenoarch-trigger-tip-brute-damage = Фізичні пошкодження
-xenoarch-trigger-tip-interaction = Фізична взаємодія
-xenoarch-trigger-tip-wrenching = Пригвинчування
-xenoarch-trigger-tip-prying = Відпирання
-xenoarch-trigger-tip-screwing = Закручування
-xenoarch-trigger-tip-pulsing = Імпульс
-xenoarch-trigger-tip-pressure-low = Низький тиск
-xenoarch-trigger-tip-pressure-high = Високий тиск
-xenoarch-trigger-tip-examine = Ретельний огляд
-xenoarch-trigger-tip-timer = Регулярна самоактивація
-xenoarch-trigger-tip-blood = Кров
-xenoarch-trigger-tip-throw = Кидання
-xenoarch-trigger-tip-death = Смерть
-xenoarch-trigger-tip-magnet = Магнітні хвилі
-xenoarch-trigger-tip-money = Хабарництво
-xenoarch-trigger-tip-knowledge = Засвоєння знань
-xenoarch-trigger-tip-carbs = Вживання вуглеводів
-xenoarch-trigger-tip-meat = Вживання білків
-xenoarch-trigger-tip-produce = Вживання корисних продуктів
-xenoarch-trigger-tip-stamp = Бюрократичне схвалення
-xenoarch-trigger-tip-shock = Удар струмом
-xenoarch-trigger-tip-particle = Частинки, що впливають на сингулярність
-xenoarch-trigger-tip-anomparticle = Частинки, що впливають на аномалію
-xenoarch-trigger-tip-stamina-damage = Органічне виснаження
-xenoarch-trigger-tip-laser = Удари високоінтенсивних фотонів
-
 ### Description hints
 xenoarch-trigger-examine-wrenching = Тут обертається ослаблений фрагмент.
 xenoarch-trigger-examine-prying = З поверхні піднімається панель, котру можна чимось піддіти.

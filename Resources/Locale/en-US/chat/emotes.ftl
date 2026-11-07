@@ -38,7 +38,9 @@ chat-emote-name-whine = Скиглити
 chat-emote-name-howl = Вити
 chat-emote-name-growl = Гарчати
 chat-emote-name-flap = Махати крилами
-chat-emote-name-blink = Моргнути
+chat-emote-name-blink = Кліпати
+chat-emote-name-hiss = Шипіти
+chat-emote-name-caw = Каркати
 
 # Message
 chat-emote-msg-scream = кричить!
@@ -58,6 +60,7 @@ chat-emote-msg-snap = ляскає пальцями.
 chat-emote-msg-salute = салютує.
 chat-emote-msg-gasp = задихається.
 chat-emote-msg-deathgasp = захоплює подих, безсило падаючи на підлогу, {POSS-ADJ($entity)} очі порожні і залишені життям...
+chat-emote-msg-deathgasp-kobold = видає слабкий тявк, коли {SUBJECT($entity)} падає та перестає рухатися...
 chat-emote-msg-deathgasp-monkey = верещачи в останнє, {SUBJECT($entity)} осідає на підлогу та бездиханно завмирає
 chat-emote-msg-deathgasp-scurret = видає останнє «ва» і завмирає...
 chat-emote-msg-buzz = дзижчить!
@@ -81,4 +84,6 @@ chat-emote-msg-whine = скиглить.
 chat-emote-msg-howl = виє.
 chat-emote-msg-growl = ричить.
 chat-emote-msg-flap = махає своїми крилами.
-chat-emote-msg-blink = моргає.
+chat-emote-msg-blink = кліпає.
+chat-emote-msg-hiss = шипить!
+chat-emote-msg-caw = каркає.

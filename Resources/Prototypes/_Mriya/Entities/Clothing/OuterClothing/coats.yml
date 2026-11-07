@@ -1,0 +1,31 @@
+﻿- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: MRClothingOuterCoatSardak
+  name: сардак
+  description: Традиційний карпатський верхній одяг, виготовлений із чорного сукна. Оздоблений вишивкою, шнурковим гаптуванням і китицями.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Coats/sardak.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Coats/sardak.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, MRClothingOuterCoatSardak]
+  id: MRClothingOuterCoatSardakOpened
+  name: сардак
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: MRClothingOuterCoatSardakBoikivskyi
+  name: бойківський сардак
+  description: Традиційний верхній одяг бойків, який вирізняється довжиною до колін.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Coats/sardak_boikivskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Coats/sardak_boikivskyi.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, MRClothingOuterCoatSardakBoikivskyi]
+  id: MRClothingOuterCoatSardakBoikivskyiOpened
+  name: бойківський сардак

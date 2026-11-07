@@ -30,5 +30,5 @@
   - type: BlinkDyspraxiaStatusEffect
 
 - type: entity
-  parent: [ MutedStatusEffectBase, TraitStatusEffectBase ]
+  parent: [ MutedStatusEffectBase, TraitStatusEffectBase, ChangelingStatusEffectBase ]
   id: TraitStatusEffectMuted

@@ -78,3 +78,4 @@ research-technology-bluespace-cargo-transport = Блюспейс транспо�
 research-technology-clowning-utilities = Клоунські приблуди
 research-technology-quantum-fiber-weaving = Квантове плетіння волокон
 research-technology-bluespace-chemistry = Блюспейс хімія
+research-technology-packaged-lights = Ефективне виробництво ламп
