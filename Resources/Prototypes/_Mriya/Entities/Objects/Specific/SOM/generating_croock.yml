@@ -1,0 +1,127 @@
+# тут усілякі костилі зі спавнерами аби С.О.М працював
+
+- type: entity
+  id: MRRandomCrypto
+  name: Генерація випадкової криптовалюти
+  parent: MRRandomSpawnerBase
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Specific/crypto.rsi
+    state: coin_gold
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        weight: 100
+        prob: 1
+        children:
+        - id: MREballSpawner
+        - id: MRPotujnoCoinSpawner
+        
+- type: entity
+  id: MRRandomDisk
+  name: Генерація випадкової дати досліджень
+  parent: MRRandomSpawnerBase
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Research/researchdisk.rsi
+    state: icon
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        weight: 100
+        prob: 1
+        children:
+        - id: MRResearchDisk4000Spawner
+        - id: MRResearchDisk696Spawner
+        - id: MRResearchDisk-500Spawner
+
+# спавнери столів
+
+- type: entity
+  parent: MarkerBase
+  name: спавнер є-балів
+  id: MREballSpawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotEballTable
+        
+- type: entity
+  parent: MarkerBase
+  name: спавнер потужно коінів
+  id: MRPotujnoCoinSpawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotPotujnoCoinTable
+      
+- type: entity
+  parent: MarkerBase
+  name: спавнер дисків 4000 поінтів
+  id: MRResearchDisk4000Spawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotResearchDisk4000Table
+
+- type: entity
+  parent: MarkerBase
+  name: спавнер дисків 696 поінтів
+  id: MRResearchDisk696Spawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotResearchDisk696Table
+
+- type: entity
+  parent: MarkerBase
+  name: спавнер дисків -500 поінтів
+  id: MRResearchDisk-500Spawner
+  components:
+  - type: EntityTableSpawner
+    offset: 0.2
+    table: !type:NestedSelector
+      tableId: MRHotResearchDisk-500Table
+
+# столи 
+       
+- type: entityTable
+  id: MRHotEballTable
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MREball
+    
+- type: entityTable
+  id: MRHotPotujnoCoinTable
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MRPotujnoCoin
+    
+- type: entityTable
+  id: MRHotResearchDisk4000Table
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MRResearchDisk4000
+    
+- type: entityTable
+  id: MRHotResearchDisk696Table
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MRResearchDisk696
+
+- type: entityTable
+  id: MRHotResearchDisk-500Table
+  table: !type:AllSelector
+    children:
+    - id: MRGasBurstHotCO2
+    - id: MRResearchDisk-500

@@ -1,0 +1,47 @@
+- type: entity
+  id: MRSOMSuperComputingBlock
+  parent: BaseMachineCircuitboard
+  name: супер обчислювальний блок
+  description: Надзвичайно складний та потужний обчислювальний блок, який запихканий усілякою електронікою. Є необхідним для будови супер обчислювальної машини, та має написану інструкцію по її побудові на ньому.
+  components:
+    - type: Sprite
+      sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+      state: super_computing_block
+    - type: Item
+      size: Normal
+    - type: MachineBoard
+      prototype: MRSOM
+      stackRequirements:
+        Manipulator: 10
+        Glass: 20
+        Steel: 30
+        Plasma: 10
+        Cable: 30
+        CableHV: 30
+    - type: Tag
+      tags:
+      - MRSOMSuperComputingBlock
+
+- type: entity
+  id: MRSOMSuperComputingBlockUpgraded
+  parent: BaseMachineCircuitboard
+  name: покращений супер обчислювальний блок
+  description: Надзвичайно складний та потужний покращений обчислювальний блок, який запихканий усілякою електронікою. Є необхідним для будови супер обчислювальної машини, та має написану інструкцію по її побудові на ньому.
+  components:
+    - type: Sprite
+      sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+      state: super_computing_block_upgaded
+    - type: Item
+      size: Normal
+    - type: MachineBoard
+      prototype: MRSOMUpgraded
+      stackRequirements:
+        Manipulator: 10
+        Glass: 20
+        Steel: 30
+        Plasma: 10
+        Cable: 30
+        CableHV: 30
+    - type: Construction
+      graph: MRSOMUpgrade
+      node: somUpgradedBlock
