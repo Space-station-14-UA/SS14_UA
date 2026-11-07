@@ -1,18 +1,38 @@
 - type: entity
   abstract: true
-  parent: ClothingNeckBase
-  id: ClothingNeckMedalBase
+  parent: [SolutionFood, SolutionToolSmall, Clothing]
+  id: ClothingMedalBase
   name: medal
-  description: A medal to show your mettle. May or may not be made of metal.
+  description: A medal to show your mettle. May or may not be made out of metal.
   components:
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: true
+    slots:
+    - neck
+  - type: Sprite
+    state: icon
+  - type: PhysicalComposition # 50% of the amount of cloth you'd obtain upon butchering
+    materialComposition:
+      Cloth: 100
+  - type: Edible
+    requiresSpecialDigestion: true
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
   - type: Tag
     tags:
-      - Medal
-      - MonkeyWearable
-      - WhitelistChameleon
+    - Medal
+    - MonkeyWearable
+    - ClothMade
+    - Recyclable
+    - WhitelistChameleon
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckBronzeheart
   name: медаль бронзового серця
   description: Нею нагороджують членів екіпажу за взірцеву хоробрість перед обличчям небезпеки.
@@ -23,7 +43,7 @@
     sprite: Clothing/Neck/Medals/bronzeheart.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckGoldmedal
   name: золота медаль екіпажу
   description: Надається членам екіпажу, які демонструють чудову майстерність.
@@ -33,10 +53,11 @@
   - type: Clothing
     sprite: Clothing/Neck/Medals/gold.rsi
   - type: StealTarget
-    stealGroup: ClothingNeckGoldmedal
+    stealGroup:
+    - ClothingNeckGoldmedal
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckCargomedal
   name: медаль карго
   description: Вручається за кращу роботу в вантажному відділі.
@@ -47,7 +68,7 @@
     sprite: Clothing/Neck/Medals/cargomedal.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckEngineermedal
   name: медаль інженера
   description: Вручається за кращу роботу в інженерному відділі.
@@ -58,7 +79,7 @@
     sprite: Clothing/Neck/Medals/engineermedal.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckMedicalmedal
   name: медаль медика
   description: Вручається за кращі досягнення в медичному відділі.
@@ -69,7 +90,7 @@
     sprite: Clothing/Neck/Medals/medicalmedal.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckSciencemedal
   name: медаль науковця
   description: Вручається за найбільший вклад у розвиток науки!
@@ -80,7 +101,7 @@
     sprite: Clothing/Neck/Medals/sciencemedal.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckSecuritymedal
   name: медаль охоронця
   description: Вручається за найбільшу кількість побиттів клоу... Тобто за найкращу роботу у відділі СБ!
@@ -91,7 +112,7 @@
     sprite: Clothing/Neck/Medals/securitymedal.rsi
 
 - type: entity
-  parent: ClothingNeckMedalBase
+  parent: ClothingMedalBase
   id: ClothingNeckClownmedal
   name: медаль клоуна
   description: Вручається за найкращий жарт у всесвіті!
@@ -101,4 +122,5 @@
   - type: Clothing
     sprite: Clothing/Neck/Medals/clownmedal.rsi
   - type: StealTarget
-    stealGroup: ClothingNeckClownmedal
+    stealGroup:
+    - ClothingNeckClownmedal

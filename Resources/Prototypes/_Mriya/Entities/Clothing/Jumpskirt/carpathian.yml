@@ -1,0 +1,55 @@
+﻿- type: entity
+  parent: ClothingUniformSkirtBase
+  id: MRClothingUniformJumpskirtBoiko
+  name: бойківська жіноча ноша
+  description: "Традиційний жіночий одяг бойкинь: вишита сорочка та спідниця з вовняним фартухом, прив'язана поясом."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/boiko_jumpskirt.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/boiko_jumpskirt.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: MRClothingUniformJumpskirtDolynanBorzhavskyi
+  name: долинянсько-боржавська жіноча ноша
+  description: "Традиційний жіночий одяг долинян Боржавської долини: вишита сорочка з косицями та синьою подалкою, оздобленою рослинним орнаментом."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/dolynan_borzhavskyi_jumpskirt.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/dolynan_borzhavskyi_jumpskirt.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: MRClothingUniformJumpskirtHutsul
+  name: гуцульська жіноча ноша
+  description: "Традиційний жіночий одяг гуцулок: вишита сорочка та спідниця з двома запасками — спереду й ззаду, підперезана тканим поясом."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/hutsul_jumpskirt.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/hutsul_jumpskirt.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: MRClothingUniformJumpskirtLemko
+  name: лемківська жіноча ноша
+  description: "Традиційний жіночий одяг лемкинь: вишита сорочка зі спідником, поверх якого кабат, а спереду — запаска."
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/lemko_jumpskirt.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Uniforms/Jumpskirt/lemko_jumpskirt.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable

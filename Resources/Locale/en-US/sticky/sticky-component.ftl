@@ -1,4 +1,4 @@
-﻿# Bomb planting strings
+# Bomb planting strings
 
 comp-sticky-start-stick-bomb = Ви починаєте встановлювати бомбу...
 comp-sticky-success-stick-bomb = Ви встановили бомбу

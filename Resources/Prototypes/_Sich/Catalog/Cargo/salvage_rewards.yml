@@ -14,7 +14,7 @@
   id: SichCargoIHSHarduit
   icon:
     sprite: _Sich/Clothing/Head/Hardsuits/IHS.rsi
-    state: icon-flash
+    state: icon
   product: SichCrateIHSHarduit
   cost: 20000
   category: cargoproduct-category-name-cargo

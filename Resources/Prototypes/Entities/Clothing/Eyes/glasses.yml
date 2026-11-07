@@ -1,4 +1,15 @@
 - type: entity
+  abstract: true
+  parent: BaseScrewingRefinable
+  id: ClothingEyesGlassesBase
+  components:
+  - type: ToolRefinable
+    refineResult:
+    - id: GlassLens
+      amount: 2
+    - id: PartRodMetal1
+
+- type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGar
   name: окуляри виклику
@@ -34,7 +45,7 @@
         Blunt: 10
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: ClothingEyesGlassesGarOrange
   id: ClothingEyesGlassesGarGiga
   name: гіга-окуляри прогресу
   description: Ми еволюціонуємо з кожною хвилиною, просуваючись вперед, крок за кроком. Так, як працює бур!
@@ -47,10 +58,6 @@
     equippedPrefix: super
   - type: Item
     heldPrefix: super
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 10
 
 - type: entity
   parent: [ClothingEyesBase, BaseEngineeringContraband]
@@ -71,7 +78,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ClothingEyesGlassesBase]
   id: ClothingEyesGlasses
   name: окуляри
   description: Пара ефектних окулярів з рецептурними лінзами.
@@ -87,7 +94,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ClothingEyesGlassesBase]
   id: ClothingEyesGlassesJensen
   name: окуляри "Дженсен"
   description: Пара складаних окулярів у жовтому тонованому корпусі. Ти їх ніколи не просив.
@@ -101,7 +108,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ClothingEyesGlassesBase]
   id: ClothingEyesGlassesJamjar
   name: Ретро-окуляри
   description: Ці ретро-окуляри нагадують вам про простіші часи.
@@ -117,7 +124,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ClothingEyesGlassesBase]
   id: ClothingEyesGlassesOutlawGlasses
   name: окуляри порушника
   description: Обов'язкова річ для кожного агента під прикриттям, що себе поважає.
@@ -132,7 +139,7 @@
     price: 500
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ClothingEyesGlassesBase]
   id: ClothingEyesGlassesCheapSunglasses
   name: дешеві сонцезахисні окуляри
   description: Пара чорних сонцезахисних окулярів. Погано блокують світло, скоріше аксесуар, ніж щось корисне.
@@ -150,14 +157,11 @@
     coverage: EYES
 
 - type: entity
-  parent: ClothingEyesGlassesCheapSunglasses
+  parent: [ClothingEyesGlassesCheapSunglasses, ClothingEyesSunglassesBase]
   id: ClothingEyesGlassesSunglasses
   name: сонцезахисні окуляри
   description: Пара чорних сонцезахисних окулярів.
   components:
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
   - type: Tag
     tags:
     - Sunglasses
@@ -166,7 +170,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesSunglassesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesSecurity
   name: службові окуляри
   description: Оновлені сонцезахисні окуляри, які забезпечують захист від спалахів та надають можливість використання службового ПД
@@ -175,9 +179,6 @@
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
   - type: Construction
     graph: GlassesSecHUD
     node: glassesSec
@@ -190,11 +191,9 @@
     guides:
     - Security
     - Antagonists
-  - type: IdentityBlocker
-    coverage: EYES
 
 - type: entity
-  parent: [ClothingEyesBase, BaseCommandContraband]
+  parent: [ClothingEyesSunglassesBase, BaseCommandContraband]
   id: ClothingEyesGlassesCommand
   name: адміністративні окуляри
   description: Оновлені сонцезахисні окуляри, які забезпечують захист від спалахів і показують статус ID-картки.
@@ -203,20 +202,15 @@
     sprite: Clothing/Eyes/Glasses/commandglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/commandglasses.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
   - type: Tag
     tags:
     - HamsterWearable
     - PetWearable
     - WhitelistChameleon
-  - type: IdentityBlocker
-    coverage: EYES
   - type: ShowJobIcons
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: ClothingEyesSunglassesBase
   id: ClothingEyesGlassesMercenary
   name: окуляри найманця
   description: Бойові окуляри, створені для захисту очей від яскравих сліпучих спалахів.
@@ -225,11 +219,6 @@
     sprite: Clothing/Eyes/Glasses/mercglasses.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/mercglasses.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
-  - type: IdentityBlocker
-    coverage: EYES
 
 #Make a scanner category when these actually function and we get the trayson
 - type: entity
@@ -282,7 +271,7 @@
   - type: FlashImmunity
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesSunglassesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesNoir
   name: окуляри нуар-тех
   description: Пара окулярів, що імітують те, як виглядав світ до появи кольору.
@@ -291,11 +280,6 @@
     sprite: Clothing/Eyes/Glasses/noir.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
-  - type: IdentityBlocker
-    coverage: EYES
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
   - type: NoirOverlay
   - type: Tag
     tags:

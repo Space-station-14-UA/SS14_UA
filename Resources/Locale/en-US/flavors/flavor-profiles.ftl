@@ -12,6 +12,7 @@ flavor-base-savory = пікантно
 flavor-base-sweet = солодко
 flavor-base-salty = солоно
 flavor-base-sour = кисло
+flavor-base-earthy = землісто
 flavor-base-bitter = гірко
 flavor-base-spicy = гостро
 flavor-base-metallic = металево

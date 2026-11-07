@@ -68,7 +68,8 @@
     tags:
     - HighRiskItem
   - type: StealTarget
-    stealGroup: Hypospray
+    stealGroup:
+    - Hypospray
   - type: SolutionContainerVisuals
     maxFillLevels: 6
     fillBaseName: hypo_fill
@@ -259,7 +260,7 @@
   parent: ChemicalMedipen
   id: AntiPoisonMedipen
   name: протиотрутний медіпен
-  description: Швидка доза протиотрути. Містить ультраваскулін і адреналін.
+  description: Одноразовий автоін'єктор неповторного використання, що містить стелібінін та епінефрин, використовується для швидкого та легкого лікування отруєнь.
   components:
   - type: Item
     inhandVisuals:
@@ -285,7 +286,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: Ultravasculine
+      - ReagentId: Stellibinin
         Quantity: 15
       - ReagentId: Epinephrine
         Quantity: 5
@@ -294,7 +295,7 @@
   parent: ChemicalMedipen
   id: BruteAutoInjector
   name: протисинцевий медіпен
-  description: Швидка доза бікарідину та транексамової кислоти, призначена для бойових застосувань.
+  description: Одноразовий автоін'єктор неповторного використання, що містить поліпририлій та транексамову кислоту, використовується для швидкого та легкого лікування простих фізичних травм. Зазвичай використовується як бойова медицина.
   components:
   - type: Item
     inhandVisuals:
@@ -320,7 +321,7 @@
   - type: Solution
     solution:
       reagents:
-      - ReagentId: Bicaridine
+      - ReagentId: PolypyryliumOligomers
         Quantity: 15
       - ReagentId: TranexamicAcid
         Quantity: 5

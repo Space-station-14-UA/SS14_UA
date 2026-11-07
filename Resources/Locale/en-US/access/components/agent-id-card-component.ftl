@@ -6,7 +6,7 @@ agent-id-new = { $number ->
 
 agent-id-open-ui-verb = Змінити налаштування
 
-agent-id-ui-menu-title = ID-картка агента
+agent-id-ui-menu-title = Деталі ID-картки
 agent-id-ui-tab-settings = Налаштування
 agent-id-ui-tab-job-icons = Іконки професій
 

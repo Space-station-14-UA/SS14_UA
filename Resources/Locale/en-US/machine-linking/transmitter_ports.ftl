@@ -19,6 +19,9 @@ signal-port-description-right = Цей порт активується, коли
 signal-port-name-doorstatus = Статус двері
 signal-port-description-doorstatus = Подає ВИСОКИЙ сигнал при відкритті дверей і НИЗЬКИЙ при повному закритті.
 
+signal-port-name-doorboltstatus = Стан болтів дверей
+signal-port-description-doorboltstatus = Цей порт активується зі значенням HIGH, коли двері заблоковані болтами, і LOW, коли вони розблоковані.
+
 signal-port-name-dockstatus = Стан доків
 signal-port-description-dockstatus = Подає ВИСОКИЙ сигнал коли пристикований й малий НИЗЬКИЙ коли відстикований.
 
@@ -37,11 +40,11 @@ signal-port-description-timer-start = Цей порт активується, к
 signal-port-name-logic-output = Вивід
 signal-port-description-logic-output = Цей порт активується за високим або низьким сигналом залежно від обраної брами та її входів.
 
-signal-port-name-logic-output-high = Зростаючий  сигнал
-signal-port-description-logic-output-high = Цей порт активується, коли на вході спостерігається зростаючий імпульс.
+signal-port-name-logic-output-high = Високий вихід
+signal-port-description-logic-output-high = Цей порт активується щоразу, коли вхідний сигнал має наростаючий фронт.
 
-signal-port-name-logic-output-low = Спадаючий
-signal-port-description-logic-output-low = Цей порт активується, коли на вході спостерігається спадаючий імпульс.
+signal-port-name-logic-output-low = Низький вихід
+signal-port-description-logic-output-low = Цей порт активується щоразу, коли вхідний сигнал має спадний фронт.
 
 signal-port-name-air-danger = Небезпека
 signal-port-description-air-danger = Цей порт активує ВИСОКИЙ сигнал в режимі небезпеки або НИЗЬКИЙ при її відсутності.

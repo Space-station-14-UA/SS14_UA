@@ -343,6 +343,9 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #Chief Engineer's Hardsuit
 - type: entity
@@ -381,6 +384,9 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #Chief Medical Officer's Hardsuit
 - type: entity
@@ -412,6 +418,9 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #Research Director's Hardsuit
 - type: entity
@@ -456,7 +465,9 @@
   - type: StaticPrice
     price: 750
   - type: StealTarget
-    stealGroup: ClothingOuterHardsuitRd
+    stealGroup:
+    - ClothingOuterHardsuitRd
+    - HeadHardsuit
 
 #Head of Security's Hardsuit
 - type: entity
@@ -489,6 +500,9 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -849,7 +863,7 @@
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndieCommander ]
   id: ClothingOuterHardsuitERTLeader
   name: скафандр лідера ГШР
   description: Захистний скафандр для керівника Групи Швидкого Реагування
@@ -864,10 +878,13 @@
     - 0,0,3,3
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #ERT Chaplain Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndie ]
   id: ClothingOuterHardsuitERTChaplain
   name: скафандр капелана ГШР
   description: Захисний скафандр для капелана Групи Швидкого Реагування. Ніхто не зможе перемогти тебе, коли на твоєму боці бог.
@@ -882,10 +899,13 @@
     - 0,0,3,3
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #ERT Engineer Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTEngineer
   name: скафандр інженера ГШР
   description: Захистний скафандр для інженера Групи Швидкого Реагування. Ідеально підходить до випадків коли треба виправити наслідки чиєїсь халатності
@@ -902,10 +922,13 @@
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
   - type: FireProtection
     reduction: 0.8
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #ERT Medic Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieMedic ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndieMedic ]
   id: ClothingOuterHardsuitERTMedical
   name: скафандр медика ГШР
   description: Захистний скафандр для лікаря Групи Швидкого Реагування.
@@ -920,10 +943,13 @@
     - 0,0,3,3
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #ERT Security Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndie ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndie ]
   id: ClothingOuterHardsuitERTSecurity
   name: скафандр охоронця ГШР
   description: Захистний скафандр для охоронців Групи Швидкого Реагування
@@ -942,10 +968,13 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #ERT Janitor Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
+  parent: [ BaseTaskForceContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTJanitor
   name: скафандр прибиральника ГШР
   description: Захистний скафандр для прибиральника Групи Швидкого Реагування. Певно, найкорисніший серед скафандрів ГШР.
@@ -960,10 +989,13 @@
     - 0,0,3,3
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #Deathsquad
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
+  parent: [ BaseDeathSquadContraband, ClothingOuterHardsuitBase ]
   id: ClothingOuterHardsuitDeathsquad
   name: скафандр загону смерті
   description: Удосконалений скафандр, найкращий вибір коммандос для використання в спецопераціях НТ. У теорії в ньому можна пережити ядерний вибух.
@@ -1001,10 +1033,13 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: StealTarget
+    stealGroup:
+    - HeadHardsuit
 
 #CBURN Hardsuit
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
+  parent: [ BaseCBURNContraband, ClothingOuterHardsuitBase ]
   id: ClothingOuterHardsuitCBURN
   name: екзокостюм РХБЗ
   description: Легкий, але міцний екзокостюм, який використовується бійцями групи Радіаційного Хімічного Біологічного Захисту.

@@ -102,6 +102,8 @@ ghost-role-information-salvage-carp-description = Захистіть здоби�
 ghost-role-information-sentient-carp-name = Портальний короп
 ghost-role-information-sentient-carp-description = Допоможіть дракону захопити станцію, рядовий короп!
 
+ghost-role-information-sentient-sharkminnow-name = Розумна акула-міноу
+
 ghost-role-information-willow-name = кенгуру Віллоу
 ghost-role-information-willow-description = Ви кенгуру на ім'я Віллоу! Віллоу подобається боксувати.
 
@@ -216,20 +218,20 @@ ghost-role-information-space-ninja-name = Космічний ніндзя
 ghost-role-information-space-ninja-description = Використовуйте скритність і обман, щоб диверсувати станцію.
 
 ghost-role-information-paradox-clone-name = Парадоксальний Клон
-ghost-role-information-paradox-clone-description = Дивна аномалія простору-часу телепортувала вас в іншу реальність! Тепер вам потрібно знайти свого двійника, вбити його та зайняти його місце.
+ghost-role-information-paradox-clone-description = Химерна просторово-часова аномалія викинула вас у іншу реальність! Убийте та замініть версію себе з цієї реальності.
 
 ghost-role-information-syndicate-reinforcement-name = Агент Синдикату
 ghost-role-information-syndicate-reinforcement-description = Хтось потребує підкріплення. Ви, перший, кого зможе знайти синдикат, допоможете їм.
 ghost-role-information-syndicate-reinforcement-rules = Ви [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] з агентом, який вас викликав.
+
+ghost-role-information-syndicate-reinforcement-medic-name = Медик Синдикату
+ghost-role-information-syndicate-reinforcement-medic-description = Комусь потрібне підкріплення. Ваше завдання - зберегти життя агенту, який вас викликав.
 
 ghost-role-information-syndicate-reinforcement-spy-name = Шпигун Синдикату
 ghost-role-information-syndicate-reinforcement-spy-description = Комусь потрібне підкріплення. Твоя спеціальність - шпигунство, не дай себе викрити.
 
 ghost-role-information-syndicate-reinforcement-thief-name = Крадій Синдикату
 ghost-role-information-syndicate-reinforcement-thief-description = Комусь потрібне підкріплення. Ваше завдання - проникнути всередину і забрати щось цінне для свого агента.
-
-ghost-role-information-syndicate-reinforcement-medic-name = Медик Синдикату
-ghost-role-information-syndicate-reinforcement-medic-description = Комусь потрібне підкріплення. Ваше завдання - зберегти життя агенту, який вас викликав.
 
 ghost-role-information-nukeop-reinforcement-name = Ядерний оперативник
 ghost-role-information-nukeop-reinforcement-description = Ядерним оперативникам потрібне підкріплення. Ти, агент резерву, допоможеш їм.
@@ -344,7 +346,10 @@ ghost-role-information-xenoborg-name = Ксеноборг
 ghost-role-information-xenoborg-desc = Дивний кіборг, створений для самовідтворення та захоплення станції шляхом перетворення будь-якої розумної істоти на ксеноборгів.
 
 ghost-role-information-wizard-name = Чарівник
-ghost-role-information-wizard-desc = ВИ ЧАРІВНИК! Покажіть станції, з чого складається ваша магія.
+ghost-role-information-wizard-desc = Ви член Федерації Космічних Магів, відправлений для того, щоб змусити станцію тремтіти перед вашою арканною могутністю.
 
 ghost-role-information-emotional-support-scurret-name = Емоційний підтримуючий скіррет
 ghost-role-information-emotional-support-scurret-description = Підтримуй екіпаж, будь милим і часто кажи "ва".
+
+ghost-role-information-space-changeling-name = Древній головний слизень
+ghost-role-information-space-changeling-description = Дорослий головний слизень генокрада, який прагне асимілювати членів екіпажу та готовий ховатися на станції. Цей слизень особливо крихкий, тому йому потрібно знайти мертве тіло, щоб набути гуманоїдного вигляду.

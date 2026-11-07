@@ -218,7 +218,7 @@
     sprite: Clothing/Belt/militarywebbingmed.rsi
 
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingBeltMilitaryWebbing ]
+  parent: [ BaseTaskForceContraband, ClothingBeltMilitaryWebbing ]
   id: ClothingBeltMilitaryWebbingERT
   name: розвантажувальний жилет ГШР
   description: Комплект тактичних ремінних систем, який носять оперативники групи швидкого реагування

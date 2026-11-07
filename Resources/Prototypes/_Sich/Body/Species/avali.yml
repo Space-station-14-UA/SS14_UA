@@ -302,6 +302,9 @@
     data:
       sprite: _Sich/Mobs/Species/Avali/parts.rsi
       state: eyes
+  - type: EyeBlinking
+    eyelidsSprite: /Textures/_Sich/Mobs/Species/Avali/parts.rsi
+  - type: Appearance
 
 - type: entity
   parent: [ OrganBaseTongue, OrganAvaliInternal ]

@@ -1,0 +1,5 @@
+- type: entity
+  parent: ActionToggleNightVision
+  id: MRActionToggleNightVision
+  name: перемкнути нічне бачення
+  description: Вмикає або вимикає прилад нічного бачення.

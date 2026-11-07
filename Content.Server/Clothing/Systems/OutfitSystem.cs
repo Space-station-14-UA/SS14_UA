@@ -1,8 +1,10 @@
-﻿using Content.Server.Hands.Systems;
+using Content.Server.Hands.Systems;
+using Content.Server.Mriya.Sponsors;
 using Content.Server.Preferences.Managers;
 using Content.Server.Storage.EntitySystems;
 using Content.Shared.Access.Components;
 using Content.Shared.Clothing;
+using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.Components;
 using Content.Shared.Humanoid;
 using Content.Shared.Interaction.Components;
@@ -12,9 +14,10 @@ using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Station;
-using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Station.Systems;
 using Content.Shared.Storage;
 using Robust.Shared.Player;
+using System.Linq;
 
 namespace Content.Server.Clothing.Systems;
 
@@ -23,9 +26,11 @@ public sealed partial class OutfitSystem : EntitySystem
     [Dependency] private IServerPreferencesManager _preferenceManager = default!;
     [Dependency] private HandsSystem _handSystem = default!;
     [Dependency] private InventorySystem _invSystem = default!;
-    [Dependency] private SharedStationSpawningSystem _spawningSystem = default!;
+    [Dependency] private StationSpawningSystem _spawningSystem = default!;
     [Dependency] private ItemSlotsSystem _itemSlotsSystem = default!;
     [Dependency] private StorageSystem _storageSystem = default!;
+
+    [Dependency] private ISponsorManager _sponsorManager = default!;
 
     public bool SetOutfit(EntityUid target, string gear, Action<EntityUid, EntityUid>? onEquipped = null, bool unremovable = false)
     {
@@ -43,7 +48,7 @@ public sealed partial class OutfitSystem : EntitySystem
             session = actorComponent.PlayerSession;
             var userId = actorComponent.PlayerSession.UserId;
             var prefs = _preferenceManager.GetPreferences(userId);
-            profile = prefs.SelectedCharacter as HumanoidCharacterProfile;
+            profile = prefs.SelectedCharacter;
         }
 
         if (_invSystem.TryGetSlots(target, out var slots))
@@ -132,10 +137,63 @@ public sealed partial class OutfitSystem : EntitySystem
                 roleLoadout.SetDefault(profile, session, ProtoMan);
             }
 
+            var sanitizedLoadout = SanitizeRoleLoadout(target, roleLoadout, jobProto);
+
             // Equip the target with the job loadout
-            _spawningSystem.EquipRoleLoadout(target, roleLoadout, jobProto);
+            _spawningSystem.EquipRoleLoadout(target, sanitizedLoadout, jobProto);
         }
 
         return true;
+    }
+
+    private RoleLoadout SanitizeRoleLoadout(EntityUid entity, RoleLoadout loadout, RoleLoadoutPrototype roleProto)
+    {
+        var sanitized = new RoleLoadout(loadout.Role)
+        {
+            EntityName = loadout.EntityName,
+            Points = loadout.Points
+        };
+
+        foreach (var (groupKey, items) in loadout.SelectedLoadouts)
+        {
+            // Перевіряємо, чи належить група до цього прототипу
+            if (!roleProto.Groups.Contains(groupKey))
+                continue;
+
+            var validItems = new List<Loadout>();
+
+            foreach (var item in items)
+            {
+                if (!ProtoMan.TryIndex(item.Prototype, out var loadoutProto))
+                {
+                    Log.Error($"Unable to find loadout prototype for {item.Prototype}");
+                    continue;
+                }
+
+                if (!IsLoadoutAllowed(entity, loadoutProto))
+                    continue;
+
+                validItems.Add(item);
+            }
+
+            if (validItems.Count > 0)
+            {
+                sanitized.SelectedLoadouts[groupKey] = validItems;
+            }
+        }
+
+        return sanitized;
+    }
+
+    private bool IsLoadoutAllowed(EntityUid entity, LoadoutPrototype proto)
+    {
+        if (string.IsNullOrEmpty(proto.SponsorTag))
+            return true;
+
+        if (!TryComp<ActorComponent>(entity, out var actor))
+        {
+            return true;
+        }
+        return _sponsorManager.HasTag(actor.PlayerSession.UserId, proto.SponsorTag);
     }
 }

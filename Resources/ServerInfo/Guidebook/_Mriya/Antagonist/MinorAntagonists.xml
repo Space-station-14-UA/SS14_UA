@@ -67,7 +67,7 @@
 
   <Box>
     <GuideEntityEmbed Entity="MobAdultSlimesBlueAngry" Caption=""/>
-    <GuideEntityEmbed Entity="MobGiantSpiderAngry" Caption=""/>
+    <GuideEntityEmbed Entity="MobGiantSpiderTarantulaAngry" Caption=""/>
   </Box>
 
   Слизняки та павуки не мають жодних примітних особливостей, але час від часу [color=cyan]захоплюватимуть станцію[/color] попри це. І ті, й інші переслідуватимуть і атакуватимуть усе, що побачать.

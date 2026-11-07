@@ -4,22 +4,22 @@
   Нанотрейзен наймають різноманітні види розумних істот.
 
   <Box>
-  <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Арахнід"/>
-  <GuideEntityEmbed Entity="AppearanceDiona" Caption="Діона"/>
-  <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Дворф"/>
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Людина"/>
-  <GuideEntityEmbed Entity="AppearanceMoth" Caption="Ніана"/>
-  <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Унатх"/>
+    <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
+    <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
+    <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
+    <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
+    <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Слайм-персона"/>
-  <GuideEntityEmbed Entity="AppearanceVox" Caption="Вокс"/>
-  <GuideEntityEmbed Entity="AppearanceIPC" Caption="ІПШ"/>
-  <GuideEntityEmbed Entity="AppearanceTajara" Caption="Таяран"/>
-  <GuideEntityEmbed Entity="AppearanceAvali" Caption="Авалі"/>
-  </Box>
-  <Box>
+    <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
+    <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
+    <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
     <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="AppearanceIPC" Caption="ІПШ"/>
+    <GuideEntityEmbed Entity="AppearanceTajara" Caption="Таяран"/>
+    <GuideEntityEmbed Entity="AppearanceAvali" Caption="Авалі"/>
   </Box>
 
 </Document>

@@ -1,117 +1,117 @@
 # Chaos Inc.
 
-- type: startingGear
-  id: SichChaosIncRespentativeGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitLawyerBlack
-    back: ClothingBackpackSatchelHolding
-    shoes: ClothingShoesBootsCombatFilled
-    head: SichClothingHeadHatChaosIncBeret
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: SichClothingOuterCoatChaosIncTrench
-    id: SichCIRespentativeIDCard
-    ears: ClothingHeadsetAltCentCom
-    belt: WeaponTaser
-    pocket1: WeaponPulsePistol
-    pocket2: FlashlightSeclite
+#- type: startingGear
+#  id: SichChaosIncRespentativeGear
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+#    back: ClothingBackpackSatchelHolding
+#    shoes: ClothingShoesBootsCombatFilled
+#    head: SichClothingHeadHatChaosIncBeret
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: SichClothingOuterCoatChaosIncTrench
+#    id: SichCIRespentativeIDCard
+#    ears: ClothingHeadsetAltCentCom
+#    belt: WeaponTaser
+#    pocket1: WeaponPulsePistol
+#    pocket2: FlashlightSeclite
 
-- type: startingGear
-  id: SichChaosIncOperative
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingBackpackHolding
-    shoes: ClothingShoesBootsMagAdv
-    mask: ClothingMaskGasSwat
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    suitstorage: AirTankFilled
-    id: ERTSecurityPDA
-    ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltChiefEngineerFilled
-    pocket1: WeaponPulsePistol
-    pocket2: FlashlightSeclite
+#- type: startingGear
+#  id: SichChaosIncOperative
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitTacticool
+#    back: ClothingBackpackHolding
+#    shoes: ClothingShoesBootsMagAdv
+#    mask: ClothingMaskGasSwat
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    suitstorage: AirTankFilled
+#    id: ERTSecurityPDA
+#    ears: ClothingHeadsetAltCentCom
+#    belt: ClothingBeltChiefEngineerFilled
+#    pocket1: WeaponPulsePistol
+#    pocket2: FlashlightSeclite
     
 #SolFed and Co.
 
-- type: startingGear
-  id: SichSolFedPoliceGear
-  equipment:
-    jumpsuit: SichClothingUniformJumpsuitSolFed
-    back: ClothingBackpackSecurity
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: SichClothingOuterHardsuitSolFed
-    id: SichSolFedOfficerIDCard
-    ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPulsePistol
-    pocket2: FlashlightSeclite
+#- type: startingGear
+#  id: SichSolFedPoliceGear
+#  equipment:
+#    jumpsuit: SichClothingUniformJumpsuitSolFed
+#    back: ClothingBackpackSecurity
+#    shoes: ClothingShoesBootsCombatFilled
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: SichClothingOuterHardsuitSolFed
+#    id: SichSolFedOfficerIDCard
+#    ears: ClothingHeadsetAltCentCom
+#    belt: ClothingBeltSecurityFilled
+#    pocket1: WeaponPulsePistol
+#    pocket2: FlashlightSeclite
     
-- type: startingGear
-  id: SichSBUSNGear
-  equipment:
-    jumpsuit: SichClothingUniformJumpsuitSolFed
-    back: ClothingBackpackSecurity
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: SichClothingOuterHardsuitUkraine
-    id: SichSBUSNIDCard
-    ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPulsePistol
-    pocket2: FlashlightSeclite
+#- type: startingGear
+#  id: SichSBUSNGear
+#  equipment:
+#    jumpsuit: SichClothingUniformJumpsuitSolFed
+#    back: ClothingBackpackSecurity
+#    shoes: ClothingShoesBootsCombatFilled
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: SichClothingOuterHardsuitUkraine
+#    id: SichSBUSNIDCard
+#    ears: ClothingHeadsetAltCentCom
+#    belt: ClothingBeltSecurityFilled
+#    pocket1: WeaponPulsePistol
+#    pocket2: FlashlightSeclite
 
 #CIA NT
 
-- type: startingGear
-  id: SichCIAAgentGear
-  equipment:
-    jumpsuit: SichClothingUniformJumpsuitCIAAgent
-    back: ClothingBackpackSatchelHolding
-    shoes: ClothingShoesBootsCombatFilled
-    head: SichClothingHeadHatCIABeret
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorBasic
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentCom
-    belt: WeaponTaser
-    pocket1: WeaponPulsePistol
-    pocket2: BoxFolderBlack
-    
-- type: startingGear
-  id: SichDeathShadowOperative
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingBackpackDeathSquad
-    shoes: ClothingShoesBootsMagAdv
-    mask: ClothingMaskGasSwat
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: SichClothingOuterHardsuitShadow
-    suitstorage: AirTankFilled
-    id: DeathsquadPDA
-    ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltMilitaryWebbingMedFilled
-    pocket1: WeaponPulsePistol
-    pocket2: FlashlightSeclite
-    
-#Renuin
-
-- type: startingGear
-  id: SichRenuinSoliderGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingBackpackSecurity
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: SichClothingOuterHardsuitRenuin
-    id: SichRenuinSoliderIDCard
-    ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltMilitaryWebbing
-    pocket1: WeaponPistolN1984
-    pocket2: FlashlightSeclite
+#- type: startingGear
+#  id: SichCIAAgentGear
+#  equipment:
+#    jumpsuit: SichClothingUniformJumpsuitCIAAgent
+#    back: ClothingBackpackSatchelHolding
+#    shoes: ClothingShoesBootsCombatFilled
+#    head: SichClothingHeadHatCIABeret
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: ClothingOuterArmorBasic
+#    id: CentcomPDA
+#    ears: ClothingHeadsetAltCentCom
+#    belt: WeaponTaser
+#    pocket1: WeaponPulsePistol
+#    pocket2: BoxFolderBlack
+#    
+#- type: startingGear
+#  id: SichDeathShadowOperative
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitTacticool
+#    back: ClothingBackpackDeathSquad
+#    shoes: ClothingShoesBootsMagAdv
+#    mask: ClothingMaskGasSwat
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: SichClothingOuterHardsuitShadow
+#    suitstorage: AirTankFilled
+#    id: DeathsquadPDA
+#    ears: ClothingHeadsetAltCentCom
+#    belt: ClothingBeltMilitaryWebbingMedFilled
+#    pocket1: WeaponPulsePistol
+#    pocket2: FlashlightSeclite
+#    
+##Renuin
+#
+#- type: startingGear
+#  id: SichRenuinSoliderGear
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitTacticool
+#    back: ClothingBackpackSecurity
+#    shoes: ClothingShoesBootsCombatFilled
+#    eyes: ClothingEyesGlassesSecurity
+#    gloves: ClothingHandsGlovesCombat
+#    outerClothing: SichClothingOuterHardsuitRenuin
+#    id: SichRenuinSoliderIDCard
+#    ears: ClothingHeadsetAltCentCom
+#    belt: ClothingBeltMilitaryWebbing
+#    pocket1: WeaponPistolN1984
+#    pocket2: FlashlightSeclite

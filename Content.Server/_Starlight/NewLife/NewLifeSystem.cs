@@ -10,6 +10,7 @@ using Content.Server.RoundEnd;
 using Content.Server.GameTicking;
 using Content.Shared.CCVar;
 using Content.Shared.Ghost.Components;
+using Content.Shared.GameTicking;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -17,7 +18,7 @@ namespace Content.Server.Ghost.Roles;
 public sealed partial class NewLifeSystem : EntitySystem
 {
     [Dependency] private EuiManager _euiManager = default!;
-    [Dependency] private GameTicker _gameTicker = default!;
+    [Dependency] private ServerGameTicker _gameTicker = default!;
     [Dependency] private IConfigurationManager _configuration = default!;
 
     private readonly Dictionary<ICommonSession, NewLifeEui> _openUis = [];

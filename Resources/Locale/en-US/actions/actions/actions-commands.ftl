@@ -1,4 +1,4 @@
-﻿## Actions Commands loc
+## Actions Commands loc
 
 ## Upgradeaction command loc
 upgradeaction-command-help = Використання: upgradeaction <entityUid> [level]

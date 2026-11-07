@@ -106,7 +106,8 @@
   - type: PirateAccent
     # not putting a BlockMovement component here cause that's funny.
   - type: StealTarget
-    stealGroup: CaptainSword
+    stealGroup:
+    - CaptainSword
 
 - type: entity
   name: катана
@@ -137,12 +138,10 @@
 
 - type: entity
   name: енергетична катана
-  parent: Katana
+  parent: [ BaseHighlyIllegalContraband, Katana ]
   id: EnergyKatana
   description: Катана, наповнена сильною енергією.
   components:
-  - type: Contraband
-    severity: HighlyIllegal
   - type: Sprite
     sprite: Objects/Weapons/Melee/energykatana.rsi
   - type: MeleeWeapon

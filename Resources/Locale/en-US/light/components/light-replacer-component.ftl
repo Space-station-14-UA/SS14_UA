@@ -10,22 +10,11 @@ comp-light-replacer-insert-broken-light = Не можна вставляти р�
 comp-light-replacer-same-light = У цьому світильнику вже встановлено {$light}!
 
 # Radial Menu messages
-comp-light-replacer-eject-specified-lights = Eject all {MAKEPLURAL($light)}.
-comp-light-replacer-select-lights = Select {MAKEPLURAL($light)}.
 comp-light-replacer-open-empty = {CAPITALIZE(THE($light-replacer))} is completely empty!
 
 # Label
 comp-light-replacer-label = Tube: {$tube}
                             Bulb: {$bulb}
-
-### Examine
-
-comp-light-replacer-no-lights = Він порожній.
-comp-light-replacer-has-lights = Він містить наступне:
-comp-light-replacer-light-listing = {$amount ->
-    [one] [color=yellow]{$amount}[/color] [color=gray]{$name}[/color]
-    *[other] [color=yellow]{$amount}[/color] [color=gray]{MAKEPLURAL($name)}[/color]
-}
 
 ### Status Control
 

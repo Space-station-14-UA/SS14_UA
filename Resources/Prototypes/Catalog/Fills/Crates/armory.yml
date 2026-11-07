@@ -30,6 +30,21 @@
 
 - type: entity
   parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: CrateArmoryMosin
+  name: mosin crate
+  description: Reliable, dirt cheap, and loud as hell. Contains three mosin rifles and 12 speedloaders of .30 rifle ammunition. Requires Armory access to open.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponSniperMosin
+          amount: 3
+        - id: SpeedLoaderLightRifle
+          amount: 12
+
+- type: entity
+  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
   id: CrateTrackingImplants
   name: ящик з імплантами відстеження
   description: Містить у собі п'ять імплантатів відстеження. Добре підходить для звільнених в'язнів, членів командування чи працівників СБ за якими потрібен нагляд. Потребує доступ Зброярні для відкриття.

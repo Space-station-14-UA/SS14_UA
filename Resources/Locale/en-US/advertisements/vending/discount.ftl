@@ -1,4 +1,4 @@
-﻿advertisement-discount-1 = Знижка Миколі, він мужик!
+advertisement-discount-1 = Знижка Миколі, він мужик!
 advertisement-discount-2 = Немає нічого кращого в цьому світі, ніж шматочок таємниці.
 advertisement-discount-3 = Не слухайте ті інші машини, купуйте мій товар!
 advertisement-discount-4 = Кількість над якістю!

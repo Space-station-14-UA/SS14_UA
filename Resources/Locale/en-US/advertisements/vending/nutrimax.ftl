@@ -1,4 +1,4 @@
-﻿advertisement-nutrimax-1 = Ми любимо рослини!
+advertisement-nutrimax-1 = Ми любимо рослини!
 advertisement-nutrimax-2 = А ти не хочеш?
 advertisement-nutrimax-3 = Найзеленіші великі пальці на світі.
 advertisement-nutrimax-4 = Ми любимо великі рослини.

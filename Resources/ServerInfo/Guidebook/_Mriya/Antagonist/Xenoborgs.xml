@@ -61,17 +61,12 @@
   [bold]Початкові ексклюзивні модулі:[/bold]
   <Box>
     <GuideEntityEmbed Entity="XenoborgModuleAccessBreaker" Caption="access breaker xenoborg module"/>
-    <GuideEntityEmbed Entity="XenoborgModuleFireExtinguisher" Caption="fire extinguisher xenoborg module"/>
   </Box>
 
   [bold]Інженер Ксеноборг також починає з деяких інженерних модулів, таких як:[/bold]
   <Box>
-    <GuideEntityEmbed Entity="BorgModuleAdvancedTool" Caption="advanced tool cyborg module"/>
-    <GuideEntityEmbed Entity="BorgModuleConstruction" Caption="construction cyborg module"/>
-  </Box>
-  <Box>
-    <GuideEntityEmbed Entity="BorgModuleRCD" Caption="engineering cyborg module"/>
-    <GuideEntityEmbed Entity="BorgModuleCable" Caption="cable cyborg module"/>
+    <GuideEntityEmbed Entity="XenoborgModuleAdvancedTool" Caption="advanced tool cyborg module"/>
+    <GuideEntityEmbed Entity="XenoborgModuleConstruction" Caption="construction cyborg module"/>
   </Box>
 
   ### The Heavy Xenoborg
@@ -127,6 +122,23 @@
   <Box>
     <GuideEntityEmbed Entity="XenoborgModuleSuperCloakDevice" Caption="cloaking device xenoborg module"/>
   </Box>
+
+  ## Xenoborg extractors
+  <Box>
+    <GuideEntityEmbed Entity="XenoborgExtractor" Caption="xenoborg extractor"/>
+    <GuideEntityEmbed Entity="MaterialXenoborgCrystal" Caption="xenoborg crystal"/>
+  </Box>
+  Екстрактор — це машина, необхідна ксеноборгам для розширення своєї армії. Вона викрадає енергію з підключених до неї кабелів для виробництва кристалів ксеноборгів.
+
+  Ядро материнського корабля може виготовити комплект для збірки екстрактора ксеноборгів за 10 одиниць сталі.
+
+  Після закріплення він почне викачувати енергію з високовольтного кабелю, що пролягає під ним.
+
+  Він вироблятиме кристал ксеноборгів щоразу, коли його внутрішній акумулятор зарядиться.
+
+  Він споживає 240 кВт, а на виробництво одного кристала ксеноборгів потрібно 15 секунд.
+
+  [bold]Увага![/bold] Це спрацює сигнал тривоги про несанкціоноване енергоспоживаюче обладнання! Кожен, хто користується пристроєм для моніторингу енергоспоживання, зрозуміє, що щось не так.
 
   ## Підготовка та тактика
   Перш ніж виконувати FTLing поряд зі станцією, переконайтеся, що IFF вимкнено.

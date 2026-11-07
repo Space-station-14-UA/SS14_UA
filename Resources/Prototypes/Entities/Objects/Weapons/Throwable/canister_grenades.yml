@@ -24,7 +24,7 @@
       path: /Audio/Items/smoke_grenade_prime.ogg
 
 - type: entity
-  parent: [ BaseCivilianContraband, SmokeGrenade ]
+  parent: [ BaseServiceContraband, SmokeGrenade ]
   id: CleanerGrenade
   name: чинада
   description: Спеціальна граната для прибиральників, яка при використанні випускає велику хмару очисної піни.

@@ -1,0 +1,46 @@
+﻿- type: entity
+  parent: Cane
+  id: MRBartka
+  name: бартка
+  description: Традиційна карпатська сокирка на довгому держаку. Нею можна спиратися під час ходьби, а за потреби — використовувати як зброю чи інструмент.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Weapons/Melee/bartka.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _Mriya/Objects/Weapons/Melee/bartka.rsi
+    shape:
+    - 0,0,1,3
+  - type: Tag
+    tags:
+    - MRBartka
+  - type: Appearance
+  - type: MobilityAid
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 3
+        Slash: 6
+        Structural: 2
+    soundHit:
+      collection: MetalThud
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 3
+        Structural: 3
+  - type: Tool
+    qualities:
+    - Prying
+    - Slicing
+    - Sawing
+  - type: ToolTileCompatible
+  - type: Prying
+  - type: UseDelay
+    delay: 1

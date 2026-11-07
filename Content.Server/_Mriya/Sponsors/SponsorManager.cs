@@ -1,12 +1,9 @@
 using Content.Server.Database;
 using Content.Server.Preferences.Managers;
-using Content.Shared.Preferences;
 using Content.Shared.Mriya.Sponsors;
 using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
@@ -17,7 +14,7 @@ namespace Content.Server.Mriya.Sponsors;
 /// <summary>
 /// Менеджер налаштувань спонсорів. Кешує дані при підключенні та надає зручний API для інших систем.
 /// </summary>
-public sealed class SponsorManager : ISponsorManager, IPostInjectInit
+public sealed partial class SponsorManager : ISponsorManager, IPostInjectInit
 {
     [Dependency] private IServerNetManager _netManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

@@ -1,4 +1,4 @@
-﻿advertisement-nanomed-1 = Ідіть і врятуйте кілька життів!
+advertisement-nanomed-1 = Ідіть і врятуйте кілька життів!
 advertisement-nanomed-2 = Найкраще для вашої аптечки.
 advertisement-nanomed-3 = Тільки найкращі інструменти.
 advertisement-nanomed-4 = Натуральні хімікати!

@@ -1,4 +1,4 @@
-﻿advertisement-bruiseomat-1 = Я ГОЛОСУЮ ЗА ВАРОПС!!!
+advertisement-bruiseomat-1 = Я ГОЛОСУЮ ЗА ВАРОПС!!!
 advertisement-bruiseomat-2 = Хто має ТК?
 advertisement-bruiseomat-3 = Хтось купував EMAG?
 advertisement-bruiseomat-4 = Я хочу повернутися на свою рідну станцію...

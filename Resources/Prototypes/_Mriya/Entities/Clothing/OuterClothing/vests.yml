@@ -1,0 +1,182 @@
+﻿# Bunda
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterBunda
+  name: бунда
+  description: Червоний шкіряний лейбик, оздоблений квітами, шнурівками, ґудзиками та хутром. Такий одяг носили заможні долинянки.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/bunda.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/bunda.rsi
+
+# Keptar
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptar
+  name: кептар
+  description: Традиційний неоздоблений безрукавний верхній одяг, виготовлений з овечої шкіри.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Holovetskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarHolovetskyi
+  name: кептар головецький
+  description: Традиційний бойківський кептар, виготовлений кушнірами із села Головецько.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_holovetskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_holovetskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Kosivskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarKosivskyi
+  name: кептар косівський
+  description: Традиційний гуцульський кептар косівського стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_kosivskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_kosivskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Kosmatskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarKosmatskyi
+  name: кептар космацький
+  description: Традиційний гуцульський кептар космацького стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_kosmatskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_kosmatskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Pokutsky
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarPokutsky
+  name: кептар покутський
+  description: Традиційний гуцульський кептар покутського стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_pokutsky.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_pokutsky.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Rakhivskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarRakhivskyi
+  name: кептар рахівський
+  description: Традиційний гуцульський кептар рахівського стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_rakhivskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_rakhivskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Tsinevskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarTsinevskyi
+  name: кептар ціневський
+  description: Традиційний бойківський кептар, виготовлений кушнірами із села Цінева.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_tsinevskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_tsinevskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Verkhovynskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarVerkhovynskyi
+  name: кептар верховинський
+  description: Традиційний гуцульський кептар верховинського стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_verkhovynskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_verkhovynskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Keptar Yasinskyi
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterKeptarYasinskyi
+  name: кептар ясінський
+  description: Традиційний гуцульський кептар ясінського стилю.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_yasinskyi.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/keptar_yasinskyi.rsi
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+# Leibyk Black
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterLeibykBlack
+  name: чорний лейбик
+  description: Традиційний лейбик, безрукавка виготовлена з тканини чорного кольору.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_black.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_black.rsi
+
+# Leibyk Blue
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterLeibykBlue
+  name: синій лейбик
+  description: Традиційний лейбик, безрукавка виготовлена з тканини синього кольору.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_blue.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_blue.rsi
+
+# Leibyk Red
+- type: entity
+  parent: ClothingOuterBase
+  id: MRClothingOuterLeibykRed
+  name: червоний лейбик
+  description: Традиційний лейбик, безрукавка виготовлена з тканини червоного кольору.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_red.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/OuterClothing/Vests/leibyk_red.rsi

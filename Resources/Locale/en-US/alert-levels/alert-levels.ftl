@@ -1,6 +1,7 @@
 alert-level-announcement = Увага! Рівень тривоги на станції {$name}! {$announcement}
 
-alert-level-unknown = Unknown.
+# unknown name uses generic-unknown-title
+alert-level-unknown-announcement = This is a test of the alert broadcast system.
 alert-level-unknown-instructions = Unknown.
 
 alert-level-green = Зелений

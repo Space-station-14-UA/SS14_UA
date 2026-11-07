@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: MRClothingShoesBootsPostoly
+  name: постоли
+  description: Традиційне шкіряне взуття, яке носили селяни. Постоли прив'язували до ноги ремінцями.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Clothing/Shoes/Boots/postoly.rsi
+  - type: Clothing
+    sprite: _Mriya/Clothing/Shoes/Boots/postoly.rsi

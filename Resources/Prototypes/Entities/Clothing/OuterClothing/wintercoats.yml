@@ -758,7 +758,7 @@
 - type: entity
   parent: [ClothingOuterWinterCoatToggleable, BaseSyndicateContraband]
   id: ClothingOuterWinterSyndieCap
-  name: зимове пальто Синдикату
+  name: формальне зимове пальто Синдикату
   description: "Зимове пальто Синдикату, виготовлене з міцної тканини з позолоченими візерунками, та грубої вовни."
   components:
   - type: Sprite

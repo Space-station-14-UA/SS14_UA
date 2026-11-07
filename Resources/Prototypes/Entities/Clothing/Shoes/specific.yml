@@ -150,17 +150,6 @@
     sprite: Clothing/Shoes/Specific/swat.rsi
 
 - type: entity
-  parent: ClothingShoesBaseButcherable
-  id: ClothingShoesWizard
-  name: сандалі чаклуна
-  description: Ці сандалі наділені магічною силою. Одягни їх, щоб відчути справжню магію під ногами.
-  components:
-  - type: Sprite
-    sprite: Clothing/Shoes/Specific/wizard.rsi
-  - type: Clothing
-    sprite: Clothing/Shoes/Specific/wizard.rsi
-
-- type: entity
   parent: [ClothingShoesBase, BaseChameleon]
   id: ClothingShoesChameleon
   name: чорне взуття

@@ -116,9 +116,9 @@
       cell_slot: !type:ContainerSlot
 
 - type: entity
-  id: BaseWeaponBatterySmall
-  parent: BaseWeaponBattery
   abstract: true
+  parent: BaseWeaponBatteryNoAmmoCounter
+  id: BaseWeaponBatterySmallNoAmmoCounter
   components:
   - type: Item
     size: Small
@@ -134,6 +134,13 @@
     slots:
     - Belt
     - suitStorage
+
+- type: entity
+  abstract: true
+  parent: BaseWeaponBatterySmallNoAmmoCounter
+  id: BaseWeaponBatterySmall
+  components:
+  - type: AmmoCounter
 
 - type: entity
   id: BaseWeaponPowerCellSmall
@@ -210,21 +217,38 @@
     - LaserWeapon
 
 - type: entity
-  name: саморобний лазерний пістолет
-  parent: [BaseWeaponBatterySmall, BaseMinorContraband]
-  id: WeaponMakeshiftLaser
-  description: Краще моліться, щоб це не взірвалося прямо у вас в руках.
+  abstract: true
+  parent: BaseMinorContraband
+  id: WeaponMakeshiftLaserConstructionBase
   components:
+  - type: Construction
+    graph: MakeshiftLaserGraph
+    containers:
+    - cell_slot
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+    storedOffset: 0,-4
+
+- type: entity
+  parent: [WeaponMakeshiftLaserConstructionBase, BaseWeaponPowerCell]
+  id: WeaponMakeshiftLaserNoCell
+  categories: [ HideSpawnMenu ]
+  name: makeshift laser pistol
+  suffix: No Cell
+  description: Better pray it won't burn your hands off.
+  components:
+  - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
-  - type: Item
-    storedOffset: 0,-4
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -232,16 +256,47 @@
   - type: Appearance
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - suitStorage
   - type: BatteryAmmoProvider
-    proto: RedLaser
+    proto: RedLaserMakeshift
     fireCost: 62.5
-  - type: Battery
-    maxCharge: 500
-    startingCharge: 500
+  - type: PowerCellSlot
+    fitsInCharger: false
   - type: Tag
     tags:
     - Sidearm
     - LaserWeapon
+  - type: Construction
+    node: mslaser
+
+- type: entity # for salv loot & co
+  parent: WeaponMakeshiftLaserNoCell
+  id: WeaponMakeshiftLaser
+  suffix: Medium Cell
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        startingItem: PowerCellMedium
+        locked: true
+        whitelist:
+          tags:
+          - PowerCell
+
+- type: entity
+  parent: [BaseItem, WeaponMakeshiftLaserConstructionBase]
+  id: WeaponMakeshiftLaserFrame
+  name: makeshift laser pistol frame
+  description: Only needs a bit more screwing and a doctorate in practical bluespace technology.
+  components:
+  - type: Sprite
+    state: frame
+  - type: Construction
+    node: mslaserframe
+    defaultTarget: mslaser
 
 - type: entity
   name: тесла пушка
@@ -283,7 +338,7 @@
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
 
 - type: entity
-  name: тенувальний лазерний карабін
+  name: тренувальний лазерний карабін
   parent: [BaseLaserRifle, BaseGunWieldable]
   id: WeaponLaserCarbinePractice
   description: Цей модифікований лазерний карабін випускає майже нешкідливі промені потужністю близько 40 ват для стрільби по мішенях.
@@ -297,7 +352,7 @@
 
 - type: entity
   name: імпульсний пістолет
-  parent: [BaseWeaponBatterySmall, BaseCentcommContraband]
+  parent: [BaseWeaponBatterySmall, BaseDeathSquadContraband]
   id: WeaponPulsePistol
   description: Сучасний енергетичний пістолет, якому віддають перевагу оперативники ГШР НТ у якості додаткої зброї.
   components:
@@ -337,7 +392,7 @@
 
 - type: entity
   name: імпульсний карабін
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband]
   id: WeaponPulseCarbine
   description: Високотехнологічний енергетичний карабін, який люблять оперативники ГШР НТ у якості основної зброї.
   components:
@@ -375,7 +430,7 @@
 
 - type: entity
   name: імпульсна гвинтівка
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband]
   id: WeaponPulseRifle
   description: Зброя, яка майже така ж сумно відома, як і її користувачі з НТ. Сподіваюсь ви не зрозуміли про кого мова...
   components:
@@ -543,9 +598,12 @@
     projectileSpeed: 35 # any higher and this causes issues in lag
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800 # Charges in a 20W recharger at 40 seconds
   - type: BatteryAmmoProvider
     proto: BulletDisablerPractice
-    fireCost: 62.5
+    fireCost: 25 # 32 shots, 2 stamcrits, +3 miss buffer per stamcrit (256 stam damage total)
   - type: Tag
     tags:
     - Taser
@@ -574,7 +632,6 @@
       - Belt
   - type: BatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 62.5
   - type: GuideHelp
     guides:
     - Security
@@ -611,8 +668,8 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: BatteryAmmoProvider
-    proto: BulletDisablerSmg
-    fireCost: 25
+    proto: BulletDisablerSmgSlowing
+    fireCost: 15.6 # 64 shots, 2 stamcrits, +7 miss buffer per stamcrit (256 stam damage total)
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -663,7 +720,7 @@
 
 - type: entity
   name: елітний шокер
-  parent: [ BaseCentcommContraband, WeaponTaser ]
+  parent: [ BaseTaskForceContraband, WeaponTaser ]
   id: WeaponTaserSuper
   suffix: ADMEME
   description: Низькоємний енергетичний шокер, який використовується елітними підрозділами безпеки для знешкодження навіть найстійкіших цілей.
@@ -716,7 +773,8 @@
   - type: StaticPrice
     price: 750
   - type: StealTarget
-    stealGroup: WeaponAntiqueLaser
+    stealGroup:
+    - WeaponAntiqueLaser
   - type: SentienceTarget # I hope this is only the captain's gun
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
@@ -926,7 +984,8 @@
     - HighRiskItem
     - Sidearm
   - type: StealTarget
-    stealGroup: WeaponEnergyMagnum
+    stealGroup:
+    - WeaponEnergyMagnum
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
@@ -991,7 +1050,7 @@
     price: 100
 
 - type: entity
-  parent: [WeaponAdvancedLaser, BaseXenoborgContraband]
+  parent: [BaseXenoborgContraband, WeaponAdvancedLaser]
   id: WeaponLaserGunXenoborg
   name: xenoborg laser gun
   components:
@@ -1006,7 +1065,7 @@
       map: [ "enum.GunVisualLayers.MagUnshaded" ]
 
 - type: entity
-  parent: [WeaponLaserCannon, BaseXenoborgContraband]
+  parent: [BaseXenoborgContraband, WeaponLaserCannon]
   id: WeaponLaserCannonXenoborg
   name: xenoborg laser cannon
   components:
@@ -1032,7 +1091,7 @@
     maxAngle: 2
 
 - type: entity
-  parent: [WeaponAdvancedLaser, BaseXenoborgContraband]
+  parent: [BaseXenoborgContraband, WeaponAdvancedLaser]
   id: WeaponBurstFireLaserXenoborg
   name: xenoborg burst fire laser
   description: An alien weapon, channelling a burst-fire laser through a prism, causing targets to burst into fire.
@@ -1067,7 +1126,7 @@
   id: WeaponRangeFinderXenoborg
   name: xenoborg range finder
   components:
-  - type: Sprite 
+  - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/xenoborg_range_finder.rsi
     layers:
     - state: icon

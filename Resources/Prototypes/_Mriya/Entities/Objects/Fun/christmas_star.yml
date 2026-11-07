@@ -1,0 +1,12 @@
+﻿- type: entity
+  parent: BaseItem
+  id: MRChristmasStar
+  name: різдвяна звізда
+  description: Традиційна різдвяна звізда на держаку, з якою ходять колядувати. Символізує Вифлеємську зорю. Назва «звізда» — варіант слова «зоря», уживаний у гуцульському та бойківському мовленні.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Fun/christmas_star.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _Mriya/Objects/Fun/christmas_star.rsi

@@ -2,6 +2,7 @@ health-analyzer-window-no-patient-data-text = Дані про пацієнта �
 health-analyzer-window-entity-unknown-text = невідомо
 health-analyzer-window-entity-unknown-species-text = Не гуманоїд
 health-analyzer-window-entity-unknown-value-text = N/A
+health-analyzer-window-entity-unknown-temperature-text = Analyzing...
 
 health-analyzer-window-entity-alive-text = Живий
 health-analyzer-window-entity-dead-text = Мертвий

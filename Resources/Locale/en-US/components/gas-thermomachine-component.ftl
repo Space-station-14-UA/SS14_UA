@@ -1,4 +1,4 @@
-﻿comp-gas-thermomachine-ui-title-freezer = Холодильник
+comp-gas-thermomachine-ui-title-freezer = Холодильник
 comp-gas-thermomachine-ui-title-heater = Нагрівач
 
 comp-gas-thermomachine-ui-temperature = Температура (Кельвіни):

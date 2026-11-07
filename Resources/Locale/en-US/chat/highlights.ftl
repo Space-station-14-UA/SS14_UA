@@ -43,12 +43,16 @@ highlights-lawyer = Адвокат, Юрист, Юриссст
 highlights-librarian = Бібліотекар, Бібліотека, Бібліотеці
 highlights-mime = Мім
 highlights-musician = Музикант, "Музика", Театр, Театр, Сервіс
-highlights-passenger = Пасажир, Пасссажир, Пасажжжир
 highlights-serviceworker = Сервісний Працівник, СССервісний Працівник, Сервісник, СССервісник, "Бар", "Барі", Ботанічний, Кухар, Кухня, Кухні
 
 # Station-specific
 highlights-reporter = Репортер, Кориспондент, Кориссспондент, Журналіст, Журналіссст, Жжжурналіст
 highlights-psychologist = Психолог, Псссихолог
+highlights-tramdriver = Водій трамвая, Трамвай, "Водій", Сервіс, "Серв"
+
+# Civilian
+highlights-passenger = Пасажир, Пасссажир, Пасажжжир
+highlights-visitor = Відвідувач, Цивільний, Цивіл, "Цивільний"
 
 # Silicon
 highlights-borg = Борг, Юніт

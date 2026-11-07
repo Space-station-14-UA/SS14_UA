@@ -1,4 +1,4 @@
-﻿advertisement-snack-1 = Спробуйте наш новий батончик з коргі!
+advertisement-snack-1 = Спробуйте наш новий батончик з коргі!
 advertisement-snack-2 = Вдвічі більше калорій за півціни!
 advertisement-snack-3 = Найздоровіші!
 advertisement-snack-4 = Відзначені нагородами шоколадні батончики!

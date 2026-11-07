@@ -1,0 +1,56 @@
+﻿- type: entity
+  parent: CrateGenericSteel
+  id: MRCrateCarpathianTraditionalClothing
+  name: ящик із традиційним карпатським одягом
+  description: Ящик з одягом гуцулів, лемків, бойків та долинян. Також містить бартку, файку, різдвяну звізду. 
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MRClothingUniformJumpsuitBoiko
+        - id: MRClothingUniformJumpsuitDolynanUzhanskyi
+        - id: MRClothingUniformJumpsuitHutsul
+        - id: MRClothingUniformJumpsuitLemko
+        - id: MRClothingOuterBunda
+        - id: MRClothingOuterKeptar
+        - id: MRClothingOuterKeptarHolovetskyi
+        - id: MRClothingOuterKeptarKosivskyi
+        - id: MRClothingOuterKeptarKosmatskyi
+        - id: MRClothingOuterKeptarPokutsky
+        - id: MRClothingOuterKeptarRakhivskyi
+        - id: MRClothingOuterKeptarTsinevskyi
+        - id: MRClothingOuterKeptarVerkhovynskyi
+        - id: MRClothingOuterKeptarYasinskyi
+        - id: MRClothingOuterLeibykBlack
+        - id: MRClothingOuterLeibykBlue
+        - id: MRClothingOuterLeibykRed
+        - id: MRClothingUniformJumpskirtBoiko
+        - id: MRClothingUniformJumpskirtDolynanBorzhavskyi
+        - id: MRClothingUniformJumpskirtHutsul
+        - id: MRClothingUniformJumpskirtLemko
+        - id: MRClothingHeadHatKalap
+        - id: MRClothingHeadHatKresania
+        - id: MRClothingHeadHatKuchmaBlack
+        - id: MRClothingHeadHatVengerskyiKapeliukh
+        - id: MRClothingHeadHatFacelyk
+        - id: MRClothingHeadHatHutsulChustka
+        - id: MRClothingHeadHatMulticoloredRibbon
+        - id: MRClothingShoesBootsPostoly
+        - id: MRClothingOuterWinterKozhukhTsinevskyi
+        - id: MRClothingOuterWinterKozhukhLemkivskyi
+        - id: MRClothingOuterWinterKozhukhStarokosivskyi
+        - id: MRClothingOuterWinterVuiosh
+        - id: MRClothingNeckCloakCzuha
+        - id: MRClothingNeckCloakGuglia
+        - id: MRClothingNeckCloakHunia
+        - id: MRClothingNeckCloakPetek
+        - id: MRClothingOuterCoatSardak
+        - id: MRClothingOuterCoatSardakBoikivskyi
+        - id: MRClothingNeckKryza
+        - id: MRClothingBackpackTaistra
+        - id: MRClothingBeltStorageTabivka
+        - id: MRClothingBeltStorageCheres
+        - id: MRSmokingPipeFaikaFilledTobacco
+        - id: MRChristmasStar
+        - id: MRBartka
