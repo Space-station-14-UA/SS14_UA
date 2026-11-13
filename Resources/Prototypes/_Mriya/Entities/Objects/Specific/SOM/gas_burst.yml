@@ -1,0 +1,52 @@
+- type: entity
+  abstract: true
+  name: виплеск газу
+  description: Це виплеск газу, ймовірно дуже гарячого, тому тобі не слід стояти перед ним.
+  id: MRGasBurstBase
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: .4
+          density: 190
+          mask:
+            - MachineMask
+    - type: TimedDespawn
+      lifetime: 1
+    - type: Transform
+      anchored: true
+    - type: Anchorable
+      flags:
+      - Anchorable
+    - type: Pullable
+    - type: Sprite
+      sprite: Structures/Piping/Atmospherics/miners.rsi
+      state: miner
+    - type: AtmosDevice
+    - type: GasMiner
+      maxExternalPressure: 999999999 # спавнить газ независимо від тиску знаружи
+      spawnAmount: 50
+
+      
+- type: entity
+  parent: MRGasBurstBase
+  name: виплеск газу
+  description: Це виплеск газу, ймовірно дуже гарячого, тому тобі не слід стояти перед ним.
+  id: MRGasBurstHotCO2
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: _Mriya/Structures/Specific/Engineering/gas_burst.rsi
+      drawdepth: Mobs
+      state: gas_burst
+    - type: GasMiner
+      spawnGas: CarbonDioxide
+      spawnAmount: 100
+      spawnTemperature: 2000

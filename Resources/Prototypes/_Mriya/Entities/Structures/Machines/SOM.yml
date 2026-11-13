@@ -1,0 +1,205 @@
+- type: entity
+  id: MRSOM
+  parent: [ BaseStructure, ConstructibleMachine ]
+  name: С.О.М
+  description: Це Супер Обчислювальна Машина, яка може бути використана за для складних обчислень, таких як видобування крипти, та генерація дати, але при цьому генерує купу гарячого CO2, тому краще її охолодити перш ніж воно перегорить.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Mriya/Structures/Specific/Engineering/som.rsi
+    drawdepth: Mobs
+    layers:
+    - state: base
+    - state: unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: firing
+      shader: unshaded
+      visible: false
+      map: ["enum.EmitterVisualLayers.Lights"]
+    - state: locked
+      shader: unshaded
+      visible: false
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Appearance
+  - type: WiresVisuals
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.2,1.4,0.3"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.4,-0.7,1.4,-0.2"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+      fix3:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.7,-0.4,-0.2"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Animateable
+  - type: InteractionOutline
+  - type: Anchorable
+    delay: 2
+  - type: Physics
+    bodyType: Static
+  - type: Injurable
+    damageContainer: MRSOMDamageContainer
+  - type: Damageable
+    damageModifierSet: MRSOMmodifire
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: AtmosExposed
+  - type: Temperature
+    specificHeat: 42
+  - type: TemperatureDamage
+    heatDamageThreshold: 400 # 126.85 C*
+    coldDamageThreshold: 253 # -20.15 C*
+    coldDamage:
+      types:
+        Cold: 2.5 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 2.5 #per second, scales with temperature & other constants
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 1 #per second, scales with pressure and other constants.
+  - type: WiresPanel
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: Repairable
+  - type: Pullable
+  - type: StaticPrice
+    price: 1000
+  - type: Machine
+    board: MRSOMSuperComputingBlock
+  - type: PowerState
+    idlePowerDraw: 100
+    workingPowerDraw: 100000
+    ensureApc: false
+  - type: Emitter
+    onState: firing
+    boltType: MRRandomCrypto
+    underpoweredState: underpowered
+    selectableTypes:
+    - MRRandomCrypto
+    - MRRandomDisk
+    fireBurstSize: 0
+    fireBurstDelayMin: 60 # стриляє раз на хвилину
+    fireBurstDelayMax: 60
+  - type: Gun
+    projectileSpeed: 10
+    fireRate: 10
+    showExamineText: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Machines/twobeep.ogg
+  - type: PowerConsumer
+    voltage: High
+    drawRate: 100
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower
+  - type: Lock
+    locked: false
+  - type: LockVisuals
+  - type: LockedAnchorable
+  - type: LockedWiresPanel
+  - type: AccessReader
+    access: [[ "Engineering" ]]
+  - type: GuideHelp
+    guides:
+    - MRSOMGuide
+  - type: NotifyOnNonFunctioning
+    locDestroyed: som-destroyed-broadcast
+    locUnlocked: som-unlocked-broadcast
+    locUnpowered: som-unpowered-broadcast
+    locTurnedOff: som-turn-off-broadcast
+    radioChannel: Engineering
+    requirePowered: true
+
+
+- type: entity
+  id: MRSOMUpgraded
+  parent: MRSOM
+  name: Покращена С.О.М
+  description: Це Покращена Супер Обчислювальна Машина, яка може бути використана за для складних обчислень, таких як видобування крипти, та генерація дати, але при цьому генерує купу гарячого CO2, тому краще її охолодити перш ніж воно перегорить.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Mriya/Structures/Specific/Engineering/som.rsi
+    drawdepth: Mobs
+    layers:
+    - state: upgraded
+    - state: unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: firing
+      shader: unshaded
+      visible: false
+      map: ["enum.EmitterVisualLayers.Lights"]
+    - state: locked
+      shader: unshaded
+      visible: false
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: PowerState
+    idlePowerDraw: 100
+    workingPowerDraw: 120000
+    ensureApc: false
+  - type: Emitter
+    onState: firing
+    boltType: MRRandomCrypto
+    underpoweredState: underpowered
+    selectableTypes:
+    - MRRandomCrypto
+    - MRRandomDisk
+    fireBurstSize: 1
+    fireBurstDelayMin: 60 # стриляє раз на хвилину
+    fireBurstDelayMax: 60
+  - type: Machine
+    board: MRSOMSuperComputingBlockUpgraded

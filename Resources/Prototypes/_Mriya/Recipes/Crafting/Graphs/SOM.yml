@@ -1,0 +1,21 @@
+- type: constructionGraph
+  id: MRSOMUpgrade
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: somUpgradedBlock
+          steps:
+            - tag:  MRSOMUpgrade
+              name: som-upgrade-kit
+              icon:
+                sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
+                state: icon
+            - tag:  MRSOMSuperComputingBlock
+              name: som-super-computing-block
+              icon:
+                sprite: _Mriya/Objects/Devices/Circuitboards/SOM.rsi
+                state: super_computing_block
+              doAfter: 10
+    - node: somUpgradedBlock
+      entity: MRSOMSuperComputingBlockUpgraded

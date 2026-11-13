@@ -2,4 +2,10 @@
   id: MRMouseDetectable
 
 - type: Tag
+  id: MRSOMUpgrade # для крафту
+  
+- type: Tag
+  id: MRSOMSuperComputingBlock # для крафту
+
+- type: Tag
   id: MRBartka

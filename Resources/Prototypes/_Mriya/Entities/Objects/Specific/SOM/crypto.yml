@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseItem
+  id: MRPotujnoCoin
+  name: потужно коін
+  description: Це напечатаний у фізичному вигляді, потужно коїн. Він є доволі цінним, тому карго будуть дуже раді його продати.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Specific/crypto.rsi
+    state: crypto_potujno
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 800
+
+- type: entity
+  parent: MRPotujnoCoin
+  id: MREball
+  name: є-бал
+  description: Це напечатаний у фізичному вигляді Є-бал. Він є доволі цінним, тому карго будуть дуже раді його продати.
+  components:
+  - type: Sprite
+    sprite: _Mriya/Objects/Specific/crypto.rsi
+    state: crypto_E-bal
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
