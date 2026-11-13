@@ -1,0 +1,6 @@
+# Динамічні
+
+- type: latheRecipePack
+  id: MRReallyCoolPickaxe
+  recipes:
+  - MRdiamondPickaxe
