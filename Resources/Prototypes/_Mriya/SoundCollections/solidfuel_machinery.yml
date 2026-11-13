@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: MRStirlingStart
+  files:
+    - /Audio/Items/Flare/flare_on.ogg
+    - /Audio/Items/match_strike.ogg
