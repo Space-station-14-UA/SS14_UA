@@ -1,0 +1,2 @@
+ent-MobMothroach =
+  .gender = female
