@@ -119,15 +119,13 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
         {
             var identifiers = ProtoMan.Index(proto.IdentifierDataset);
 
-            string ent_prototype_ID = "";
-            if (entUid is not null) {
-                ent_prototype_ID = Prototype(entUid.Value)?.ID ?? "";
-
-                var gender = Loc.GetString($"ent-{ent_prototype_ID}.gender");
-                formatted = Loc.GetString(identifiers.Values.Prefix+formatted, ("gender", gender));
+            if (entUid is not null)
+            {
+                formatted = Loc.GetString(identifiers.Values.Prefix+formatted, ("ent", entUid!));
             }
-            else {
-            formatted = Loc.GetString(identifiers.Values.Prefix+formatted);
+            else
+            {
+                formatted = Loc.GetString(identifiers.Values.Prefix+formatted);
             }
         }
 
