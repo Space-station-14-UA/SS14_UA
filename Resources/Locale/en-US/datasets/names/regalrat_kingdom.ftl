@@ -11,5 +11,5 @@ names-regal-rat-kingdom-dataset-10 = Великий
 names-regal-rat-kingdom-dataset-11 = Бруду
 names-regal-rat-kingdom-dataset-12 = Каналізацій
 names-regal-rat-kingdom-dataset-13 = Смітників
-names-regal-rat-kingdom-dataset-14 = Service
+names-regal-rat-kingdom-dataset-14 = Сервісу
 names-regal-rat-kingdom-dataset-15 = Пан
