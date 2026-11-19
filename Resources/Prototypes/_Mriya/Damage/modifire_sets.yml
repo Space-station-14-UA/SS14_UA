@@ -1,0 +1,12 @@
+- type: damageModifierSet
+  id: MRSOMmodifire
+  coefficients:
+    Shock: 1
+    Heat: 1
+    Cold: 1
+    Structural: 0.5
+  flatReductions:
+    Blunt: 10
+    Slash: 10
+    Piercing: 10
+    Structural: 10

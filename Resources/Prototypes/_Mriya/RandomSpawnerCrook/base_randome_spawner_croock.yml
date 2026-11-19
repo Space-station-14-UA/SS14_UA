@@ -1,0 +1,15 @@
+# фактично це просто спавнери, які використовуються як проміжкова річ у крафті або ще десь, аби його було видно у інтерфейсі.
+
+- type: entity
+  id: MRRandomSpawnerBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Tag
+    tags:
+    - ForceFixRotations

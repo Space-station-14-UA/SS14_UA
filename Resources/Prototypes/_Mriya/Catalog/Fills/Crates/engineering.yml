@@ -10,3 +10,15 @@
         children:
         - id: MRToolboxCompact
           amount: 4
+          
+- type: entity
+  parent: CrateEngineeringSecure
+  id: MRCrateEngineeringSOMSuperComputingBlock
+  name: ящик з супер обчислювальним блоком С.О.М
+  description: Містить у собі супер обчислювальний блок С.О.М.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MRSOMSuperComputingBlock

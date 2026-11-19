@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseItem
+  id: MRSOMUpgrade
+  name: набір покращення для С.О.М
+  description: Це набір для покращення швидкості праці С.О.М. За допомогою нього С.О.М буде вичисляти дві речі за раз. Коробка є розкладною та є частиною для покращення також.
+  components:
+    - type: Item
+      size: Normal
+    - type: Sprite
+      sprite: _Mriya/Objects/Devices/Upgrades/som_upgrade.rsi
+      state: icon
+    - type: Tag
+      tags:
+      - MRSOMUpgrade
