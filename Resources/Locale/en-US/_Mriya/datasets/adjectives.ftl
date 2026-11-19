@@ -1,2532 +1,2532 @@
 adjectives-dataset-1 =
-  { $gender ->
-    [male] привабливий
-    [female] приваблива
-    *[neuter] привабливе
+  { GENDER($ent) ->
+    *[male] прехороший
+    [female] прехороша
+    [neuter] прехороше
   }
 adjectives-dataset-2 =
-  { $gender ->
-    [male] пригодник
-    [female] пригодник
-    *[neuter] пригодник
+  { GENDER($ent) ->
+    *[male] авантюрний
+    [female] авантюрна
+    [neuter] авантюрне
   }
 adjectives-dataset-3 =
-  { $gender ->
-    [male] агресивний
+  { GENDER($ent) ->
+    *[male] агресивний
     [female] агресивна
-    *[neuter] агресивне
+    [neuter] агресивне
   }
 adjectives-dataset-4 =
-  { $gender ->
-    [male] тривога
-    [female] тривога
-    *[neuter] тривога
+  { GENDER($ent) ->
+    *[male] насторожений
+    [female] насторожена
+    [neuter] насторожене
   }
 adjectives-dataset-5 =
-  { $gender ->
-    [male] гарний
-    [female] гарна
-    *[neuter] гарне
+  { GENDER($ent) ->
+    *[male] привабливий
+    [female] приваблива
+    [neuter] привабливе
   }
 adjectives-dataset-6 =
-  { $gender ->
-    [male] типовий
-    [female] типова
-    *[neuter] типове
+  { GENDER($ent) ->
+    *[male] посередній
+    [female] посередня
+    [neuter] посереднє
   }
 adjectives-dataset-7 =
-  { $gender ->
-    [male] красивий
+  { GENDER($ent) ->
+    *[male] красивий
     [female] красива
-    *[neuter] красиве
+    [neuter] красиве
   }
 adjectives-dataset-8 =
-  { $gender ->
-    [male] чорнобровий
+  { GENDER($ent) ->
+    *[male] чорнобровий
     [female] чорноброва
-    *[neuter] чорноброве
+    [neuter] чорноброве
   }
 adjectives-dataset-9 =
-  { $gender ->
-    [male] кривавий
+  { GENDER($ent) ->
+    *[male] кривавий
     [female] кривава
-    *[neuter] криваве
+    [neuter] криваве
   }
 adjectives-dataset-10 =
-  { $gender ->
-    [male] червоний
-    [female] червона
-    *[neuter] червоне
+  { GENDER($ent) ->
+    *[male] рум'яний
+    [female] рум'яна
+    [neuter] рум'яне
   }
 adjectives-dataset-11 =
-  { $gender ->
-    [male] яскравий
+  { GENDER($ent) ->
+    *[male] яскравий
     [female] яскрава
-    *[neuter] яскраве
+    [neuter] яскраве
   }
 adjectives-dataset-12 =
-  { $gender ->
-    [male] чистий
+  { GENDER($ent) ->
+    *[male] чистий
     [female] чиста
-    *[neuter] чисте
+    [neuter] чисте
   }
 adjectives-dataset-13 =
-  { $gender ->
-    [male] ясний
+  { GENDER($ent) ->
+    *[male] ясний
     [female] ясна
-    *[neuter] ясне
+    [neuter] ясне
   }
 adjectives-dataset-14 =
-  { $gender ->
-    [male] хмарний
+  { GENDER($ent) ->
+    *[male] хмарний
     [female] хмарна
-    *[neuter] хмарне
+    [neuter] хмарне
   }
 adjectives-dataset-15 =
-  { $gender ->
-    [male] кольоровий
+  { GENDER($ent) ->
+    *[male] кольоровий
     [female] кольорова
-    *[neuter] кольорове
+    [neuter] кольорове
   }
 adjectives-dataset-16 =
-  { $gender ->
-    [male] переповнений
+  { GENDER($ent) ->
+    *[male] переповнений
     [female] переповнена
-    *[neuter] переповнене
+    [neuter] переповнене
   }
 adjectives-dataset-17 =
-  { $gender ->
-    [male] милий
+  { GENDER($ent) ->
+    *[male] милий
     [female] мила
-    *[neuter] миле
+    [neuter] миле
   }
 adjectives-dataset-18 =
-  { $gender ->
-    [male] темний
+  { GENDER($ent) ->
+    *[male] темний
     [female] темна
-    *[neuter] темне
+    [neuter] темне
   }
 adjectives-dataset-19 =
-  { $gender ->
-    [male] сірий
+  { GENDER($ent) ->
+    *[male] сірий
     [female] сіра
-    *[neuter] сіре
+    [neuter] сіре
   }
 adjectives-dataset-20 =
-  { $gender ->
-    [male] виразний
+  { GENDER($ent) ->
+    *[male] виразний
     [female] виразна
-    *[neuter] виразне
+    [neuter] виразне
   }
 adjectives-dataset-21 =
-  { $gender ->
-    [male] тьмяний
+  { GENDER($ent) ->
+    *[male] тьмяний
     [female] тьмяна
-    *[neuter] тьмяне
+    [neuter] тьмяне
   }
 adjectives-dataset-22 =
-  { $gender ->
-    [male] вишуканий
-    [female] вишукана
-    *[neuter] вишукане
+  { GENDER($ent) ->
+    *[male] елегантний
+    [female] елегантна
+    [neuter] елегантне
   }
 adjectives-dataset-23 =
-  { $gender ->
-    [male] схвильований
-    [female] схвильована
-    *[neuter] схвильоване
+  { GENDER($ent) ->
+    *[male] захоплений
+    [female] захоплена
+    [neuter] захоплене
   }
 adjectives-dataset-24 =
-  { $gender ->
-    [male] модний
-    [female] модна
-    *[neuter] модне
+  { GENDER($ent) ->
+    *[male] вишуканий
+    [female] вишукана
+    [neuter] вишукане
   }
 adjectives-dataset-25 =
-  { $gender ->
-    [male] брудний
-    [female] брудна
-    *[neuter] брудне
+  { GENDER($ent) ->
+    *[male] нечистий
+    [female] нечиста
+    [neuter] нечисте
   }
 adjectives-dataset-26 =
-  { $gender ->
-    [male] гламурний
+  { GENDER($ent) ->
+    *[male] гламурний
     [female] гламурна
-    *[neuter] гламурне
+    [neuter] гламурне
   }
 adjectives-dataset-27 =
-  { $gender ->
-    [male] блискучий
+  { GENDER($ent) ->
+    *[male] блискучий
     [female] блискуча
-    *[neuter] блискуче
+    [neuter] блискуче
   }
 adjectives-dataset-28 =
-  { $gender ->
-    [male] шикарний
+  { GENDER($ent) ->
+    *[male] шикарний
     [female] шикарна
-    *[neuter] шикарне
+    [neuter] шикарне
   }
 adjectives-dataset-29 =
-  { $gender ->
-    [male] витончений
+  { GENDER($ent) ->
+    *[male] витончений
     [female] витончена
-    *[neuter] витончене
+    [neuter] витончене
   }
 adjectives-dataset-30 =
-  { $gender ->
-    [male] гротескний
+  { GENDER($ent) ->
+    *[male] гротескний
     [female] гротескна
-    *[neuter] гротескне
+    [neuter] гротескне
   }
 adjectives-dataset-31 =
-  { $gender ->
-    [male] привабливий
-    [female] приваблива
-    *[neuter] привабливе
+  { GENDER($ent) ->
+    *[male] вродливий
+    [female] вродлива
+    [neuter] вродливе
   }
 adjectives-dataset-32 =
-  { $gender ->
-    [male] домашній
-    [female] домашня
-    *[neuter] домашнє
+  { GENDER($ent) ->
+    *[male] непринадний
+    [female] непринадна
+    [neuter] непринадне
   }
 adjectives-dataset-33 =
-  { $gender ->
-    [male] світлий
+  { GENDER($ent) ->
+    *[male] світлий
     [female] світла
-    *[neuter] світле
+    [neuter] світле
   }
 adjectives-dataset-34 =
-  { $gender ->
-    [male] довгий
+  { GENDER($ent) ->
+    *[male] довгий
     [female] довга
-    *[neuter] довге
+    [neuter] довге
   }
 adjectives-dataset-35 =
-  { $gender ->
-    [male] чудовий
-    [female] чудова
-    *[neuter] чудове
+  { GENDER($ent) ->
+    *[male] надзвичайний
+    [female] надзвичайна
+    [neuter] надзвичайне
   }
 adjectives-dataset-36 =
-  { $gender ->
-    [male] таємничий
-    [female] таємнича
-    *[neuter] таємниче
+  { GENDER($ent) ->
+    *[male] туманний
+    [female] туманна
+    [neuter] туманне
   }
 adjectives-dataset-37 =
-  { $gender ->
-    [male] нерухомий
+  { GENDER($ent) ->
+    *[male] нерухомий
     [female] нерухома
-    *[neuter] нерухоме
+    [neuter] нерухоме
   }
 adjectives-dataset-38 =
-  { $gender ->
-    [male] каламутний
+  { GENDER($ent) ->
+    *[male] каламутний
     [female] каламутна
-    *[neuter] каламутне
+    [neuter] каламутне
   }
 adjectives-dataset-39 =
-  { $gender ->
-    [male] старомодний
+  { GENDER($ent) ->
+    *[male] старомодний
     [female] старомодна
-    *[neuter] старомодне
+    [neuter] старомодне
   }
 adjectives-dataset-40 =
-  { $gender ->
-    [male] звичайний
+  { GENDER($ent) ->
+    *[male] звичайний
     [female] звичайна
-    *[neuter] звичайне
+    [neuter] звичайне
   }
 adjectives-dataset-41 =
-  { $gender ->
-    [male] врівноважений
+  { GENDER($ent) ->
+    *[male] врівноважений
     [female] врівноважена
-    *[neuter] врівноважене
+    [neuter] врівноважене
   }
 adjectives-dataset-42 =
-  { $gender ->
-    [male] безцінний
+  { GENDER($ent) ->
+    *[male] безцінний
     [female] безцінна
-    *[neuter] безцінне
+    [neuter] безцінне
   }
 adjectives-dataset-43 =
-  { $gender ->
-    [male] химерний
-    [female] химерна
-    *[neuter] химерне
+  { GENDER($ent) ->
+    *[male] затишний
+    [female] затишна
+    [neuter] затишне
   }
 adjectives-dataset-44 =
-  { $gender ->
-    [male] лискучий
-    [female] лискуча
-    *[neuter] лискуче
+  { GENDER($ent) ->
+    *[male] сяючий
+    [female] сяюча
+    [neuter] сяюче
   }
 adjectives-dataset-45 =
-  { $gender ->
-    [male] задимлений
+  { GENDER($ent) ->
+    *[male] задимлений
     [female] задимлена
-    *[neuter] задимлене
+    [neuter] задимлене
   }
 adjectives-dataset-46 =
-  { $gender ->
-    [male] сяючий
-    [female] сяюча
-    *[neuter] сяюче
+  { GENDER($ent) ->
+    *[male] іскристий
+    [female] іскриста
+    [neuter] іскристе
   }
 adjectives-dataset-47 =
-  { $gender ->
-    [male] бездоганний
+  { GENDER($ent) ->
+    *[male] бездоганний
     [female] бездоганна
-    *[neuter] бездоганне
+    [neuter] бездоганне
   }
 adjectives-dataset-48 =
-  { $gender ->
-    [male] штормуючий
-    [female] штормуюча
-    *[neuter] штормуюче
+  { GENDER($ent) ->
+    *[male] бурхливий
+    [female] бурхлива
+    [neuter] бурхливе
   }
 adjectives-dataset-49 =
-  { $gender ->
-    [male] дивний
+  { GENDER($ent) ->
+    *[male] дивний
     [female] дивна
-    *[neuter] дивне
+    [neuter] дивне
   }
 adjectives-dataset-50 =
-  { $gender ->
-    [male] потворний
-    [female] потвора
-    *[neuter] потвора
+  { GENDER($ent) ->
+    *[male] потворний
+    [female] потворна
+    [neuter] потворне
   }
 adjectives-dataset-51 =
-  { $gender ->
-    [male] найпотворніший
+  { GENDER($ent) ->
+    *[male] найпотворніший
     [female] найпотворніша
-    *[neuter] найпотворніше
+    [neuter] найпотворніше
   }
 adjectives-dataset-52 =
-  { $gender ->
-    [male] непривабливий
+  { GENDER($ent) ->
+    *[male] непривабливий
     [female] неприваблива
-    *[neuter] непривабливе
+    [neuter] непривабливе
   }
 adjectives-dataset-53 =
-  { $gender ->
-    [male] незвичайний
+  { GENDER($ent) ->
+    *[male] незвичайний
     [female] незвичайна
-    *[neuter] незвичайне
+    [neuter] незвичайне
   }
 adjectives-dataset-54 =
-  { $gender ->
-    [male] надрозумний
-    [female] надрозумна
-    *[neuter] надрозумне
+  { GENDER($ent) ->
+    *[male] наївний
+    [female] наївна
+    [neuter] наївне
   }
 adjectives-dataset-55 =
-  { $gender ->
-    [male] живий
+  { GENDER($ent) ->
+    *[male] живий
     [female] жива
-    *[neuter] живе
+    [neuter] живе
   }
 adjectives-dataset-56 =
-  { $gender ->
-    [male] дратівливий
-    [female] дратівлива
-    *[neuter] дратівливе
+  { GENDER($ent) ->
+    *[male] докучливий
+    [female] докучлива
+    [neuter] докучливе
   }
 adjectives-dataset-57 =
-  { $gender ->
-    [male] поганий
+  { GENDER($ent) ->
+    *[male] поганий
     [female] погана
-    *[neuter] погане
+    [neuter] погане
   }
 adjectives-dataset-58 =
-  { $gender ->
-    [male] кращий
+  { GENDER($ent) ->
+    *[male] кращий
     [female] краща
-    *[neuter] краще
+    [neuter] краще
   }
 adjectives-dataset-59 =
-  { $gender ->
-    [male] красивий
+  { GENDER($ent) ->
+    *[male] красивий
     [female] красива
-    *[neuter] красиве
+    [neuter] красиве
   }
 adjectives-dataset-60 =
-  { $gender ->
-    [male] розумний
-    [female] розумна
-    *[neuter] розумне
+  { GENDER($ent) ->
+    *[male] тямущий
+    [female] тямуща
+    [neuter] тямуще
   }
 adjectives-dataset-61 =
-  { $gender ->
-    [male] зламаний
-    [female] зламана
-    *[neuter] зламане
+  { GENDER($ent) ->
+    *[male] ламкий
+    [female] ламка
+    [neuter] ламке
   }
 adjectives-dataset-62 =
-  { $gender ->
-    [male] діловитий
-    [female] діловита
-    *[neuter] діловите
+  { GENDER($ent) ->
+    *[male] завантажений
+    [female] завантажена
+    [neuter] завантажене
   }
 adjectives-dataset-63 =
-  { $gender ->
-    [male] обережний
-    [female] обережна
-    *[neuter] обережне
+  { GENDER($ent) ->
+    *[male] дбайливий
+    [female] дбайлива
+    [neuter] дбайливе
   }
 adjectives-dataset-64 =
-  { $gender ->
-    [male] обережний
-    [female] обережна
-    *[neuter] обережне
+  { GENDER($ent) ->
+    *[male] обачний
+    [female] обачна
+    [neuter] обачне
   }
 adjectives-dataset-65 =
-  { $gender ->
-    [male] розумний
-    [female] розумна
-    *[neuter] розумне
+  { GENDER($ent) ->
+    *[male] кмітливий
+    [female] кмітлива
+    [neuter] кмітливе
   }
 adjectives-dataset-66 =
-  { $gender ->
-    [male] незграбний
+  { GENDER($ent) ->
+    *[male] незграбний
     [female] незграбна
-    *[neuter] незграбне
+    [neuter] незграбне
   }
 adjectives-dataset-67 =
-  { $gender ->
-    [male] стурбований
-    [female] стурбована
-    *[neuter] стурбоване
+  { GENDER($ent) ->
+    *[male] занепокоєний
+    [female] занепокоєна
+    [neuter] занепокоєне
   }
 adjectives-dataset-68 =
-  { $gender ->
-    [male] шалений
-    [female] шалена
-    *[neuter] шалене
+  { GENDER($ent) ->
+    *[male] навіжений
+    [female] навіжена
+    [neuter] навіжене
   }
 adjectives-dataset-69 =
-  { $gender ->
-    [male] допитливий
+  { GENDER($ent) ->
+    *[male] допитливий
     [female] допитлива
-    *[neuter] допитливе
+    [neuter] допитливе
   }
 adjectives-dataset-70 =
-  { $gender ->
-    [male] мертвий
+  { GENDER($ent) ->
+    *[male] мертвий
     [female] мертва
-    *[neuter] мертве
+    [neuter] мертве
   }
 adjectives-dataset-71 =
-  { $gender ->
-    [male] інший
+  { GENDER($ent) ->
+    *[male] інший
     [female] інша
-    *[neuter] інше
+    [neuter] інше
   }
 adjectives-dataset-72 =
-  { $gender ->
-    [male] складний
+  { GENDER($ent) ->
+    *[male] складний
     [female] складна
-    *[neuter] складне
+    [neuter] складне
   }
 adjectives-dataset-73 =
-  { $gender ->
-    [male] сумнівний
-    [female] сумнівна
-    *[neuter] сумнівне
+  { GENDER($ent) ->
+    *[male] непевний
+    [female] непевна
+    [neuter] непевне
   }
 adjectives-dataset-74 =
-  { $gender ->
-    [male] легкий
-    [female] легка
-    *[neuter] легке
+  { GENDER($ent) ->
+    *[male] простий
+    [female] проста
+    [neuter] просте
   }
 adjectives-dataset-75 =
-  { $gender ->
-    [male] дорогий
+  { GENDER($ent) ->
+    *[male] дорогий
     [female] дорога
-    *[neuter] дороге
+    [neuter] дороге
   }
 adjectives-dataset-76 =
-  { $gender ->
-    [male] відомий
+  { GENDER($ent) ->
+    *[male] відомий
     [female] відома
-    *[neuter] відоме
+    [neuter] відоме
   }
 adjectives-dataset-77 =
-  { $gender ->
-    [male] крихкий
+  { GENDER($ent) ->
+    *[male] крихкий
     [female] крихка
-    *[neuter] крихке
+    [neuter] крихке
   }
 adjectives-dataset-78 =
-  { $gender ->
-    [male] кволий
+  { GENDER($ent) ->
+    *[male] кволий
     [female] квола
-    *[neuter] кволе
+    [neuter] кволе
   }
 adjectives-dataset-79 =
-  { $gender ->
-    [male] подаровано
-    [female] подаровано
-    *[neuter] подаровано
+  { GENDER($ent) ->
+    *[male] обдарований
+    [female] обдарована
+    [neuter] обдароване
   }
 adjectives-dataset-80 =
-  { $gender ->
-    [male] корисний
+  { GENDER($ent) ->
+    *[male] корисний
     [female] корисна
-    *[neuter] корисне
+    [neuter] корисне
   }
 adjectives-dataset-81 =
-  { $gender ->
-    [male] безкорисний
-    [female] безкорисна
-    *[neuter] безкорисне
+  { GENDER($ent) ->
+    *[male] безпомічний
+    [female] безпомічна
+    [neuter] безпомічне
   }
 adjectives-dataset-82 =
-  { $gender ->
-    [male] жахливий
+  { GENDER($ent) ->
+    *[male] жахливий
     [female] жахлива
-    *[neuter] жахливе
+    [neuter] жахливе
   }
 adjectives-dataset-83 =
-  { $gender ->
-    [male] важливий
+  { GENDER($ent) ->
+    *[male] важливий
     [female] важлива
-    *[neuter] важливе
+    [neuter] важливе
   }
 adjectives-dataset-84 =
-  { $gender ->
-    [male] неможливий
+  { GENDER($ent) ->
+    *[male] неможливий
     [female] неможлива
-    *[neuter] неможливе
+    [neuter] неможливе
   }
 adjectives-dataset-85 =
-  { $gender ->
-    [male] недорогий
+  { GENDER($ent) ->
+    *[male] недорогий
     [female] недорога
-    *[neuter] недороге
+    [neuter] недороге
   }
 adjectives-dataset-86 =
-  { $gender ->
-    [male] невинний
+  { GENDER($ent) ->
+    *[male] невинний
     [female] невинна
-    *[neuter] невинне
+    [neuter] невинне
   }
 adjectives-dataset-87 =
-  { $gender ->
-    [male] допитливий
+  { GENDER($ent) ->
+    *[male] допитливий
     [female] допитлива
-    *[neuter] допитливе
+    [neuter] допитливе
   }
 adjectives-dataset-88 =
-  { $gender ->
-    [male] сучасний
+  { GENDER($ent) ->
+    *[male] сучасний
     [female] сучасна
-    *[neuter] сучасне
+    [neuter] сучасне
   }
 adjectives-dataset-89 =
-  { $gender ->
-    [male] м'який
+  { GENDER($ent) ->
+    *[male] м'який
     [female] м'яка
-    *[neuter] м'яке
+    [neuter] м'яке
   }
 adjectives-dataset-90 =
-  { $gender ->
-    [male] дивак
-    [female] дивачка
-    *[neuter] дивак
+  { GENDER($ent) ->
+    *[male] незвичний
+    [female] незвична
+    [neuter] незвичне
   }
 adjectives-dataset-91 =
-  { $gender ->
-    [male] відкритий
+  { GENDER($ent) ->
+    *[male] відкритий
     [female] відкрита
-    *[neuter] відкрите
+    [neuter] відкрите
   }
 adjectives-dataset-92 =
-  { $gender ->
-    [male] непересічний
+  { GENDER($ent) ->
+    *[male] непересічний
     [female] непересічна
-    *[neuter] непересічне
+    [neuter] непересічне
   }
 adjectives-dataset-93 =
-  { $gender ->
-    [male] бідний
+  { GENDER($ent) ->
+    *[male] бідний
     [female] бідна
-    *[neuter] бідне
+    [neuter] бідне
   }
 adjectives-dataset-94 =
-  { $gender ->
-    [male] сильний
-    [female] сильна
-    *[neuter] сильне
+  { GENDER($ent) ->
+    *[male] потужний
+    [female] потужна
+    [neuter] потужне
   }
 adjectives-dataset-95 =
-  { $gender ->
-    [male] колючий
+  { GENDER($ent) ->
+    *[male] колючий
     [female] колюча
-    *[neuter] колюче
+    [neuter] колюче
   }
 adjectives-dataset-96 =
-  { $gender ->
-    [male] спантеличений
+  { GENDER($ent) ->
+    *[male] спантеличений
     [female] спантеличена
-    *[neuter] спантеличене
+    [neuter] спантеличене
   }
 adjectives-dataset-97 =
-  { $gender ->
-    [male] реальний
+  { GENDER($ent) ->
+    *[male] реальний
     [female] реальна
-    *[neuter] реальне
+    [neuter] реальне
   }
 adjectives-dataset-98 =
-  { $gender ->
-    [male] багатий
+  { GENDER($ent) ->
+    *[male] багатий
     [female] багата
-    *[neuter] багате
+    [neuter] багате
   }
 adjectives-dataset-99 =
-  { $gender ->
-    [male] устидливий
-    [female] устидлива
-    *[neuter] устидливе
+  { GENDER($ent) ->
+    *[male] сором'язливий
+    [female] сором'язлива
+    [neuter] сором'язливе
   }
 adjectives-dataset-100 =
-  { $gender ->
-    [male] сонний
+  { GENDER($ent) ->
+    *[male] сонний
     [female] сонна
-    *[neuter] сонне
+    [neuter] сонне
   }
 adjectives-dataset-101 =
-  { $gender ->
-    [male] тупий
+  { GENDER($ent) ->
+    *[male] тупий
     [female] тупа
-    *[neuter] тупе
+    [neuter] тупе
   }
 adjectives-dataset-102 =
-  { $gender ->
-    [male] супер
+  { GENDER($ent) ->
+    *[male] супер
     [female] супер
-    *[neuter] супер
+    [neuter] супер
   }
 adjectives-dataset-103 =
-  { $gender ->
-    [male] талановитий
+  { GENDER($ent) ->
+    *[male] талановитий
     [female] талановита
-    *[neuter] талановите
+    [neuter] талановите
   }
 adjectives-dataset-104 =
-  { $gender ->
-    [male] приручений
+  { GENDER($ent) ->
+    *[male] приручений
     [female] приручена
-    *[neuter] приручене
+    [neuter] приручене
   }
 adjectives-dataset-105 =
-  { $gender ->
-    [male] ніжний
+  { GENDER($ent) ->
+    *[male] ніжний
     [female] ніжна
-    *[neuter] ніжне
+    [neuter] ніжне
   }
 adjectives-dataset-106 =
-  { $gender ->
-    [male] жорсткий
+  { GENDER($ent) ->
+    *[male] жорсткий
     [female] жорстка
-    *[neuter] жорстке
+    [neuter] жорстке
   }
 adjectives-dataset-107 =
-  { $gender ->
-    [male] незацікавлений
+  { GENDER($ent) ->
+    *[male] незацікавлений
     [female] незацікавлена
-    *[neuter] незацікавлене
+    [neuter] незацікавлене
   }
 adjectives-dataset-108 =
-  { $gender ->
-    [male] величезна
-    [female] величезна
-    *[neuter] величезна
+  { GENDER($ent) ->
+    *[male] обширний
+    [female] обширна
+    [neuter] обширне
   }
 adjectives-dataset-109 =
-  { $gender ->
-    [male] блукаючий
+  { GENDER($ent) ->
+    *[male] блукаючий
     [female] блукаюча
-    *[neuter] блукаюче
+    [neuter] блукаюче
   }
 adjectives-dataset-110 =
-  { $gender ->
-    [male] дикий
+  { GENDER($ent) ->
+    *[male] дикий
     [female] дика
-    *[neuter] дике
+    [neuter] дике
   }
 adjectives-dataset-111 =
-  { $gender ->
-    [male] помилковий
+  { GENDER($ent) ->
+    *[male] помилковий
     [female] помилкова
-    *[neuter] помилкове
+    [neuter] помилкове
   }
 adjectives-dataset-112 =
-  { $gender ->
-    [male] злий
-    [female] зла
-    *[neuter] зле
+  { GENDER($ent) ->
+    *[male] розгніваний
+    [female] розгнівана
+    [neuter] розгніване
   }
 adjectives-dataset-113 =
-  { $gender ->
-    [male] надокучливий
-    [female] надокучлива
-    *[neuter] надокучливе
+  { GENDER($ent) ->
+    *[male] роздратований
+    [female] роздратована
+    [neuter] роздратоване
   }
 adjectives-dataset-114 =
-  { $gender ->
-    [male] занепокоєний
-    [female] занепокоєна
-    *[neuter] занепокоєне
+  { GENDER($ent) ->
+    *[male] тривожний
+    [female] тривожна
+    [neuter] тривожне
   }
 adjectives-dataset-115 =
-  { $gender ->
-    [male] зарозумілий
-    [female] зарозуміла
-    *[neuter] зарозуміле
+  { GENDER($ent) ->
+    *[male] пихатий
+    [female] пихата
+    [neuter] пихате
   }
 adjectives-dataset-116 =
-  { $gender ->
-    [male] засоромлений
-    [female] засоромлена
-    *[neuter] засоромлене
+  { GENDER($ent) ->
+    *[male] присоромлений
+    [female] присоромлена
+    [neuter] присоромлене
   }
 adjectives-dataset-117 =
-  { $gender ->
-    [male] огидний
-    [female] огидна
-    *[neuter] огидне
+  { GENDER($ent) ->
+    *[male] жахливий
+    [female] жахлива
+    [neuter] жахливе
   }
 adjectives-dataset-118 =
-  { $gender ->
-    [male] поганий
+  { GENDER($ent) ->
+    *[male] поганий
     [female] погана
-    *[neuter] погане
+    [neuter] погане
   }
 adjectives-dataset-119 =
-  { $gender ->
-    [male] спантеличений
-    [female] спантеличена
-    *[neuter] спантеличене
+  { GENDER($ent) ->
+    *[male] збентежений
+    [female] збентежена
+    [neuter] збентежений
   }
 adjectives-dataset-120 =
-  { $gender ->
-    [male] чорний
+  { GENDER($ent) ->
+    *[male] чорний
     [female] чорна
-    *[neuter] чорне
+    [neuter] чорне
   }
 adjectives-dataset-121 =
-  { $gender ->
-    [male] блакитний
+  { GENDER($ent) ->
+    *[male] блакитний
     [female] блакитна
-    *[neuter] блакитне
+    [neuter] блакитне
   }
 adjectives-dataset-122 =
-  { $gender ->
-    [male] нудний
-    [female] нудна
-    *[neuter] нудне
+  { GENDER($ent) ->
+    *[male] нудьгуючий
+    [female] нудьгуюча
+    [neuter] нудьгуюче
   }
 adjectives-dataset-123 =
-  { $gender ->
-    [male] незграба
-    [female] незграба
-    *[neuter] незграба
+  { GENDER($ent) ->
+    *[male] незграбний
+    [female] незграбна
+    [neuter] незграбне
   }
 adjectives-dataset-124 =
-  { $gender ->
-    [male] бойовий
+  { GENDER($ent) ->
+    *[male] бойовий
     [female] бойова
-    *[neuter] бойове
+    [neuter] бойове
   }
 adjectives-dataset-125 =
-  { $gender ->
-    [male] засуджений
+  { GENDER($ent) ->
+    *[male] засуджений
     [female] засуджена
-    *[neuter] засуджене
+    [neuter] засуджене
   }
 adjectives-dataset-126 =
-  { $gender ->
-    [male] зніяковілий
-    [female] зніяковіла
-    *[neuter] зніяковіле
+  { GENDER($ent) ->
+    *[male] розгублений
+    [female] розгублена
+    [neuter] розгублене
   }
 adjectives-dataset-127 =
-  { $gender ->
-    [male] божевільний
-    [female] божевільна
-    *[neuter] божевільне
+  { GENDER($ent) ->
+    *[male] розлючений
+    [female] розлючена
+    [neuter] розлючене
   }
 adjectives-dataset-128 =
-  { $gender ->
-    [male] моторошний
+  { GENDER($ent) ->
+    *[male] моторошний
     [female] моторошна
-    *[neuter] моторошне
+    [neuter] моторошне
   }
 adjectives-dataset-129 =
-  { $gender ->
-    [male] жорстоко
-    [female] жорстоко
-    *[neuter] жорстоко
+  { GENDER($ent) ->
+    *[male] жорстокий
+    [female] жорстока
+    [neuter] жорстоке
   }
 adjectives-dataset-130 =
-  { $gender ->
-    [male] небезпечно
-    [female] небезпечно
-    *[neuter] небезпечно
+  { GENDER($ent) ->
+    *[male] небезпечний
+    [female] небезпечна
+    [neuter] небезпечне
   }
 adjectives-dataset-131 =
-  { $gender ->
-    [male] переможений
+  { GENDER($ent) ->
+    *[male] переможений
     [female] переможена
-    *[neuter] переможене
+    [neuter] переможене
   }
 adjectives-dataset-132 =
-  { $gender ->
-    [male] зухвалий
+  { GENDER($ent) ->
+    *[male] зухвалий
     [female] зухвала
-    *[neuter] зухвале
+    [neuter] зухвале
   }
 adjectives-dataset-133 =
-  { $gender ->
-    [male] депресія
-    [female] депресія
-    *[neuter] депресія
+  { GENDER($ent) ->
+    *[male] пригнічений
+    [female] пригнічена
+    [neuter] пригнічене
   }
 adjectives-dataset-134 =
-  { $gender ->
-    [male] огида
-    [female] огида
-    *[neuter] огида
+  { GENDER($ent) ->
+    *[male] огид
+    [female] огид
+    [neuter] огид
   }
 adjectives-dataset-135 =
-  { $gender ->
-    [male] неспокійно
-    [female] неспокійно
-    *[neuter] неспокійно
+  { GENDER($ent) ->
+    *[male] стурбований
+    [female] стурбована
+    [neuter] стурбоване
   }
 adjectives-dataset-136 =
-  { $gender ->
-    [male] паморочиться
-    [female] паморочиться
-    *[neuter] паморочиться
+  { GENDER($ent) ->
+    *[male] запаморочений
+    [female] запаморочена
+    [neuter] запаморочене
   }
 adjectives-dataset-137 =
-  { $gender ->
-    [male] одоробло
-    [female] одоробло
-    *[neuter] одоробло
+  { GENDER($ent) ->
+    *[male] нудний
+    [female] нудна
+    [neuter] нудне
   }
 adjectives-dataset-138 =
-  { $gender ->
-    [male] збентежений
-    [female] збентежена
-    *[neuter] збентежене
+  { GENDER($ent) ->
+    *[male] зніяковілий
+    [female] зніяковіла
+    [neuter] зніяковіле
   }
 adjectives-dataset-139 =
-  { $gender ->
-    [male] заздрість
-    [female] заздрість
-    *[neuter] заздрість
+  { GENDER($ent) ->
+    *[male] заздрісний
+    [female] заздрісна
+    [neuter] заздрісне
   }
 adjectives-dataset-140 =
-  { $gender ->
-    [male] злодій
-    [female] злодя
-    *[neuter] злодє
+  { GENDER($ent) ->
+    *[male] злий
+    [female] зла
+    [neuter] зле
   }
 adjectives-dataset-141 =
-  { $gender ->
-    [male] запеклий
-    [female] запекла
-    *[neuter] запекле
+  { GENDER($ent) ->
+    *[male] лютий
+    [female] люта
+    [neuter] люте
   }
 adjectives-dataset-142 =
-  { $gender ->
-    [male] дурень
-    [female] дурень
-    *[neuter] дурень
+  { GENDER($ent) ->
+    *[male] дурний
+    [female] дурна
+    [neuter] дурне
   }
 adjectives-dataset-143 =
-  { $gender ->
-    [male] несамовито
-    [female] несамовито
-    *[neuter] несамовито
+  { GENDER($ent) ->
+    *[male] несамовитий
+    [female] несамовита
+    [neuter] несамовите
   }
 adjectives-dataset-144 =
-  { $gender ->
-    [male] налякані
-    [female] налякані
-    *[neuter] налякані
+  { GENDER($ent) ->
+    *[male] наляканий
+    [female] налякана
+    [neuter] налякане
   }
 adjectives-dataset-145 =
-  { $gender ->
-    [male] скорбота
-    [female] скорбота
-    *[neuter] скорбота
+  { GENDER($ent) ->
+    *[male] скорботний
+    [female] скорботна
+    [neuter] скорботне
   }
 adjectives-dataset-146 =
-  { $gender ->
-    [male] сварливий
-    [female] сварлива
-    *[neuter] сварливе
+  { GENDER($ent) ->
+    *[male] буркотливий
+    [female] буркотлива
+    [neuter] буркотливе
   }
 adjectives-dataset-147 =
-  { $gender ->
-    [male] безнадійний
-    [female] безнадійна
-    *[neuter] безнадійне
+  { GENDER($ent) ->
+    *[male] безпомічний
+    [female] безпомічна
+    [neuter] безпомічне
   }
 adjectives-dataset-148 =
-  { $gender ->
-    [male] безхатько
-    [female] безхатько
-    *[neuter] безхатько
+  { GENDER($ent) ->
+    *[male] безхатній
+    [female] безхатня
+    [neuter] безхатнє
   }
 adjectives-dataset-149 =
-  { $gender ->
-    [male] голод
-    [female] голод
-    *[neuter] голод
+  { GENDER($ent) ->
+    *[male] голодний
+    [female] голодна
+    [neuter] голодне
   }
 adjectives-dataset-150 =
-  { $gender ->
-    [male] болить
-    [female] болить
-    *[neuter] болить
+  { GENDER($ent) ->
+    *[male] поранений
+    [female] поранена
+    [neuter] поранене
   }
 adjectives-dataset-151 =
-  { $gender ->
-    [male] хвороба
-    [female] хвороба
-    *[neuter] хвороба
+  { GENDER($ent) ->
+    *[male] хворий
+    [female] хвора
+    [neuter] хворе
   }
 adjectives-dataset-152 =
-  { $gender ->
-    [male] свербіж
-    [female] свербіж
-    *[neuter] свербіж
+  { GENDER($ent) ->
+    *[male] свербляче
+    [female] свербляча
+    [neuter] свербляче
   }
 adjectives-dataset-153 =
-  { $gender ->
-    [male] ревнива
+  { GENDER($ent) ->
+    *[male] ревнивий
     [female] ревнива
-    *[neuter] ревнива
+    [neuter] ревниве
   }
 adjectives-dataset-154 =
-  { $gender ->
-    [male] нервово
-    [female] нервово
-    *[neuter] нервово
+  { GENDER($ent) ->
+    *[male] тремтячий
+    [female] тремтяча
+    [neuter] тремтяче
   }
 adjectives-dataset-155 =
-  { $gender ->
-    [male] лінивий
+  { GENDER($ent) ->
+    *[male] лінивий
     [female] лінива
-    *[neuter] ліниве
+    [neuter] ліниве
   }
 adjectives-dataset-156 =
-  { $gender ->
-    [male] самотній
+  { GENDER($ent) ->
+    *[male] самотній
     [female] самотня
-    *[neuter] самотнє
+    [neuter] самотнє
   }
 adjectives-dataset-157 =
-  { $gender ->
-    [male] загадковий
+  { GENDER($ent) ->
+    *[male] загадковий
     [female] загадкова
-    *[neuter] загадкове
+    [neuter] загадкове
   }
 adjectives-dataset-158 =
-  { $gender ->
-    [male] противний
+  { GENDER($ent) ->
+    *[male] противний
     [female] противна
-    *[neuter] противне
+    [neuter] противне
   }
 adjectives-dataset-159 =
-  { $gender ->
-    [male] неслухняний
+  { GENDER($ent) ->
+    *[male] неслухняний
     [female] неслухняна
-    *[neuter] неслухняне
+    [neuter] неслухняне
   }
 adjectives-dataset-160 =
-  { $gender ->
-    [male] нервовий
+  { GENDER($ent) ->
+    *[male] нервовий
     [female] нервова
-    *[neuter] нервове
+    [neuter] нервове
   }
 adjectives-dataset-161 =
-  { $gender ->
-    [male] божевілля
-    [female] божевілля
-    *[neuter] божевілля
+  { GENDER($ent) ->
+    *[male] схиблений
+    [female] схиблена
+    [neuter] схиблене
   }
 adjectives-dataset-162 =
-  { $gender ->
-    [male] нестерпний
-    [female] нестерпна
-    *[neuter] нестерпне
+  { GENDER($ent) ->
+    *[male] неприємний
+    [female] неприємна
+    [neuter] неприємне
   }
 adjectives-dataset-163 =
-  { $gender ->
-    [male] обурливо
-    [female] обурливо
-    *[neuter] обурливо
+  { GENDER($ent) ->
+    *[male] обурливий
+    [female] обурлива
+    [neuter] обурливе
   }
 adjectives-dataset-164 =
-  { $gender ->
-    [male] панікуючи
-    [female] панікуючи
-    *[neuter] панікуючи
+  { GENDER($ent) ->
+    *[male] панікуючий
+    [female] панікуюча
+    [neuter] панікуюче
   }
 adjectives-dataset-165 =
-  { $gender ->
-    [male] огидні
-    [female] огидні
-    *[neuter] огидні
+  { GENDER($ent) ->
+    *[male] відштовхуючий
+    [female] відштовхуюча
+    [neuter] відштовхуюче
   }
 adjectives-dataset-166 =
-  { $gender ->
-    [male] страшно
-    [female] страшно
-    *[neuter] страшно
+  { GENDER($ent) ->
+    *[male] страшний
+    [female] страшна
+    [neuter] страшне
   }
 adjectives-dataset-167 =
-  { $gender ->
-    [male] егоїст
-    [female] егоїст
-    *[neuter] егоїст
+  { GENDER($ent) ->
+    *[male] корисливий
+    [female] корислива
+    [neuter] корисливе
   }
 adjectives-dataset-168 =
-  { $gender ->
-    [male] боляче
-    [female] боляче
-    *[neuter] боляче
+  { GENDER($ent) ->
+    *[male] болючий
+    [female] болюча
+    [neuter] болюче
   }
 adjectives-dataset-169 =
-  { $gender ->
-    [male] напружений
+  { GENDER($ent) ->
+    *[male] напружений
     [female] напружена
-    *[neuter] напружене
+    [neuter] напружене
   }
 adjectives-dataset-170 =
-  { $gender ->
-    [male] страхітливий
-    [female] страхітлива
-    *[neuter] страхітливе
+  { GENDER($ent) ->
+    *[male] жахливий
+    [female] жахлива
+    [neuter] жахливе
   }
 adjectives-dataset-171 =
-  { $gender ->
-    [male] запальна
-    [female] запальна
-    *[neuter] запальна
+  { GENDER($ent) ->
+    *[male] дратівливий
+    [female] дратівлива
+    [neuter] дратівливе
   }
 adjectives-dataset-172 =
-  { $gender ->
-    [male] бездумно
-    [female] бездумно
-    *[neuter] бездумно
+  { GENDER($ent) ->
+    *[male] бездумний
+    [female] бездумна
+    [neuter] бездумне
   }
 adjectives-dataset-173 =
-  { $gender ->
-    [male] втома
-    [female] втома
-    *[neuter] втома
+  { GENDER($ent) ->
+    *[male] втомлений
+    [female] втомлена
+    [neuter] втомлене
   }
 adjectives-dataset-174 =
-  { $gender ->
-    [male] неспокійний
-    [female] неспокійна
-    *[neuter] неспокійне
+  { GENDER($ent) ->
+    *[male] проблемний
+    [female] проблемна
+    [neuter] проблемне
   }
 adjectives-dataset-175 =
-  { $gender ->
-    [male] засмучений
+  { GENDER($ent) ->
+    *[male] засмучений
     [female] засмучена
-    *[neuter] засмучене
+    [neuter] засмучене
   }
 adjectives-dataset-176 =
-  { $gender ->
-    [male] скутий
+  { GENDER($ent) ->
+    *[male] скутий
     [female] скута
-    *[neuter] скуте
+    [neuter] скуте
   }
 adjectives-dataset-177 =
-  { $gender ->
-    [male] втомлений
-    [female] втомлена
-    *[neuter] втомлене
+  { GENDER($ent) ->
+    *[male] стомлений
+    [female] стомлена
+    [neuter] стомлене
   }
 adjectives-dataset-178 =
-  { $gender ->
-    [male] нечестивий
+  { GENDER($ent) ->
+    *[male] нечестивий
     [female] нечестива
-    *[neuter] нечестиве
+    [neuter] нечестиве
   }
 adjectives-dataset-179 =
-  { $gender ->
-    [male] стурбовано
-    [female] стурбовано
-    *[neuter] стурбовано
+  { GENDER($ent) ->
+    *[male] схвильований
+    [female] схвильована
+    [neuter] схвильоване
   }
 adjectives-dataset-180 =
-  { $gender ->
-    [male] погоджуюсь
-    [female] погоджуюсь
-    *[neuter] погоджуюсь
+  { GENDER($ent) ->
+    *[male] поступливий
+    [female] поступлива
+    [neuter] поступливе
   }
 adjectives-dataset-181 =
-  { $gender ->
-    [male] потішливо
-    [female] потішливо
-    *[neuter] потішливо
+  { GENDER($ent) ->
+    *[male] розважений
+    [female] розважена
+    [neuter] розважене
   }
 adjectives-dataset-182 =
-  { $gender ->
-    [male] сміливо
-    [female] сміливо
-    *[neuter] сміливо
+  { GENDER($ent) ->
+    *[male] сміливий
+    [female] смілива
+    [neuter] сміливе
   }
 adjectives-dataset-183 =
-  { $gender ->
-    [male] спокій
-    [female] спокя
-    *[neuter] спокє
+  { GENDER($ent) ->
+    *[male] спокійний
+    [female] спокійна
+    [neuter] спокійне
   }
 adjectives-dataset-184 =
-  { $gender ->
-    [male] чаруючий
+  { GENDER($ent) ->
+    *[male] чаруючий
     [female] чаруюча
-    *[neuter] чаруюче
+    [neuter] чаруюче
   }
 adjectives-dataset-185 =
-  { $gender ->
-    [male] життєрадісний
+  { GENDER($ent) ->
+    *[male] життєрадісний
     [female] життєрадісна
-    *[neuter] життєрадісне
+    [neuter] життєрадісне
   }
 adjectives-dataset-186 =
-  { $gender ->
-    [male] комфорт
-    [female] комфорт
-    *[neuter] комфорт
+  { GENDER($ent) ->
+    *[male] комфортний
+    [female] комфортна
+    [neuter] комфортне
   }
 adjectives-dataset-187 =
-  { $gender ->
-    [male] кооператив
+  { GENDER($ent) ->
+    *[male] кооператив
     [female] кооператив
-    *[neuter] кооператив
+    [neuter] кооператив
   }
 adjectives-dataset-188 =
-  { $gender ->
-    [male] відвага
-    [female] відвага
-    *[neuter] відвага
+  { GENDER($ent) ->
+    *[male] відважний
+    [female] відважна
+    [neuter] відважне
   }
 adjectives-dataset-189 =
-  { $gender ->
-    [male] пречудово
-    [female] пречудово
-    *[neuter] пречудово
+  { GENDER($ent) ->
+    *[male] пречудовий
+    [female] пречудова
+    [neuter] пречудове
   }
 adjectives-dataset-190 =
-  { $gender ->
-    [male] рішуче
-    [female] рішуче
-    *[neuter] рішуче
+  { GENDER($ent) ->
+    *[male] рішучий
+    [female] рішуча
+    [neuter] рішуче
   }
 adjectives-dataset-191 =
-  { $gender ->
-    [male] нетерплячий
+  { GENDER($ent) ->
+    *[male] нетерплячий
     [female] нетерпляча
-    *[neuter] нетерпляче
+    [neuter] нетерпляче
   }
 adjectives-dataset-192 =
-  { $gender ->
-    [male] радісно
-    [female] радісно
-    *[neuter] радісно
+  { GENDER($ent) ->
+    *[male] піднесений
+    [female] піднесена
+    [neuter] піднесене
   }
 adjectives-dataset-193 =
-  { $gender ->
-    [male] чарівно
-    [female] чарівно
-    *[neuter] чарівно
+  { GENDER($ent) ->
+    *[male] чарівний
+    [female] чарівна
+    [neuter] чарівне
   }
 adjectives-dataset-194 =
-  { $gender ->
-    [male] захочуючи
-    [female] захочуючи
-    *[neuter] захочуючи
+  { GENDER($ent) ->
+    *[male] захочувальний
+    [female] захочувальна
+    [neuter] захочувальне
   }
 adjectives-dataset-195 =
-  { $gender ->
-    [male] енергічний
-    [female] енергічна
-    *[neuter] енергічне
+  { GENDER($ent) ->
+    *[male] енергійний
+    [female] енергійна
+    [neuter] енергійне
   }
 adjectives-dataset-196 =
-  { $gender ->
-    [male] ентузіасти
-    [female] ентузіасти
-    *[neuter] ентузіасти
+  { GENDER($ent) ->
+    *[male] завзятий
+    [female] завзята
+    [neuter] завзяте
   }
 adjectives-dataset-197 =
-  { $gender ->
-    [male] схвильований
-    [female] схвильована
-    *[neuter] схвильоване
+  { GENDER($ent) ->
+    *[male] захоплений
+    [female] захоплена
+    [neuter] захоплене
   }
 adjectives-dataset-198 =
-  { $gender ->
-    [male] буйний
+  { GENDER($ent) ->
+    *[male] буйний
     [female] буйна
-    *[neuter] буйне
+    [neuter] буйне
   }
 adjectives-dataset-199 =
-  { $gender ->
-    [male] чесно
-    [female] чесно
-    *[neuter] чесно
+  { GENDER($ent) ->
+    *[male] справедливий
+    [female] справедлива
+    [neuter] справедливе
   }
 adjectives-dataset-200 =
-  { $gender ->
-    [male] вірно
-    [female] вірно
-    *[neuter] вірно
+  { GENDER($ent) ->
+    *[male] вірний
+    [female] вірна
+    [neuter] вірне
   }
 adjectives-dataset-201 =
-  { $gender ->
-    [male] фантастично
-    [female] фантастично
-    *[neuter] фантастично
+  { GENDER($ent) ->
+    *[male] фантастичний
+    [female] фантастична
+    [neuter] фантастичне
   }
 adjectives-dataset-202 =
-  { $gender ->
-    [male] добре
-    [female] добре
-    *[neuter] добре
+  { GENDER($ent) ->
+    *[male] непоганий
+    [female] непогана
+    [neuter] непогане
   }
 adjectives-dataset-203 =
-  { $gender ->
-    [male] дружньо
-    [female] дружньо
-    *[neuter] дружньо
+  { GENDER($ent) ->
+    *[male] дружній
+    [female] дружня
+    [neuter] дружнє
   }
 adjectives-dataset-204 =
-  { $gender ->
-    [male] смішно
-    [female] смішно
-    *[neuter] смішно
+  { GENDER($ent) ->
+    *[male] кумедний
+    [female] кумедна
+    [neuter] кумедне
   }
 adjectives-dataset-205 =
-  { $gender ->
-    [male] тендітно
-    [female] тендітно
-    *[neuter] тендітно
+  { GENDER($ent) ->
+    *[male] ніжний
+    [female] ніжна
+    [neuter] ніжне
   }
 adjectives-dataset-206 =
-  { $gender ->
-    [male] славнозвісні
-    [female] славнозвісні
-    *[neuter] славнозвісні
+  { GENDER($ent) ->
+    *[male] славетний
+    [female] славетна
+    [neuter] славетне
   }
 adjectives-dataset-207 =
-  { $gender ->
-    [male] чудово
-    [female] чудово
-    *[neuter] чудово
+  { GENDER($ent) ->
+    *[male] добрий
+    [female] добра
+    [neuter] добре
   }
 adjectives-dataset-208 =
-  { $gender ->
-    [male] щасливо
-    [female] щасливо
-    *[neuter] щасливо
+  { GENDER($ent) ->
+    *[male] радий
+    [female] рада
+    [neuter] раде
   }
 adjectives-dataset-209 =
-  { $gender ->
-    [male] здорові
-    [female] здорові
-    *[neuter] здорові
+  { GENDER($ent) ->
+    *[male] здоровий
+    [female] здорова
+    [neuter] здорове
   }
 adjectives-dataset-210 =
-  { $gender ->
-    [male] корисні
-    [female] корисні
-    *[neuter] корисні
+  { GENDER($ent) ->
+    *[male] корисний
+    [female] корисна
+    [neuter] корисне
   }
 adjectives-dataset-211 =
-  { $gender ->
-    [male] кумедні
-    [female] кумедні
-    *[neuter] кумедні
+  { GENDER($ent) ->
+    *[male] смішний
+    [female] смішна
+    [neuter] смішне
   }
 adjectives-dataset-212 =
-  { $gender ->
-    [male] веселий
+  { GENDER($ent) ->
+    *[male] веселий
     [female] весела
-    *[neuter] веселе
+    [neuter] веселе
   }
 adjectives-dataset-213 =
-  { $gender ->
-    [male] радісні
-    [female] радісні
-    *[neuter] радісні
+  { GENDER($ent) ->
+    *[male] радісний
+    [female] радісна
+    [neuter] радісне
   }
 adjectives-dataset-214 =
-  { $gender ->
-    [male] добрий
-    [female] добра
-    *[neuter] добре
+  { GENDER($ent) ->
+    *[male] люб'язний
+    [female] люб'язна
+    [neuter] люб'язне
   }
 adjectives-dataset-215 =
-  { $gender ->
-    [male] жваві
-    [female] жваві
-    *[neuter] жваві
+  { GENDER($ent) ->
+    *[male] бадьорий
+    [female] бадьора
+    [neuter] бадьоре
   }
 adjectives-dataset-216 =
-  { $gender ->
-    [male] мила
-    [female] мила
-    *[neuter] мила
+  { GENDER($ent) ->
+    *[male] миленький
+    [female] миленька
+    [neuter] миленьке
   }
 adjectives-dataset-217 =
-  { $gender ->
-    [male] щасливий
+  { GENDER($ent) ->
+    *[male] щасливий
     [female] щаслива
-    *[neuter] щасливе
+    [neuter] щасливе
   }
 adjectives-dataset-218 =
-  { $gender ->
-    [male] круто
-    [female] круто
-    *[neuter] круто
+  { GENDER($ent) ->
+    *[male] хороший
+    [female] хороша
+    [neuter] хороше
   }
 adjectives-dataset-219 =
-  { $gender ->
-    [male] слухняний
+  { GENDER($ent) ->
+    *[male] слухняний
     [female] слухняна
-    *[neuter] слухняне
+    [neuter] слухняне
   }
 adjectives-dataset-220 =
-  { $gender ->
-    [male] прекрасно
-    [female] прекрасно
-    *[neuter] прекрасно
+  { GENDER($ent) ->
+    *[male] ідеальний
+    [female] ідеальна
+    [neuter] ідеальне
   }
 adjectives-dataset-221 =
-  { $gender ->
-    [male] задовільно
-    [female] задовільно
-    *[neuter] задовільно
+  { GENDER($ent) ->
+    *[male] приємний
+    [female] приємна
+    [neuter] приємне
   }
 adjectives-dataset-222 =
-  { $gender ->
-    [male] пихатий
-    [female] пихата
-    *[neuter] пихате
+  { GENDER($ent) ->
+    *[male] гордий
+    [female] горда
+    [neuter] горде
   }
 adjectives-dataset-223 =
-  { $gender ->
-    [male] полегшення
-    [female] полегшення
-    *[neuter] полегшення
+  { GENDER($ent) ->
+    *[male] полегшений
+    [female] полегшена
+    [neuter] полегшене
   }
 adjectives-dataset-224 =
-  { $gender ->
-    [male] дурненькі
-    [female] дурненькі
-    *[neuter] дурненькі
+  { GENDER($ent) ->
+    *[male] дурненький
+    [female] дурненька
+    [neuter] дурненьке
   }
 adjectives-dataset-225 =
-  { $gender ->
-    [male] посмішка
-    [female] посмішка
-    *[neuter] посмішка
+  { GENDER($ent) ->
+    *[male] усміхнений
+    [female] усміхнена
+    [neuter] усміхнене
   }
 adjectives-dataset-226 =
-  { $gender ->
-    [male] по рукам
-    [female] по рукам
-    *[neuter] по рукам
+  { GENDER($ent) ->
+    *[male] прекрасний
+    [female] прекрасна
+    [neuter] прекрасне
   }
 adjectives-dataset-227 =
-  { $gender ->
-    [male] успішно
-    [female] успішно
-    *[neuter] успішно
+  { GENDER($ent) ->
+    *[male] успішний
+    [female] успішна
+    [neuter] успішне
   }
 adjectives-dataset-228 =
-  { $gender ->
-    [male] дякую
-    [female] дякую
-    *[neuter] дякую
+  { GENDER($ent) ->
+    *[male] вдячний
+    [female] вдячна
+    [neuter] вдячне
   }
 adjectives-dataset-229 =
-  { $gender ->
-    [male] турбота
-    [female] турбота
-    *[neuter] турбота
+  { GENDER($ent) ->
+    *[male] чуйний
+    [female] чуйна
+    [neuter] чуйне
   }
 adjectives-dataset-230 =
-  { $gender ->
-    [male] переможний
-    [female] переможна
-    *[neuter] переможне
+  { GENDER($ent) ->
+    *[male] звитяжний
+    [female] звитяжна
+    [neuter] звитяжне
   }
 adjectives-dataset-231 =
-  { $gender ->
-    [male] жвавий
+  { GENDER($ent) ->
+    *[male] жвавий
     [female] жвава
-    *[neuter] жваве
+    [neuter] жваве
   }
 adjectives-dataset-232 =
-  { $gender ->
-    [male] дотепно
-    [female] дотепно
-    *[neuter] дотепно
+  { GENDER($ent) ->
+    *[male] дотепний
+    [female] дотепна
+    [neuter] дотепне
   }
 adjectives-dataset-233 =
-  { $gender ->
-    [male] чудова
-    [female] чудова
-    *[neuter] чудова
+  { GENDER($ent) ->
+    *[male] дивовижний
+    [female] дивовижна
+    [neuter] дивовижне
   }
 adjectives-dataset-234 =
-  { $gender ->
-    [male] ревнивий
-    [female] ревнива
-    *[neuter] ревниве
+  { GENDER($ent) ->
+    *[male] ревний
+    [female] ревна
+    [neuter] ревне
   }
 adjectives-dataset-235 =
-  { $gender ->
-    [male] дивакувато
-    [female] дивакувато
-    *[neuter] дивакувато
+  { GENDER($ent) ->
+    *[male] дивакуватий
+    [female] дивакувата
+    [neuter] дивакувате
   }
 adjectives-dataset-236 =
-  { $gender ->
-    [male] широко
-    [female] широко
-    *[neuter] широко
+  { GENDER($ent) ->
+    *[male] широчезний
+    [female] широчезна
+    [neuter] широчезне
   }
 adjectives-dataset-237 =
-  { $gender ->
-    [male] пухкенькі
-    [female] пухкенькі
-    *[neuter] пухкенькі
+  { GENDER($ent) ->
+    *[male] повненький
+    [female] повненька
+    [neuter] повненьке
   }
 adjectives-dataset-238 =
-  { $gender ->
-    [male] кривий
+  { GENDER($ent) ->
+    *[male] кривий
     [female] крива
-    *[neuter] криве
+    [neuter] криве
   }
 adjectives-dataset-239 =
-  { $gender ->
-    [male] криворукі
-    [female] криворукі
-    *[neuter] криворукі
+  { GENDER($ent) ->
+    *[male] вигнутий
+    [female] вигнута
+    [neuter] вигнуте
   }
 adjectives-dataset-240 =
-  { $gender ->
-    [male] глибоко
-    [female] глибоко
-    *[neuter] глибоко
+  { GENDER($ent) ->
+    *[male] глибокий
+    [female] глибока
+    [neuter] глибоке
   }
 adjectives-dataset-241 =
-  { $gender ->
-    [male] плаский
+  { GENDER($ent) ->
+    *[male] плаский
     [female] пласка
-    *[neuter] пласке
+    [neuter] пласке
   }
 adjectives-dataset-242 =
-  { $gender ->
-    [male] високо
-    [female] високо
-    *[neuter] високо
+  { GENDER($ent) ->
+    *[male] високий
+    [female] висока
+    [neuter] високе
   }
 adjectives-dataset-243 =
-  { $gender ->
-    [male] порожнеча
-    [female] порожнеча
-    *[neuter] порожнеча
+  { GENDER($ent) ->
+    *[male] порожній
+    [female] порожна
+    [neuter] порожне
   }
 adjectives-dataset-244 =
-  { $gender ->
-    [male] низько
-    [female] низько
-    *[neuter] низько
+  { GENDER($ent) ->
+    *[male] низький
+    [female] низька
+    [neuter] низьке
   }
 adjectives-dataset-245 =
-  { $gender ->
-    [male] вузько
-    [female] вузько
-    *[neuter] вузько
+  { GENDER($ent) ->
+    *[male] вузький
+    [female] вузька
+    [neuter] вузьке
   }
 adjectives-dataset-246 =
-  { $gender ->
-    [male] коло
-    [female] коло
-    *[neuter] коло
+  { GENDER($ent) ->
+    *[male] круглий
+    [female] кругла
+    [neuter] кругле
   }
 adjectives-dataset-247 =
-  { $gender ->
-    [male] неглибоко
-    [female] неглибоко
-    *[neuter] неглибоко
+  { GENDER($ent) ->
+    *[male] неглибокий
+    [female] неглибока
+    [neuter] неглибоке
   }
 adjectives-dataset-248 =
-  { $gender ->
-    [male] худий
+  { GENDER($ent) ->
+    *[male] худий
     [female] худа
-    *[neuter] худе
+    [neuter] худе
   }
 adjectives-dataset-249 =
-  { $gender ->
-    [male] квадратний
+  { GENDER($ent) ->
+    *[male] квадратний
     [female] квадратна
-    *[neuter] квадратне
+    [neuter] квадратне
   }
 adjectives-dataset-250 =
-  { $gender ->
-    [male] крутий
+  { GENDER($ent) ->
+    *[male] крутий
     [female] крута
-    *[neuter] круте
+    [neuter] круте
   }
 adjectives-dataset-251 =
-  { $gender ->
-    [male] прямий
+  { GENDER($ent) ->
+    *[male] прямий
     [female] пряма
-    *[neuter] пряме
+    [neuter] пряме
   }
 adjectives-dataset-252 =
-  { $gender ->
-    [male] широкий
+  { GENDER($ent) ->
+    *[male] широкий
     [female] широка
-    *[neuter] широке
+    [neuter] широке
   }
 adjectives-dataset-253 =
-  { $gender ->
-    [male] великий
+  { GENDER($ent) ->
+    *[male] великий
     [female] велика
-    *[neuter] велике
+    [neuter] велике
   }
 adjectives-dataset-254 =
-  { $gender ->
-    [male] колосально
-    [female] колосально
-    *[neuter] колосально
+  { GENDER($ent) ->
+    *[male] колосальний
+    [female] колосальна
+    [neuter] колосальне
   }
 adjectives-dataset-255 =
-  { $gender ->
-    [male] жирний
-    [female] жирна
-    *[neuter] жирне
+  { GENDER($ent) ->
+    *[male] товстий
+    [female] товста
+    [neuter] товсте
   }
 adjectives-dataset-256 =
-  { $gender ->
-    [male] гігантський
+  { GENDER($ent) ->
+    *[male] гігантський
     [female] гігантська
-    *[neuter] гігантське
+    [neuter] гігантське
   }
 adjectives-dataset-257 =
-  { $gender ->
-    [male] шикарно
-    [female] шикарно
-    *[neuter] шикарно
+  { GENDER($ent) ->
+    *[male] відмінний
+    [female] відмінна
+    [neuter] відмінне
   }
 adjectives-dataset-258 =
-  { $gender ->
-    [male] вилчезний
-    [female] вилчезна
-    *[neuter] вилчезне
+  { GENDER($ent) ->
+    *[male] значний
+    [female] значна
+    [neuter] значне
   }
 adjectives-dataset-259 =
-  { $gender ->
-    [male] величезні
-    [female] величезні
-    *[neuter] величезні
+  { GENDER($ent) ->
+    *[male] величезний
+    [female] величезна
+    [neuter] величезне
   }
 adjectives-dataset-260 =
-  { $gender ->
-    [male] великі
-    [female] великі
-    *[neuter] великі
+  { GENDER($ent) ->
+    *[male] чималий
+    [female] чимала
+    [neuter] чимале
   }
 adjectives-dataset-261 =
-  { $gender ->
-    [male] маленька
-    [female] маленька
-    *[neuter] маленька
+  { GENDER($ent) ->
+    *[male] малий
+    [female] мала
+    [neuter] мале
   }
 adjectives-dataset-262 =
-  { $gender ->
-    [male] мамонт
-    [female] мамонт
-    *[neuter] мамонт
+  { GENDER($ent) ->
+    *[male] значущий
+    [female] значуща
+    [neuter] значуще
   }
 adjectives-dataset-263 =
-  { $gender ->
-    [male] масив
-    [female] масив
-    *[neuter] масив
+  { GENDER($ent) ->
+    *[male] масивний
+    [female] масивна
+    [neuter] масивне
   }
 adjectives-dataset-264 =
-  { $gender ->
-    [male] мініатюра
-    [female] мініатюра
-    *[neuter] мініатюра
+  { GENDER($ent) ->
+    *[male] мініатюрний
+    [female] мініатюрна
+    [neuter] мініатюрне
   }
 adjectives-dataset-265 =
-  { $gender ->
-    [male] маленький
-    [female] маленька
-    *[neuter] маленьке
+  { GENDER($ent) ->
+    *[male] дрібний
+    [female] дрібна
+    [neuter] дрібне
   }
 adjectives-dataset-266 =
-  { $gender ->
-    [male] нікчема
-    [female] нікчема
-    *[neuter] нікчема
+  { GENDER($ent) ->
+    *[male] мізерний
+    [female] мізерна
+    [neuter] мізерне
   }
 adjectives-dataset-267 =
-  { $gender ->
-    [male] худорлявий
+  { GENDER($ent) ->
+    *[male] худорлявий
     [female] худорлява
-    *[neuter] худорляве
+    [neuter] худорляве
   }
 adjectives-dataset-268 =
-  { $gender ->
-    [male] короткий
+  { GENDER($ent) ->
+    *[male] короткий
     [female] коротка
-    *[neuter] коротке
+    [neuter] коротке
   }
 adjectives-dataset-269 =
-  { $gender ->
-    [male] малий
-    [female] мала
-    *[neuter] мале
+  { GENDER($ent) ->
+    *[male] маленький
+    [female] маленька
+    [neuter] маленьке
   }
 adjectives-dataset-270 =
-  { $gender ->
-    [male] високий
-    [female] висока
-    *[neuter] високе
+  { GENDER($ent) ->
+    *[male] високорослий
+    [female] високоросла
+    [neuter] високоросле
   }
 adjectives-dataset-271 =
-  { $gender ->
-    [male] крихітний
+  { GENDER($ent) ->
+    *[male] крихітний
     [female] крихітна
-    *[neuter] крихітне
+    [neuter] крихітне
   }
 adjectives-dataset-272 =
-  { $gender ->
-    [male] малесенький
+  { GENDER($ent) ->
+    *[male] малесенький
     [female] малесенька
-    *[neuter] малесеньке
+    [neuter] малесеньке
   }
 adjectives-dataset-273 =
-  { $gender ->
-    [male] криіхтні
-    [female] криіхтні
-    *[neuter] криіхтні
+  { GENDER($ent) ->
+    *[male] невеличкий
+    [female] невеличка
+    [neuter] невеличке
   }
 adjectives-dataset-274 =
-  { $gender ->
-    [male] воркотіння
-    [female] воркотіння
-    *[neuter] воркотіння
+  { GENDER($ent) ->
+    *[male] воркотливий
+    [female] воркотлива
+    [neuter] воркотливе
   }
 adjectives-dataset-275 =
-  { $gender ->
-    [male] оглушливо
-    [female] оглушливо
-    *[neuter] оглушливо
+  { GENDER($ent) ->
+    *[male] оглушливий
+    [female] оглушлива
+    [neuter] оглушливе
   }
 adjectives-dataset-276 =
-  { $gender ->
-    [male] зомліти
-    [female] зомліти
-    *[neuter] зомліти
+  { GENDER($ent) ->
+    *[male] слабкий
+    [female] слабка
+    [neuter] слабке
   }
 adjectives-dataset-277 =
-  { $gender ->
-    [male] суворо
-    [female] суворо
-    *[neuter] суворо
+  { GENDER($ent) ->
+    *[male] різкий
+    [female] різка
+    [neuter] різке
   }
 adjectives-dataset-278 =
-  { $gender ->
-    [male] пронизливо
-    [female] пронизливо
-    *[neuter] пронизливо
+  { GENDER($ent) ->
+    *[male] писклявий
+    [female] писклява
+    [neuter] пискляве
   }
 adjectives-dataset-279 =
-  { $gender ->
-    [male] шипіння
-    [female] шипіння
-    *[neuter] шипіння
+  { GENDER($ent) ->
+    *[male] шиплячий
+    [female] шипляча
+    [neuter] шипляче
   }
 adjectives-dataset-280 =
-  { $gender ->
-    [male] принишкли
-    [female] принишкли
-    *[neuter] принишкли
+  { GENDER($ent) ->
+    *[male] приглушений
+    [female] приглушена
+    [neuter] приглушене
   }
 adjectives-dataset-281 =
-  { $gender ->
-    [male] хриплий
-    [female] хрипла
-    *[neuter] хрипле
+  { GENDER($ent) ->
+    *[male] хрипкий
+    [female] хрипка
+    [neuter] хрипке
   }
 adjectives-dataset-282 =
-  { $gender ->
-    [male] гучний
+  { GENDER($ent) ->
+    *[male] гучний
     [female] гучна
-    *[neuter] гучне
+    [neuter] гучне
   }
 adjectives-dataset-283 =
-  { $gender ->
-    [male] мелодичний
-    [female] мелодична
-    *[neuter] мелодичне
+  { GENDER($ent) ->
+    *[male] мелодійний
+    [female] мелодійна
+    [neuter] мелодійне
   }
 adjectives-dataset-284 =
-  { $gender ->
-    [male] стогін
-    [female] стогін
-    *[neuter] стогін
+  { GENDER($ent) ->
+    *[male] стенаючий
+    [female] стенаюча
+    [neuter] стенаюче
   }
 adjectives-dataset-285 =
-  { $gender ->
-    [male] німий
+  { GENDER($ent) ->
+    *[male] німий
     [female] німа
-    *[neuter] німе
+    [neuter] німе
   }
 adjectives-dataset-286 =
-  { $gender ->
-    [male] шумний
+  { GENDER($ent) ->
+    *[male] шумний
     [female] шумна
-    *[neuter] шумне
+    [neuter] шумне
   }
 adjectives-dataset-287 =
-  { $gender ->
-    [male] муркотіння
-    [female] муркотіння
-    *[neuter] муркотіння
+  { GENDER($ent) ->
+    *[male] муркотливий
+    [female] муркотлива
+    [neuter] муркотливе
   }
 adjectives-dataset-288 =
-  { $gender ->
-    [male] тихий
+  { GENDER($ent) ->
+    *[male] тихий
     [female] тиха
-    *[neuter] тихе
+    [neuter] тихе
   }
 adjectives-dataset-289 =
-  { $gender ->
-    [male] шорсткий
+  { GENDER($ent) ->
+    *[male] шорсткий
     [female] шорстка
-    *[neuter] шорстке
+    [neuter] шорстке
   }
 adjectives-dataset-290 =
-  { $gender ->
-    [male] резонансний
-    [female] резонансна
-    *[neuter] резонансне
+  { GENDER($ent) ->
+    *[male] резонуючий
+    [female] резонуюча
+    [neuter] резонуюче
   }
 adjectives-dataset-291 =
-  { $gender ->
-    [male] вереск
-    [female] вереск
-    *[neuter] вереск
+  { GENDER($ent) ->
+    *[male] скрипучий
+    [female] скрипуча
+    [neuter] скрипуче
   }
 adjectives-dataset-292 =
-  { $gender ->
-    [male] пронизливий
+  { GENDER($ent) ->
+    *[male] пронизливий
     [female] пронизлива
-    *[neuter] пронизливе
+    [neuter] пронизливе
   }
 adjectives-dataset-293 =
-  { $gender ->
-    [male] мовчазний
+  { GENDER($ent) ->
+    *[male] мовчазний
     [female] мовчазна
-    *[neuter] мовчазне
+    [neuter] мовчазне
   }
 adjectives-dataset-294 =
-  { $gender ->
-    [male] чутливий
-    [female] чутлива
-    *[neuter] чутливе
+  { GENDER($ent) ->
+    *[male] м'який
+    [female] м'яка
+    [neuter] м'яке
   }
 adjectives-dataset-295 =
-  { $gender ->
-    [male] верещати
-    [female] верещати
-    *[neuter] верещати
+  { GENDER($ent) ->
+    *[male] верескливий
+    [female] вересклива
+    [neuter] верескливе
   }
 adjectives-dataset-296 =
-  { $gender ->
-    [male] грім
-    [female] грім
-    *[neuter] грім
+  { GENDER($ent) ->
+    *[male] гримлячий
+    [female] гримляча
+    [neuter] гримляче
   }
 adjectives-dataset-297 =
-  { $gender ->
-    [male] безголосий
+  { GENDER($ent) ->
+    *[male] безголосий
     [female] безголоса
-    *[neuter] безголосе
+    [neuter] безголосе
   }
 adjectives-dataset-298 =
-  { $gender ->
-    [male] шепіт
-    [female] шепіт
-    *[neuter] шепіт
+  { GENDER($ent) ->
+    *[male] шепітний
+    [female] шепітна
+    [neuter] шепітне
   }
 adjectives-dataset-299 =
-  { $gender ->
-    [male] древній
+  { GENDER($ent) ->
+    *[male] древній
     [female] древня
-    *[neuter] древнє
+    [neuter] древнє
   }
 adjectives-dataset-300 =
-  { $gender ->
-    [male] брифінґ
-    [female] брифінґ
-    *[neuter] брифінґ
+  { GENDER($ent) ->
+    *[male] стислий
+    [female] стисла
+    [neuter] стисле
   }
 adjectives-dataset-301 =
-  { $gender ->
-    [male] ранній
+  { GENDER($ent) ->
+    *[male] ранній
     [female] рання
-    *[neuter] раннє
+    [neuter] раннє
   }
 adjectives-dataset-302 =
-  { $gender ->
-    [male] швидкий
+  { GENDER($ent) ->
+    *[male] швидкий
     [female] швидка
-    *[neuter] швидке
+    [neuter] швидке
   }
 adjectives-dataset-303 =
-  { $gender ->
-    [male] пізній
+  { GENDER($ent) ->
+    *[male] пізній
     [female] пізня
-    *[neuter] пізнє
+    [neuter] пізнє
   }
 adjectives-dataset-304 =
-  { $gender ->
-    [male] довжелезний
-    [female] довжелезна
-    *[neuter] довжелезне
+  { GENDER($ent) ->
+    *[male] довгий
+    [female] довга
+    [neuter] довге
   }
 adjectives-dataset-305 =
-  { $gender ->
-    [male] сучасно
-    [female] сучасно
-    *[neuter] сучасно
+  { GENDER($ent) ->
+    *[male] сучасний
+    [female] сучасна
+    [neuter] сучасне
   }
 adjectives-dataset-306 =
-  { $gender ->
-    [male] старе
-    [female] старе
-    *[neuter] старе
+  { GENDER($ent) ->
+    *[male] старий
+    [female] стара
+    [neuter] старе
   }
 adjectives-dataset-307 =
-  { $gender ->
-    [male] старомодні
-    [female] старомодні
-    *[neuter] старомодні
+  { GENDER($ent) ->
+    *[male] старомодний
+    [female] старомодна
+    [neuter] старомодне
   }
 adjectives-dataset-308 =
-  { $gender ->
-    [male] швидко
-    [female] швидко
-    *[neuter] швидко
+  { GENDER($ent) ->
+    *[male] стрімкий
+    [female] стрімка
+    [neuter] стрімке
   }
 adjectives-dataset-309 =
-  { $gender ->
-    [male] стрімкий
-    [female] стрімка
-    *[neuter] стрімке
+  { GENDER($ent) ->
+    *[male] миттєвий
+    [female] миттєва
+    [neuter] миттєве
   }
 adjectives-dataset-310 =
-  { $gender ->
-    [male] коротко
-    [female] коротко
-    *[neuter] коротко
+  { GENDER($ent) ->
+    *[male] короткий
+    [female] коротка
+    [neuter] коротке
   }
 adjectives-dataset-311 =
-  { $gender ->
-    [male] повільно
-    [female] повільно
-    *[neuter] повільно
+  { GENDER($ent) ->
+    *[male] повільний
+    [female] повільна
+    [neuter] повільне
   }
 adjectives-dataset-312 =
-  { $gender ->
-    [male] стрімко
-    [female] стрімко
-    *[neuter] стрімко
+  { GENDER($ent) ->
+    *[male] прудкий
+    [female] прудка
+    [neuter] прудке
   }
 adjectives-dataset-313 =
-  { $gender ->
-    [male] молодий
+  { GENDER($ent) ->
+    *[male] молодий
     [female] молода
-    *[neuter] молоде
+    [neuter] молоде
   }
 adjectives-dataset-314 =
-  { $gender ->
-    [male] гіркий
+  { GENDER($ent) ->
+    *[male] гіркий
     [female] гірка
-    *[neuter] гірке
+    [neuter] гірке
   }
 adjectives-dataset-315 =
-  { $gender ->
-    [male] смаколик
-    [female] смаколик
-    *[neuter] смаколик
+  { GENDER($ent) ->
+    *[male] ласий
+    [female] ласа
+    [neuter] ласе
   }
 adjectives-dataset-316 =
-  { $gender ->
-    [male] свіжий
+  { GENDER($ent) ->
+    *[male] свіжий
     [female] свіжа
-    *[neuter] свіже
+    [neuter] свіже
   }
 adjectives-dataset-317 =
-  { $gender ->
-    [male] соковитий
+  { GENDER($ent) ->
+    *[male] соковитий
     [female] соковита
-    *[neuter] соковите
+    [neuter] соковите
   }
 adjectives-dataset-318 =
-  { $gender ->
-    [male] стиглий
+  { GENDER($ent) ->
+    *[male] стиглий
     [female] стигла
-    *[neuter] стигле
+    [neuter] стигле
   }
 adjectives-dataset-319 =
-  { $gender ->
-    [male] гнилий
+  { GENDER($ent) ->
+    *[male] гнилий
     [female] гнила
-    *[neuter] гниле
+    [neuter] гниле
   }
 adjectives-dataset-320 =
-  { $gender ->
-    [male] солоний
+  { GENDER($ent) ->
+    *[male] солоний
     [female] солона
-    *[neuter] солоне
+    [neuter] солоне
   }
 adjectives-dataset-321 =
-  { $gender ->
-    [male] кислий
+  { GENDER($ent) ->
+    *[male] кислий
     [female] кисла
-    *[neuter] кисле
+    [neuter] кисле
   }
 adjectives-dataset-322 =
-  { $gender ->
-    [male] гострий
+  { GENDER($ent) ->
+    *[male] гострий
     [female] гостра
-    *[neuter] гостре
+    [neuter] гостре
   }
 adjectives-dataset-323 =
-  { $gender ->
-    [male] несвіжий
+  { GENDER($ent) ->
+    *[male] несвіжий
     [female] несвіжа
-    *[neuter] несвіже
+    [neuter] несвіже
   }
 adjectives-dataset-324 =
-  { $gender ->
-    [male] липкий
+  { GENDER($ent) ->
+    *[male] липкий
     [female] липка
-    *[neuter] липке
+    [neuter] липке
   }
 adjectives-dataset-325 =
-  { $gender ->
-    [male] потужний
-    [female] потужна
-    *[neuter] потужне
+  { GENDER($ent) ->
+    *[male] сильний
+    [female] сильна
+    [neuter] сильне
   }
 adjectives-dataset-326 =
-  { $gender ->
-    [male] солодкий
+  { GENDER($ent) ->
+    *[male] солодкий
     [female] солодка
-    *[neuter] солодке
+    [neuter] солодке
   }
 adjectives-dataset-327 =
-  { $gender ->
-    [male] терпкий
+  { GENDER($ent) ->
+    *[male] терпкий
     [female] терпка
-    *[neuter] терпке
+    [neuter] терпке
   }
 adjectives-dataset-328 =
-  { $gender ->
-    [male] пиріг
-    [female] пиріг
-    *[neuter] пиріг
+  { GENDER($ent) ->
+    *[male] несмачний
+    [female] несмачна
+    [neuter] несмачне
   }
 adjectives-dataset-329 =
-  { $gender ->
-    [male] смачно
-    [female] смачно
-    *[neuter] смачно
+  { GENDER($ent) ->
+    *[male] смачний
+    [female] смачна
+    [neuter] смачне
   }
 adjectives-dataset-330 =
-  { $gender ->
-    [male] спрага
-    [female] спрага
-    *[neuter] спрага
+  { GENDER($ent) ->
+    *[male] спраглий
+    [female] спрагла
+    [neuter] спрагле
   }
 adjectives-dataset-331 =
-  { $gender ->
-    [male] перший
-    [female] перша
-    *[neuter] перше
+  { GENDER($ent) ->
+    *[male] трепетний
+    [female] трепетна
+    [neuter] трепетне
   }
 adjectives-dataset-332 =
-  { $gender ->
-    [male] розмито
-    [female] розмито
-    *[neuter] розмито
+  { GENDER($ent) ->
+    *[male] ворсистий
+    [female] ворсиста
+    [neuter] ворсисте
   }
 adjectives-dataset-333 =
-  { $gender ->
-    [male] жирно
-    [female] жирно
-    *[neuter] жирно
+  { GENDER($ent) ->
+    *[male] масний
+    [female] масна
+    [neuter] масне
   }
 adjectives-dataset-334 =
-  { $gender ->
-    [male] чітко
-    [female] чітко
-    *[neuter] чітко
+  { GENDER($ent) ->
+    *[male] замазаний
+    [female] замазана
+    [neuter] замазане
   }
 adjectives-dataset-335 =
-  { $gender ->
-    [male] потужно
-    [female] потужно
-    *[neuter] потужно
+  { GENDER($ent) ->
+    *[male] твердий
+    [female] тверда
+    [neuter] тверде
   }
 adjectives-dataset-336 =
-  { $gender ->
-    [male] гарячий
+  { GENDER($ent) ->
+    *[male] гарячий
     [female] гаряча
-    *[neuter] гаряче
+    [neuter] гаряче
   }
 adjectives-dataset-337 =
-  { $gender ->
-    [male] крижаний
+  { GENDER($ent) ->
+    *[male] крижаний
     [female] крижана
-    *[neuter] крижане
+    [neuter] крижане
   }
 adjectives-dataset-338 =
-  { $gender ->
-    [male] вільно
-    [female] вільно
-    *[neuter] вільно
+  { GENDER($ent) ->
+    *[male] вільний
+    [female] вільна
+    [neuter] вільне
   }
 adjectives-dataset-339 =
-  { $gender ->
-    [male] плавлений
+  { GENDER($ent) ->
+    *[male] плавлений
     [female] плавлена
-    *[neuter] плавлене
+    [neuter] плавлене
   }
 adjectives-dataset-340 =
-  { $gender ->
-    [male] поживно
-    [female] поживно
-    *[neuter] поживно
+  { GENDER($ent) ->
+    *[male] поживний
+    [female] поживна
+    [neuter] поживне
   }
 adjectives-dataset-341 =
-  { $gender ->
-    [male] пластиковий
+  { GENDER($ent) ->
+    *[male] пластиковий
     [female] пластикова
-    *[neuter] пластикове
+    [neuter] пластикове
   }
 adjectives-dataset-342 =
-  { $gender ->
-    [male] взаємодія
-    [female] взаємодія
-    *[neuter] взаємодія
+  { GENDER($ent) ->
+    *[male] колючий
+    [female] колюча
+    [neuter] колюче
   }
 adjectives-dataset-343 =
-  { $gender ->
-    [male] дощить
-    [female] дощить
-    *[neuter] дощить
+  { GENDER($ent) ->
+    *[male] дощовий
+    [female] дощова
+    [neuter] дощове
   }
 adjectives-dataset-344 =
-  { $gender ->
-    [male] доля
-    [female] доля
-    *[neuter] доля
+  { GENDER($ent) ->
+    *[male] грубий
+    [female] груба
+    [neuter] грубе
   }
 adjectives-dataset-345 =
-  { $gender ->
-    [male] розкидано
-    [female] розкидано
-    *[neuter] розкидано
+  { GENDER($ent) ->
+    *[male] розкиданий
+    [female] розкидана
+    [neuter] розкидане
   }
 adjectives-dataset-346 =
-  { $gender ->
-    [male] період
-    [female] період
-    *[neuter] період
+  { GENDER($ent) ->
+    *[male] кудлатий
+    [female] кудлата
+    [neuter] кудлате
   }
 adjectives-dataset-347 =
-  { $gender ->
-    [male] зломлений
-    [female] зломлена
-    *[neuter] зломлене
+  { GENDER($ent) ->
+    *[male] хиткий
+    [female] хитка
+    [neuter] хитке
   }
 adjectives-dataset-348 =
-  { $gender ->
-    [male] служба
-    [female] служба
-    *[neuter] служба
+  { GENDER($ent) ->
+    *[male] гострий
+    [female] гостра
+    [neuter] гостре
   }
 adjectives-dataset-349 =
-  { $gender ->
-    [male] наказ
-    [female] наказ
-    *[neuter] наказ
+  { GENDER($ent) ->
+    *[male] тремкий
+    [female] тремка
+    [neuter] тремке
   }
 adjectives-dataset-350 =
-  { $gender ->
-    [male] шовк
-    [female] шовк
-    *[neuter] шовк
+  { GENDER($ent) ->
+    *[male] шовковистий
+    [female] шовковиста
+    [neuter] шовковисте
   }
 adjectives-dataset-351 =
-  { $gender ->
-    [male] слиз
-    [female] слиз
-    *[neuter] слиз
+  { GENDER($ent) ->
+    *[male] слизовий
+    [female] слизова
+    [neuter] слизове
   }
 adjectives-dataset-352 =
-  { $gender ->
-    [male] слизько
-    [female] слизько
-    *[neuter] слизько
+  { GENDER($ent) ->
+    *[male] слизький
+    [female] слизька
+    [neuter] слизьке
   }
 adjectives-dataset-353 =
-  { $gender ->
-    [male] плавно
-    [female] плавно
-    *[neuter] плавно
+  { GENDER($ent) ->
+    *[male] гладкий
+    [female] гладка
+    [neuter] гладке
   }
 adjectives-dataset-354 =
-  { $gender ->
-    [male] мальовничий
-    [female] мальовнича
-    *[neuter] мальовниче
+  { GENDER($ent) ->
+    *[male] м'який
+    [female] м'яка
+    [neuter] м'яке
   }
 adjectives-dataset-355 =
-  { $gender ->
-    [male] твердий
-    [female] тверда
-    *[neuter] тверде
+  { GENDER($ent) ->
+    *[male] суцільний
+    [female] суцільна
+    [neuter] суцільне
   }
 adjectives-dataset-356 =
-  { $gender ->
-    [male] готовий
-    [female] готова
-    *[neuter] готове
+  { GENDER($ent) ->
+    *[male] стійкий
+    [female] стійка
+    [neuter] стійке
   }
 adjectives-dataset-357 =
-  { $gender ->
-    [male] липуче
-    [female] липуче
-    *[neuter] липуче
+  { GENDER($ent) ->
+    *[male] липкий
+    [female] липка
+    [neuter] липке
   }
 adjectives-dataset-358 =
-  { $gender ->
-    [male] сліпий
-    [female] сліпа
-    *[neuter] сліпе
+  { GENDER($ent) ->
+    *[male] ніжний
+    [female] ніжна
+    [neuter] ніжне
   }
 adjectives-dataset-359 =
-  { $gender ->
-    [male] ніж
-    [female] ніж
-    *[neuter] ніж
+  { GENDER($ent) ->
+    *[male] тісний
+    [female] тісна
+    [neuter] тісне
   }
 adjectives-dataset-360 =
-  { $gender ->
-    [male] нерівно
-    [female] нерівно
-    *[neuter] нерівно
+  { GENDER($ent) ->
+    *[male] неоднорідний
+    [female] неоднорідна
+    [neuter] неоднорідне
   }
 adjectives-dataset-361 =
-  { $gender ->
-    [male] слабкий
-    [female] слабка
-    *[neuter] слабке
+  { GENDER($ent) ->
+    *[male] слабий
+    [female] слаба
+    [neuter] слабе
   }
 adjectives-dataset-362 =
-  { $gender ->
-    [male] вологий
-    [female] волога
-    *[neuter] вологе
+  { GENDER($ent) ->
+    *[male] мокрий
+    [female] мокра
+    [neuter] мокре
   }
 adjectives-dataset-363 =
-  { $gender ->
-    [male] дерево
-    [female] дерево
-    *[neuter] дерево
+  { GENDER($ent) ->
+    *[male] дерев'яний
+    [female] дерев'яна
+    [neuter] дерев'яне
   }
 adjectives-dataset-364 =
-  { $gender ->
-    [male] смаколики
-    [female] смаколики
-    *[neuter] смаколики
+  { GENDER($ent) ->
+    *[male] апетитний
+    [female] апетитна
+    [neuter] апетитне
   }
 adjectives-dataset-365 =
-  { $gender ->
-    [male] окріп
-    [female] окріп
-    *[neuter] окріп
+  { GENDER($ent) ->
+    *[male] киплячий
+    [female] кипляча
+    [neuter] кипляче
   }
 adjectives-dataset-366 =
-  { $gender ->
-    [male] смітник
-    [female] смітник
-    *[neuter] смітник
+  { GENDER($ent) ->
+    *[male] вітряний
+    [female] вітряна
+    [neuter] вітряне
   }
 adjectives-dataset-367 =
-  { $gender ->
-    [male] зламаний
+  { GENDER($ent) ->
+    *[male] зламаний
     [female] зламана
-    *[neuter] зламане
+    [neuter] зламане
   }
 adjectives-dataset-368 =
-  { $gender ->
-    [male] ножиці
-    [female] ножиці
-    *[neuter] ножиці
+  { GENDER($ent) ->
+    *[male] нерівний
+    [female] нерівна
+    [neuter] нерівне
   }
 adjectives-dataset-369 =
-  { $gender ->
-    [male] зимно
-    [female] зимно
-    *[neuter] зимно
+  { GENDER($ent) ->
+    *[male] холодний
+    [female] холодна
+    [neuter] холодне
   }
 adjectives-dataset-370 =
-  { $gender ->
-    [male] холод
-    [female] холод
-    *[neuter] холод
+  { GENDER($ent) ->
+    *[male] студений
+    [female] студена
+    [neuter] студене
   }
 adjectives-dataset-371 =
-  { $gender ->
-    [male] прохолодно
-    [female] прохолодно
-    *[neuter] прохолодно
+  { GENDER($ent) ->
+    *[male] прохолодний
+    [female] прохолодна
+    [neuter] прохолодне
   }
 adjectives-dataset-372 =
-  { $gender ->
-    [male] моторошно
-    [female] моторошно
-    *[neuter] моторошно
+  { GENDER($ent) ->
+    *[male] моторошний
+    [female] моторошна
+    [neuter] моторошне
   }
 adjectives-dataset-373 =
-  { $gender ->
-    [male] краплі
-    [female] краплі
-    *[neuter] краплі
+  { GENDER($ent) ->
+    *[male] кривий
+    [female] крива
+    [neuter] криве
   }
 adjectives-dataset-374 =
-  { $gender ->
-    [male] обійми
-    [female] обійми
-    *[neuter] обійми
+  { GENDER($ent) ->
+    *[male] обіймальний
+    [female] обіймальна
+    [neuter] обіймальне
   }
 adjectives-dataset-375 =
-  { $gender ->
-    [male] кудрявий
-    [female] кудрява
-    *[neuter] кудряве
+  { GENDER($ent) ->
+    *[male] завитий
+    [female] завита
+    [neuter] завите
   }
 adjectives-dataset-376 =
-  { $gender ->
-    [male] пошкоджено
-    [female] пошкоджено
-    *[neuter] пошкоджено
+  { GENDER($ent) ->
+    *[male] пошкоджений
+    [female] пошкоджена
+    [neuter] пошкоджене
   }
 adjectives-dataset-377 =
-  { $gender ->
-    [male] кришка
-    [female] кришка
-    *[neuter] кришка
+  { GENDER($ent) ->
+    *[male] вологий
+    [female] волога
+    [neuter] вологе
   }
 adjectives-dataset-378 =
-  { $gender ->
-    [male] бруд
-    [female] бруд
-    *[neuter] бруд
+  { GENDER($ent) ->
+    *[male] брудний
+    [female] брудна
+    [neuter] брудне
   }
 adjectives-dataset-379 =
-  { $gender ->
-    [male] сухий
+  { GENDER($ent) ->
+    *[male] сухий
     [female] суха
-    *[neuter] сухе
+    [neuter] сухе
   }
 adjectives-dataset-380 =
-  { $gender ->
-    [male] запорошений
-    [female] запорошена
-    *[neuter] запорошене
+  { GENDER($ent) ->
+    *[male] припилений
+    [female] припилена
+    [neuter] припилене
   }
 adjectives-dataset-381 =
-  { $gender ->
-    [male] брудно
-    [female] брудно
-    *[neuter] брудно
+  { GENDER($ent) ->
+    *[male] нечистий
+    [female] нечиста
+    [neuter] нечисте
   }
 adjectives-dataset-382 =
-  { $gender ->
-    [male] закон
-    [female] закон
-    *[neuter] закон
+  { GENDER($ent) ->
+    *[male] пластівчастий
+    [female] пластівчаста
+    [neuter] пластівчасте
   }
 adjectives-dataset-383 =
-  { $gender ->
-    [male] пухнастий
+  { GENDER($ent) ->
+    *[male] пухнастий
     [female] пухнаста
-    *[neuter] пухнасте
+    [neuter] пухнасте
   }
 adjectives-dataset-384 =
-  { $gender ->
-    [male] вороги
-    [female] вороги
-    *[neuter] вороги
+  { GENDER($ent) ->
+    *[male] морозний
+    [female] морозна
+    [neuter] морозне
   }
 adjectives-dataset-385 =
-  { $gender ->
-    [male] спекотно
-    [female] спекотно
-    *[neuter] спекотно
+  { GENDER($ent) ->
+    *[male] гарячий
+    [female] гаряча
+    [neuter] гаряче
   }
 adjectives-dataset-386 =
-  { $gender ->
-    [male] тепло
-    [female] тепло
-    *[neuter] тепло
+  { GENDER($ent) ->
+    *[male] теплий
+    [female] тепла
+    [neuter] тепле
   }
 adjectives-dataset-387 =
-  { $gender ->
-    [male] волого
-    [female] волого
-    *[neuter] волого
+  { GENDER($ent) ->
+    *[male] мокрий
+    [female] мокра
+    [neuter] мокре
   }
 adjectives-dataset-388 =
-  { $gender ->
-    [male] кошик
-    [female] кошик
-    *[neuter] кошик
+  { GENDER($ent) ->
+    *[male] рясний
+    [female] рясна
+    [neuter] рясне
   }
 adjectives-dataset-389 =
-  { $gender ->
-    [male] пусто
-    [female] пусто
-    *[neuter] пусто
+  { GENDER($ent) ->
+    *[male] пустий
+    [female] пуста
+    [neuter] пусте
   }
 adjectives-dataset-390 =
-  { $gender ->
-    [male] декілька
-    [female] декілька
-    *[neuter] декілька
+  { GENDER($ent) ->
+    *[male] нечисленний
+    [female] нечисленна
+    [neuter] нечисленне
   }
 adjectives-dataset-391 =
-  { $gender ->
-    [male] важкий
+  { GENDER($ent) ->
+    *[male] важкий
     [female] важка
-    *[neuter] важке
+    [neuter] важке
   }
 adjectives-dataset-392 =
-  { $gender ->
-    [male] легкий
+  { GENDER($ent) ->
+    *[male] легкий
     [female] легка
-    *[neuter] легке
+    [neuter] легке
   }
 adjectives-dataset-393 =
-  { $gender ->
-    [male] багато
-    [female] багато
-    *[neuter] багато
+  { GENDER($ent) ->
+    *[male] численний
+    [female] численна
+    [neuter] численне
   }
 adjectives-dataset-394 =
-  { $gender ->
-    [male] численні
-    [female] численні
-    *[neuter] численні
+  { GENDER($ent) ->
+    *[male] багаточисленний
+    [female] багаточисленна
+    [neuter] багаточисленне
   }
 adjectives-dataset-395 =
-  { $gender ->
-    [male] субстанція
-    [female] субстанція
-    *[neuter] субстанція
+  { GENDER($ent) ->
+    *[male] істотний
+    [female] істотна
+    [neuter] істотне
   }
 adjectives-dataset-396 =
-  { $gender ->
-    [male] капіталісти
-    [female] капіталісти
-    *[neuter] капіталісти
+  { GENDER($ent) ->
+    *[male] капіталістичний
+    [female] капіталістична
+    [neuter] капіталістичне
   }
 adjectives-dataset-397 =
-  { $gender ->
-    [male] жвавий
-    [female] жвава
-    *[neuter] жваве
+  { GENDER($ent) ->
+    *[male] рухливий
+    [female] рухлива
+    [neuter] рухлива
   }
 adjectives-dataset-398 =
-  { $gender ->
-    [male] пікантний
+  { GENDER($ent) ->
+    *[male] пікантний
     [female] пікантна
-    *[neuter] пікантне
+    [neuter] пікантне
   }
 adjectives-dataset-399 =
-  { $gender ->
-    [male] ненажерливий
+  { GENDER($ent) ->
+    *[male] ненажерливий
     [female] ненажерлива
-    *[neuter] ненажерливе
+    [neuter] ненажерливе
   }
 adjectives-dataset-400 =
-  { $gender ->
-    [male] огидний
-    [female] огидна
-    *[neuter] огидне
+  { GENDER($ent) ->
+    *[male] мерзенний
+    [female] мерзенна
+    [neuter] мерзенне
   }
 adjectives-dataset-401 =
-  { $gender ->
-    [male] людожерний
+  { GENDER($ent) ->
+    *[male] людожерний
     [female] людожерна
-    *[neuter] людожерне
+    [neuter] людожерне
   }
 adjectives-dataset-402 =
-  { $gender ->
-    [male] лукавий
-    [female] лукава
-    *[neuter] лукаве
+  { GENDER($ent) ->
+    *[male] хитрий
+    [female] хитра
+    [neuter] хитре
   }
 adjectives-dataset-403 =
-  { $gender ->
-    [male] відчужений
+  { GENDER($ent) ->
+    *[male] відчужений
     [female] відчужена
-    *[neuter] відчужене
+    [neuter] відчужене
   }
 adjectives-dataset-404 =
-  { $gender ->
-    [male] млявий
+  { GENDER($ent) ->
+    *[male] млявий
     [female] млява
-    *[neuter] мляве
+    [neuter] мляве
   }
 adjectives-dataset-405 =
-  { $gender ->
-    [male] мудрий
+  { GENDER($ent) ->
+    *[male] мудрий
     [female] мудра
-    *[neuter] мудре
+    [neuter] мудре
   }
 adjectives-dataset-406 =
-  { $gender ->
-    [male] шляхетний
-    [female] шляхетна
-    *[neuter] шляхетне
+  { GENDER($ent) ->
+    *[male] благородний
+    [female] благородна
+    [neuter] благородне
   }
 adjectives-dataset-407 =
-  { $gender ->
-    [male] прихований
-    [female] прихована
-    *[neuter] приховане
+  { GENDER($ent) ->
+    *[male] скритний
+    [female] скритна
+    [neuter] скритне
   }
 adjectives-dataset-408 =
-  { $gender ->
-    [male] боягузливий
+  { GENDER($ent) ->
+    *[male] боягузливий
     [female] боягузлива
-    *[neuter] боягузливе
+    [neuter] боягузливе
   }
 adjectives-dataset-409 =
-  { $gender ->
-    [male] скиглющий
-    [female] скиглюща
-    *[neuter] скиглюще
+  { GENDER($ent) ->
+    *[male] плаксивий
+    [female] плаксива
+    [neuter] плаксиве
   }
 adjectives-dataset-410 =
-  { $gender ->
-    [male] звивистий
+  { GENDER($ent) ->
+    *[male] звивистий
     [female] звивиста
-    *[neuter] звивисте
+    [neuter] звивисте
   }
 adjectives-dataset-411 =
-  { $gender ->
-    [male] дрібочучий
-    [female] дрібочуча
-    *[neuter] дрібочуче
+  { GENDER($ent) ->
+    *[male] метушливий
+    [female] метушлива
+    [neuter] метушливе
   }
 adjectives-dataset-412 =
-  { $gender ->
-    [male] жалюгідний
-    [female] жалюгідна
-    *[neuter] жалюгідне
+  { GENDER($ent) ->
+    *[male] нещасний
+    [female] нещасна
+    [neuter] нещасне
   }
 adjectives-dataset-413 =
-  { $gender ->
-    [male] повзучий
+  { GENDER($ent) ->
+    *[male] повзучий
     [female] повзуча
-    *[neuter] повзуче
+    [neuter] повзуче
   }
 adjectives-dataset-414 =
-  { $gender ->
-    [male] хитрий
-    [female] хитра
-    *[neuter] хитре
+  { GENDER($ent) ->
+    *[male] хитромудрий
+    [female] хитромудра
+    [neuter] хитромудре
   }
 adjectives-dataset-415 =
-  { $gender ->
-    [male] сітчастий
+  { GENDER($ent) ->
+    *[male] сітчастий
     [female] сітчаста
-    *[neuter] сітчасте
+    [neuter] сітчасте
   }
 adjectives-dataset-416 =
-  { $gender ->
-    [male] клацаючий
+  { GENDER($ent) ->
+    *[male] клацаючий
     [female] клацаюча
-    *[neuter] клацаюче
+    [neuter] клацаюче
   }
 adjectives-dataset-417 =
-  { $gender ->
-    [male] гігантський
-    [female] гігантська
-    *[neuter] гігантське
+  { GENDER($ent) ->
+    *[male] велетенський
+    [female] велетенська
+    [neuter] велетенське
   }
 adjectives-dataset-418 =
-  { $gender ->
-    [male] підозрілий
+  { GENDER($ent) ->
+    *[male] підозрілий
     [female] підозріла
-    *[neuter] підозріле
+    [neuter] підозріле
   }
 adjectives-dataset-419 =
-  { $gender ->
-    [male] сусний
-    [female] сусна
-    *[neuter] сусне
+  { GENDER($ent) ->
+    *[male] сус
+    [female] сус
+    [neuter] сус
   }
 adjectives-dataset-420 =
-  { $gender ->
-    [male] накурений
+  { GENDER($ent) ->
+    *[male] накурений
     [female] накурена
-    *[neuter] накурене
+    [neuter] накурене
   }
 adjectives-dataset-421 =
-  { $gender ->
-    [male] буркотливий
+  { GENDER($ent) ->
+    *[male] буркотливий
     [female] буркотлива
-    *[neuter] буркотливе
+    [neuter] буркотливе
   }
 adjectives-dataset-422 =
-  { $gender ->
-    [male] пухкенький
+  { GENDER($ent) ->
+    *[male] пухкенький
     [female] пухкенька
-    *[neuter] пухкеньке
+    [neuter] пухкеньке
   }

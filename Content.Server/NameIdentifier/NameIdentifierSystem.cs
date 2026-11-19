@@ -70,21 +70,23 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
     /// <remarks>
     /// This overload resolves the ProtoId of the NameIdentifierGroupPrototype first.
     /// </remarks>
+    /// <param name="ent">The Owner entity to agree with on the adjective.</param>
     /// <param name="proto">A ProtoId that will be resolved and passed on.</param>
     /// <param name="randomVal">The index value of the randomly selected modifier.</param>
-    public string GenerateUniqueNameModifier(ProtoId<NameIdentifierGroupPrototype> proto, out int randomVal)
+    public string GenerateUniqueNameModifier(EntityUid? entUid, ProtoId<NameIdentifierGroupPrototype> proto, out int randomVal)
     {
-        return GenerateUniqueNameModifier(ProtoMan.Index(proto), out randomVal);
+        return GenerateUniqueNameModifier(entUid, ProtoMan.Index(proto), out randomVal);
     }
 
     /// <summary>
     /// Generates a new unique name modifier for a given entity and removes it from <see cref="CurrentIds"/>
     /// but does not set the entity's name.
     /// </summary>
+    /// <param name="ent">The Owner entity to agree with on the adjective.</param>
     /// <param name="proto">The <see cref="NameIdentifierGroupPrototype"/> prototype to retrieve from.</param>
     /// <param name="randomVal">The index value of the randomly selected modifier.</param>
     /// <returns>A formatted and/or localized modifier. Empty string if invalid.</returns>
-    public string GenerateUniqueNameModifier(NameIdentifierGroupPrototype proto, out int randomVal)
+    public string GenerateUniqueNameModifier(EntityUid? entUid, NameIdentifierGroupPrototype proto, out int randomVal)
     {
         randomVal = -1;
         if (!CurrentIds.TryGetValue(proto.ID, out var set))
@@ -99,27 +101,32 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
         randomVal = set[^1];
         set.RemoveAt(set.Count - 1);
 
-        return FormatAndLocalize(randomVal, proto);
+        return FormatAndLocalize(entUid, randomVal, proto);
     }
 
     /// <summary>
     /// Format and localize the provided integer against the prototype.
     /// </summary>
+    /// <param name="ent">The Owner entity to agree with on the adjective.</param>
     /// <param name="value">The selected value to process.</param>
     /// <param name="proto">The prototype that defines optional localization and formatting.</param>
     /// <returns>A formatted and/or localized string.</returns>
-    private string FormatAndLocalize(int value, NameIdentifierGroupPrototype proto)
+    private string FormatAndLocalize(EntityUid? entUid, int value, NameIdentifierGroupPrototype proto)
     {
         var formatted = value.ToString();
 
         if (proto.IdentifierDataset is not null)
         {
             var identifiers = ProtoMan.Index(proto.IdentifierDataset);
-            // Наївний хак для українського перекладу.
-            // Через те, що прикметниками зазвичай користуються миші та слиміль (обидві жіночого роду),
-            // ми можемо просто примусити жіночий рід і подивитись чи зламається щось окреме.
-            // В майбутньому варто читати запис певної сутності, знаходити її ключ в .ftl-файлі та читати атрибут gender.
-            formatted = Loc.GetString(identifiers.Values.Prefix+formatted, ("gender", "female"));
+
+            if (entUid is not null)
+            {
+                formatted = Loc.GetString(identifiers.Values.Prefix+formatted, ("ent", entUid!));
+            }
+            else
+            {
+                formatted = Loc.GetString(identifiers.Values.Prefix+formatted);
+            }
         }
 
         return proto.Format is not null
@@ -146,11 +153,11 @@ public sealed partial class NameIdentifierSystem : SharedNameIdentifierSystem
             CurrentIds.TryGetValue(ent.Comp.Group, out var ids) &&
             ids.Remove(ent.Comp.Identifier))
         {
-            ent.Comp.FullIdentifier = FormatAndLocalize(ent.Comp.Identifier, group);
+            ent.Comp.FullIdentifier = FormatAndLocalize(ent.Owner, ent.Comp.Identifier, group);
         }
         else
         {
-            ent.Comp.FullIdentifier = GenerateUniqueNameModifier(group, out ent.Comp.Identifier);
+            ent.Comp.FullIdentifier = GenerateUniqueNameModifier(ent.Owner, group, out ent.Comp.Identifier);
         }
 
         Dirty(ent);

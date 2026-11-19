@@ -1,0 +1,2 @@
+ent-MobMoproach =
+  .gender = female
