@@ -31,7 +31,7 @@ public sealed partial class ServerGameTicker
         // This method is raised from another thread, so this better be thread safe!
         lock (_statusShellLock)
         {
-            jObject["name"] = GetServerName();
+            jObject["name"] = _baseServer.ServerName;
             jObject["map"] = _gameMapManager.GetSelectedMap()?.MapName;
             jObject["round_id"] = RoundId;
             jObject["players"] = Cfg.GetCVar(CCVars.AdminsCountInReportedPlayerCount)
@@ -46,23 +46,6 @@ public sealed partial class ServerGameTicker
             {
                 jObject["round_start_time"] = _roundStartDateTime.ToString("o");
             }
-        }
-
-        string GetServerName()
-        {
-
-            var newServerName = $"{_baseServer.ServerName}";
-            var map = _gameMapManager.GetSelectedMap();
-            if (map != null)
-                newServerName += $" | 🗺️ {map.MapName}";
-
-            var preset = CurrentPreset ?? Preset;
-            if (preset != null)
-                newServerName += $" | 🎲 {Loc.GetString(preset.ModeTitle)}";
-
-            newServerName += $" | раунд №{RoundId}";
-
-            return newServerName;
         }
     }
 }
