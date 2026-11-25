@@ -1,0 +1,6 @@
+- type: latheRecipePack
+  id: MRInceneration
+  recipes:
+  - MRBurnPlasma
+  - MRBurnCoal
+  - MRBurnWood
