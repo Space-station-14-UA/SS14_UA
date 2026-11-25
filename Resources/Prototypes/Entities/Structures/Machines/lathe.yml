@@ -213,6 +213,7 @@
     - Janitor
     - Instruments
     - Equipment
+    - MRImprovedCalcuations # Додано для Мрії
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo

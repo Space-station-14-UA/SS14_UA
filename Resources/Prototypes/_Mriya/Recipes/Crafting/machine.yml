@@ -1,0 +1,7 @@
+- type: construction
+  id: somUpgradedBlock
+  graph: MRSOMUpgrade
+  startNode: start
+  targetNode: somUpgradedBlock
+  category: construction-category-misc
+  objectType: Item

@@ -1,0 +1,9 @@
+# static
+
+
+# Dynamic
+
+- type: latheRecipePack
+  id: MRImprovedCalcuations
+  recipes:
+  - MRSOMUpgradeRecepy

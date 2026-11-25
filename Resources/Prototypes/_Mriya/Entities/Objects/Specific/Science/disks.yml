@@ -1,0 +1,30 @@
+# диски балів для дослідження
+
+- type: entity
+  parent: ResearchDisk
+  id: MRResearchDisk4000
+  suffix: 4000 поінтів
+  name: диск технологічних балів
+  description: Диск для сервера відділу дослідження та розробки, що був згенерований та містить невідому кількість балів.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Research/researchdisk.rsi
+    state: icon
+  - type: ResearchDisk
+    points: 4000 # простенька аномалія яка генерує 50 поінтів в секунду може генерувати до 3000 поінтів у хвилину, тому думаю це буде та можливо навіть трохи за слабо, врахоуючи що будуть шанси заспавнити декілька різних дисків які будуть мати меньше балів.
+
+- type: entity
+  parent: MRResearchDisk4000
+  id: MRResearchDisk696
+  suffix: 696 поінтів
+  components:
+  - type: ResearchDisk
+    points: 696 # смішна цифра
+    
+- type: entity
+  parent: MRResearchDisk4000
+  id: MRResearchDisk-500
+  suffix: -500 поінтів
+  components:
+  - type: ResearchDisk
+    points: -500 # так він цей диск ВІДІЙМЕ в тебе бали.
