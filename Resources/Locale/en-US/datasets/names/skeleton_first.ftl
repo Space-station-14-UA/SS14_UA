@@ -1,7 +1,7 @@
 names-skeleton-first-dataset-1 = Грудна Клітка
 names-skeleton-first-dataset-2 = Ребра
 names-skeleton-first-dataset-3 = Хребець
-names-skeleton-first-dataset-4 = Копчик
+names-skeleton-first-dataset-4 = Боунер
 names-skeleton-first-dataset-5 = Щелепа
 names-skeleton-first-dataset-6 = Ключиця
 names-skeleton-first-dataset-7 = Лопатка
